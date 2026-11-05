@@ -1,0 +1,133 @@
+[
+  {
+    "name": "alu-portable",
+    "repository": "ALU-RTL-Verification",
+    "required": true,
+    "enabled": true,
+    "script": "scripts/run_portable.ps1",
+    "mode": "portable",
+    "timeout_seconds": 180,
+    "seed": "deterministic",
+    "count_kind": "checks",
+    "pass_regex": "PORTABLE_TEST_PASS ALU checks=(\\d+)",
+    "expected_count": 1380
+  },
+  {
+    "name": "apb-interface-portable",
+    "repository": "APB-Interface-Verification",
+    "required": true,
+    "enabled": true,
+    "script": "scripts/run_portable.ps1",
+    "mode": "portable",
+    "timeout_seconds": 180,
+    "seed": "deterministic",
+    "count_kind": "checks",
+    "pass_regex": "PORTABLE_TEST_PASS APB checks=(\\d+)",
+    "expected_count": 1317
+  },
+  {
+    "name": "apb-modports-directed",
+    "repository": "APB-Modports-Verification",
+    "required": true,
+    "enabled": true,
+    "script": "scripts/run_sim.ps1",
+    "mode": "legacy",
+    "timeout_seconds": 180,
+    "seed": "directed",
+    "count_kind": "checks",
+    "pass_regex": "TOTAL PASSED\\s*=\\s*(\\d+)",
+    "expected_count": 2
+  },
+  {
+    "name": "ahb-lite-directed",
+    "repository": "AHB-Lite-RAM-Interface",
+    "required": true,
+    "enabled": true,
+    "script": "scripts/run_sim.ps1",
+    "mode": "legacy",
+    "timeout_seconds": 180,
+    "seed": "directed",
+    "count_kind": "checks",
+    "pass_regex": "TOTAL PASSED\\s*=\\s*(\\d+)",
+    "expected_count": 18
+  },
+  {
+    "name": "cache-directed",
+    "repository": "Two-Way-Cache-RTL",
+    "required": true,
+    "enabled": true,
+    "script": "scripts/run_sim.ps1",
+    "mode": "legacy",
+    "timeout_seconds": 180,
+    "seed": "directed",
+    "count_kind": "checks",
+    "pass_regex": "TOTAL PASSED\\s*=\\s*(\\d+)",
+    "expected_count": 7
+  },
+  {
+    "name": "vga-directed",
+    "repository": "VGA-SRAM-Framebuffer",
+    "required": true,
+    "enabled": true,
+    "script": "scripts/run_sim.ps1",
+    "mode": "legacy",
+    "timeout_seconds": 180,
+    "seed": "directed",
+    "count_kind": "checks",
+    "pass_regex": "TOTAL PASSED\\s*=\\s*(\\d+)",
+    "expected_count": 7
+  },
+  {
+    "name": "axi4-lite-standalone",
+    "repository": "AXI4-Lite-Memory-Interface",
+    "required": true,
+    "enabled": true,
+    "script": "scripts/run_regression.ps1",
+    "mode": "axi",
+    "timeout_seconds": 300,
+    "seed": "directed",
+    "count_kind": "tests",
+    "pass_regex": "REGRESSION_PASS tests=(\\d+)",
+    "expected_count": 7
+  },
+  {
+    "name": "rv32i-soc",
+    "repository": "RV32I-AXI4-Lite-SoC",
+    "required": true,
+    "enabled": true,
+    "script": "scripts/run_regression.ps1",
+    "mode": "soc",
+    "timeout_seconds": 600,
+    "seed": "1, 17, 2026",
+    "count_kind": "runs",
+    "pass_regex": "PASS REGRESSION (\\d+)/(\\d+) runs",
+    "expected_count": 21
+  },
+  {
+    "name": "axi4-dma-bounded",
+    "repository": "AXI4-DMA-Subsystem",
+    "required": true,
+    "enabled": true,
+    "script": "scripts/run_regression.ps1",
+    "mode": "dma",
+    "timeout_seconds": 180,
+    "seed": "0x28A6BEEF",
+    "count_kind": "cases",
+    "pass_regex": "DMA_REGRESSION_PASS cases=(\\d+) checks=824446 seed=0x28A6BEEF",
+    "expected_count": 25
+  },
+  {
+    "name": "alu-advanced",
+    "repository": "ALU-RTL-Verification",
+    "required": false,
+    "enabled": false,
+    "reason": "Original constrained-random environment requires unavailable svverification licence."
+  },
+  {
+    "name": "apb-interface-advanced",
+    "repository": "APB-Interface-Verification",
+    "required": false,
+    "enabled": false,
+    "reason": "Original class and covergroup environment requires unavailable svverification licence."
+  }
+]
