@@ -1,0 +1,20 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit apb_adapter_test -do "run -all; quit -code 0" 
+# Start time: 05:04:07 on Nov 06,2026
+# Loading sv_std.std
+# Loading work.amba_transactions
+# Loading work.apb_adapter_test
+# Loading work.apb_if
+# Loading work.apb_ram
+# Loading work.apb_master_driver
+# Loading work.apb_monitor
+# run -all
+# ** Fatal: APB read index=0 got=00000000 expected=00000000
+#    Time: 60 ns  Scope: apb_adapter_test.transfer File: C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/amba-fault-2026-11-06/tb/apb_adapter_test.sv Line: 31
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/amba-fault-2026-11-06/tb/apb_adapter_test.sv(31)
+#    Time: 60 ns  Iteration: 1  Instance: /apb_adapter_test
+# End time: 05:04:09 on Nov 06,2026, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 0

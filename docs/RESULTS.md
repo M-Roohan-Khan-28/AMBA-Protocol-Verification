@@ -1,14 +1,50 @@
 # Results
 
-Committed-source, publication and clean-clone results will be recorded after
-their actual runs. Development runs are not a substitute for those gates.
+The committed local source `460dfba6d477bb3427adcfdbea1d39c5f3fd5d09`
+was tested with:
 
-ModelSim Intel FPGA Starter Edition 2020.1 compiled the four adapter groups
-in local development. APB, AHB-Lite, AXI4-Lite and DMA adapter simulations
-reached their PASS markers, and each corresponding injected-violation test
-detected its fault. These runs used an uncommitted local tree; their logs
-are local under `build/test-runs/amba-*-dev*-2026-11-06/`. The first APB
-adapter run failed because its expected monitor count ignored reset; that
-test expectation was corrected. The first AXI4 bind attempt was not
-elaborated by ModelSim and was replaced with a separate wrapper adapter.
-No result here is claimed as functional coverage or protocol compliance.
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/run_amba.ps1 -OutputDir C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\amba-committed-v2-2026-11-06
+```
+
+ModelSim Intel FPGA Starter Edition
+`vsim 2020.1 Simulator 2020.02 Feb 28 2020` ran a clean worktree.
+All **nine required suites passed**; aggregate exit **0**. Each simulator
+process exited 0 and its log had zero simulator errors and warnings. Exact
+DUT commits, elapsed times and log paths are in
+`reports/committed-2026-11-06/results.json`.
+
+| Suite | Recorded result |
+| --- | ---: |
+| APB real DUT | 256 transfers, 452 checks, 0 monitor violations |
+| APB missing-setup negative | 1 violation detected |
+| APB configurable responder | 7 transfers, 13 checks, 14 wait edges |
+| AHB-Lite real DUT | 67 accepted addresses, 119 checks, 0 monitor violations |
+| AHB-Lite stalled-control negative | 2 violations detected |
+| AXI4-Lite real DUT | 26 writes, 34 reads, 98 checks, 0 monitor violations |
+| AXI4-Lite stalled-AW negative | 2 violations detected |
+| AXI4 DMA plus passive monitor | 25 DMA cases, 824,446 byte/model comparisons; post-reset monitor observed 21 read and 21 write bursts, 315 accepted beats each |
+| AXI4 4 KiB-crossing negative | 1 violation detected |
+
+The negative tests require their injected violation to be detected; they do
+not count a protocol violation as a positive DUT result. An additional
+disposable commit `5e8511a0711137cc4265c04137d9ea070890dc80` inverted
+the APB oracle comparison. Its simulation logged
+`Fatal: APB read index=0 got=00000000 expected=00000000` and one simulator
+error. The AMBA runner marked the suite `FAIL` and returned aggregate exit
+**1**, even though that ModelSim invocation returned process exit 0. The
+clean source was never changed by this fault.
+
+The copied portfolio runner was also executed before this milestone:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/run_portfolio_regression.ps1 -OutputDir C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-amba-milestone-2026-11-06
+```
+
+All nine existing mandatory project suites passed, aggregate exit **0**.
+That run does not count the AMBA suites a second time. The original
+licence-dependent ALU/APB advanced environments remain `NOT RUN`.
+
+The published clean-clone result will be recorded after publication. No
+functional coverage percentage, complete AMBA protocol compliance, UVM,
+synthesis, timing, FPGA, or hardware result is claimed.

@@ -1,0 +1,16 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit apb_monitor_negative -do "run -all; quit -code 0" 
+# Start time: 05:01:58 on Nov 06,2026
+# Loading sv_std.std
+# Loading work.apb_monitor_negative
+# Loading work.apb_monitor
+# run -all
+# APB_MONITOR_VIOLATION missing/unstable setup
+# AMBA_APB_NEGATIVE_PASS detected=1
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/standalone/AMBA-Protocol-Verification/tb/apb_monitor_negative.sv(20)
+#    Time: 50 ns  Iteration: 1  Instance: /apb_monitor_negative
+# End time: 05:02:00 on Nov 06,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
