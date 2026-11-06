@@ -61,3 +61,12 @@ change does not modify the tested checker, driver, or adapter source.
 
 No functional coverage percentage, complete AMBA protocol compliance, UVM,
 synthesis, timing, FPGA, or hardware result is claimed.
+
+## Corrective response-order run — 7 November 2026
+
+Clean source `e2f72f4391aa750d761e99ef8c3009e8af2c47e1` ran
+`powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/run_amba.ps1 -OutputDir build/corrective-amba-committed-v2-2026-11-07` with ModelSim Intel FPGA Starter Edition `vsim 2020.1 Simulator 2020.02 Feb 28 2020`. All **11 internal simulations passed**, each simulator exit 0, aggregate and wrapper exit **0**; their compile and simulation logs reported zero errors and warnings. Raw logs and [JSON](../reports/corrective-2026-11-07/amba-committed/results.json) are retained separately from historical evidence.
+
+The unchanged APB, responder, AHB-Lite, and AXI4-Lite adapter checks remained 452, 13, 119, and 98. The existing AW instability and page-crossing detectors still reported 2 and 1 detected violations. Two new negative simulations each exercised four response-order scenarios: early BVALID held with BREADY low, early RVALID held with RREADY low, and same-edge B and R dependencies. Each reported `scenarios=4`; the checks use transaction state from before the edge. The corrected DMA adapter at pinned commit `be66a550fd74f0f85d73940f5ade15f1691b083b` passed **27 cases and 925,460 checks**, including legal W-before-AW acceptance; the passive bounded monitor found zero violations. Its final-segment marker is 21 read and 21 write bursts, 315 beats each because the DMA bench resets the monitor between cases. That marker is not a total across 27 cases. The two earlier AXI negative suites remain distinct from the two new response-order suites.
+
+These are bounded monitor and reference-model checks. They do not establish full AXI or AMBA compliance or measured coverage.

@@ -11,8 +11,9 @@ address; the AXI4 adapter reuses the DMA bench's deterministic stall/error
 responder and independent byte-memory oracle.
 
 The monitors count accepted transfers and detect selected illegal sequencing,
-unstable payloads under backpressure, unmatched responses, invalid bounded
-bursts, 4 KiB crossings, and last-beat errors. Four negative tests inject
+unstable payloads under backpressure, unmatched responses even while READY
+is low, legal write-data-before-address ordering, invalid bounded bursts,
+4 KiB crossings, and last-beat errors. Six negative tests inject
 specific violations and require the same monitors to detect them. The
 positive adapters use independent memory/reference models (or, for AXI4,
 the DMA project's independent byte-memory oracle) and compare observed
@@ -29,12 +30,13 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/run_amba.ps1 -Ou
 ```
 
 The runner clones four pinned DUT revisions, compiles each adapter with its
-separate monitor, executes nine simulations with 120-second timeouts, rejects
+separate monitor, executes eleven simulations with 120-second timeouts, rejects
 fatal/error logs even when a simulator exit happens to be zero, and writes
 `results.json`. Any failed, blocked, or unexecuted required suite returns
 nonzero. `scripts/run_portfolio_regression.ps1` and
-`scripts/portfolio_suites.json` also retain the established nine-suite
-portfolio regression entry point.
+`scripts/portfolio_suites.json` provide the locked eleven-project-suite
+portfolio regression entry point. Its [locked revisions, raw results and
+reproduction command](docs/PORTFOLIO_REGRESSION.md) are documented separately.
 
 ## Status and limits
 

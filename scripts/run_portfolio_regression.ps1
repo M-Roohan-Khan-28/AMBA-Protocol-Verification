@@ -18,6 +18,23 @@ $inventory = Get-Content -LiteralPath $InventoryPath -Raw -Encoding UTF8 | Conve
 if ($inventory.Count -eq 0) { throw 'Suite inventory is empty' }
 $names = @($inventory | ForEach-Object { $_.name })
 if (($names | Select-Object -Unique).Count -ne $names.Count) { throw 'Duplicate suite names' }
+foreach ($suite in $inventory) {
+    if ($suite.revision -notmatch '^[0-9a-f]{40}$') { throw "Missing full SHA lock: $($suite.name)" }
+}
+
+$runnerRevision = $null
+$runnerScriptRevision = $null
+$inventoryRevision = $null
+$runnerDirty = $true
+if (Get-Command git -ErrorAction SilentlyContinue) {
+    $runnerRevision = (& git -C $root rev-parse HEAD 2>$null | Out-String).Trim()
+    if ($runnerRevision -notmatch '^[0-9a-f]{40}$') { $runnerRevision = $null }
+    $runnerScriptRevision = (& git -C $root log -1 --format=%H -- scripts/run_portfolio_regression.ps1 2>$null | Out-String).Trim()
+    $inventoryRevision = (& git -C $root log -1 --format=%H -- scripts/portfolio_suites.json 2>$null | Out-String).Trim()
+    $runnerDirty = [bool](@(git -C $root status --porcelain).Count)
+}
+$runnerScriptSha256 = (Get-FileHash -LiteralPath $PSCommandPath -Algorithm SHA256).Hash
+$inventorySha256 = (Get-FileHash -LiteralPath $InventoryPath -Algorithm SHA256).Hash
 
 $simulator = $null
 $toolsAvailable = $true
@@ -54,6 +71,8 @@ foreach ($suite in $inventory) {
         status = 'NOT RUN'
         reason = ''
         source_revision = $null
+        expected_revision = $suite.revision
+        revision_match = $false
         command = $null
         simulator_version = $simulator
         seed = $suite.seed
@@ -82,10 +101,16 @@ foreach ($suite in $inventory) {
     $work = Join-Path $suiteDir 'source'
     $source = if ($SourceRoot) { Join-Path $SourceRoot $suite.repository } else { $result.repository_url + '.git' }
     try {
-        & git clone --quiet --branch main --no-hardlinks $source $work 2>&1 | Out-File -FilePath (Join-Path $suiteDir 'clone.log')
+        & git -c core.longpaths=true clone --quiet --no-hardlinks $source $work 2>&1 | Out-File -FilePath (Join-Path $suiteDir 'clone.log')
         if ($LASTEXITCODE -ne 0) { throw "git clone exited $LASTEXITCODE" }
+        & git -C $work checkout --quiet --detach $suite.revision 2>&1 | Out-File -FilePath (Join-Path $suiteDir 'checkout.log')
+        if ($LASTEXITCODE -ne 0) { throw "Locked checkout failed: $($suite.revision)" }
         $result.source_revision = (& git -C $work rev-parse HEAD).Trim()
         if ($LASTEXITCODE -ne 0) { throw 'Cannot read source revision' }
+        $result.revision_match = ($result.source_revision -eq $suite.revision)
+        if (-not $result.revision_match) {
+            throw "Revision mismatch expected=$($suite.revision) observed=$($result.source_revision)"
+        }
     } catch {
         $result.status = 'BLOCKED'; $result.reason = "Source clone failed: $($_.Exception.Message)"
         $results += [pscustomobject]$result
@@ -98,7 +123,7 @@ foreach ($suite in $inventory) {
         continue
     }
     $arguments = "-NoProfile -ExecutionPolicy Bypass -File `"$script`""
-    if ($suite.mode -in @('portable', 'axi', 'dma')) {
+    if ($suite.mode -in @('portable', 'axi', 'dma', 'amba', 'coherent')) {
         $arguments += " -OutputDir `"$(Join-Path $suiteDir 'output')`""
     }
     $result.command = "powershell.exe $arguments"
@@ -147,10 +172,29 @@ foreach ($suite in $inventory) {
                 $dmaResult = Get-Content -LiteralPath $dmaResultPath -Raw | ConvertFrom-Json
                 if ($dmaResult.status -ne 'PASS' -or $dmaResult.dirty_source -or
                     $dmaResult.simulator_exit_code -ne 0 -or $dmaResult.wrapper_exit_code -ne 0 -or
-                    $dmaResult.checks -ne 824446 -or $dmaResult.cases -ne 25 -or
+                    $dmaResult.checks -ne 925460 -or $dmaResult.cases -ne 27 -or
                     $dmaResult.source_revision -ne $result.source_revision) {
                     throw 'DMA result JSON disagrees with clean source or expected results'
                 }
+            }
+            'amba' {
+                $ambaPath = Join-Path $suiteDir 'output\results.json'
+                if (-not (Test-Path -LiteralPath $ambaPath)) { throw 'Missing AMBA results JSON' }
+                $amba = Get-Content -LiteralPath $ambaPath -Raw | ConvertFrom-Json
+                if ($amba.aggregate_exit_code -ne 0 -or $amba.dirty_source -or
+                    $amba.source_revision -ne $result.source_revision -or
+                    @($amba.results).Count -ne [int]$suite.expected_count -or
+                    @($amba.results | Where-Object status -ne 'PASS').Count -ne 0) {
+                    throw 'AMBA results JSON reports failed, missing, or dirty source'
+                }
+                foreach ($entry in $amba.results) {
+                    if ($entry.simulator_exit_code -ne 0) { throw "AMBA simulator exit: $($entry.name)" }
+                    $log = Test-SimulationLog $entry.simulation_log
+                    if ($log -notmatch 'AMBA_\w+_PASS|DMA_REGRESSION_PASS') {
+                        throw "AMBA result marker missing: $($entry.name)"
+                    }
+                }
+                $primary = "AMBA_REGRESSION_PASS suites=$(@($amba.results).Count)"
             }
             'soc' {
                 $primary = Get-Content -LiteralPath (Join-Path $work 'logs\regression_summary.log') -Raw
@@ -160,6 +204,25 @@ foreach ($suite in $inventory) {
                     $testLog = Join-Path $work ("logs\{0}.log" -f $entry.Groups[1].Value)
                     $null = Test-SimulationLog $testLog
                 }
+            }
+            'coherent' {
+                $primary = Test-SimulationLog (Join-Path $suiteDir 'output\simulation.log')
+                $null = Test-SimulationLog (Join-Path $suiteDir 'output\program.log')
+                $resultPath = Join-Path $suiteDir 'output\results.json'
+                if (-not (Test-Path -LiteralPath $resultPath)) { throw 'Missing coherent result JSON' }
+                $coherent = Get-Content -LiteralPath $resultPath -Raw | ConvertFrom-Json
+                if ($coherent.status -ne 'PASS' -or $coherent.source_revision -ne $result.source_revision -or
+                    $coherent.compile_exit -ne 0 -or $coherent.simulation_exit -ne 0 -or
+                    $coherent.cases -ne 71 -or $coherent.checks -ne 1477 -or
+                    $coherent.accepted -ne 82 -or $coherent.completed -ne 81 -or
+                    $coherent.aborted -ne 1 -or $coherent.contention_waits -ne 26 -or
+                    $coherent.program_simulation_exit -ne 0 -or $coherent.program_checks -ne 135 -or
+                    $coherent.program_accepted -ne 6 -or $coherent.program_completed -ne 6 -or
+                    $coherent.concurrent_simulation_exit -ne 0 -or $coherent.concurrent_checks -ne 106 -or
+                    $coherent.concurrent_simultaneous -lt 1 -or $coherent.concurrent_busy_waits -lt 2) {
+                    throw 'Coherent result JSON disagrees with tested source or required counts'
+                }
+                $null = Test-SimulationLog (Join-Path $suiteDir 'output\concurrent.log')
             }
             default { throw "Unknown suite mode: $($suite.mode)" }
         }
@@ -186,11 +249,20 @@ foreach ($suite in $inventory) {
 
 $aggregateExit = 0
 if (@($results | Where-Object { $_.required -and $_.status -ne 'PASS' }).Count -gt 0) { $aggregateExit = 1 }
+if (-not $runnerRevision -or $runnerDirty -or
+    $runnerScriptRevision -notmatch '^[0-9a-f]{40}$' -or
+    $inventoryRevision -notmatch '^[0-9a-f]{40}$') { $aggregateExit = 1 }
 $summary = [ordered]@{
     generated_at = (Get-Date).ToString('o')
     inventory = [IO.Path]::GetFullPath($InventoryPath)
     source_root = $SourceRoot
     simulator_version = $simulator
+    runner_revision = $runnerRevision
+    runner_script_revision = $runnerScriptRevision
+    inventory_revision = $inventoryRevision
+    runner_script_sha256 = $runnerScriptSha256
+    inventory_sha256 = $inventorySha256
+    runner_dirty = $runnerDirty
     aggregate_exit_code = $aggregateExit
     results = $results
 }

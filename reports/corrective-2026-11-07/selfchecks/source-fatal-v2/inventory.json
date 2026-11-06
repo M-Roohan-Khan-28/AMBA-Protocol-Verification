@@ -1,0 +1,16 @@
+﻿[
+    {
+        "name":  "axi4-dma-bounded",
+        "repository":  "AXI4-DMA-Subsystem",
+        "required":  true,
+        "enabled":  true,
+        "script":  "scripts/run_regression.ps1",
+        "mode":  "dma",
+        "timeout_seconds":  180,
+        "seed":  "0x28A6BEEF",
+        "count_kind":  "cases",
+        "pass_regex":  "DMA_REGRESSION_PASS cases=(\\d+) checks=925460 seed=0x28A6BEEF",
+        "expected_count":  27,
+        "revision":  "422469606a2efd68983aca35354eac52368aa6fa"
+    }
+]

@@ -1,0 +1,35 @@
+﻿{
+    "generated_at":  "2026-11-07T03:35:39.8905389+05:00",
+    "inventory":  "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\corrective-selfcheck-inventories-2026-11-07\\source-fatal.json",
+    "source_root":  "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\corrective-selfcheck-sources-2026-11-07",
+    "simulator_version":  "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020",
+    "runner_revision":  "0f126b0503dd1688bc805cc00e0c847cded95988",
+    "runner_script_revision":  "0f126b0503dd1688bc805cc00e0c847cded95988",
+    "inventory_revision":  "0f126b0503dd1688bc805cc00e0c847cded95988",
+    "runner_script_sha256":  "E981445DA8F2CF23EF92489FD72872876B13023F692BD207E18DAE7508BF47EB",
+    "inventory_sha256":  "D0E0FF9C61D371E0AFD6AA1EDE9A560E0494F742ABAFFA4CDE4F3DC037164A07",
+    "runner_dirty":  false,
+    "aggregate_exit_code":  1,
+    "results":  [
+                    {
+                        "name":  "axi4-dma-bounded",
+                        "repository":  "AXI4-DMA-Subsystem",
+                        "repository_url":  "https://github.com/M-Roohan-Khan-28/AXI4-DMA-Subsystem",
+                        "required":  true,
+                        "status":  "FAIL",
+                        "reason":  "Runner exited 1",
+                        "source_revision":  "422469606a2efd68983aca35354eac52368aa6fa",
+                        "expected_revision":  "422469606a2efd68983aca35354eac52368aa6fa",
+                        "revision_match":  true,
+                        "command":  "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\test-runs\\portfolio-corrective-selfcheck-source-fatal-v2-2026-11-07\\axi4-dma-bounded\\source\\scripts\\run_regression.ps1\" -OutputDir \"C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\test-runs\\portfolio-corrective-selfcheck-source-fatal-v2-2026-11-07\\axi4-dma-bounded\\output\"",
+                        "simulator_version":  "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020",
+                        "seed":  "0x28A6BEEF",
+                        "count_kind":  "cases",
+                        "count":  null,
+                        "exit_code":  1,
+                        "elapsed_seconds":  2.51,
+                        "log_path":  "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\test-runs\\portfolio-corrective-selfcheck-source-fatal-v2-2026-11-07\\axi4-dma-bounded\\console.log",
+                        "timeout_seconds":  180
+                    }
+                ]
+}

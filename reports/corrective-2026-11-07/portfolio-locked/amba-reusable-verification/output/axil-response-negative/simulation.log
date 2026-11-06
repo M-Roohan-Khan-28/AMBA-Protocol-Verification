@@ -1,0 +1,22 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit axi_lite_response_negative -do "run -all; quit -code 0" 
+# Start time: 03:31:53 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.axi_lite_response_negative
+# Loading work.axi_lite_monitor
+# run -all
+# AXIL_MONITOR_VIOLATION count=1
+# AXIL_MONITOR_VIOLATION count=1
+# AXIL_MONITOR_VIOLATION count=1
+# AXIL_MONITOR_VIOLATION count=1
+# AXIL_MONITOR_VIOLATION count=1
+# AXIL_MONITOR_VIOLATION count=1
+# AXIL_MONITOR_VIOLATION count=2
+# AMBA_AXIL_RESPONSE_NEGATIVE_PASS scenarios=4 violations=2
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/test-runs/portfolio-corrective-remote-clones-2026-11-07/amba-reusable-verification/source/tb/axi_lite_response_negative.sv(31)
+#    Time: 130 ns  Iteration: 1  Instance: /axi_lite_response_negative
+# End time: 03:31:54 on Nov 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

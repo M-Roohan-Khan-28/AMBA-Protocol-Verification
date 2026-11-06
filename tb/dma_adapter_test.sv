@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
-// Adapts the published DMA bench to the separate reusable monitor.
-// Its byte-memory oracle, RTL, and original testbench are unchanged.
+// Adapts the pinned corrected DMA bench to the separate reusable monitor.
+// The DMA's independent byte-memory oracle remains in that source checkout.
 module dma_adapter_test;
     tb_dma_portable base();
     int read_bursts,write_bursts,read_beats,write_beats,violations;

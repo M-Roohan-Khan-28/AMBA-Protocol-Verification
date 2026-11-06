@@ -27,8 +27,10 @@ module axi_lite_monitor (
             if (b_stall && (!bvalid || bresp !== bresp_hold)) bad++;
             if (ar_stall && (!arvalid || araddr !== ar_hold)) bad++;
             if (r_stall && (!rvalid || rdata !== r_hold || rresp !== rresp_hold)) bad++;
-            if (bvalid && bready && (b_count >= aw_count || b_count >= w_count)) bad++;
-            if (rvalid && rready && r_count >= ar_count) bad++;
+            // Eligibility is checked when VALID appears, including backpressure.
+            // The nonblocking counters below still hold pre-edge acceptance state.
+            if (bvalid && (b_count >= aw_count || b_count >= w_count)) bad++;
+            if (rvalid && r_count >= ar_count) bad++;
             if (bad != 0) begin
                 violations <= violations + bad;
                 $display("AXIL_MONITOR_VIOLATION count=%0d",bad);

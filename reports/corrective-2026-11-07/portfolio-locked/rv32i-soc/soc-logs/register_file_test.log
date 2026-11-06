@@ -1,0 +1,15 @@
+﻿Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit register_file_test -do "scripts/batch.do" 
+# Start time: 03:29:52 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.register_file_test
+# Loading work.register_file
+# do scripts/batch.do
+# PASS register_file 32 registers, x0, write inhibit, reset
+# ** Note: $finish    : tb/tests/register_file_test.sv(20)
+#    Time: 361 ns  Iteration: 0  Instance: /register_file_test
+# End time: 03:29:53 on Nov 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

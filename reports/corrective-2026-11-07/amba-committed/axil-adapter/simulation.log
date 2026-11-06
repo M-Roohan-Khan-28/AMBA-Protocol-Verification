@@ -1,0 +1,22 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit axi_lite_adapter_test -do "run -all; quit -code 0" 
+# Start time: 03:21:03 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.amba_transactions
+# Loading work.axi_lite_adapter_test
+# Loading work.axi4_lite_memory_top
+# Loading work.axi_lite_if
+# Loading work.axi_lite_master
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_lite_request_driver
+# Loading work.axi_lite_monitor
+# run -all
+# AMBA_AXIL_PASS writes=26 reads=34 checks=98 violations=0
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/corrective-2026-11-07/AMBA-Protocol-Verification/tb/axi_lite_adapter_test.sv(71)
+#    Time: 3370 ns  Iteration: 1  Instance: /axi_lite_adapter_test
+# End time: 03:21:04 on Nov 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

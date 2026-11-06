@@ -1,0 +1,42 @@
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 03:28:20 on Nov 07,2026
+vlog -sv -f sim/filelist.f 
+-- Compiling interface apb_if
+-- Compiling module apb_slave_ram
+-- Compiling module tb_apb_modport
+
+Top level modules:
+	tb_apb_modport
+End time: 03:28:20 on Nov 07,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit tb_apb_modport -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 03:28:22 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.tb_apb_modport
+# Loading work.apb_if
+# Loading work.apb_slave_ram
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# WRITE PASS : ADDR=00 DATA=726f6f68
+# WRITE PASS : ADDR=04 DATA=616e2020
+# READ : ADDR=00 DATA=726f6f68 ERROR=0
+# READ : ADDR=04 DATA=616e2020 ERROR=0
+# PASS : FIRST ROOHAN DATA CORRECT
+# PASS : SECOND ROOHAN DATA CORRECT
+# 
+# -----------------------------------
+# ROOHAN PART 1 = 726f6f68
+# ROOHAN PART 2 = 616e2020
+# -----------------------------------
+# TOTAL PASSED = 2
+# TOTAL FAILED = 0
+# ALL APB TESTS PASSED
+# ** Note: $finish    : tb/tb_top.sv(341)
+#    Time: 170 ns  Iteration: 0  Instance: /tb_apb_modport
+# End time: 03:28:22 on Nov 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

@@ -25,6 +25,9 @@ module axi4_burst_monitor #(parameter bit FATAL=1) (
     logic [63:0] rdata_hold;
     logic rlast_hold;
     int expected_read, expected_write, received_read, received_write;
+    int early_write_count;
+    bit early_wlast;
+    bit pre_read_active, pre_write_complete;
     task automatic bad(input string reason);
         violations=violations+1;
         $display("AXI4_MONITOR_VIOLATION %s",reason);
@@ -36,7 +39,10 @@ module axi4_burst_monitor #(parameter bit FATAL=1) (
             aw_stall=0;ar_stall=0;w_stall=0;b_stall=0;r_stall=0;
             read_active=0;write_active=0;
             expected_read=0;expected_write=0;received_read=0;received_write=0;
+            early_write_count=0;early_wlast=0;
         end else begin
+            pre_read_active=read_active;
+            pre_write_complete=write_active && received_write==expected_write;
             if(aw_stall && (!awvalid || awaddr !== aw_hold || awlen !== awlen_hold ||
                             awid !== awid_hold || awsize !== awsize_hold ||
                             awburst !== awburst_hold))
@@ -53,6 +59,11 @@ module axi4_burst_monitor #(parameter bit FATAL=1) (
             if(r_stall && (!rvalid || rid !== rid_hold || rdata !== rdata_hold ||
                            rresp !== rresp_hold || rlast !== rlast_hold))
                 bad("R changed while stalled");
+            // Use pre-edge state: a request and its response cannot establish
+            // dependency on the same edge, even if READY is low.
+            if(rvalid && !pre_read_active) bad("RVALID before AR acceptance");
+            if(bvalid && (!pre_write_complete || bid!=0))
+                bad("BVALID before AW/W completion or wrong ID");
             aw_stall=awvalid&&!awready;
             if(aw_stall) begin
                 aw_hold=awaddr; awlen_hold=awlen; awid_hold=awid;
@@ -80,8 +91,7 @@ module axi4_burst_monitor #(parameter bit FATAL=1) (
                 read_bursts++;
             end
             if(rvalid&&rready) begin
-                if(!read_active) bad("R without AR");
-                else begin
+                if(pre_read_active) begin
                     if(rid!=0 || rlast !== (received_read==expected_read-1))
                         bad("R ID/LAST mismatch");
                     received_read++; read_beats++;
@@ -93,12 +103,24 @@ module axi4_burst_monitor #(parameter bit FATAL=1) (
                 if(awid!=0 || awsize!=3 || awburst!=2'b01 || awlen>15 ||
                    awaddr[2:0]!=0 || (int'(awaddr[11:0])+(int'(awlen)+1)*8)>4096)
                     bad("unsupported or 4KiB-crossing AW");
-                write_active=1;expected_write=int'(awlen)+1;received_write=0;
+                write_active=1;expected_write=int'(awlen)+1;
+                received_write=early_write_count;
+                if(early_write_count>expected_write ||
+                   (early_wlast && early_write_count!=expected_write) ||
+                   (!early_wlast && early_write_count==expected_write))
+                    bad("W-before-AW beat count/LAST mismatch");
+                early_write_count=0;early_wlast=0;
                 write_bursts++;
             end
             if(wvalid&&wready) begin
-                if(!write_active) bad("W without AW");
-                else begin
+                if(!write_active) begin
+                    // AXI4 permits write data to arrive before its address.
+                    if(early_wlast || early_write_count>=16 || wstrb==0 ||
+                       (wstrb!=8'hFF && !wlast)) bad("invalid early W beat");
+                    early_write_count++;
+                    if(wlast) early_wlast=1;
+                    write_beats++;
+                end else begin
                     if(wlast !== (received_write==expected_write-1)) bad("WLAST mismatch");
                     if(wstrb==0 || (received_write<expected_write-1 && wstrb!=8'hFF))
                         bad("unsupported WSTRB for bounded memory DMA");
@@ -106,8 +128,6 @@ module axi4_burst_monitor #(parameter bit FATAL=1) (
                 end
             end
             if(bvalid&&bready) begin
-                if(!write_active || received_write!=expected_write || bid!=0)
-                    bad("B before complete write burst or wrong ID");
                 write_active=0;
             end
         end
