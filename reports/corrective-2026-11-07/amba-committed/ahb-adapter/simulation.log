@@ -1,0 +1,18 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit ahb_adapter_test -do "run -all; quit -code 0" 
+# Start time: 03:20:57 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.amba_transactions
+# Loading work.ahb_adapter_test
+# Loading work.ahb_lite_slave_ram
+# Loading work.ahb_lite_master_driver
+# Loading work.ahb_lite_monitor
+# run -all
+# AMBA_AHB_PASS addresses=67 checks=119 violations=0
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/corrective-2026-11-07/AMBA-Protocol-Verification/tb/ahb_adapter_test.sv(63)
+#    Time: 2060 ns  Iteration: 1  Instance: /ahb_adapter_test
+# End time: 03:20:58 on Nov 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
