@@ -1,0 +1,17 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit axi_lite_monitor_negative -do "run -all; quit -code 0" 
+# Start time: 05:14:23 on Nov 06,2026
+# Loading sv_std.std
+# Loading work.axi_lite_monitor_negative
+# Loading work.axi_lite_monitor
+# run -all
+# AXIL_MONITOR_VIOLATION count=1
+# AXIL_MONITOR_VIOLATION count=1
+# AMBA_AXIL_NEGATIVE_PASS detected=2
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/published-2026-11-06/AMBA-Protocol-Verification/tb/axi_lite_monitor_negative.sv(20)
+#    Time: 60 ns  Iteration: 1  Instance: /axi_lite_monitor_negative
+# End time: 05:14:25 on Nov 06,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

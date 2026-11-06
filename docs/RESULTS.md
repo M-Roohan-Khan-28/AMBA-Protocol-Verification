@@ -45,6 +45,19 @@ All nine existing mandatory project suites passed, aggregate exit **0**.
 That run does not count the AMBA suites a second time. The original
 licence-dependent ALU/APB advanced environments remain `NOT RUN`.
 
-The published clean-clone result will be recorded after publication. No
-functional coverage percentage, complete AMBA protocol compliance, UVM,
+The published source was cloned from
+`https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git` at
+`afd551d1df46cb265661852e9e743c3c56f96ce7`, then run with:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/run_amba.ps1 -OutputDir C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\amba-published-clone-2026-11-06
+```
+
+All nine suites passed again, aggregate and wrapper exit **0**, at the
+same pinned DUT revisions and with the same observed counts above. Raw
+compile/simulation logs and JSON are in
+`reports/published-clone-2026-11-06/`. This evidence-only documentation
+change does not modify the tested checker, driver, or adapter source.
+
+No functional coverage percentage, complete AMBA protocol compliance, UVM,
 synthesis, timing, FPGA, or hardware result is claimed.
