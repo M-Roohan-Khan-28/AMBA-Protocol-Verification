@@ -103,6 +103,10 @@ foreach ($suite in $inventory) {
     try {
         & git -c core.longpaths=true clone --quiet --no-hardlinks $source $work 2>&1 | Out-File -FilePath (Join-Path $suiteDir 'clone.log')
         if ($LASTEXITCODE -ne 0) { throw "git clone exited $LASTEXITCODE" }
+        # The clone-time -c setting is not saved in the new repository. Keep
+        # it for the detached checkout, which may remove long evidence paths.
+        & git -C $work config core.longpaths true
+        if ($LASTEXITCODE -ne 0) { throw 'Cannot enable long Git paths in source clone' }
         & git -C $work checkout --quiet --detach $suite.revision 2>&1 | Out-File -FilePath (Join-Path $suiteDir 'checkout.log')
         if ($LASTEXITCODE -ne 0) { throw "Locked checkout failed: $($suite.revision)" }
         $result.source_revision = (& git -C $work rev-parse HEAD).Trim()

@@ -1,0 +1,11 @@
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 03:45:22 on Nov 07,2026
+vlog -sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-postmerge-2026-11-07\axi4-dma-bounded\source\rtl\axi4_dma_subsystem.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-postmerge-2026-11-07\axi4-dma-bounded\source\tb\tb_dma_portable.sv 
+-- Compiling module axi4_dma_subsystem
+-- Compiling module tb_dma_portable
+
+Top level modules:
+	tb_dma_portable
+End time: 03:45:22 on Nov 07,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+DMA_REGRESSION_PASS cases=27 checks=925460 seed=0x28A6BEEF revision=be66a550fd74f0f85d73940f5ade15f1691b083b dirty=False output=C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-postmerge-2026-11-07\axi4-dma-bounded\output

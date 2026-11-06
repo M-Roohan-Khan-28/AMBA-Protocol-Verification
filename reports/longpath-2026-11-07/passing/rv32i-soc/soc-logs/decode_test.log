@@ -1,0 +1,17 @@
+﻿Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit decode_test -do "scripts/batch.do" 
+# Start time: 03:50:38 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.rv32_pkg
+# Loading work.decode_test
+# Loading work.immediate_generator
+# Loading work.instruction_decoder
+# do scripts/batch.do
+# PASS immediate_generator positive/negative I S B U J and decoder
+# ** Note: $finish    : tb/tests/decode_test.sv(22)
+#    Time: 10 ns  Iteration: 0  Instance: /decode_test
+# End time: 03:50:39 on Nov 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

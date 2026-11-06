@@ -1,0 +1,67 @@
+﻿Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:21:18 on Sep 13,2026
+vlog -sv "+define+FULL_SV" -f scripts/filelist.f 
+-- Compiling package rv32_pkg
+-- Compiling module alu
+-- Importing package rv32_pkg
+-- Compiling module register_file
+** Warning: rtl/cpu/register_file.sv(17): (vlog-2186) SystemVerilog testbench feature
+(randomization, coverage or assertion) detected in the design.
+These features are only supported in Questasim.
+** Warning: rtl/cpu/register_file.sv(1): (vlog-2186) SystemVerilog testbench feature
+(randomization, coverage or assertion) detected in the design.
+These features are only supported in Questasim.
+-- Compiling module instruction_decoder
+-- Compiling module immediate_generator
+-- Compiling module control_unit
+-- Compiling module branch_unit
+-- Compiling module pc
+-- Compiling module load_store_unit
+-- Compiling module riscv_core
+** Warning: rtl/cpu/riscv_core.sv(71): (vlog-2186) SystemVerilog testbench feature
+(randomization, coverage or assertion) detected in the design.
+These features are only supported in Questasim.
+-- Compiling module instruction_memory
+-- Compiling interface axi_lite_if
+-- Compiling module sram
+-- Compiling module axi_lite_master
+-- Compiling module axi_lite_slave
+-- Compiling module riscv_soc_top
+-- Compiling module axi_delay
+-- Compiling module axi_protocol_checker
+-- Compiling package tb_pkg
+-- Compiling package cpu_tb_pkg
+-- Compiling module tb_top
+-- Importing package tb_pkg
+-- Compiling module unit_test
+-- Compiling module register_file_test
+-- Compiling module decode_test
+-- Compiling module control_test
+-- Compiling module cpu_test
+-- Compiling module sram_test
+-- Compiling module axi_slave_test
+-- Compiling module axi_master_test
+-- Compiling module axi_reset_test
+-- Compiling module soc_integration_test
+-- Compiling module cpu_isa_test
+-- Importing package cpu_tb_pkg
+-- Compiling module delayed_core_test
+-- Compiling module fault_test
+
+Top level modules:
+	tb_top
+	unit_test
+	register_file_test
+	decode_test
+	control_test
+	cpu_test
+	sram_test
+	axi_slave_test
+	axi_master_test
+	axi_reset_test
+	soc_integration_test
+	cpu_isa_test
+	delayed_core_test
+	fault_test
+End time: 13:21:18 on Sep 13,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 3

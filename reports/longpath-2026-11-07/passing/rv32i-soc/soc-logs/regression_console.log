@@ -1,0 +1,579 @@
+﻿Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:21:21 on Sep 13,2026
+vlog -sv "+incdir+tb" -f scripts/filelist.f 
+-- Compiling package rv32_pkg
+-- Compiling module alu
+-- Importing package rv32_pkg
+-- Compiling module register_file
+-- Compiling module instruction_decoder
+-- Compiling module immediate_generator
+-- Compiling module control_unit
+-- Compiling module branch_unit
+-- Compiling module pc
+-- Compiling module load_store_unit
+-- Compiling module riscv_core
+-- Compiling module instruction_memory
+-- Compiling interface axi_lite_if
+-- Compiling module sram
+-- Compiling module axi_lite_master
+-- Compiling module axi_lite_slave
+-- Compiling module riscv_soc_top
+-- Compiling module axi_delay
+-- Compiling module axi_protocol_checker
+-- Compiling package tb_pkg
+-- Compiling package cpu_tb_pkg
+-- Compiling module tb_top
+-- Importing package tb_pkg
+-- Compiling module unit_test
+-- Compiling module register_file_test
+-- Compiling module decode_test
+-- Compiling module control_test
+-- Compiling module cpu_test
+-- Compiling module sram_test
+-- Compiling module axi_slave_test
+-- Compiling module axi_master_test
+-- Compiling module axi_reset_test
+-- Compiling module soc_integration_test
+-- Compiling module cpu_isa_test
+-- Importing package cpu_tb_pkg
+-- Compiling module delayed_core_test
+-- Compiling module fault_test
+
+Top level modules:
+	tb_top
+	unit_test
+	register_file_test
+	decode_test
+	control_test
+	cpu_test
+	sram_test
+	axi_slave_test
+	axi_master_test
+	axi_reset_test
+	soc_integration_test
+	cpu_isa_test
+	delayed_core_test
+	fault_test
+End time: 13:21:22 on Sep 13,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit unit_test -do "scripts/batch.do" 
+# Start time: 13:21:23 on Sep 13,2026
+# Loading sv_std.std
+# Loading work.rv32_pkg
+# Loading work.unit_test
+# Loading work.alu
+# do scripts/batch.do
+# PASS ALU checks=10
+# ** Note: $finish    : tb/tests/unit_test.sv(24)
+#    Time: 10 ns  Iteration: 0  Instance: /unit_test
+# End time: 13:21:24 on Sep 13,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit register_file_test -do "scripts/batch.do" 
+# Start time: 13:21:25 on Sep 13,2026
+# Loading sv_std.std
+# Loading work.register_file_test
+# Loading work.register_file
+# do scripts/batch.do
+# PASS register_file 32 registers, x0, write inhibit, reset
+# ** Note: $finish    : tb/tests/register_file_test.sv(20)
+#    Time: 361 ns  Iteration: 0  Instance: /register_file_test
+# End time: 13:21:26 on Sep 13,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit decode_test -do "scripts/batch.do" 
+# Start time: 13:21:27 on Sep 13,2026
+# Loading sv_std.std
+# Loading work.rv32_pkg
+# Loading work.decode_test
+# Loading work.immediate_generator
+# Loading work.instruction_decoder
+# do scripts/batch.do
+# PASS immediate_generator positive/negative I S B U J and decoder
+# ** Note: $finish    : tb/tests/decode_test.sv(22)
+#    Time: 10 ns  Iteration: 0  Instance: /decode_test
+# End time: 13:21:28 on Sep 13,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit control_test -do "scripts/batch.do" 
+# Start time: 13:21:29 on Sep 13,2026
+# Loading sv_std.std
+# Loading work.rv32_pkg
+# Loading work.control_test
+# Loading work.control_unit
+# Loading work.branch_unit
+# do scripts/batch.do
+# PASS control legal/illegal decode and signed/unsigned branches
+# ** Note: $finish    : tb/tests/control_test.sv(33)
+#    Time: 30 ns  Iteration: 0  Instance: /control_test
+# End time: 13:21:30 on Sep 13,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit cpu_test -do "scripts/batch.do" 
+# Start time: 13:21:31 on Sep 13,2026
+# Loading sv_std.std
+# Loading work.cpu_test
+# Loading work.instruction_memory
+# Loading work.rv32_pkg
+# Loading work.riscv_core
+# Loading work.pc
+# Loading work.instruction_decoder
+# Loading work.immediate_generator
+# Loading work.control_unit
+# Loading work.register_file
+# Loading work.alu
+# Loading work.branch_unit
+# Loading work.load_store_unit
+# do scripts/batch.do
+# PASS CPU without AXI arithmetic, taken branch and JAL
+# ** Note: $finish    : tb/tests/cpu_test.sv(26)
+#    Time: 150 ns  Iteration: 1  Instance: /cpu_test
+# End time: 13:21:32 on Sep 13,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit sram_test -do "scripts/batch.do" 
+# Start time: 13:21:33 on Sep 13,2026
+# Loading sv_std.std
+# Loading work.sram_test
+# Loading work.sram
+# do scripts/batch.do
+# PASS SRAM checks=20 all 16 WSTRB patterns, boundaries, reset retention
+# ** Note: $finish    : tb/tests/sram_test.sv(33)
+#    Time: 1140 ns  Iteration: 1  Instance: /sram_test
+# End time: 13:21:34 on Sep 13,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit axi_slave_test -do "scripts/batch.do" 
+# Start time: 13:21:35 on Sep 13,2026
+# Loading sv_std.std
+# Loading work.axi_slave_test
+# Loading work.axi_lite_if
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# do scripts/batch.do
+# PASS AXI slave checks=58 AW-first W-first simultaneous, response stalls, WSTRB, errors
+# ** Note: $finish    : tb/tests/axi_slave_test.sv(59)
+#    Time: 4330 ns  Iteration: 1  Instance: /axi_slave_test
+# End time: 13:21:36 on Sep 13,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit axi_master_test -do "scripts/batch.do" 
+# Start time: 13:21:37 on Sep 13,2026
+# Loading sv_std.std
+# Loading work.axi_master_test
+# Loading work.axi_lite_if
+# Loading work.axi_lite_master
+# Loading work.axi_delay
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# do scripts/batch.do
+# PASS AXI master/slave SRAM 26 transactions with all five channel delays and errors
+# ** Note: $finish    : tb/tests/axi_master_test.sv(36)
+#    Time: 5090 ns  Iteration: 1  Instance: /axi_master_test
+# End time: 13:21:38 on Sep 13,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit axi_reset_test -do "scripts/batch.do" 
+# Start time: 13:21:39 on Sep 13,2026
+# Loading sv_std.std
+# Loading work.axi_reset_test
+# Loading work.axi_lite_if
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# do scripts/batch.do
+# PASS AXI partial AW/W reset, stalled B/R reset, retention, simultaneous read/write, depth=3 bounds
+# ** Note: $finish    : tb/tests/axi_reset_test.sv(68)
+#    Time: 780 ns  Iteration: 1  Instance: /axi_reset_test
+# End time: 13:21:40 on Sep 13,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit soc_integration_test "+WAVES" -do "scripts/batch.do" 
+# Start time: 13:21:41 on Sep 13,2026
+# Loading sv_std.std
+# Loading work.soc_integration_test
+# Loading work.riscv_soc_top
+# Loading work.axi_lite_if
+# Loading work.instruction_memory
+# Loading work.rv32_pkg
+# Loading work.riscv_core
+# Loading work.pc
+# Loading work.instruction_decoder
+# Loading work.immediate_generator
+# Loading work.control_unit
+# Loading work.register_file
+# Loading work.alu
+# Loading work.branch_unit
+# Loading work.load_store_unit
+# Loading work.axi_lite_master
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# do scripts/batch.do
+# CPU cycle=0 pc=00000000 ins=00a00093 rs1=x0:00000000 rs2=x10:00000000 rd=1 alu=0000000a we=1 wb=0000000a mem=0000000a store=00000000 wait=0 fault=0
+# AXI state=0 AW=01 W=01 B=00:00 AR=01 R=00:00 SRAM en=0 we=0 index=000 wd=00000000 rd=xxxxxxxx
+# CPU cycle=1 pc=00000004 ins=01400113 rs1=x0:00000000 rs2=x20:00000000 rd=2 alu=00000014 we=1 wb=00000014 mem=00000014 store=00000000 wait=0 fault=0
+# AXI state=0 AW=01 W=01 B=00:00 AR=01 R=00:00 SRAM en=0 we=0 index=000 wd=00000000 rd=xxxxxxxx
+# CPU cycle=2 pc=00000008 ins=002081b3 rs1=x1:0000000a rs2=x2:00000014 rd=3 alu=0000001e we=1 wb=0000001e mem=0000001e store=00000014 wait=0 fault=0
+# AXI state=0 AW=01 W=01 B=00:00 AR=01 R=00:00 SRAM en=0 we=0 index=000 wd=00000000 rd=xxxxxxxx
+# CPU cycle=3 pc=0000000c ins=10000237 rs1=x0:00000000 rs2=x0:00000000 rd=4 alu=00000000 we=1 wb=10000000 mem=00000000 store=00000000 wait=0 fault=0
+# AXI state=0 AW=01 W=01 B=00:00 AR=01 R=00:00 SRAM en=0 we=0 index=000 wd=00000000 rd=xxxxxxxx
+# CPU cycle=4 pc=00000010 ins=00322023 rs1=x4:10000000 rs2=x3:0000001e rd=0 alu=10000000 we=0 wb=10000000 mem=10000000 store=0000001e wait=1 fault=0
+# AXI state=0 AW=01 W=01 B=00:00 AR=01 R=00:00 SRAM en=0 we=0 index=000 wd=00000000 rd=xxxxxxxx
+# CPU cycle=5 pc=00000010 ins=00322023 rs1=x4:10000000 rs2=x3:0000001e rd=0 alu=10000000 we=0 wb=10000000 mem=10000000 store=0000001e wait=1 fault=0
+# AXI state=1 AW=11 W=11 B=00:00 AR=01 R=00:00 SRAM en=0 we=0 index=000 wd=00000000 rd=xxxxxxxx
+# CPU cycle=6 pc=00000010 ins=00322023 rs1=x4:10000000 rs2=x3:0000001e rd=0 alu=10000000 we=0 wb=10000000 mem=10000000 store=0000001e wait=1 fault=0
+# AXI state=1 AW=00 W=00 B=01:00 AR=01 R=00:00 SRAM en=1 we=1 index=000 wd=0000001e rd=xxxxxxxx
+# CPU cycle=7 pc=00000010 ins=00322023 rs1=x4:10000000 rs2=x3:0000001e rd=0 alu=10000000 we=0 wb=10000000 mem=10000000 store=0000001e wait=1 fault=0
+# AXI state=1 AW=00 W=00 B=11:00 AR=01 R=00:00 SRAM en=0 we=0 index=000 wd=0000001e rd=xxxxxxxx
+# CPU cycle=8 pc=00000010 ins=00322023 rs1=x4:10000000 rs2=x3:0000001e rd=0 alu=10000000 we=0 wb=10000000 mem=10000000 store=0000001e wait=0 fault=0
+# AXI state=3 AW=01 W=01 B=00:00 AR=01 R=00:00 SRAM en=0 we=0 index=000 wd=0000001e rd=xxxxxxxx
+# CPU cycle=9 pc=00000014 ins=00022283 rs1=x4:10000000 rs2=x0:00000000 rd=5 alu=10000000 we=0 wb=00000000 mem=10000000 store=00000000 wait=1 fault=0
+# AXI state=0 AW=01 W=01 B=00:00 AR=01 R=00:00 SRAM en=0 we=0 index=000 wd=0000001e rd=xxxxxxxx
+# CPU cycle=10 pc=00000014 ins=00022283 rs1=x4:10000000 rs2=x0:00000000 rd=5 alu=10000000 we=0 wb=00000000 mem=10000000 store=00000000 wait=1 fault=0
+# AXI state=2 AW=01 W=01 B=00:00 AR=11 R=00:00 SRAM en=0 we=0 index=000 wd=0000001e rd=xxxxxxxx
+# CPU cycle=11 pc=00000014 ins=00022283 rs1=x4:10000000 rs2=x0:00000000 rd=5 alu=10000000 we=0 wb=00000000 mem=10000000 store=00000000 wait=1 fault=0
+# AXI state=2 AW=01 W=01 B=00:00 AR=00 R=01:00 SRAM en=1 we=0 index=000 wd=0000001e rd=xxxxxxxx
+# CPU cycle=12 pc=00000014 ins=00022283 rs1=x4:10000000 rs2=x0:00000000 rd=5 alu=10000000 we=0 wb=00000000 mem=10000000 store=00000000 wait=1 fault=0
+# AXI state=2 AW=01 W=01 B=00:00 AR=00 R=01:00 SRAM en=0 we=0 index=000 wd=0000001e rd=0000001e
+# CPU cycle=13 pc=00000014 ins=00022283 rs1=x4:10000000 rs2=x0:00000000 rd=5 alu=10000000 we=0 wb=00000000 mem=10000000 store=00000000 wait=1 fault=0
+# AXI state=2 AW=01 W=01 B=00:00 AR=00 R=11:00 SRAM en=0 we=0 index=000 wd=0000001e rd=0000001e
+# CPU cycle=14 pc=00000014 ins=00022283 rs1=x4:10000000 rs2=x0:00000000 rd=5 alu=10000000 we=1 wb=0000001e mem=10000000 store=00000000 wait=0 fault=0
+# AXI state=3 AW=01 W=01 B=00:00 AR=01 R=00:00 SRAM en=0 we=0 index=000 wd=0000001e rd=0000001e
+# PASS SOC integration x3=30 SRAM[0x10000000]=30 x5=30 writes=1 reads=1 wait_cycles=9
+# ** Note: $finish    : tb/tests/soc_integration_test.sv(30)
+#    Time: 190 ns  Iteration: 1  Instance: /soc_integration_test
+# End time: 13:21:42 on Sep 13,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit cpu_isa_test -do "scripts/batch.do" 
+# Start time: 13:21:43 on Sep 13,2026
+# Loading sv_std.std
+# Loading work.cpu_tb_pkg
+# Loading work.cpu_isa_test
+# Loading work.riscv_soc_top
+# Loading work.axi_lite_if
+# Loading work.instruction_memory
+# Loading work.rv32_pkg
+# Loading work.riscv_core
+# Loading work.pc
+# Loading work.instruction_decoder
+# Loading work.immediate_generator
+# Loading work.control_unit
+# Loading work.register_file
+# Loading work.alu
+# Loading work.branch_unit
+# Loading work.load_store_unit
+# Loading work.axi_lite_master
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# do scripts/batch.do
+# COVERAGE CPU instruction_mask=7fffffff branch_outcomes=fff retired=235
+# PASS CPU ISA program=programs/isa.hex register/writeback/PC/SRAM reference checks
+# ** Note: $finish    : tb/tests/cpu_isa_test.sv(26)
+#    Time: 2800 ns  Iteration: 1  Instance: /cpu_isa_test
+# End time: 13:21:44 on Sep 13,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit delayed_core_test -do "scripts/batch.do" 
+# Start time: 13:21:45 on Sep 13,2026
+# Loading sv_std.std
+# Loading work.cpu_tb_pkg
+# Loading work.delayed_core_test
+# Loading work.axi_lite_if
+# Loading work.instruction_memory
+# Loading work.rv32_pkg
+# Loading work.riscv_core
+# Loading work.pc
+# Loading work.instruction_decoder
+# Loading work.immediate_generator
+# Loading work.control_unit
+# Loading work.register_file
+# Loading work.alu
+# Loading work.branch_unit
+# Loading work.load_store_unit
+# Loading work.axi_lite_master
+# Loading work.axi_delay
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# do scripts/batch.do
+# PASS delayed core full ISA retired=235 waits=189 writes=4 reads=5
+# ** Note: $finish    : tb/tests/delayed_core_test.sv(39)
+#    Time: 4280 ns  Iteration: 1  Instance: /delayed_core_test
+# End time: 13:21:46 on Sep 13,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit fault_test -do "scripts/batch.do" 
+# Start time: 13:21:47 on Sep 13,2026
+# Loading sv_std.std
+# Loading work.fault_test
+# Loading work.riscv_soc_top
+# Loading work.axi_lite_if
+# Loading work.instruction_memory
+# Loading work.rv32_pkg
+# Loading work.riscv_core
+# Loading work.pc
+# Loading work.instruction_decoder
+# Loading work.immediate_generator
+# Loading work.control_unit
+# Loading work.register_file
+# Loading work.alu
+# Loading work.branch_unit
+# Loading work.load_store_unit
+# Loading work.axi_lite_master
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# do scripts/batch.do
+# PASS CPU faults cases=10 illegal, misalignment, bus errors, fetch bounds and reset recovery
+# ** Note: $finish    : tb/tests/fault_test.sv(39)
+#    Time: 940 ns  Iteration: 1  Instance: /fault_test
+# End time: 13:21:48 on Sep 13,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit tb_top -sv_seed 1 -do "scripts/batch.do" 
+# Start time: 13:21:50 on Sep 13,2026
+# Loading sv_std.std
+# Loading work.axi_lite_if
+# Loading work.tb_pkg
+# Loading work.tb_top
+# Loading work.axi_delay
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# do scripts/batch.do
+# COVERAGE AXI reads=274 writes=1312 strobes=ffff regions=1111 AW/W_orders=111 delayed_channels=11111 RAW=272 repeated_writes=16
+# PASS OOP AXI scoreboard pass_count=1586 fail_count=0 generated=1586
+# ** Note: $finish    : tb/tb_top.sv(20)
+#    Time: 176710 ns  Iteration: 2  Instance: /tb_top
+# End time: 13:21:51 on Sep 13,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit cpu_isa_test -do "scripts/batch.do" -gPROGRAM=programs/arithmetic.hex 
+# Start time: 13:21:52 on Sep 13,2026
+# Loading sv_std.std
+# Loading work.cpu_tb_pkg
+# Loading work.cpu_isa_test
+# Loading work.riscv_soc_top
+# Loading work.axi_lite_if
+# Loading work.instruction_memory
+# Loading work.rv32_pkg
+# Loading work.riscv_core
+# Loading work.pc
+# Loading work.instruction_decoder
+# Loading work.immediate_generator
+# Loading work.control_unit
+# Loading work.register_file
+# Loading work.alu
+# Loading work.branch_unit
+# Loading work.load_store_unit
+# Loading work.axi_lite_master
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# do scripts/batch.do
+# COVERAGE CPU instruction_mask=6807ffff branch_outcomes=000 retired=190
+# PASS CPU ISA program=programs/arithmetic.hex register/writeback/PC/SRAM reference checks
+# ** Note: $finish    : tb/tests/cpu_isa_test.sv(26)
+#    Time: 1940 ns  Iteration: 1  Instance: /cpu_isa_test
+# End time: 13:21:53 on Sep 13,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit cpu_isa_test -do "scripts/batch.do" -gPROGRAM=programs/branch.hex 
+# Start time: 13:21:54 on Sep 13,2026
+# Loading sv_std.std
+# Loading work.cpu_tb_pkg
+# Loading work.cpu_isa_test
+# Loading work.riscv_soc_top
+# Loading work.axi_lite_if
+# Loading work.instruction_memory
+# Loading work.rv32_pkg
+# Loading work.riscv_core
+# Loading work.pc
+# Loading work.instruction_decoder
+# Loading work.immediate_generator
+# Loading work.control_unit
+# Loading work.register_file
+# Loading work.alu
+# Loading work.branch_unit
+# Loading work.load_store_unit
+# Loading work.axi_lite_master
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# do scripts/batch.do
+# COVERAGE CPU instruction_mask=1fe00400 branch_outcomes=fff retired=31
+# PASS CPU ISA program=programs/branch.hex register/writeback/PC/SRAM reference checks
+# ** Note: $finish    : tb/tests/cpu_isa_test.sv(26)
+#    Time: 350 ns  Iteration: 1  Instance: /cpu_isa_test
+# End time: 13:21:55 on Sep 13,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit cpu_isa_test -do "scripts/batch.do" -gPROGRAM=programs/load_store.hex 
+# Start time: 13:21:56 on Sep 13,2026
+# Loading sv_std.std
+# Loading work.cpu_tb_pkg
+# Loading work.cpu_isa_test
+# Loading work.riscv_soc_top
+# Loading work.axi_lite_if
+# Loading work.instruction_memory
+# Loading work.rv32_pkg
+# Loading work.riscv_core
+# Loading work.pc
+# Loading work.instruction_decoder
+# Loading work.immediate_generator
+# Loading work.control_unit
+# Loading work.register_file
+# Loading work.alu
+# Loading work.branch_unit
+# Loading work.load_store_unit
+# Loading work.axi_lite_master
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# do scripts/batch.do
+# COVERAGE CPU instruction_mask=28180400 branch_outcomes=000 retired=16
+# PASS CPU ISA program=programs/load_store.hex register/writeback/PC/SRAM reference checks
+# ** Note: $finish    : tb/tests/cpu_isa_test.sv(26)
+#    Time: 610 ns  Iteration: 1  Instance: /cpu_isa_test
+# End time: 13:21:57 on Sep 13,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit axi_master_test -do "scripts/batch.do" -gAD=0 -gWD=7 
+# Start time: 13:21:59 on Sep 13,2026
+# Loading sv_std.std
+# Loading work.axi_master_test
+# Loading work.axi_lite_if
+# Loading work.axi_lite_master
+# Loading work.axi_delay
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# do scripts/batch.do
+# PASS AXI master/slave SRAM 26 transactions with all five channel delays and errors
+# ** Note: $finish    : tb/tests/axi_master_test.sv(36)
+#    Time: 5090 ns  Iteration: 1  Instance: /axi_master_test
+# End time: 13:21:59 on Sep 13,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit axi_master_test -do "scripts/batch.do" -gAD=0 -gWD=0 
+# Start time: 13:22:01 on Sep 13,2026
+# Loading sv_std.std
+# Loading work.axi_master_test
+# Loading work.axi_lite_if
+# Loading work.axi_lite_master
+# Loading work.axi_delay
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# do scripts/batch.do
+# PASS AXI master/slave SRAM 26 transactions with all five channel delays and errors
+# ** Note: $finish    : tb/tests/axi_master_test.sv(36)
+#    Time: 4180 ns  Iteration: 1  Instance: /axi_master_test
+# End time: 13:22:01 on Sep 13,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit tb_top -sv_seed 17 -do "scripts/batch.do" 
+# Start time: 13:22:03 on Sep 13,2026
+# Loading sv_std.std
+# Loading work.axi_lite_if
+# Loading work.tb_pkg
+# Loading work.tb_top
+# Loading work.axi_delay
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# do scripts/batch.do
+# COVERAGE AXI reads=274 writes=1312 strobes=ffff regions=1111 AW/W_orders=111 delayed_channels=11111 RAW=272 repeated_writes=16
+# PASS OOP AXI scoreboard pass_count=1586 fail_count=0 generated=1586
+# ** Note: $finish    : tb/tb_top.sv(20)
+#    Time: 177130 ns  Iteration: 2  Instance: /tb_top
+# End time: 13:22:04 on Sep 13,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit tb_top -sv_seed 2026 -do "scripts/batch.do" 
+# Start time: 13:22:05 on Sep 13,2026
+# Loading sv_std.std
+# Loading work.axi_lite_if
+# Loading work.tb_pkg
+# Loading work.tb_top
+# Loading work.axi_delay
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# do scripts/batch.do
+# COVERAGE AXI reads=274 writes=1312 strobes=ffff regions=1111 AW/W_orders=111 delayed_channels=11111 RAW=272 repeated_writes=16
+# PASS OOP AXI scoreboard pass_count=1586 fail_count=0 generated=1586
+# ** Note: $finish    : tb/tb_top.sv(20)
+#    Time: 178420 ns  Iteration: 2  Instance: /tb_top
+# End time: 13:22:06 on Sep 13,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+PASS REGRESSION 21/21 runs; finished 2026-09-13T13:22:06.5901991+05:00
