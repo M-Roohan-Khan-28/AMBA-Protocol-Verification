@@ -23,6 +23,7 @@ $sources = @(
 $suites = @(
     @{ name='apb-adapter'; source='apb'; top='apb_adapter_test'; marker='AMBA_APB_PASS transfers=256 checks=(\d+) violations=0'; expected=452 },
     @{ name='apb-negative'; source='apb'; top='apb_monitor_negative'; marker='AMBA_APB_NEGATIVE_PASS detected=(\d+)'; expected=1 },
+    @{ name='apb-responder'; source='apb'; top='apb_responder_test'; marker='AMBA_APB_RESPONDER_PASS transfers=7 checks=(\d+) waits=\d+'; expected=13 },
     @{ name='ahb-adapter'; source='ahb'; top='ahb_adapter_test'; marker='AMBA_AHB_PASS addresses=67 checks=(\d+) violations=0'; expected=119 },
     @{ name='ahb-negative'; source='ahb'; top='ahb_monitor_negative'; marker='AMBA_AHB_NEGATIVE_PASS detected=(\d+)'; expected=2 },
     @{ name='axil-adapter'; source='axil'; top='axi_lite_adapter_test'; marker='AMBA_AXIL_PASS writes=26 reads=34 checks=(\d+) violations=0'; expected=98 },
@@ -71,12 +72,23 @@ foreach ($suite in $suites) {
     $dut = $sourcePaths[$suite.source]
     $files = @()
     switch ($suite.source) {
-        'apb' { $files=@((Join-Path $dut 'rtl/design.sv'),(Join-Path $repo 'checkers/apb_monitor.sv')) }
-        'ahb' { $files=@((Join-Path $dut 'rtl/design.sv'),(Join-Path $repo 'checkers/ahb_lite_monitor.sv')) }
+        'apb' { $files=@(
+            (Join-Path $repo 'checkers/amba_transactions.sv'),
+            (Join-Path $dut 'rtl/design.sv'),
+            (Join-Path $repo 'checkers/apb_monitor.sv'),
+            (Join-Path $repo 'checkers/apb_master_driver.sv'),
+            (Join-Path $repo 'checkers/apb_ram_responder.sv')) }
+        'ahb' { $files=@(
+            (Join-Path $repo 'checkers/amba_transactions.sv'),
+            (Join-Path $dut 'rtl/design.sv'),
+            (Join-Path $repo 'checkers/ahb_lite_monitor.sv'),
+            (Join-Path $repo 'checkers/ahb_lite_master_driver.sv')) }
         'axil' { $files=@(
+            (Join-Path $repo 'checkers/amba_transactions.sv'),
             (Join-Path $dut 'rtl/axi/axi_lite_if.sv'),(Join-Path $dut 'rtl/axi/axi_lite_master.sv'),
             (Join-Path $dut 'rtl/axi/axi_lite_slave.sv'),(Join-Path $dut 'rtl/memory/sram.sv'),
-            (Join-Path $dut 'rtl/axi4_lite_memory_top.sv'),(Join-Path $repo 'checkers/axi_lite_monitor.sv')) }
+            (Join-Path $dut 'rtl/axi4_lite_memory_top.sv'),(Join-Path $repo 'checkers/axi_lite_monitor.sv'),
+            (Join-Path $repo 'checkers/axi_lite_request_driver.sv')) }
         'axi4' { $files=@(
             (Join-Path $dut 'rtl/axi4_dma_subsystem.sv'),(Join-Path $dut 'tb/tb_dma_portable.sv'),
             (Join-Path $repo 'checkers/axi4_burst_monitor.sv')) }

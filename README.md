@@ -1,9 +1,14 @@
 # AMBA Protocol Verification
 
-Reusable passive protocol monitors and separate DUT adapters for four bounded
+Reusable transaction types, portable drivers, passive protocol monitors, and
+separate DUT adapters for four bounded
 interfaces: the 64-word APB RAM, 16-word AHB-Lite RAM, 32-bit AXI4-Lite SRAM
 path, and single-channel 64-bit AXI4 DMA. The adapters run against pinned
 public source revisions; this repository does not replace or alter those DUTs.
+The APB, AHB-Lite, and AXI4-Lite adapters use typed transactions and driver
+modules. A configurable APB RAM responder exercises wait states and an error
+address; the AXI4 adapter reuses the DMA bench's deterministic stall/error
+responder and independent byte-memory oracle.
 
 The monitors count accepted transfers and detect selected illegal sequencing,
 unstable payloads under backpressure, unmatched responses, invalid bounded
@@ -24,7 +29,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/run_amba.ps1 -Ou
 ```
 
 The runner clones four pinned DUT revisions, compiles each adapter with its
-separate monitor, executes eight simulations with 120-second timeouts, rejects
+separate monitor, executes nine simulations with 120-second timeouts, rejects
 fatal/error logs even when a simulator exit happens to be zero, and writes
 `results.json`. Any failed, blocked, or unexecuted required suite returns
 nonzero. `scripts/run_portfolio_regression.ps1` and

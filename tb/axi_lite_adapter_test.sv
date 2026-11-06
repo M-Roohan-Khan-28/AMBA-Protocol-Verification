@@ -1,17 +1,19 @@
 `timescale 1ns/1ps
 module axi_lite_adapter_test;
+    import amba_transactions::*;
     localparam logic [31:0] BASE=32'h20000000;
     logic clk=0, reset_n=0;
     always #5 clk=~clk;
-    logic req_valid=0,req_write=0;
-    logic [31:0] req_addr=0,req_wdata=0;
-    logic [3:0] req_wstrb=0;
+    logic req_valid,req_write;
+    logic [31:0] req_addr,req_wdata;
+    logic [3:0] req_wstrb;
     logic req_ready,response_valid,response_error;
     logic [31:0] response_data;
     logic [31:0] oracle[0:7];
     int checks=0;
     int aw_count,w_count,b_count,ar_count,r_count,violations;
     axi4_lite_memory_top #(.BASE_ADDR(BASE),.SRAM_DEPTH(8)) dut(.*);
+    axi_lite_request_driver driver(.*);
     axi_lite_monitor mon(
         .clk(clk),.reset_n(reset_n),
         .awvalid(dut.bus.awvalid),.awready(dut.bus.awready),.awaddr(dut.bus.awaddr),
@@ -25,17 +27,16 @@ module axi_lite_adapter_test;
     task automatic transact(input bit wr,input logic[31:0] addr,
                             input logic[31:0] data,input logic[3:0] strb,
                             input bit expected_error,input logic[31:0] expected_data);
-        @(negedge clk);
-        while(!req_ready) @(negedge clk);
-        req_valid=1; req_write=wr; req_addr=addr; req_wdata=data; req_wstrb=strb;
-        @(negedge clk); req_valid=0;
-        while(!response_valid) @(negedge clk);
-        if(response_error !== expected_error)
-            $fatal(1,"AXIL response addr=%h got=%b expected=%b",addr,response_error,expected_error);
+        axi_lite_transaction_t tx;
+        axi_lite_result_t result;
+        tx.write=wr;tx.addr=addr;tx.data=data;tx.strb=strb;
+        driver.issue(tx,result);
+        if(result.error !== expected_error)
+            $fatal(1,"AXIL response addr=%h got=%b expected=%b",addr,result.error,expected_error);
         checks++;
         if(!wr && !expected_error) begin
-            if(response_data !== expected_data)
-                $fatal(1,"AXIL read addr=%h got=%h expected=%h",addr,response_data,expected_data);
+            if(result.data !== expected_data)
+                $fatal(1,"AXIL read addr=%h got=%h expected=%h",addr,result.data,expected_data);
             checks++;
         end
     endtask

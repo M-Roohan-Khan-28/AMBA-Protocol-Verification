@@ -11,7 +11,7 @@ module apb_monitor #(
     output int transfers,
     output int violations
 );
-    bit setup_seen;
+    bit setup_seen, access_wait;
     logic [ADDR_W-1:0] held_addr;
     logic [DATA_W-1:0] held_data;
     logic held_write;
@@ -19,18 +19,25 @@ module apb_monitor #(
     always @(posedge clk or negedge reset_n) begin
         if (!reset_n) begin
             setup_seen <= 0;
+            access_wait <= 0;
             held_addr <= '0;
             held_data <= '0;
             held_write <= 0;
             transfers <= 0;
             violations <= 0;
         end else if (!select) begin
-            if (enable) begin
+            if (enable || access_wait) begin
                 violations <= violations + 1;
-                $display("APB_MONITOR_VIOLATION enable without select");
+                $display("APB_MONITOR_VIOLATION select dropped during access");
             end
             setup_seen <= 0;
+            access_wait <= 0;
         end else if (!enable) begin
+            if (access_wait) begin
+                violations <= violations + 1;
+                $display("APB_MONITOR_VIOLATION enable dropped during wait");
+            end
+            access_wait <= 0;
             setup_seen <= 1;
             held_addr <= addr;
             held_write <= write;
@@ -44,6 +51,9 @@ module apb_monitor #(
             if (ready) begin
                 transfers <= transfers + 1;
                 setup_seen <= 0;
+                access_wait <= 0;
+            end else begin
+                access_wait <= 1;
             end
         end
     end

@@ -10,6 +10,12 @@ limits. The selected DUT revisions are pinned in `scripts/run_amba.ps1`.
 Monitors are passive and have flat signal ports so adapters can connect a
 SystemVerilog interface, a flat DUT, or a hierarchy without placing expected
 results in the checker. Negative tests use the same modules without DUTs.
+`amba_transactions.sv` defines typed APB, AHB-Lite, and AXI4-Lite requests
+and observations. Reusable driver modules issue those requests; adapter
+scoreboards decide expected memory data independently. The configurable APB
+responder supplies deterministic waits and an error address. The pinned DMA
+bench supplies the AXI4 memory responder with deterministic stalls and
+selectable read/write errors; it is not copied into this repository.
 
 The APB monitor is for the APB setup/access behavior of the selected DUT and
 does not check unimplemented wait-state or error behavior. The AHB-Lite monitor

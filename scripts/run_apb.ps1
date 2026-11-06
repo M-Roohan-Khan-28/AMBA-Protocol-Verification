@@ -37,7 +37,7 @@ foreach ($case in @(
     try {
         & vlib work 2>&1 | Out-File 'library.log'
         if ($LASTEXITCODE -ne 0) { throw 'vlib failed' }
-        & vlog -sv (Join-Path $dut 'rtl/design.sv') (Join-Path $repo 'checkers/apb_monitor.sv') (Join-Path $repo "tb/$($case.top).sv") 2>&1 | Out-File 'compile.log'
+        & vlog -sv (Join-Path $repo 'checkers/amba_transactions.sv') (Join-Path $dut 'rtl/design.sv') (Join-Path $repo 'checkers/apb_monitor.sv') (Join-Path $repo 'checkers/apb_master_driver.sv') (Join-Path $repo "tb/$($case.top).sv") 2>&1 | Out-File 'compile.log'
         if ($LASTEXITCODE -ne 0) { throw 'vlog failed' }
         $psi = New-Object Diagnostics.ProcessStartInfo
         $psi.FileName = (Get-Command vsim.exe).Source
