@@ -1,0 +1,14 @@
+﻿{
+    "status":  "PASS",
+    "source_revision":  "be66a550fd74f0f85d73940f5ade15f1691b083b",
+    "dirty_source":  false,
+    "simulator_version":  "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020",
+    "command":  "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/run_regression.ps1 -OutputDir \u003cfresh-directory\u003e",
+    "seed":  "0x28A6BEEF",
+    "cases":  27,
+    "checks":  925460,
+    "simulator_exit_code":  0,
+    "wrapper_exit_code":  0,
+    "elapsed_seconds":  3.21,
+    "simulation_log":  "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\test-runs\\portfolio-corrective-remote-clones-2026-11-07\\axi4-dma-bounded\\output\\simulation.log"
+}

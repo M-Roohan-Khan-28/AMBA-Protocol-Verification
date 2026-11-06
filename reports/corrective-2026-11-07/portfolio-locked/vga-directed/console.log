@@ -1,0 +1,38 @@
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 03:28:39 on Nov 07,2026
+vlog -sv -f sim/filelist.f 
+-- Compiling module vga_controller_sram
+-- Compiling module tb_vga_controller_sram
+
+Top level modules:
+	tb_vga_controller_sram
+End time: 03:28:39 on Nov 07,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit tb_vga_controller_sram -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 03:28:41 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.tb_vga_controller_sram
+# Loading work.vga_controller_sram
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS: HSYNC becomes active-low at pixel 656
+# PASS: HSYNC returns high at pixel 752
+# PASS: Visible SRAM background pixel is displayed
+# PASS: Unique DIL signature pixel is read from SRAM
+# PASS: SRAM write port updates a framebuffer location
+# PASS: VSYNC becomes active-low at line 490
+# PASS: VSYNC returns high at line 492
+# ------------------------------------------
+# TOTAL PASSED = 7
+# TOTAL FAILED = 0
+# ------------------------------------------
+# ALL VGA TESTS PASSED
+# ** Note: $finish    : tb/tb_top.sv(123)
+#    Time: 15744046 ns  Iteration: 0  Instance: /tb_vga_controller_sram
+# End time: 03:29:14 on Nov 07,2026, Elapsed time: 0:00:33
+# Errors: 0, Warnings: 0

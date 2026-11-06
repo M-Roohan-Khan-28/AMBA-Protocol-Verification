@@ -1,0 +1,35 @@
+﻿{
+    "generated_at":  "2026-11-07T03:34:16.5386317+05:00",
+    "inventory":  "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\corrective-selfcheck-inventories-2026-11-07\\missing-tool.json",
+    "source_root":  "",
+    "simulator_version":  null,
+    "runner_revision":  "0f126b0503dd1688bc805cc00e0c847cded95988",
+    "runner_script_revision":  "0f126b0503dd1688bc805cc00e0c847cded95988",
+    "inventory_revision":  "0f126b0503dd1688bc805cc00e0c847cded95988",
+    "runner_script_sha256":  "E981445DA8F2CF23EF92489FD72872876B13023F692BD207E18DAE7508BF47EB",
+    "inventory_sha256":  "F514083B278011315332E1114920049796D636B9AF9196D24B650438315FC904",
+    "runner_dirty":  false,
+    "aggregate_exit_code":  1,
+    "results":  [
+                    {
+                        "name":  "alu-portable",
+                        "repository":  "ALU-RTL-Verification",
+                        "repository_url":  "https://github.com/M-Roohan-Khan-28/ALU-RTL-Verification",
+                        "required":  true,
+                        "status":  "BLOCKED",
+                        "reason":  "Required ModelSim tools missing or unusable in C:\\unavailable-modelsim-tools",
+                        "source_revision":  null,
+                        "expected_revision":  "6d7df63ff071b083e2cdf1c11ed6c6fb8c0e57e1",
+                        "revision_match":  false,
+                        "command":  null,
+                        "simulator_version":  null,
+                        "seed":  "deterministic",
+                        "count_kind":  "checks",
+                        "count":  null,
+                        "exit_code":  null,
+                        "elapsed_seconds":  null,
+                        "log_path":  null,
+                        "timeout_seconds":  180
+                    }
+                ]
+}

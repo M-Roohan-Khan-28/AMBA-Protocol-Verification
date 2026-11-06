@@ -35,7 +35,8 @@ fatal/error logs even when a simulator exit happens to be zero, and writes
 `results.json`. Any failed, blocked, or unexecuted required suite returns
 nonzero. `scripts/run_portfolio_regression.ps1` and
 `scripts/portfolio_suites.json` provide the locked eleven-project-suite
-portfolio regression entry point.
+portfolio regression entry point. Its [locked revisions, raw results and
+reproduction command](docs/PORTFOLIO_REGRESSION.md) are documented separately.
 
 ## Status and limits
 

@@ -1,0 +1,14 @@
+﻿{
+    "name":  "alu-portable",
+    "repository":  "ALU-RTL-Verification",
+    "required":  true,
+    "enabled":  true,
+    "script":  "scripts/run_portable.ps1",
+    "mode":  "portable",
+    "timeout_seconds":  180,
+    "seed":  "deterministic",
+    "count_kind":  "checks",
+    "pass_regex":  "MARKER_THAT_CANNOT_EXIST=(\\d+)",
+    "expected_count":  1380,
+    "revision":  "6d7df63ff071b083e2cdf1c11ed6c6fb8c0e57e1"
+}

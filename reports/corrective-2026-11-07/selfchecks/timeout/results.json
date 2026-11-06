@@ -1,0 +1,35 @@
+﻿{
+    "generated_at":  "2026-11-07T03:34:21.7685798+05:00",
+    "inventory":  "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\corrective-selfcheck-inventories-2026-11-07\\timeout.json",
+    "source_root":  "",
+    "simulator_version":  "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020",
+    "runner_revision":  "0f126b0503dd1688bc805cc00e0c847cded95988",
+    "runner_script_revision":  "0f126b0503dd1688bc805cc00e0c847cded95988",
+    "inventory_revision":  "0f126b0503dd1688bc805cc00e0c847cded95988",
+    "runner_script_sha256":  "E981445DA8F2CF23EF92489FD72872876B13023F692BD207E18DAE7508BF47EB",
+    "inventory_sha256":  "ABB8E56EA58F30DDA9B1044C348F7D6E4ED1AED00FC0FCA151D9E3F78D396722",
+    "runner_dirty":  false,
+    "aggregate_exit_code":  1,
+    "results":  [
+                    {
+                        "name":  "alu-portable",
+                        "repository":  "ALU-RTL-Verification",
+                        "repository_url":  "https://github.com/M-Roohan-Khan-28/ALU-RTL-Verification",
+                        "required":  true,
+                        "status":  "FAIL",
+                        "reason":  "Timed out after 1 seconds",
+                        "source_revision":  "6d7df63ff071b083e2cdf1c11ed6c6fb8c0e57e1",
+                        "expected_revision":  "6d7df63ff071b083e2cdf1c11ed6c6fb8c0e57e1",
+                        "revision_match":  true,
+                        "command":  "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\test-runs\\portfolio-corrective-selfcheck-timeout-2026-11-07\\alu-portable\\source\\scripts\\run_portable.ps1\" -OutputDir \"C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\test-runs\\portfolio-corrective-selfcheck-timeout-2026-11-07\\alu-portable\\output\"",
+                        "simulator_version":  "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020",
+                        "seed":  "deterministic",
+                        "count_kind":  "checks",
+                        "count":  null,
+                        "exit_code":  -1,
+                        "elapsed_seconds":  1.47,
+                        "log_path":  "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\test-runs\\portfolio-corrective-selfcheck-timeout-2026-11-07\\alu-portable\\console.log",
+                        "timeout_seconds":  1
+                    }
+                ]
+}

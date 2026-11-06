@@ -1,0 +1,29 @@
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 03:28:13 on Nov 07,2026
+vlog -sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-remote-clones-2026-11-07\apb-interface-portable\source\rtl\design.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-remote-clones-2026-11-07\apb-interface-portable\source\tb\tb_portable.sv 
+-- Compiling interface apb_if
+-- Compiling module apb_ram
+-- Compiling module tb_apb_portable
+
+Top level modules:
+	tb_apb_portable
+End time: 03:28:13 on Nov 07,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit tb_apb_portable -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 03:28:15 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.tb_apb_portable
+# Loading work.apb_if
+# Loading work.apb_ram
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PORTABLE_TEST_PASS APB checks=1317
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/test-runs/portfolio-corrective-remote-clones-2026-11-07/apb-interface-portable/source/tb/tb_portable.sv(170)
+#    Time: 7951 ns  Iteration: 0  Instance: /tb_apb_portable
+# End time: 03:28:16 on Nov 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

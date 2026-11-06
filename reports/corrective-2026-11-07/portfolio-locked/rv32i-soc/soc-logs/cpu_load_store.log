@@ -1,0 +1,33 @@
+﻿Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit cpu_isa_test -do "scripts/batch.do" -gPROGRAM=programs/load_store.hex 
+# Start time: 03:30:40 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.cpu_tb_pkg
+# Loading work.cpu_isa_test
+# Loading work.riscv_soc_top
+# Loading work.axi_lite_if
+# Loading work.instruction_memory
+# Loading work.rv32_pkg
+# Loading work.riscv_core
+# Loading work.pc
+# Loading work.instruction_decoder
+# Loading work.immediate_generator
+# Loading work.control_unit
+# Loading work.register_file
+# Loading work.alu
+# Loading work.branch_unit
+# Loading work.load_store_unit
+# Loading work.axi_lite_master
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# do scripts/batch.do
+# COVERAGE CPU instruction_mask=28180400 branch_outcomes=000 retired=16
+# PASS CPU ISA program=programs/load_store.hex register/writeback/PC/SRAM reference checks
+# ** Note: $finish    : tb/tests/cpu_isa_test.sv(26)
+#    Time: 610 ns  Iteration: 1  Instance: /cpu_isa_test
+# End time: 03:30:41 on Nov 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
