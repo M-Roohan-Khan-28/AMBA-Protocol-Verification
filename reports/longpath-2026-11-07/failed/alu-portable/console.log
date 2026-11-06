@@ -1,0 +1,27 @@
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 03:42:40 on Nov 07,2026
+vlog -sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-postmerge-2026-11-07\alu-portable\source\rtl\design.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-postmerge-2026-11-07\alu-portable\source\tb\tb_portable.sv 
+-- Compiling module alu
+-- Compiling module tb_alu_portable
+
+Top level modules:
+	tb_alu_portable
+End time: 03:42:40 on Nov 07,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit tb_alu_portable -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 03:42:41 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.tb_alu_portable
+# Loading work.alu
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PORTABLE_TEST_PASS ALU checks=1380
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/test-runs/portfolio-corrective-postmerge-2026-11-07/alu-portable/source/tb/tb_portable.sv(110)
+#    Time: 1380 ns  Iteration: 0  Instance: /tb_alu_portable
+# End time: 03:42:42 on Nov 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

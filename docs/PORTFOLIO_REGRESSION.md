@@ -14,8 +14,9 @@ merge commit, with GitHub network access and ModelSim Intel FPGA Starter
 Edition 2020.1 installed, choose a new output directory:
 
 ```powershell
-git clone https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git AMBA-portfolio-reproduction
+git -c core.longpaths=true clone https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git AMBA-portfolio-reproduction
 Set-Location AMBA-portfolio-reproduction
+git config core.longpaths true
 git rev-parse HEAD
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/run_portfolio_regression.ps1 -OutputDir build/portfolio-reproduction-1
 ```
@@ -68,3 +69,30 @@ This regression does not establish equivalent coverage for the original
 licence-dependent environments, complete AMBA or AXI compliance, the
 inherited full coherent AXI/peripheral SoC, complete RV32I ISA behavior,
 coverage closure, synthesis, timing, FPGA or hardware operation.
+
+## Post-merge Windows checkout correction
+
+After the first merge at `e08192562cb66d01585c9a1e26d8090cb5871a78`,
+a fresh-main aggregate returned **exit 1**: ten required suites passed, but
+the AMBA entry was `BLOCKED` when checkout of its locked ancestor hit a
+Windows filename-length error in the newly published evidence paths. The
+runner did not mark that run as passed. Its [JSON, summary and console](../reports/longpath-2026-11-07/failed/)
+are retained.
+
+Follow-up runner code `58d0a16ac49aa8827b364cf525c3dca7d7f47a08`
+persists `core.longpaths=true` inside each fresh source clone before the
+detached locked checkout. A targeted AMBA entry then completed its **11
+internal simulations**, wrapper and one-entry aggregate exit **0**. The
+complete rerun from that clean runner worktree used the same command above
+with a fresh output directory
+`C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07`.
+ModelSim Intel FPGA Starter Edition reported
+`vsim 2020.1 Simulator 2020.02 Feb 28 2020`; **all 11 required project
+suites passed**, every required suite exit 0, aggregate exit **0**. The two
+advanced licence-dependent suites remained `NOT RUN`. The JSON records
+runner and runner-script revision `58d0a16...`, inventory revision
+`0f126b0...`, the exact file SHA-256 values, a clean runner, and every
+matching source lock. [Targeted and full passing raw logs, JSON, summary
+and console](../reports/longpath-2026-11-07/) are retained alongside the
+failed run. The fix changes checkout configuration only; the tested project
+source locks and expected counts remain unchanged.

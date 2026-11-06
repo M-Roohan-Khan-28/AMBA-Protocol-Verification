@@ -1,0 +1,35 @@
+﻿{
+    "generated_at":  "2026-11-07T03:49:02.2083291+05:00",
+    "inventory":  "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\corrective-selfcheck-inventories-2026-11-07\\amba-checkout-target.json",
+    "source_root":  "",
+    "simulator_version":  "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020",
+    "runner_revision":  "58d0a16ac49aa8827b364cf525c3dca7d7f47a08",
+    "runner_script_revision":  "58d0a16ac49aa8827b364cf525c3dca7d7f47a08",
+    "inventory_revision":  "0f126b0503dd1688bc805cc00e0c847cded95988",
+    "runner_script_sha256":  "79208B87BD2C5DDA023064770719B27882CE37C234E5C350DBCEA32C5E696C3E",
+    "inventory_sha256":  "0033075A73C7C60FE6EB438188FE2DB6B7EDD5A877021EE9999C3A0F36A5DB2F",
+    "runner_dirty":  false,
+    "aggregate_exit_code":  0,
+    "results":  [
+                    {
+                        "name":  "amba-reusable-verification",
+                        "repository":  "AMBA-Protocol-Verification",
+                        "repository_url":  "https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification",
+                        "required":  true,
+                        "status":  "PASS",
+                        "reason":  "",
+                        "source_revision":  "e2f72f4391aa750d761e99ef8c3009e8af2c47e1",
+                        "expected_revision":  "e2f72f4391aa750d761e99ef8c3009e8af2c47e1",
+                        "revision_match":  true,
+                        "command":  "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\test-runs\\portfolio-amba-longpath-target-2026-11-07\\amba-reusable-verification\\source\\scripts\\run_amba.ps1\" -OutputDir \"C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\test-runs\\portfolio-amba-longpath-target-2026-11-07\\amba-reusable-verification\\output\"",
+                        "simulator_version":  "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020",
+                        "seed":  "deterministic",
+                        "count_kind":  "suites",
+                        "count":  11,
+                        "exit_code":  0,
+                        "elapsed_seconds":  35.96,
+                        "log_path":  "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\test-runs\\portfolio-amba-longpath-target-2026-11-07\\amba-reusable-verification\\console.log",
+                        "timeout_seconds":  300
+                    }
+                ]
+}

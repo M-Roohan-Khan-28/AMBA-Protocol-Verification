@@ -1,0 +1,32 @@
+﻿Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit varying_latency_core_test -do "scripts/batch.do" -gSEED=1 
+# Start time: 03:51:17 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.cpu_tb_pkg
+# Loading work.varying_latency_core_test
+# Loading work.axi_lite_if
+# Loading work.instruction_memory
+# Loading work.rv32_pkg
+# Loading work.riscv_core
+# Loading work.pc
+# Loading work.instruction_decoder
+# Loading work.immediate_generator
+# Loading work.control_unit
+# Loading work.register_file
+# Loading work.alu
+# Loading work.branch_unit
+# Loading work.load_store_unit
+# Loading work.axi_lite_master
+# Loading work.axi_varying_delay
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# do scripts/batch.do
+# PASS varying latency seed=1 retired=234 waits=167 AW=6..10 AR=3..11
+# ** Note: $finish    : tb/tests/varying_latency_core_test.sv(65)
+#    Time: 4050 ns  Iteration: 1  Instance: /varying_latency_core_test
+# End time: 03:51:18 on Nov 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

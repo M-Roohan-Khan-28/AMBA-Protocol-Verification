@@ -1,0 +1,345 @@
+Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020
+
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 03:50:11 on Nov 07,2026
+vlog -sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi\axi_lite_if.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi\axi_lite_master.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi\axi_lite_slave.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\memory\sram.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi4_lite_memory_top.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_delay.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_protocol_checker.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\sram_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_slave_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_master_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_reset_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\master_responder_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\slave_model_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\standalone_top_test.sv 
+-- Compiling interface axi_lite_if
+-- Compiling module axi_lite_master
+-- Compiling module axi_lite_slave
+-- Compiling module sram
+-- Compiling module axi4_lite_memory_top
+-- Compiling module axi_delay
+-- Compiling module axi_protocol_checker
+-- Compiling module sram_test
+-- Compiling module axi_slave_test
+-- Compiling module axi_master_test
+-- Compiling module axi_reset_test
+-- Compiling module master_responder_test
+-- Compiling module slave_model_test
+-- Compiling module standalone_top_test
+
+Top level modules:
+	sram_test
+	axi_slave_test
+	axi_master_test
+	axi_reset_test
+	master_responder_test
+	slave_model_test
+	standalone_top_test
+End time: 03:50:11 on Nov 07,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit sram_test -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 03:50:12 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.sram_test
+# Loading work.sram
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS SRAM checks=20 all 16 WSTRB patterns, boundaries, reset retention
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/test-runs/portfolio-corrective-longpath-fixed-2026-11-07/axi4-lite-standalone/source/tb/legacy/sram_test.sv(33)
+#    Time: 1140 ns  Iteration: 1  Instance: /sram_test
+# End time: 03:50:13 on Nov 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+PASS sram_test (vsim exit 0)
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 03:50:13 on Nov 07,2026
+vlog -sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi\axi_lite_if.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi\axi_lite_master.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi\axi_lite_slave.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\memory\sram.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi4_lite_memory_top.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_delay.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_protocol_checker.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\sram_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_slave_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_master_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_reset_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\master_responder_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\slave_model_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\standalone_top_test.sv 
+-- Compiling interface axi_lite_if
+-- Compiling module axi_lite_master
+-- Compiling module axi_lite_slave
+-- Compiling module sram
+-- Compiling module axi4_lite_memory_top
+-- Compiling module axi_delay
+-- Compiling module axi_protocol_checker
+-- Compiling module sram_test
+-- Compiling module axi_slave_test
+-- Compiling module axi_master_test
+-- Compiling module axi_reset_test
+-- Compiling module master_responder_test
+-- Compiling module slave_model_test
+-- Compiling module standalone_top_test
+
+Top level modules:
+	sram_test
+	axi_slave_test
+	axi_master_test
+	axi_reset_test
+	master_responder_test
+	slave_model_test
+	standalone_top_test
+End time: 03:50:13 on Nov 07,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit axi_slave_test -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 03:50:15 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.axi_slave_test
+# Loading work.axi_lite_if
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS AXI slave checks=58 AW-first W-first simultaneous, response stalls, WSTRB, errors
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/test-runs/portfolio-corrective-longpath-fixed-2026-11-07/axi4-lite-standalone/source/tb/legacy/axi_slave_test.sv(59)
+#    Time: 4330 ns  Iteration: 1  Instance: /axi_slave_test
+# End time: 03:50:15 on Nov 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+PASS axi_slave_test (vsim exit 0)
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 03:50:16 on Nov 07,2026
+vlog -sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi\axi_lite_if.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi\axi_lite_master.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi\axi_lite_slave.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\memory\sram.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi4_lite_memory_top.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_delay.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_protocol_checker.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\sram_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_slave_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_master_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_reset_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\master_responder_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\slave_model_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\standalone_top_test.sv 
+-- Compiling interface axi_lite_if
+-- Compiling module axi_lite_master
+-- Compiling module axi_lite_slave
+-- Compiling module sram
+-- Compiling module axi4_lite_memory_top
+-- Compiling module axi_delay
+-- Compiling module axi_protocol_checker
+-- Compiling module sram_test
+-- Compiling module axi_slave_test
+-- Compiling module axi_master_test
+-- Compiling module axi_reset_test
+-- Compiling module master_responder_test
+-- Compiling module slave_model_test
+-- Compiling module standalone_top_test
+
+Top level modules:
+	sram_test
+	axi_slave_test
+	axi_master_test
+	axi_reset_test
+	master_responder_test
+	slave_model_test
+	standalone_top_test
+End time: 03:50:16 on Nov 07,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit axi_master_test -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 03:50:17 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.axi_master_test
+# Loading work.axi_lite_if
+# Loading work.axi_lite_master
+# Loading work.axi_delay
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS AXI master/slave SRAM 26 transactions with all five channel delays and errors
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/test-runs/portfolio-corrective-longpath-fixed-2026-11-07/axi4-lite-standalone/source/tb/legacy/axi_master_test.sv(36)
+#    Time: 5090 ns  Iteration: 1  Instance: /axi_master_test
+# End time: 03:50:18 on Nov 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+PASS axi_master_test (vsim exit 0)
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 03:50:18 on Nov 07,2026
+vlog -sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi\axi_lite_if.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi\axi_lite_master.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi\axi_lite_slave.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\memory\sram.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi4_lite_memory_top.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_delay.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_protocol_checker.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\sram_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_slave_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_master_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_reset_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\master_responder_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\slave_model_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\standalone_top_test.sv 
+-- Compiling interface axi_lite_if
+-- Compiling module axi_lite_master
+-- Compiling module axi_lite_slave
+-- Compiling module sram
+-- Compiling module axi4_lite_memory_top
+-- Compiling module axi_delay
+-- Compiling module axi_protocol_checker
+-- Compiling module sram_test
+-- Compiling module axi_slave_test
+-- Compiling module axi_master_test
+-- Compiling module axi_reset_test
+-- Compiling module master_responder_test
+-- Compiling module slave_model_test
+-- Compiling module standalone_top_test
+
+Top level modules:
+	sram_test
+	axi_slave_test
+	axi_master_test
+	axi_reset_test
+	master_responder_test
+	slave_model_test
+	standalone_top_test
+End time: 03:50:19 on Nov 07,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit axi_reset_test -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 03:50:20 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.axi_reset_test
+# Loading work.axi_lite_if
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS AXI partial AW/W reset, stalled B/R reset, retention, simultaneous read/write, depth=3 bounds
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/test-runs/portfolio-corrective-longpath-fixed-2026-11-07/axi4-lite-standalone/source/tb/legacy/axi_reset_test.sv(68)
+#    Time: 780 ns  Iteration: 1  Instance: /axi_reset_test
+# End time: 03:50:20 on Nov 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+PASS axi_reset_test (vsim exit 0)
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 03:50:21 on Nov 07,2026
+vlog -sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi\axi_lite_if.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi\axi_lite_master.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi\axi_lite_slave.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\memory\sram.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi4_lite_memory_top.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_delay.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_protocol_checker.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\sram_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_slave_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_master_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_reset_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\master_responder_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\slave_model_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\standalone_top_test.sv 
+-- Compiling interface axi_lite_if
+-- Compiling module axi_lite_master
+-- Compiling module axi_lite_slave
+-- Compiling module sram
+-- Compiling module axi4_lite_memory_top
+-- Compiling module axi_delay
+-- Compiling module axi_protocol_checker
+-- Compiling module sram_test
+-- Compiling module axi_slave_test
+-- Compiling module axi_master_test
+-- Compiling module axi_reset_test
+-- Compiling module master_responder_test
+-- Compiling module slave_model_test
+-- Compiling module standalone_top_test
+
+Top level modules:
+	sram_test
+	axi_slave_test
+	axi_master_test
+	axi_reset_test
+	master_responder_test
+	slave_model_test
+	standalone_top_test
+End time: 03:50:21 on Nov 07,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit master_responder_test -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 03:50:22 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.master_responder_test
+# Loading work.axi_lite_if
+# Loading work.axi_lite_master
+# Loading work.axi_protocol_checker
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# MASTER_RESPONDER_PASS checks=44 writes=3 reads=3
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/test-runs/portfolio-corrective-longpath-fixed-2026-11-07/axi4-lite-standalone/source/tb/master_responder_test.sv(121)
+#    Time: 900 ns  Iteration: 1  Instance: /master_responder_test
+# End time: 03:50:23 on Nov 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+PASS master_responder_test (vsim exit 0)
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 03:50:23 on Nov 07,2026
+vlog -sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi\axi_lite_if.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi\axi_lite_master.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi\axi_lite_slave.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\memory\sram.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi4_lite_memory_top.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_delay.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_protocol_checker.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\sram_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_slave_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_master_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_reset_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\master_responder_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\slave_model_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\standalone_top_test.sv 
+-- Compiling interface axi_lite_if
+-- Compiling module axi_lite_master
+-- Compiling module axi_lite_slave
+-- Compiling module sram
+-- Compiling module axi4_lite_memory_top
+-- Compiling module axi_delay
+-- Compiling module axi_protocol_checker
+-- Compiling module sram_test
+-- Compiling module axi_slave_test
+-- Compiling module axi_master_test
+-- Compiling module axi_reset_test
+-- Compiling module master_responder_test
+-- Compiling module slave_model_test
+-- Compiling module standalone_top_test
+
+Top level modules:
+	sram_test
+	axi_slave_test
+	axi_master_test
+	axi_reset_test
+	master_responder_test
+	slave_model_test
+	standalone_top_test
+End time: 03:50:23 on Nov 07,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit slave_model_test -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 03:50:24 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.slave_model_test
+# Loading work.axi_lite_if
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# SLAVE_MODEL_PASS checks=245 writes=26 reads=35
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/test-runs/portfolio-corrective-longpath-fixed-2026-11-07/axi4-lite-standalone/source/tb/slave_model_test.sv(118)
+#    Time: 4730 ns  Iteration: 1  Instance: /slave_model_test
+# End time: 03:50:25 on Nov 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+PASS slave_model_test (vsim exit 0)
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 03:50:25 on Nov 07,2026
+vlog -sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi\axi_lite_if.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi\axi_lite_master.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi\axi_lite_slave.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\memory\sram.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\rtl\axi4_lite_memory_top.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_delay.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_protocol_checker.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\sram_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_slave_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_master_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\legacy\axi_reset_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\master_responder_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\slave_model_test.sv C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\source\tb\standalone_top_test.sv 
+-- Compiling interface axi_lite_if
+-- Compiling module axi_lite_master
+-- Compiling module axi_lite_slave
+-- Compiling module sram
+-- Compiling module axi4_lite_memory_top
+-- Compiling module axi_delay
+-- Compiling module axi_protocol_checker
+-- Compiling module sram_test
+-- Compiling module axi_slave_test
+-- Compiling module axi_master_test
+-- Compiling module axi_reset_test
+-- Compiling module master_responder_test
+-- Compiling module slave_model_test
+-- Compiling module standalone_top_test
+
+Top level modules:
+	sram_test
+	axi_slave_test
+	axi_master_test
+	axi_reset_test
+	master_responder_test
+	slave_model_test
+	standalone_top_test
+End time: 03:50:26 on Nov 07,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit standalone_top_test -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 03:50:27 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.standalone_top_test
+# Loading work.axi4_lite_memory_top
+# Loading work.axi_lite_if
+# Loading work.axi_lite_master
+# Loading work.axi_lite_slave
+# Loading work.sram
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# STANDALONE_TOP_PASS checks=91
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/test-runs/portfolio-corrective-longpath-fixed-2026-11-07/axi4-lite-standalone/source/tb/standalone_top_test.sv(85)
+#    Time: 3210 ns  Iteration: 1  Instance: /standalone_top_test
+# End time: 03:50:28 on Nov 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+PASS standalone_top_test (vsim exit 0)
+REGRESSION_PASS tests=7 output=C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\test-runs\portfolio-corrective-longpath-fixed-2026-11-07\axi4-lite-standalone\output

@@ -1,0 +1,47 @@
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 03:49:38 on Nov 07,2026
+vlog -sv -f sim/filelist.f 
+-- Compiling module ahb_lite_slave_ram
+-- Compiling module tb_ahb_lite_slave_ram
+
+Top level modules:
+	tb_ahb_lite_slave_ram
+End time: 03:49:38 on Nov 07,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit tb_ahb_lite_slave_ram -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 03:49:39 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.tb_ahb_lite_slave_ram
+# Loading work.ahb_lite_slave_ram
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS: Read response is correct
+# PASS: Read data matches RAM
+# PASS: Slave has zero wait states
+# PASS: Write response is correct
+# PASS: Slave has zero wait states
+# PASS: Write response is correct
+# PASS: Slave has zero wait states
+# PASS: Write response is correct
+# PASS: Read response is correct
+# PASS: Read data matches RAM
+# PASS: Read response is correct
+# PASS: Read data matches RAM
+# PASS: Read response is correct
+# PASS: Read data matches RAM
+# PASS: Slave has zero wait states
+# PASS: Write response is correct
+# PASS: Read response is correct
+# PASS: Invalid read returns zero
+# TOTAL PASSED = 18
+# TOTAL FAILED = 0
+# ALL AHB-LITE TESTS PASSED
+# ** Note: $finish    : tb/tb_top.sv(152)
+#    Time: 265 ns  Iteration: 0  Instance: /tb_ahb_lite_slave_ram
+# End time: 03:49:40 on Nov 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

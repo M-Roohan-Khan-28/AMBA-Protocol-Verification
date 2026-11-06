@@ -1,0 +1,42 @@
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 03:42:59 on Nov 07,2026
+vlog -sv -f sim/filelist.f 
+-- Compiling module cache_2way
+-- Compiling module tb_cache_2way
+
+Top level modules:
+	tb_cache_2way
+End time: 03:42:59 on Nov 07,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit tb_cache_2way -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 03:43:01 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.tb_cache_2way
+# Loading work.cache_2way
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS: Character 1 = r, ASCII = 72
+# PASS: Character 2 = o, ASCII = 6f
+# PASS: Character 3 = o, ASCII = 6f
+# PASS: Character 4 = h, ASCII = 68
+# PASS: Character 5 = a, ASCII = 61
+# PASS: Character 6 = n, ASCII = 6e
+# ------------------------------------------
+# WORD IN HEX   = 726f6f68616e
+# WORD IN ASCII = roohan
+# ------------------------------------------
+# PASS: Cache miss detected correctly
+# ------------------------------------------
+# TOTAL PASSED = 7
+# TOTAL FAILED = 0
+# ------------------------------------------
+# ALL CACHE TESTS PASSED
+# ** Note: $finish    : tb/tb_top.sv(203)
+#    Time: 221 ns  Iteration: 0  Instance: /tb_cache_2way
+# End time: 03:43:01 on Nov 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
