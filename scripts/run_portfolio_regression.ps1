@@ -60,6 +60,42 @@ function Test-SimulationLog {
     return $log
 }
 
+function Test-CheckerQualification {
+    param([string]$Output, [string]$Revision)
+    $directory = Join-Path $Output 'checker-response-order'
+    $path = Join-Path $directory 'RESULTS.json'
+    if (-not (Test-Path -LiteralPath $path)) { throw 'Missing checker qualification results' }
+    $qualification = Get-Content -LiteralPath $path -Raw | ConvertFrom-Json
+    $cases = @($qualification.cases)
+    if ($qualification.overall -ne 'QUALIFICATION_PASS' -or $qualification.baseline_probe -or
+        $qualification.observed_head -ne $Revision -or $qualification.worktree_status -or
+        $cases.Count -ne 9 -or (@($cases.case | Select-Object -Unique)).Count -ne 9) {
+        throw 'Checker qualification status, source revision, or case inventory is invalid'
+    }
+    foreach ($number in 0..8) {
+        $case = @($cases | Where-Object { $_.case -eq $number })
+        if ($case.Count -ne 1) { throw "Missing distinct checker case $number" }
+        $casePath = Join-Path $directory "case-$number.log"
+        if (-not (Test-Path -LiteralPath $casePath)) { throw "Missing checker case log $number" }
+        $log = Get-Content -LiteralPath $casePath -Raw
+        if ($log -match 'CHECKER_ORDER_(TIMEOUT|INVALID_CASE|POSITIVE_COUNTS|UNDETECTED)' -or
+            $log -match '\*\*\s+Error:') { throw "Checker case $number has an unexpected diagnostic" }
+        if ($number -eq 0) {
+            if ($case[0].result -ne 'LEGAL_TRAFFIC_ACCEPTED' -or
+                $log -notmatch 'CHECKER_ORDER_POSITIVE_PASS writes=3 reads=1' -or
+                $log -match '\*\*\s+Fatal:') { throw 'Checker legal case failed' }
+        } else {
+            $expected = if ($number -in @(4,6)) { 'AXI_CHECKER_R_DEPENDENCY' } else { 'AXI_CHECKER_B_DEPENDENCY' }
+            $fatalLines = @($log -split '\r?\n' | Where-Object { $_ -match '\*\*\s+Fatal:' })
+            if ($case[0].result -ne 'EXPECTED_VIOLATION_DETECTED' -or
+                $fatalLines.Count -ne 1 -or $fatalLines[0] -notmatch $expected) {
+                throw "Checker expected-negative case $number failed"
+            }
+        }
+    }
+    return [pscustomobject]@{positive=1;expected_negative=8;status='PASS'}
+}
+
 foreach ($suite in $inventory) {
     $suiteDir = Join-Path $out $suite.name
     New-Item -ItemType Directory -Path $suiteDir | Out-Null
@@ -78,6 +114,9 @@ foreach ($suite in $inventory) {
         seed = $suite.seed
         count_kind = $suite.count_kind
         count = $null
+        qualification_positive = $null
+        qualification_expected_negative = $null
+        qualification_status = $null
         exit_code = $null
         elapsed_seconds = $null
         log_path = $null
@@ -101,12 +140,14 @@ foreach ($suite in $inventory) {
     $work = Join-Path $suiteDir 'source'
     $source = if ($SourceRoot) { Join-Path $SourceRoot $suite.repository } else { $result.repository_url + '.git' }
     try {
-        & git -c core.longpaths=true clone --quiet --no-hardlinks $source $work 2>&1 | Out-File -FilePath (Join-Path $suiteDir 'clone.log')
+        & git -c core.longpaths=true -c core.autocrlf=false clone --quiet --no-hardlinks $source $work 2>&1 | Out-File -FilePath (Join-Path $suiteDir 'clone.log')
         if ($LASTEXITCODE -ne 0) { throw "git clone exited $LASTEXITCODE" }
         # The clone-time -c setting is not saved in the new repository. Keep
         # it for the detached checkout, which may remove long evidence paths.
         & git -C $work config core.longpaths true
         if ($LASTEXITCODE -ne 0) { throw 'Cannot enable long Git paths in source clone' }
+        & git -C $work config core.autocrlf false
+        if ($LASTEXITCODE -ne 0) { throw 'Cannot disable checkout newline conversion' }
         & git -c advice.detachedHead=false -C $work checkout --quiet --detach $suite.revision 2> (Join-Path $suiteDir 'checkout.log')
         if ($LASTEXITCODE -ne 0) { throw "Locked checkout failed: $($suite.revision)" }
         $result.source_revision = (& git -C $work rev-parse HEAD).Trim()
@@ -191,6 +232,10 @@ foreach ($suite in $inventory) {
                 $simLogs = @(Get-ChildItem -LiteralPath (Join-Path $suiteDir 'output') -Filter 'simulation.log' -Recurse -File)
                 if ($simLogs.Count -ne [int]$suite.expected_count) { throw "Expected $($suite.expected_count) AXI simulation logs; found $($simLogs.Count)" }
                 foreach ($log in $simLogs) { $null = Test-SimulationLog $log.FullName }
+                $qualification = Test-CheckerQualification (Join-Path $suiteDir 'output') $result.source_revision
+                $result.qualification_positive = $qualification.positive
+                $result.qualification_expected_negative = $qualification.expected_negative
+                $result.qualification_status = $qualification.status
             }
             'dma' {
                 $primary = Test-SimulationLog (Join-Path $suiteDir 'output\simulation.log')
@@ -234,6 +279,10 @@ foreach ($suite in $inventory) {
                     $testLog = Join-Path $output ("{0}.log" -f $entry.Groups[1].Value)
                     $null = Test-SimulationLog $testLog
                 }
+                $qualification = Test-CheckerQualification $output $result.source_revision
+                $result.qualification_positive = $qualification.positive
+                $result.qualification_expected_negative = $qualification.expected_negative
+                $result.qualification_status = $qualification.status
             }            'soc' {
                 $primary = Get-Content -LiteralPath (Join-Path $work 'logs\regression_summary.log') -Raw
                 $completed = @([regex]::Matches($primary, '(?m)^PASS (?!REGRESSION)(\S+)'))
