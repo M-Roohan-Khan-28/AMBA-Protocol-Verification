@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "origin": "simulator",
+  "source_filename": "axil-response-negative.vcd",
+  "source_sha256": "c53716f27c6150534e1e0da87ced88f62ecb7bfc609b98273a1523f46ae59dcc",
+  "timescale": "1ps",
+  "start_tick": 0,
+  "end_tick": 130000,
+  "source_final_tick": 130000,
+  "signals": [
+    {
+      "name": "axi_lite_response_negative.clk",
+      "code": "!",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axi_lite_response_negative.reset_n",
+      "code": "\"",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axi_lite_response_negative.awvalid",
+      "code": "#",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axi_lite_response_negative.awready",
+      "code": "$",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axi_lite_response_negative.wvalid",
+      "code": "&",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axi_lite_response_negative.wready",
+      "code": "'",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axi_lite_response_negative.bvalid",
+      "code": ")",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axi_lite_response_negative.bready",
+      "code": "*",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axi_lite_response_negative.arvalid",
+      "code": "+",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axi_lite_response_negative.arready",
+      "code": ",",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axi_lite_response_negative.rvalid",
+      "code": ".",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axi_lite_response_negative.rready",
+      "code": "/",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axi_lite_response_negative.violations",
+      "code": "0",
+      "width": 32,
+      "kind": "integer",
+      "bit_range": ""
+    }
+  ],
+  "same_tick_collapses": 0,
+  "functional_result": "NOT_ASSESSED_BY_RENDERER",
+  "capture_source_sha256": "d90823ba1bdcaf7e9dc676c5c422d53154178bc998161e8f13615599c20e1674",
+  "capture_source_representation": "original_simulator_capture_crlf",
+  "source_representation": "committed_git_blob_lf"
+}

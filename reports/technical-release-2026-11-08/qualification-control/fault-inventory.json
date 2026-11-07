@@ -1,0 +1,14 @@
+﻿{
+    "name":  "axi4-lite-standalone",
+    "repository":  "AXI4-Lite-Memory-Interface",
+    "required":  true,
+    "enabled":  true,
+    "script":  "scripts/run_regression.ps1",
+    "mode":  "axi",
+    "timeout_seconds":  300,
+    "seed":  "directed",
+    "count_kind":  "tests",
+    "pass_regex":  "REGRESSION_PASS tests=(\\d+)",
+    "expected_count":  7,
+    "revision":  "80c2cc1e8466330ef5dd5e093a4486408a988616"
+}

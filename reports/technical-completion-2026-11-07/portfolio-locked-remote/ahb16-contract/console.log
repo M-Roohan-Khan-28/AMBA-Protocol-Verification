@@ -1,0 +1,2 @@
+PASS AHB16_CONTRACT_PASS checks=810 accepted=122 retired=119 commits=40 errors=12 stalls=8 seed=0x28A81607
+AHB16_REGRESSION_PASS checks=810 output=C:\short\tc-aggregate-remote-2026-11-07\ahb16-contract\output

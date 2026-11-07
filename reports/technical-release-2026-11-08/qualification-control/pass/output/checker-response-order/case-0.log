@@ -1,0 +1,20 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit checker_response_order_test "+CASE=0" -do "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0" 
+# Start time: 03:21:25 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.checker_response_order_test
+# Loading work.axi_lite_if
+# Loading work.axi_protocol_checker
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  onbreak {quit -code 1}
+#  Warning: onbreak command for use within macro
+#  run -all
+# CHECKER_ORDER_POSITIVE_PASS writes=3 reads=1
+# ** Note: $finish    : C:/short/portfolio-axil-qualification-pass-20261108/axi4-lite-standalone/source/tb/checker_response_order_test.sv(65)
+#    Time: 310 ns  Iteration: 1  Instance: /checker_response_order_test
+# End time: 03:21:26 on Nov 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

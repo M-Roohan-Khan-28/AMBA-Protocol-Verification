@@ -29,10 +29,10 @@ module ahb_lite_monitor (
                 held_addr <= addr; held_trans <= trans;
                 held_write <= write; held_size <= size;
             end
-            if (ready && select && trans[1]) begin
+            if (ready && readyout && select && trans[1]) begin
                 addresses <= addresses + 1;
                 pending <= 1;
-            end else if (ready) pending <= 0;
+            end else if (ready && readyout) pending <= 0;
             if (resp && !pending) begin
                 violations <= violations + 1;
                 $display("AHB_MONITOR_VIOLATION response without data phase");

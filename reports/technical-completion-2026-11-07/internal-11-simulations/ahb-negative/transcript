@@ -1,0 +1,13 @@
+# vsim -c -onfinish exit ahb_monitor_negative -do "run -all; quit -code 0" 
+# Start time: 20:39:31 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.ahb_monitor_negative
+# Loading work.ahb_lite_monitor
+# run -all
+# AHB_MONITOR_VIOLATION address/control changed during stall
+# AHB_MONITOR_VIOLATION address/control changed during stall
+# AMBA_AHB_NEGATIVE_PASS detected=2
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/tc/amba/tb/ahb_monitor_negative.sv(21)
+#    Time: 60 ns  Iteration: 1  Instance: /ahb_monitor_negative
+# End time: 20:39:33 on Nov 07,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

@@ -1,0 +1,13 @@
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 00:04:17 on Nov 08,2026
+vlog -sv C:\short\portfolio-tech-followup-20261108\ahb16-contract\source\rtl\design.sv C:\short\portfolio-tech-followup-20261108\ahb16-contract\source\verification\assertions\ahb16_master_monitor.sv C:\short\portfolio-tech-followup-20261108\ahb16-contract\source\tb\ahb16_contract_test.sv C:\short\portfolio-tech-followup-20261108\ahb16-contract\source\verification\negative\ahb16_master_negative.sv 
+-- Compiling module ahb_lite_slave_ram
+-- Compiling module ahb16_master_monitor
+-- Compiling module ahb16_contract_test
+-- Compiling module ahb16_master_negative
+
+Top level modules:
+	ahb16_contract_test
+	ahb16_master_negative
+End time: 00:04:17 on Nov 08,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

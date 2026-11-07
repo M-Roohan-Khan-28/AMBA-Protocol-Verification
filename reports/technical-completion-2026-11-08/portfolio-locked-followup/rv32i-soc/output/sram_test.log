@@ -1,0 +1,16 @@
+﻿Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit sram_test -do "scripts/batch.do" 
+# Start time: 00:07:01 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.sram_test
+# Loading work.sram
+# do scripts/batch.do
+# PASS SRAM checks=20 all 16 WSTRB patterns, boundaries, reset retention
+# ** Note: $finish    : tb/tests/sram_test.sv(33)
+#    Time: 1140 ns  Iteration: 1  Instance: /sram_test
+# End time: 00:07:01 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+

@@ -1,0 +1,12 @@
+PASS apb-adapter count=452 exit=0 
+PASS apb-negative count=1 exit=0 
+PASS apb-responder count=13 exit=0 
+PASS ahb-adapter count=119 exit=0 
+PASS ahb-negative count=2 exit=0 
+PASS axil-adapter count=98 exit=0 
+PASS axil-negative count=2 exit=0 
+PASS axil-response-negative count=4 exit=0 
+PASS axi4-adapter count=40 exit=0 
+PASS axi4-negative count=1 exit=0 
+PASS axi4-response-negative count=4 exit=0 
+AMBA_AGGREGATE_EXIT=0 source=d85b82bc00ed9504d89a451114e465a0503779b9

@@ -1,0 +1,17 @@
+﻿Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit unit_test -do "scripts/batch.do" 
+# Start time: 00:06:50 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.rv32_pkg
+# Loading work.unit_test
+# Loading work.alu
+# do scripts/batch.do
+# PASS ALU checks=10
+# ** Note: $finish    : tb/tests/unit_test.sv(24)
+#    Time: 10 ns  Iteration: 0  Instance: /unit_test
+# End time: 00:06:51 on Nov 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+

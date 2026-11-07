@@ -60,6 +60,42 @@ function Test-SimulationLog {
     return $log
 }
 
+function Test-CheckerQualification {
+    param([string]$Output, [string]$Revision)
+    $directory = Join-Path $Output 'checker-response-order'
+    $path = Join-Path $directory 'RESULTS.json'
+    if (-not (Test-Path -LiteralPath $path)) { throw 'Missing checker qualification results' }
+    $qualification = Get-Content -LiteralPath $path -Raw | ConvertFrom-Json
+    $cases = @($qualification.cases)
+    if ($qualification.overall -ne 'QUALIFICATION_PASS' -or $qualification.baseline_probe -or
+        $qualification.observed_head -ne $Revision -or $qualification.worktree_status -or
+        $cases.Count -ne 9 -or (@($cases.case | Select-Object -Unique)).Count -ne 9) {
+        throw 'Checker qualification status, source revision, or case inventory is invalid'
+    }
+    foreach ($number in 0..8) {
+        $case = @($cases | Where-Object { $_.case -eq $number })
+        if ($case.Count -ne 1) { throw "Missing distinct checker case $number" }
+        $casePath = Join-Path $directory "case-$number.log"
+        if (-not (Test-Path -LiteralPath $casePath)) { throw "Missing checker case log $number" }
+        $log = Get-Content -LiteralPath $casePath -Raw
+        if ($log -match 'CHECKER_ORDER_(TIMEOUT|INVALID_CASE|POSITIVE_COUNTS|UNDETECTED)' -or
+            $log -match '\*\*\s+Error:') { throw "Checker case $number has an unexpected diagnostic" }
+        if ($number -eq 0) {
+            if ($case[0].result -ne 'LEGAL_TRAFFIC_ACCEPTED' -or
+                $log -notmatch 'CHECKER_ORDER_POSITIVE_PASS writes=3 reads=1' -or
+                $log -match '\*\*\s+Fatal:') { throw 'Checker legal case failed' }
+        } else {
+            $expected = if ($number -in @(4,6)) { 'AXI_CHECKER_R_DEPENDENCY' } else { 'AXI_CHECKER_B_DEPENDENCY' }
+            $fatalLines = @($log -split '\r?\n' | Where-Object { $_ -match '\*\*\s+Fatal:' })
+            if ($case[0].result -ne 'EXPECTED_VIOLATION_DETECTED' -or
+                $fatalLines.Count -ne 1 -or $fatalLines[0] -notmatch $expected) {
+                throw "Checker expected-negative case $number failed"
+            }
+        }
+    }
+    return [pscustomobject]@{positive=1;expected_negative=8;status='PASS'}
+}
+
 foreach ($suite in $inventory) {
     $suiteDir = Join-Path $out $suite.name
     New-Item -ItemType Directory -Path $suiteDir | Out-Null
@@ -78,6 +114,9 @@ foreach ($suite in $inventory) {
         seed = $suite.seed
         count_kind = $suite.count_kind
         count = $null
+        qualification_positive = $null
+        qualification_expected_negative = $null
+        qualification_status = $null
         exit_code = $null
         elapsed_seconds = $null
         log_path = $null
@@ -101,13 +140,15 @@ foreach ($suite in $inventory) {
     $work = Join-Path $suiteDir 'source'
     $source = if ($SourceRoot) { Join-Path $SourceRoot $suite.repository } else { $result.repository_url + '.git' }
     try {
-        & git -c core.longpaths=true clone --quiet --no-hardlinks $source $work 2>&1 | Out-File -FilePath (Join-Path $suiteDir 'clone.log')
+        & git -c core.longpaths=true -c core.autocrlf=false clone --quiet --no-hardlinks $source $work 2>&1 | Out-File -FilePath (Join-Path $suiteDir 'clone.log')
         if ($LASTEXITCODE -ne 0) { throw "git clone exited $LASTEXITCODE" }
         # The clone-time -c setting is not saved in the new repository. Keep
         # it for the detached checkout, which may remove long evidence paths.
         & git -C $work config core.longpaths true
         if ($LASTEXITCODE -ne 0) { throw 'Cannot enable long Git paths in source clone' }
-        & git -C $work checkout --quiet --detach $suite.revision 2>&1 | Out-File -FilePath (Join-Path $suiteDir 'checkout.log')
+        & git -C $work config core.autocrlf false
+        if ($LASTEXITCODE -ne 0) { throw 'Cannot disable checkout newline conversion' }
+        & git -c advice.detachedHead=false -C $work checkout --quiet --detach $suite.revision 2> (Join-Path $suiteDir 'checkout.log')
         if ($LASTEXITCODE -ne 0) { throw "Locked checkout failed: $($suite.revision)" }
         $result.source_revision = (& git -C $work rev-parse HEAD).Trim()
         if ($LASTEXITCODE -ne 0) { throw 'Cannot read source revision' }
@@ -127,7 +168,7 @@ foreach ($suite in $inventory) {
         continue
     }
     $arguments = "-NoProfile -ExecutionPolicy Bypass -File `"$script`""
-    if ($suite.mode -in @('portable', 'axi', 'dma', 'amba', 'coherent')) {
+    if ($suite.mode -in @('portable', 'axi', 'dma', 'amba', 'coherent', 'technical', 'soc_new', 'coherent_new')) {
         $arguments += " -OutputDir `"$(Join-Path $suiteDir 'output')`""
     }
     $result.command = "powershell.exe $arguments"
@@ -156,7 +197,30 @@ foreach ($suite in $inventory) {
         if (-not $finished) { throw "Timed out after $($suite.timeout_seconds) seconds" }
         if ($proc.ExitCode -ne 0) { throw "Runner exited $($proc.ExitCode)" }
         switch ($suite.mode) {
-            'portable' {
+            'technical' {
+                $output = Join-Path $suiteDir 'output'
+                $jsonPath = Join-Path $output 'results.json'
+                if (-not (Test-Path -LiteralPath $jsonPath)) { throw 'Missing technical results JSON' }
+                $technical = Get-Content -LiteralPath $jsonPath -Raw | ConvertFrom-Json
+                if ($technical.overall -ne 'PASS' -or $technical.source_dirty -or
+                    $technical.source_revision -ne $result.source_revision) {
+                    throw 'Technical results JSON reports failure, dirty source, or revision mismatch'
+                }
+                $simulations = @($technical.simulations)
+                if ($simulations.Count -lt 1) { throw 'Technical results contain no simulations' }
+                foreach ($simulation in $simulations) {
+                    if ($simulation.status -ne 'PASS' -or $simulation.simulator_exit_code -ne 0) {
+                        throw "Technical simulation failed: $($simulation.top)"
+                    }
+                }
+                $simulationLogs = @(Get-ChildItem -LiteralPath $output -Filter '*.log' -File |
+                    Where-Object { $_.Name -notin @('compile.log','library.log','version.log','render.log') })
+                if ($simulationLogs.Count -ne $simulations.Count) {
+                    throw "Expected $($simulations.Count) technical simulation logs; found $($simulationLogs.Count)"
+                }
+                $primary = $stdout
+                foreach ($log in $simulationLogs) { $primary += Test-SimulationLog $log.FullName }
+            }            'portable' {
                 $primary = Test-SimulationLog (Join-Path $suiteDir 'output\simulation.log')
             }
             'legacy' {
@@ -168,6 +232,10 @@ foreach ($suite in $inventory) {
                 $simLogs = @(Get-ChildItem -LiteralPath (Join-Path $suiteDir 'output') -Filter 'simulation.log' -Recurse -File)
                 if ($simLogs.Count -ne [int]$suite.expected_count) { throw "Expected $($suite.expected_count) AXI simulation logs; found $($simLogs.Count)" }
                 foreach ($log in $simLogs) { $null = Test-SimulationLog $log.FullName }
+                $qualification = Test-CheckerQualification (Join-Path $suiteDir 'output') $result.source_revision
+                $result.qualification_positive = $qualification.positive
+                $result.qualification_expected_negative = $qualification.expected_negative
+                $result.qualification_status = $qualification.status
             }
             'dma' {
                 $primary = Test-SimulationLog (Join-Path $suiteDir 'output\simulation.log')
@@ -200,7 +268,22 @@ foreach ($suite in $inventory) {
                 }
                 $primary = "AMBA_REGRESSION_PASS suites=$(@($amba.results).Count)"
             }
-            'soc' {
+            'soc_new' {
+                $output = Join-Path $suiteDir 'output'
+                $summaryPath = Join-Path $output 'regression_summary.log'
+                if (-not (Test-Path -LiteralPath $summaryPath)) { throw 'Missing SoC regression summary' }
+                $primary = Get-Content -LiteralPath $summaryPath -Raw
+                $completed = @([regex]::Matches($primary, '(?m)^PASS (?!REGRESSION)(\S+)'))
+                if ($completed.Count -ne [int]$suite.expected_count) { throw "Expected $($suite.expected_count) SoC run entries; found $($completed.Count)" }
+                foreach ($entry in $completed) {
+                    $testLog = Join-Path $output ("{0}.log" -f $entry.Groups[1].Value)
+                    $null = Test-SimulationLog $testLog
+                }
+                $qualification = Test-CheckerQualification $output $result.source_revision
+                $result.qualification_positive = $qualification.positive
+                $result.qualification_expected_negative = $qualification.expected_negative
+                $result.qualification_status = $qualification.status
+            }            'soc' {
                 $primary = Get-Content -LiteralPath (Join-Path $work 'logs\regression_summary.log') -Raw
                 $completed = @([regex]::Matches($primary, '(?m)^PASS (?!REGRESSION)(\S+)'))
                 if ($completed.Count -ne [int]$suite.expected_count) { throw "Expected $($suite.expected_count) SoC run entries; found $($completed.Count)" }
@@ -209,7 +292,30 @@ foreach ($suite in $inventory) {
                     $null = Test-SimulationLog $testLog
                 }
             }
-            'coherent' {
+            'coherent_new' {
+                $output = Join-Path $suiteDir 'output'
+                $jsonPath = Join-Path $output 'results.json'
+                if (-not (Test-Path -LiteralPath $jsonPath)) { throw 'Missing coherent results JSON' }
+                $coherent = Get-Content -LiteralPath $jsonPath -Raw | ConvertFrom-Json
+                if ($coherent.status -ne 'PASS' -or $coherent.source_dirty -or
+                    $coherent.source_revision -ne $result.source_revision -or
+                    $coherent.compile_exit -ne 0 -or $coherent.cases -ne 71 -or $coherent.checks -ne 1477 -or
+                    $coherent.program_checks -ne 135 -or $coherent.concurrent_checks -ne 106 -or
+                    $coherent.bridge_checks -ne 159 -or $coherent.reset_commit_checks -ne 163 -or
+                    $coherent.shared_store_checks -ne 106 -or $coherent.shared_read_write_checks -ne 106) {
+                    throw 'Coherent results JSON disagrees with required branch results'
+                }
+                foreach ($field in @('simulation_exit','program_simulation_exit','concurrent_simulation_exit',
+                    'bridge_simulation_exit','reset_commit_simulation_exit',
+                    'shared_store_simulation_exit','shared_read_write_simulation_exit')) {
+                    if ($coherent.$field -ne 0) { throw "Coherent simulation failed: $field" }
+                }
+                foreach ($name in @('simulation.log','program.log','concurrent.log','bridge.log',
+                    'reset-commit.log','shared-store_store.log','shared-read_write.log')) {
+                    $null = Test-SimulationLog (Join-Path $output $name)
+                }
+                $primary = Test-SimulationLog (Join-Path $output 'simulation.log')
+            }            'coherent' {
                 $primary = Test-SimulationLog (Join-Path $suiteDir 'output\simulation.log')
                 $null = Test-SimulationLog (Join-Path $suiteDir 'output\program.log')
                 $resultPath = Join-Path $suiteDir 'output\results.json'

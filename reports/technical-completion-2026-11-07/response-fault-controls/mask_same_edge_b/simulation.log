@@ -1,0 +1,24 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit axi4_response_negative -do "run -all; quit -code 0" 
+# Start time: 20:38:16 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.axi4_response_negative
+# Loading work.axi4_burst_monitor
+# run -all
+# AXI4_MONITOR_VIOLATION BVALID before AW/W completion or wrong ID
+# AXI4_MONITOR_VIOLATION BVALID before AW/W completion or wrong ID
+# AXI4_MONITOR_VIOLATION BVALID before AW/W completion or wrong ID
+# AXI4_NEGATIVE_CASE_PASS held_early_b
+# AXI4_MONITOR_VIOLATION RVALID before AR acceptance
+# AXI4_MONITOR_VIOLATION RVALID before AR acceptance
+# AXI4_MONITOR_VIOLATION RVALID before AR acceptance
+# AXI4_NEGATIVE_CASE_PASS held_early_r
+# ** Fatal: same-edge AXI4 B dependency: expected 1 violation, got 0
+#    Time: 140 ns  Scope: axi4_response_negative File: C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/tc/amba/tb/axi4_response_negative.sv Line: 36
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/tc/amba/tb/axi4_response_negative.sv(36)
+#    Time: 140 ns  Iteration: 1  Instance: /axi4_response_negative
+# End time: 20:38:19 on Nov 07,2026, Elapsed time: 0:00:03
+# Errors: 1, Warnings: 0

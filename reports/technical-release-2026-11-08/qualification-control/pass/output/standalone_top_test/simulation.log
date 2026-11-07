@@ -1,0 +1,21 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit standalone_top_test -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 03:21:16 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.standalone_top_test
+# Loading work.axi4_lite_memory_top
+# Loading work.axi_lite_if
+# Loading work.axi_lite_master
+# Loading work.axi_lite_slave
+# Loading work.sram
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# STANDALONE_TOP_PASS checks=91
+# ** Note: $finish    : C:/short/portfolio-axil-qualification-pass-20261108/axi4-lite-standalone/source/tb/standalone_top_test.sv(85)
+#    Time: 3210 ns  Iteration: 1  Instance: /standalone_top_test
+# End time: 03:21:18 on Nov 08,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

@@ -1,5 +1,20 @@
 # Results
 
+The technical source `1f0d5491cd084a95c5137ad7072a621ea059b2e3`
+passed all 11 internal simulations against pinned APB, AHB, AXI4-Lite and DMA
+revisions, including the strengthened AHB master-wait source. The DMA adapter
+ran 40 cases and 1,352,655 checks; the AHB adapter observed the corrected
+two-cycle ERROR response. The [new locked technical completion report](TECHNICAL_COMPLETION.md)
+and its [fresh GitHub-source raw logs](../reports/technical-completion-2026-11-08/portfolio-locked-followup/amba-reusable-verification/output/)
+record the executed result. Earlier source
+`d85b82bc00ed9504d89a451114e465a0503779b9` also passed 11 internal
+simulations at its prior AHB lock; its separate
+[raw logs](../reports/technical-completion-2026-11-07/portfolio-locked-remote/amba-reusable-verification/output/)
+remain unchanged. Earlier results below retain their original source locks
+and counts.
+
+## Earlier results
+
 The committed local source `460dfba6d477bb3427adcfdbea1d39c5f3fd5d09`
 was tested with:
 

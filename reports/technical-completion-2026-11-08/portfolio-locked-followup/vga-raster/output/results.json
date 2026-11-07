@@ -1,0 +1,56 @@
+{
+  "repository": "VGA-SRAM-Framebuffer",
+  "source_revision": "e6442fbf24595bc66e0ffab5be47478667be8fcf",
+  "source_dirty": false,
+  "sources": [
+    {
+      "path": "C:\\short\\portfolio-tech-followup-20261108\\vga-raster\\source\\rtl\\design.sv",
+      "sha256": "da2beee5959ada833898b20a2f13a181a325098e4c4d4d3d92e2e4ed76bfe4eb"
+    },
+    {
+      "path": "C:\\short\\portfolio-tech-followup-20261108\\vga-raster\\source\\tb\\tb_top.sv",
+      "sha256": "813623958422690ebf0752a66354d085686fa483eaf8c35daa570d55e87c7dca"
+    },
+    {
+      "path": "C:\\short\\portfolio-tech-followup-20261108\\vga-raster\\source\\tb\\vga_raster_test.sv",
+      "sha256": "c7cb2ddf2532586f432e2d74f48ce99cfdff5ea53b4ab9046ed73a312c32d0e0"
+    }
+  ],
+  "seed": "exhaustive RGB332 0..255",
+  "timeout_seconds_per_command": 180,
+  "simulations": [
+    {
+      "top": "tb_vga_controller_sram",
+      "command": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "tb_vga_controller_sram",
+        "-do",
+        "run -all; quit -code 0"
+      ],
+      "simulator_exit_code": 0,
+      "status": "PASS",
+      "marker": "# ALL VGA TESTS PASSED"
+    },
+    {
+      "top": "vga_raster_test",
+      "command": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "vga_raster_test",
+        "-do",
+        "run -all; quit -code 0"
+      ],
+      "simulator_exit_code": 0,
+      "status": "PASS",
+      "marker": "# VGA_RASTER_PASS checks=29588940 pixels=1232740 active=922318 hsync_low=147845 vsync_low=3201 frames=2 writes=258 invalid=2 resets=4 seed=all256"
+    }
+  ],
+  "overall": "PASS",
+  "simulator_version": "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020",
+  "elapsed_seconds": 65.026
+}

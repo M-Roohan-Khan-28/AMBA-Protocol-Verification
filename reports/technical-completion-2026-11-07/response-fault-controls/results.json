@@ -1,0 +1,60 @@
+{
+  "repository": "AMBA-Protocol-Verification",
+  "source_head": "4fd419cadb62713e91580739d2978cb551513157",
+  "monitor_sha256": "f4d6458d4abbf14eadb90a53dd696f89e3ff95777c83666c9ebbdb88252acd4f",
+  "bench_sha256": "7b2fbfd17b7ac5078c892af7c17d5f6bd9fe7a27819f12dfdcfb08f79d6fb752",
+  "stimulus": "directed; no random seed",
+  "cases": [
+    {
+      "name": "original",
+      "status": "PASS",
+      "expected_prior_markers": 4,
+      "observed_prior_markers": [
+        "held_early_b",
+        "held_early_r",
+        "same_edge_b",
+        "same_edge_r"
+      ],
+      "expected_fatal": null,
+      "observed_fatals": [],
+      "simulator_exit_code": 0,
+      "timeout_seconds": 90,
+      "elapsed_seconds": 8.994
+    },
+    {
+      "name": "mask_same_edge_b",
+      "status": "PASS",
+      "expected_prior_markers": 2,
+      "observed_prior_markers": [
+        "held_early_b",
+        "held_early_r"
+      ],
+      "expected_fatal": "same-edge AXI4 B dependency: expected 1 violation, got 0",
+      "observed_fatals": [
+        "same-edge AXI4 B dependency: expected 1 violation, got 0\r"
+      ],
+      "simulator_exit_code": 0,
+      "timeout_seconds": 90,
+      "elapsed_seconds": 9.474
+    },
+    {
+      "name": "mask_same_edge_r",
+      "status": "PASS",
+      "expected_prior_markers": 3,
+      "observed_prior_markers": [
+        "held_early_b",
+        "held_early_r",
+        "same_edge_b"
+      ],
+      "expected_fatal": "same-edge AXI4 R dependency: expected 1 violation, got 0",
+      "observed_fatals": [
+        "same-edge AXI4 R dependency: expected 1 violation, got 0\r"
+      ],
+      "simulator_exit_code": 0,
+      "timeout_seconds": 90,
+      "elapsed_seconds": 9.394
+    }
+  ],
+  "overall": "PASS",
+  "simulator_version": "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020"
+}

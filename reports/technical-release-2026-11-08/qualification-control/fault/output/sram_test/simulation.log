@@ -1,0 +1,17 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit sram_test -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 03:25:06 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.sram_test
+# Loading work.sram
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS SRAM checks=20 all 16 WSTRB patterns, boundaries, reset retention
+# ** Note: $finish    : C:/short/portfolio-axil-qualification-fault-v2-20261108/axi4-lite-standalone/source/tb/legacy/sram_test.sv(33)
+#    Time: 1140 ns  Iteration: 1  Instance: /sram_test
+# End time: 03:25:08 on Nov 08,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

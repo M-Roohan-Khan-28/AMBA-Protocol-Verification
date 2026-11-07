@@ -1,0 +1,58 @@
+{
+  "repository": "Two-Way-Cache-RTL",
+  "source_revision": "aae79145c95cceda80e0644b23b9af290e3c55b5",
+  "source_dirty": false,
+  "sources": [
+    {
+      "path": "C:\\short\\tc-aggregate-remote-2026-11-07\\cache-contract\\source\\rtl\\design.sv",
+      "sha256": "33215b4142925ab204a15174a7dbd10360dee3411b0f0eb7df1de04d7e102951"
+    },
+    {
+      "path": "C:\\short\\tc-aggregate-remote-2026-11-07\\cache-contract\\source\\tb\\tb_top.sv",
+      "sha256": "bfd99e4110ff960416e9926074869aace580a93cd5e176445f073c4b7320b93c"
+    },
+    {
+      "path": "C:\\short\\tc-aggregate-remote-2026-11-07\\cache-contract\\source\\tb\\cache_contract_test.sv",
+      "sha256": "69cbd44963e38aab4a939d3958aa7ac413ecd931a649782c7551853c2e3a68af"
+    }
+  ],
+  "seed": "0x28CACE17 (xorshift32 byte stimulus)",
+  "timeout_seconds_per_command": 120,
+  "simulations": [
+    {
+      "top": "tb_cache_2way",
+      "simulator_exit_code": 0,
+      "command": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "tb_cache_2way",
+        "-do",
+        "run -all; quit -code 0"
+      ],
+      "status": "PASS",
+      "checks": 7
+    },
+    {
+      "top": "cache_contract_test",
+      "simulator_exit_code": 0,
+      "command": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "cache_contract_test",
+        "-do",
+        "run -all; quit -code 0"
+      ],
+      "status": "PASS",
+      "checks": 1639,
+      "writes": 324,
+      "resets": 2
+    }
+  ],
+  "overall": "PASS",
+  "simulator_version": "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020",
+  "elapsed_seconds": 4.067
+}

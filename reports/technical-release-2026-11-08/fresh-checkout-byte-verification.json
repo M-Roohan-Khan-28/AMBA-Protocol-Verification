@@ -1,0 +1,123 @@
+{
+  "status": "PASS",
+  "vcds": 8,
+  "figure_metadata_files": 12,
+  "rows": [
+    {
+      "repository": "VGA-SRAM-Framebuffer",
+      "revision": "8e257d11b1964fe82d4d4f3c3192b6a315d3b93d",
+      "vcd": "reports/technical-completion-2026-11-07/boundary-captures/wave-frame.vcd",
+      "git_blob_sha256": "6855fa2bbf486978508a3b989f704fad02c2deba24668abc52a7b6a98b49f2e0",
+      "raw_download_sha256": "6855fa2bbf486978508a3b989f704fad02c2deba24668abc52a7b6a98b49f2e0",
+      "fresh_checkout_sha256": "6855fa2bbf486978508a3b989f704fad02c2deba24668abc52a7b6a98b49f2e0",
+      "original_capture_sha256": "086730ade6e1868960c67cd424bcdd049b8f2b12e53502d183f6777db9d122b6",
+      "figure_metadata": [
+        "frame.json"
+      ],
+      "autocrlf": "false",
+      "clean_checkout": true
+    },
+    {
+      "repository": "VGA-SRAM-Framebuffer",
+      "revision": "8e257d11b1964fe82d4d4f3c3192b6a315d3b93d",
+      "vcd": "reports/technical-completion-2026-11-07/boundary-captures/wave-horizontal.vcd",
+      "git_blob_sha256": "ad1b27eab7330dc235f7c2be9f97bce248aec95b497f347846bbc777dc4eeb05",
+      "raw_download_sha256": "ad1b27eab7330dc235f7c2be9f97bce248aec95b497f347846bbc777dc4eeb05",
+      "fresh_checkout_sha256": "ad1b27eab7330dc235f7c2be9f97bce248aec95b497f347846bbc777dc4eeb05",
+      "original_capture_sha256": "2c9fcf42ae1d04d7c7c5195e4e1d8e9511da69d9c24239d97a3c315c0e2cdc42",
+      "figure_metadata": [
+        "horizontal-active.json",
+        "horizontal-sync-end.json"
+      ],
+      "autocrlf": "false",
+      "clean_checkout": true
+    },
+    {
+      "repository": "VGA-SRAM-Framebuffer",
+      "revision": "8e257d11b1964fe82d4d4f3c3192b6a315d3b93d",
+      "vcd": "reports/technical-completion-2026-11-07/boundary-captures/wave-vertical.vcd",
+      "git_blob_sha256": "12f8e4d346ba449ecb67a1563f796c0ebc4fee4c49c79a94709fc62c770516a8",
+      "raw_download_sha256": "12f8e4d346ba449ecb67a1563f796c0ebc4fee4c49c79a94709fc62c770516a8",
+      "fresh_checkout_sha256": "12f8e4d346ba449ecb67a1563f796c0ebc4fee4c49c79a94709fc62c770516a8",
+      "original_capture_sha256": "804d0f3e0f705d936e0b3f46f3c3e1395359f7e39be26176182bb936e84c9e12",
+      "figure_metadata": [
+        "vertical-sync-end.json",
+        "vertical-sync-start.json"
+      ],
+      "autocrlf": "false",
+      "clean_checkout": true
+    },
+    {
+      "repository": "VGA-SRAM-Framebuffer",
+      "revision": "8e257d11b1964fe82d4d4f3c3192b6a315d3b93d",
+      "vcd": "reports/technical-completion-2026-11-07/boundary-captures/wave-write.vcd",
+      "git_blob_sha256": "7f185bb99a237e198783f5c16beb2e3cad38adf4c96df08e83f3c1c3066361b1",
+      "raw_download_sha256": "7f185bb99a237e198783f5c16beb2e3cad38adf4c96df08e83f3c1c3066361b1",
+      "fresh_checkout_sha256": "7f185bb99a237e198783f5c16beb2e3cad38adf4c96df08e83f3c1c3066361b1",
+      "original_capture_sha256": "e21bb2bb6ecce6915106cf48854836ce7538f8f5fe57aa4b12e269417a4a46db",
+      "figure_metadata": [
+        "write.json"
+      ],
+      "autocrlf": "false",
+      "clean_checkout": true
+    },
+    {
+      "repository": "AMBA-Protocol-Verification",
+      "revision": "013756f80c5badf1bba9361ac5a1b9eab722e09b",
+      "vcd": "reports/technical-completion-2026-11-08/protocol-waves/ahb-adapter.vcd",
+      "git_blob_sha256": "c1378408c808cdce16584276247a283cddac5fc4fe0d65c73c515f23ca811ac0",
+      "raw_download_sha256": "c1378408c808cdce16584276247a283cddac5fc4fe0d65c73c515f23ca811ac0",
+      "fresh_checkout_sha256": "c1378408c808cdce16584276247a283cddac5fc4fe0d65c73c515f23ca811ac0",
+      "original_capture_sha256": "614b971d523453567c9f9a826839e624bbf871208f51fdd814f417ca47885d8c",
+      "figure_metadata": [
+        "ahb-error.json",
+        "ahb-write-phases.json"
+      ],
+      "autocrlf": "false",
+      "clean_checkout": true
+    },
+    {
+      "repository": "AMBA-Protocol-Verification",
+      "revision": "013756f80c5badf1bba9361ac5a1b9eab722e09b",
+      "vcd": "reports/technical-completion-2026-11-08/protocol-waves/apb-responder.vcd",
+      "git_blob_sha256": "a7aa5f8e52d84ada9d381470b57519ea09121666762c769673a92fe8e6192a9e",
+      "raw_download_sha256": "a7aa5f8e52d84ada9d381470b57519ea09121666762c769673a92fe8e6192a9e",
+      "fresh_checkout_sha256": "a7aa5f8e52d84ada9d381470b57519ea09121666762c769673a92fe8e6192a9e",
+      "original_capture_sha256": "edaed5cd9855b5541c55dce53ecb6f7569f21101c45f892c3c527639c88169ce",
+      "figure_metadata": [
+        "apb-error.json",
+        "apb-wait.json"
+      ],
+      "autocrlf": "false",
+      "clean_checkout": true
+    },
+    {
+      "repository": "AMBA-Protocol-Verification",
+      "revision": "013756f80c5badf1bba9361ac5a1b9eab722e09b",
+      "vcd": "reports/technical-completion-2026-11-08/protocol-waves/axi4-response-negative.vcd",
+      "git_blob_sha256": "9995e06c866a4a568cae3644c24faddc075c95454bf9660dd81d13ea557d7f70",
+      "raw_download_sha256": "9995e06c866a4a568cae3644c24faddc075c95454bf9660dd81d13ea557d7f70",
+      "fresh_checkout_sha256": "9995e06c866a4a568cae3644c24faddc075c95454bf9660dd81d13ea557d7f70",
+      "original_capture_sha256": "778db0315974cfbb5810444734a8a27fcfd1d8e08c161e047a20487507f152f0",
+      "figure_metadata": [
+        "axi4-response-negative.json"
+      ],
+      "autocrlf": "false",
+      "clean_checkout": true
+    },
+    {
+      "repository": "AMBA-Protocol-Verification",
+      "revision": "013756f80c5badf1bba9361ac5a1b9eab722e09b",
+      "vcd": "reports/technical-completion-2026-11-08/protocol-waves/axil-response-negative.vcd",
+      "git_blob_sha256": "c53716f27c6150534e1e0da87ced88f62ecb7bfc609b98273a1523f46ae59dcc",
+      "raw_download_sha256": "c53716f27c6150534e1e0da87ced88f62ecb7bfc609b98273a1523f46ae59dcc",
+      "fresh_checkout_sha256": "c53716f27c6150534e1e0da87ced88f62ecb7bfc609b98273a1523f46ae59dcc",
+      "original_capture_sha256": "d90823ba1bdcaf7e9dc676c5c422d53154178bc998161e8f13615599c20e1674",
+      "figure_metadata": [
+        "axil-response-negative.json"
+      ],
+      "autocrlf": "false",
+      "clean_checkout": true
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit slave_model_test -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 03:21:09 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.slave_model_test
+# Loading work.axi_lite_if
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# SLAVE_MODEL_PASS checks=245 writes=26 reads=35
+# ** Note: $finish    : C:/short/portfolio-axil-qualification-pass-20261108/axi4-lite-standalone/source/tb/slave_model_test.sv(118)
+#    Time: 4730 ns  Iteration: 1  Instance: /slave_model_test
+# End time: 03:21:11 on Nov 08,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

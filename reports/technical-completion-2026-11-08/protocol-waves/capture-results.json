@@ -1,0 +1,137 @@
+{
+  "source_revision": "1f0d5491cd084a95c5137ad7072a621ea059b2e3",
+  "source_clean": true,
+  "preparation_command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/run_amba.ps1 -OutputDir C:\\short\\amba-ahb-followup-20261107",
+  "simulator_version": "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020",
+  "vcd_timescale": "1ps",
+  "status": "PASS",
+  "negative_trace_rule": "Intentional invalid stimulus passes only when the monitor detects its violations.",
+  "captures": [
+    {
+      "scenario": "apb-responder",
+      "top": "apb_responder_test",
+      "compiled_work_directory": "C:\\short\\amba-ahb-followup-20261107\\apb-responder",
+      "capture_command": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "apb_responder_test",
+        "-do",
+        "vcd file C:/short/amba-wave-followup-20261108/apb-responder.vcd; vcd add /apb_responder_test/clk; vcd add /apb_responder_test/reset_n; vcd add /apb_responder_test/select; vcd add /apb_responder_test/enable; vcd add /apb_responder_test/write; vcd add /apb_responder_test/addr; vcd add /apb_responder_test/wdata; vcd add /apb_responder_test/rdata; vcd add /apb_responder_test/ready; vcd add /apb_responder_test/error; vcd add /apb_responder_test/transfers; vcd add /apb_responder_test/wait_edges; run -all; quit -code 0"
+      ],
+      "process_exit_code": 0,
+      "marker": "AMBA_APB_RESPONDER_PASS transfers=7 checks=13",
+      "log": "apb-responder.log",
+      "vcd": "apb-responder.vcd",
+      "vcd_sha256": "edaed5cd9855b5541c55dce53ecb6f7569f21101c45f892c3c527639c88169ce",
+      "figures": [
+        {
+          "name": "apb-wait",
+          "svg": "apb-wait.svg",
+          "metadata": "apb-wait.json",
+          "start_tick": 30000,
+          "end_tick": 155000
+        },
+        {
+          "name": "apb-error",
+          "svg": "apb-error.svg",
+          "metadata": "apb-error.json",
+          "start_tick": 320000,
+          "end_tick": 390000
+        }
+      ]
+    },
+    {
+      "scenario": "ahb-adapter",
+      "top": "ahb_adapter_test",
+      "compiled_work_directory": "C:\\short\\amba-ahb-followup-20261107\\ahb-adapter",
+      "capture_command": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "ahb_adapter_test",
+        "-do",
+        "vcd file C:/short/amba-wave-followup-20261108/ahb-adapter.vcd; vcd add /ahb_adapter_test/HCLK; vcd add /ahb_adapter_test/HRESETn; vcd add /ahb_adapter_test/HSEL; vcd add /ahb_adapter_test/HWRITE; vcd add /ahb_adapter_test/HREADY; vcd add /ahb_adapter_test/HREADYOUT; vcd add /ahb_adapter_test/HRESP; vcd add /ahb_adapter_test/HADDR; vcd add /ahb_adapter_test/HTRANS; vcd add /ahb_adapter_test/HSIZE; vcd add /ahb_adapter_test/HWDATA; vcd add /ahb_adapter_test/HRDATA; vcd add /ahb_adapter_test/addresses; run -all; quit -code 0"
+      ],
+      "process_exit_code": 0,
+      "marker": "AMBA_AHB_PASS addresses=67 checks=119",
+      "log": "ahb-adapter.log",
+      "vcd": "ahb-adapter.vcd",
+      "vcd_sha256": "614b971d523453567c9f9a826839e624bbf871208f51fdd814f417ca47885d8c",
+      "figures": [
+        {
+          "name": "ahb-write-phases",
+          "svg": "ahb-write-phases.svg",
+          "metadata": "ahb-write-phases.json",
+          "start_tick": 520000,
+          "end_tick": 580000
+        },
+        {
+          "name": "ahb-error",
+          "svg": "ahb-error.svg",
+          "metadata": "ahb-error.json",
+          "start_tick": 1460000,
+          "end_tick": 1510000
+        }
+      ]
+    },
+    {
+      "scenario": "axil-response-negative",
+      "top": "axi_lite_response_negative",
+      "compiled_work_directory": "C:\\short\\amba-ahb-followup-20261107\\axil-response-negative",
+      "capture_command": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "axi_lite_response_negative",
+        "-do",
+        "vcd file C:/short/amba-wave-followup-20261108/axil-response-negative.vcd; vcd add /axi_lite_response_negative/clk; vcd add /axi_lite_response_negative/reset_n; vcd add /axi_lite_response_negative/awvalid; vcd add /axi_lite_response_negative/awready; vcd add /axi_lite_response_negative/awaddr; vcd add /axi_lite_response_negative/wvalid; vcd add /axi_lite_response_negative/wready; vcd add /axi_lite_response_negative/wdata; vcd add /axi_lite_response_negative/bvalid; vcd add /axi_lite_response_negative/bready; vcd add /axi_lite_response_negative/arvalid; vcd add /axi_lite_response_negative/arready; vcd add /axi_lite_response_negative/araddr; vcd add /axi_lite_response_negative/rvalid; vcd add /axi_lite_response_negative/rready; vcd add /axi_lite_response_negative/violations; run -all; quit -code 0"
+      ],
+      "process_exit_code": 0,
+      "marker": "AMBA_AXIL_RESPONSE_NEGATIVE_PASS scenarios=4",
+      "log": "axil-response-negative.log",
+      "vcd": "axil-response-negative.vcd",
+      "vcd_sha256": "d90823ba1bdcaf7e9dc676c5c422d53154178bc998161e8f13615599c20e1674",
+      "figures": [
+        {
+          "name": "axil-response-negative",
+          "svg": "axil-response-negative.svg",
+          "metadata": "axil-response-negative.json",
+          "start_tick": 0,
+          "end_tick": 130000
+        }
+      ]
+    },
+    {
+      "scenario": "axi4-response-negative",
+      "top": "axi4_response_negative",
+      "compiled_work_directory": "C:\\short\\amba-ahb-followup-20261107\\axi4-response-negative",
+      "capture_command": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "axi4_response_negative",
+        "-do",
+        "vcd file C:/short/amba-wave-followup-20261108/axi4-response-negative.vcd; vcd add /axi4_response_negative/clk; vcd add /axi4_response_negative/reset_n; vcd add /axi4_response_negative/awvalid; vcd add /axi4_response_negative/awready; vcd add /axi4_response_negative/awaddr; vcd add /axi4_response_negative/wvalid; vcd add /axi4_response_negative/wready; vcd add /axi4_response_negative/wlast; vcd add /axi4_response_negative/bvalid; vcd add /axi4_response_negative/bready; vcd add /axi4_response_negative/arvalid; vcd add /axi4_response_negative/arready; vcd add /axi4_response_negative/araddr; vcd add /axi4_response_negative/rvalid; vcd add /axi4_response_negative/rready; vcd add /axi4_response_negative/rlast; vcd add /axi4_response_negative/violations; run -all; quit -code 0"
+      ],
+      "process_exit_code": 0,
+      "marker": "AMBA_AXI4_RESPONSE_NEGATIVE_PASS scenarios=4",
+      "log": "axi4-response-negative.log",
+      "vcd": "axi4-response-negative.vcd",
+      "vcd_sha256": "778db0315974cfbb5810444734a8a27fcfd1d8e08c161e047a20487507f152f0",
+      "figures": [
+        {
+          "name": "axi4-response-negative",
+          "svg": "axi4-response-negative.svg",
+          "metadata": "axi4-response-negative.json",
+          "start_tick": 0,
+          "end_tick": 170000
+        }
+      ]
+    }
+  ]
+}

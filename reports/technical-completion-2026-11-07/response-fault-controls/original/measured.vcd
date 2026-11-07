@@ -1,0 +1,142 @@
+$date
+	Sat Nov 07 20:41:45 2026
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module axi4_response_negative $end
+$var reg 1 ! clk $end
+$var reg 1 " reset_n $end
+$var reg 1 # awvalid $end
+$var reg 1 $ awready $end
+$var reg 1 % wvalid $end
+$var reg 1 & wready $end
+$var reg 1 ' bvalid $end
+$var reg 1 ( bready $end
+$var reg 1 ) arvalid $end
+$var reg 1 * arready $end
+$var reg 1 + rvalid $end
+$var reg 1 , rready $end
+$var integer 32 - violations $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+1$
+0%
+1&
+0'
+0(
+0)
+1*
+0+
+0,
+b0 -
+$end
+#5000
+1!
+#10000
+0!
+#15000
+1!
+#20000
+0!
+1"
+1#
+#25000
+1!
+#30000
+0!
+0#
+1'
+#35000
+1!
+b1 -
+#40000
+0!
+#45000
+1!
+b10 -
+#50000
+0!
+#55000
+1!
+b11 -
+#60000
+0!
+0"
+0'
+b0 -
+#65000
+1!
+#70000
+0!
+#75000
+1!
+#80000
+0!
+1"
+1+
+#85000
+1!
+b1 -
+#90000
+0!
+#95000
+1!
+b10 -
+#100000
+0!
+#105000
+1!
+b11 -
+#110000
+0!
+0"
+0+
+b0 -
+#115000
+1!
+#120000
+0!
+#125000
+1!
+#130000
+0!
+1"
+1#
+1%
+1'
+#135000
+1!
+b1 -
+#140000
+0!
+0"
+0#
+0%
+0'
+b0 -
+#145000
+1!
+#150000
+0!
+#155000
+1!
+#160000
+0!
+1"
+1)
+1+
+#165000
+1!
+b1 -
+#170000
+0!

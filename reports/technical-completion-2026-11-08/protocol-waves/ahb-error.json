@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "origin": "simulator",
+  "source_filename": "ahb-adapter.vcd",
+  "source_sha256": "c1378408c808cdce16584276247a283cddac5fc4fe0d65c73c515f23ca811ac0",
+  "timescale": "1ps",
+  "start_tick": 1460000,
+  "end_tick": 1510000,
+  "source_final_tick": 2090000,
+  "signals": [
+    {
+      "name": "ahb_adapter_test.HCLK",
+      "code": "!",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "ahb_adapter_test.HRESETn",
+      "code": "\"",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "ahb_adapter_test.HSEL",
+      "code": "#",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "ahb_adapter_test.HWRITE",
+      "code": "$",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "ahb_adapter_test.HREADY",
+      "code": "%",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "ahb_adapter_test.HREADYOUT",
+      "code": "&",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "ahb_adapter_test.HRESP",
+      "code": "'",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "ahb_adapter_test.HADDR",
+      "code": "(",
+      "width": 8,
+      "kind": "reg",
+      "bit_range": "[7:0]"
+    },
+    {
+      "name": "ahb_adapter_test.HTRANS",
+      "code": ")",
+      "width": 2,
+      "kind": "reg",
+      "bit_range": "[1:0]"
+    },
+    {
+      "name": "ahb_adapter_test.HSIZE",
+      "code": "*",
+      "width": 3,
+      "kind": "reg",
+      "bit_range": "[2:0]"
+    },
+    {
+      "name": "ahb_adapter_test.HWDATA",
+      "code": "+",
+      "width": 32,
+      "kind": "reg",
+      "bit_range": "[31:0]"
+    },
+    {
+      "name": "ahb_adapter_test.HRDATA",
+      "code": ",",
+      "width": 32,
+      "kind": "reg",
+      "bit_range": "[31:0]"
+    }
+  ],
+  "same_tick_collapses": 0,
+  "functional_result": "NOT_ASSESSED_BY_RENDERER",
+  "capture_source_sha256": "614b971d523453567c9f9a826839e624bbf871208f51fdd814f417ca47885d8c",
+  "capture_source_representation": "original_simulator_capture_crlf",
+  "source_representation": "committed_git_blob_lf"
+}

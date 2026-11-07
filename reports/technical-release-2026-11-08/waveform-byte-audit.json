@@ -1,0 +1,688 @@
+{
+  "schema_version": 1,
+  "policy": "The Git blob bytes are the canonical published VCD source (LF in 29 audited files, historical CRLF in one). Original simulator-capture bytes and checkout-converted bytes are distinct representations with separate hashes. Newline conversion does not change VCD events.",
+  "repositories": 11,
+  "vcd_files": 30,
+  "rows": [
+    {
+      "repository": "ALU-RTL-Verification",
+      "revision_at_audit": "82a6212772f4bdacad0a95987bb1679e8e5c2702",
+      "path": "reports/technical-completion-2026-11-07/passing/alu-directed.vcd",
+      "git_blob_sha256": "000867cee602b358c8ca60b35ceacac28e74d2edd7b13375c850adb1123596dd",
+      "raw_download_sha256": "000867cee602b358c8ca60b35ceacac28e74d2edd7b13375c850adb1123596dd",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "b660886494af3a9fe257945b6defa212294a25c79b38c321fb081a7fcc6460fd",
+      "crlf_transformation_sha256": "b660886494af3a9fe257945b6defa212294a25c79b38c321fb081a7fcc6460fd",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-07/passing/alu-directed.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "b660886494af3a9fe257945b6defa212294a25c79b38c321fb081a7fcc6460fd"
+      ],
+      "current_figure_source_sha256": [
+        "b660886494af3a9fe257945b6defa212294a25c79b38c321fb081a7fcc6460fd"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation"
+    },
+    {
+      "repository": "APB-Interface-Verification",
+      "revision_at_audit": "ad124382ee3f59f184ee9eb4df2ae743ee920513",
+      "path": "reports/technical-completion-2026-11-07/apb64-directed.vcd",
+      "git_blob_sha256": "c3dbebad28e642b22c0ce812baf2d9bf9d9b5f83f4ed358c4260b337fa08624f",
+      "raw_download_sha256": "c3dbebad28e642b22c0ce812baf2d9bf9d9b5f83f4ed358c4260b337fa08624f",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "ed11034c71c91d631b6a8529bf5b2ce684002a92546ef6eba94d6d2feda156e8",
+      "crlf_transformation_sha256": "ed11034c71c91d631b6a8529bf5b2ce684002a92546ef6eba94d6d2feda156e8",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-07/apb64-directed.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "ed11034c71c91d631b6a8529bf5b2ce684002a92546ef6eba94d6d2feda156e8"
+      ],
+      "current_figure_source_sha256": [
+        "ed11034c71c91d631b6a8529bf5b2ce684002a92546ef6eba94d6d2feda156e8"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation"
+    },
+    {
+      "repository": "APB-Modports-Verification",
+      "revision_at_audit": "b29e52406936c732c5af3958e07ee84c05a9419d",
+      "path": "reports/technical-completion-2026-11-07/passing/apb-contract.vcd",
+      "git_blob_sha256": "7374a2ab2b6cf475561f5f43b906a643cbd54d6f074de11ed87c99e6ad635a9c",
+      "raw_download_sha256": "7374a2ab2b6cf475561f5f43b906a643cbd54d6f074de11ed87c99e6ad635a9c",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "37b3d7e4996643067bf59bfb7c19ddfb2a78926ca3e34a04dc95813395f0d309",
+      "crlf_transformation_sha256": "37b3d7e4996643067bf59bfb7c19ddfb2a78926ca3e34a04dc95813395f0d309",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-07/passing/apb-boundary.json",
+        "reports/technical-completion-2026-11-07/passing/apb-contract.json",
+        "reports/technical-completion-2026-11-07/passing/apb-reset.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "37b3d7e4996643067bf59bfb7c19ddfb2a78926ca3e34a04dc95813395f0d309"
+      ],
+      "current_figure_source_sha256": [
+        "37b3d7e4996643067bf59bfb7c19ddfb2a78926ca3e34a04dc95813395f0d309"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation"
+    },
+    {
+      "repository": "AHB-Lite-RAM-Interface",
+      "revision_at_audit": "8fdb0d6e7a9f0f93ff709f0c7b6cc500224c776e",
+      "path": "reports/technical-completion-2026-11-07/ahb16-contract.vcd",
+      "git_blob_sha256": "c69412e54828b2521c8ae5343c4ef967b813653f702e5668ede941a757c69acc",
+      "raw_download_sha256": "c69412e54828b2521c8ae5343c4ef967b813653f702e5668ede941a757c69acc",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "24298edc6de5eaeb53434e9f113873e21315645f6e3c99a1345543e562719373",
+      "crlf_transformation_sha256": "24298edc6de5eaeb53434e9f113873e21315645f6e3c99a1345543e562719373",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-07/ahb16-contract.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "24298edc6de5eaeb53434e9f113873e21315645f6e3c99a1345543e562719373"
+      ],
+      "current_figure_source_sha256": [
+        "24298edc6de5eaeb53434e9f113873e21315645f6e3c99a1345543e562719373"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation"
+    },
+    {
+      "repository": "AHB-Lite-RAM-Interface",
+      "revision_at_audit": "8fdb0d6e7a9f0f93ff709f0c7b6cc500224c776e",
+      "path": "reports/technical-completion-2026-11-07/master-monitor/ahb16-contract.vcd",
+      "git_blob_sha256": "c7413bd4ccf9f6394feeba528beb158c7d663b91726508f186e9e2fb3c7f41d2",
+      "raw_download_sha256": "c7413bd4ccf9f6394feeba528beb158c7d663b91726508f186e9e2fb3c7f41d2",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "8ea9aa0311b8881f0c2c8a3d3d62bf8910b8755a11fb08233ac08bc39b4f0bc9",
+      "crlf_transformation_sha256": "8ea9aa0311b8881f0c2c8a3d3d62bf8910b8755a11fb08233ac08bc39b4f0bc9",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-07/master-monitor/ahb16-contract.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "8ea9aa0311b8881f0c2c8a3d3d62bf8910b8755a11fb08233ac08bc39b4f0bc9"
+      ],
+      "current_figure_source_sha256": [
+        "8ea9aa0311b8881f0c2c8a3d3d62bf8910b8755a11fb08233ac08bc39b4f0bc9"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation"
+    },
+    {
+      "repository": "Two-Way-Cache-RTL",
+      "revision_at_audit": "aae79145c95cceda80e0644b23b9af290e3c55b5",
+      "path": "reports/technical-completion-2026-11-07/passing/cache-contract.vcd",
+      "git_blob_sha256": "2d42a8cd1a37795291429d2b23a7f542606606ba810a63021c3f405e4faa2ffb",
+      "raw_download_sha256": "2d42a8cd1a37795291429d2b23a7f542606606ba810a63021c3f405e4faa2ffb",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "3019dc2502ed39fae2cfb19eb5947aa756d26ceffd955ae0c5c195f6124566d2",
+      "crlf_transformation_sha256": "3019dc2502ed39fae2cfb19eb5947aa756d26ceffd955ae0c5c195f6124566d2",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-07/passing/cache-contract.json",
+        "reports/technical-completion-2026-11-07/passing/cache-duplicate-window.json",
+        "reports/technical-completion-2026-11-07/passing/cache-reset-window.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "3019dc2502ed39fae2cfb19eb5947aa756d26ceffd955ae0c5c195f6124566d2"
+      ],
+      "current_figure_source_sha256": [
+        "3019dc2502ed39fae2cfb19eb5947aa756d26ceffd955ae0c5c195f6124566d2"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation"
+    },
+    {
+      "repository": "VGA-SRAM-Framebuffer",
+      "revision_at_audit": "1c3b5e8fa15e7e1badcbf93186638aa31189708b",
+      "path": "reports/technical-completion-2026-11-07/boundary-captures/wave-frame.vcd",
+      "git_blob_sha256": "6855fa2bbf486978508a3b989f704fad02c2deba24668abc52a7b6a98b49f2e0",
+      "raw_download_sha256": "6855fa2bbf486978508a3b989f704fad02c2deba24668abc52a7b6a98b49f2e0",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "086730ade6e1868960c67cd424bcdd049b8f2b12e53502d183f6777db9d122b6",
+      "crlf_transformation_sha256": "086730ade6e1868960c67cd424bcdd049b8f2b12e53502d183f6777db9d122b6",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-07/boundary-captures/frame.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "086730ade6e1868960c67cd424bcdd049b8f2b12e53502d183f6777db9d122b6"
+      ],
+      "current_figure_source_sha256": [
+        "6855fa2bbf486978508a3b989f704fad02c2deba24668abc52a7b6a98b49f2e0"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation",
+      "original_capture_sha256": "086730ade6e1868960c67cd424bcdd049b8f2b12e53502d183f6777db9d122b6",
+      "original_capture_verified": true,
+      "current_figure_metadata_repaired": true
+    },
+    {
+      "repository": "VGA-SRAM-Framebuffer",
+      "revision_at_audit": "1c3b5e8fa15e7e1badcbf93186638aa31189708b",
+      "path": "reports/technical-completion-2026-11-07/boundary-captures/wave-horizontal.vcd",
+      "git_blob_sha256": "ad1b27eab7330dc235f7c2be9f97bce248aec95b497f347846bbc777dc4eeb05",
+      "raw_download_sha256": "ad1b27eab7330dc235f7c2be9f97bce248aec95b497f347846bbc777dc4eeb05",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "2c9fcf42ae1d04d7c7c5195e4e1d8e9511da69d9c24239d97a3c315c0e2cdc42",
+      "crlf_transformation_sha256": "2c9fcf42ae1d04d7c7c5195e4e1d8e9511da69d9c24239d97a3c315c0e2cdc42",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-07/boundary-captures/horizontal-active.json",
+        "reports/technical-completion-2026-11-07/boundary-captures/horizontal-sync-end.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "2c9fcf42ae1d04d7c7c5195e4e1d8e9511da69d9c24239d97a3c315c0e2cdc42"
+      ],
+      "current_figure_source_sha256": [
+        "ad1b27eab7330dc235f7c2be9f97bce248aec95b497f347846bbc777dc4eeb05"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation",
+      "original_capture_sha256": "2c9fcf42ae1d04d7c7c5195e4e1d8e9511da69d9c24239d97a3c315c0e2cdc42",
+      "original_capture_verified": true,
+      "current_figure_metadata_repaired": true
+    },
+    {
+      "repository": "VGA-SRAM-Framebuffer",
+      "revision_at_audit": "1c3b5e8fa15e7e1badcbf93186638aa31189708b",
+      "path": "reports/technical-completion-2026-11-07/boundary-captures/wave-vertical.vcd",
+      "git_blob_sha256": "12f8e4d346ba449ecb67a1563f796c0ebc4fee4c49c79a94709fc62c770516a8",
+      "raw_download_sha256": "12f8e4d346ba449ecb67a1563f796c0ebc4fee4c49c79a94709fc62c770516a8",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "804d0f3e0f705d936e0b3f46f3c3e1395359f7e39be26176182bb936e84c9e12",
+      "crlf_transformation_sha256": "804d0f3e0f705d936e0b3f46f3c3e1395359f7e39be26176182bb936e84c9e12",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-07/boundary-captures/vertical-sync-end.json",
+        "reports/technical-completion-2026-11-07/boundary-captures/vertical-sync-start.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "804d0f3e0f705d936e0b3f46f3c3e1395359f7e39be26176182bb936e84c9e12"
+      ],
+      "current_figure_source_sha256": [
+        "12f8e4d346ba449ecb67a1563f796c0ebc4fee4c49c79a94709fc62c770516a8"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation",
+      "original_capture_sha256": "804d0f3e0f705d936e0b3f46f3c3e1395359f7e39be26176182bb936e84c9e12",
+      "original_capture_verified": true,
+      "current_figure_metadata_repaired": true
+    },
+    {
+      "repository": "VGA-SRAM-Framebuffer",
+      "revision_at_audit": "1c3b5e8fa15e7e1badcbf93186638aa31189708b",
+      "path": "reports/technical-completion-2026-11-07/boundary-captures/wave-write.vcd",
+      "git_blob_sha256": "7f185bb99a237e198783f5c16beb2e3cad38adf4c96df08e83f3c1c3066361b1",
+      "raw_download_sha256": "7f185bb99a237e198783f5c16beb2e3cad38adf4c96df08e83f3c1c3066361b1",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "e21bb2bb6ecce6915106cf48854836ce7538f8f5fe57aa4b12e269417a4a46db",
+      "crlf_transformation_sha256": "e21bb2bb6ecce6915106cf48854836ce7538f8f5fe57aa4b12e269417a4a46db",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-07/boundary-captures/write.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "e21bb2bb6ecce6915106cf48854836ce7538f8f5fe57aa4b12e269417a4a46db"
+      ],
+      "current_figure_source_sha256": [
+        "7f185bb99a237e198783f5c16beb2e3cad38adf4c96df08e83f3c1c3066361b1"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation",
+      "original_capture_sha256": "e21bb2bb6ecce6915106cf48854836ce7538f8f5fe57aa4b12e269417a4a46db",
+      "original_capture_verified": true,
+      "current_figure_metadata_repaired": true
+    },
+    {
+      "repository": "VGA-SRAM-Framebuffer",
+      "revision_at_audit": "1c3b5e8fa15e7e1badcbf93186638aa31189708b",
+      "path": "reports/technical-completion-2026-11-07/vga-raster.vcd",
+      "git_blob_sha256": "411b5fa623d0566278eecae87a44dbeb1c4211eda3e5b91ee014381ab32002e7",
+      "raw_download_sha256": "411b5fa623d0566278eecae87a44dbeb1c4211eda3e5b91ee014381ab32002e7",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "9495d50025a207a22c42a6e9a843baf1b1f9fc9495124caccffbddd31f74df6c",
+      "crlf_transformation_sha256": "9495d50025a207a22c42a6e9a843baf1b1f9fc9495124caccffbddd31f74df6c",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-07/vga-raster.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "9495d50025a207a22c42a6e9a843baf1b1f9fc9495124caccffbddd31f74df6c"
+      ],
+      "current_figure_source_sha256": [
+        "9495d50025a207a22c42a6e9a843baf1b1f9fc9495124caccffbddd31f74df6c"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation"
+    },
+    {
+      "repository": "AXI4-Lite-Memory-Interface",
+      "revision_at_audit": "7f60fbc525013bc7462ce6d6e3b44f7a495096f8",
+      "path": "reports/technical-completion-2026-11-07/measured-waveform/legal-selected.vcd",
+      "git_blob_sha256": "c6b6cf46abe9cf34e59d2d3b1acc00413cb73094dc5a64fb0b82c34a5e7bb6ec",
+      "raw_download_sha256": "c6b6cf46abe9cf34e59d2d3b1acc00413cb73094dc5a64fb0b82c34a5e7bb6ec",
+      "git_blob_newlines": "CRLF",
+      "checkout_sha256": "c6b6cf46abe9cf34e59d2d3b1acc00413cb73094dc5a64fb0b82c34a5e7bb6ec",
+      "crlf_transformation_sha256": "c6b6cf46abe9cf34e59d2d3b1acc00413cb73094dc5a64fb0b82c34a5e7bb6ec",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-07/measured-waveform/legal-selected.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "c6b6cf46abe9cf34e59d2d3b1acc00413cb73094dc5a64fb0b82c34a5e7bb6ec"
+      ],
+      "current_figure_source_sha256": [
+        "c6b6cf46abe9cf34e59d2d3b1acc00413cb73094dc5a64fb0b82c34a5e7bb6ec"
+      ],
+      "metadata_hash_relation_before_current_repair": "git_blob",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "git_blob"
+    },
+    {
+      "repository": "RV32I-AXI4-Lite-SoC",
+      "revision_at_audit": "4ef101af1f44d257b58a6d63cd157de7baea833c",
+      "path": "logs/integration.vcd",
+      "git_blob_sha256": "95bc78f86a0df5ba28424bb32c13bafe3d518ddfe5cf50709a84c84164675b0d",
+      "raw_download_sha256": "95bc78f86a0df5ba28424bb32c13bafe3d518ddfe5cf50709a84c84164675b0d",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "e72b6feecd6539801b65bc4b3cab60b8d0e536450c12c526dda32c3873c5f45c",
+      "crlf_transformation_sha256": "e72b6feecd6539801b65bc4b3cab60b8d0e536450c12c526dda32c3873c5f45c",
+      "figure_metadata_paths": [],
+      "figure_metadata_source_sha256": [],
+      "current_figure_source_sha256": [],
+      "metadata_hash_relation_before_current_repair": "no_figure_metadata",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation"
+    },
+    {
+      "repository": "RV32I-AXI4-Lite-SoC",
+      "revision_at_audit": "4ef101af1f44d257b58a6d63cd157de7baea833c",
+      "path": "reports/technical-completion-2026-11-07/corrected-qualification/measured.vcd",
+      "git_blob_sha256": "dfdb988a082177965fa2979bed2c201744dec94c2386b4d6f63ccbace70a4207",
+      "raw_download_sha256": "dfdb988a082177965fa2979bed2c201744dec94c2386b4d6f63ccbace70a4207",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "2a083f2e31b10c3b22611cc4fbe8b16c32b7caff76f7f9e5a0489bb241e3c018",
+      "crlf_transformation_sha256": "2a083f2e31b10c3b22611cc4fbe8b16c32b7caff76f7f9e5a0489bb241e3c018",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-07/corrected-qualification/measured.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "2a083f2e31b10c3b22611cc4fbe8b16c32b7caff76f7f9e5a0489bb241e3c018"
+      ],
+      "current_figure_source_sha256": [
+        "2a083f2e31b10c3b22611cc4fbe8b16c32b7caff76f7f9e5a0489bb241e3c018"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation"
+    },
+    {
+      "repository": "RV32I-AXI4-Lite-SoC",
+      "revision_at_audit": "4ef101af1f44d257b58a6d63cd157de7baea833c",
+      "path": "reports/technical-completion-2026-11-07/functional-regression/logs/integration.vcd",
+      "git_blob_sha256": "66f6723778165bddda9dab7a692b78a35fc44c79c1ee58ae5ed94941e240a43b",
+      "raw_download_sha256": "66f6723778165bddda9dab7a692b78a35fc44c79c1ee58ae5ed94941e240a43b",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "9296a8aa37bc45755e3fbf91e7151a3a30f1c849396c18bca6fa82c3a651f835",
+      "crlf_transformation_sha256": "9296a8aa37bc45755e3fbf91e7151a3a30f1c849396c18bca6fa82c3a651f835",
+      "figure_metadata_paths": [],
+      "figure_metadata_source_sha256": [],
+      "current_figure_source_sha256": [],
+      "metadata_hash_relation_before_current_repair": "no_figure_metadata",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation"
+    },
+    {
+      "repository": "RV32I-AXI4-Lite-SoC",
+      "revision_at_audit": "4ef101af1f44d257b58a6d63cd157de7baea833c",
+      "path": "reports/technical-completion-2026-11-07/measured-waveform/measured.vcd",
+      "git_blob_sha256": "dfdb988a082177965fa2979bed2c201744dec94c2386b4d6f63ccbace70a4207",
+      "raw_download_sha256": "dfdb988a082177965fa2979bed2c201744dec94c2386b4d6f63ccbace70a4207",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "2a083f2e31b10c3b22611cc4fbe8b16c32b7caff76f7f9e5a0489bb241e3c018",
+      "crlf_transformation_sha256": "2a083f2e31b10c3b22611cc4fbe8b16c32b7caff76f7f9e5a0489bb241e3c018",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-07/measured-waveform/measured.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "2a083f2e31b10c3b22611cc4fbe8b16c32b7caff76f7f9e5a0489bb241e3c018"
+      ],
+      "current_figure_source_sha256": [
+        "2a083f2e31b10c3b22611cc4fbe8b16c32b7caff76f7f9e5a0489bb241e3c018"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation"
+    },
+    {
+      "repository": "RV32I-AXI4-Lite-SoC",
+      "revision_at_audit": "4ef101af1f44d257b58a6d63cd157de7baea833c",
+      "path": "reports/technical-completion-2026-11-07/safe-regression/integration.vcd",
+      "git_blob_sha256": "9a59fbe481ff6726dcd5be63a0bb330f08a2ef0d64f16286437fa8826966b323",
+      "raw_download_sha256": "9a59fbe481ff6726dcd5be63a0bb330f08a2ef0d64f16286437fa8826966b323",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "f0cfc9dc3e141f0ae4122c0773396a9ed95c9c79e0a72f14237a1264096acfb5",
+      "crlf_transformation_sha256": "f0cfc9dc3e141f0ae4122c0773396a9ed95c9c79e0a72f14237a1264096acfb5",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-07/safe-regression/integration.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "f0cfc9dc3e141f0ae4122c0773396a9ed95c9c79e0a72f14237a1264096acfb5"
+      ],
+      "current_figure_source_sha256": [
+        "f0cfc9dc3e141f0ae4122c0773396a9ed95c9c79e0a72f14237a1264096acfb5"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation"
+    },
+    {
+      "repository": "AXI4-DMA-Subsystem",
+      "revision_at_audit": "5f7543bf1bf4d5e7638def9d363c106c2e7b55d0",
+      "path": "reports/technical-completion-2026-11-07/wave-all_w_before_aw_16/dma-order.vcd",
+      "git_blob_sha256": "cb53afdaa16d1702f6f54aae717f21bee04ce75aedf468b63be14014d8f43d61",
+      "raw_download_sha256": "cb53afdaa16d1702f6f54aae717f21bee04ce75aedf468b63be14014d8f43d61",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "90b4f24d16cadd1f12870021a9cdb69f2064499fe555b1d53a9e87dc53e5bf0e",
+      "crlf_transformation_sha256": "90b4f24d16cadd1f12870021a9cdb69f2064499fe555b1d53a9e87dc53e5bf0e",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-07/wave-all_w_before_aw_16/dma-order.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "90b4f24d16cadd1f12870021a9cdb69f2064499fe555b1d53a9e87dc53e5bf0e"
+      ],
+      "current_figure_source_sha256": [
+        "90b4f24d16cadd1f12870021a9cdb69f2064499fe555b1d53a9e87dc53e5bf0e"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation"
+    },
+    {
+      "repository": "AXI4-DMA-Subsystem",
+      "revision_at_audit": "5f7543bf1bf4d5e7638def9d363c106c2e7b55d0",
+      "path": "reports/technical-completion-2026-11-07/wave-awready_waits_wvalid/dma-order.vcd",
+      "git_blob_sha256": "db979bcf2c393001963983240829fe3987120c1a03b5369967c9a5dc84ac9caf",
+      "raw_download_sha256": "db979bcf2c393001963983240829fe3987120c1a03b5369967c9a5dc84ac9caf",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "78b88e01dbeedb9dd9261bf694aad193ef11c5972567a18d75d1dc935747ce29",
+      "crlf_transformation_sha256": "78b88e01dbeedb9dd9261bf694aad193ef11c5972567a18d75d1dc935747ce29",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-07/wave-awready_waits_wvalid/dma-order.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "78b88e01dbeedb9dd9261bf694aad193ef11c5972567a18d75d1dc935747ce29"
+      ],
+      "current_figure_source_sha256": [
+        "78b88e01dbeedb9dd9261bf694aad193ef11c5972567a18d75d1dc935747ce29"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation"
+    },
+    {
+      "repository": "AXI4-DMA-Subsystem",
+      "revision_at_audit": "5f7543bf1bf4d5e7638def9d363c106c2e7b55d0",
+      "path": "reports/technical-completion-2026-11-07/wave-both_boundaries/dma-order.vcd",
+      "git_blob_sha256": "d604e5e128d135f0570b40bd3db20fb62f770b88968ffb2d7aa7f7b90b98b76d",
+      "raw_download_sha256": "d604e5e128d135f0570b40bd3db20fb62f770b88968ffb2d7aa7f7b90b98b76d",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "31826361980325852d1066fdee05e811d1cf8a7481a020e1fcdbeda15fd30661",
+      "crlf_transformation_sha256": "31826361980325852d1066fdee05e811d1cf8a7481a020e1fcdbeda15fd30661",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-07/wave-both_boundaries/dma-order.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "31826361980325852d1066fdee05e811d1cf8a7481a020e1fcdbeda15fd30661"
+      ],
+      "current_figure_source_sha256": [
+        "31826361980325852d1066fdee05e811d1cf8a7481a020e1fcdbeda15fd30661"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation"
+    },
+    {
+      "repository": "AXI4-DMA-Subsystem",
+      "revision_at_audit": "5f7543bf1bf4d5e7638def9d363c106c2e7b55d0",
+      "path": "reports/technical-completion-2026-11-07/wave-same_cycle_16/dma-order.vcd",
+      "git_blob_sha256": "8bed3e7b2eeabe5a9b459dd1b1182c1959680c1c91e7df58f10c3629dbf2380e",
+      "raw_download_sha256": "8bed3e7b2eeabe5a9b459dd1b1182c1959680c1c91e7df58f10c3629dbf2380e",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "3321d23b28fd891017c3cef1c727ac3fde51742bf358d5465ef8da5b67f1ae41",
+      "crlf_transformation_sha256": "3321d23b28fd891017c3cef1c727ac3fde51742bf358d5465ef8da5b67f1ae41",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-07/wave-same_cycle_16/dma-order.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "3321d23b28fd891017c3cef1c727ac3fde51742bf358d5465ef8da5b67f1ae41"
+      ],
+      "current_figure_source_sha256": [
+        "3321d23b28fd891017c3cef1c727ac3fde51742bf358d5465ef8da5b67f1ae41"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation"
+    },
+    {
+      "repository": "AMBA-Protocol-Verification",
+      "revision_at_audit": "d6a0c6129eee66e05cc19f67a6341e4ed6acec24",
+      "path": "reports/technical-completion-2026-11-07/response-fault-controls/original/measured.vcd",
+      "git_blob_sha256": "1a3243fccd7ff8ed70195a89f2145614c7fd5a81a14c0c54161121b5343730bc",
+      "raw_download_sha256": "1a3243fccd7ff8ed70195a89f2145614c7fd5a81a14c0c54161121b5343730bc",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "23c2f1f9c82f5e4f6270e9c86ba9b9d859ef51cb0109c5bedae9c166a4c3d4b1",
+      "crlf_transformation_sha256": "23c2f1f9c82f5e4f6270e9c86ba9b9d859ef51cb0109c5bedae9c166a4c3d4b1",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-07/response-fault-controls/original/measured.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "23c2f1f9c82f5e4f6270e9c86ba9b9d859ef51cb0109c5bedae9c166a4c3d4b1"
+      ],
+      "current_figure_source_sha256": [
+        "23c2f1f9c82f5e4f6270e9c86ba9b9d859ef51cb0109c5bedae9c166a4c3d4b1"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation"
+    },
+    {
+      "repository": "AMBA-Protocol-Verification",
+      "revision_at_audit": "d6a0c6129eee66e05cc19f67a6341e4ed6acec24",
+      "path": "reports/technical-completion-2026-11-08/protocol-waves/ahb-adapter.vcd",
+      "git_blob_sha256": "c1378408c808cdce16584276247a283cddac5fc4fe0d65c73c515f23ca811ac0",
+      "raw_download_sha256": "c1378408c808cdce16584276247a283cddac5fc4fe0d65c73c515f23ca811ac0",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "614b971d523453567c9f9a826839e624bbf871208f51fdd814f417ca47885d8c",
+      "crlf_transformation_sha256": "614b971d523453567c9f9a826839e624bbf871208f51fdd814f417ca47885d8c",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-08/protocol-waves/ahb-error.json",
+        "reports/technical-completion-2026-11-08/protocol-waves/ahb-write-phases.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "614b971d523453567c9f9a826839e624bbf871208f51fdd814f417ca47885d8c"
+      ],
+      "current_figure_source_sha256": [
+        "c1378408c808cdce16584276247a283cddac5fc4fe0d65c73c515f23ca811ac0"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation",
+      "original_capture_sha256": "614b971d523453567c9f9a826839e624bbf871208f51fdd814f417ca47885d8c",
+      "original_capture_verified": true,
+      "current_figure_metadata_repaired": true
+    },
+    {
+      "repository": "AMBA-Protocol-Verification",
+      "revision_at_audit": "d6a0c6129eee66e05cc19f67a6341e4ed6acec24",
+      "path": "reports/technical-completion-2026-11-08/protocol-waves/apb-responder.vcd",
+      "git_blob_sha256": "a7aa5f8e52d84ada9d381470b57519ea09121666762c769673a92fe8e6192a9e",
+      "raw_download_sha256": "a7aa5f8e52d84ada9d381470b57519ea09121666762c769673a92fe8e6192a9e",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "edaed5cd9855b5541c55dce53ecb6f7569f21101c45f892c3c527639c88169ce",
+      "crlf_transformation_sha256": "edaed5cd9855b5541c55dce53ecb6f7569f21101c45f892c3c527639c88169ce",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-08/protocol-waves/apb-error.json",
+        "reports/technical-completion-2026-11-08/protocol-waves/apb-wait.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "edaed5cd9855b5541c55dce53ecb6f7569f21101c45f892c3c527639c88169ce"
+      ],
+      "current_figure_source_sha256": [
+        "a7aa5f8e52d84ada9d381470b57519ea09121666762c769673a92fe8e6192a9e"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation",
+      "original_capture_sha256": "edaed5cd9855b5541c55dce53ecb6f7569f21101c45f892c3c527639c88169ce",
+      "original_capture_verified": true,
+      "current_figure_metadata_repaired": true
+    },
+    {
+      "repository": "AMBA-Protocol-Verification",
+      "revision_at_audit": "d6a0c6129eee66e05cc19f67a6341e4ed6acec24",
+      "path": "reports/technical-completion-2026-11-08/protocol-waves/axi4-response-negative.vcd",
+      "git_blob_sha256": "9995e06c866a4a568cae3644c24faddc075c95454bf9660dd81d13ea557d7f70",
+      "raw_download_sha256": "9995e06c866a4a568cae3644c24faddc075c95454bf9660dd81d13ea557d7f70",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "778db0315974cfbb5810444734a8a27fcfd1d8e08c161e047a20487507f152f0",
+      "crlf_transformation_sha256": "778db0315974cfbb5810444734a8a27fcfd1d8e08c161e047a20487507f152f0",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-08/protocol-waves/axi4-response-negative.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "778db0315974cfbb5810444734a8a27fcfd1d8e08c161e047a20487507f152f0"
+      ],
+      "current_figure_source_sha256": [
+        "9995e06c866a4a568cae3644c24faddc075c95454bf9660dd81d13ea557d7f70"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation",
+      "original_capture_sha256": "778db0315974cfbb5810444734a8a27fcfd1d8e08c161e047a20487507f152f0",
+      "original_capture_verified": true,
+      "current_figure_metadata_repaired": true
+    },
+    {
+      "repository": "AMBA-Protocol-Verification",
+      "revision_at_audit": "d6a0c6129eee66e05cc19f67a6341e4ed6acec24",
+      "path": "reports/technical-completion-2026-11-08/protocol-waves/axil-response-negative.vcd",
+      "git_blob_sha256": "c53716f27c6150534e1e0da87ced88f62ecb7bfc609b98273a1523f46ae59dcc",
+      "raw_download_sha256": "c53716f27c6150534e1e0da87ced88f62ecb7bfc609b98273a1523f46ae59dcc",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "d90823ba1bdcaf7e9dc676c5c422d53154178bc998161e8f13615599c20e1674",
+      "crlf_transformation_sha256": "d90823ba1bdcaf7e9dc676c5c422d53154178bc998161e8f13615599c20e1674",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-08/protocol-waves/axil-response-negative.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "d90823ba1bdcaf7e9dc676c5c422d53154178bc998161e8f13615599c20e1674"
+      ],
+      "current_figure_source_sha256": [
+        "c53716f27c6150534e1e0da87ced88f62ecb7bfc609b98273a1523f46ae59dcc"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation",
+      "original_capture_sha256": "d90823ba1bdcaf7e9dc676c5c422d53154178bc998161e8f13615599c20e1674",
+      "original_capture_verified": true,
+      "current_figure_metadata_repaired": true
+    },
+    {
+      "repository": "RV32I-Coherent-Memory-SoC",
+      "revision_at_audit": "78bc0097856f6afc433c0e6545e2bf3981cdea06",
+      "path": "reports/technical-completion-2026-11-07/wave-bridge/scenario.vcd",
+      "git_blob_sha256": "4615989648e462d0a128589a955c0bab7281ab9d45c2e2df398a09f487b1ae1c",
+      "raw_download_sha256": "4615989648e462d0a128589a955c0bab7281ab9d45c2e2df398a09f487b1ae1c",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "3e3d948057d2fb0a9c8df753691b70a28e01ce113b68a969f921b5019c30102b",
+      "crlf_transformation_sha256": "3e3d948057d2fb0a9c8df753691b70a28e01ce113b68a969f921b5019c30102b",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-07/wave-bridge/scenario.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "3e3d948057d2fb0a9c8df753691b70a28e01ce113b68a969f921b5019c30102b"
+      ],
+      "current_figure_source_sha256": [
+        "3e3d948057d2fb0a9c8df753691b70a28e01ce113b68a969f921b5019c30102b"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation"
+    },
+    {
+      "repository": "RV32I-Coherent-Memory-SoC",
+      "revision_at_audit": "78bc0097856f6afc433c0e6545e2bf3981cdea06",
+      "path": "reports/technical-completion-2026-11-07/wave-reset_commit/scenario.vcd",
+      "git_blob_sha256": "4fa08948e84694b5ec19f9037d8d398dba25ca99a93cca58f485d916e18ce8a1",
+      "raw_download_sha256": "4fa08948e84694b5ec19f9037d8d398dba25ca99a93cca58f485d916e18ce8a1",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "3b145e4053d95668578098cd9fb44a4fde2f3008aad04fe40fc8dd2a42e8db94",
+      "crlf_transformation_sha256": "3b145e4053d95668578098cd9fb44a4fde2f3008aad04fe40fc8dd2a42e8db94",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-07/wave-reset_commit/scenario.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "3b145e4053d95668578098cd9fb44a4fde2f3008aad04fe40fc8dd2a42e8db94"
+      ],
+      "current_figure_source_sha256": [
+        "3b145e4053d95668578098cd9fb44a4fde2f3008aad04fe40fc8dd2a42e8db94"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation"
+    },
+    {
+      "repository": "RV32I-Coherent-Memory-SoC",
+      "revision_at_audit": "78bc0097856f6afc433c0e6545e2bf3981cdea06",
+      "path": "reports/technical-completion-2026-11-07/wave-shared_read_write/scenario.vcd",
+      "git_blob_sha256": "1ba02de6315daf284da49b52c467a5000accaf4831bd69101538692d47e1a780",
+      "raw_download_sha256": "1ba02de6315daf284da49b52c467a5000accaf4831bd69101538692d47e1a780",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "974ecaa6248769450d0470656c5dab64272136ecd05af88fe955cf2d2b6af3f6",
+      "crlf_transformation_sha256": "974ecaa6248769450d0470656c5dab64272136ecd05af88fe955cf2d2b6af3f6",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-07/wave-shared_read_write/scenario.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "974ecaa6248769450d0470656c5dab64272136ecd05af88fe955cf2d2b6af3f6"
+      ],
+      "current_figure_source_sha256": [
+        "974ecaa6248769450d0470656c5dab64272136ecd05af88fe955cf2d2b6af3f6"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation"
+    },
+    {
+      "repository": "RV32I-Coherent-Memory-SoC",
+      "revision_at_audit": "78bc0097856f6afc433c0e6545e2bf3981cdea06",
+      "path": "reports/technical-completion-2026-11-07/wave-shared_store/scenario.vcd",
+      "git_blob_sha256": "d3205475d71f138c2d2012b0adb571c351ed19d2f28ba5d86cf857fa0564e9f9",
+      "raw_download_sha256": "d3205475d71f138c2d2012b0adb571c351ed19d2f28ba5d86cf857fa0564e9f9",
+      "git_blob_newlines": "LF",
+      "checkout_sha256": "344707ec93787efef6ca75e4ff100bec5abacd32b025ada03908b66366c3369a",
+      "crlf_transformation_sha256": "344707ec93787efef6ca75e4ff100bec5abacd32b025ada03908b66366c3369a",
+      "figure_metadata_paths": [
+        "reports/technical-completion-2026-11-07/wave-shared_store/scenario.json"
+      ],
+      "figure_metadata_source_sha256": [
+        "344707ec93787efef6ca75e4ff100bec5abacd32b025ada03908b66366c3369a"
+      ],
+      "current_figure_source_sha256": [
+        "344707ec93787efef6ca75e4ff100bec5abacd32b025ada03908b66366c3369a"
+      ],
+      "metadata_hash_relation_before_current_repair": "crlf_transformation",
+      "git_blob_equals_raw_download": true,
+      "checkout_relation": "crlf_transformation"
+    }
+  ]
+}

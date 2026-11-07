@@ -1,0 +1,14 @@
+# vsim -c -onfinish exit apb_responder_test -do "run -all; quit -code 0" 
+# Start time: 20:39:13 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.amba_transactions
+# Loading work.apb_responder_test
+# Loading work.apb_master_driver
+# Loading work.apb_ram_responder
+# Loading work.apb_monitor
+# run -all
+# AMBA_APB_RESPONDER_PASS transfers=7 checks=13 waits=14
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/tc/amba/tb/apb_responder_test.sv(42)
+#    Time: 400 ns  Iteration: 1  Instance: /apb_responder_test
+# End time: 20:39:15 on Nov 07,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

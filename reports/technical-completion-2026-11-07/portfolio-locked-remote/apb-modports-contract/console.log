@@ -1,0 +1,3 @@
+PASS tb_apb_modport checks=2
+PASS apb_contract_test checks=12488
+APB_MODPORT_REGRESSION_PASS legacy_checks=2 contract_checks=12488 output=C:\short\tc-aggregate-remote-2026-11-07\apb-modports-contract\output

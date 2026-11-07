@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="931" viewBox="0 0 1440 931">
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif} .signal{font-family:DejaVu Sans Mono,monospace;font-size:13px} .small{font-size:12px;fill:#475569}</style>
+<text x="26" y="31" font-size="21" fill="#0f172a">Intentional invalid AXI4-Lite early responses under backpressure</text>
+<text x="26" y="54" font-size="13" fill="#92400e">VCD TRACE - original CRLF capture; committed VCD is LF</text>
+<text x="26" y="76" class="small">Time in VCD ticks; 1 tick = 1ps. Same-timestamp changes display their final value.</text>
+<path d="M370.00,105 V864" stroke="#dbe3ed"/>
+<text x="370.00" y="99" text-anchor="middle" class="small">0</text>
+<path d="M496.25,105 V864" stroke="#dbe3ed"/>
+<text x="496.25" y="99" text-anchor="middle" class="small">16250</text>
+<path d="M622.50,105 V864" stroke="#dbe3ed"/>
+<text x="622.50" y="99" text-anchor="middle" class="small">32500</text>
+<path d="M748.75,105 V864" stroke="#dbe3ed"/>
+<text x="748.75" y="99" text-anchor="middle" class="small">48750</text>
+<path d="M875.00,105 V864" stroke="#dbe3ed"/>
+<text x="875.00" y="99" text-anchor="middle" class="small">65000</text>
+<path d="M1001.25,105 V864" stroke="#dbe3ed"/>
+<text x="1001.25" y="99" text-anchor="middle" class="small">81250</text>
+<path d="M1127.50,105 V864" stroke="#dbe3ed"/>
+<text x="1127.50" y="99" text-anchor="middle" class="small">97500</text>
+<path d="M1253.75,105 V864" stroke="#dbe3ed"/>
+<text x="1253.75" y="99" text-anchor="middle" class="small">113750</text>
+<path d="M1380.00,105 V864" stroke="#dbe3ed"/>
+<text x="1380.00" y="99" text-anchor="middle" class="small">130000</text>
+<text x="26" y="135" class="signal"><title>axi_lite_response_negative.clk</title>axi_lite_response_negative.clk</text>
+<text x="26" y="151" class="small">1 bit</text>
+<path d="M370.00,150 H408.85" stroke="#0369a1" stroke-width="2"/>
+<path d="M408.85,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M408.85,122 H447.69" stroke="#0369a1" stroke-width="2"/>
+<path d="M447.69,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M447.69,150 H486.54" stroke="#0369a1" stroke-width="2"/>
+<path d="M486.54,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M486.54,122 H525.38" stroke="#0369a1" stroke-width="2"/>
+<path d="M525.38,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M525.38,150 H564.23" stroke="#0369a1" stroke-width="2"/>
+<path d="M564.23,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M564.23,122 H603.08" stroke="#0369a1" stroke-width="2"/>
+<path d="M603.08,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M603.08,150 H641.92" stroke="#0369a1" stroke-width="2"/>
+<path d="M641.92,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M641.92,122 H680.77" stroke="#0369a1" stroke-width="2"/>
+<path d="M680.77,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M680.77,150 H719.62" stroke="#0369a1" stroke-width="2"/>
+<path d="M719.62,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M719.62,122 H758.46" stroke="#0369a1" stroke-width="2"/>
+<path d="M758.46,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M758.46,150 H797.31" stroke="#0369a1" stroke-width="2"/>
+<path d="M797.31,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M797.31,122 H836.15" stroke="#0369a1" stroke-width="2"/>
+<path d="M836.15,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M836.15,150 H875.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M875.00,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M875.00,122 H913.85" stroke="#0369a1" stroke-width="2"/>
+<path d="M913.85,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M913.85,150 H952.69" stroke="#0369a1" stroke-width="2"/>
+<path d="M952.69,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M952.69,122 H991.54" stroke="#0369a1" stroke-width="2"/>
+<path d="M991.54,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M991.54,150 H1030.38" stroke="#0369a1" stroke-width="2"/>
+<path d="M1030.38,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M1030.38,122 H1069.23" stroke="#0369a1" stroke-width="2"/>
+<path d="M1069.23,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M1069.23,150 H1108.08" stroke="#0369a1" stroke-width="2"/>
+<path d="M1108.08,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M1108.08,122 H1146.92" stroke="#0369a1" stroke-width="2"/>
+<path d="M1146.92,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M1146.92,150 H1185.77" stroke="#0369a1" stroke-width="2"/>
+<path d="M1185.77,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M1185.77,122 H1224.62" stroke="#0369a1" stroke-width="2"/>
+<path d="M1224.62,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M1224.62,150 H1263.46" stroke="#0369a1" stroke-width="2"/>
+<path d="M1263.46,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M1263.46,122 H1302.31" stroke="#0369a1" stroke-width="2"/>
+<path d="M1302.31,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M1302.31,150 H1341.15" stroke="#0369a1" stroke-width="2"/>
+<path d="M1341.15,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M1341.15,122 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,162 H1408" stroke="#e2e8f0"/>
+<text x="26" y="192" class="signal"><title>axi_lite_response_negative.reset_n</title>axi_lite_response_negative.reset_n</text>
+<text x="26" y="208" class="small">1 bit</text>
+<path d="M370.00,207 H525.38" stroke="#0369a1" stroke-width="2"/>
+<path d="M525.38,207 V179" stroke="#0369a1" stroke-width="2"/>
+<path d="M525.38,179 H758.46" stroke="#0369a1" stroke-width="2"/>
+<path d="M758.46,179 V207" stroke="#0369a1" stroke-width="2"/>
+<path d="M758.46,207 H913.85" stroke="#0369a1" stroke-width="2"/>
+<path d="M913.85,207 V179" stroke="#0369a1" stroke-width="2"/>
+<path d="M913.85,179 H1146.92" stroke="#0369a1" stroke-width="2"/>
+<path d="M1146.92,179 V207" stroke="#0369a1" stroke-width="2"/>
+<path d="M1146.92,207 H1302.31" stroke="#0369a1" stroke-width="2"/>
+<path d="M1302.31,207 V179" stroke="#0369a1" stroke-width="2"/>
+<path d="M1302.31,179 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,219 H1408" stroke="#e2e8f0"/>
+<text x="26" y="249" class="signal"><title>axi_lite_response_negative.awvalid</title>axi_lite_response_negative.awvalid</text>
+<text x="26" y="265" class="small">1 bit</text>
+<path d="M370.00,264 H1302.31" stroke="#0369a1" stroke-width="2"/>
+<path d="M1302.31,264 V236" stroke="#0369a1" stroke-width="2"/>
+<path d="M1302.31,236 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,276 H1408" stroke="#e2e8f0"/>
+<text x="26" y="306" class="signal"><title>axi_lite_response_negative.awready</title>axi_lite_response_negative.awready</text>
+<text x="26" y="322" class="small">1 bit</text>
+<path d="M370.00,321 H1302.31" stroke="#0369a1" stroke-width="2"/>
+<path d="M1302.31,321 V293" stroke="#0369a1" stroke-width="2"/>
+<path d="M1302.31,293 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,333 H1408" stroke="#e2e8f0"/>
+<text x="26" y="363" class="signal"><title>axi_lite_response_negative.wvalid</title>axi_lite_response_negative.wvalid</text>
+<text x="26" y="379" class="small">1 bit</text>
+<path d="M370.00,378 H1302.31" stroke="#0369a1" stroke-width="2"/>
+<path d="M1302.31,378 V350" stroke="#0369a1" stroke-width="2"/>
+<path d="M1302.31,350 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,390 H1408" stroke="#e2e8f0"/>
+<text x="26" y="420" class="signal"><title>axi_lite_response_negative.wready</title>axi_lite_response_negative.wready</text>
+<text x="26" y="436" class="small">1 bit</text>
+<path d="M370.00,435 H1302.31" stroke="#0369a1" stroke-width="2"/>
+<path d="M1302.31,435 V407" stroke="#0369a1" stroke-width="2"/>
+<path d="M1302.31,407 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,447 H1408" stroke="#e2e8f0"/>
+<text x="26" y="477" class="signal"><title>axi_lite_response_negative.bvalid</title>axi_lite_response_negative.bvalid</text>
+<text x="26" y="493" class="small">1 bit</text>
+<path d="M370.00,492 H525.38" stroke="#0369a1" stroke-width="2"/>
+<path d="M525.38,492 V464" stroke="#0369a1" stroke-width="2"/>
+<path d="M525.38,464 H758.46" stroke="#0369a1" stroke-width="2"/>
+<path d="M758.46,464 V492" stroke="#0369a1" stroke-width="2"/>
+<path d="M758.46,492 H1302.31" stroke="#0369a1" stroke-width="2"/>
+<path d="M1302.31,492 V464" stroke="#0369a1" stroke-width="2"/>
+<path d="M1302.31,464 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,504 H1408" stroke="#e2e8f0"/>
+<text x="26" y="534" class="signal"><title>axi_lite_response_negative.bready</title>axi_lite_response_negative.bready</text>
+<text x="26" y="550" class="small">1 bit</text>
+<path d="M370.00,549 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,561 H1408" stroke="#e2e8f0"/>
+<text x="26" y="591" class="signal"><title>axi_lite_response_negative.arvalid</title>axi_lite_response_negative.arvalid</text>
+<text x="26" y="607" class="small">1 bit</text>
+<path d="M370.00,606 H1302.31" stroke="#0369a1" stroke-width="2"/>
+<path d="M1302.31,606 V578" stroke="#0369a1" stroke-width="2"/>
+<path d="M1302.31,578 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,618 H1408" stroke="#e2e8f0"/>
+<text x="26" y="648" class="signal"><title>axi_lite_response_negative.arready</title>axi_lite_response_negative.arready</text>
+<text x="26" y="664" class="small">1 bit</text>
+<path d="M370.00,663 H1302.31" stroke="#0369a1" stroke-width="2"/>
+<path d="M1302.31,663 V635" stroke="#0369a1" stroke-width="2"/>
+<path d="M1302.31,635 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,675 H1408" stroke="#e2e8f0"/>
+<text x="26" y="705" class="signal"><title>axi_lite_response_negative.rvalid</title>axi_lite_response_negative.rvalid</text>
+<text x="26" y="721" class="small">1 bit</text>
+<path d="M370.00,720 H913.85" stroke="#0369a1" stroke-width="2"/>
+<path d="M913.85,720 V692" stroke="#0369a1" stroke-width="2"/>
+<path d="M913.85,692 H1146.92" stroke="#0369a1" stroke-width="2"/>
+<path d="M1146.92,692 V720" stroke="#0369a1" stroke-width="2"/>
+<path d="M1146.92,720 H1302.31" stroke="#0369a1" stroke-width="2"/>
+<path d="M1302.31,720 V692" stroke="#0369a1" stroke-width="2"/>
+<path d="M1302.31,692 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,732 H1408" stroke="#e2e8f0"/>
+<text x="26" y="762" class="signal"><title>axi_lite_response_negative.rready</title>axi_lite_response_negative.rready</text>
+<text x="26" y="778" class="small">1 bit</text>
+<path d="M370.00,777 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,789 H1408" stroke="#e2e8f0"/>
+<text x="26" y="819" class="signal"><title>axi_lite_response_negative.violations</title>axi_lite_response_negative.violations</text>
+<text x="26" y="835" class="small">32 bit</text>
+<polygon points="370.00,820 374.00,806 560.23,806 564.23,820 560.23,834 374.00,834" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00000000000000000000000000000000</title></polygon>
+<text x="467.12" y="825" text-anchor="middle" class="signal" fill="#0369a1">0x00000000</text>
+<polygon points="564.23,820 568.23,806 637.92,806 641.92,820 637.92,834 568.23,834" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00000000000000000000000000000001</title></polygon>
+<polygon points="641.92,820 645.92,806 715.62,806 719.62,820 715.62,834 645.92,834" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00000000000000000000000000000010</title></polygon>
+<polygon points="719.62,820 723.62,806 754.46,806 758.46,820 754.46,834 723.62,834" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00000000000000000000000000000011</title></polygon>
+<polygon points="758.46,820 762.46,806 948.69,806 952.69,820 948.69,834 762.46,834" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00000000000000000000000000000000</title></polygon>
+<text x="855.58" y="825" text-anchor="middle" class="signal" fill="#0369a1">0x00000000</text>
+<polygon points="952.69,820 956.69,806 1026.38,806 1030.38,820 1026.38,834 956.69,834" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00000000000000000000000000000001</title></polygon>
+<polygon points="1030.38,820 1034.38,806 1104.08,806 1108.08,820 1104.08,834 1034.38,834" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00000000000000000000000000000010</title></polygon>
+<polygon points="1108.08,820 1112.08,806 1142.92,806 1146.92,820 1142.92,834 1112.08,834" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00000000000000000000000000000011</title></polygon>
+<polygon points="1146.92,820 1150.92,806 1337.15,806 1341.15,820 1337.15,834 1150.92,834" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00000000000000000000000000000000</title></polygon>
+<text x="1244.04" y="825" text-anchor="middle" class="signal" fill="#0369a1">0x00000000</text>
+<polygon points="1341.15,820 1345.15,806 1376.00,806 1380.00,820 1376.00,834 1345.15,834" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00000000000000000000000000000010</title></polygon>
+<path d="M26,846 H1408" stroke="#e2e8f0"/>
+<text x="26" y="893" class="small">Source: axil-response-negative.vcd | SHA-256: d90823ba1bdcaf7e9dc676c5c422d53154178bc998161e8f13615599c20e1674</text>
+<text x="26" y="914" class="small">A waveform is evidence of recorded signal values; it does not establish functional, protocol, or timing closure.</text>
+</svg>

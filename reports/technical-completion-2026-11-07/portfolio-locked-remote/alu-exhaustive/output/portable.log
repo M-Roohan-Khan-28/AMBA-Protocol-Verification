@@ -1,0 +1,15 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit tb_alu_portable -do "run -all; quit -code 0" 
+# Start time: 23:14:08 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.tb_alu_portable
+# Loading work.alu
+# run -all
+# PORTABLE_TEST_PASS ALU checks=1380
+# ** Note: $finish    : C:/short/tc-aggregate-remote-2026-11-07/alu-exhaustive/source/tb/tb_portable.sv(110)
+#    Time: 1380 ns  Iteration: 0  Instance: /tb_alu_portable
+# End time: 23:14:09 on Nov 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

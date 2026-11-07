@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "origin": "simulator",
+  "source_filename": "apb-responder.vcd",
+  "source_sha256": "a7aa5f8e52d84ada9d381470b57519ea09121666762c769673a92fe8e6192a9e",
+  "timescale": "1ps",
+  "start_tick": 30000,
+  "end_tick": 155000,
+  "source_final_tick": 400000,
+  "signals": [
+    {
+      "name": "apb_responder_test.clk",
+      "code": "!",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "apb_responder_test.reset_n",
+      "code": "\"",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "apb_responder_test.select",
+      "code": "#",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "apb_responder_test.enable",
+      "code": "$",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "apb_responder_test.write",
+      "code": "%",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "apb_responder_test.addr",
+      "code": "&",
+      "width": 8,
+      "kind": "reg",
+      "bit_range": "[7:0]"
+    },
+    {
+      "name": "apb_responder_test.wdata",
+      "code": "'",
+      "width": 32,
+      "kind": "reg",
+      "bit_range": "[31:0]"
+    },
+    {
+      "name": "apb_responder_test.rdata",
+      "code": "(",
+      "width": 32,
+      "kind": "reg",
+      "bit_range": "[31:0]"
+    },
+    {
+      "name": "apb_responder_test.ready",
+      "code": ")",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "apb_responder_test.error",
+      "code": "*",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "apb_responder_test.wait_edges",
+      "code": ",",
+      "width": 32,
+      "kind": "integer",
+      "bit_range": ""
+    }
+  ],
+  "same_tick_collapses": 0,
+  "functional_result": "NOT_ASSESSED_BY_RENDERER",
+  "capture_source_sha256": "edaed5cd9855b5541c55dce53ecb6f7569f21101c45f892c3c527639c88169ce",
+  "capture_source_representation": "original_simulator_capture_crlf",
+  "source_representation": "committed_git_blob_lf"
+}

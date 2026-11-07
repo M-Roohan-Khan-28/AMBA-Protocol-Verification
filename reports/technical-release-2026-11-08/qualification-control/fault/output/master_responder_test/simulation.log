@@ -1,0 +1,19 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit master_responder_test -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 03:25:34 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.master_responder_test
+# Loading work.axi_lite_if
+# Loading work.axi_lite_master
+# Loading work.axi_protocol_checker
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# MASTER_RESPONDER_PASS checks=44 writes=3 reads=3
+# ** Note: $finish    : C:/short/portfolio-axil-qualification-fault-v2-20261108/axi4-lite-standalone/source/tb/master_responder_test.sv(121)
+#    Time: 900 ns  Iteration: 1  Instance: /master_responder_test
+# End time: 03:25:36 on Nov 08,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
