@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "origin": "simulator",
+  "source_filename": "measured.vcd",
+  "source_sha256": "23c2f1f9c82f5e4f6270e9c86ba9b9d859ef51cb0109c5bedae9c166a4c3d4b1",
+  "timescale": "1ps",
+  "start_tick": 0,
+  "end_tick": 170000,
+  "source_final_tick": 170000,
+  "signals": [
+    {
+      "name": "axi4_response_negative.clk",
+      "code": "!",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axi4_response_negative.reset_n",
+      "code": "\"",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axi4_response_negative.awvalid",
+      "code": "#",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axi4_response_negative.awready",
+      "code": "$",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axi4_response_negative.wvalid",
+      "code": "%",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axi4_response_negative.wready",
+      "code": "&",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axi4_response_negative.bvalid",
+      "code": "'",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axi4_response_negative.bready",
+      "code": "(",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axi4_response_negative.arvalid",
+      "code": ")",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axi4_response_negative.arready",
+      "code": "*",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axi4_response_negative.rvalid",
+      "code": "+",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axi4_response_negative.rready",
+      "code": ",",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axi4_response_negative.violations",
+      "code": "-",
+      "width": 32,
+      "kind": "integer",
+      "bit_range": ""
+    }
+  ],
+  "same_tick_collapses": 0,
+  "functional_result": "NOT_ASSESSED_BY_RENDERER"
+}

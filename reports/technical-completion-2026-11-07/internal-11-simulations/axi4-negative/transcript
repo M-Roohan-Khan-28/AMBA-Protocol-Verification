@@ -1,0 +1,12 @@
+# vsim -c -onfinish exit axi4_monitor_negative -do "run -all; quit -code 0" 
+# Start time: 20:40:12 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.axi4_monitor_negative
+# Loading work.axi4_burst_monitor
+# run -all
+# AXI4_MONITOR_VIOLATION unsupported or 4KiB-crossing AW
+# AMBA_AXI4_NEGATIVE_PASS detected=1
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/tc/amba/tb/axi4_monitor_negative.sv(22)
+#    Time: 50 ns  Iteration: 1  Instance: /axi4_monitor_negative
+# End time: 20:40:14 on Nov 07,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

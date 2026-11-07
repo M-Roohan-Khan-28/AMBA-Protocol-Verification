@@ -1,0 +1,15 @@
+# vsim -c -onfinish exit apb_adapter_test -do "run -all; quit -code 0" 
+# Start time: 20:38:52 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.amba_transactions
+# Loading work.apb_adapter_test
+# Loading work.apb_if
+# Loading work.apb_ram
+# Loading work.apb_master_driver
+# Loading work.apb_monitor
+# run -all
+# AMBA_APB_PASS transfers=256 checks=452 violations=0
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/tc/amba/tb/apb_adapter_test.sv(56)
+#    Time: 7780 ns  Iteration: 1  Instance: /apb_adapter_test
+# End time: 20:38:54 on Nov 07,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

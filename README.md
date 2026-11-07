@@ -49,3 +49,9 @@ functional coverage percentage, synthesis, timing, FPGA, or hardware result
 is claimed. See [recorded results](docs/RESULTS.md),
 [dependencies and attribution](docs/PROVENANCE.md), and
 [licence status](LICENSE_STATUS.md).
+
+The reset-isolated AXI4 response-order test, its separate B/R fault controls,
+measured VCD figure, and the fresh 11/11 internal simulation result are in
+[response-order qualification](docs/RESPONSE_ORDER_QUALIFICATION.md). These
+are bounded monitor tests; the original advanced ALU/APB environments remain
+NOT RUN without their verification-feature licence.
