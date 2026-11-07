@@ -1,0 +1,9 @@
+﻿{
+    "repository":  "AXI4-Lite-Memory-Interface",
+    "source_revision":  "faf43379b24a524999eb2c8ad7e100cde35054c3",
+    "functional_tests":  7,
+    "checker_positive":  1,
+    "checker_expected_negative":  8,
+    "checker_qualification_exit_code":  0,
+    "status":  "PASS"
+}

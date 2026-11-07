@@ -1,0 +1,29 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit tb_apb_modport -do "run -all; quit -code 0" 
+# Start time: 03:48:36 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.tb_apb_modport
+# Loading work.apb_if
+# Loading work.apb_slave_ram
+# run -all
+# WRITE PASS : ADDR=00 DATA=726f6f68
+# WRITE PASS : ADDR=04 DATA=616e2020
+# READ : ADDR=00 DATA=726f6f68 ERROR=0
+# READ : ADDR=04 DATA=616e2020 ERROR=0
+# PASS : FIRST ROOHAN DATA CORRECT
+# PASS : SECOND ROOHAN DATA CORRECT
+# 
+# -----------------------------------
+# ROOHAN PART 1 = 726f6f68
+# ROOHAN PART 2 = 616e2020
+# -----------------------------------
+# TOTAL PASSED = 2
+# TOTAL FAILED = 0
+# ALL APB TESTS PASSED
+# ** Note: $finish    : C:/short/portfolio-release-main-20261108/apb-modports-contract/source/tb/tb_top.sv(341)
+#    Time: 170 ns  Iteration: 0  Instance: /tb_apb_modport
+# End time: 03:48:38 on Nov 08,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

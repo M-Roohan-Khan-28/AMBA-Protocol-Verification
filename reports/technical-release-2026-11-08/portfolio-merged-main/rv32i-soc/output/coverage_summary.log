@@ -1,0 +1,7 @@
+﻿cpu_arithmetic.log: # COVERAGE CPU instruction_mask=6807ffff branch_outcomes=000 retired=190
+cpu_branch.log: # COVERAGE CPU instruction_mask=1fe00400 branch_outcomes=fff retired=31
+cpu_isa_test.log: # COVERAGE CPU instruction_mask=7fffffff branch_outcomes=fff retired=235
+cpu_load_store.log: # COVERAGE CPU instruction_mask=28180400 branch_outcomes=000 retired=16
+oop_seed_17.log: # COVERAGE AXI reads=274 writes=1312 strobes=ffff regions=1111 AW/W_orders=111 delayed_channels=11111 RAW=272 repeated_writes=16
+oop_seed_2026.log: # COVERAGE AXI reads=274 writes=1312 strobes=ffff regions=1111 AW/W_orders=111 delayed_channels=11111 RAW=272 repeated_writes=16
+tb_top.log: # COVERAGE AXI reads=274 writes=1312 strobes=ffff regions=1111 AW/W_orders=111 delayed_channels=11111 RAW=272 repeated_writes=16

@@ -1,0 +1,27 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit axi4_response_negative -do "run -all; quit -code 0" 
+# Start time: 03:55:37 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.axi4_response_negative
+# Loading work.axi4_burst_monitor
+# run -all
+# AXI4_MONITOR_VIOLATION BVALID before AW/W completion or wrong ID
+# AXI4_MONITOR_VIOLATION BVALID before AW/W completion or wrong ID
+# AXI4_MONITOR_VIOLATION BVALID before AW/W completion or wrong ID
+# AXI4_NEGATIVE_CASE_PASS held_early_b
+# AXI4_MONITOR_VIOLATION RVALID before AR acceptance
+# AXI4_MONITOR_VIOLATION RVALID before AR acceptance
+# AXI4_MONITOR_VIOLATION RVALID before AR acceptance
+# AXI4_NEGATIVE_CASE_PASS held_early_r
+# AXI4_MONITOR_VIOLATION BVALID before AW/W completion or wrong ID
+# AXI4_NEGATIVE_CASE_PASS same_edge_b
+# AXI4_MONITOR_VIOLATION RVALID before AR acceptance
+# AXI4_NEGATIVE_CASE_PASS same_edge_r
+# AMBA_AXI4_RESPONSE_NEGATIVE_PASS scenarios=4 violations=1
+# ** Note: $finish    : C:/short/portfolio-release-main-20261108/amba-reusable-verification/source/tb/axi4_response_negative.sv(46)
+#    Time: 170 ns  Iteration: 1  Instance: /axi4_response_negative
+# End time: 03:55:38 on Nov 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

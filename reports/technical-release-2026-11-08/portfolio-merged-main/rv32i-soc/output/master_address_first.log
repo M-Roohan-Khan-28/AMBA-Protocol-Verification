@@ -1,0 +1,21 @@
+﻿Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit axi_master_test -do "scripts/batch.do" -gAD=0 -gWD=7 
+# Start time: 03:54:04 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.axi_master_test
+# Loading work.axi_lite_if
+# Loading work.axi_lite_master
+# Loading work.axi_delay
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# do scripts/batch.do
+# PASS AXI master/slave SRAM 26 transactions with all five channel delays and errors
+# ** Note: $finish    : tb/tests/axi_master_test.sv(36)
+#    Time: 5090 ns  Iteration: 1  Instance: /axi_master_test
+# End time: 03:54:05 on Nov 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+

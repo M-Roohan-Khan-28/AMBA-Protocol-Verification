@@ -1,5 +1,9 @@
 # AMBA Protocol Verification
 
+## Latest merged-main technical release — 8 November 2026
+
+The [locked merged-main technical release](reports/technical-release-2026-11-08/RELEASE_SUMMARY.md) records eleven required project suites PASS from fresh detached GitHub source clones at runner `9820035daf9a63f5bbf4fa14c2621a65a746cd85`, aggregate exit 0. AXI4-Lite and RV32I SoC each require a separate checker qualification with one legal case and eight expected-negative detections. The preserved original advanced ALU/APB environments remain **NOT RUN** for the unavailable `svverification` licence.
+
 Reusable transaction types, portable drivers, passive protocol monitors, and
 separate DUT adapters for four bounded
 interfaces: the 64-word APB RAM, 16-word AHB-Lite RAM, 32-bit AXI4-Lite SRAM

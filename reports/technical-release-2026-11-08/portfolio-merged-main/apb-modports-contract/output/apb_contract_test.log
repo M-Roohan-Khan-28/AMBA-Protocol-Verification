@@ -1,0 +1,16 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit apb_contract_test -do "run -all; quit -code 0" 
+# Start time: 03:48:43 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.apb_contract_test
+# Loading work.apb_if
+# Loading work.apb_slave_ram
+# run -all
+# APB_MODPORT_CONTRACT_PASS probes=512 guards=1049 checks=12488 errors=507 resets=1 seed=0x28AB4B05
+# ** Note: $finish    : C:/short/portfolio-release-main-20261108/apb-modports-contract/source/tb/apb_contract_test.sv(105)
+#    Time: 46901 ns  Iteration: 0  Instance: /apb_contract_test
+# End time: 03:48:44 on Nov 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

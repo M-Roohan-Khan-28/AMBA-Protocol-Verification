@@ -1,0 +1,262 @@
+{
+  "schema_version": 1,
+  "kind": "monitor_negative_control_qualification",
+  "repository": "AXI4-Lite-Memory-Interface",
+  "reviewed_baseline": "a7b9540f225282e1ffbddf84531e6e5a34e73a86",
+  "started_utc": "2026-11-07T22:52:02.558437+00:00",
+  "baseline_probe": false,
+  "seed": null,
+  "seed_note": "Directed cases; no pseudorandom stimulus",
+  "commands": [
+    {
+      "label": "vlog-version",
+      "argv": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vlog.exe",
+        "-version"
+      ],
+      "cwd": "C:\\short\\portfolio-release-main-20261108\\axi4-lite-standalone\\output\\checker-response-order"
+    },
+    {
+      "label": "vsim-version",
+      "argv": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-version"
+      ],
+      "cwd": "C:\\short\\portfolio-release-main-20261108\\axi4-lite-standalone\\output\\checker-response-order"
+    },
+    {
+      "label": "vlib",
+      "argv": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vlib.exe",
+        "work"
+      ],
+      "cwd": "C:\\short\\portfolio-release-main-20261108\\axi4-lite-standalone\\output\\checker-response-order"
+    },
+    {
+      "label": "compile",
+      "argv": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vlog.exe",
+        "-sv",
+        "C:\\short\\portfolio-release-main-20261108\\axi4-lite-standalone\\source\\rtl\\axi\\axi_lite_if.sv",
+        "C:\\short\\portfolio-release-main-20261108\\axi4-lite-standalone\\source\\tb\\legacy\\axi_protocol_checker.sv",
+        "C:\\short\\portfolio-release-main-20261108\\axi4-lite-standalone\\source\\tb\\checker_response_order_test.sv"
+      ],
+      "cwd": "C:\\short\\portfolio-release-main-20261108\\axi4-lite-standalone\\output\\checker-response-order"
+    },
+    {
+      "label": "case-0",
+      "argv": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "checker_response_order_test",
+        "+CASE=0",
+        "-do",
+        "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0"
+      ],
+      "cwd": "C:\\short\\portfolio-release-main-20261108\\axi4-lite-standalone\\output\\checker-response-order"
+    },
+    {
+      "label": "case-1",
+      "argv": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "checker_response_order_test",
+        "+CASE=1",
+        "-do",
+        "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0"
+      ],
+      "cwd": "C:\\short\\portfolio-release-main-20261108\\axi4-lite-standalone\\output\\checker-response-order"
+    },
+    {
+      "label": "case-2",
+      "argv": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "checker_response_order_test",
+        "+CASE=2",
+        "-do",
+        "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0"
+      ],
+      "cwd": "C:\\short\\portfolio-release-main-20261108\\axi4-lite-standalone\\output\\checker-response-order"
+    },
+    {
+      "label": "case-3",
+      "argv": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "checker_response_order_test",
+        "+CASE=3",
+        "-do",
+        "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0"
+      ],
+      "cwd": "C:\\short\\portfolio-release-main-20261108\\axi4-lite-standalone\\output\\checker-response-order"
+    },
+    {
+      "label": "case-4",
+      "argv": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "checker_response_order_test",
+        "+CASE=4",
+        "-do",
+        "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0"
+      ],
+      "cwd": "C:\\short\\portfolio-release-main-20261108\\axi4-lite-standalone\\output\\checker-response-order"
+    },
+    {
+      "label": "case-5",
+      "argv": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "checker_response_order_test",
+        "+CASE=5",
+        "-do",
+        "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0"
+      ],
+      "cwd": "C:\\short\\portfolio-release-main-20261108\\axi4-lite-standalone\\output\\checker-response-order"
+    },
+    {
+      "label": "case-6",
+      "argv": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "checker_response_order_test",
+        "+CASE=6",
+        "-do",
+        "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0"
+      ],
+      "cwd": "C:\\short\\portfolio-release-main-20261108\\axi4-lite-standalone\\output\\checker-response-order"
+    },
+    {
+      "label": "case-7",
+      "argv": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "checker_response_order_test",
+        "+CASE=7",
+        "-do",
+        "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0"
+      ],
+      "cwd": "C:\\short\\portfolio-release-main-20261108\\axi4-lite-standalone\\output\\checker-response-order"
+    },
+    {
+      "label": "case-8",
+      "argv": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "checker_response_order_test",
+        "+CASE=8",
+        "-do",
+        "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0"
+      ],
+      "cwd": "C:\\short\\portfolio-release-main-20261108\\axi4-lite-standalone\\output\\checker-response-order"
+    }
+  ],
+  "cases": [
+    {
+      "case": 0,
+      "name": "legal_aw_first_w_first_together_and_read_backpressure",
+      "exit_code": 0,
+      "result": "LEGAL_TRAFFIC_ACCEPTED",
+      "log": "case-0.log"
+    },
+    {
+      "case": 1,
+      "name": "b_without_aw_or_w_held",
+      "exit_code": 0,
+      "result": "EXPECTED_VIOLATION_DETECTED",
+      "log": "case-1.log"
+    },
+    {
+      "case": 2,
+      "name": "b_after_only_aw_held",
+      "exit_code": 0,
+      "result": "EXPECTED_VIOLATION_DETECTED",
+      "log": "case-2.log"
+    },
+    {
+      "case": 3,
+      "name": "b_after_only_w_held",
+      "exit_code": 0,
+      "result": "EXPECTED_VIOLATION_DETECTED",
+      "log": "case-3.log"
+    },
+    {
+      "case": 4,
+      "name": "r_without_ar_held",
+      "exit_code": 0,
+      "result": "EXPECTED_VIOLATION_DETECTED",
+      "log": "case-4.log"
+    },
+    {
+      "case": 5,
+      "name": "same_edge_aw_w_b",
+      "exit_code": 0,
+      "result": "EXPECTED_VIOLATION_DETECTED",
+      "log": "case-5.log"
+    },
+    {
+      "case": 6,
+      "name": "same_edge_ar_r",
+      "exit_code": 0,
+      "result": "EXPECTED_VIOLATION_DETECTED",
+      "log": "case-6.log"
+    },
+    {
+      "case": 7,
+      "name": "older_aw_same_edge_w_b",
+      "exit_code": 0,
+      "result": "EXPECTED_VIOLATION_DETECTED",
+      "log": "case-7.log"
+    },
+    {
+      "case": 8,
+      "name": "older_w_same_edge_aw_b",
+      "exit_code": 0,
+      "result": "EXPECTED_VIOLATION_DETECTED",
+      "log": "case-8.log"
+    }
+  ],
+  "overall": "QUALIFICATION_PASS",
+  "observed_head": "faf43379b24a524999eb2c8ad7e100cde35054c3",
+  "worktree_status": "",
+  "input_files": [
+    {
+      "path": "C:\\short\\portfolio-release-main-20261108\\axi4-lite-standalone\\source\\tb\\legacy\\axi_protocol_checker.sv",
+      "sha256": "0975b0af05288a9d9f39decaf2b643e637984987f682ffc1355b60b99b0e11d3",
+      "raw_git_blob": "e7b5f495d196714dc48a4987f8a9c82cd4af0762",
+      "lf_normalized_git_blob": "40e587676a903057d6930dcf1f6daf770c70ba70"
+    },
+    {
+      "path": "C:\\short\\portfolio-release-main-20261108\\axi4-lite-standalone\\source\\rtl\\axi\\axi_lite_if.sv",
+      "sha256": "463f775261a7489ae6b8a3481930b4be2aae290f7ef3a14f0892b1e59483a0d9",
+      "raw_git_blob": "06f088a2c048d67c2d115d20567d84b89b010f3d",
+      "lf_normalized_git_blob": "d1b92342e05c972a14d1a3fde095e3e52a8c84a3"
+    },
+    {
+      "path": "C:\\short\\portfolio-release-main-20261108\\axi4-lite-standalone\\source\\tb\\checker_response_order_test.sv",
+      "sha256": "d6b0c83b758cee4d564d07a627f279e533f59f511da2ca36de9d1c7f59be50ca",
+      "raw_git_blob": "6b3d82afe0b1aea41b68d7dbf7b771ae46c9d8a5",
+      "lf_normalized_git_blob": "6b3d82afe0b1aea41b68d7dbf7b771ae46c9d8a5"
+    }
+  ],
+  "finished_utc": "2026-11-07T22:53:00.559210+00:00"
+}

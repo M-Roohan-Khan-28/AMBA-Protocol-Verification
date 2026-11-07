@@ -1,0 +1,18 @@
+﻿Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit control_test -do "scripts/batch.do" 
+# Start time: 03:53:31 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.rv32_pkg
+# Loading work.control_test
+# Loading work.control_unit
+# Loading work.branch_unit
+# do scripts/batch.do
+# PASS control legal/illegal decode and signed/unsigned branches
+# ** Note: $finish    : tb/tests/control_test.sv(33)
+#    Time: 30 ns  Iteration: 0  Instance: /control_test
+# End time: 03:53:33 on Nov 08,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+

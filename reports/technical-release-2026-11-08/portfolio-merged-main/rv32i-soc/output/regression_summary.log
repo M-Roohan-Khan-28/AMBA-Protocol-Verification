@@ -1,0 +1,27 @@
+﻿Regression started 2026-11-08T03:53:07.7812815+05:00; FULL_SV=False
+PASS unit_test
+PASS register_file_test
+PASS decode_test
+PASS control_test
+PASS cpu_test
+PASS sram_test
+PASS axi_slave_test
+PASS axi_master_test
+PASS axi_reset_test
+PASS soc_integration_test
+PASS cpu_isa_test
+PASS delayed_core_test
+PASS fault_test
+PASS tb_top
+PASS cpu_arithmetic
+PASS cpu_branch
+PASS cpu_load_store
+PASS master_address_first
+PASS master_together
+PASS oop_seed_17
+PASS oop_seed_2026
+PASS varying_latency_1
+PASS varying_latency_17
+PASS varying_latency_2026
+CHECKER_QUALIFICATION_PASS positive=1 expected_negative=8
+PASS REGRESSION 24/24 runs; finished 2026-11-08T03:54:44.0887190+05:00

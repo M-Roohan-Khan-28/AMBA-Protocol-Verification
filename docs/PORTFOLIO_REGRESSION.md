@@ -1,8 +1,24 @@
-# Locked portfolio regression — 7 November 2026
+# Locked portfolio regression — 8 November 2026
 
-## Current technical completion run
+## Current merged-main release
 
-The newer [technical completion report](TECHNICAL_COMPLETION.md) records the full-SHA locked eleven-project run from fresh GitHub clones at runner commit 35239784a519f163cb71104e088c952e3d4a69fc. It passed 11/11 required suites with aggregate exit 0 and keeps the two original advanced ALU/APB environments NOT RUN. The historical corrective regression and its original locks remain documented below.
+The [technical release summary](../reports/technical-release-2026-11-08/RELEASE_SUMMARY.md), [raw suite logs and JSON](../reports/technical-release-2026-11-08/portfolio-merged-main/), and [waveform byte audit](../reports/technical-release-2026-11-08/merged-waveform-byte-audit.json) document the clean detached runner `9820035daf9a63f5bbf4fa14c2621a65a746cd85`. Inventory revision `bc9197700d29e1e7291adf78975d8eaa1ce04acb` pins all eleven merged source main commits; runner script revision `d6a0c6129eee66e05cc19f67a6341e4ed6acec24` remains separate. Fresh source clones matched every full-SHA lock: eleven required PASS, all required exits 0, aggregate exit 0. AXI4-Lite and RV32I SoC each include a required one-positive/eight-expected-negative checker qualification beyond their seven and 24 functional tests. The two original advanced ALU/APB suites remain **NOT RUN** because the `svverification` licence is unavailable.
+
+Reproduce the exact published lock using unused short paths:
+
+```powershell
+$env:PATH = 'C:\intelFPGA\20.1\modelsim_ase\win32aloem;' + $env:PATH
+git -c core.longpaths=true -c core.autocrlf=false clone --branch main https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git C:\short\amba-release-reproduce-new
+git -C C:\short\amba-release-reproduce-new config core.longpaths true
+git -C C:\short\amba-release-reproduce-new config core.autocrlf false
+git -C C:\short\amba-release-reproduce-new checkout --detach 9820035daf9a63f5bbf4fa14c2621a65a746cd85
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\short\amba-release-reproduce-new\scripts\run_portfolio_regression.ps1 -OutputDir C:\short\portfolio-release-reproduce-new
+if ($LASTEXITCODE -ne 0) { throw 'A required suite failed or was blocked' }
+```
+
+## Earlier technical completion run
+
+The earlier [technical completion report](TECHNICAL_COMPLETION.md) records the full-SHA locked eleven-project run from fresh GitHub clones at runner commit 35239784a519f163cb71104e088c952e3d4a69fc. It passed 11/11 required suites with aggregate exit 0 and keeps the two original advanced ALU/APB environments NOT RUN. The historical corrective regression and its original locks remain documented below.
 
 ## Earlier corrective regression
 

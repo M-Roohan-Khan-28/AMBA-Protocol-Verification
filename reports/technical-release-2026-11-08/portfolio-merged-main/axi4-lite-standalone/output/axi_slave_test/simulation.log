@@ -1,0 +1,20 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit axi_slave_test -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 03:51:25 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.axi_slave_test
+# Loading work.axi_lite_if
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS AXI slave checks=58 AW-first W-first simultaneous, response stalls, WSTRB, errors
+# ** Note: $finish    : C:/short/portfolio-release-main-20261108/axi4-lite-standalone/source/tb/legacy/axi_slave_test.sv(59)
+#    Time: 4330 ns  Iteration: 1  Instance: /axi_slave_test
+# End time: 03:51:27 on Nov 08,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

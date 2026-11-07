@@ -1,0 +1,22 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit axi_lite_response_negative -do "run -all; quit -code 0" 
+# Start time: 03:55:30 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.axi_lite_response_negative
+# Loading work.axi_lite_monitor
+# run -all
+# AXIL_MONITOR_VIOLATION count=1
+# AXIL_MONITOR_VIOLATION count=1
+# AXIL_MONITOR_VIOLATION count=1
+# AXIL_MONITOR_VIOLATION count=1
+# AXIL_MONITOR_VIOLATION count=1
+# AXIL_MONITOR_VIOLATION count=1
+# AXIL_MONITOR_VIOLATION count=2
+# AMBA_AXIL_RESPONSE_NEGATIVE_PASS scenarios=4 violations=2
+# ** Note: $finish    : C:/short/portfolio-release-main-20261108/amba-reusable-verification/source/tb/axi_lite_response_negative.sv(31)
+#    Time: 130 ns  Iteration: 1  Instance: /axi_lite_response_negative
+# End time: 03:55:30 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
