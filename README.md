@@ -37,14 +37,17 @@ nonzero. `scripts/run_portfolio_regression.ps1` and
 `scripts/portfolio_suites.json` provide the locked eleven-project-suite
 portfolio regression entry point. Its [locked revisions, raw results and
 reproduction command](docs/PORTFOLIO_REGRESSION.md) are documented separately.
+The [technical completion run](docs/TECHNICAL_COMPLETION.md) locks the new
+eleven-project branch revisions and records a fresh GitHub-source 11/11 pass.
 
 ## Status and limits
 
 This is portable, deterministic simulation rather than a UVM environment.
 The checkers target implemented subsets, not complete protocol compliance.
 The APB DUT has no wait states or error response; the AHB DUT uses a bounded
-zero-wait response; AXI4-Lite tests one outstanding request through the
-existing master; AXI4 tests the DMA's one-burst-at-a-time contract. No
+two-cycle ERROR response for invalid transfers. AXI4-Lite tests one outstanding
+request through the existing master; AXI4 tests the DMA's one-burst-at-a-time
+contract. No
 functional coverage percentage, synthesis, timing, FPGA, or hardware result
 is claimed. See [recorded results](docs/RESULTS.md),
 [dependencies and attribution](docs/PROVENANCE.md), and

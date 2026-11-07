@@ -1,0 +1,35 @@
+﻿{
+    "generated_at":  "2026-11-07T23:12:59.6337377+05:00",
+    "inventory":  "C:\\short\\tc-aggregate-fault-inventory.json",
+    "source_root":  "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\tc-remote",
+    "simulator_version":  "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020",
+    "runner_revision":  "35239784a519f163cb71104e088c952e3d4a69fc",
+    "runner_script_revision":  "35239784a519f163cb71104e088c952e3d4a69fc",
+    "inventory_revision":  "30d041a59a043e49c1014274e53ad6ad37f31ea7",
+    "runner_script_sha256":  "992446E93422E0D352E38B16DD3AD1A356C271F072B1BB8F7A28F016BD31C365",
+    "inventory_sha256":  "0164890133E998E2AFCBB6FD76FE03CB8207EB3A2AACEB2E1E3999947AEEEA3A",
+    "runner_dirty":  false,
+    "aggregate_exit_code":  1,
+    "results":  [
+                    {
+                        "name":  "alu-exhaustive",
+                        "repository":  "ALU-RTL-Verification",
+                        "repository_url":  "https://github.com/M-Roohan-Khan-28/ALU-RTL-Verification",
+                        "required":  true,
+                        "status":  "FAIL",
+                        "reason":  "Expected result marker missing",
+                        "source_revision":  "82a6212772f4bdacad0a95987bb1679e8e5c2702",
+                        "expected_revision":  "82a6212772f4bdacad0a95987bb1679e8e5c2702",
+                        "revision_match":  true,
+                        "command":  "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"C:\\short\\tc-aggregate-fault-result-2026-11-07\\alu-exhaustive\\source\\scripts\\run_regression.ps1\" -OutputDir \"C:\\short\\tc-aggregate-fault-result-2026-11-07\\alu-exhaustive\\output\"",
+                        "simulator_version":  "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020",
+                        "seed":  "exhaustive WIDTH=8",
+                        "count_kind":  "tuples",
+                        "count":  null,
+                        "exit_code":  0,
+                        "elapsed_seconds":  4.67,
+                        "log_path":  "C:\\short\\tc-aggregate-fault-result-2026-11-07\\alu-exhaustive\\console.log",
+                        "timeout_seconds":  180
+                    }
+                ]
+}

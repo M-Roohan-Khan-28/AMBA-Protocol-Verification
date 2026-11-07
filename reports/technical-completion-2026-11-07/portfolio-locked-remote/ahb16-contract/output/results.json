@@ -1,0 +1,37 @@
+{
+  "repository": "AHB-Lite-RAM-Interface",
+  "source_revision": "d8b2651ceffc2f3f8768759d16eeb4693875b553",
+  "source_dirty": false,
+  "sources": [
+    {
+      "path": "C:\\short\\tc-aggregate-remote-2026-11-07\\ahb16-contract\\source\\rtl\\design.sv",
+      "sha256": "868d8be97a9d88ccf6dc7a973e3c3204e5064fce7efca451e9abfcf262d86c98"
+    },
+    {
+      "path": "C:\\short\\tc-aggregate-remote-2026-11-07\\ahb16-contract\\source\\tb\\ahb16_contract_test.sv",
+      "sha256": "d0f4dd32cccd09219f238cc2d037368b09a029705f7f45fcfd55a359f7bdf27e"
+    }
+  ],
+  "seed": "0x28A81607 xorshift32",
+  "timeout_seconds_per_command": 120,
+  "simulations": [
+    {
+      "top": "ahb16_contract_test",
+      "command": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "ahb16_contract_test",
+        "-do",
+        "run -all; quit -code 0"
+      ],
+      "simulator_exit_code": 0,
+      "status": "PASS",
+      "marker": "AHB16_CONTRACT_PASS checks=810 accepted=122 retired=119 commits=40 errors=12 stalls=8 seed=0x28A81607"
+    }
+  ],
+  "overall": "PASS",
+  "simulator_version": "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020",
+  "elapsed_seconds": 2.14
+}

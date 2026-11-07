@@ -1,0 +1,3 @@
+PASS portable PORTABLE_TEST_PASS ALU checks=1380
+PASS exhaustive ALU_EXHAUSTIVE_PASS tuples=524288 directed=254 identities=1792 comparisons=1579002
+ALU_REGRESSION_PASS portable_checks=1380 exhaustive_tuples=524288 output=C:\short\tc-aggregate-fault-result-2026-11-07\alu-exhaustive\output

@@ -1,0 +1,16 @@
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 23:14:14 on Nov 07,2026
+vlog -sv C:\short\tc-aggregate-remote-2026-11-07\apb-interface-contract\source\rtl\design.sv C:\short\tc-aggregate-remote-2026-11-07\apb-interface-contract\source\verification\apb64_monitor.sv C:\short\tc-aggregate-remote-2026-11-07\apb-interface-contract\source\tb\tb_portable.sv C:\short\tc-aggregate-remote-2026-11-07\apb-interface-contract\source\tb\apb64_contract_test.sv C:\short\tc-aggregate-remote-2026-11-07\apb-interface-contract\source\tb\apb64_protocol_negative.sv 
+-- Compiling interface apb_if
+-- Compiling module apb_ram
+-- Compiling module apb64_monitor
+-- Compiling module tb_apb_portable
+-- Compiling module apb64_contract_test
+-- Compiling module apb64_protocol_negative
+
+Top level modules:
+	tb_apb_portable
+	apb64_contract_test
+	apb64_protocol_negative
+End time: 23:14:14 on Nov 07,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

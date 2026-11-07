@@ -1,5 +1,11 @@
 # Locked portfolio regression — 7 November 2026
 
+## Current technical completion run
+
+The newer [technical completion report](TECHNICAL_COMPLETION.md) records the full-SHA locked eleven-project run from fresh GitHub clones at runner commit 35239784a519f163cb71104e088c952e3d4a69fc. It passed 11/11 required suites with aggregate exit 0 and keeps the two original advanced ALU/APB environments NOT RUN. The historical corrective regression and its original locks remain documented below.
+
+## Earlier corrective regression
+
 The runner and inventory at commit `0f126b0503dd1688bc805cc00e0c847cded95988`
 were cloned fresh from the public corrective branch. The runner made a fresh
 GitHub clone for each enabled suite, checked out the inventory's full 40-digit

@@ -1,0 +1,17 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit apb64_contract_test -do "run -all; quit -code 0" 
+# Start time: 23:14:17 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.apb64_contract_test
+# Loading work.apb_if
+# Loading work.apb_ram
+# Loading work.apb64_monitor
+# run -all
+# APB64_CONTRACT_PASS checks=2697 issued=673 accepted=673 writes=153 reads=520 aliases=80 back_to_back=5 resets=3 seed=0x28AB6407
+# ** Note: $finish    : C:/short/tc-aggregate-remote-2026-11-07/apb-interface-contract/source/tb/apb64_contract_test.sv(171)
+#    Time: 20341 ns  Iteration: 0  Instance: /apb64_contract_test
+# End time: 23:14:17 on Nov 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
