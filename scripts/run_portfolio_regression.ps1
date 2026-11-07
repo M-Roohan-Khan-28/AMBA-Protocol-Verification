@@ -107,7 +107,7 @@ foreach ($suite in $inventory) {
         # it for the detached checkout, which may remove long evidence paths.
         & git -C $work config core.longpaths true
         if ($LASTEXITCODE -ne 0) { throw 'Cannot enable long Git paths in source clone' }
-        & git -C $work checkout --quiet --detach $suite.revision 2>&1 | Out-File -FilePath (Join-Path $suiteDir 'checkout.log')
+        & git -c advice.detachedHead=false -C $work checkout --quiet --detach $suite.revision 2>&1 | Out-File -FilePath (Join-Path $suiteDir 'checkout.log')
         if ($LASTEXITCODE -ne 0) { throw "Locked checkout failed: $($suite.revision)" }
         $result.source_revision = (& git -C $work rev-parse HEAD).Trim()
         if ($LASTEXITCODE -ne 0) { throw 'Cannot read source revision' }
