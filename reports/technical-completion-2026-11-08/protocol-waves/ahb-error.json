@@ -2,7 +2,7 @@
   "schema_version": 1,
   "origin": "simulator",
   "source_filename": "ahb-adapter.vcd",
-  "source_sha256": "614b971d523453567c9f9a826839e624bbf871208f51fdd814f417ca47885d8c",
+  "source_sha256": "c1378408c808cdce16584276247a283cddac5fc4fe0d65c73c515f23ca811ac0",
   "timescale": "1ps",
   "start_tick": 1460000,
   "end_tick": 1510000,
@@ -94,5 +94,8 @@
     }
   ],
   "same_tick_collapses": 0,
-  "functional_result": "NOT_ASSESSED_BY_RENDERER"
+  "functional_result": "NOT_ASSESSED_BY_RENDERER",
+  "capture_source_sha256": "614b971d523453567c9f9a826839e624bbf871208f51fdd814f417ca47885d8c",
+  "capture_source_representation": "original_simulator_capture_crlf",
+  "source_representation": "committed_git_blob_lf"
 }

@@ -2,7 +2,7 @@
 <rect width="100%" height="100%" fill="#f8fafc"/>
 <style>text{font-family:DejaVu Sans,Arial,sans-serif} .signal{font-family:DejaVu Sans Mono,monospace;font-size:13px} .small{font-size:12px;fill:#475569}</style>
 <text x="26" y="31" font-size="21" fill="#0f172a">Intentional invalid AXI4 early responses and same-edge dependencies</text>
-<text x="26" y="54" font-size="13" fill="#92400e">VCD TRACE — check the accompanying simulation result</text>
+<text x="26" y="54" font-size="13" fill="#92400e">VCD TRACE - original CRLF capture; committed VCD is LF</text>
 <text x="26" y="76" class="small">Time in VCD ticks; 1 tick = 1ps. Same-timestamp changes display their final value.</text>
 <path d="M370.00,105 V978" stroke="#dbe3ed"/>
 <text x="370.00" y="99" text-anchor="middle" class="small">0</text>

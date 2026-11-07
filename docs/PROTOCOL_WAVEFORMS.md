@@ -1,5 +1,13 @@
 # Measured AMBA protocol traces
 
+**Byte provenance for the figures below:** The six SVGs were rendered from
+original CRLF simulator captures. Their adjacent JSON now labels
+`capture_source_sha256` as the capture hash and `source_sha256` as the hash of
+the committed LF Git VCD. The [portfolio waveform byte audit](../reports/technical-release-2026-11-08/waveform-byte-audit.json)
+maps both byte representations across all eleven technical repositories and
+verifies the Git blobs against public raw downloads. Newline conversion does
+not change simulation behavior or VCD events.
+
 These six figures were rendered from four actual ModelSim VCD captures at
 AMBA test source `1f0d5491cd084a95c5137ad7072a621ea059b2e3`, with a
 clean worktree. The pinned APB, AHB, AXI4-Lite and DMA sources were cloned by
