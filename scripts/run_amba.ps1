@@ -17,7 +17,7 @@ $dirty = [bool](@(git -C $repo status --porcelain).Count)
 if ($dirty) { throw 'AMBA source is dirty; commit before a recorded run' }
 $sources = @(
     @{ name='apb'; repository='APB-Interface-Verification'; pin='ad124382ee3f59f184ee9eb4df2ae743ee920513' },
-    @{ name='ahb'; repository='AHB-Lite-RAM-Interface'; pin='d8b2651ceffc2f3f8768759d16eeb4693875b553' },
+    @{ name='ahb'; repository='AHB-Lite-RAM-Interface'; pin='8fdb0d6e7a9f0f93ff709f0c7b6cc500224c776e' },
     @{ name='axil'; repository='AXI4-Lite-Memory-Interface'; pin='aa7161ddd194f1d17087e428fa7093e3033d4aaa' },
     @{ name='axi4'; repository='AXI4-DMA-Subsystem'; pin='5f7543bf1bf4d5e7638def9d363c106c2e7b55d0' }
 )
