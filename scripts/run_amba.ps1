@@ -16,10 +16,10 @@ if ($LASTEXITCODE -ne 0 -or $revision -notmatch '^[0-9a-f]{40}$') {
 $dirty = [bool](@(git -C $repo status --porcelain).Count)
 if ($dirty) { throw 'AMBA source is dirty; commit before a recorded run' }
 $sources = @(
-    @{ name='apb'; repository='APB-Interface-Verification'; pin='ad124382ee3f59f184ee9eb4df2ae743ee920513' },
-    @{ name='ahb'; repository='AHB-Lite-RAM-Interface'; pin='8fdb0d6e7a9f0f93ff709f0c7b6cc500224c776e' },
-    @{ name='axil'; repository='AXI4-Lite-Memory-Interface'; pin='aa7161ddd194f1d17087e428fa7093e3033d4aaa' },
-    @{ name='axi4'; repository='AXI4-DMA-Subsystem'; pin='5f7543bf1bf4d5e7638def9d363c106c2e7b55d0' }
+    @{ name='apb'; repository='APB-Interface-Verification'; pin='e30fd5242a1e84be92107d6be75652220748a8a7' },
+    @{ name='ahb'; repository='AHB-Lite-RAM-Interface'; pin='659fba67ce85a01643cceca2c8d1e67ea3903995' },
+    @{ name='axil'; repository='AXI4-Lite-Memory-Interface'; pin='faf43379b24a524999eb2c8ad7e100cde35054c3' },
+    @{ name='axi4'; repository='AXI4-DMA-Subsystem'; pin='a2d3d57edaa9eb441f3289bf5320f4df2f074144' }
 )
 $suites = @(
     @{ name='apb-adapter'; source='apb'; top='apb_adapter_test'; marker='AMBA_APB_PASS transfers=256 checks=(\d+) violations=0'; expected=452 },
