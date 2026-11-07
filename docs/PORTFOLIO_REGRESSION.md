@@ -9,16 +9,19 @@ record the runner, runner-script and inventory commit revisions, SHA-256 file
 hashes, all expected/observed source revisions, commands, simulator version,
 seeds, exits, elapsed times and log paths. The runner worktree was clean.
 
-From a fresh checkout of this repository at the runner commit or its later
-merge commit, with GitHub network access and ModelSim Intel FPGA Starter
-Edition 2020.1 installed, choose a new output directory:
+From a fresh clone, explicitly select the published runner commit
+`9afad00dd5dfbe89fa498b54e613c2563fcd5803`. GitHub network access and
+ModelSim Intel FPGA Starter Edition 2020.1 are needed; choose a new output
+directory:
 
 ```powershell
 git -c core.longpaths=true clone https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git AMBA-portfolio-reproduction
 Set-Location AMBA-portfolio-reproduction
 git config core.longpaths true
+git checkout --detach 9afad00dd5dfbe89fa498b54e613c2563fcd5803
 git rev-parse HEAD
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/run_portfolio_regression.ps1 -OutputDir build/portfolio-reproduction-1
+if ($LASTEXITCODE -ne 0) { throw 'Required portfolio suite failed or was blocked' }
 ```
 
 The recorded clean-clone run used
@@ -96,3 +99,11 @@ matching source lock. [Targeted and full passing raw logs, JSON, summary
 and console](../reports/longpath-2026-11-07/) are retained alongside the
 failed run. The fix changes checkout configuration only; the tested project
 source locks and expected counts remain unchanged.
+
+## Verification backlog (nonblocking)
+
+Split the AXI4 same-edge B and R response-order negative cases into separate,
+reset-isolated scenarios with an individual expected detection for each.
+The published four-scenario negative tests passed as recorded above; this
+follow-up would make each same-edge failure easier to attribute. It is not
+counted as an additional executed suite or coverage result.
