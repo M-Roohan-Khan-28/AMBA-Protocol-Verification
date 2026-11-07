@@ -1,0 +1,16 @@
+[
+    {
+        "name":  "alu-exhaustive",
+        "repository":  "ALU-RTL-Verification",
+        "required":  true,
+        "enabled":  true,
+        "script":  "scripts/run_regression.ps1",
+        "mode":  "technical",
+        "timeout_seconds":  180,
+        "seed":  "exhaustive WIDTH=8",
+        "count_kind":  "tuples",
+        "pass_regex":  "INTENTIONAL_MISSING_MARKER_(\\d+)",
+        "expected_count":  524288,
+        "revision":  "82a6212772f4bdacad0a95987bb1679e8e5c2702"
+    }
+]

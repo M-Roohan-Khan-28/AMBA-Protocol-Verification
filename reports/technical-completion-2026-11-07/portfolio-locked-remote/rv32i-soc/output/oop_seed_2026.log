@@ -1,0 +1,22 @@
+﻿Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit tb_top -sv_seed 2026 -do "scripts/batch.do" 
+# Start time: 23:16:18 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.axi_lite_if
+# Loading work.tb_pkg
+# Loading work.tb_top
+# Loading work.axi_delay
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# do scripts/batch.do
+# COVERAGE AXI reads=274 writes=1312 strobes=ffff regions=1111 AW/W_orders=111 delayed_channels=11111 RAW=272 repeated_writes=16
+# PASS OOP AXI scoreboard pass_count=1586 fail_count=0 generated=1586
+# ** Note: $finish    : tb/tb_top.sv(20)
+#    Time: 178420 ns  Iteration: 2  Instance: /tb_top
+# End time: 23:16:19 on Nov 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+

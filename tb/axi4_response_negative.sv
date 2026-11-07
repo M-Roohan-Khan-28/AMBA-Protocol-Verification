@@ -17,20 +17,31 @@ module axi4_response_negative;
     reset_n=1; awvalid=1;
     @(negedge clk); awvalid=0; bvalid=1; bready=0;
     repeat(3) @(negedge clk);
-    if(violations<3) $fatal(1,"held early AXI4 BVALID escaped");
+    if(violations!==3) $fatal(1,"held early AXI4 BVALID: expected 3 violations, got %0d",violations);
+    $display("AXI4_NEGATIVE_CASE_PASS held_early_b");
 
     reset_n=0; bvalid=0;
     repeat(2) @(negedge clk);
     reset_n=1; rvalid=1; rready=0;
     repeat(3) @(negedge clk);
-    if(violations<3) $fatal(1,"held early AXI4 RVALID escaped");
+    if(violations!==3) $fatal(1,"held early AXI4 RVALID: expected 3 violations, got %0d",violations);
+    $display("AXI4_NEGATIVE_CASE_PASS held_early_r");
 
     reset_n=0; rvalid=0;
     repeat(2) @(negedge clk);
     reset_n=1; awvalid=1; wvalid=1; bvalid=1; bready=0;
-    arvalid=1; rvalid=1; rready=0;
+    // Isolate write dependency from the bounded monitor\'s read/write-overlap rule.
+    arvalid=0; rvalid=0; rready=0;
     @(negedge clk);
-    if(violations<2) $fatal(1,"same-edge AXI4 B/R dependencies escaped");
+    if(violations!==1) $fatal(1,"same-edge AXI4 B dependency: expected 1 violation, got %0d",violations);
+    $display("AXI4_NEGATIVE_CASE_PASS same_edge_b");
+
+    reset_n=0; awvalid=0; wvalid=0; bvalid=0;
+    repeat(2) @(negedge clk);
+    reset_n=1; arvalid=1; rvalid=1; rready=0;
+    @(negedge clk);
+    if(violations!==1) $fatal(1,"same-edge AXI4 R dependency: expected 1 violation, got %0d",violations);
+    $display("AXI4_NEGATIVE_CASE_PASS same_edge_r");
     $display("AMBA_AXI4_RESPONSE_NEGATIVE_PASS scenarios=4 violations=%0d",violations);
     $finish;
   end

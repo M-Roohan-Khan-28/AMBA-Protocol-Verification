@@ -17,7 +17,11 @@ module ahb_lite_master_driver (
         @(negedge clk);
         select=0;trans=0;write=0;wdata=tx.data;
         #1;
-        if (!readyout) $fatal(1,"AHB driver requires zero-wait responder");
+        for (int wait_cycles=0; !readyout; wait_cycles++) begin
+            if (wait_cycles >= 4) $fatal(1,"AHB driver response timeout");
+            @(negedge clk);
+            #1;
+        end
         result.error=resp; result.data=rdata;
         @(negedge clk);
         wdata=0;

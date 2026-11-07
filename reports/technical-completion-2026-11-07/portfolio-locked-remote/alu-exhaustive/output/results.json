@@ -1,0 +1,58 @@
+{
+  "repository": "ALU-RTL-Verification",
+  "source_revision": "82a6212772f4bdacad0a95987bb1679e8e5c2702",
+  "source_dirty": false,
+  "sources": [
+    {
+      "path": "C:\\short\\tc-aggregate-remote-2026-11-07\\alu-exhaustive\\source\\rtl\\design.sv",
+      "sha256": "a5c18735b69a2a265bae8e4566e7893bb29375cc7ff163500c51b1d14ab8e128"
+    },
+    {
+      "path": "C:\\short\\tc-aggregate-remote-2026-11-07\\alu-exhaustive\\source\\tb\\tb_portable.sv",
+      "sha256": "724c8a437e7cc272f7cf5f29a1bb7fcc7ad060afc2094da3107061a1e25b0fbd"
+    },
+    {
+      "path": "C:\\short\\tc-aggregate-remote-2026-11-07\\alu-exhaustive\\source\\tb\\tb_exhaustive.sv",
+      "sha256": "5b820314b0e49f82f872eeca05dafed5492f3f6d11623063398e8cc07f0ad731"
+    }
+  ],
+  "seed": "none; deterministic two-state enumeration",
+  "timeout_seconds_per_command": 120,
+  "simulations": [
+    {
+      "name": "portable",
+      "top": "tb_alu_portable",
+      "argv": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "tb_alu_portable",
+        "-do",
+        "run -all; quit -code 0"
+      ],
+      "simulator_exit_code": 0,
+      "status": "PASS",
+      "marker": "PORTABLE_TEST_PASS ALU checks=1380"
+    },
+    {
+      "name": "exhaustive",
+      "top": "tb_alu_exhaustive",
+      "argv": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "tb_alu_exhaustive",
+        "-do",
+        "run -all; quit -code 0"
+      ],
+      "simulator_exit_code": 0,
+      "status": "PASS",
+      "marker": "ALU_EXHAUSTIVE_PASS tuples=524288 directed=254 identities=1792 comparisons=1579002"
+    }
+  ],
+  "overall": "PASS",
+  "simulator_version": "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020",
+  "elapsed_seconds": 3.39
+}

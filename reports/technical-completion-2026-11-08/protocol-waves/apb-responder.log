@@ -1,0 +1,31 @@
+﻿Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit apb_responder_test -do "vcd file C:/short/amba-wave-followup-20261108/apb-responder.vcd; vcd add /apb_responder_test/clk; vcd add /apb_responder_test/reset_n; vcd add /apb_responder_test/select; vcd add /apb_responder_test/enable; vcd add /apb_responder_test/write; vcd add /apb_responder_test/addr; vcd add /apb_responder_test/wdata; vcd add /apb_responder_test/rdata; vcd add /apb_responder_test/ready; vcd add /apb_responder_test/error; vcd add /apb_responder_test/transfers; vcd add /apb_responder_test/wait_edges; run -all; quit -code 0" 
+# Start time: 00:23:38 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.amba_transactions
+# Loading work.apb_responder_test
+# Loading work.apb_master_driver
+# Loading work.apb_ram_responder
+# Loading work.apb_monitor
+# vcd file C:/short/amba-wave-followup-20261108/apb-responder.vcd
+#  vcd add /apb_responder_test/clk
+#  vcd add /apb_responder_test/reset_n
+#  vcd add /apb_responder_test/select
+#  vcd add /apb_responder_test/enable
+#  vcd add /apb_responder_test/write
+#  vcd add /apb_responder_test/addr
+#  vcd add /apb_responder_test/wdata
+#  vcd add /apb_responder_test/rdata
+#  vcd add /apb_responder_test/ready
+#  vcd add /apb_responder_test/error
+#  vcd add /apb_responder_test/transfers
+#  vcd add /apb_responder_test/wait_edges
+#  run -all
+# AMBA_APB_RESPONDER_PASS transfers=7 checks=13 waits=14
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/tc/amba/tb/apb_responder_test.sv(42)
+#    Time: 400 ns  Iteration: 1  Instance: /apb_responder_test
+# End time: 00:23:40 on Nov 08,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

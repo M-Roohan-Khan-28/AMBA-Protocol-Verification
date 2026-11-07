@@ -1,0 +1,22 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit apb64_protocol_negative -do "run -all; quit -code 0" 
+# Start time: 23:14:18 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.apb64_protocol_negative
+# Loading work.apb64_monitor
+# run -all
+# APB64_MONITOR_VIOLATION ACCESS_WITHOUT_SETUP
+# APB64_NEGATIVE_CASE_PASS access_without_setup
+# APB64_MONITOR_VIOLATION CONTROL_CHANGED_IN_ACCESS
+# APB64_NEGATIVE_CASE_PASS address_changed
+# APB64_MONITOR_VIOLATION CONTROL_CHANGED_IN_ACCESS
+# APB64_NEGATIVE_CASE_PASS write_data_changed
+# APB64_NEGATIVE_CASE_PASS legal_back_to_back
+# APB64_NEGATIVE_PASS cases=3 legal=1
+# ** Note: $finish    : C:/short/tc-aggregate-remote-2026-11-07/apb-interface-contract/source/tb/apb64_protocol_negative.sv(50)
+#    Time: 176 ns  Iteration: 0  Instance: /apb64_protocol_negative
+# End time: 23:14:18 on Nov 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

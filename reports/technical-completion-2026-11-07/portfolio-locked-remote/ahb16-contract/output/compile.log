@@ -1,0 +1,10 @@
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 23:14:31 on Nov 07,2026
+vlog -sv C:\short\tc-aggregate-remote-2026-11-07\ahb16-contract\source\rtl\design.sv C:\short\tc-aggregate-remote-2026-11-07\ahb16-contract\source\tb\ahb16_contract_test.sv 
+-- Compiling module ahb_lite_slave_ram
+-- Compiling module ahb16_contract_test
+
+Top level modules:
+	ahb16_contract_test
+End time: 23:14:31 on Nov 07,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

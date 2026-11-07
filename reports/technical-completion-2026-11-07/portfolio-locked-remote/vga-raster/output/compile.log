@@ -1,0 +1,12 @@
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 23:14:44 on Nov 07,2026
+vlog -sv C:\short\tc-aggregate-remote-2026-11-07\vga-raster\source\rtl\design.sv C:\short\tc-aggregate-remote-2026-11-07\vga-raster\source\tb\tb_top.sv C:\short\tc-aggregate-remote-2026-11-07\vga-raster\source\tb\vga_raster_test.sv 
+-- Compiling module vga_controller_sram
+-- Compiling module tb_vga_controller_sram
+-- Compiling module vga_raster_test
+
+Top level modules:
+	tb_vga_controller_sram
+	vga_raster_test
+End time: 23:14:44 on Nov 07,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

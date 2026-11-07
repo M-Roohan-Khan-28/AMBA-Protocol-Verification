@@ -1,0 +1,15 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit ahb16_contract_test -do "run -all; quit -code 0" 
+# Start time: 23:14:33 on Nov 07,2026
+# Loading sv_std.std
+# Loading work.ahb16_contract_test
+# Loading work.ahb_lite_slave_ram
+# run -all
+# AHB16_CONTRACT_PASS checks=810 accepted=122 retired=119 commits=40 errors=12 stalls=8 seed=0x28A81607
+# ** Note: $finish    : C:/short/tc-aggregate-remote-2026-11-07/ahb16-contract/source/tb/ahb16_contract_test.sv(154)
+#    Time: 2667 ns  Iteration: 0  Instance: /ahb16_contract_test
+# End time: 23:14:33 on Nov 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
