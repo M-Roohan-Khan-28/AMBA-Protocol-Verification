@@ -1,0 +1,32 @@
+﻿Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit fault_test -do "scripts/batch.do" 
+# Start time: 00:07:15 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.fault_test
+# Loading work.riscv_soc_top
+# Loading work.axi_lite_if
+# Loading work.instruction_memory
+# Loading work.rv32_pkg
+# Loading work.riscv_core
+# Loading work.pc
+# Loading work.instruction_decoder
+# Loading work.immediate_generator
+# Loading work.control_unit
+# Loading work.register_file
+# Loading work.alu
+# Loading work.branch_unit
+# Loading work.load_store_unit
+# Loading work.axi_lite_master
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# do scripts/batch.do
+# PASS CPU faults cases=10 illegal, misalignment, bus errors, fetch bounds and reset recovery
+# ** Note: $finish    : tb/tests/fault_test.sv(39)
+#    Time: 940 ns  Iteration: 1  Instance: /fault_test
+# End time: 00:07:16 on Nov 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+

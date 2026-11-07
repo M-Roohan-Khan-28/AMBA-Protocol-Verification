@@ -1,0 +1,60 @@
+{
+  "repository": "APB-Modports-Verification",
+  "source_revision": "b29e52406936c732c5af3958e07ee84c05a9419d",
+  "source_dirty": false,
+  "sources": [
+    {
+      "path": "C:\\short\\portfolio-tech-followup-20261108\\apb-modports-contract\\source\\rtl\\design.sv",
+      "sha256": "f3d54c70edfe841c807d9f589cdaa5832560bab8cc74b36a90ecb5afaac2ed00"
+    },
+    {
+      "path": "C:\\short\\portfolio-tech-followup-20261108\\apb-modports-contract\\source\\tb\\tb_top.sv",
+      "sha256": "3563c91e63e880d6c0fce5d55aabd65bb1ac045a5790c6810d5005c0f989b972"
+    },
+    {
+      "path": "C:\\short\\portfolio-tech-followup-20261108\\apb-modports-contract\\source\\tb\\apb_contract_test.sv",
+      "sha256": "37fe6f6424208ded9658d3356a21acd82c75088c114d2f247dbe88102ac31bf8"
+    }
+  ],
+  "seed": "0x28AB4B05 (xorshift32 write data)",
+  "timeout_seconds_per_command": 120,
+  "simulations": [
+    {
+      "top": "tb_apb_modport",
+      "simulator_exit_code": 0,
+      "command": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "tb_apb_modport",
+        "-do",
+        "run -all; quit -code 0"
+      ],
+      "status": "PASS",
+      "checks": 2
+    },
+    {
+      "top": "apb_contract_test",
+      "simulator_exit_code": 0,
+      "command": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "apb_contract_test",
+        "-do",
+        "run -all; quit -code 0"
+      ],
+      "status": "PASS",
+      "checks": 12488,
+      "probes": 512,
+      "guards": 1049,
+      "errors": 507,
+      "resets": 1
+    }
+  ],
+  "overall": "PASS",
+  "simulator_version": "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020",
+  "elapsed_seconds": 13.139
+}

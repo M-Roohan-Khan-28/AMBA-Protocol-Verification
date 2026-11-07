@@ -1,0 +1,30 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit tb_cache_2way -do "run -all; quit -code 0" 
+# Start time: 00:04:47 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.tb_cache_2way
+# Loading work.cache_2way
+# run -all
+# PASS: Character 1 = r, ASCII = 72
+# PASS: Character 2 = o, ASCII = 6f
+# PASS: Character 3 = o, ASCII = 6f
+# PASS: Character 4 = h, ASCII = 68
+# PASS: Character 5 = a, ASCII = 61
+# PASS: Character 6 = n, ASCII = 6e
+# ------------------------------------------
+# WORD IN HEX   = 726f6f68616e
+# WORD IN ASCII = roohan
+# ------------------------------------------
+# PASS: Cache miss detected correctly
+# ------------------------------------------
+# TOTAL PASSED = 7
+# TOTAL FAILED = 0
+# ------------------------------------------
+# ALL CACHE TESTS PASSED
+# ** Note: $finish    : C:/short/portfolio-tech-followup-20261108/cache-contract/source/tb/tb_top.sv(203)
+#    Time: 221 ns  Iteration: 0  Instance: /tb_cache_2way
+# End time: 00:04:49 on Nov 08,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

@@ -39,6 +39,9 @@ portfolio regression entry point. Its [locked revisions, raw results and
 reproduction command](docs/PORTFOLIO_REGRESSION.md) are documented separately.
 The [technical completion run](docs/TECHNICAL_COMPLETION.md) locks the new
 eleven-project branch revisions and records a fresh GitHub-source 11/11 pass.
+Its [separate follow-up evidence](reports/technical-completion-2026-11-08/portfolio-locked-followup/SUMMARY.md)
+locks the AHB master-wait checks and VGA measured boundary captures; the
+aggregate still reports each project's checks separately.
 
 ## Status and limits
 

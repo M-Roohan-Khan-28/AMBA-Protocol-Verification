@@ -1,0 +1,15 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit vga_raster_test -do "run -all; quit -code 0" 
+# Start time: 00:06:02 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.vga_raster_test
+# Loading work.vga_controller_sram
+# run -all
+# VGA_RASTER_PASS checks=29588940 pixels=1232740 active=922318 hsync_low=147845 vsync_low=3201 frames=2 writes=258 invalid=2 resets=4 seed=all256
+# ** Note: $finish    : C:/short/portfolio-tech-followup-20261108/vga-raster/source/tb/vga_raster_test.sv(160)
+#    Time: 49314867 ns  Iteration: 0  Instance: /vga_raster_test
+# End time: 00:06:14 on Nov 08,2026, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 0

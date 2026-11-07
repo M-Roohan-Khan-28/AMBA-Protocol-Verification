@@ -1,0 +1,16 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit tb_apb_portable -do "run -all; quit -code 0" 
+# Start time: 00:03:28 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.tb_apb_portable
+# Loading work.apb_if
+# Loading work.apb_ram
+# run -all
+# PORTABLE_TEST_PASS APB checks=1317
+# ** Note: $finish    : C:/short/portfolio-tech-followup-20261108/apb-interface-contract/source/tb/tb_portable.sv(170)
+#    Time: 7951 ns  Iteration: 0  Instance: /tb_apb_portable
+# End time: 00:03:30 on Nov 08,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

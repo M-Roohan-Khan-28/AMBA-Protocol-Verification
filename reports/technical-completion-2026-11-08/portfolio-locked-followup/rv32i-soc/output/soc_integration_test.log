@@ -1,0 +1,62 @@
+﻿Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit soc_integration_test "+WAVE_FILE=C:\short\portfolio-tech-followup-20261108\rv32i-soc\output\integration.vcd" -do "scripts/batch.do" 
+# Start time: 00:07:09 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.soc_integration_test
+# Loading work.riscv_soc_top
+# Loading work.axi_lite_if
+# Loading work.instruction_memory
+# Loading work.rv32_pkg
+# Loading work.riscv_core
+# Loading work.pc
+# Loading work.instruction_decoder
+# Loading work.immediate_generator
+# Loading work.control_unit
+# Loading work.register_file
+# Loading work.alu
+# Loading work.branch_unit
+# Loading work.load_store_unit
+# Loading work.axi_lite_master
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# do scripts/batch.do
+# CPU cycle=0 pc=00000000 ins=00a00093 rs1=x0:00000000 rs2=x10:00000000 rd=1 alu=0000000a we=1 wb=0000000a mem=0000000a store=00000000 wait=0 fault=0
+# AXI state=0 AW=01 W=01 B=00:00 AR=01 R=00:00 SRAM en=0 we=0 index=000 wd=00000000 rd=xxxxxxxx
+# CPU cycle=1 pc=00000004 ins=01400113 rs1=x0:00000000 rs2=x20:00000000 rd=2 alu=00000014 we=1 wb=00000014 mem=00000014 store=00000000 wait=0 fault=0
+# AXI state=0 AW=01 W=01 B=00:00 AR=01 R=00:00 SRAM en=0 we=0 index=000 wd=00000000 rd=xxxxxxxx
+# CPU cycle=2 pc=00000008 ins=002081b3 rs1=x1:0000000a rs2=x2:00000014 rd=3 alu=0000001e we=1 wb=0000001e mem=0000001e store=00000014 wait=0 fault=0
+# AXI state=0 AW=01 W=01 B=00:00 AR=01 R=00:00 SRAM en=0 we=0 index=000 wd=00000000 rd=xxxxxxxx
+# CPU cycle=3 pc=0000000c ins=10000237 rs1=x0:00000000 rs2=x0:00000000 rd=4 alu=00000000 we=1 wb=10000000 mem=00000000 store=00000000 wait=0 fault=0
+# AXI state=0 AW=01 W=01 B=00:00 AR=01 R=00:00 SRAM en=0 we=0 index=000 wd=00000000 rd=xxxxxxxx
+# CPU cycle=4 pc=00000010 ins=00322023 rs1=x4:10000000 rs2=x3:0000001e rd=0 alu=10000000 we=0 wb=10000000 mem=10000000 store=0000001e wait=1 fault=0
+# AXI state=0 AW=01 W=01 B=00:00 AR=01 R=00:00 SRAM en=0 we=0 index=000 wd=00000000 rd=xxxxxxxx
+# CPU cycle=5 pc=00000010 ins=00322023 rs1=x4:10000000 rs2=x3:0000001e rd=0 alu=10000000 we=0 wb=10000000 mem=10000000 store=0000001e wait=1 fault=0
+# AXI state=1 AW=11 W=11 B=00:00 AR=01 R=00:00 SRAM en=0 we=0 index=000 wd=00000000 rd=xxxxxxxx
+# CPU cycle=6 pc=00000010 ins=00322023 rs1=x4:10000000 rs2=x3:0000001e rd=0 alu=10000000 we=0 wb=10000000 mem=10000000 store=0000001e wait=1 fault=0
+# AXI state=1 AW=00 W=00 B=01:00 AR=01 R=00:00 SRAM en=1 we=1 index=000 wd=0000001e rd=xxxxxxxx
+# CPU cycle=7 pc=00000010 ins=00322023 rs1=x4:10000000 rs2=x3:0000001e rd=0 alu=10000000 we=0 wb=10000000 mem=10000000 store=0000001e wait=1 fault=0
+# AXI state=1 AW=00 W=00 B=11:00 AR=01 R=00:00 SRAM en=0 we=0 index=000 wd=0000001e rd=xxxxxxxx
+# CPU cycle=8 pc=00000010 ins=00322023 rs1=x4:10000000 rs2=x3:0000001e rd=0 alu=10000000 we=0 wb=10000000 mem=10000000 store=0000001e wait=0 fault=0
+# AXI state=3 AW=01 W=01 B=00:00 AR=01 R=00:00 SRAM en=0 we=0 index=000 wd=0000001e rd=xxxxxxxx
+# CPU cycle=9 pc=00000014 ins=00022283 rs1=x4:10000000 rs2=x0:00000000 rd=5 alu=10000000 we=0 wb=00000000 mem=10000000 store=00000000 wait=1 fault=0
+# AXI state=0 AW=01 W=01 B=00:00 AR=01 R=00:00 SRAM en=0 we=0 index=000 wd=0000001e rd=xxxxxxxx
+# CPU cycle=10 pc=00000014 ins=00022283 rs1=x4:10000000 rs2=x0:00000000 rd=5 alu=10000000 we=0 wb=00000000 mem=10000000 store=00000000 wait=1 fault=0
+# AXI state=2 AW=01 W=01 B=00:00 AR=11 R=00:00 SRAM en=0 we=0 index=000 wd=0000001e rd=xxxxxxxx
+# CPU cycle=11 pc=00000014 ins=00022283 rs1=x4:10000000 rs2=x0:00000000 rd=5 alu=10000000 we=0 wb=00000000 mem=10000000 store=00000000 wait=1 fault=0
+# AXI state=2 AW=01 W=01 B=00:00 AR=00 R=01:00 SRAM en=1 we=0 index=000 wd=0000001e rd=xxxxxxxx
+# CPU cycle=12 pc=00000014 ins=00022283 rs1=x4:10000000 rs2=x0:00000000 rd=5 alu=10000000 we=0 wb=00000000 mem=10000000 store=00000000 wait=1 fault=0
+# AXI state=2 AW=01 W=01 B=00:00 AR=00 R=01:00 SRAM en=0 we=0 index=000 wd=0000001e rd=0000001e
+# CPU cycle=13 pc=00000014 ins=00022283 rs1=x4:10000000 rs2=x0:00000000 rd=5 alu=10000000 we=0 wb=00000000 mem=10000000 store=00000000 wait=1 fault=0
+# AXI state=2 AW=01 W=01 B=00:00 AR=00 R=11:00 SRAM en=0 we=0 index=000 wd=0000001e rd=0000001e
+# CPU cycle=14 pc=00000014 ins=00022283 rs1=x4:10000000 rs2=x0:00000000 rd=5 alu=10000000 we=1 wb=0000001e mem=10000000 store=00000000 wait=0 fault=0
+# AXI state=3 AW=01 W=01 B=00:00 AR=01 R=00:00 SRAM en=0 we=0 index=000 wd=0000001e rd=0000001e
+# PASS SOC integration x3=30 SRAM[0x10000000]=30 x5=30 writes=1 reads=1 wait_cycles=9
+# ** Note: $finish    : tb/tests/soc_integration_test.sv(35)
+#    Time: 190 ns  Iteration: 1  Instance: /soc_integration_test
+# End time: 00:07:09 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+

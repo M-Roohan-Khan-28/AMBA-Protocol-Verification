@@ -1,17 +1,34 @@
 # Technical completion: locked eleven-project regression
 
-The published runner commit is 35239784a519f163cb71104e088c952e3d4a69fc. Its inventory file was last changed in commit 30d041a59a043e49c1014274e53ad6ad37f31ea7. The inventory locks all eleven required project sources to full 40-digit commit SHAs; the AMBA self-suite uses source commit d85b82bc00ed9504d89a451114e465a0503779b9. The runner clones each repository afresh, checks out its lock detached, verifies the observed revision, and records the runner, script and inventory revisions and file hashes.
+The tested runner checkout and inventory revision are
+`5d29d752dd05f9a5b299b3499873f2146b388489`; the runner script revision
+remains `35239784a519f163cb71104e088c952e3d4a69fc`. The inventory locks
+all eleven required project sources to full 40-digit commit SHAs. The AMBA
+self-suite source is `1f0d5491cd084a95c5137ad7072a621ea059b2e3`, with
+the updated AHB source pin. The runner clones each repository afresh, checks
+out its lock detached, verifies the observed revision, and records the runner,
+script and inventory revisions and file hashes.
 
-A clean GitHub clone of the AMBA technical branch ran the published runner with GitHub as the source for every required project. [Raw logs, JSON and summary](../reports/technical-completion-2026-11-07/portfolio-locked-remote/) record 11/11 required PASS, every required suite exit 0, a clean runner, all eleven revision matches, and aggregate exit 0. ModelSim Intel FPGA Starter Edition reported vsim 2020.1 Simulator 2020.02 Feb 28 2020. The two original advanced ALU/APB environments remain explicitly NOT RUN because the verification-feature licence is unavailable.
+A fresh GitHub clone of the AMBA technical branch detached to that runner
+checkout and cloned every required source from GitHub. [New raw logs, JSON and
+summary](../reports/technical-completion-2026-11-08/portfolio-locked-followup/)
+record **11/11 required PASS**, every required suite exit 0, a clean runner,
+all eleven revision matches, and aggregate/wrapper exit 0. The inventory file
+SHA-256 is `A8704B33392CAB0A840826184CFF5D60643AA402D8959F7F1A0AE0DFF1139DAF`.
+ModelSim Intel FPGA Starter Edition reported
+`vsim 2020.1 Simulator 2020.02 Feb 28 2020`. The two original advanced
+ALU/APB environments remain explicitly **NOT RUN** because the verification
+feature licence is unavailable. The [earlier passing aggregate](../reports/technical-completion-2026-11-07/portfolio-locked-remote/)
+remains separate and unchanged at its own source locks.
 
 | Required suite | Observed result |
 | --- | ---: |
 | ALU exhaustive | 524,288 WIDTH=8 tuples, 1,579,002 comparisons; existing portable 1,380 checks also ran |
 | APB interface | 2,697 contract checks, 673 accepted transfers; existing portable 1,317 checks also ran |
 | APB modports | 12,488 contract checks; legacy 2 checks also ran |
-| AHB-Lite RAM | 810 independent checks, including two-cycle ERROR response |
+| AHB-Lite RAM | 924 independent checks, including two-cycle ERROR response; three reset-isolated malformed-master wait cases |
 | Two-way cache | 1,639 independent checks; legacy 7 checks also ran |
-| VGA SRAM | 29,588,940 public-pin comparisons across two full frames; legacy 7 checks also ran |
+| VGA SRAM | 29,588,940 public-pin comparisons across two full frames; legacy 7 checks also ran; four separate measured boundary scenarios passed in a clean clone |
 | Standalone AXI4-Lite | 7 functional tests |
 | RV32I AXI4-Lite SoC | 24 runs |
 | AXI4 DMA | 40 cases, 1,352,655 checks, seed 0x28A6BEEF |
@@ -29,7 +46,7 @@ These SVG figures were rendered from actual simulator VCD captures; the source V
 - [APB modport boundary](https://github.com/M-Roohan-Khan-28/APB-Modports-Verification/blob/technical/apb-modports-contract/reports/technical-completion-2026-11-07/passing/apb-boundary.svg)
 - [AHB ERROR phase](https://github.com/M-Roohan-Khan-28/AHB-Lite-RAM-Interface/blob/technical/ahb16-response-contract/reports/technical-completion-2026-11-07/ahb16-contract.svg)
 - [Two-way cache](https://github.com/M-Roohan-Khan-28/Two-Way-Cache-RTL/blob/technical/cache-contract/reports/technical-completion-2026-11-07/passing/cache-contract.svg)
-- [VGA horizontal interval](https://github.com/M-Roohan-Khan-28/VGA-SRAM-Framebuffer/blob/technical/vga-raster-contract/reports/technical-completion-2026-11-07/vga-raster.svg)
+- [VGA horizontal, vertical, write-to-pixel, and frame-wrap captures](https://github.com/M-Roohan-Khan-28/VGA-SRAM-Framebuffer/blob/e6442fbf24595bc66e0ffab5be47478667be8fcf/docs/MEASURED_WAVEFORMS.md)
 - [Standalone AXI4-Lite](https://github.com/M-Roohan-Khan-28/AXI4-Lite-Memory-Interface/blob/technical/response-order-qualification/reports/technical-completion-2026-11-07/measured-waveform/legal-selected.svg)
 - [RV32I AXI4-Lite SoC](https://github.com/M-Roohan-Khan-28/RV32I-AXI4-Lite-SoC/blob/technical/response-order-qualification/reports/technical-completion-2026-11-07/corrected-qualification/measured.svg)
 - [DMA W-before-AW](https://github.com/M-Roohan-Khan-28/AXI4-DMA-Subsystem/blob/technical/full-channel-ordering/reports/technical-completion-2026-11-07/wave-all_w_before_aw_16/dma-order.svg)
@@ -41,7 +58,7 @@ Reproduce the published locked run from a short, fresh path on Windows with Git 
 git -c core.longpaths=true clone --branch technical/response-order-qualification https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git C:\short\amba-technical-reproduction
 Set-Location C:\short\amba-technical-reproduction
 git config core.longpaths true
-git checkout --detach 35239784a519f163cb71104e088c952e3d4a69fc
+git checkout --detach 5d29d752dd05f9a5b299b3499873f2146b388489
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/run_portfolio_regression.ps1 -OutputDir C:\short\portfolio-technical-unique
 if ($LASTEXITCODE -ne 0) { throw 'Required portfolio suite failed or was blocked' }
 Get-Content C:\short\portfolio-technical-unique\results.json -Raw | ConvertFrom-Json | Select-Object aggregate_exit_code,runner_revision,inventory_revision,simulator_version
