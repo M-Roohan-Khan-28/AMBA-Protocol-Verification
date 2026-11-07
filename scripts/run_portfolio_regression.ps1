@@ -127,7 +127,7 @@ foreach ($suite in $inventory) {
         continue
     }
     $arguments = "-NoProfile -ExecutionPolicy Bypass -File `"$script`""
-    if ($suite.mode -in @('portable', 'axi', 'dma', 'amba', 'coherent')) {
+    if ($suite.mode -in @('portable', 'axi', 'dma', 'amba', 'coherent', 'technical', 'soc_new', 'coherent_new')) {
         $arguments += " -OutputDir `"$(Join-Path $suiteDir 'output')`""
     }
     $result.command = "powershell.exe $arguments"
@@ -156,7 +156,30 @@ foreach ($suite in $inventory) {
         if (-not $finished) { throw "Timed out after $($suite.timeout_seconds) seconds" }
         if ($proc.ExitCode -ne 0) { throw "Runner exited $($proc.ExitCode)" }
         switch ($suite.mode) {
-            'portable' {
+            'technical' {
+                $output = Join-Path $suiteDir 'output'
+                $jsonPath = Join-Path $output 'results.json'
+                if (-not (Test-Path -LiteralPath $jsonPath)) { throw 'Missing technical results JSON' }
+                $technical = Get-Content -LiteralPath $jsonPath -Raw | ConvertFrom-Json
+                if ($technical.overall -ne 'PASS' -or $technical.source_dirty -or
+                    $technical.source_revision -ne $result.source_revision) {
+                    throw 'Technical results JSON reports failure, dirty source, or revision mismatch'
+                }
+                $simulations = @($technical.simulations)
+                if ($simulations.Count -lt 1) { throw 'Technical results contain no simulations' }
+                foreach ($simulation in $simulations) {
+                    if ($simulation.status -ne 'PASS' -or $simulation.simulator_exit_code -ne 0) {
+                        throw "Technical simulation failed: $($simulation.top)"
+                    }
+                }
+                $simulationLogs = @(Get-ChildItem -LiteralPath $output -Filter '*.log' -File |
+                    Where-Object { $_.Name -notin @('compile.log','library.log','version.log','render.log') })
+                if ($simulationLogs.Count -ne $simulations.Count) {
+                    throw "Expected $($simulations.Count) technical simulation logs; found $($simulationLogs.Count)"
+                }
+                $primary = $stdout
+                foreach ($log in $simulationLogs) { $primary += Test-SimulationLog $log.FullName }
+            }            'portable' {
                 $primary = Test-SimulationLog (Join-Path $suiteDir 'output\simulation.log')
             }
             'legacy' {
@@ -200,7 +223,18 @@ foreach ($suite in $inventory) {
                 }
                 $primary = "AMBA_REGRESSION_PASS suites=$(@($amba.results).Count)"
             }
-            'soc' {
+            'soc_new' {
+                $output = Join-Path $suiteDir 'output'
+                $summaryPath = Join-Path $output 'regression_summary.log'
+                if (-not (Test-Path -LiteralPath $summaryPath)) { throw 'Missing SoC regression summary' }
+                $primary = Get-Content -LiteralPath $summaryPath -Raw
+                $completed = @([regex]::Matches($primary, '(?m)^PASS (?!REGRESSION)(\S+)'))
+                if ($completed.Count -ne [int]$suite.expected_count) { throw "Expected $($suite.expected_count) SoC run entries; found $($completed.Count)" }
+                foreach ($entry in $completed) {
+                    $testLog = Join-Path $output ("{0}.log" -f $entry.Groups[1].Value)
+                    $null = Test-SimulationLog $testLog
+                }
+            }            'soc' {
                 $primary = Get-Content -LiteralPath (Join-Path $work 'logs\regression_summary.log') -Raw
                 $completed = @([regex]::Matches($primary, '(?m)^PASS (?!REGRESSION)(\S+)'))
                 if ($completed.Count -ne [int]$suite.expected_count) { throw "Expected $($suite.expected_count) SoC run entries; found $($completed.Count)" }
@@ -209,7 +243,30 @@ foreach ($suite in $inventory) {
                     $null = Test-SimulationLog $testLog
                 }
             }
-            'coherent' {
+            'coherent_new' {
+                $output = Join-Path $suiteDir 'output'
+                $jsonPath = Join-Path $output 'results.json'
+                if (-not (Test-Path -LiteralPath $jsonPath)) { throw 'Missing coherent results JSON' }
+                $coherent = Get-Content -LiteralPath $jsonPath -Raw | ConvertFrom-Json
+                if ($coherent.status -ne 'PASS' -or $coherent.source_dirty -or
+                    $coherent.source_revision -ne $result.source_revision -or
+                    $coherent.compile_exit -ne 0 -or $coherent.cases -ne 71 -or $coherent.checks -ne 1477 -or
+                    $coherent.program_checks -ne 135 -or $coherent.concurrent_checks -ne 106 -or
+                    $coherent.bridge_checks -ne 159 -or $coherent.reset_commit_checks -ne 163 -or
+                    $coherent.shared_store_checks -ne 106 -or $coherent.shared_read_write_checks -ne 106) {
+                    throw 'Coherent results JSON disagrees with required branch results'
+                }
+                foreach ($field in @('simulation_exit','program_simulation_exit','concurrent_simulation_exit',
+                    'bridge_simulation_exit','reset_commit_simulation_exit',
+                    'shared_store_simulation_exit','shared_read_write_simulation_exit')) {
+                    if ($coherent.$field -ne 0) { throw "Coherent simulation failed: $field" }
+                }
+                foreach ($name in @('simulation.log','program.log','concurrent.log','bridge.log',
+                    'reset-commit.log','shared-store_store.log','shared-read_write.log')) {
+                    $null = Test-SimulationLog (Join-Path $output $name)
+                }
+                $primary = Test-SimulationLog (Join-Path $output 'simulation.log')
+            }            'coherent' {
                 $primary = Test-SimulationLog (Join-Path $suiteDir 'output\simulation.log')
                 $null = Test-SimulationLog (Join-Path $suiteDir 'output\program.log')
                 $resultPath = Join-Path $suiteDir 'output\results.json'

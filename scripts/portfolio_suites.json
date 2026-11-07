@@ -1,87 +1,87 @@
-﻿[
+[
     {
-        "name":  "alu-portable",
+        "name":  "alu-exhaustive",
         "repository":  "ALU-RTL-Verification",
         "required":  true,
         "enabled":  true,
-        "script":  "scripts/run_portable.ps1",
-        "mode":  "portable",
+        "script":  "scripts/run_regression.ps1",
+        "mode":  "technical",
         "timeout_seconds":  180,
-        "seed":  "deterministic",
-        "count_kind":  "checks",
-        "pass_regex":  "PORTABLE_TEST_PASS ALU checks=(\\d+)",
-        "expected_count":  1380,
-        "revision":  "6d7df63ff071b083e2cdf1c11ed6c6fb8c0e57e1"
+        "seed":  "exhaustive WIDTH=8",
+        "count_kind":  "tuples",
+        "pass_regex":  "ALU_EXHAUSTIVE_PASS tuples=(\\d+) directed=254 identities=1792 comparisons=1579002",
+        "expected_count":  524288,
+        "revision":  "82a6212772f4bdacad0a95987bb1679e8e5c2702"
     },
     {
-        "name":  "apb-interface-portable",
+        "name":  "apb-interface-contract",
         "repository":  "APB-Interface-Verification",
         "required":  true,
         "enabled":  true,
-        "script":  "scripts/run_portable.ps1",
-        "mode":  "portable",
+        "script":  "scripts/run_regression.ps1",
+        "mode":  "technical",
         "timeout_seconds":  180,
-        "seed":  "deterministic",
+        "seed":  "0x28AB6407",
         "count_kind":  "checks",
-        "pass_regex":  "PORTABLE_TEST_PASS APB checks=(\\d+)",
-        "expected_count":  1317,
-        "revision":  "118deb0b339b1c7b000198b7133a05367eb61f76"
+        "pass_regex":  "APB64_CONTRACT_PASS checks=(\\d+) issued=673 accepted=673 writes=153 reads=520 aliases=80 back_to_back=5 resets=3 seed=0x28AB6407",
+        "expected_count":  2697,
+        "revision":  "ad124382ee3f59f184ee9eb4df2ae743ee920513"
     },
     {
-        "name":  "apb-modports-directed",
+        "name":  "apb-modports-contract",
         "repository":  "APB-Modports-Verification",
         "required":  true,
         "enabled":  true,
         "script":  "scripts/run_sim.ps1",
-        "mode":  "legacy",
+        "mode":  "technical",
         "timeout_seconds":  180,
-        "seed":  "directed",
+        "seed":  "0x28AB4B05",
         "count_kind":  "checks",
-        "pass_regex":  "TOTAL PASSED\\s*=\\s*(\\d+)",
-        "expected_count":  2,
-        "revision":  "9b84a821e5768ecc245de32be0064cd2b2756ce1"
+        "pass_regex":  "APB_MODPORT_CONTRACT_PASS probes=512 guards=1049 checks=(\\d+) errors=507 resets=1 seed=0x28AB4B05",
+        "expected_count":  12488,
+        "revision":  "b29e52406936c732c5af3958e07ee84c05a9419d"
     },
     {
-        "name":  "ahb-lite-directed",
+        "name":  "ahb16-contract",
         "repository":  "AHB-Lite-RAM-Interface",
         "required":  true,
         "enabled":  true,
-        "script":  "scripts/run_sim.ps1",
-        "mode":  "legacy",
+        "script":  "scripts/run_regression.ps1",
+        "mode":  "technical",
         "timeout_seconds":  180,
-        "seed":  "directed",
+        "seed":  "0x28A81607",
         "count_kind":  "checks",
-        "pass_regex":  "TOTAL PASSED\\s*=\\s*(\\d+)",
-        "expected_count":  18,
-        "revision":  "37a8e976897f53648dbfdd50b9dfe1ccdcb226bb"
+        "pass_regex":  "AHB16_CONTRACT_PASS checks=(\\d+) accepted=122 retired=119 commits=40 errors=12 stalls=8 seed=0x28A81607",
+        "expected_count":  810,
+        "revision":  "d8b2651ceffc2f3f8768759d16eeb4693875b553"
     },
     {
-        "name":  "cache-directed",
+        "name":  "cache-contract",
         "repository":  "Two-Way-Cache-RTL",
         "required":  true,
         "enabled":  true,
         "script":  "scripts/run_sim.ps1",
-        "mode":  "legacy",
+        "mode":  "technical",
         "timeout_seconds":  180,
-        "seed":  "directed",
+        "seed":  "0x28CACE17",
         "count_kind":  "checks",
-        "pass_regex":  "TOTAL PASSED\\s*=\\s*(\\d+)",
-        "expected_count":  7,
-        "revision":  "2ff7517312d7708af681e6bcf7e2a77b34975f69"
+        "pass_regex":  "CACHE_CONTRACT_PASS checks=(\\d+) writes=324 resets=2 seed=0x28CACE17",
+        "expected_count":  1639,
+        "revision":  "aae79145c95cceda80e0644b23b9af290e3c55b5"
     },
     {
-        "name":  "vga-directed",
+        "name":  "vga-raster",
         "repository":  "VGA-SRAM-Framebuffer",
         "required":  true,
         "enabled":  true,
-        "script":  "scripts/run_sim.ps1",
-        "mode":  "legacy",
-        "timeout_seconds":  180,
-        "seed":  "directed",
-        "count_kind":  "checks",
-        "pass_regex":  "TOTAL PASSED\\s*=\\s*(\\d+)",
-        "expected_count":  7,
-        "revision":  "f278b8ec69c8c6b944f59c0b7da76723b81dc61f"
+        "script":  "scripts/run_regression.ps1",
+        "mode":  "technical",
+        "timeout_seconds":  300,
+        "seed":  "all256",
+        "count_kind":  "comparisons",
+        "pass_regex":  "VGA_RASTER_PASS checks=(\\d+) pixels=1232740 active=922318 hsync_low=147845 vsync_low=3201 frames=2 writes=258 invalid=2 resets=4 seed=all256",
+        "expected_count":  29588940,
+        "revision":  "2dc165778699aeb2c468b1ddc0eb2ca1da76caf2"
     },
     {
         "name":  "axi4-lite-standalone",
@@ -95,7 +95,7 @@
         "count_kind":  "tests",
         "pass_regex":  "REGRESSION_PASS tests=(\\d+)",
         "expected_count":  7,
-        "revision":  "a7b9540f225282e1ffbddf84531e6e5a34e73a86"
+        "revision":  "aa7161ddd194f1d17087e428fa7093e3033d4aaa"
     },
     {
         "name":  "rv32i-soc",
@@ -103,27 +103,27 @@
         "required":  true,
         "enabled":  true,
         "script":  "scripts/run_regression.ps1",
-        "mode":  "soc",
+        "mode":  "soc_new",
         "timeout_seconds":  600,
         "seed":  "1, 17, 2026",
         "count_kind":  "runs",
         "pass_regex":  "PASS REGRESSION (\\d+)/(\\d+) runs",
         "expected_count":  24,
-        "revision":  "f39edbe0d23e28dafced897a7792bfd5be140b0a"
+        "revision":  "367bcbfd3bbdc7864239cc2a11198c5c0c394b26"
     },
     {
-        "name":  "axi4-dma-bounded",
+        "name":  "axi4-dma-full-ordering",
         "repository":  "AXI4-DMA-Subsystem",
         "required":  true,
         "enabled":  true,
         "script":  "scripts/run_regression.ps1",
-        "mode":  "dma",
+        "mode":  "technical",
         "timeout_seconds":  180,
         "seed":  "0x28A6BEEF",
         "count_kind":  "cases",
-        "pass_regex":  "DMA_REGRESSION_PASS cases=(\\d+) checks=925460 seed=0x28A6BEEF",
-        "expected_count":  27,
-        "revision":  "be66a550fd74f0f85d73940f5ade15f1691b083b"
+        "pass_regex":  "DMA_REGRESSION_PASS cases=(\\d+) checks=1352655 seed=0x28A6BEEF",
+        "expected_count":  40,
+        "revision":  "5f7543bf1bf4d5e7638def9d363c106c2e7b55d0"
     },
     {
         "name":  "amba-reusable-verification",
@@ -137,7 +137,7 @@
         "count_kind":  "suites",
         "pass_regex":  "AMBA_REGRESSION_PASS suites=(\\d+)",
         "expected_count":  11,
-        "revision":  "e2f72f4391aa750d761e99ef8c3009e8af2c47e1"
+        "revision":  "d85b82bc00ed9504d89a451114e465a0503779b9"
     },
     {
         "name":  "coherent-word-memory",
@@ -145,13 +145,13 @@
         "required":  true,
         "enabled":  true,
         "script":  "scripts/run_coherent.ps1",
-        "mode":  "coherent",
-        "timeout_seconds":  180,
+        "mode":  "coherent_new",
+        "timeout_seconds":  300,
         "seed":  "0x28A6BEEF",
         "count_kind":  "cases",
         "pass_regex":  "PASS COHERENT cases=(\\d+)",
         "expected_count":  71,
-        "revision":  "26831b8e3763e3669dcf50805999dfb572b55f56"
+        "revision":  "78bc0097856f6afc433c0e6545e2bf3981cdea06"
     },
     {
         "name":  "alu-advanced",
@@ -159,7 +159,7 @@
         "required":  false,
         "enabled":  false,
         "reason":  "Original constrained-random environment requires unavailable svverification licence.",
-        "revision":  "6d7df63ff071b083e2cdf1c11ed6c6fb8c0e57e1"
+        "revision":  "82a6212772f4bdacad0a95987bb1679e8e5c2702"
     },
     {
         "name":  "apb-interface-advanced",
@@ -167,6 +167,6 @@
         "required":  false,
         "enabled":  false,
         "reason":  "Original class and covergroup environment requires unavailable svverification licence.",
-        "revision":  "118deb0b339b1c7b000198b7133a05367eb61f76"
+        "revision":  "ad124382ee3f59f184ee9eb4df2ae743ee920513"
     }
 ]
