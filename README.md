@@ -42,6 +42,8 @@ eleven-project branch revisions and records a fresh GitHub-source 11/11 pass.
 Its [separate follow-up evidence](reports/technical-completion-2026-11-08/portfolio-locked-followup/SUMMARY.md)
 locks the AHB master-wait checks and VGA measured boundary captures; the
 aggregate still reports each project's checks separately.
+The [measured protocol trace guide](docs/PROTOCOL_WAVEFORMS.md) links raw
+APB wait/error, AHB write/ERROR and reset-isolated AXI response-order VCDs.
 
 ## Status and limits
 

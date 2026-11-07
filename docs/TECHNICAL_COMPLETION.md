@@ -51,6 +51,7 @@ These SVG figures were rendered from actual simulator VCD captures; the source V
 - [RV32I AXI4-Lite SoC](https://github.com/M-Roohan-Khan-28/RV32I-AXI4-Lite-SoC/blob/technical/response-order-qualification/reports/technical-completion-2026-11-07/corrected-qualification/measured.svg)
 - [DMA W-before-AW](https://github.com/M-Roohan-Khan-28/AXI4-DMA-Subsystem/blob/technical/full-channel-ordering/reports/technical-completion-2026-11-07/wave-all_w_before_aw_16/dma-order.svg)
 - [AMBA response-order negative](../reports/technical-completion-2026-11-07/response-fault-controls/original/measured.svg)
+- [Measured AMBA APB, AHB and isolated AXI response-order captures](PROTOCOL_WAVEFORMS.md)
 - [Coherent bridge](https://github.com/M-Roohan-Khan-28/RV32I-Coherent-Memory-SoC/blob/technical/commit-and-bridge-contract/reports/technical-completion-2026-11-07/wave-bridge/scenario.svg)
 Reproduce the published locked run from a short, fresh path on Windows with Git and ModelSim Intel FPGA Starter Edition 2020.1 available:
 

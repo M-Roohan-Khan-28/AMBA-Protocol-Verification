@@ -1,0 +1,32 @@
+﻿Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit ahb_adapter_test -do "vcd file C:/short/amba-wave-followup-20261108/ahb-adapter.vcd; vcd add /ahb_adapter_test/HCLK; vcd add /ahb_adapter_test/HRESETn; vcd add /ahb_adapter_test/HSEL; vcd add /ahb_adapter_test/HWRITE; vcd add /ahb_adapter_test/HREADY; vcd add /ahb_adapter_test/HREADYOUT; vcd add /ahb_adapter_test/HRESP; vcd add /ahb_adapter_test/HADDR; vcd add /ahb_adapter_test/HTRANS; vcd add /ahb_adapter_test/HSIZE; vcd add /ahb_adapter_test/HWDATA; vcd add /ahb_adapter_test/HRDATA; vcd add /ahb_adapter_test/addresses; run -all; quit -code 0" 
+# Start time: 00:24:17 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.amba_transactions
+# Loading work.ahb_adapter_test
+# Loading work.ahb_lite_slave_ram
+# Loading work.ahb_lite_master_driver
+# Loading work.ahb_lite_monitor
+# vcd file C:/short/amba-wave-followup-20261108/ahb-adapter.vcd
+#  vcd add /ahb_adapter_test/HCLK
+#  vcd add /ahb_adapter_test/HRESETn
+#  vcd add /ahb_adapter_test/HSEL
+#  vcd add /ahb_adapter_test/HWRITE
+#  vcd add /ahb_adapter_test/HREADY
+#  vcd add /ahb_adapter_test/HREADYOUT
+#  vcd add /ahb_adapter_test/HRESP
+#  vcd add /ahb_adapter_test/HADDR
+#  vcd add /ahb_adapter_test/HTRANS
+#  vcd add /ahb_adapter_test/HSIZE
+#  vcd add /ahb_adapter_test/HWDATA
+#  vcd add /ahb_adapter_test/HRDATA
+#  vcd add /ahb_adapter_test/addresses
+#  run -all
+# AMBA_AHB_PASS addresses=67 checks=119 violations=0
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/tc/amba/tb/ahb_adapter_test.sv(63)
+#    Time: 2090 ns  Iteration: 1  Instance: /ahb_adapter_test
+# End time: 00:24:20 on Nov 08,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

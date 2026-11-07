@@ -1,0 +1,39 @@
+﻿Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit axi_lite_response_negative -do "vcd file C:/short/amba-wave-followup-20261108/axil-response-negative.vcd; vcd add /axi_lite_response_negative/clk; vcd add /axi_lite_response_negative/reset_n; vcd add /axi_lite_response_negative/awvalid; vcd add /axi_lite_response_negative/awready; vcd add /axi_lite_response_negative/awaddr; vcd add /axi_lite_response_negative/wvalid; vcd add /axi_lite_response_negative/wready; vcd add /axi_lite_response_negative/wdata; vcd add /axi_lite_response_negative/bvalid; vcd add /axi_lite_response_negative/bready; vcd add /axi_lite_response_negative/arvalid; vcd add /axi_lite_response_negative/arready; vcd add /axi_lite_response_negative/araddr; vcd add /axi_lite_response_negative/rvalid; vcd add /axi_lite_response_negative/rready; vcd add /axi_lite_response_negative/violations; run -all; quit -code 0" 
+# Start time: 00:24:17 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.axi_lite_response_negative
+# Loading work.axi_lite_monitor
+# vcd file C:/short/amba-wave-followup-20261108/axil-response-negative.vcd
+#  vcd add /axi_lite_response_negative/clk
+#  vcd add /axi_lite_response_negative/reset_n
+#  vcd add /axi_lite_response_negative/awvalid
+#  vcd add /axi_lite_response_negative/awready
+#  vcd add /axi_lite_response_negative/awaddr
+#  vcd add /axi_lite_response_negative/wvalid
+#  vcd add /axi_lite_response_negative/wready
+#  vcd add /axi_lite_response_negative/wdata
+#  vcd add /axi_lite_response_negative/bvalid
+#  vcd add /axi_lite_response_negative/bready
+#  vcd add /axi_lite_response_negative/arvalid
+#  vcd add /axi_lite_response_negative/arready
+#  vcd add /axi_lite_response_negative/araddr
+#  vcd add /axi_lite_response_negative/rvalid
+#  vcd add /axi_lite_response_negative/rready
+#  vcd add /axi_lite_response_negative/violations
+#  run -all
+# AXIL_MONITOR_VIOLATION count=1
+# AXIL_MONITOR_VIOLATION count=1
+# AXIL_MONITOR_VIOLATION count=1
+# AXIL_MONITOR_VIOLATION count=1
+# AXIL_MONITOR_VIOLATION count=1
+# AXIL_MONITOR_VIOLATION count=1
+# AXIL_MONITOR_VIOLATION count=2
+# AMBA_AXIL_RESPONSE_NEGATIVE_PASS scenarios=4 violations=2
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/tc/amba/tb/axi_lite_response_negative.sv(31)
+#    Time: 130 ns  Iteration: 1  Instance: /axi_lite_response_negative
+# End time: 00:24:20 on Nov 08,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
