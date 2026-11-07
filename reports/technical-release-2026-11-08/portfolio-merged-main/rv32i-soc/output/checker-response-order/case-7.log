@@ -1,0 +1,21 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit checker_response_order_test "+CASE=7" -do "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0" 
+# Start time: 03:54:40 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.checker_response_order_test
+# Loading work.axi_lite_if
+# Loading work.axi_protocol_checker
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  onbreak {quit -code 1}
+#  Warning: onbreak command for use within macro
+#  run -all
+# ** Fatal: AXI_CHECKER_B_DEPENDENCY: BVALID before prior AW and W acceptance
+#    Time: 55 ns  Scope: checker_response_order_test.mon File: C:/short/portfolio-release-main-20261108/rv32i-soc/source/tb/axi_protocol_checker.sv Line: 28
+# ** Note: $finish    : C:/short/portfolio-release-main-20261108/rv32i-soc/source/tb/axi_protocol_checker.sv(28)
+#    Time: 55 ns  Iteration: 1  Instance: /checker_response_order_test/mon
+# End time: 03:54:41 on Nov 08,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0

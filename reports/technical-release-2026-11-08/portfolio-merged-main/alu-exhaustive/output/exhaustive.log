@@ -1,0 +1,15 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit tb_alu_exhaustive -do "run -all; quit -code 0" 
+# Start time: 03:47:52 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.tb_alu_exhaustive
+# Loading work.alu
+# run -all
+# ALU_EXHAUSTIVE_PASS tuples=524288 directed=254 identities=1792 comparisons=1579002
+# ** Note: $finish    : C:/short/portfolio-release-main-20261108/alu-exhaustive/source/tb/tb_exhaustive.sv(107)
+#    Time: 526334 ns  Iteration: 0  Instance: /tb_alu_exhaustive
+# End time: 03:47:57 on Nov 08,2026, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 0

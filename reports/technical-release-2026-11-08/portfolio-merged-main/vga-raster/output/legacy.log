@@ -1,0 +1,26 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit tb_vga_controller_sram -do "run -all; quit -code 0" 
+# Start time: 03:49:35 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.tb_vga_controller_sram
+# Loading work.vga_controller_sram
+# run -all
+# PASS: HSYNC becomes active-low at pixel 656
+# PASS: HSYNC returns high at pixel 752
+# PASS: Visible SRAM background pixel is displayed
+# PASS: Unique DIL signature pixel is read from SRAM
+# PASS: SRAM write port updates a framebuffer location
+# PASS: VSYNC becomes active-low at line 490
+# PASS: VSYNC returns high at line 492
+# ------------------------------------------
+# TOTAL PASSED = 7
+# TOTAL FAILED = 0
+# ------------------------------------------
+# ALL VGA TESTS PASSED
+# ** Note: $finish    : C:/short/portfolio-release-main-20261108/vga-raster/source/tb/tb_top.sv(123)
+#    Time: 15744046 ns  Iteration: 0  Instance: /tb_vga_controller_sram
+# End time: 03:50:19 on Nov 08,2026, Elapsed time: 0:00:44
+# Errors: 0, Warnings: 0

@@ -1,0 +1,82 @@
+{
+  "repository": "APB-Interface-Verification",
+  "source_revision": "e30fd5242a1e84be92107d6be75652220748a8a7",
+  "source_dirty": false,
+  "sources": [
+    {
+      "path": "C:\\short\\portfolio-release-main-20261108\\apb-interface-contract\\source\\rtl\\design.sv",
+      "sha256": "7990d218af15cf5573dd7e2e71e3a9a5f6b2fb1061f42828dee13affeb5c56ec"
+    },
+    {
+      "path": "C:\\short\\portfolio-release-main-20261108\\apb-interface-contract\\source\\verification\\apb64_monitor.sv",
+      "sha256": "4bdf28ee3845665ca7f444aead6317109c4fc309ab660eeab1dd19115ad21357"
+    },
+    {
+      "path": "C:\\short\\portfolio-release-main-20261108\\apb-interface-contract\\source\\tb\\tb_portable.sv",
+      "sha256": "68a083e552fd8a0d2689dd4106ebc47489ee0aaca27ed0d04cd47d05dd26df57"
+    },
+    {
+      "path": "C:\\short\\portfolio-release-main-20261108\\apb-interface-contract\\source\\tb\\apb64_contract_test.sv",
+      "sha256": "b0d146af8158541ad8255167c403aec4b0bbd4b7a47607ab49dbc19dd45f335d"
+    },
+    {
+      "path": "C:\\short\\portfolio-release-main-20261108\\apb-interface-contract\\source\\tb\\apb64_protocol_negative.sv",
+      "sha256": "5e96969bec13ccc498872c7aab09d916e8303b96b92970e47efeeb915fda3699"
+    }
+  ],
+  "seed": "0x28AB6407 for deterministic xorshift32 write data",
+  "timeout_seconds_per_command": 120,
+  "simulations": [
+    {
+      "name": "portable",
+      "top": "tb_apb_portable",
+      "argv": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "tb_apb_portable",
+        "-do",
+        "run -all; quit -code 0"
+      ],
+      "simulator_exit_code": 0,
+      "status": "PASS",
+      "marker": "PORTABLE_TEST_PASS APB checks=1317"
+    },
+    {
+      "name": "contract",
+      "top": "apb64_contract_test",
+      "argv": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "apb64_contract_test",
+        "-do",
+        "run -all; quit -code 0"
+      ],
+      "simulator_exit_code": 0,
+      "status": "PASS",
+      "marker": "APB64_CONTRACT_PASS checks=2697 issued=673 accepted=673 writes=153 reads=520 aliases=80 back_to_back=5 resets=3 seed=0x28AB6407"
+    },
+    {
+      "name": "negative",
+      "top": "apb64_protocol_negative",
+      "argv": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "apb64_protocol_negative",
+        "-do",
+        "run -all; quit -code 0"
+      ],
+      "simulator_exit_code": 0,
+      "status": "PASS",
+      "marker": "APB64_NEGATIVE_PASS cases=3 legal=1"
+    }
+  ],
+  "overall": "PASS",
+  "simulator_version": "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020",
+  "elapsed_seconds": 20.373
+}

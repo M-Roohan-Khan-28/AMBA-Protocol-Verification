@@ -1,0 +1,4 @@
+PASS # ALL VGA TESTS PASSED
+PASS # VGA_RESET_WRITE_EDGE_PASS checks=8 reset_held=1
+PASS # VGA_RASTER_PASS checks=29588940 pixels=1232740 active=922318 hsync_low=147845 vsync_low=3201 frames=2 writes=258 invalid=2 resets=4 seed=all256
+VGA_RASTER_REGRESSION_PASS output=C:\short\portfolio-release-main-20261108\vga-raster\output

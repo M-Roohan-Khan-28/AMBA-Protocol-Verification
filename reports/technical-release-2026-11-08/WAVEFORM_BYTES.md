@@ -1,5 +1,7 @@
 # Technical waveform byte audit
 
+The final [merged-main byte audit](merged-waveform-byte-audit.json) uses all eleven detached source clones from the successful locked release. It confirms all 30 VCD Git blobs equal public raw downloads and fresh `core.autocrlf=false` checkout bytes, and verifies all 12 current figure metadata files. The [eight-capture crosswalk](CURRENT_CAPTURE_MANIFEST.json) labels original CRLF simulator-capture hashes and committed LF VCD hashes separately; the older capture manifests remain unchanged.
+
 The [machine-readable audit](waveform-byte-audit.json) covers **30 tracked
 VCDs in eleven technical repositories** at the full source revisions in each
 row. Public GitHub raw downloads matched all 30 Git blobs byte for byte.

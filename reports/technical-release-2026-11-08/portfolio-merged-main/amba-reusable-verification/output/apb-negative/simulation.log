@@ -1,0 +1,16 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit apb_monitor_negative -do "run -all; quit -code 0" 
+# Start time: 03:55:16 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.apb_monitor_negative
+# Loading work.apb_monitor
+# run -all
+# APB_MONITOR_VIOLATION missing/unstable setup
+# AMBA_APB_NEGATIVE_PASS detected=1
+# ** Note: $finish    : C:/short/portfolio-release-main-20261108/amba-reusable-verification/source/tb/apb_monitor_negative.sv(20)
+#    Time: 50 ns  Iteration: 1  Instance: /apb_monitor_negative
+# End time: 03:55:16 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

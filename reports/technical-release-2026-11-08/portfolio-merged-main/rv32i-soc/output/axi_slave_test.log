@@ -1,0 +1,19 @@
+﻿Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit axi_slave_test -do "scripts/batch.do" 
+# Start time: 03:53:37 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.axi_slave_test
+# Loading work.axi_lite_if
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# do scripts/batch.do
+# PASS AXI slave checks=58 AW-first W-first simultaneous, response stalls, WSTRB, errors
+# ** Note: $finish    : tb/tests/axi_slave_test.sv(59)
+#    Time: 4330 ns  Iteration: 1  Instance: /axi_slave_test
+# End time: 03:53:37 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+

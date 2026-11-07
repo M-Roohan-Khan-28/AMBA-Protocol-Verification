@@ -1,0 +1,14 @@
+QUALIFICATION_PASS
+Repository: RV32I-AXI4-Lite-SoC
+Reviewed baseline: f39edbe0d23e28dafced897a7792bfd5be140b0a
+Observed HEAD: dd574d8fa19810db110844d8f79b3862a7a93190
+No random seed: directed monitor qualification.
+case 0: legal_aw_first_w_first_together_and_read_backpressure: LEGAL_TRAFFIC_ACCEPTED (exit 0)
+case 1: b_without_aw_or_w_held: EXPECTED_VIOLATION_DETECTED (exit 0)
+case 2: b_after_only_aw_held: EXPECTED_VIOLATION_DETECTED (exit 0)
+case 3: b_after_only_w_held: EXPECTED_VIOLATION_DETECTED (exit 0)
+case 4: r_without_ar_held: EXPECTED_VIOLATION_DETECTED (exit 0)
+case 5: same_edge_aw_w_b: EXPECTED_VIOLATION_DETECTED (exit 0)
+case 6: same_edge_ar_r: EXPECTED_VIOLATION_DETECTED (exit 0)
+case 7: older_aw_same_edge_w_b: EXPECTED_VIOLATION_DETECTED (exit 0)
+case 8: older_w_same_edge_aw_b: EXPECTED_VIOLATION_DETECTED (exit 0)

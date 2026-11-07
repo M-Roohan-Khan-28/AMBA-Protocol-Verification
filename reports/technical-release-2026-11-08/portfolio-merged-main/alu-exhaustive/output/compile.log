@@ -1,0 +1,12 @@
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 03:47:40 on Nov 08,2026
+vlog -sv C:\short\portfolio-release-main-20261108\alu-exhaustive\source\rtl\design.sv C:\short\portfolio-release-main-20261108\alu-exhaustive\source\tb\tb_portable.sv C:\short\portfolio-release-main-20261108\alu-exhaustive\source\tb\tb_exhaustive.sv 
+-- Compiling module alu
+-- Compiling module tb_alu_portable
+-- Compiling module tb_alu_exhaustive
+
+Top level modules:
+	tb_alu_portable
+	tb_alu_exhaustive
+End time: 03:47:41 on Nov 08,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

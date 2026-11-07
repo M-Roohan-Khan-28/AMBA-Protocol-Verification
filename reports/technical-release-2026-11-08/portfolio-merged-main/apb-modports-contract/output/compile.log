@@ -1,0 +1,13 @@
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 03:48:32 on Nov 08,2026
+vlog -sv C:\short\portfolio-release-main-20261108\apb-modports-contract\source\rtl\design.sv C:\short\portfolio-release-main-20261108\apb-modports-contract\source\tb\tb_top.sv C:\short\portfolio-release-main-20261108\apb-modports-contract\source\tb\apb_contract_test.sv 
+-- Compiling interface apb_if
+-- Compiling module apb_slave_ram
+-- Compiling module tb_apb_modport
+-- Compiling module apb_contract_test
+
+Top level modules:
+	tb_apb_modport
+	apb_contract_test
+End time: 03:48:32 on Nov 08,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

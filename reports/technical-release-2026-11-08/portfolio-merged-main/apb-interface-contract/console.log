@@ -1,0 +1,4 @@
+PASS portable PORTABLE_TEST_PASS APB checks=1317
+PASS contract APB64_CONTRACT_PASS checks=2697 issued=673 accepted=673 writes=153 reads=520 aliases=80 back_to_back=5 resets=3 seed=0x28AB6407
+PASS negative APB64_NEGATIVE_PASS cases=3 legal=1
+APB64_REGRESSION_PASS portable_checks=1317 contract_checks=2697 negatives=3 output=C:\short\portfolio-release-main-20261108\apb-interface-contract\output
