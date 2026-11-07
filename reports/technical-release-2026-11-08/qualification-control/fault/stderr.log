@@ -1,0 +1,8 @@
+Checker qualification failed or results missing (exit 1)
+At C:\short\portfolio-axil-qualification-fault-v2-20261108\axi4-lite-standalone\source\scripts\run_regression.ps1:73 
+char:5
++     throw "Checker qualification failed or results missing (exit $qua ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Checker qualifi...issing (exit 1):String) [], RuntimeException
+    + FullyQualifiedErrorId : Checker qualification failed or results missing (exit 1)
+ 

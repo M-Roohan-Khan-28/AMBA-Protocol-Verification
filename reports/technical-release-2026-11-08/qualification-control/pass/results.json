@@ -1,0 +1,38 @@
+﻿{
+    "generated_at":  "2026-11-08T03:22:16.5202733+05:00",
+    "inventory":  "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\technical-release-2026-11-08\\one_suite_axil.json",
+    "source_root":  "",
+    "simulator_version":  "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020",
+    "runner_revision":  "d6a0c6129eee66e05cc19f67a6341e4ed6acec24",
+    "runner_script_revision":  "d6a0c6129eee66e05cc19f67a6341e4ed6acec24",
+    "inventory_revision":  "5d29d752dd05f9a5b299b3499873f2146b388489",
+    "runner_script_sha256":  "1DEB3982F1AFA83175E11E645D9FB313BDBC539A30CF1C9F772A21252C1C5656",
+    "inventory_sha256":  "75281977694A960D060DF9D6A409DAB42C38ABAB41675B916927F13617B28B3E",
+    "runner_dirty":  false,
+    "aggregate_exit_code":  0,
+    "results":  [
+                    {
+                        "name":  "axi4-lite-standalone",
+                        "repository":  "AXI4-Lite-Memory-Interface",
+                        "repository_url":  "https://github.com/M-Roohan-Khan-28/AXI4-Lite-Memory-Interface",
+                        "required":  true,
+                        "status":  "PASS",
+                        "reason":  "",
+                        "source_revision":  "faf43379b24a524999eb2c8ad7e100cde35054c3",
+                        "expected_revision":  "faf43379b24a524999eb2c8ad7e100cde35054c3",
+                        "revision_match":  true,
+                        "command":  "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"C:\\short\\portfolio-axil-qualification-pass-20261108\\axi4-lite-standalone\\source\\scripts\\run_regression.ps1\" -OutputDir \"C:\\short\\portfolio-axil-qualification-pass-20261108\\axi4-lite-standalone\\output\"",
+                        "simulator_version":  "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020",
+                        "seed":  "directed",
+                        "count_kind":  "tests",
+                        "count":  7,
+                        "qualification_positive":  1,
+                        "qualification_expected_negative":  8,
+                        "qualification_status":  "PASS",
+                        "exit_code":  0,
+                        "elapsed_seconds":  109.75,
+                        "log_path":  "C:\\short\\portfolio-axil-qualification-pass-20261108\\axi4-lite-standalone\\console.log",
+                        "timeout_seconds":  300
+                    }
+                ]
+}

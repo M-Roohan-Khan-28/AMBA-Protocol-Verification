@@ -1,0 +1,20 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit axi_reset_test -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# Start time: 03:20:55 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.axi_reset_test
+# Loading work.axi_lite_if
+# Loading work.axi_lite_slave
+# Loading work.sram
+# Loading work.axi_protocol_checker
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS AXI partial AW/W reset, stalled B/R reset, retention, simultaneous read/write, depth=3 bounds
+# ** Note: $finish    : C:/short/portfolio-axil-qualification-pass-20261108/axi4-lite-standalone/source/tb/legacy/axi_reset_test.sv(68)
+#    Time: 780 ns  Iteration: 1  Instance: /axi_reset_test
+# End time: 03:20:57 on Nov 08,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

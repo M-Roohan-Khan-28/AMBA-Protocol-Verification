@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "kind": "monitor_negative_control_qualification",
+  "repository": "AXI4-Lite-Memory-Interface",
+  "reviewed_baseline": "a7b9540f225282e1ffbddf84531e6e5a34e73a86",
+  "started_utc": "2026-11-07T22:25:51.538854+00:00",
+  "baseline_probe": false,
+  "seed": null,
+  "seed_note": "Directed cases; no pseudorandom stimulus",
+  "commands": [
+    {
+      "label": "vlog-version",
+      "argv": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vlog.exe",
+        "-version"
+      ],
+      "cwd": "C:\\short\\portfolio-axil-qualification-fault-v2-20261108\\axi4-lite-standalone\\output\\checker-response-order"
+    },
+    {
+      "label": "vsim-version",
+      "argv": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-version"
+      ],
+      "cwd": "C:\\short\\portfolio-axil-qualification-fault-v2-20261108\\axi4-lite-standalone\\output\\checker-response-order"
+    },
+    {
+      "label": "vlib",
+      "argv": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vlib.exe",
+        "work"
+      ],
+      "cwd": "C:\\short\\portfolio-axil-qualification-fault-v2-20261108\\axi4-lite-standalone\\output\\checker-response-order"
+    },
+    {
+      "label": "compile",
+      "argv": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vlog.exe",
+        "-sv",
+        "C:\\short\\portfolio-axil-qualification-fault-v2-20261108\\axi4-lite-standalone\\source\\rtl\\axi\\axi_lite_if.sv",
+        "C:\\short\\portfolio-axil-qualification-fault-v2-20261108\\axi4-lite-standalone\\source\\tb\\legacy\\axi_protocol_checker.sv",
+        "C:\\short\\portfolio-axil-qualification-fault-v2-20261108\\axi4-lite-standalone\\source\\tb\\checker_response_order_test.sv"
+      ],
+      "cwd": "C:\\short\\portfolio-axil-qualification-fault-v2-20261108\\axi4-lite-standalone\\output\\checker-response-order"
+    },
+    {
+      "label": "case-0",
+      "argv": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "checker_response_order_test",
+        "+CASE=0",
+        "-do",
+        "onerror {quit -code 1}; onbreak {quit -code 1}; run -all; quit -code 0"
+      ],
+      "cwd": "C:\\short\\portfolio-axil-qualification-fault-v2-20261108\\axi4-lite-standalone\\output\\checker-response-order"
+    }
+  ],
+  "cases": [
+    {
+      "case": 0,
+      "name": "legal_aw_first_w_first_together_and_read_backpressure",
+      "exit_code": 0,
+      "result": "FAIL",
+      "log": "case-0.log"
+    }
+  ],
+  "overall": "FAIL",
+  "observed_head": "80c2cc1e8466330ef5dd5e093a4486408a988616",
+  "worktree_status": "",
+  "input_files": [
+    {
+      "path": "C:\\short\\portfolio-axil-qualification-fault-v2-20261108\\axi4-lite-standalone\\source\\tb\\legacy\\axi_protocol_checker.sv",
+      "sha256": "0975b0af05288a9d9f39decaf2b643e637984987f682ffc1355b60b99b0e11d3",
+      "raw_git_blob": "e7b5f495d196714dc48a4987f8a9c82cd4af0762",
+      "lf_normalized_git_blob": "40e587676a903057d6930dcf1f6daf770c70ba70"
+    },
+    {
+      "path": "C:\\short\\portfolio-axil-qualification-fault-v2-20261108\\axi4-lite-standalone\\source\\rtl\\axi\\axi_lite_if.sv",
+      "sha256": "463f775261a7489ae6b8a3481930b4be2aae290f7ef3a14f0892b1e59483a0d9",
+      "raw_git_blob": "06f088a2c048d67c2d115d20567d84b89b010f3d",
+      "lf_normalized_git_blob": "d1b92342e05c972a14d1a3fde095e3e52a8c84a3"
+    },
+    {
+      "path": "C:\\short\\portfolio-axil-qualification-fault-v2-20261108\\axi4-lite-standalone\\source\\tb\\checker_response_order_test.sv",
+      "sha256": "d6b0c83b758cee4d564d07a627f279e533f59f511da2ca36de9d1c7f59be50ca",
+      "raw_git_blob": "6b3d82afe0b1aea41b68d7dbf7b771ae46c9d8a5",
+      "lf_normalized_git_blob": "6b3d82afe0b1aea41b68d7dbf7b771ae46c9d8a5"
+    }
+  ],
+  "error": "Unexpected result in case 0",
+  "finished_utc": "2026-11-07T22:25:59.058021+00:00"
+}

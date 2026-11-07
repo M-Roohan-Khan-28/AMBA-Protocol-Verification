@@ -19,6 +19,13 @@ caption identifies which representation was rendered. Earlier VCDs and raw
 simulator logs are unchanged; the audit maps their legacy metadata without
 silently rewriting old reports.
 
+The [fresh-checkout verification](fresh-checkout-byte-verification.json)
+used detached VGA main `8e257d11b1964fe82d4d4f3c3192b6a315d3b93d` and
+AMBA technical evidence `013756f80c5badf1bba9361ac5a1b9eab722e09b`
+with `core.autocrlf=false` and clean worktrees. All **8 current VCDs** matched
+their Git blobs and public raw downloads; all **12 figure JSON files**
+matched the committed-source and original-capture hashes separately.
+
 Newline conversion changes bytes and hashes, not VCD signal events or
 simulation behavior. Figures illustrate selected measured traces; the
 independent simulation checks and monitor logs determine PASS.

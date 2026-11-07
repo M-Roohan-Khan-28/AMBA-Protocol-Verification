@@ -1,0 +1,11 @@
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 03:25:52 on Nov 08,2026
+vlog -sv C:\short\portfolio-axil-qualification-fault-v2-20261108\axi4-lite-standalone\source\rtl\axi\axi_lite_if.sv C:\short\portfolio-axil-qualification-fault-v2-20261108\axi4-lite-standalone\source\tb\legacy\axi_protocol_checker.sv C:\short\portfolio-axil-qualification-fault-v2-20261108\axi4-lite-standalone\source\tb\checker_response_order_test.sv 
+-- Compiling interface axi_lite_if
+-- Compiling module axi_protocol_checker
+-- Compiling module checker_response_order_test
+
+Top level modules:
+	checker_response_order_test
+End time: 03:25:53 on Nov 08,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
