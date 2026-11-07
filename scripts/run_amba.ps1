@@ -30,7 +30,7 @@ $suites = @(
     @{ name='axil-adapter'; source='axil'; top='axi_lite_adapter_test'; marker='AMBA_AXIL_PASS writes=26 reads=34 checks=(\d+) violations=0'; expected=98 },
     @{ name='axil-negative'; source='axil'; top='axi_lite_monitor_negative'; marker='AMBA_AXIL_NEGATIVE_PASS detected=(\d+)'; expected=2 },
     @{ name='axil-response-negative'; source='axil'; top='axi_lite_response_negative'; marker='AMBA_AXIL_RESPONSE_NEGATIVE_PASS scenarios=(\d+) violations=\d+'; expected=4 },
-    @{ name='axi4-adapter'; source='axi4'; top='dma_adapter_test'; marker='DMA_REGRESSION_PASS cases=(\d+) checks=1352655 seed=0x28A6BEEF'; expected=40; extra='AMBA_AXI4_MONITOR_PASS read_bursts=\d+ write_bursts=\d+ read_beats=\d+ write_beats=\d+' },
+    @{ name='axi4-adapter'; source='axi4'; top='dma_adapter_test'; marker='DMA_REGRESSION_PASS cases=(\d+) checks=1352655 seed=0x28A6BEEF'; expected=40; extra='AMBA_AXI4_MONITOR_PASS read_bursts=21 write_bursts=21 read_beats=315 write_beats=315' },
     @{ name='axi4-negative'; source='axi4'; top='axi4_monitor_negative'; marker='AMBA_AXI4_NEGATIVE_PASS detected=(\d+)'; expected=1 },
     @{ name='axi4-response-negative'; source='axi4'; top='axi4_response_negative'; marker='AMBA_AXI4_RESPONSE_NEGATIVE_PASS scenarios=(\d+) violations=\d+'; expected=4 }
 )
