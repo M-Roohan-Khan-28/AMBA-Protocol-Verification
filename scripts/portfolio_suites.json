@@ -51,9 +51,9 @@
         "timeout_seconds":  180,
         "seed":  "0x28A81607",
         "count_kind":  "checks",
-        "pass_regex":  "AHB16_CONTRACT_PASS checks=(\\d+) accepted=122 retired=119 commits=40 errors=12 stalls=8 seed=0x28A81607",
-        "expected_count":  810,
-        "revision":  "d8b2651ceffc2f3f8768759d16eeb4693875b553"
+        "pass_regex":  "AHB16_CONTRACT_PASS checks=(\\d+) accepted=139 retired=135 commits=40 errors=12 stalls=9 seed=0x28A81607",
+        "expected_count":  924,
+        "revision":  "8fdb0d6e7a9f0f93ff709f0c7b6cc500224c776e"
     },
     {
         "name":  "cache-contract",
@@ -81,7 +81,7 @@
         "count_kind":  "comparisons",
         "pass_regex":  "VGA_RASTER_PASS checks=(\\d+) pixels=1232740 active=922318 hsync_low=147845 vsync_low=3201 frames=2 writes=258 invalid=2 resets=4 seed=all256",
         "expected_count":  29588940,
-        "revision":  "2dc165778699aeb2c468b1ddc0eb2ca1da76caf2"
+        "revision":  "e6442fbf24595bc66e0ffab5be47478667be8fcf"
     },
     {
         "name":  "axi4-lite-standalone",
@@ -137,7 +137,7 @@
         "count_kind":  "suites",
         "pass_regex":  "AMBA_REGRESSION_PASS suites=(\\d+)",
         "expected_count":  11,
-        "revision":  "d85b82bc00ed9504d89a451114e465a0503779b9"
+        "revision":  "1f0d5491cd084a95c5137ad7072a621ea059b2e3"
     },
     {
         "name":  "coherent-word-memory",
