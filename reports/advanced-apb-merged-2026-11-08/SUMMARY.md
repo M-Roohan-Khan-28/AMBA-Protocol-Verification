@@ -85,8 +85,10 @@ scoreboards and assertion logs determine PASS, not the renderer.
 
 This report directory has a scoped `-text` attribute. Original capture bytes
 are the committed representation; CRLF is preserved where emitted. The
-capture-file manifest records original bytes. A publication byte audit will
-separately record Git blob, public raw-download and fresh-checkout comparisons.
+capture-file manifest records original bytes. The [publication byte audit](BYTE_AUDIT.json)
+at evidence revision `95df46a41b82416b594a2e43399ae852bed69ec2` matched all
+three VCD Git blobs, public raw downloads and fresh detached checkouts with
+`core.autocrlf=false` and `true`; all five figure metadata hashes also matched.
 No newline-only simulation-behavior change is claimed. Historical captures and
 reports remain in their original directories.
 
