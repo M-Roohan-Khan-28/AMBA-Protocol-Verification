@@ -1,0 +1,94 @@
+{
+  "started_utc": "2026-11-08T01:38:24.756797+00:00",
+  "source_revision": "eab4791cf7260ba95aa1ca4e250acfa29a11702f",
+  "source_dirty": false,
+  "mode": "deterministic",
+  "seed": "0x28A6BEEF (deterministic vectors; no randomize call)",
+  "fault_control": false,
+  "suites": [
+    {
+      "name": "adapter-2",
+      "status": "NOT RUN",
+      "commands": [],
+      "reason": "PROCESS_OR_SIMULATOR_ERROR"
+    },
+    {
+      "name": "assertion-0",
+      "status": "NOT RUN",
+      "commands": [],
+      "reason": "PROCESS_OR_SIMULATOR_ERROR"
+    },
+    {
+      "name": "assertion-1",
+      "status": "NOT RUN",
+      "commands": [],
+      "reason": "PROCESS_OR_SIMULATOR_ERROR"
+    },
+    {
+      "name": "assertion-2",
+      "status": "NOT RUN",
+      "commands": [],
+      "reason": "PROCESS_OR_SIMULATOR_ERROR"
+    },
+    {
+      "name": "assertion-3",
+      "status": "NOT RUN",
+      "commands": [],
+      "reason": "PROCESS_OR_SIMULATOR_ERROR"
+    },
+    {
+      "name": "assertion-4",
+      "status": "NOT RUN",
+      "commands": [],
+      "reason": "PROCESS_OR_SIMULATOR_ERROR"
+    },
+    {
+      "name": "assertion-5",
+      "status": "NOT RUN",
+      "commands": [],
+      "reason": "PROCESS_OR_SIMULATOR_ERROR"
+    }
+  ],
+  "source_locks": [],
+  "functional_coverage": "NOT RUN",
+  "constrained_randomization": "NOT RUN",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "scripts/run_apb_uvm.py",
+    "--sim-bin",
+    "C:\\short\\deliberately-missing-simulator",
+    "--uvm-lib",
+    "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+    "--uvm-include",
+    "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+    "--output",
+    "C:\\short\\apb-missing-tool-eab4791",
+    "--adapters",
+    "2"
+  ],
+  "input_sha256": {
+    "verification\\apb_uvm\\apb_adapter.sv": "41ac0db2b8a94268f616c2f8fa80c73efb73385d26e1a2ea7e27f88e418aff77",
+    "verification\\apb_uvm\\apb_assertions.sv": "923750c73ef6b203066d155c73d2cf8a3a7f5e21a11c0346516a41eddeddc4f3",
+    "verification\\apb_uvm\\apb_assertion_control.sv": "6e9288626a718de446f855e9799b0d1ab87491e5df27129604c0500380bb4b30",
+    "verification\\apb_uvm\\apb_bus.sv": "aab84343720f02fd9fc9cb604eb12f9e34a0259d6a55bf68bf38914980503ef5",
+    "verification\\apb_uvm\\apb_uvm_pkg.sv": "91116cee8595cfacc8b5209019b50fbd47b8ce77308ba4a4d0e275a40a9ed72a",
+    "verification\\apb_uvm\\apb_uvm_top.sv": "dd92e7aa73f03f89fd03581720a883b88a3490256d1a74d6216dc41064b91a19",
+    "verification\\apb_uvm\\sources.json": "5823f3a43c825229e2dfbe100ef92247f110232a926854c21e69306e1c1f9bbf",
+    "scripts\\run_apb_uvm.py": "f7807367412cccd4bd9b3eda241b7449b9af2650b71083467097819889a011a7",
+    "scripts\\advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+    "checkers\\apb_ram_responder.sv": "f30cb8d8db9ef7031caedd097b76e3284d66e95e07bca089f6f204d8134b4aa5"
+  },
+  "version_command": {
+    "command": [
+      "C:\\short\\deliberately-missing-simulator\\vsim.exe",
+      "-version"
+    ],
+    "cwd": "C:\\short\\apb-missing-tool-eab4791",
+    "exit_code": 127,
+    "timed_out": false,
+    "log": "version.log",
+    "sha256": "4bc7fbd7b416d804b23c797e930108d86c77ad2fa6e7577f495e589b9837bc9e"
+  },
+  "simulator_version": "[WinError 2] The system cannot find the file specified",
+  "aggregate_exit_code": 1
+}

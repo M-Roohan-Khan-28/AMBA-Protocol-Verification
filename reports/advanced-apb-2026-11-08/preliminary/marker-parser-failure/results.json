@@ -1,0 +1,470 @@
+{
+  "started_utc": "2026-11-08T01:26:53.665287+00:00",
+  "source_revision": "73e948a3f9f200b590421afe5893d055a000d33b",
+  "source_dirty": true,
+  "mode": "deterministic",
+  "seed": "0x28A6BEEF (deterministic vectors; no randomize call)",
+  "fault_control": false,
+  "suites": [
+    {
+      "name": "adapter-2",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "+define+APB_ADAPTER=2",
+            "C:\\short\\amba-advanced-20261108\\verification\\apb_uvm\\apb_bus.sv",
+            "C:\\short\\amba-advanced-20261108\\checkers\\apb_ram_responder.sv",
+            "C:\\short\\amba-advanced-20261108\\verification\\apb_uvm\\apb_adapter.sv",
+            "C:\\short\\amba-advanced-20261108\\verification\\apb_uvm\\apb_assertions.sv",
+            "C:\\short\\amba-advanced-20261108\\verification\\apb_uvm\\apb_uvm_pkg.sv",
+            "C:\\short\\amba-advanced-20261108\\verification\\apb_uvm\\apb_uvm_top.sv"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "464f199395880a3afd13aa97994090d7c2b7813c372978f684893cfb4da66720"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.apb_uvm_top",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /apb_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "bd4069be4fb51904c8415da110b12a69e7f1dcc7db1f99886199eff00fdb2af0"
+        }
+      ],
+      "reason": "EXECUTED",
+      "counts": {
+        "adapter": 2,
+        "transfers": 554,
+        "comparisons": 840,
+        "resets": 4,
+        "aborted": 2
+      },
+      "requirements": {
+        "kind": "procedural_requirement_hits_NOT_functional_coverage",
+        "adapter": 2,
+        "resets": 4,
+        "reads": 39,
+        "writes": 24,
+        "invalid_reads": 247,
+        "invalid_writes": 244,
+        "aliases": 18,
+        "waited_transfers": 554
+      },
+      "capture_sha256": "e94f914a1fe7990c6b7d092dac871f554956ef35894369d9751f7a926aa8c1d0"
+    },
+    {
+      "name": "assertion-0",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\amba-advanced-20261108\\verification\\apb_uvm\\apb_bus.sv",
+            "C:\\short\\amba-advanced-20261108\\verification\\apb_uvm\\apb_assertions.sv",
+            "C:\\short\\amba-advanced-20261108\\verification\\apb_uvm\\apb_assertion_control.sv"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "ed8e703c83e9da510a25e4d0178a60966fd7fcccc63fcb3b234b6ec5233e108f"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.apb_assertion_control",
+            "+CASE=0",
+            "+EXPECT_ASSERT",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "bb0de2a48000997064e56190a0be76be0fb9f715a1f9b47dad2ea5598ed2595c"
+        }
+      ],
+      "reason": "MISSING_RESULT_MARKER"
+    },
+    {
+      "name": "assertion-1",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\amba-advanced-20261108\\verification\\apb_uvm\\apb_bus.sv",
+            "C:\\short\\amba-advanced-20261108\\verification\\apb_uvm\\apb_assertions.sv",
+            "C:\\short\\amba-advanced-20261108\\verification\\apb_uvm\\apb_assertion_control.sv"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "ae0713008ae6cbcebaf1574914479d65f4ac2bcb8abc803655cc56e81533b28d"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.apb_assertion_control",
+            "+CASE=1",
+            "+EXPECT_ASSERT",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "67e3f3366586b55375a22fe3a076c0e6da83c01a5e026a3cb2e35006e77ab272"
+        }
+      ],
+      "reason": "MISSING_RESULT_MARKER"
+    },
+    {
+      "name": "assertion-2",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\amba-advanced-20261108\\verification\\apb_uvm\\apb_bus.sv",
+            "C:\\short\\amba-advanced-20261108\\verification\\apb_uvm\\apb_assertions.sv",
+            "C:\\short\\amba-advanced-20261108\\verification\\apb_uvm\\apb_assertion_control.sv"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "032f90799766268e55ab1e9ff5bb28571b2a1996ade524b42574e0620d65c432"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.apb_assertion_control",
+            "+CASE=2",
+            "+EXPECT_ASSERT",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "b10edb20034ad0473ecb9ff727f00dd464a57ed6505e6fe9d597b5acabcf5043"
+        }
+      ],
+      "reason": "MISSING_RESULT_MARKER"
+    },
+    {
+      "name": "assertion-3",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\amba-advanced-20261108\\verification\\apb_uvm\\apb_bus.sv",
+            "C:\\short\\amba-advanced-20261108\\verification\\apb_uvm\\apb_assertions.sv",
+            "C:\\short\\amba-advanced-20261108\\verification\\apb_uvm\\apb_assertion_control.sv"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "759397b003cc5bd76abdf345291da1d856272c912de96ac0f6ef1bb2feb89b06"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.apb_assertion_control",
+            "+CASE=3",
+            "+EXPECT_ASSERT",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "edbbf841987b077a6ed6aab7985677f9f11447557e1606aa1420d14cc70efc97"
+        }
+      ],
+      "reason": "MISSING_RESULT_MARKER"
+    },
+    {
+      "name": "assertion-4",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\amba-advanced-20261108\\verification\\apb_uvm\\apb_bus.sv",
+            "C:\\short\\amba-advanced-20261108\\verification\\apb_uvm\\apb_assertions.sv",
+            "C:\\short\\amba-advanced-20261108\\verification\\apb_uvm\\apb_assertion_control.sv"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "d74ac1f6a20bf2baf714673c1e32913c8340d3e0876c1d06658accc1d2d9666a"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.apb_assertion_control",
+            "+CASE=4",
+            "+EXPECT_ASSERT",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "278ddce63e234c4b2e3e7e2dbf3c402374c074eae36bcace7dd4c35c90a5f547"
+        }
+      ],
+      "reason": "MISSING_RESULT_MARKER"
+    },
+    {
+      "name": "assertion-5",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\amba-advanced-20261108\\verification\\apb_uvm\\apb_bus.sv",
+            "C:\\short\\amba-advanced-20261108\\verification\\apb_uvm\\apb_assertions.sv",
+            "C:\\short\\amba-advanced-20261108\\verification\\apb_uvm\\apb_assertion_control.sv"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "fdd9e589ddc06c2a340e3053aacd7ec5134cf6c552871234c5f58c89e81f6fa6"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.apb_assertion_control",
+            "+CASE=5",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "9032ba3db5d181d19b7c6e850ee2eb65f8cc708189f9eea424d268e4f8e7597c"
+        }
+      ],
+      "reason": "MISSING_RESULT_MARKER"
+    }
+  ],
+  "source_locks": [],
+  "functional_coverage": "NOT RUN",
+  "constrained_randomization": "NOT RUN",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "scripts/run_apb_uvm.py",
+    "--sim-bin",
+    "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+    "--uvm-lib",
+    "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+    "--uvm-include",
+    "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+    "--output",
+    "C:\\short\\apb-uvm-dev1",
+    "--adapters",
+    "2"
+  ],
+  "input_sha256": {
+    "verification\\apb_uvm\\apb_adapter.sv": "41ac0db2b8a94268f616c2f8fa80c73efb73385d26e1a2ea7e27f88e418aff77",
+    "verification\\apb_uvm\\apb_assertions.sv": "81ac85112eeded0023eab9b436576933e6b5f7b6ecc32452fe5ded4d02812371",
+    "verification\\apb_uvm\\apb_assertion_control.sv": "6e9288626a718de446f855e9799b0d1ab87491e5df27129604c0500380bb4b30",
+    "verification\\apb_uvm\\apb_bus.sv": "aab84343720f02fd9fc9cb604eb12f9e34a0259d6a55bf68bf38914980503ef5",
+    "verification\\apb_uvm\\apb_uvm_pkg.sv": "5d52796c4497070bd806a099e58afe1475ee8321572b84d5a54d8bfe60572002",
+    "verification\\apb_uvm\\apb_uvm_top.sv": "8537d4c9b88543423e06cc79cd79121234efd58eee6984105c1af0d7089d4058",
+    "verification\\apb_uvm\\sources.json": "5823f3a43c825229e2dfbe100ef92247f110232a926854c21e69306e1c1f9bbf",
+    "scripts\\run_apb_uvm.py": "20f60d6391af754a70f323161babf274fd0593482ded9dab7a643bee6b4636a6",
+    "scripts\\advanced_sim.py": "bd84c2c698e3911ff6f80cb256849ffffa498791bbb5041b7e38863167cf8f93",
+    "checkers\\apb_ram_responder.sv": "f30cb8d8db9ef7031caedd097b76e3284d66e95e07bca089f6f204d8134b4aa5"
+  },
+  "version_command": {
+    "command": [
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+      "-version"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "log": "version.log",
+    "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+  },
+  "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+  "aggregate_exit_code": 1
+}

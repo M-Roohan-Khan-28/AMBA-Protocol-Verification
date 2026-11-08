@@ -1,5 +1,18 @@
 # AMBA Protocol Verification
 
+## Separate APB UVM milestone
+
+The [APB advanced-verification guide](docs/ADVANCED_APB.md) describes a reusable
+UVM 1.2 environment, two pinned real-DUT adapters, a synthetic wait-state target,
+independent checking, concurrent assertions, deterministic tests and a separate
+coverage-enabled mode. This work does not change the completed portable release
+below. Functional coverage and constrained randomization require separately
+qualified simulator features; a deterministic UVM pass is not coverage closure.
+The [new raw evidence and summary](reports/advanced-apb-2026-11-08/SUMMARY.md)
+record three UVM adapter passes, five expected assertion detections and one
+legal assertion control from a clean detached clone. Covergroups and the two
+original advanced ALU/APB environments remain **NOT RUN** for the licence blocker.
+
 ## Latest merged-main technical release — 8 November 2026
 
 The [locked merged-main technical release](reports/technical-release-2026-11-08/RELEASE_SUMMARY.md) records eleven required project suites PASS from fresh detached GitHub source clones at runner `9820035daf9a63f5bbf4fa14c2621a65a746cd85`, aggregate exit 0. AXI4-Lite and RV32I SoC each require a separate checker qualification with one legal case and eight expected-negative detections. The preserved original advanced ALU/APB environments remain **NOT RUN** for the unavailable `svverification` licence.

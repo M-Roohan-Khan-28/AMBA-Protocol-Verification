@@ -1,0 +1,32 @@
+{
+  "source_revision": "eab4791cf7260ba95aa1ca4e250acfa29a11702f",
+  "fault": "adapter read-data XOR 1 at address 0",
+  "raw_regression_status": "FAIL by intentional fault",
+  "wrapper_exit_code": 1,
+  "controls": [
+    {
+      "adapter": 0,
+      "expected_detection": "ORACLE_DATA",
+      "detections": 1,
+      "time_ps": 45000,
+      "simulator_exit_code": 0,
+      "qualification": "DETECTED_AS_EXPECTED"
+    },
+    {
+      "adapter": 1,
+      "expected_detection": "ORACLE_DATA",
+      "detections": 1,
+      "time_ps": 45000,
+      "simulator_exit_code": 0,
+      "qualification": "DETECTED_AS_EXPECTED"
+    },
+    {
+      "adapter": 2,
+      "expected_detection": "ORACLE_DATA",
+      "detections": 1,
+      "time_ps": 65000,
+      "simulator_exit_code": 0,
+      "qualification": "DETECTED_AS_EXPECTED"
+    }
+  ]
+}

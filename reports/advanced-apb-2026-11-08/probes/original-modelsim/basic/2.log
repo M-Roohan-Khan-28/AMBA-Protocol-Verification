@@ -1,0 +1,19 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish stop work.probe_basic -do "onerror {quit -force -code 1}; run -all; quit -force -code 0" 
+# Start time: 06:18:55 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.probe_basic
+# onerror {quit -force -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# FEATURE_PASS_basic
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/technical-completion-2026-11-07/Roohan-Technical-Completion-Pack/probes/basic.sv(8)
+#    Time: 1 ns  Iteration: 0  Instance: /probe_basic
+# Break in Module probe_basic at C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/technical-completion-2026-11-07/Roohan-Technical-Completion-Pack/probes/basic.sv line 8
+# Stopped at C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/technical-completion-2026-11-07/Roohan-Technical-Completion-Pack/probes/basic.sv line 8
+#  quit -force -code 0
+# End time: 06:18:55 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

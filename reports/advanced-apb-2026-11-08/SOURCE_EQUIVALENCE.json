@@ -1,0 +1,12 @@
+{
+  "local_tested_revision": "eab4791cf7260ba95aa1ca4e250acfa29a11702f",
+  "published_source_revision": "ff158f4f7ed844f2a7ab9b3e19423ebc50be8f60",
+  "compared_paths": [
+    "verification",
+    "scripts/run_apb_uvm.py",
+    "scripts/advanced_sim.py",
+    "checkers/apb_ram_responder.sv"
+  ],
+  "git_diff_empty": true,
+  "difference": "Only measured-waveform crop selection/provenance script changed"
+}

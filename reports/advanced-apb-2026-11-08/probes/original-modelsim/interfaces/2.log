@@ -1,0 +1,21 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish stop work.probe_interfaces -do "onerror {quit -force -code 1}; run -all; quit -force -code 0" 
+# Start time: 06:18:56 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.probe_interfaces
+# Loading work.probe_bus
+# Loading work.probe_interface_dut
+# onerror {quit -force -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# FEATURE_PASS_interfaces
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/technical-completion-2026-11-07/Roohan-Technical-Completion-Pack/probes/interfaces.sv(15)
+#    Time: 1 ns  Iteration: 0  Instance: /probe_interfaces
+# Break in Module probe_interfaces at C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/technical-completion-2026-11-07/Roohan-Technical-Completion-Pack/probes/interfaces.sv line 15
+# Stopped at C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/technical-completion-2026-11-07/Roohan-Technical-Completion-Pack/probes/interfaces.sv line 15
+#  quit -force -code 0
+# End time: 06:18:57 on Nov 08,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

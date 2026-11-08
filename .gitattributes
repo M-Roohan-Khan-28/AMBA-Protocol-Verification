@@ -1,0 +1,2 @@
+# Scope the byte-preservation policy only to this new milestone's evidence.
+/reports/advanced-apb-2026-11-08/** -text

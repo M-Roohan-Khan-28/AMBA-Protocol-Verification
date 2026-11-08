@@ -1,0 +1,9 @@
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 06:18:54 on Nov 08,2026
+vlog -sv -work work C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\technical-completion-2026-11-07\Roohan-Technical-Completion-Pack\probes\basic.sv 
+-- Compiling module probe_basic
+
+Top level modules:
+	probe_basic
+End time: 06:18:54 on Nov 08,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

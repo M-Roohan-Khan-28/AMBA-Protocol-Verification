@@ -1,0 +1,248 @@
+{
+  "status": "PASS",
+  "audited_evidence_revision": "49870d98ab7a31ac980d6e0e78819bf0c1d7e429",
+  "audit_script_sha256": "29c15efb8dc7a6504eef7bcb9228c0350b367edb78274fe7e2eda1df53a7f1f5",
+  "policy": "Capture bytes committed with -text; no transformation; original capture hash equals committed hash",
+  "vcd_count": 14,
+  "figure_count": 5,
+  "vcds": [
+    {
+      "path": "reports/advanced-apb-2026-11-08/clean-positive/adapter-0/capture.vcd",
+      "sha256": {
+        "git_blob": "e954f42c95ba2b2dd236ddc21229316b70f64448fbcdedfff4826deee5107886",
+        "public_raw": "e954f42c95ba2b2dd236ddc21229316b70f64448fbcdedfff4826deee5107886",
+        "checkout_autocrlf_false": "e954f42c95ba2b2dd236ddc21229316b70f64448fbcdedfff4826deee5107886",
+        "checkout_autocrlf_true": "e954f42c95ba2b2dd236ddc21229316b70f64448fbcdedfff4826deee5107886"
+      },
+      "bytes": 145161,
+      "crlf_count": 18594,
+      "lf_count": 18594,
+      "text_attribute": "reports/advanced-apb-2026-11-08/clean-positive/adapter-0/capture.vcd: text: unset",
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/49870d98ab7a31ac980d6e0e78819bf0c1d7e429/reports/advanced-apb-2026-11-08/clean-positive/adapter-0/capture.vcd"
+    },
+    {
+      "path": "reports/advanced-apb-2026-11-08/clean-positive/adapter-1/capture.vcd",
+      "sha256": {
+        "git_blob": "32da9d235de7111b12105622f5c4d9ae70e6486f34ee379bb9f8b5c22e85593c",
+        "public_raw": "32da9d235de7111b12105622f5c4d9ae70e6486f34ee379bb9f8b5c22e85593c",
+        "checkout_autocrlf_false": "32da9d235de7111b12105622f5c4d9ae70e6486f34ee379bb9f8b5c22e85593c",
+        "checkout_autocrlf_true": "32da9d235de7111b12105622f5c4d9ae70e6486f34ee379bb9f8b5c22e85593c"
+      },
+      "bytes": 67197,
+      "crlf_count": 10318,
+      "lf_count": 10318,
+      "text_attribute": "reports/advanced-apb-2026-11-08/clean-positive/adapter-1/capture.vcd: text: unset",
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/49870d98ab7a31ac980d6e0e78819bf0c1d7e429/reports/advanced-apb-2026-11-08/clean-positive/adapter-1/capture.vcd"
+    },
+    {
+      "path": "reports/advanced-apb-2026-11-08/clean-positive/adapter-2/capture.vcd",
+      "sha256": {
+        "git_blob": "d1830150762c83de2c3a77a8a961c5d835d755029a6f6a8ece35d8b59dedd6e9",
+        "public_raw": "d1830150762c83de2c3a77a8a961c5d835d755029a6f6a8ece35d8b59dedd6e9",
+        "checkout_autocrlf_false": "d1830150762c83de2c3a77a8a961c5d835d755029a6f6a8ece35d8b59dedd6e9",
+        "checkout_autocrlf_true": "d1830150762c83de2c3a77a8a961c5d835d755029a6f6a8ece35d8b59dedd6e9"
+      },
+      "bytes": 100107,
+      "crlf_count": 14668,
+      "lf_count": 14668,
+      "text_attribute": "reports/advanced-apb-2026-11-08/clean-positive/adapter-2/capture.vcd: text: unset",
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/49870d98ab7a31ac980d6e0e78819bf0c1d7e429/reports/advanced-apb-2026-11-08/clean-positive/adapter-2/capture.vcd"
+    },
+    {
+      "path": "reports/advanced-apb-2026-11-08/fault-read-data/adapter-0/capture.vcd",
+      "sha256": {
+        "git_blob": "12da9e52c2ec5b60721af63aea5a5764a52de15b7902bb9953eeb39b772911bd",
+        "public_raw": "12da9e52c2ec5b60721af63aea5a5764a52de15b7902bb9953eeb39b772911bd",
+        "checkout_autocrlf_false": "12da9e52c2ec5b60721af63aea5a5764a52de15b7902bb9953eeb39b772911bd",
+        "checkout_autocrlf_true": "12da9e52c2ec5b60721af63aea5a5764a52de15b7902bb9953eeb39b772911bd"
+      },
+      "bytes": 759,
+      "crlf_count": 63,
+      "lf_count": 63,
+      "text_attribute": "reports/advanced-apb-2026-11-08/fault-read-data/adapter-0/capture.vcd: text: unset",
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/49870d98ab7a31ac980d6e0e78819bf0c1d7e429/reports/advanced-apb-2026-11-08/fault-read-data/adapter-0/capture.vcd"
+    },
+    {
+      "path": "reports/advanced-apb-2026-11-08/fault-read-data/adapter-1/capture.vcd",
+      "sha256": {
+        "git_blob": "89b6cbe4d78410333f3ade9360b917ebd89216c3fd4da854a68a0b7cb1f56ec2",
+        "public_raw": "89b6cbe4d78410333f3ade9360b917ebd89216c3fd4da854a68a0b7cb1f56ec2",
+        "checkout_autocrlf_false": "89b6cbe4d78410333f3ade9360b917ebd89216c3fd4da854a68a0b7cb1f56ec2",
+        "checkout_autocrlf_true": "89b6cbe4d78410333f3ade9360b917ebd89216c3fd4da854a68a0b7cb1f56ec2"
+      },
+      "bytes": 763,
+      "crlf_count": 64,
+      "lf_count": 64,
+      "text_attribute": "reports/advanced-apb-2026-11-08/fault-read-data/adapter-1/capture.vcd: text: unset",
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/49870d98ab7a31ac980d6e0e78819bf0c1d7e429/reports/advanced-apb-2026-11-08/fault-read-data/adapter-1/capture.vcd"
+    },
+    {
+      "path": "reports/advanced-apb-2026-11-08/fault-read-data/adapter-2/capture.vcd",
+      "sha256": {
+        "git_blob": "9a437c491ca4fd08e79ceaa7b249b7faf411e7f9ee912b70b9800c1be4dcb728",
+        "public_raw": "9a437c491ca4fd08e79ceaa7b249b7faf411e7f9ee912b70b9800c1be4dcb728",
+        "checkout_autocrlf_false": "9a437c491ca4fd08e79ceaa7b249b7faf411e7f9ee912b70b9800c1be4dcb728",
+        "checkout_autocrlf_true": "9a437c491ca4fd08e79ceaa7b249b7faf411e7f9ee912b70b9800c1be4dcb728"
+      },
+      "bytes": 815,
+      "crlf_count": 73,
+      "lf_count": 73,
+      "text_attribute": "reports/advanced-apb-2026-11-08/fault-read-data/adapter-2/capture.vcd: text: unset",
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/49870d98ab7a31ac980d6e0e78819bf0c1d7e429/reports/advanced-apb-2026-11-08/fault-read-data/adapter-2/capture.vcd"
+    },
+    {
+      "path": "reports/advanced-apb-2026-11-08/local-positive/adapter-0/capture.vcd",
+      "sha256": {
+        "git_blob": "6fa42698c35ccb2190a33c6ec81a6f77a8ec077bd94c9168bcf6984eccc37da1",
+        "public_raw": "6fa42698c35ccb2190a33c6ec81a6f77a8ec077bd94c9168bcf6984eccc37da1",
+        "checkout_autocrlf_false": "6fa42698c35ccb2190a33c6ec81a6f77a8ec077bd94c9168bcf6984eccc37da1",
+        "checkout_autocrlf_true": "6fa42698c35ccb2190a33c6ec81a6f77a8ec077bd94c9168bcf6984eccc37da1"
+      },
+      "bytes": 145161,
+      "crlf_count": 18594,
+      "lf_count": 18594,
+      "text_attribute": "reports/advanced-apb-2026-11-08/local-positive/adapter-0/capture.vcd: text: unset",
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/49870d98ab7a31ac980d6e0e78819bf0c1d7e429/reports/advanced-apb-2026-11-08/local-positive/adapter-0/capture.vcd"
+    },
+    {
+      "path": "reports/advanced-apb-2026-11-08/local-positive/adapter-1/capture.vcd",
+      "sha256": {
+        "git_blob": "d0423b1a6f76a598b94ddd18c38b9d372b732d7200eaf9215601786ee9a8ddb7",
+        "public_raw": "d0423b1a6f76a598b94ddd18c38b9d372b732d7200eaf9215601786ee9a8ddb7",
+        "checkout_autocrlf_false": "d0423b1a6f76a598b94ddd18c38b9d372b732d7200eaf9215601786ee9a8ddb7",
+        "checkout_autocrlf_true": "d0423b1a6f76a598b94ddd18c38b9d372b732d7200eaf9215601786ee9a8ddb7"
+      },
+      "bytes": 67197,
+      "crlf_count": 10318,
+      "lf_count": 10318,
+      "text_attribute": "reports/advanced-apb-2026-11-08/local-positive/adapter-1/capture.vcd: text: unset",
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/49870d98ab7a31ac980d6e0e78819bf0c1d7e429/reports/advanced-apb-2026-11-08/local-positive/adapter-1/capture.vcd"
+    },
+    {
+      "path": "reports/advanced-apb-2026-11-08/local-positive/adapter-2/capture.vcd",
+      "sha256": {
+        "git_blob": "85be2835d2cd47fd8a8453e617ab5f6ff41ad35a727f37c3dd6bc33200719839",
+        "public_raw": "85be2835d2cd47fd8a8453e617ab5f6ff41ad35a727f37c3dd6bc33200719839",
+        "checkout_autocrlf_false": "85be2835d2cd47fd8a8453e617ab5f6ff41ad35a727f37c3dd6bc33200719839",
+        "checkout_autocrlf_true": "85be2835d2cd47fd8a8453e617ab5f6ff41ad35a727f37c3dd6bc33200719839"
+      },
+      "bytes": 100107,
+      "crlf_count": 14668,
+      "lf_count": 14668,
+      "text_attribute": "reports/advanced-apb-2026-11-08/local-positive/adapter-2/capture.vcd: text: unset",
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/49870d98ab7a31ac980d6e0e78819bf0c1d7e429/reports/advanced-apb-2026-11-08/local-positive/adapter-2/capture.vcd"
+    },
+    {
+      "path": "reports/advanced-apb-2026-11-08/preliminary/development-pass/adapter-0/capture.vcd",
+      "sha256": {
+        "git_blob": "41a39699aeeb5fc6d82305a22121defdf0dcb1cfd4e573069563bf7faca55b2f",
+        "public_raw": "41a39699aeeb5fc6d82305a22121defdf0dcb1cfd4e573069563bf7faca55b2f",
+        "checkout_autocrlf_false": "41a39699aeeb5fc6d82305a22121defdf0dcb1cfd4e573069563bf7faca55b2f",
+        "checkout_autocrlf_true": "41a39699aeeb5fc6d82305a22121defdf0dcb1cfd4e573069563bf7faca55b2f"
+      },
+      "bytes": 145161,
+      "crlf_count": 18594,
+      "lf_count": 18594,
+      "text_attribute": "reports/advanced-apb-2026-11-08/preliminary/development-pass/adapter-0/capture.vcd: text: unset",
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/49870d98ab7a31ac980d6e0e78819bf0c1d7e429/reports/advanced-apb-2026-11-08/preliminary/development-pass/adapter-0/capture.vcd"
+    },
+    {
+      "path": "reports/advanced-apb-2026-11-08/preliminary/development-pass/adapter-1/capture.vcd",
+      "sha256": {
+        "git_blob": "25a850dc248d11f6e2b4d8e869034dabbd572d3fbe81c37c3a24a20f6d7ec07b",
+        "public_raw": "25a850dc248d11f6e2b4d8e869034dabbd572d3fbe81c37c3a24a20f6d7ec07b",
+        "checkout_autocrlf_false": "25a850dc248d11f6e2b4d8e869034dabbd572d3fbe81c37c3a24a20f6d7ec07b",
+        "checkout_autocrlf_true": "25a850dc248d11f6e2b4d8e869034dabbd572d3fbe81c37c3a24a20f6d7ec07b"
+      },
+      "bytes": 67197,
+      "crlf_count": 10318,
+      "lf_count": 10318,
+      "text_attribute": "reports/advanced-apb-2026-11-08/preliminary/development-pass/adapter-1/capture.vcd: text: unset",
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/49870d98ab7a31ac980d6e0e78819bf0c1d7e429/reports/advanced-apb-2026-11-08/preliminary/development-pass/adapter-1/capture.vcd"
+    },
+    {
+      "path": "reports/advanced-apb-2026-11-08/preliminary/development-pass/adapter-2/capture.vcd",
+      "sha256": {
+        "git_blob": "06d22529f5fbb4fc133a302695d5050e0654c7411d8d6ccba5f6592b4752ff73",
+        "public_raw": "06d22529f5fbb4fc133a302695d5050e0654c7411d8d6ccba5f6592b4752ff73",
+        "checkout_autocrlf_false": "06d22529f5fbb4fc133a302695d5050e0654c7411d8d6ccba5f6592b4752ff73",
+        "checkout_autocrlf_true": "06d22529f5fbb4fc133a302695d5050e0654c7411d8d6ccba5f6592b4752ff73"
+      },
+      "bytes": 100107,
+      "crlf_count": 14668,
+      "lf_count": 14668,
+      "text_attribute": "reports/advanced-apb-2026-11-08/preliminary/development-pass/adapter-2/capture.vcd: text: unset",
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/49870d98ab7a31ac980d6e0e78819bf0c1d7e429/reports/advanced-apb-2026-11-08/preliminary/development-pass/adapter-2/capture.vcd"
+    },
+    {
+      "path": "reports/advanced-apb-2026-11-08/preliminary/licence-contention/adapter-1/capture.vcd",
+      "sha256": {
+        "git_blob": "10fedacdb030549cebf0011bea6d47fd9f9965dfad4c1d1ba2c767a00e790631",
+        "public_raw": "10fedacdb030549cebf0011bea6d47fd9f9965dfad4c1d1ba2c767a00e790631",
+        "checkout_autocrlf_false": "10fedacdb030549cebf0011bea6d47fd9f9965dfad4c1d1ba2c767a00e790631",
+        "checkout_autocrlf_true": "10fedacdb030549cebf0011bea6d47fd9f9965dfad4c1d1ba2c767a00e790631"
+      },
+      "bytes": 67197,
+      "crlf_count": 10318,
+      "lf_count": 10318,
+      "text_attribute": "reports/advanced-apb-2026-11-08/preliminary/licence-contention/adapter-1/capture.vcd: text: unset",
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/49870d98ab7a31ac980d6e0e78819bf0c1d7e429/reports/advanced-apb-2026-11-08/preliminary/licence-contention/adapter-1/capture.vcd"
+    },
+    {
+      "path": "reports/advanced-apb-2026-11-08/preliminary/marker-parser-failure/adapter-2/capture.vcd",
+      "sha256": {
+        "git_blob": "e94f914a1fe7990c6b7d092dac871f554956ef35894369d9751f7a926aa8c1d0",
+        "public_raw": "e94f914a1fe7990c6b7d092dac871f554956ef35894369d9751f7a926aa8c1d0",
+        "checkout_autocrlf_false": "e94f914a1fe7990c6b7d092dac871f554956ef35894369d9751f7a926aa8c1d0",
+        "checkout_autocrlf_true": "e94f914a1fe7990c6b7d092dac871f554956ef35894369d9751f7a926aa8c1d0"
+      },
+      "bytes": 100107,
+      "crlf_count": 14668,
+      "lf_count": 14668,
+      "text_attribute": "reports/advanced-apb-2026-11-08/preliminary/marker-parser-failure/adapter-2/capture.vcd: text: unset",
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/49870d98ab7a31ac980d6e0e78819bf0c1d7e429/reports/advanced-apb-2026-11-08/preliminary/marker-parser-failure/adapter-2/capture.vcd"
+    }
+  ],
+  "figures": [
+    {
+      "metadata": "reports/advanced-apb-2026-11-08/waveforms/adapter-0-alias.json",
+      "source": "reports/advanced-apb-2026-11-08/clean-positive/adapter-0/capture.vcd",
+      "sha256": "e954f42c95ba2b2dd236ddc21229316b70f64448fbcdedfff4826deee5107886",
+      "source_representation": "original simulator capture bytes, committed without conversion",
+      "start_tick": 11560000,
+      "end_tick": 11740000
+    },
+    {
+      "metadata": "reports/advanced-apb-2026-11-08/waveforms/adapter-0-reset.json",
+      "source": "reports/advanced-apb-2026-11-08/clean-positive/adapter-0/capture.vcd",
+      "sha256": "e954f42c95ba2b2dd236ddc21229316b70f64448fbcdedfff4826deee5107886",
+      "source_representation": "original simulator capture bytes, committed without conversion",
+      "start_tick": 23042000,
+      "end_tick": 23222000
+    },
+    {
+      "metadata": "reports/advanced-apb-2026-11-08/waveforms/adapter-1-error.json",
+      "source": "reports/advanced-apb-2026-11-08/clean-positive/adapter-1/capture.vcd",
+      "sha256": "32da9d235de7111b12105622f5c4d9ae70e6486f34ee379bb9f8b5c22e85593c",
+      "source_representation": "original simulator capture bytes, committed without conversion",
+      "start_tick": 770000,
+      "end_tick": 950000
+    },
+    {
+      "metadata": "reports/advanced-apb-2026-11-08/waveforms/adapter-2-reset.json",
+      "source": "reports/advanced-apb-2026-11-08/clean-positive/adapter-2/capture.vcd",
+      "sha256": "d1830150762c83de2c3a77a8a961c5d835d755029a6f6a8ece35d8b59dedd6e9",
+      "source_representation": "original simulator capture bytes, committed without conversion",
+      "start_tick": 21922000,
+      "end_tick": 22102000
+    },
+    {
+      "metadata": "reports/advanced-apb-2026-11-08/waveforms/adapter-2-wait.json",
+      "source": "reports/advanced-apb-2026-11-08/clean-positive/adapter-2/capture.vcd",
+      "sha256": "d1830150762c83de2c3a77a8a961c5d835d755029a6f6a8ece35d8b59dedd6e9",
+      "source_representation": "original simulator capture bytes, committed without conversion",
+      "start_tick": 10000,
+      "end_tick": 190000
+    }
+  ]
+}

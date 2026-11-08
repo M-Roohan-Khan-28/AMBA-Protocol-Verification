@@ -1,0 +1,33 @@
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+Start time: 06:32:53 on Nov 08,2026
+vlog -sv -work work -L C:\MXR\Quartus\25.1\questa_fse\uvm-1.2 "+incdir+C:\MXR\Quartus\25.1\questa_fse\verilog_src\uvm-1.2\src" "+define+APB_ADAPTER=0" "+define+APB_INTERFACE_DUT" "+define+APB_ENABLE_COVERGROUP" C:\short\amba-advanced-20261108\verification\apb_uvm\apb_bus.sv C:\short\apb-coverage-6d53f6b\sources\APB-Interface-Verification\rtl\design.sv C:\short\amba-advanced-20261108\checkers\apb_ram_responder.sv C:\short\amba-advanced-20261108\verification\apb_uvm\apb_adapter.sv C:\short\amba-advanced-20261108\verification\apb_uvm\apb_assertions.sv C:\short\amba-advanced-20261108\verification\apb_uvm\apb_uvm_pkg.sv C:\short\amba-advanced-20261108\verification\apb_uvm\apb_uvm_top.sv 
+** Note: (vlog-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+-- Compiling interface apb_bus
+-- Compiling interface apb_if
+-- Compiling module apb_ram
+-- Compiling module apb_ram_responder
+-- Compiling module apb_adapter
+-- Compiling module apb_assertions
+-- Compiling package apb_uvm_pkg
+-- Importing package C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.uvm_pkg (uvm-1.2 Built-in)
+** Error (suppressible): C:\short\amba-advanced-20261108\verification\apb_uvm\apb_uvm_pkg.sv(186): (vlog-13141) Construction of embedded covergroup (defined in a class) is not supported except in constructor 'new()' of covergroup's parent class
+** Error (suppressible): C:\short\amba-advanced-20261108\verification\apb_uvm\apb_uvm_pkg.sv(186): (vlog-13266) No actual value has been specified for a formal argument 'last_word' that does not have a default value.
+** Error (suppressible): C:\short\amba-advanced-20261108\verification\apb_uvm\apb_uvm_pkg.sv(186): (vlog-2997) Arg. '#parent_arg#' of 'new':  Cannot assign a packed type 'bit signed[31:0]' to an unpacked type 'class apb_coverage'.
+** Error (suppressible): C:\short\amba-advanced-20261108\verification\apb_uvm\apb_uvm_pkg.sv(187): (vlog-13141) Construction of embedded covergroup (defined in a class) is not supported except in constructor 'new()' of covergroup's parent class
+** Error (suppressible): C:\short\amba-advanced-20261108\verification\apb_uvm\apb_uvm_pkg.sv(187): (vlog-13266) No actual value has been specified for a formal argument '#parent_arg#' that does not have a default value.
+** Error (suppressible): C:\short\amba-advanced-20261108\verification\apb_uvm\apb_uvm_pkg.sv(188): (vlog-13141) Construction of embedded covergroup (defined in a class) is not supported except in constructor 'new()' of covergroup's parent class
+** Error (suppressible): C:\short\amba-advanced-20261108\verification\apb_uvm\apb_uvm_pkg.sv(188): (vlog-13266) No actual value has been specified for a formal argument '#parent_arg#' that does not have a default value.
+** Error (suppressible): C:\short\amba-advanced-20261108\verification\apb_uvm\apb_uvm_pkg.sv(189): (vlog-13141) Construction of embedded covergroup (defined in a class) is not supported except in constructor 'new()' of covergroup's parent class
+** Error (suppressible): C:\short\amba-advanced-20261108\verification\apb_uvm\apb_uvm_pkg.sv(189): (vlog-13266) No actual value has been specified for a formal argument '#parent_arg#' that does not have a default value.
+** Error (suppressible): C:\short\amba-advanced-20261108\verification\apb_uvm\apb_uvm_pkg.sv(190): (vlog-13141) Construction of embedded covergroup (defined in a class) is not supported except in constructor 'new()' of covergroup's parent class
+** Error (suppressible): C:\short\amba-advanced-20261108\verification\apb_uvm\apb_uvm_pkg.sv(190): (vlog-13266) No actual value has been specified for a formal argument '#parent_arg#' that does not have a default value.
+-- Compiling module apb_uvm_top
+** Error: C:\short\amba-advanced-20261108\verification\apb_uvm\apb_uvm_top.sv(4): (vlog-13006) Could not find the package (apb_uvm_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+** Error: (vlog-13069) C:\short\amba-advanced-20261108\verification\apb_uvm\apb_uvm_top.sv(11): near ";": syntax error, unexpected ';', expecting '('.
+** Error: C:\short\amba-advanced-20261108\verification\apb_uvm\apb_uvm_top.sv(12): (vlog-2730) Undefined variable: 'cfg'.
+** Error: C:\short\amba-advanced-20261108\verification\apb_uvm\apb_uvm_top.sv(12): (vlog-2164) Class or package 'apb_config' not found.
+** Error: C:\short\amba-advanced-20261108\verification\apb_uvm\apb_uvm_top.sv(12): (vlog-2730) Undefined variable: 'apb_config'.
+** Error: (vlog-13069) C:\short\amba-advanced-20261108\verification\apb_uvm\apb_uvm_top.sv(12): near "::": syntax error, unexpected ::, expecting ';'.
+** Error: C:\short\amba-advanced-20261108\verification\apb_uvm\apb_uvm_top.sv(12): (vlog-2164) Class or package 'type_id' not found.
+End time: 06:32:54 on Nov 08,2026, Elapsed time: 0:00:01
+Errors: 18, Warnings: 0

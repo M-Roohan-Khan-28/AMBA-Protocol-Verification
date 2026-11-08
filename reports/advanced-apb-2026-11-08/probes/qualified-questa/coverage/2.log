@@ -1,0 +1,32 @@
+Reading pref.tcl
+
+# 2025.2
+
+# ** Note: (vsim-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# vsim -c -onfinish stop -coverage work.probe_coverage -do "onerror {quit -force -code 1}; run -all; coverage save coverage.ucdb; quit -force -code 0" 
+# Start time: 06:35:28 on Nov 08,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.probe_coverage(fast)
+# ** Error: Failure to checkout svverification license feature.
+# ** Error: (vsim-1) Unable to checkout verification license - required for testbench features (randomize, randcase, randsequence, covergroup).
+#    Time: 0 ps  Iteration: 0  Instance: /probe_coverage File: C:/short/amba-advanced-20261108/verification/capabilities/probes/coverage.sv
+# Error loading design
+Error loading design
+# End time: 06:35:31 on Nov 08,2026, Elapsed time: 0:00:03
+# Errors: 2, Warnings: 0

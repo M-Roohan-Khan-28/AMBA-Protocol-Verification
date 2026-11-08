@@ -1,2 +1,5 @@
 /build/
 /amba-output*/
+/scripts/__pycache__/
+/verification/capabilities/__pycache__/
+/tools/__pycache__/

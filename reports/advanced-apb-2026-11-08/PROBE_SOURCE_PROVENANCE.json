@@ -1,0 +1,47 @@
+{
+  "source": "Owner-supplied Roohan Technical Completion Pack; original files unchanged",
+  "files": [
+    {
+      "supplied_pack_path": "tools/probe_modelsim.py",
+      "supplied_sha256": "c026219cd6815c1bd899819d5bdeb4b4603ef4764d2691d64d058c31d08acf29",
+      "new_path": "verification/capabilities/probe_modelsim.py",
+      "new_sha256": "903e0a506eb9d1a219870cb0528538b9c7881b13ff69c1fbbd72b77643789e29"
+    },
+    {
+      "supplied_pack_path": "probes/basic.sv",
+      "supplied_sha256": "55241be43f19eeaf10c3324f73e4a7d4558a506eae51a9025f5f4a9801f7f0db",
+      "new_path": "verification/capabilities/probes/basic.sv",
+      "new_sha256": "55241be43f19eeaf10c3324f73e4a7d4558a506eae51a9025f5f4a9801f7f0db"
+    },
+    {
+      "supplied_pack_path": "probes/classes_random.sv",
+      "supplied_sha256": "65c59b8734235ef1c3dba4d907cd1f813b39c66314931a3e6a847fd53024dfe9",
+      "new_path": "verification/capabilities/probes/classes_random.sv",
+      "new_sha256": "65c59b8734235ef1c3dba4d907cd1f813b39c66314931a3e6a847fd53024dfe9"
+    },
+    {
+      "supplied_pack_path": "probes/coverage.sv",
+      "supplied_sha256": "ecea4032700ad757468c2bcd1f8da7bb95db53ede360fd4a0c79926f0ae097d3",
+      "new_path": "verification/capabilities/probes/coverage.sv",
+      "new_sha256": "ecea4032700ad757468c2bcd1f8da7bb95db53ede360fd4a0c79926f0ae097d3"
+    },
+    {
+      "supplied_pack_path": "probes/interfaces.sv",
+      "supplied_sha256": "6eab1b3b42eff27cbafec88b8643c0e79aea6fb1b5efa9e2966889eeaeaa58fa",
+      "new_path": "verification/capabilities/probes/interfaces.sv",
+      "new_sha256": "6eab1b3b42eff27cbafec88b8643c0e79aea6fb1b5efa9e2966889eeaeaa58fa"
+    },
+    {
+      "supplied_pack_path": "probes/sva.sv",
+      "supplied_sha256": "4bc557e202e2e65f1007db508ad8a2ecf76e6c0fd4dd3388b910aed1fdfdfb64",
+      "new_path": "verification/capabilities/probes/sva.sv",
+      "new_sha256": "4e22196053cf9410d67c789e1a2f9f915c9898f2401615cf791d6530271d0431"
+    },
+    {
+      "supplied_pack_path": "probes/uvm.sv",
+      "supplied_sha256": "a597b01c22f64762b7cfadfc78204ef25117afef8acd5ea221f47254716bacd3",
+      "new_path": "verification/capabilities/probes/uvm.sv",
+      "new_sha256": "a597b01c22f64762b7cfadfc78204ef25117afef8acd5ea221f47254716bacd3"
+    }
+  ]
+}

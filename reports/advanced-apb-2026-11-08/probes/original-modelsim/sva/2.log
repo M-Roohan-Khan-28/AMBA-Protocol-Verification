@@ -1,0 +1,21 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish stop work.probe_sva -do "onerror {quit -force -code 1}; run -all; quit -force -code 0" 
+# Start time: 06:19:00 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.probe_sva
+# ** Warning: (vsim-8311) System Verilog assertions are supported only in Questasim.
+# onerror {quit -force -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# ** Fatal: SVA did not execute exactly once
+#    Time: 50 ns  Scope: probe_sva File: C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/technical-completion-2026-11-07/Roohan-Technical-Completion-Pack/probes/sva.sv Line: 17
+# ** Note: $finish    : C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/technical-completion-2026-11-07/Roohan-Technical-Completion-Pack/probes/sva.sv(17)
+#    Time: 50 ns  Iteration: 1  Instance: /probe_sva
+# Break in Module probe_sva at C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/technical-completion-2026-11-07/Roohan-Technical-Completion-Pack/probes/sva.sv line 17
+# Stopped at C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/technical-completion-2026-11-07/Roohan-Technical-Completion-Pack/probes/sva.sv line 17
+#  quit -force -code 0
+# End time: 06:19:00 on Nov 08,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1

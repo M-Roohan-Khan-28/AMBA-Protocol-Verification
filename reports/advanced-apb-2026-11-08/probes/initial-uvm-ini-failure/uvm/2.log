@@ -1,0 +1,12 @@
+Reading pref.tcl
+# ** Warning: (vsim-222) -modelsimini will be deprecated in future releases. Please use -ini instead.
+
+# 2025.2
+
+# ** Warning: (vsim-222) -modelsimini will be deprecated in future releases. Please use -ini instead.
+# ** Note: (vsim-220) 'C:\MXR\Quartus\25.1\questa_fse\modelsim.ini' is used as the ini file.
+# ** Error: (vsim-7) Failed to open -ini file "{C:\MXR\Quartus\25.1\questa_fse\modelsim.ini}" in read mode.
+# Invalid argument. (errno = EINVAL)
+# Error loading design
+Error loading design
+# Errors: 1, Warnings: 2
