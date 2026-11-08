@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Separate deterministic AXI4-Lite UVM/SVA regression; sequential sessions only.
 
-Default: three real-RTL adapter suites and fourteen assertion qualifications.
+Default: three real-RTL adapters, fourteen SVA and six request-oracle controls.
 Diagnostic selections/fault runs never claim the complete milestone PASS.
 No randomization or functional covergroup execution is attempted.
 """
@@ -12,6 +12,7 @@ from pathlib import Path
 import re
 import sys
 from advanced_sim import digest, failure, git, run, tool
+from axil_accounting import validate_accounting
 
 IDS=['AW_HOLD','W_HOLD','AR_HOLD','B_HOLD','R_HOLD',
      'B_ELIGIBILITY','B_ELIGIBILITY','B_ELIGIBILITY','B_ELIGIBILITY',
@@ -37,7 +38,7 @@ def main():
       mode='deterministic',seed=682016495,seed_hex='0x28A6BEEF',fault_control=args.fault,
       functional_coverage='NOT RUN',constrained_randomization='NOT RUN',original_advanced_environments='NOT RUN',
       command=[sys.executable,*sys.argv],suites=[],serial_execution=True)
-    report['input_sha256']={p.relative_to(repo).as_posix():digest(p) for p in [*src.glob('*.sv'),src/'sources.json',Path(__file__),repo/'scripts/advanced_sim.py']}
+    report['input_sha256']={p.relative_to(repo).as_posix():digest(p) for p in [*src.glob('*.sv'),src/'sources.json',Path(__file__),repo/'scripts/advanced_sim.py',repo/'scripts/axil_accounting.py',repo/'scripts/run_axil_request_control.py']}
     r,t=run([tool(args.sim_bin,'vsim'),'-version'],out,args.timeout,out/'version.log')
     report['version_command']=r;report['simulator_version']=t.strip()
     prereq=failure(r,t)
@@ -75,6 +76,10 @@ def main():
             req=wd/'requirements.json';capture=wd/'capture.vcd'
             if not req.is_file() or not capture.is_file() or capture.stat().st_size==0:s.update(status='FAIL',reason='MISSING_REQUIREMENTS_OR_WAVE');return s
             s['requirements']=json.loads(req.read_text());s['capture_sha256']=digest(capture)
+            try:
+                s['accounting']=json.loads((wd/'accounting.json').read_text())
+                validate_accounting(s['accounting'],s['counts'],s['counts']['adapter'])
+            except (OSError,ValueError,KeyError) as error:s.update(status='FAIL',reason='ACCOUNTING_ERROR: '+str(error))
         return s
     for adapter in adapters:
         files=[src/'axil_bus.sv',*[dest/p for p in lock['files']],src/'axil_adapter.sv',src/'axil_assertions.sv',src/'axil_uvm_pkg.sv',src/'axil_uvm_top.sv']
@@ -89,7 +94,33 @@ def main():
                 text=(out/s['name']/'2.log').read_text();observed=re.findall(r'^# AXIL_ASSERT_DETECTED (\w+) time=',text,re.M)
                 s['expected_detections']=[] if expected is None else [expected];s['observed_detections']=observed
                 if observed!=s['expected_detections']:s.update(status='FAIL',reason='WRONG_ASSERTION_DETECTIONS')
-    report['required_substeps']=len(adapters)+(len(IDS) if args.diagnostic_adapters is None else 0)
+        # Child wrappers return nonzero on a genuine fatal. The parent accepts
+        # only the individual expected oracle ID, with no SVA/other errors.
+        for adapter in [1,2]:
+            for mode in ['legal','duplicate-write','duplicate-read']:
+                name=f'request-{adapter}-{mode}';child=out/name
+                command=[sys.executable,str(repo/'scripts/run_axil_request_control.py'),'--adapter',str(adapter),'--mode',mode,
+                    '--output',str(child),'--sim-bin',str(args.sim_bin),'--uvm-lib',str(args.uvm_lib),'--uvm-include',str(args.uvm_include),'--timeout',str(args.timeout)]
+                r,text=run(command,repo,4*args.timeout+30,out/(name+'-wrapper.log'))
+                s=dict(name=name,status='FAIL',reason='CONTROL_FAILED',commands=[r]);report['suites'].append(s)
+                try:
+                    result=json.loads((child/'results.json').read_text());log=(child/'2.log').read_text()
+                    s['child_result']=result;s['child_wrapper_exit_code']=r['exit_code']
+                    assert not r['timed_out'] and len(result['commands'])==3
+                    assert all(not c['timed_out'] and c['exit_code']==0 for c in result['commands'])
+                    if mode=='legal':
+                        assert r['exit_code']==0 and result['status']=='PASS' and result['wrapper_exit_code']==0
+                    else:
+                        expected='REQUEST_DUPLICATE_WRITE' if mode=='duplicate-write' else 'REQUEST_DUPLICATE_READ'
+                        fatals=re.findall(r'^# UVM_FATAL .*?\[(\w+)\]',log,re.M)
+                        assert r['exit_code']==result['wrapper_exit_code']==1 and result['status']=='FAIL'
+                        assert result['reason']=='PROCESS_OR_SIMULATOR_ERROR' and fatals==[expected]
+                        assert not re.search(r'^# UVM_ERROR .*?@|\*\* (?:Error|Fatal)|AXIL_ASSERT_DETECTED|AXIL_REQUEST_CONTROL_PASS',log,re.M)
+                        assert f'AXIL_REQUEST_CONTROL_INJECT adapter={adapter} mode={1 if mode=="duplicate-write" else 2} assertions=0' in log
+                        s['expected_fatal']=expected;s['observed_fatals']=fatals
+                    s.update(status='PASS',reason='EXECUTED' if mode=='legal' else 'EXPECTED_ORACLE_DETECTION')
+                except (OSError,ValueError,KeyError,AssertionError) as error:s['detail']=str(error)
+    report['required_substeps']=len(adapters)+(len(IDS)+6 if args.diagnostic_adapters is None else 0)
     report['aggregate_exit_code']=0 if len(report['suites'])==report['required_substeps'] and all(s['status']=='PASS' for s in report['suites']) else 1
     report['milestone_pass']=report['aggregate_exit_code']==0 and args.diagnostic_adapters is None and not args.fault
     report['finished_utc']=datetime.datetime.now(datetime.timezone.utc).isoformat()

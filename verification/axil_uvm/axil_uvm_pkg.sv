@@ -58,11 +58,19 @@ package axil_uvm_pkg;
     // Reset cancels control, but does NOT clear SRAM or these expected bytes.
     logic[7:0] memory[64];
     bit aw,w,ar,b_seen,r_seen,cpu,done,in_reset;
+    // Request association outlives the bus response. Channel-outstanding bits
+    // above may clear at B/R acceptance; these issue bits clear ONLY on CPU
+    // completion or reset cancellation. One CPU request owns one bus response.
+    bit cpu_aw_issued,cpu_w_issued,cpu_ar_issued;
     bit cpu_wr,done_error;logic[31:0] cpu_addr,cpu_data,done_data;
     logic[3:0] cpu_strb,strobe;
     logic[31:0] address,wdata,read_address;
     int cycle,aw_cycle,w_cycle;
     int comparisons=0,writes=0,reads=0,requests=0,completions=0,resets=0,discarded=0;
+    int aw_accepted=0,w_accepted=0,ar_accepted=0;
+    int cpu_write_requests=0,cpu_read_requests=0,cpu_write_completions=0,cpu_read_completions=0;
+    int cpu_write_cancelled=0,cpu_read_cancelled=0;
+    int cancelled_aw=0,cancelled_w=0,cancelled_ar=0,cancelled_b=0,cancelled_r=0;
     int address_first=0,data_first=0,simultaneous=0,invalid_writes=0,invalid_reads=0;
     int aw_stalls=0,w_stalls=0,ar_stalls=0,b_stalls=0,r_stalls=0;
     int strobe_hits[16],written[16],read_hits[16];
@@ -83,8 +91,17 @@ package axil_uvm_pkg;
       f=t;
       cycle++;
       if(!f.reset_n) begin
-        if(!in_reset) begin resets++;if(aw||w||ar||cpu||done)discarded++;end
-        in_reset=1;aw=0;w=0;ar=0;b_seen=0;r_seen=0;cpu=0;done=0;return;
+        if(!in_reset) begin
+          resets++;if(aw||w||ar||cpu||done)discarded++;
+          if(cfg.adapter!=0&&cpu)begin
+            if(cpu_wr)cpu_write_cancelled++;else cpu_read_cancelled++;
+            if(cpu_aw_issued)cancelled_aw++;if(cpu_w_issued)cancelled_w++;
+            if(cpu_ar_issued)cancelled_ar++;
+            if(done)begin if(cpu_wr)cancelled_b++;else cancelled_r++;end
+          end
+        end
+        in_reset=1;aw=0;w=0;ar=0;b_seen=0;r_seen=0;cpu=0;done=0;
+        cpu_aw_issued=0;cpu_w_issued=0;cpu_ar_issued=0;return;
       end
       in_reset=0;
       if(f.awv&&!f.awr)aw_stalls++;if(f.wv&&!f.wr)w_stalls++;if(f.arv&&!f.arr)ar_stalls++;
@@ -92,13 +109,18 @@ package axil_uvm_pkg;
       // Completion must refer to a bus response accepted on a PRIOR edge.
       if(cfg.adapter!=0 && f.sv) begin
         if(!cpu||!done) `uvm_fatal("CPU_ELIGIBILITY","Unsolicited/duplicate or same-edge CPU completion")
+        if(cpu_wr?(!cpu_aw_issued||!cpu_w_issued||cpu_ar_issued):(!cpu_ar_issued||cpu_aw_issued||cpu_w_issued))
+          `uvm_fatal("CPU_ASSOCIATION","Completion lacks exactly one matching issued bus request")
         comparisons++;
         if(f.se!==done_error) `uvm_fatal("CPU_ERROR","CPU response error mismatch")
         if(!cpu_wr) begin comparisons++;if(f.sd!==done_data) `uvm_fatal("CPU_DATA","CPU read data mismatch") end
-        completions++;cpu=0;done=0;
+        completions++;if(cpu_wr)cpu_write_completions++;else cpu_read_completions++;
+        cpu=0;done=0;cpu_aw_issued=0;cpu_w_issued=0;cpu_ar_issued=0;
       end
       // Dependencies are checked before this frame's AW/W/AR acceptances.
       if(f.bv) begin
+        if(cfg.adapter!=0&&(!cpu||!cpu_wr||done))
+          `uvm_fatal("CPU_RESPONSE_DUPLICATE","BVALID has no unresponded owning CPU write")
         if(!aw||!w) `uvm_fatal("B_DEPENDENCY","BVALID lacks prior AW and W, regardless of BREADY")
         bad=!legal(address);comparisons++;
         if(f.bs!==(bad?2'b10:2'b00)) `uvm_fatal("B_RESPONSE","Incorrect BRESP")
@@ -114,6 +136,8 @@ package axil_uvm_pkg;
         if(f.br)begin writes++;aw=0;w=0;b_seen=0;done=(cfg.adapter!=0);done_error=bad;end
       end
       if(f.rv) begin
+        if(cfg.adapter!=0&&(!cpu||cpu_wr||done))
+          `uvm_fatal("CPU_RESPONSE_DUPLICATE","RVALID has no unresponded owning CPU read")
         if(!ar) `uvm_fatal("R_DEPENDENCY","RVALID lacks prior AR, regardless of RREADY")
         bad=!legal(read_address);value=expected_read(read_address);comparisons+=2;
         if(f.rs!==(bad?2'b10:2'b00)) `uvm_fatal("R_RESPONSE","Incorrect RRESP")
@@ -124,34 +148,55 @@ package axil_uvm_pkg;
       if(f.awv&&f.awr) begin
         if(aw) `uvm_fatal("AW_DUPLICATE","Unexpected second outstanding AW")
         if(cfg.adapter!=0)begin
+          if(cpu_aw_issued||done) `uvm_fatal("REQUEST_DUPLICATE_WRITE","Second AW for the same CPU request")
           comparisons++;
           if(!cpu||!cpu_wr||f.awa!==cpu_addr) `uvm_fatal("REQUEST_ADDRESS","AW does not match accepted CPU request")
+          cpu_aw_issued=1;
         end
-        aw=1;address=f.awa;aw_cycle=cycle;
+        aw_accepted++;aw=1;address=f.awa;aw_cycle=cycle;
       end
       if(f.wv&&f.wr) begin
         if(w) `uvm_fatal("W_DUPLICATE","Unexpected second outstanding W")
         if(cfg.adapter!=0)begin
+          if(cpu_w_issued||done) `uvm_fatal("REQUEST_DUPLICATE_WRITE","Second W for the same CPU request")
           comparisons+=2;
           if(!cpu||!cpu_wr||f.wd!==cpu_data||f.ws!==cpu_strb) `uvm_fatal("REQUEST_WRITE","W does not match accepted CPU request")
+          cpu_w_issued=1;
         end
-        w=1;wdata=f.wd;strobe=f.ws;w_cycle=cycle;
+        w_accepted++;w=1;wdata=f.wd;strobe=f.ws;w_cycle=cycle;
       end
       if(f.arv&&f.arr) begin
         if(ar) `uvm_fatal("AR_DUPLICATE","Unexpected second outstanding AR")
         if(cfg.adapter!=0)begin
+          if(cpu_ar_issued||done) `uvm_fatal("REQUEST_DUPLICATE_READ","Second AR for the same CPU request")
           comparisons++;
           if(!cpu||cpu_wr||f.ara!==cpu_addr) `uvm_fatal("REQUEST_ADDRESS","AR does not match accepted CPU request")
+          cpu_ar_issued=1;
         end
-        ar=1;read_address=f.ara;
+        ar_accepted++;ar=1;read_address=f.ara;
       end
       if(cfg.adapter!=0&&f.qv&&f.qr)begin
         if(cpu) `uvm_fatal("CPU_DUPLICATE","More than one outstanding CPU request")
         cpu=1;cpu_wr=f.qw;cpu_addr=f.qa;cpu_data=f.qd;cpu_strb=f.qs;requests++;
+        if(cpu_wr)cpu_write_requests++;else cpu_read_requests++;
+      end
+    endfunction
+    function void check_accounting();
+      if(cfg.adapter!=0)begin
+        if(requests!=cpu_write_requests+cpu_read_requests||completions!=cpu_write_completions+cpu_read_completions||
+           cpu_write_requests!=cpu_write_completions+cpu_write_cancelled||
+           cpu_read_requests!=cpu_read_completions+cpu_read_cancelled||
+           discarded!=cpu_write_cancelled+cpu_read_cancelled||
+           aw_accepted!=cpu_write_completions+cancelled_aw||w_accepted!=cpu_write_completions+cancelled_w||
+           ar_accepted!=cpu_read_completions+cancelled_ar||writes!=cpu_write_completions+cancelled_b||
+           reads!=cpu_read_completions+cancelled_r)
+          `uvm_fatal("BUS_CPU_ACCOUNTING","Bus/CPU totals do not reconcile with reset cancellation stages")
       end
     endfunction
     function void check_phase(uvm_phase phase);
       if(aw||w||ar||cpu||(cfg.adapter!=0&&done)) `uvm_fatal("DRAIN","Outstanding transaction at test end")
+      if(cpu_aw_issued||cpu_w_issued||cpu_ar_issued) `uvm_fatal("DRAIN","CPU association remained at test end")
+      check_accounting();
       if(resets<4||!invalid_writes||!invalid_reads) `uvm_fatal("REQUIREMENT","Missing reset/error scenario")
       foreach(strobe_hits[i])if(!strobe_hits[i]) `uvm_fatal("REQUIREMENT","Missing write-strobe mask")
       foreach(written[i])if(!written[i]||!read_hits[i]) `uvm_fatal("REQUIREMENT","Missing initialized word/readback")
@@ -163,6 +208,9 @@ package axil_uvm_pkg;
       int fd;
       fd=$fopen("requirements.json","w");if(!fd) `uvm_fatal("REPORT","Cannot export counters")
       $fdisplay(fd,"{\"kind\":\"procedural_requirement_hits_NOT_functional_coverage\",\"address_first\":%0d,\"data_first\":%0d,\"simultaneous\":%0d,\"aw_stall_cycles\":%0d,\"w_stall_cycles\":%0d,\"ar_stall_cycles\":%0d,\"b_stall_cycles\":%0d,\"r_stall_cycles\":%0d,\"invalid_writes\":%0d,\"invalid_reads\":%0d,\"strobe_masks_observed\":16,\"resets\":%0d,\"discarded_transactions\":%0d}",address_first,data_first,simultaneous,aw_stalls,w_stalls,ar_stalls,b_stalls,r_stalls,invalid_writes,invalid_reads,resets,discarded);
+      $fclose(fd);
+      fd=$fopen("accounting.json","w");if(!fd) `uvm_fatal("REPORT","Cannot export accounting")
+      $fdisplay(fd,"{\"adapter\":%0d,\"requests\":%0d,\"completions\":%0d,\"write_requests\":%0d,\"read_requests\":%0d,\"write_completions\":%0d,\"read_completions\":%0d,\"write_cancelled\":%0d,\"read_cancelled\":%0d,\"aw_accepted\":%0d,\"w_accepted\":%0d,\"ar_accepted\":%0d,\"b_accepted\":%0d,\"r_accepted\":%0d,\"cancelled_aw\":%0d,\"cancelled_w\":%0d,\"cancelled_ar\":%0d,\"cancelled_b\":%0d,\"cancelled_r\":%0d}",cfg.adapter,requests,completions,cpu_write_requests,cpu_read_requests,cpu_write_completions,cpu_read_completions,cpu_write_cancelled,cpu_read_cancelled,aw_accepted,w_accepted,ar_accepted,writes,reads,cancelled_aw,cancelled_w,cancelled_ar,cancelled_b,cancelled_r);
       $fclose(fd);
     endfunction
   endclass
@@ -429,7 +477,8 @@ package axil_uvm_pkg;
       if(env.cfg.adapter==0)begin
         if(env.scoreboard.writes+env.scoreboard.reads!=expected) `uvm_fatal("EXACT_ONCE","Bus completions mismatch")
       end else begin
-        if(env.scoreboard.completions!=expected||env.scoreboard.requests!=expected+aborts)
+        if(env.scoreboard.completions!=expected||env.scoreboard.requests!=expected+aborts||
+           env.scoreboard.cpu_write_cancelled+env.scoreboard.cpu_read_cancelled!=aborts)
           `uvm_fatal("EXACT_ONCE","CPU acceptance/completion mismatch")
       end
     endfunction
