@@ -42,5 +42,8 @@
   "functional_coverage": "NOT RUN - svverification licence blocked; no UCDB/export",
   "constrained_randomization": "NOT RUN - svverification licence blocked",
   "original_advanced_alu": "NOT RUN",
-  "original_advanced_apb": "NOT RUN"
+  "original_advanced_apb": "NOT RUN",
+  "runner_revision_kind": "Checkout containing runner and latest shared process helper",
+  "runner_script_last_change": "a05127c3743eba62af2668adce3740c458fc060c",
+  "shared_process_helper_last_change": "6d53f6b840529aec272844a701eaab6650e748ec"
 }

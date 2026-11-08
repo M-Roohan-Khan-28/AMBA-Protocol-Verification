@@ -108,9 +108,12 @@ scoreboard and assertion logs determine results; the renderer does not.
 
 All new report files use scoped Git `-text` attributes. Original-capture bytes
 are the committed representation, with CRLF retained where emitted. No newline
-conversion or simulation-behavior claim is involved. Publication byte checks
-are recorded separately in `BYTE_AUDIT.json`; historical VCDs/manifests elsewhere
-in the repository were not rewritten.
+conversion or simulation-behavior claim is involved. The
+[publication byte audit](BYTE_AUDIT.json) passed for all 14 new VCDs (including
+preliminary/fault evidence) and five current figure metadata files at evidence
+revision `49870d98ab7a31ac980d6e0e78819bf0c1d7e429`: Git blobs, public raw
+downloads and fresh detached checkouts with `core.autocrlf=false` and `true`
+matched. Historical VCDs/manifests elsewhere in the repository were not rewritten.
 
 ## Reproduce
 
