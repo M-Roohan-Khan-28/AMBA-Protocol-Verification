@@ -1,0 +1,138 @@
+{
+  "merged_amba_source": "8b9e32171408eaa71fc8e5008128c8b0a8ee6709",
+  "source_clean": true,
+  "detached": true,
+  "serial_execution": true,
+  "substep_order": [
+    "adapter-0",
+    "adapter-1",
+    "adapter-2",
+    "assertion-0",
+    "assertion-1",
+    "assertion-2",
+    "assertion-3",
+    "assertion-4",
+    "assertion-5"
+  ],
+  "source_locks": [
+    {
+      "repository": "APB-Interface-Verification",
+      "expected_revision": "e30fd5242a1e84be92107d6be75652220748a8a7",
+      "observed_revision": "e30fd5242a1e84be92107d6be75652220748a8a7",
+      "clean": true,
+      "new_documentation_merge": "8d668e024bc2156d1399e1f9fb9379f2bd4c499d",
+      "rtl": "rtl/design.sv",
+      "locked_and_merged_rtl_blob": "0ddfbc0b34c5d615073a43c00ac6d65135d8964d",
+      "documentation_only_changes": [
+        "README.md",
+        "docs/UVM_ADAPTER.md"
+      ]
+    },
+    {
+      "repository": "APB-Modports-Verification",
+      "expected_revision": "7fd99b382e13faa7a839610b63063a72748f4bf3",
+      "observed_revision": "7fd99b382e13faa7a839610b63063a72748f4bf3",
+      "clean": true,
+      "new_documentation_merge": "6f56a80e4a2cbe4cd7c6095ac5e0c8f24da87bdb",
+      "rtl": "rtl/design.sv",
+      "locked_and_merged_rtl_blob": "5badc2fae8344d1c41f4a81ca75b5818ed4def24",
+      "documentation_only_changes": [
+        "README.md",
+        "docs/UVM_ADAPTER.md"
+      ]
+    }
+  ],
+  "script_and_lock_revisions": {
+    "scripts/run_apb_uvm.py": "a05127c3743eba62af2668adce3740c458fc060c",
+    "scripts/advanced_sim.py": "6d53f6b840529aec272844a701eaab6650e748ec",
+    "verification/apb_uvm/sources.json": "a05127c3743eba62af2668adce3740c458fc060c",
+    "scripts/render_apb_uvm_waves.py": "ff158f4f7ed844f2a7ab9b3e19423ebc50be8f60"
+  },
+  "verified_substeps": [
+    {
+      "name": "adapter-0",
+      "counts": {
+        "adapter": 0,
+        "transfers": 1280,
+        "comparisons": 2048,
+        "resets": 3,
+        "aborted": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "adapter-1",
+      "counts": {
+        "adapter": 1,
+        "transfers": 560,
+        "comparisons": 848,
+        "resets": 3,
+        "aborted": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "adapter-2",
+      "counts": {
+        "adapter": 2,
+        "transfers": 554,
+        "comparisons": 840,
+        "resets": 4,
+        "aborted": 2
+      },
+      "status": "PASS"
+    },
+    {
+      "name": "assertion-0",
+      "expected": "SETUP",
+      "observed": [
+        "SETUP"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "assertion-1",
+      "expected": "WAIT_HOLD",
+      "observed": [
+        "WAIT_HOLD"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "assertion-2",
+      "expected": "ACCESS_ENTRY",
+      "observed": [
+        "ACCESS_ENTRY"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "assertion-3",
+      "expected": "ENABLE_SELECT",
+      "observed": [
+        "ENABLE_SELECT"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "assertion-4",
+      "expected": "ERROR_ELIGIBILITY",
+      "observed": [
+        "ERROR_ELIGIBILITY"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "assertion-5",
+      "expected": null,
+      "observed": [],
+      "status": "PASS"
+    }
+  ],
+  "portable_release_files_unchanged": [
+    "scripts/run_portfolio_regression.ps1",
+    "scripts/portfolio_suites.json",
+    "scripts/run_amba.ps1"
+  ],
+  "portable_release_reference": "73e948a3f9f200b590421afe5893d055a000d33b"
+}

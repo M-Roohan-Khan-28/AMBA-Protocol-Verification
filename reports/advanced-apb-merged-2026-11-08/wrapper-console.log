@@ -1,0 +1,16 @@
+{
+  "source_revision": "8b9e32171408eaa71fc8e5008128c8b0a8ee6709",
+  "source_dirty": false,
+  "mode": "deterministic",
+  "functional_coverage": "NOT RUN",
+  "aggregate_exit_code": 0
+}
+adapter-0 PASS EXECUTED {'adapter': 0, 'transfers': 1280, 'comparisons': 2048, 'resets': 3, 'aborted': 1}
+adapter-1 PASS EXECUTED {'adapter': 1, 'transfers': 560, 'comparisons': 848, 'resets': 3, 'aborted': 1}
+adapter-2 PASS EXECUTED {'adapter': 2, 'transfers': 554, 'comparisons': 840, 'resets': 4, 'aborted': 2}
+assertion-0 PASS EXECUTED 
+assertion-1 PASS EXECUTED 
+assertion-2 PASS EXECUTED 
+assertion-3 PASS EXECUTED 
+assertion-4 PASS EXECUTED 
+assertion-5 PASS EXECUTED 

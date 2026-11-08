@@ -1,0 +1,25 @@
+{
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\apb-uvm-merged-source-20261108\\scripts\\run_apb_uvm.py",
+    "--sim-bin",
+    "C:/MXR/Quartus/25.1/questa_fse/win64",
+    "--uvm-lib",
+    "C:/MXR/Quartus/25.1/questa_fse/uvm-1.2",
+    "--uvm-include",
+    "C:/MXR/Quartus/25.1/questa_fse/verilog_src/uvm-1.2/src",
+    "--output",
+    "C:\\short\\apb-uvm-merged-results-20261108"
+  ],
+  "cwd": "C:\\short\\apb-uvm-merged-source-20261108",
+  "started_utc": "2026-11-08T03:36:58.303051+00:00",
+  "finished_utc": "2026-11-08T03:38:13.900034+00:00",
+  "wrapper_exit_code": 0,
+  "source_revision": "8b9e32171408eaa71fc8e5008128c8b0a8ee6709",
+  "source_clean_after": true,
+  "source_detached": true,
+  "required_substeps": 9,
+  "passing_substeps": 9,
+  "aggregate_exit_code": 0,
+  "console_log": "wrapper-console.log"
+}
