@@ -24,8 +24,8 @@ simulator inputs match the local tested revision ([comparison](SOURCE_EQUIVALENC
 These are separate units, not coverage percentages. Submitted, observed accepted
 and driver-completed transaction counts matched exactly. Every positive run had
 zero UVM errors/fatals and zero APB assertion detections. The three compiles had
-zero errors/warnings; each simulation reported zero errors and one warning
-(`onerror` outside a macro). Full logs are retained without filtering.
+zero errors/warnings; each simulation reported zero errors and one counted warning,
+`vopt-10908` from `+acc`, plus a separate `onerror` warning about use outside a macro. Full logs are retained without filtering.
 
 Five additional reset-isolated simulations each detected exactly one intended
 assertion violation: `SETUP`, `WAIT_HOLD`, `ACCESS_ENTRY`, `ENABLE_SELECT`, and
