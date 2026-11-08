@@ -180,9 +180,11 @@ package apb_uvm_pkg;
 `endif
     function new(string n,uvm_component p);
       super.new(n,p);
-    endfunction
-    function void build_phase(uvm_phase phase);
 `ifdef APB_ENABLE_COVERGROUP
+      // Embedded covergroups must be constructed in the owning class's new.
+      // Top publishes this immutable contract configuration before run_test.
+      if(!uvm_config_db#(apb_config)::get(this,"","cfg",cfg))
+        `uvm_fatal("CFG","Coverage constructor needs contract config")
       traffic_cg=new(cfg.adapter==2 ? 2 : cfg.words()-1);
       reset_cg=new();
       if(cfg.adapter!=0) error_cg=new();
