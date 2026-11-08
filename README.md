@@ -1,5 +1,15 @@
 # AMBA Protocol Verification
 
+## Separate deterministic AXI4-Lite UVM/SVA milestone
+
+The [AXI4-Lite UVM guide](docs/DETERMINISTIC_AXIL_UVM.md) documents three
+locked-RTL targets: UVM initiator against slave, UVM responder against master,
+and the existing integration. Independent public-pin scoreboards, pre-edge
+response eligibility assertions, individually qualified negative controls and
+bounded fault detection run serially. Coverage and randomization are NOT RUN.
+The completed portable and APB UVM milestones below remain unchanged.
+
+
 ## Separate APB UVM milestone
 
 The [APB advanced-verification guide](docs/ADVANCED_APB.md) describes a reusable
