@@ -1,0 +1,251 @@
+{
+  "started_utc": "2026-11-08T09:07:05.241920+00:00",
+  "source_revision": "d826c798bc7c1d07204a2db414128f6f0774d0fe",
+  "source_dirty": true,
+  "scope": "diagnostic",
+  "mode": "deterministic",
+  "seed": 682016495,
+  "seed_hex": "0x28A6BEEF",
+  "fault_control": null,
+  "functional_coverage": "NOT RUN",
+  "constrained_randomization": "NOT RUN",
+  "original_advanced_environments": "NOT RUN",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "scripts/run_axil_uvm.py",
+    "--diagnostic-adapters",
+    "0",
+    "1",
+    "2",
+    "--output",
+    "C:/short/axil-uvm-dev1-20261108"
+  ],
+  "suites": [
+    {
+      "name": "adapter-0",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\axil-uvm-dev1-20261108\\adapter-0",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "+define+AXIL_ADAPTER=0",
+            "C:\\short\\amba-axil-uvm-20261108\\verification\\axil_uvm\\axil_bus.sv",
+            "C:\\short\\axil-uvm-dev1-20261108\\source\\rtl\\axi\\axi_lite_if.sv",
+            "C:\\short\\axil-uvm-dev1-20261108\\source\\rtl\\axi\\axi_lite_master.sv",
+            "C:\\short\\axil-uvm-dev1-20261108\\source\\rtl\\axi\\axi_lite_slave.sv",
+            "C:\\short\\axil-uvm-dev1-20261108\\source\\rtl\\memory\\sram.sv",
+            "C:\\short\\axil-uvm-dev1-20261108\\source\\rtl\\axi4_lite_memory_top.sv",
+            "C:\\short\\amba-axil-uvm-20261108\\verification\\axil_uvm\\axil_adapter.sv",
+            "C:\\short\\amba-axil-uvm-20261108\\verification\\axil_uvm\\axil_assertions.sv",
+            "C:\\short\\amba-axil-uvm-20261108\\verification\\axil_uvm\\axil_uvm_pkg.sv",
+            "C:\\short\\amba-axil-uvm-20261108\\verification\\axil_uvm\\axil_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\axil-uvm-dev1-20261108\\adapter-0",
+          "exit_code": 2,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "5c2bf6fd7ca56e682ea5e91181a5ef1a513f9b7b5100dc2a0a1dfdccf6919e6e"
+        }
+      ],
+      "reason": "PROCESS_OR_SIMULATOR_ERROR"
+    },
+    {
+      "name": "adapter-1",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\axil-uvm-dev1-20261108\\adapter-1",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "+define+AXIL_ADAPTER=1",
+            "C:\\short\\amba-axil-uvm-20261108\\verification\\axil_uvm\\axil_bus.sv",
+            "C:\\short\\axil-uvm-dev1-20261108\\source\\rtl\\axi\\axi_lite_if.sv",
+            "C:\\short\\axil-uvm-dev1-20261108\\source\\rtl\\axi\\axi_lite_master.sv",
+            "C:\\short\\axil-uvm-dev1-20261108\\source\\rtl\\axi\\axi_lite_slave.sv",
+            "C:\\short\\axil-uvm-dev1-20261108\\source\\rtl\\memory\\sram.sv",
+            "C:\\short\\axil-uvm-dev1-20261108\\source\\rtl\\axi4_lite_memory_top.sv",
+            "C:\\short\\amba-axil-uvm-20261108\\verification\\axil_uvm\\axil_adapter.sv",
+            "C:\\short\\amba-axil-uvm-20261108\\verification\\axil_uvm\\axil_assertions.sv",
+            "C:\\short\\amba-axil-uvm-20261108\\verification\\axil_uvm\\axil_uvm_pkg.sv",
+            "C:\\short\\amba-axil-uvm-20261108\\verification\\axil_uvm\\axil_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\axil-uvm-dev1-20261108\\adapter-1",
+          "exit_code": 2,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "38bd232ce0feefed99e6fcf434d870ee2ff7c03c121d3e295e4b26dc8fd1c228"
+        }
+      ],
+      "reason": "PROCESS_OR_SIMULATOR_ERROR"
+    },
+    {
+      "name": "adapter-2",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\axil-uvm-dev1-20261108\\adapter-2",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "+define+AXIL_ADAPTER=2",
+            "C:\\short\\amba-axil-uvm-20261108\\verification\\axil_uvm\\axil_bus.sv",
+            "C:\\short\\axil-uvm-dev1-20261108\\source\\rtl\\axi\\axi_lite_if.sv",
+            "C:\\short\\axil-uvm-dev1-20261108\\source\\rtl\\axi\\axi_lite_master.sv",
+            "C:\\short\\axil-uvm-dev1-20261108\\source\\rtl\\axi\\axi_lite_slave.sv",
+            "C:\\short\\axil-uvm-dev1-20261108\\source\\rtl\\memory\\sram.sv",
+            "C:\\short\\axil-uvm-dev1-20261108\\source\\rtl\\axi4_lite_memory_top.sv",
+            "C:\\short\\amba-axil-uvm-20261108\\verification\\axil_uvm\\axil_adapter.sv",
+            "C:\\short\\amba-axil-uvm-20261108\\verification\\axil_uvm\\axil_assertions.sv",
+            "C:\\short\\amba-axil-uvm-20261108\\verification\\axil_uvm\\axil_uvm_pkg.sv",
+            "C:\\short\\amba-axil-uvm-20261108\\verification\\axil_uvm\\axil_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\axil-uvm-dev1-20261108\\adapter-2",
+          "exit_code": 2,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "939b40625375b61b768b473bf26c6605be84ded4a58f82da4e5ed2641b1841c7"
+        }
+      ],
+      "reason": "PROCESS_OR_SIMULATOR_ERROR"
+    }
+  ],
+  "serial_execution": true,
+  "input_sha256": {
+    "verification/axil_uvm/axil_adapter.sv": "6e219ba466f4d38776d67e1cc2c010ec408bba3628a752388be3d10e2b45b3f8",
+    "verification/axil_uvm/axil_assertions.sv": "afab6005064abf8c9bf0bb28167cfb281eaf05c62bf85bca7ced408de4e53dc6",
+    "verification/axil_uvm/axil_assertion_control.sv": "c08d3f735052eaff60fe125445e354e1a874b30edbf1710430c2e7c867161152",
+    "verification/axil_uvm/axil_bus.sv": "eac177ff1a5bc178f6ac8c6d3a26e94145e0eed8b7c10f4c3b01994dfd96e3a4",
+    "verification/axil_uvm/axil_uvm_pkg.sv": "d5107c2e4c9dba4d56815bcd931bb201cbcf854a143abe0115c557b66b39bb53",
+    "verification/axil_uvm/axil_uvm_top.sv": "5453da2688910525ca2548f3fa1c752f5c934039815f275861553e7d11625037",
+    "verification/axil_uvm/sources.json": "4f93ed306c27e5a7176d3086d56ff662be3b94cc4ca32d64c8000dc11328413d",
+    "scripts/run_axil_uvm.py": "7a66362ebb6e50e51926fa4cd826bb9220d80af68367417166646bca8d1f7ce7",
+    "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93"
+  },
+  "version_command": {
+    "command": [
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+      "-version"
+    ],
+    "cwd": "C:\\short\\axil-uvm-dev1-20261108",
+    "exit_code": 0,
+    "timed_out": false,
+    "log": "version.log",
+    "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+  },
+  "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+  "source_lock": {
+    "owner": "M-Roohan-Khan-28",
+    "account_id": 270144410,
+    "repository": "AXI4-Lite-Memory-Interface",
+    "revision": "faf43379b24a524999eb2c8ad7e100cde35054c3",
+    "files": [
+      "rtl/axi/axi_lite_if.sv",
+      "rtl/axi/axi_lite_master.sv",
+      "rtl/axi/axi_lite_slave.sv",
+      "rtl/memory/sram.sv",
+      "rtl/axi4_lite_memory_top.sv"
+    ],
+    "configuration": {
+      "base_address": "0x10000000",
+      "sram_depth_words": 16,
+      "data_width": 32
+    },
+    "commands": [
+      {
+        "command": [
+          "git",
+          "clone",
+          "--quiet",
+          "--config",
+          "core.autocrlf=false",
+          "--config",
+          "core.longpaths=true",
+          "https://github.com/M-Roohan-Khan-28/AXI4-Lite-Memory-Interface.git",
+          "C:\\short\\axil-uvm-dev1-20261108\\source"
+        ],
+        "cwd": "C:\\short\\axil-uvm-dev1-20261108",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-0.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "command": [
+          "git",
+          "-C",
+          "C:\\short\\axil-uvm-dev1-20261108\\source",
+          "checkout",
+          "--quiet",
+          "--detach",
+          "faf43379b24a524999eb2c8ad7e100cde35054c3"
+        ],
+        "cwd": "C:\\short\\axil-uvm-dev1-20261108",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-1.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "observed_revision": "faf43379b24a524999eb2c8ad7e100cde35054c3",
+    "clean": true,
+    "rtl_sha256": {
+      "rtl/axi/axi_lite_if.sv": "463f775261a7489ae6b8a3481930b4be2aae290f7ef3a14f0892b1e59483a0d9",
+      "rtl/axi/axi_lite_master.sv": "3c27fd2b8b898523cb4784e00e9c0872486f33ee36ba96bddf499118bb74965f",
+      "rtl/axi/axi_lite_slave.sv": "ea2c83602f2056ba779e1270749181e0e5aeb415a5043b90e6ca29ee9906005e",
+      "rtl/memory/sram.sv": "d42677005b233ebffb7a25b2d138b83a4a3ec3fc7891c9657c82988306165f3a",
+      "rtl/axi4_lite_memory_top.sv": "48c4e15d35dbf0029af49184cf7e2c2655b5fe923862e750a8406ff4a5505323"
+    }
+  },
+  "required_substeps": 3,
+  "aggregate_exit_code": 1,
+  "milestone_pass": false,
+  "finished_utc": "2026-11-08T09:07:12.718597+00:00"
+}

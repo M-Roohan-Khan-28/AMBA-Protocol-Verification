@@ -1,0 +1,26 @@
+{
+  "control": "drop-response",
+  "source_revision": "3da848965b00f97d7488e4b98e362cf21f67644d",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\amba-axil-uvm-20261108\\scripts\\run_axil_uvm.py",
+    "--output",
+    "C:\\short\\axil-uvm-fault-drop-response-20261108",
+    "--diagnostic-adapters",
+    "1",
+    "--fault",
+    "drop-response"
+  ],
+  "wrapper_exit_code": 1,
+  "aggregate_exit_code": 1,
+  "expected_fault_detected": true,
+  "events": [
+    {
+      "suite": "adapter-1",
+      "expected_fatal": "PROGRESS",
+      "observed": true,
+      "simulator_exit": 0
+    }
+  ],
+  "console_sha256": "5042e2b3c91ff8cfda5c73801a8832a981baaa4560bc9c130363960468e4215e"
+}

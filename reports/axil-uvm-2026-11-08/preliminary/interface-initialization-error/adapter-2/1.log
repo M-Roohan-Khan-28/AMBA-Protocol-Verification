@@ -1,0 +1,23 @@
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+Start time: 14:08:04 on Nov 08,2026
+vlog -sv -work work -L C:\MXR\Quartus\25.1\questa_fse\uvm-1.2 "+incdir+C:\MXR\Quartus\25.1\questa_fse\verilog_src\uvm-1.2\src" "+define+AXIL_ADAPTER=2" C:\short\amba-axil-uvm-20261108\verification\axil_uvm\axil_bus.sv C:\short\axil-uvm-dev2-20261108\source\rtl\axi\axi_lite_if.sv C:\short\axil-uvm-dev2-20261108\source\rtl\axi\axi_lite_master.sv C:\short\axil-uvm-dev2-20261108\source\rtl\axi\axi_lite_slave.sv C:\short\axil-uvm-dev2-20261108\source\rtl\memory\sram.sv C:\short\axil-uvm-dev2-20261108\source\rtl\axi4_lite_memory_top.sv C:\short\amba-axil-uvm-20261108\verification\axil_uvm\axil_adapter.sv C:\short\amba-axil-uvm-20261108\verification\axil_uvm\axil_assertions.sv C:\short\amba-axil-uvm-20261108\verification\axil_uvm\axil_uvm_pkg.sv C:\short\amba-axil-uvm-20261108\verification\axil_uvm\axil_uvm_top.sv 
+** Note: (vlog-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+-- Compiling interface axil_bus
+-- Compiling interface axi_lite_if
+-- Compiling module axi_lite_master
+-- Compiling module axi_lite_slave
+-- Compiling module sram
+-- Compiling module axi4_lite_memory_top
+-- Compiling module axil_adapter
+-- Compiling module axil_assertions
+-- Compiling package axil_uvm_pkg
+-- Importing package C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.uvm_pkg (uvm-1.2 Built-in)
+-- Compiling module axil_uvm_top
+-- Importing package axil_uvm_pkg
+** Warning: C:\short\amba-axil-uvm-20261108\verification\axil_uvm\axil_uvm_top.sv(9): (vlog-2244) Variable 'cfg' is implicitly static. You must either explicitly declare it as static or automatic
+or remove the initialization in the declaration of variable.
+
+Top level modules:
+	axil_uvm_top
+End time: 14:08:05 on Nov 08,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1

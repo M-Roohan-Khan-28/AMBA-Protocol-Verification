@@ -1,0 +1,8 @@
+adapter-1 FAIL PROCESS_OR_SIMULATOR_ERROR 
+{
+  "source_revision": "3da848965b00f97d7488e4b98e362cf21f67644d",
+  "source_dirty": false,
+  "scope": "diagnostic",
+  "aggregate_exit_code": 1,
+  "milestone_pass": false
+}

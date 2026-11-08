@@ -8,6 +8,8 @@ and the existing integration. Independent public-pin scoreboards, pre-edge
 response eligibility assertions, individually qualified negative controls and
 bounded fault detection run serially. Coverage and randomization are NOT RUN.
 The completed portable and APB UVM milestones below remain unchanged.
+The [fresh-clone results and raw evidence](reports/axil-uvm-2026-11-08/SUMMARY.md)
+record 17 required substeps PASS and five deliberate fault detections.
 
 
 ## Separate APB UVM milestone

@@ -1,0 +1,74 @@
+Reading pref.tcl
+
+# 2025.2
+
+# ** Note: (vsim-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# vsim -c -onfinish stop -voptargs="+acc" -sv_seed 682016495 -L C:\MXR\Quartus\25.1\questa_fse\uvm-1.2 work.axil_uvm_top -do "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /axil_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0" 
+# Start time: 14:07:54 on Nov 08,2026
+# Loading C:/Users/CG/AppData/Local/Temp\CG@DESKTOP-9KOU2NO_dpi_36292\win64_gcc-7.4.0\export_tramp.dll
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vopt-143) Recognized 1 FSM in module "axi_lite_master(fast)".
+# ** Warning: C:\short\amba-axil-uvm-20261108\verification\axil_uvm\axil_uvm_top.sv(9): (vopt-2244) Variable 'cfg' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.axil_bus(fast)
+# Loading C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.uvm_pkg(fast)
+# Loading work.axil_uvm_pkg(fast)
+# Loading C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.questa_uvm_pkg(fast)
+# Loading work.axil_uvm_top(fast)
+# Loading work.axil_bus(fast__2)
+# Loading work.axil_adapter(fast)
+# Loading work.axi_lite_if(fast__1)
+# Loading work.axi_lite_master(fast)
+# Loading work.axil_assertions(fast)
+# ** Error (suppressible): (vsim-3839) Variable '/axil_uvm_top/bus/response_data', driven via a port connection, is multiply driven. See C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_adapter.sv(19).
+#    Time: 0 ps  Iteration: 0  Instance: /axil_uvm_top/bus File: C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_bus.sv Line: 12
+# ** Error (suppressible): (vsim-3839) Variable '/axil_uvm_top/bus/response_error', driven via a port connection, is multiply driven. See C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_adapter.sv(19).
+#    Time: 0 ps  Iteration: 0  Instance: /axil_uvm_top/bus File: C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_bus.sv Line: 11
+# ** Error (suppressible): (vsim-3839) Variable '/axil_uvm_top/bus/response_valid', driven via a port connection, is multiply driven. See C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_adapter.sv(19).
+#    Time: 0 ps  Iteration: 0  Instance: /axil_uvm_top/bus File: C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_bus.sv Line: 11
+# ** Error (suppressible): (vsim-3839) Variable '/axil_uvm_top/bus/req_ready', driven via a port connection, is multiply driven. See C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_adapter.sv(19).
+#    Time: 0 ps  Iteration: 0  Instance: /axil_uvm_top/bus File: C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_bus.sv Line: 11
+# ** Error (suppressible): (vsim-12003) Variable '/axil_uvm_top/bus/rready' written by continuous and procedural assignments. See C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_bus.sv(10).
+#    Time: 0 ps  Iteration: 0  Region: /axil_uvm_top/adapter/master_target File: C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_adapter.sv Line: 24
+# ** Error (suppressible): (vsim-12003) Variable '/axil_uvm_top/bus/arvalid' written by continuous and procedural assignments. See C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_bus.sv(10).
+#    Time: 0 ps  Iteration: 0  Region: /axil_uvm_top/adapter/master_target File: C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_adapter.sv Line: 24
+# ** Error (suppressible): (vsim-12003) Variable '/axil_uvm_top/bus/arprot' written by continuous and procedural assignments. See C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_bus.sv(6).
+#    Time: 0 ps  Iteration: 0  Region: /axil_uvm_top/adapter/master_target File: C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_adapter.sv Line: 24
+# ** Error (suppressible): (vsim-12003) Variable '/axil_uvm_top/bus/araddr' written by continuous and procedural assignments. See C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_bus.sv(5).
+#    Time: 0 ps  Iteration: 0  Region: /axil_uvm_top/adapter/master_target File: C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_adapter.sv Line: 24
+# ** Error (suppressible): (vsim-12003) Variable '/axil_uvm_top/bus/bready' written by continuous and procedural assignments. See C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_bus.sv(9).
+#    Time: 0 ps  Iteration: 0  Region: /axil_uvm_top/adapter/master_target File: C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_adapter.sv Line: 23
+# ** Error (suppressible): (vsim-12003) Variable '/axil_uvm_top/bus/wvalid' written by continuous and procedural assignments. See C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_bus.sv(9).
+#    Time: 0 ps  Iteration: 0  Region: /axil_uvm_top/adapter/master_target File: C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_adapter.sv Line: 23
+# ** Error (suppressible): (vsim-12003) Variable '/axil_uvm_top/bus/wstrb' written by continuous and procedural assignments. See C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_bus.sv(7).
+#    Time: 0 ps  Iteration: 0  Region: /axil_uvm_top/adapter/master_target File: C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_adapter.sv Line: 23
+# ** Error (suppressible): (vsim-12003) Variable '/axil_uvm_top/bus/wdata' written by continuous and procedural assignments. See C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_bus.sv(5).
+#    Time: 0 ps  Iteration: 0  Region: /axil_uvm_top/adapter/master_target File: C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_adapter.sv Line: 23
+# ** Error (suppressible): (vsim-12003) Variable '/axil_uvm_top/bus/awvalid' written by continuous and procedural assignments. See C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_bus.sv(9).
+#    Time: 0 ps  Iteration: 0  Region: /axil_uvm_top/adapter/master_target File: C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_adapter.sv Line: 22
+# ** Error (suppressible): (vsim-12003) Variable '/axil_uvm_top/bus/awprot' written by continuous and procedural assignments. See C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_bus.sv(6).
+#    Time: 0 ps  Iteration: 0  Region: /axil_uvm_top/adapter/master_target File: C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_adapter.sv Line: 22
+# ** Error (suppressible): (vsim-12003) Variable '/axil_uvm_top/bus/awaddr' written by continuous and procedural assignments. See C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_bus.sv(5).
+#    Time: 0 ps  Iteration: 0  Region: /axil_uvm_top/adapter/master_target File: C:/short/amba-axil-uvm-20261108/verification/axil_uvm/axil_adapter.sv Line: 22
+# Error loading design
+Error loading design
+# End time: 14:08:03 on Nov 08,2026, Elapsed time: 0:00:09
+# Errors: 15, Warnings: 2

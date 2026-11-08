@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "origin": "simulator",
+  "source_filename": "capture.vcd",
+  "source_sha256": "ee7daadb8653b8ea77d2b28d833f67a63a5831c8e7ee7b8bec2c625727bd9c0f",
+  "timescale": "1ps",
+  "start_tick": 40000,
+  "end_tick": 160000,
+  "source_final_tick": 22310000,
+  "signals": [
+    {
+      "name": "axil_uvm_top.bus.clk",
+      "code": "!",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "axil_uvm_top.bus.reset_n",
+      "code": "\"",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axil_uvm_top.bus.awvalid",
+      "code": ",",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axil_uvm_top.bus.awready",
+      "code": "-",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axil_uvm_top.bus.awaddr",
+      "code": "#",
+      "width": 32,
+      "kind": "reg",
+      "bit_range": "[31:0]"
+    },
+    {
+      "name": "axil_uvm_top.bus.wvalid",
+      "code": ".",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axil_uvm_top.bus.wready",
+      "code": "/",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axil_uvm_top.bus.wdata",
+      "code": "$",
+      "width": 32,
+      "kind": "reg",
+      "bit_range": "[31:0]"
+    },
+    {
+      "name": "axil_uvm_top.bus.wstrb",
+      "code": ")",
+      "width": 4,
+      "kind": "reg",
+      "bit_range": "[3:0]"
+    },
+    {
+      "name": "axil_uvm_top.bus.bvalid",
+      "code": "0",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axil_uvm_top.bus.bready",
+      "code": "1",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axil_uvm_top.bus.bresp",
+      "code": "*",
+      "width": 2,
+      "kind": "reg",
+      "bit_range": "[1:0]"
+    }
+  ],
+  "same_tick_collapses": 0,
+  "functional_result": "NOT_ASSESSED_BY_RENDERER",
+  "source_relative_path": "../published-clean/adapter-0/capture.vcd",
+  "source_revision": "3da848965b00f97d7488e4b98e362cf21f67644d",
+  "source_representation": "original simulator capture bytes; committed without conversion",
+  "captured_sha256": "ee7daadb8653b8ea77d2b28d833f67a63a5831c8e7ee7b8bec2c625727bd9c0f",
+  "crlf_count": 12437,
+  "lf_count": 12437
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "action": "owner verification before first source push",
+    "result": "BLOCKED",
+    "reason": "api.github.com DNS lookup failed (getaddrinfo 11001); push was not attempted"
+  },
+  {
+    "action": "subsequent source clone",
+    "result": "FAILED",
+    "reason": "Remote branch did not exist because the source push had not occurred"
+  }
+]
