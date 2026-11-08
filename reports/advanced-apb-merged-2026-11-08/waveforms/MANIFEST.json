@@ -1,0 +1,468 @@
+{
+  "source_revision": "8b9e32171408eaa71fc8e5008128c8b0a8ee6709",
+  "renderer_revision": "ff158f4f7ed844f2a7ab9b3e19423ebc50be8f60",
+  "renderer_sha256": "0d263e9357c78602ab617281584d3b4ca825f039332abeb889de6775b35192b8",
+  "byte_policy": "Exact simulator capture bytes; Git -text; no newline conversion",
+  "figures": [
+    {
+      "figure": "adapter-0-alias.svg",
+      "metadata": "adapter-0-alias.json",
+      "schema_version": 1,
+      "origin": "simulator",
+      "source_filename": "capture.vcd",
+      "source_sha256": "50af39849f8cc9ea242dcd3fa4834a9a3d70cba7790ee16a5a109bffc6d7ba46",
+      "timescale": "1ps",
+      "start_tick": 11560000,
+      "end_tick": 11740000,
+      "source_final_tick": 25700000,
+      "signals": [
+        {
+          "name": "apb_uvm_top.bus.clk",
+          "code": "!",
+          "width": 1,
+          "kind": "wire",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.reset_n",
+          "code": "\"",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.select",
+          "code": "#",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.enable",
+          "code": "$",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.write",
+          "code": "%",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.addr",
+          "code": "&",
+          "width": 8,
+          "kind": "reg",
+          "bit_range": "[7:0]"
+        },
+        {
+          "name": "apb_uvm_top.bus.wdata",
+          "code": "'",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "apb_uvm_top.bus.ready",
+          "code": ")",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.error",
+          "code": "*",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.rdata",
+          "code": "(",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        }
+      ],
+      "same_tick_collapses": 1531,
+      "functional_result": "NOT_ASSESSED_BY_RENDERER",
+      "source_representation": "original simulator capture bytes, committed without conversion",
+      "source_relative_path": "../run/adapter-0/capture.vcd",
+      "source_revision": "8b9e32171408eaa71fc8e5008128c8b0a8ee6709",
+      "crlf_count": 18594,
+      "lf_count": 18594,
+      "captured_sha256": "50af39849f8cc9ea242dcd3fa4834a9a3d70cba7790ee16a5a109bffc6d7ba46"
+    },
+    {
+      "figure": "adapter-0-reset.svg",
+      "metadata": "adapter-0-reset.json",
+      "schema_version": 1,
+      "origin": "simulator",
+      "source_filename": "capture.vcd",
+      "source_sha256": "50af39849f8cc9ea242dcd3fa4834a9a3d70cba7790ee16a5a109bffc6d7ba46",
+      "timescale": "1ps",
+      "start_tick": 23042000,
+      "end_tick": 23222000,
+      "source_final_tick": 25700000,
+      "signals": [
+        {
+          "name": "apb_uvm_top.bus.clk",
+          "code": "!",
+          "width": 1,
+          "kind": "wire",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.reset_n",
+          "code": "\"",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.select",
+          "code": "#",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.enable",
+          "code": "$",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.write",
+          "code": "%",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.addr",
+          "code": "&",
+          "width": 8,
+          "kind": "reg",
+          "bit_range": "[7:0]"
+        },
+        {
+          "name": "apb_uvm_top.bus.wdata",
+          "code": "'",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "apb_uvm_top.bus.ready",
+          "code": ")",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.error",
+          "code": "*",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.rdata",
+          "code": "(",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        }
+      ],
+      "same_tick_collapses": 1531,
+      "functional_result": "NOT_ASSESSED_BY_RENDERER",
+      "source_representation": "original simulator capture bytes, committed without conversion",
+      "source_relative_path": "../run/adapter-0/capture.vcd",
+      "source_revision": "8b9e32171408eaa71fc8e5008128c8b0a8ee6709",
+      "crlf_count": 18594,
+      "lf_count": 18594,
+      "captured_sha256": "50af39849f8cc9ea242dcd3fa4834a9a3d70cba7790ee16a5a109bffc6d7ba46"
+    },
+    {
+      "figure": "adapter-1-error.svg",
+      "metadata": "adapter-1-error.json",
+      "schema_version": 1,
+      "origin": "simulator",
+      "source_filename": "capture.vcd",
+      "source_sha256": "0ae9c9ccc71bbd119555755c53dc4be70615a82c3289ae8eb8e851de2ff4bcd9",
+      "timescale": "1ps",
+      "start_tick": 770000,
+      "end_tick": 950000,
+      "source_final_tick": 11300000,
+      "signals": [
+        {
+          "name": "apb_uvm_top.bus.clk",
+          "code": "!",
+          "width": 1,
+          "kind": "wire",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.reset_n",
+          "code": "\"",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.select",
+          "code": "#",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.enable",
+          "code": "$",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.write",
+          "code": "%",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.addr",
+          "code": "&",
+          "width": 8,
+          "kind": "reg",
+          "bit_range": "[7:0]"
+        },
+        {
+          "name": "apb_uvm_top.bus.wdata",
+          "code": "'",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "apb_uvm_top.bus.ready",
+          "code": ")",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.error",
+          "code": "*",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.rdata",
+          "code": "(",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        }
+      ],
+      "same_tick_collapses": 558,
+      "functional_result": "NOT_ASSESSED_BY_RENDERER",
+      "source_representation": "original simulator capture bytes, committed without conversion",
+      "source_relative_path": "../run/adapter-1/capture.vcd",
+      "source_revision": "8b9e32171408eaa71fc8e5008128c8b0a8ee6709",
+      "crlf_count": 10318,
+      "lf_count": 10318,
+      "captured_sha256": "0ae9c9ccc71bbd119555755c53dc4be70615a82c3289ae8eb8e851de2ff4bcd9"
+    },
+    {
+      "figure": "adapter-2-wait.svg",
+      "metadata": "adapter-2-wait.json",
+      "schema_version": 1,
+      "origin": "simulator",
+      "source_filename": "capture.vcd",
+      "source_sha256": "2daee2951064bf2c84c39b637c35e1a12b6791a3ed0be02248809793c82923b3",
+      "timescale": "1ps",
+      "start_tick": 10000,
+      "end_tick": 190000,
+      "source_final_tick": 22300000,
+      "signals": [
+        {
+          "name": "apb_uvm_top.bus.clk",
+          "code": "!",
+          "width": 1,
+          "kind": "wire",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.reset_n",
+          "code": "\"",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.select",
+          "code": "#",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.enable",
+          "code": "$",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.write",
+          "code": "%",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.addr",
+          "code": "&",
+          "width": 8,
+          "kind": "reg",
+          "bit_range": "[7:0]"
+        },
+        {
+          "name": "apb_uvm_top.bus.wdata",
+          "code": "'",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "apb_uvm_top.bus.ready",
+          "code": ")",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.error",
+          "code": "*",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.rdata",
+          "code": "(",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        }
+      ],
+      "same_tick_collapses": 560,
+      "functional_result": "NOT_ASSESSED_BY_RENDERER",
+      "source_representation": "original simulator capture bytes, committed without conversion",
+      "source_relative_path": "../run/adapter-2/capture.vcd",
+      "source_revision": "8b9e32171408eaa71fc8e5008128c8b0a8ee6709",
+      "crlf_count": 14668,
+      "lf_count": 14668,
+      "captured_sha256": "2daee2951064bf2c84c39b637c35e1a12b6791a3ed0be02248809793c82923b3"
+    },
+    {
+      "figure": "adapter-2-reset.svg",
+      "metadata": "adapter-2-reset.json",
+      "schema_version": 1,
+      "origin": "simulator",
+      "source_filename": "capture.vcd",
+      "source_sha256": "2daee2951064bf2c84c39b637c35e1a12b6791a3ed0be02248809793c82923b3",
+      "timescale": "1ps",
+      "start_tick": 21922000,
+      "end_tick": 22102000,
+      "source_final_tick": 22300000,
+      "signals": [
+        {
+          "name": "apb_uvm_top.bus.clk",
+          "code": "!",
+          "width": 1,
+          "kind": "wire",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.reset_n",
+          "code": "\"",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.select",
+          "code": "#",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.enable",
+          "code": "$",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.write",
+          "code": "%",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.addr",
+          "code": "&",
+          "width": 8,
+          "kind": "reg",
+          "bit_range": "[7:0]"
+        },
+        {
+          "name": "apb_uvm_top.bus.wdata",
+          "code": "'",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "apb_uvm_top.bus.ready",
+          "code": ")",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.error",
+          "code": "*",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "apb_uvm_top.bus.rdata",
+          "code": "(",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        }
+      ],
+      "same_tick_collapses": 560,
+      "functional_result": "NOT_ASSESSED_BY_RENDERER",
+      "source_representation": "original simulator capture bytes, committed without conversion",
+      "source_relative_path": "../run/adapter-2/capture.vcd",
+      "source_revision": "8b9e32171408eaa71fc8e5008128c8b0a8ee6709",
+      "crlf_count": 14668,
+      "lf_count": 14668,
+      "captured_sha256": "2daee2951064bf2c84c39b637c35e1a12b6791a3ed0be02248809793c82923b3"
+    }
+  ]
+}

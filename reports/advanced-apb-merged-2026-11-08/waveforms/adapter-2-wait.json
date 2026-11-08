@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "origin": "simulator",
+  "source_filename": "capture.vcd",
+  "source_sha256": "2daee2951064bf2c84c39b637c35e1a12b6791a3ed0be02248809793c82923b3",
+  "timescale": "1ps",
+  "start_tick": 10000,
+  "end_tick": 190000,
+  "source_final_tick": 22300000,
+  "signals": [
+    {
+      "name": "apb_uvm_top.bus.clk",
+      "code": "!",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "apb_uvm_top.bus.reset_n",
+      "code": "\"",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "apb_uvm_top.bus.select",
+      "code": "#",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "apb_uvm_top.bus.enable",
+      "code": "$",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "apb_uvm_top.bus.write",
+      "code": "%",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "apb_uvm_top.bus.addr",
+      "code": "&",
+      "width": 8,
+      "kind": "reg",
+      "bit_range": "[7:0]"
+    },
+    {
+      "name": "apb_uvm_top.bus.wdata",
+      "code": "'",
+      "width": 32,
+      "kind": "reg",
+      "bit_range": "[31:0]"
+    },
+    {
+      "name": "apb_uvm_top.bus.ready",
+      "code": ")",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "apb_uvm_top.bus.error",
+      "code": "*",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "apb_uvm_top.bus.rdata",
+      "code": "(",
+      "width": 32,
+      "kind": "reg",
+      "bit_range": "[31:0]"
+    }
+  ],
+  "same_tick_collapses": 560,
+  "functional_result": "NOT_ASSESSED_BY_RENDERER",
+  "source_representation": "original simulator capture bytes, committed without conversion",
+  "source_relative_path": "../run/adapter-2/capture.vcd",
+  "source_revision": "8b9e32171408eaa71fc8e5008128c8b0a8ee6709",
+  "crlf_count": 14668,
+  "lf_count": 14668,
+  "captured_sha256": "2daee2951064bf2c84c39b637c35e1a12b6791a3ed0be02248809793c82923b3"
+}

@@ -1,0 +1,53 @@
+{
+  "owner": "M-Roohan-Khan-28",
+  "account_id": 270144410,
+  "pull_requests": [
+    {
+      "repository": "APB-Modports-Verification",
+      "pr": 3,
+      "url": "https://github.com/M-Roohan-Khan-28/APB-Modports-Verification/pull/3",
+      "reviewed_head": "e3edfc755aab9937414b023a31cb3095cf01c3cb",
+      "base": "7fd99b382e13faa7a839610b63063a72748f4bf3",
+      "merge_commit": "6f56a80e4a2cbe4cd7c6095ac5e0c8f24da87bdb",
+      "merged_at": "2026-11-08T03:36:38Z",
+      "method": "merge",
+      "unresolved_threads": 0,
+      "check_runs": [],
+      "required_checks": [],
+      "required_contexts": []
+    },
+    {
+      "repository": "APB-Interface-Verification",
+      "pr": 4,
+      "url": "https://github.com/M-Roohan-Khan-28/APB-Interface-Verification/pull/4",
+      "reviewed_head": "d0134725a9528887008c9080d249bac564e573b8",
+      "base": "e30fd5242a1e84be92107d6be75652220748a8a7",
+      "merge_commit": "8d668e024bc2156d1399e1f9fb9379f2bd4c499d",
+      "merged_at": "2026-11-08T03:36:16Z",
+      "method": "merge",
+      "unresolved_threads": 0,
+      "check_runs": [],
+      "required_checks": [],
+      "required_contexts": []
+    },
+    {
+      "repository": "AMBA-Protocol-Verification",
+      "pr": 8,
+      "url": "https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/pull/8",
+      "reviewed_head": "dac33c3292db6e0db7f0134295bb91b42fc2b380",
+      "base": "73e948a3f9f200b590421afe5893d055a000d33b",
+      "merge_commit": "8b9e32171408eaa71fc8e5008128c8b0a8ee6709",
+      "merged_at": "2026-11-08T03:35:56Z",
+      "method": "merge",
+      "unresolved_threads": 0,
+      "check_runs": [],
+      "required_checks": [],
+      "required_contexts": []
+    }
+  ],
+  "warning_correction": {
+    "prior_head": "2a337d28e718f274d44b0eb7cad80efd745a1331",
+    "reviewed_head": "dac33c3292db6e0db7f0134295bb91b42fc2b380",
+    "only_file": "reports/advanced-apb-2026-11-08/SUMMARY.md"
+  }
+}
