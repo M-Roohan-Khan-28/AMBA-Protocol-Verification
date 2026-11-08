@@ -30,7 +30,7 @@ def run(command, cwd, timeout, log):
         data, code, timed_out = str(error).encode(), 127, False
     Path(log).write_bytes(data)
     text = data.decode('utf-8', errors='replace')
-    record = dict(command=command, exit_code=code, timed_out=timed_out,
+    record = dict(command=command, cwd=str(cwd), exit_code=code, timed_out=timed_out,
                   log=Path(log).name, sha256=hashlib.sha256(data).hexdigest())
     return record, text
 

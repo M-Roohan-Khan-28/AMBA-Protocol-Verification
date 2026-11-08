@@ -63,7 +63,7 @@ def run_command(command, cwd, timeout, logfile):
             os.killpg(proc.pid, signal.SIGKILL)
         output, _ = proc.communicate(timeout=15)
     Path(logfile).write_text(output, encoding="utf-8")
-    return {"command": command, "exit_code": proc.returncode, "timed_out": timed_out,
+    return {"command": command, "cwd": str(cwd), "exit_code": proc.returncode, "timed_out": timed_out,
             "log": str(Path(logfile).name), "output": output}
 
 
@@ -98,6 +98,10 @@ def main(argv=None):
     report = {"schema_version": 1, "started_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
               "purpose": "TOOL_FEATURE_PROBE_ONLY_NOT_PROJECT_REGRESSION", "tools": executables,
               "seed": "0x28a6beef", "features": records}
+    repo=Path(__file__).resolve().parents[2]
+    report["source_revision"]=subprocess.check_output(["git","-C",str(repo),"rev-parse","HEAD"],text=True).strip()
+    report["source_dirty"]=bool(subprocess.check_output(["git","-C",str(repo),"status","--porcelain"],text=True).strip())
+    report["runner_sha256"]=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
     missing = [name for name, path in executables.items() if not path]
     sources = Path(__file__).resolve().parent / "probes"
     version_ok = False
