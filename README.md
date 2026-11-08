@@ -8,6 +8,10 @@ independent checking, concurrent assertions, deterministic tests and a separate
 coverage-enabled mode. This work does not change the completed portable release
 below. Functional coverage and constrained randomization require separately
 qualified simulator features; a deterministic UVM pass is not coverage closure.
+The [new raw evidence and summary](reports/advanced-apb-2026-11-08/SUMMARY.md)
+record three UVM adapter passes, five expected assertion detections and one
+legal assertion control from a clean detached clone. Covergroups and the two
+original advanced ALU/APB environments remain **NOT RUN** for the licence blocker.
 
 ## Latest merged-main technical release — 8 November 2026
 

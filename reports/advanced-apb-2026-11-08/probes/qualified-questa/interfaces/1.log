@@ -1,0 +1,12 @@
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+Start time: 06:35:10 on Nov 08,2026
+vlog -sv -work work C:\short\amba-advanced-20261108\verification\capabilities\probes\interfaces.sv 
+** Note: (vlog-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+-- Compiling interface probe_bus
+-- Compiling module probe_interface_dut
+-- Compiling module probe_interfaces
+
+Top level modules:
+	probe_interfaces
+End time: 06:35:10 on Nov 08,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

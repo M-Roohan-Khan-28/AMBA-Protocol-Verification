@@ -1,0 +1,19 @@
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+Start time: 06:36:01 on Nov 08,2026
+vlog -sv -work work -L C:\MXR\Quartus\25.1\questa_fse\uvm-1.2 "+incdir+C:\MXR\Quartus\25.1\questa_fse\verilog_src\uvm-1.2\src" "+define+APB_ADAPTER=1" "+define+APB_MODPORT_DUT" C:\short\amba-advanced-20261108\verification\apb_uvm\apb_bus.sv C:\short\apb-faults-eab4791\sources\APB-Modports-Verification\rtl\design.sv C:\short\amba-advanced-20261108\checkers\apb_ram_responder.sv C:\short\amba-advanced-20261108\verification\apb_uvm\apb_adapter.sv C:\short\amba-advanced-20261108\verification\apb_uvm\apb_assertions.sv C:\short\amba-advanced-20261108\verification\apb_uvm\apb_uvm_pkg.sv C:\short\amba-advanced-20261108\verification\apb_uvm\apb_uvm_top.sv 
+** Note: (vlog-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+-- Compiling interface apb_bus
+-- Compiling interface apb_if
+-- Compiling module apb_slave_ram
+-- Compiling module apb_ram_responder
+-- Compiling module apb_adapter
+-- Compiling module apb_assertions
+-- Compiling package apb_uvm_pkg
+-- Importing package C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.uvm_pkg (uvm-1.2 Built-in)
+-- Compiling module apb_uvm_top
+-- Importing package apb_uvm_pkg
+
+Top level modules:
+	apb_uvm_top
+End time: 06:36:02 on Nov 08,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

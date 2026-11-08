@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-11-08T01:18:54.084222+00:00",
+  "purpose": "TOOL_FEATURE_PROBE_ONLY_NOT_PROJECT_REGRESSION",
+  "tools": {
+    "vlib": "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vlib.exe",
+    "vlog": "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vlog.exe",
+    "vsim": "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe"
+  },
+  "seed": "0x28a6beef",
+  "features": [
+    {
+      "feature": "basic",
+      "source": "basic.sv",
+      "commands": [
+        {
+          "command": [
+            "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vlib.exe",
+            "work"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log"
+        },
+        {
+          "command": [
+            "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\technical-completion-2026-11-07\\Roohan-Technical-Completion-Pack\\probes\\basic.sv"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log"
+        },
+        {
+          "command": [
+            "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "work.probe_basic",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log"
+        }
+      ],
+      "source_sha256": "55241be43f19eeaf10c3324f73e4a7d4558a506eae51a9025f5f4a9801f7f0db",
+      "status": "PASS",
+      "reason": "EXECUTED"
+    },
+    {
+      "feature": "interfaces",
+      "source": "interfaces.sv",
+      "commands": [
+        {
+          "command": [
+            "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vlib.exe",
+            "work"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log"
+        },
+        {
+          "command": [
+            "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\technical-completion-2026-11-07\\Roohan-Technical-Completion-Pack\\probes\\interfaces.sv"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log"
+        },
+        {
+          "command": [
+            "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "work.probe_interfaces",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log"
+        }
+      ],
+      "source_sha256": "6eab1b3b42eff27cbafec88b8643c0e79aea6fb1b5efa9e2966889eeaeaa58fa",
+      "status": "PASS",
+      "reason": "EXECUTED"
+    },
+    {
+      "feature": "classes_random",
+      "source": "classes_random.sv",
+      "commands": [
+        {
+          "command": [
+            "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vlib.exe",
+            "work"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log"
+        },
+        {
+          "command": [
+            "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\technical-completion-2026-11-07\\Roohan-Technical-Completion-Pack\\probes\\classes_random.sv"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log"
+        },
+        {
+          "command": [
+            "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "work.probe_classes_random",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log"
+        }
+      ],
+      "source_sha256": "65c59b8734235ef1c3dba4d907cd1f813b39c66314931a3e6a847fd53024dfe9",
+      "status": "BLOCKED",
+      "reason": "SIMULATOR_LICENCE_OR_FEATURE"
+    },
+    {
+      "feature": "sva",
+      "source": "sva.sv",
+      "commands": [
+        {
+          "command": [
+            "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vlib.exe",
+            "work"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log"
+        },
+        {
+          "command": [
+            "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\technical-completion-2026-11-07\\Roohan-Technical-Completion-Pack\\probes\\sva.sv"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log"
+        },
+        {
+          "command": [
+            "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "work.probe_sva",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log"
+        }
+      ],
+      "source_sha256": "4bc557e202e2e65f1007db508ad8a2ecf76e6c0fd4dd3388b910aed1fdfdfb64",
+      "status": "FAIL",
+      "reason": "NONZERO_EXIT_OR_SIMULATOR_ERROR"
+    },
+    {
+      "feature": "coverage",
+      "source": "coverage.sv",
+      "commands": [
+        {
+          "command": [
+            "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vlib.exe",
+            "work"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log"
+        },
+        {
+          "command": [
+            "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\technical-completion-2026-11-07\\Roohan-Technical-Completion-Pack\\probes\\coverage.sv"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log"
+        },
+        {
+          "command": [
+            "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-coverage",
+            "work.probe_coverage",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "exit_code": 12,
+          "timed_out": false,
+          "log": "2.log"
+        }
+      ],
+      "source_sha256": "ecea4032700ad757468c2bcd1f8da7bb95db53ede360fd4a0c79926f0ae097d3",
+      "status": "BLOCKED",
+      "reason": "SIMULATOR_LICENCE_OR_FEATURE"
+    },
+    {
+      "feature": "uvm",
+      "source": "uvm.sv",
+      "commands": [],
+      "source_sha256": "a597b01c22f64762b7cfadfc78204ef25117afef8acd5ea221f47254716bacd3",
+      "status": "BLOCKED",
+      "reason": "UVM_LIBRARY_AND_MATCHING_HEADERS_NOT_CONFIGURED"
+    }
+  ],
+  "version_probe": {
+    "command": [
+      "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+      "-version"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "log": "version.log"
+  },
+  "version_text": "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020\n\n",
+  "version_status": "PASS",
+  "aggregate_status": "INCOMPLETE"
+}

@@ -7,6 +7,9 @@ original repositories. The two adapters use the full SHA locks in
 [`sources.json`](../verification/apb_uvm/sources.json), with fresh detached
 source clones and expected/observed revision checks.
 
+[Actual execution evidence and limitations](../reports/advanced-apb-2026-11-08/SUMMARY.md)
+are recorded separately from the source implementation.
+
 ## Architecture and supported contracts
 
 `apb_item` / sequencer -> driver -> generic `apb_bus` -> native DUT adapter.

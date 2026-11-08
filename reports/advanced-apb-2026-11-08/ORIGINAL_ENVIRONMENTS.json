@@ -1,0 +1,22 @@
+{
+  "status": "NOT RUN",
+  "reason": "Questa 2025.2 and ModelSim 2020.1 probes fail svverification checkout for required randomization/covergroups; original benches were not stripped or rerun unsupported",
+  "environments": [
+    {
+      "repository": "M-Roohan-Khan-28/ALU-RTL-Verification",
+      "revision": "d87cb160e86f50f74b2836d247d3384e0c03fdba",
+      "entrypoint": "scripts/run_sim.ps1",
+      "bench": "tb/tb_top.sv",
+      "requires": "randomize()"
+    },
+    {
+      "repository": "M-Roohan-Khan-28/APB-Interface-Verification",
+      "revision": "e30fd5242a1e84be92107d6be75652220748a8a7",
+      "entrypoint": "scripts/run_sim.ps1",
+      "bench": "tb/tb_top.sv",
+      "requires": "covergroups and original class environment"
+    }
+  ],
+  "evidence": "probes/qualified-questa/feature-results.json",
+  "functional_coverage_report": "NOT RUN - covergroup simulation cannot load; no UCDB or exported coverage report exists"
+}

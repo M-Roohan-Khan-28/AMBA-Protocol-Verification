@@ -1,0 +1,46 @@
+{
+  "status": "DETERMINISTIC_UVM_SVA_PASS_ADVANCED_FEATURES_INCOMPLETE",
+  "source_revision": "ff158f4f7ed844f2a7ab9b3e19423ebc50be8f60",
+  "local_source_revision": "eab4791cf7260ba95aa1ca4e250acfa29a11702f",
+  "runner_revision": "6d53f6b840529aec272844a701eaab6650e748ec",
+  "source_lock_revision": "a05127c3743eba62af2668adce3740c458fc060c",
+  "renderer_revision": "ff158f4f7ed844f2a7ab9b3e19423ebc50be8f60",
+  "required_substeps": 9,
+  "passed_substeps": 9,
+  "wrapper_exit_code": 0,
+  "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+  "seed": "0x28A6BEEF (deterministic vectors; no randomize call)",
+  "targets": [
+    {
+      "adapter": 0,
+      "transfers": 1280,
+      "comparisons": 2048,
+      "resets": 3,
+      "aborted": 1
+    },
+    {
+      "adapter": 1,
+      "transfers": 560,
+      "comparisons": 848,
+      "resets": 3,
+      "aborted": 1
+    },
+    {
+      "adapter": 2,
+      "transfers": 554,
+      "comparisons": 840,
+      "resets": 4,
+      "aborted": 2
+    }
+  ],
+  "assertion_qualification": {
+    "expected_negative": 5,
+    "legal": 1
+  },
+  "fault_control_exit_code": 1,
+  "missing_tool_exit_code": 1,
+  "functional_coverage": "NOT RUN - svverification licence blocked; no UCDB/export",
+  "constrained_randomization": "NOT RUN - svverification licence blocked",
+  "original_advanced_alu": "NOT RUN",
+  "original_advanced_apb": "NOT RUN"
+}

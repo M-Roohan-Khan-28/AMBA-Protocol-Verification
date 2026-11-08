@@ -1,0 +1,21 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish stop work.probe_classes_random -do "onerror {quit -force -code 1}; run -all; quit -force -code 0" 
+# Start time: 06:18:58 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.probe_classes_random
+# onerror {quit -force -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# ** Fatal: (vsim-7099) Unable to check out a verification license for the randomize() feature.
+#    Time: 0 ps  Iteration: 0  Process: /probe_classes_random/#INITIAL#8 File: C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/technical-completion-2026-11-07/Roohan-Technical-Completion-Pack/probes/classes_random.sv Line: 11
+# Fatal error in Module probe_classes_random at C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/technical-completion-2026-11-07/Roohan-Technical-Completion-Pack/probes/classes_random.sv line 11
+# 
+# HDL call sequence:
+# Stopped at C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/technical-completion-2026-11-07/Roohan-Technical-Completion-Pack/probes/classes_random.sv 11 Module probe_classes_random
+# 
+#  quit -force -code 0
+# End time: 06:18:59 on Nov 08,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0

@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "started_utc": "2026-11-08T01:20:27.524804+00:00",
+  "purpose": "TOOL_FEATURE_PROBE_ONLY_NOT_PROJECT_REGRESSION",
+  "tools": {
+    "vlib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+    "vlog": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+    "vsim": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe"
+  },
+  "seed": "0x28a6beef",
+  "features": [
+    {
+      "feature": "uvm",
+      "source": "uvm.sv",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-modelsimini",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\modelsim.ini",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "mtiUvm",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.1d\\src",
+            "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\technical-completion-2026-11-07\\Roohan-Technical-Completion-Pack\\probes\\uvm.sv"
+          ],
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-modelsimini",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\modelsim.ini",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-L",
+            "mtiUvm",
+            "work.probe_uvm",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "exit_code": 12,
+          "timed_out": false,
+          "log": "2.log"
+        }
+      ],
+      "source_sha256": "a597b01c22f64762b7cfadfc78204ef25117afef8acd5ea221f47254716bacd3",
+      "status": "FAIL",
+      "reason": "NONZERO_EXIT_OR_SIMULATOR_ERROR"
+    }
+  ],
+  "version_probe": {
+    "command": [
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+      "-version"
+    ],
+    "exit_code": 0,
+    "timed_out": false,
+    "log": "version.log"
+  },
+  "version_text": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025\n\n",
+  "version_status": "PASS",
+  "aggregate_status": "INCOMPLETE"
+}

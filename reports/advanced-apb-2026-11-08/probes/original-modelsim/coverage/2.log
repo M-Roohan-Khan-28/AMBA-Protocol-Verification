@@ -1,0 +1,14 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish stop -coverage work.probe_coverage -do "onerror {quit -force -code 1}; run -all; quit -force -code 0" 
+# Start time: 06:19:01 on Nov 08,2026
+# Loading sv_std.std
+# Loading work.probe_coverage
+# ** Error: (vsim-1) Unable to checkout verification license - testbench generation feature (randomize, randcase, randsequence, covergroup) is only supported with QuestaSim.
+#    Time: 0 ps  Iteration: 0  Instance: /probe_coverage File: C:/R_MIGRATION_BACKUP/Roohan_GitHub_Launch_Kit/Roohan_GitHub_Launch_Kit/build/technical-completion-2026-11-07/Roohan-Technical-Completion-Pack/probes/coverage.sv
+# Error loading design
+Error loading design
+# End time: 06:19:02 on Nov 08,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0

@@ -1,0 +1,11 @@
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+Start time: 06:22:13 on Nov 08,2026
+vlog -sv -work work -L C:\MXR\Quartus\25.1\questa_fse\uvm-1.2 "+incdir+C:\MXR\Quartus\25.1\questa_fse\verilog_src\uvm-1.2\src" C:\R_MIGRATION_BACKUP\Roohan_GitHub_Launch_Kit\Roohan_GitHub_Launch_Kit\build\technical-completion-2026-11-07\Roohan-Technical-Completion-Pack\probes\uvm.sv 
+** Note: (vlog-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+-- Compiling module probe_uvm
+-- Importing package C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.uvm_pkg (uvm-1.2 Built-in)
+
+Top level modules:
+	probe_uvm
+End time: 06:22:14 on Nov 08,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
