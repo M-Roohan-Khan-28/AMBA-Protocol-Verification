@@ -1,0 +1,181 @@
+{
+  "status": "PASS",
+  "evidence_revision": "c517a6ea9626d57cc7fc8ca8ca0d19321cf77b8b",
+  "policy": "Capture bytes committed with scoped -text; no newline conversion",
+  "checked_artifacts": 276,
+  "vcd_count": 17,
+  "figure_count": 8,
+  "vcds": [
+    {
+      "path": "reports/axil-uvm-2026-11-08/preliminary/diagnostic-pass/adapter-0/capture.vcd",
+      "original_sha256": "e7d751f0e706d1649dd2ce7b51eabef1b55f8794d34d82e901f487ac8098ae28",
+      "git_blob_sha256": "e7d751f0e706d1649dd2ce7b51eabef1b55f8794d34d82e901f487ac8098ae28",
+      "public_raw_sha256": "e7d751f0e706d1649dd2ce7b51eabef1b55f8794d34d82e901f487ac8098ae28",
+      "both_checkout_sha256": "e7d751f0e706d1649dd2ce7b51eabef1b55f8794d34d82e901f487ac8098ae28",
+      "bytes": 102124,
+      "crlf_count": 12437,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/c517a6ea9626d57cc7fc8ca8ca0d19321cf77b8b/reports/axil-uvm-2026-11-08/preliminary/diagnostic-pass/adapter-0/capture.vcd"
+    },
+    {
+      "path": "reports/axil-uvm-2026-11-08/preliminary/diagnostic-pass/adapter-1/capture.vcd",
+      "original_sha256": "4133483cdc0c5e2990bbb22b58f61b5e9f25d4a56740186e8221000f4906fed1",
+      "git_blob_sha256": "4133483cdc0c5e2990bbb22b58f61b5e9f25d4a56740186e8221000f4906fed1",
+      "public_raw_sha256": "4133483cdc0c5e2990bbb22b58f61b5e9f25d4a56740186e8221000f4906fed1",
+      "both_checkout_sha256": "4133483cdc0c5e2990bbb22b58f61b5e9f25d4a56740186e8221000f4906fed1",
+      "bytes": 108563,
+      "crlf_count": 13211,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/c517a6ea9626d57cc7fc8ca8ca0d19321cf77b8b/reports/axil-uvm-2026-11-08/preliminary/diagnostic-pass/adapter-1/capture.vcd"
+    },
+    {
+      "path": "reports/axil-uvm-2026-11-08/preliminary/diagnostic-pass/adapter-2/capture.vcd",
+      "original_sha256": "7a3390f2cc3057e91c0e86250b3755a98c86241aa004060b7f37907f6ca77c7e",
+      "git_blob_sha256": "7a3390f2cc3057e91c0e86250b3755a98c86241aa004060b7f37907f6ca77c7e",
+      "public_raw_sha256": "7a3390f2cc3057e91c0e86250b3755a98c86241aa004060b7f37907f6ca77c7e",
+      "both_checkout_sha256": "7a3390f2cc3057e91c0e86250b3755a98c86241aa004060b7f37907f6ca77c7e",
+      "bytes": 76219,
+      "crlf_count": 9196,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/c517a6ea9626d57cc7fc8ca8ca0d19321cf77b8b/reports/axil-uvm-2026-11-08/preliminary/diagnostic-pass/adapter-2/capture.vcd"
+    },
+    {
+      "path": "reports/axil-uvm-2026-11-08/preliminary/initial-fifteen-substep-pass/adapter-0/capture.vcd",
+      "original_sha256": "677d34da023beed99016539e0efc73b21186597f6d3175eb06c25694acb4892d",
+      "git_blob_sha256": "677d34da023beed99016539e0efc73b21186597f6d3175eb06c25694acb4892d",
+      "public_raw_sha256": "677d34da023beed99016539e0efc73b21186597f6d3175eb06c25694acb4892d",
+      "both_checkout_sha256": "677d34da023beed99016539e0efc73b21186597f6d3175eb06c25694acb4892d",
+      "bytes": 102124,
+      "crlf_count": 12437,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/c517a6ea9626d57cc7fc8ca8ca0d19321cf77b8b/reports/axil-uvm-2026-11-08/preliminary/initial-fifteen-substep-pass/adapter-0/capture.vcd"
+    },
+    {
+      "path": "reports/axil-uvm-2026-11-08/preliminary/initial-fifteen-substep-pass/adapter-1/capture.vcd",
+      "original_sha256": "ef457d9bd43ca53193f2268ae00ea98c5bbe6a8726739a522fae481aa8fec87d",
+      "git_blob_sha256": "ef457d9bd43ca53193f2268ae00ea98c5bbe6a8726739a522fae481aa8fec87d",
+      "public_raw_sha256": "ef457d9bd43ca53193f2268ae00ea98c5bbe6a8726739a522fae481aa8fec87d",
+      "both_checkout_sha256": "ef457d9bd43ca53193f2268ae00ea98c5bbe6a8726739a522fae481aa8fec87d",
+      "bytes": 108563,
+      "crlf_count": 13211,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/c517a6ea9626d57cc7fc8ca8ca0d19321cf77b8b/reports/axil-uvm-2026-11-08/preliminary/initial-fifteen-substep-pass/adapter-1/capture.vcd"
+    },
+    {
+      "path": "reports/axil-uvm-2026-11-08/preliminary/initial-fifteen-substep-pass/adapter-2/capture.vcd",
+      "original_sha256": "ba8755b3293a29a17f11e47c2f9ff50ac0af234d4780225e0dc023189988fd47",
+      "git_blob_sha256": "ba8755b3293a29a17f11e47c2f9ff50ac0af234d4780225e0dc023189988fd47",
+      "public_raw_sha256": "ba8755b3293a29a17f11e47c2f9ff50ac0af234d4780225e0dc023189988fd47",
+      "both_checkout_sha256": "ba8755b3293a29a17f11e47c2f9ff50ac0af234d4780225e0dc023189988fd47",
+      "bytes": 76219,
+      "crlf_count": 9196,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/c517a6ea9626d57cc7fc8ca8ca0d19321cf77b8b/reports/axil-uvm-2026-11-08/preliminary/initial-fifteen-substep-pass/adapter-2/capture.vcd"
+    },
+    {
+      "path": "reports/axil-uvm-2026-11-08/source-clean/adapter-0/capture.vcd",
+      "original_sha256": "c52f36d773461c55bf499975e6617e93f8795108d401ccd9b378dd3c15d39196",
+      "git_blob_sha256": "c52f36d773461c55bf499975e6617e93f8795108d401ccd9b378dd3c15d39196",
+      "public_raw_sha256": "c52f36d773461c55bf499975e6617e93f8795108d401ccd9b378dd3c15d39196",
+      "both_checkout_sha256": "c52f36d773461c55bf499975e6617e93f8795108d401ccd9b378dd3c15d39196",
+      "bytes": 102124,
+      "crlf_count": 12437,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/c517a6ea9626d57cc7fc8ca8ca0d19321cf77b8b/reports/axil-uvm-2026-11-08/source-clean/adapter-0/capture.vcd"
+    },
+    {
+      "path": "reports/axil-uvm-2026-11-08/source-clean/adapter-1/capture.vcd",
+      "original_sha256": "7a89358ce8cba08df90b1d07a2618caa56b41f706b70438940bfebef5e821698",
+      "git_blob_sha256": "7a89358ce8cba08df90b1d07a2618caa56b41f706b70438940bfebef5e821698",
+      "public_raw_sha256": "7a89358ce8cba08df90b1d07a2618caa56b41f706b70438940bfebef5e821698",
+      "both_checkout_sha256": "7a89358ce8cba08df90b1d07a2618caa56b41f706b70438940bfebef5e821698",
+      "bytes": 108563,
+      "crlf_count": 13211,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/c517a6ea9626d57cc7fc8ca8ca0d19321cf77b8b/reports/axil-uvm-2026-11-08/source-clean/adapter-1/capture.vcd"
+    },
+    {
+      "path": "reports/axil-uvm-2026-11-08/source-clean/adapter-2/capture.vcd",
+      "original_sha256": "ceda41ff2935e90db98e2a036dfcfc520e8d65247bb8d67dbab66d79194d6f31",
+      "git_blob_sha256": "ceda41ff2935e90db98e2a036dfcfc520e8d65247bb8d67dbab66d79194d6f31",
+      "public_raw_sha256": "ceda41ff2935e90db98e2a036dfcfc520e8d65247bb8d67dbab66d79194d6f31",
+      "both_checkout_sha256": "ceda41ff2935e90db98e2a036dfcfc520e8d65247bb8d67dbab66d79194d6f31",
+      "bytes": 76219,
+      "crlf_count": 9196,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/c517a6ea9626d57cc7fc8ca8ca0d19321cf77b8b/reports/axil-uvm-2026-11-08/source-clean/adapter-2/capture.vcd"
+    },
+    {
+      "path": "reports/axil-uvm-2026-11-08/fault-data/adapter-0/capture.vcd",
+      "original_sha256": "71a51ba4f013584e394c314dd257a645aa2760cbda4f1f15ef6e1d1540bcd6f2",
+      "git_blob_sha256": "71a51ba4f013584e394c314dd257a645aa2760cbda4f1f15ef6e1d1540bcd6f2",
+      "public_raw_sha256": "71a51ba4f013584e394c314dd257a645aa2760cbda4f1f15ef6e1d1540bcd6f2",
+      "both_checkout_sha256": "71a51ba4f013584e394c314dd257a645aa2760cbda4f1f15ef6e1d1540bcd6f2",
+      "bytes": 7836,
+      "crlf_count": 921,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/c517a6ea9626d57cc7fc8ca8ca0d19321cf77b8b/reports/axil-uvm-2026-11-08/fault-data/adapter-0/capture.vcd"
+    },
+    {
+      "path": "reports/axil-uvm-2026-11-08/fault-data/adapter-1/capture.vcd",
+      "original_sha256": "97a38b080a83a183e1b2a5b5ffc94d88d76342c9d8a74ef2063729021683bfd7",
+      "git_blob_sha256": "97a38b080a83a183e1b2a5b5ffc94d88d76342c9d8a74ef2063729021683bfd7",
+      "public_raw_sha256": "97a38b080a83a183e1b2a5b5ffc94d88d76342c9d8a74ef2063729021683bfd7",
+      "both_checkout_sha256": "97a38b080a83a183e1b2a5b5ffc94d88d76342c9d8a74ef2063729021683bfd7",
+      "bytes": 9412,
+      "crlf_count": 1122,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/c517a6ea9626d57cc7fc8ca8ca0d19321cf77b8b/reports/axil-uvm-2026-11-08/fault-data/adapter-1/capture.vcd"
+    },
+    {
+      "path": "reports/axil-uvm-2026-11-08/fault-data/adapter-2/capture.vcd",
+      "original_sha256": "662bb2877fcd4b1c870816e4d4cf931e1750dd94c45f652a23ee87cba20647d3",
+      "git_blob_sha256": "662bb2877fcd4b1c870816e4d4cf931e1750dd94c45f652a23ee87cba20647d3",
+      "public_raw_sha256": "662bb2877fcd4b1c870816e4d4cf931e1750dd94c45f652a23ee87cba20647d3",
+      "both_checkout_sha256": "662bb2877fcd4b1c870816e4d4cf931e1750dd94c45f652a23ee87cba20647d3",
+      "bytes": 7418,
+      "crlf_count": 837,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/c517a6ea9626d57cc7fc8ca8ca0d19321cf77b8b/reports/axil-uvm-2026-11-08/fault-data/adapter-2/capture.vcd"
+    },
+    {
+      "path": "reports/axil-uvm-2026-11-08/fault-address/adapter-1/capture.vcd",
+      "original_sha256": "3f7782a344282cad2922eef2d5f7483eb13c7d955fc2c770f969d1b73836c8c8",
+      "git_blob_sha256": "3f7782a344282cad2922eef2d5f7483eb13c7d955fc2c770f969d1b73836c8c8",
+      "public_raw_sha256": "3f7782a344282cad2922eef2d5f7483eb13c7d955fc2c770f969d1b73836c8c8",
+      "both_checkout_sha256": "3f7782a344282cad2922eef2d5f7483eb13c7d955fc2c770f969d1b73836c8c8",
+      "bytes": 1804,
+      "crlf_count": 137,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/c517a6ea9626d57cc7fc8ca8ca0d19321cf77b8b/reports/axil-uvm-2026-11-08/fault-address/adapter-1/capture.vcd"
+    },
+    {
+      "path": "reports/axil-uvm-2026-11-08/fault-progress/adapter-1/capture.vcd",
+      "original_sha256": "99798e112b1e7348eefe98963512b62c215b543d93640da89b2141dd9b80818f",
+      "git_blob_sha256": "99798e112b1e7348eefe98963512b62c215b543d93640da89b2141dd9b80818f",
+      "public_raw_sha256": "99798e112b1e7348eefe98963512b62c215b543d93640da89b2141dd9b80818f",
+      "both_checkout_sha256": "99798e112b1e7348eefe98963512b62c215b543d93640da89b2141dd9b80818f",
+      "bytes": 11437,
+      "crlf_count": 1413,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/c517a6ea9626d57cc7fc8ca8ca0d19321cf77b8b/reports/axil-uvm-2026-11-08/fault-progress/adapter-1/capture.vcd"
+    },
+    {
+      "path": "reports/axil-uvm-2026-11-08/published-clean/adapter-0/capture.vcd",
+      "original_sha256": "ee7daadb8653b8ea77d2b28d833f67a63a5831c8e7ee7b8bec2c625727bd9c0f",
+      "git_blob_sha256": "ee7daadb8653b8ea77d2b28d833f67a63a5831c8e7ee7b8bec2c625727bd9c0f",
+      "public_raw_sha256": "ee7daadb8653b8ea77d2b28d833f67a63a5831c8e7ee7b8bec2c625727bd9c0f",
+      "both_checkout_sha256": "ee7daadb8653b8ea77d2b28d833f67a63a5831c8e7ee7b8bec2c625727bd9c0f",
+      "bytes": 102124,
+      "crlf_count": 12437,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/c517a6ea9626d57cc7fc8ca8ca0d19321cf77b8b/reports/axil-uvm-2026-11-08/published-clean/adapter-0/capture.vcd"
+    },
+    {
+      "path": "reports/axil-uvm-2026-11-08/published-clean/adapter-1/capture.vcd",
+      "original_sha256": "44adf83e968c46bf185c38543cc996a046ae872ce925c659a284d6bb90cd529f",
+      "git_blob_sha256": "44adf83e968c46bf185c38543cc996a046ae872ce925c659a284d6bb90cd529f",
+      "public_raw_sha256": "44adf83e968c46bf185c38543cc996a046ae872ce925c659a284d6bb90cd529f",
+      "both_checkout_sha256": "44adf83e968c46bf185c38543cc996a046ae872ce925c659a284d6bb90cd529f",
+      "bytes": 108563,
+      "crlf_count": 13211,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/c517a6ea9626d57cc7fc8ca8ca0d19321cf77b8b/reports/axil-uvm-2026-11-08/published-clean/adapter-1/capture.vcd"
+    },
+    {
+      "path": "reports/axil-uvm-2026-11-08/published-clean/adapter-2/capture.vcd",
+      "original_sha256": "96a52f9e1fc7692828d694f3978e9845ee3ee575e454ff65ca2ffd22b5487551",
+      "git_blob_sha256": "96a52f9e1fc7692828d694f3978e9845ee3ee575e454ff65ca2ffd22b5487551",
+      "public_raw_sha256": "96a52f9e1fc7692828d694f3978e9845ee3ee575e454ff65ca2ffd22b5487551",
+      "both_checkout_sha256": "96a52f9e1fc7692828d694f3978e9845ee3ee575e454ff65ca2ffd22b5487551",
+      "bytes": 76219,
+      "crlf_count": 9196,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/c517a6ea9626d57cc7fc8ca8ca0d19321cf77b8b/reports/axil-uvm-2026-11-08/published-clean/adapter-2/capture.vcd"
+    }
+  ],
+  "audit_script_sha256": "3262e7360491e2aa4a798048b0a8424ca6487c044acea3af0356bddbd6e7a64c"
+}

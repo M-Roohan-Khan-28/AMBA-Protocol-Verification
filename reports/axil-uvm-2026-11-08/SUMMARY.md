@@ -116,7 +116,12 @@ analysis. The scoreboards and assertions determine PASS, not the renderer.
 files and SHA-256 hashes. Scoped Git `-text` attributes retain exact capture
 bytes, including CRLF. Current figure metadata records source revision,
 renderer revision/hash, original capture hash, representation and tick range.
-Publication byte verification is recorded separately after the public push.
+[Published-byte verification](BYTE_AUDIT.json) passed at evidence revision
+`c517a6ea9626d57cc7fc8ca8ca0d19321cf77b8b`: all 276 archived artifacts match
+Git blobs and both fresh detached checkouts (`core.autocrlf=false` and `true`);
+all 17 archived VCDs also match public raw downloads. All eight current figure
+hash references match their original capture bytes. This audit and sentence
+are later evidence-only additions; the tested execution inputs are unchanged.
 No newline-only simulation-behavior change is claimed. Historical reports in
 other directories are untouched; [preservation checks](PRESERVATION.json) record
 the unchanged prior runners, locks, probes and evidence.
