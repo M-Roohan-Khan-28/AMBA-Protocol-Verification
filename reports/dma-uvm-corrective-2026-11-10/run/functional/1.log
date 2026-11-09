@@ -1,0 +1,17 @@
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+Start time: 00:59:44 on Nov 10,2026
+vlog -sv -work work -L C:\MXR\Quartus\25.1\questa_fse\uvm-1.2 "+incdir+C:\MXR\Quartus\25.1\questa_fse\verilog_src\uvm-1.2\src" "+incdir+C:\short\dma-fix-remote-source-20261110\verification\dma_uvm" C:\short\dma-fix-remote-source-20261110\verification\dma_uvm\dma_bus.sv C:\short\dma-fix-full-remote-20261110\source\rtl\axi4_dma_subsystem.sv C:\short\dma-fix-remote-source-20261110\verification\dma_uvm\dma_adapter.sv C:\short\dma-fix-remote-source-20261110\verification\dma_uvm\dma_assertions.sv C:\short\dma-fix-remote-source-20261110\verification\dma_uvm\dma_uvm_pkg.sv C:\short\dma-fix-remote-source-20261110\verification\dma_uvm\dma_uvm_top.sv 
+** Note: (vlog-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+-- Compiling interface dma_bus
+-- Compiling module axi4_dma_subsystem
+-- Compiling module dma_adapter
+-- Compiling module dma_assertions
+-- Compiling package dma_uvm_pkg
+-- Importing package C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.uvm_pkg (uvm-1.2 Built-in)
+-- Compiling module dma_uvm_top
+-- Importing package dma_uvm_pkg
+
+Top level modules:
+	dma_uvm_top
+End time: 00:59:45 on Nov 10,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

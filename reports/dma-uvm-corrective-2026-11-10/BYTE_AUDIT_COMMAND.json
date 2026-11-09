@@ -1,0 +1,81 @@
+{
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\dma-fix-20261110\\reports\\dma-uvm-corrective-2026-11-10\\audit_bytes.py",
+    "--repository",
+    "C:\\short\\dma-fix-20261110",
+    "--revision",
+    "b0e7e0bf48f87438ae9170451ec04a1ff510cfd6",
+    "--checkout-false",
+    "C:\\short\\dma-fix-bytes-false-20261110",
+    "--checkout-true",
+    "C:\\short\\dma-fix-bytes-true-20261110",
+    "--output",
+    "C:\\short\\dma-fix-20261110\\reports\\dma-uvm-corrective-2026-11-10\\BYTE_AUDIT.json"
+  ],
+  "exit_code": 0,
+  "clones": [
+    {
+      "command": [
+        "git",
+        "clone",
+        "--quiet",
+        "-c",
+        "core.longpaths=true",
+        "-c",
+        "core.autocrlf=false",
+        "https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git",
+        "C:\\short\\dma-fix-bytes-false-20261110"
+      ],
+      "exit_code": 0,
+      "log": "byte-audit-logs/byte-clone-0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "C:\\short\\dma-fix-bytes-false-20261110",
+        "checkout",
+        "--quiet",
+        "--detach",
+        "b0e7e0bf48f87438ae9170451ec04a1ff510cfd6"
+      ],
+      "exit_code": 0,
+      "log": "byte-audit-logs/byte-clone-1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "clone",
+        "--quiet",
+        "-c",
+        "core.longpaths=true",
+        "-c",
+        "core.autocrlf=true",
+        "https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git",
+        "C:\\short\\dma-fix-bytes-true-20261110"
+      ],
+      "exit_code": 0,
+      "log": "byte-audit-logs/byte-clone-2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "C:\\short\\dma-fix-bytes-true-20261110",
+        "checkout",
+        "--quiet",
+        "--detach",
+        "b0e7e0bf48f87438ae9170451ec04a1ff510cfd6"
+      ],
+      "exit_code": 0,
+      "log": "byte-audit-logs/byte-clone-3.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "console_log": "byte-audit-logs/audit.log",
+  "console_sha256": "0798ec7f3f6b39db5c1629b3fc514f2dcae80c90f66607d955e29c2169867858"
+}

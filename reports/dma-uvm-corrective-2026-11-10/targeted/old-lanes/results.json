@@ -1,0 +1,678 @@
+{
+  "started_utc": "2026-11-09T19:45:01.210226+00:00",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\dma-fix-20261110\\scripts\\run_dma_uvm.py",
+    "--expected-env-sha",
+    "c43c631e44452aee0a9447efd3b44b660e8c7119",
+    "--output",
+    "C:\\short\\dma-fix-old-lanes-20261110",
+    "--select",
+    "inactive-tail-1",
+    "inactive-tail-2",
+    "inactive-tail-3",
+    "inactive-tail-4",
+    "inactive-tail-5",
+    "inactive-tail-6",
+    "inactive-tail-7",
+    "--dut-mirror",
+    "C:/short/dma-uvm-final-remote-run-20261109/source"
+  ],
+  "source_revision": "c43c631e44452aee0a9447efd3b44b660e8c7119",
+  "source_dirty": false,
+  "serial_execution": true,
+  "selection": [
+    "inactive-tail-1",
+    "inactive-tail-2",
+    "inactive-tail-3",
+    "inactive-tail-4",
+    "inactive-tail-5",
+    "inactive-tail-6",
+    "inactive-tail-7"
+  ],
+  "raw_fault": false,
+  "seed": 682016495,
+  "seed_hex": "0x28A6BEEF",
+  "functional_coverage": "NOT RUN",
+  "constrained_randomization": "NOT RUN",
+  "original_advanced_alu_apb": "NOT RUN",
+  "suites": [
+    {
+      "name": "inactive-tail-1",
+      "kind": "functional",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-1",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "+incdir+C:\\short\\dma-fix-20261110\\verification\\dma_uvm",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-fix-old-lanes-20261110\\source\\rtl\\axi4_dma_subsystem.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_adapter.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_uvm_pkg.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-1",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "47ac3b907fc3b81550941692ac96fff7d5a2886b2ce9c71a6b4a6b7c2cea73ff"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.dma_uvm_top",
+            "+CASES=C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-1\\cases.txt",
+            "+INACTIVE_LANES",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /dma_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-1",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "d6139edc00e397ac932eb31f674b2fbb97b28daf3e5ce9fb5d143709ad2cefeb"
+        }
+      ],
+      "case_input_sha256": "433cf91a492a935524e268dc4f06a07e09ad783ce786c0feef007ac732038632",
+      "reason": "PROCESS_OR_SIMULATOR_ERROR"
+    },
+    {
+      "name": "inactive-tail-2",
+      "kind": "functional",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-2",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "+incdir+C:\\short\\dma-fix-20261110\\verification\\dma_uvm",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-fix-old-lanes-20261110\\source\\rtl\\axi4_dma_subsystem.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_adapter.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_uvm_pkg.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-2",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "c5ae6befe1d0a016f25d06b35a24a3f93a96926b7f4fe04dee4b2cd737c2b046"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.dma_uvm_top",
+            "+CASES=C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-2\\cases.txt",
+            "+INACTIVE_LANES",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /dma_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-2",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "efffa972cd3fe08439b1c722d8904aa5ebce08365f0f8ad40cb29cbdf546bb17"
+        }
+      ],
+      "case_input_sha256": "738679b83430fa738a7a78d73414c582c1ba286bcc2c64463a5a63db29a72e9e",
+      "reason": "PROCESS_OR_SIMULATOR_ERROR"
+    },
+    {
+      "name": "inactive-tail-3",
+      "kind": "functional",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-3",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "+incdir+C:\\short\\dma-fix-20261110\\verification\\dma_uvm",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-fix-old-lanes-20261110\\source\\rtl\\axi4_dma_subsystem.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_adapter.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_uvm_pkg.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-3",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "ca502151ec400ee06919b4bff9f4cec2369ed1af77335c2c8af7c15477ab2851"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.dma_uvm_top",
+            "+CASES=C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-3\\cases.txt",
+            "+INACTIVE_LANES",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /dma_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-3",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "a44cff49b463232bf54ff1b50de547a470edb02d24e5f2f7c229f64c6ff7550e"
+        }
+      ],
+      "case_input_sha256": "7e214030d8bb1afd80a213774156a63bad424e0fc26f70fe69f8e69cb16636c9",
+      "reason": "PROCESS_OR_SIMULATOR_ERROR"
+    },
+    {
+      "name": "inactive-tail-4",
+      "kind": "functional",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-4",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "+incdir+C:\\short\\dma-fix-20261110\\verification\\dma_uvm",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-fix-old-lanes-20261110\\source\\rtl\\axi4_dma_subsystem.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_adapter.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_uvm_pkg.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-4",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "98f6b73eda7b7fb0f5255560a385ac205462a7c67090bd28379f8e681408442a"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.dma_uvm_top",
+            "+CASES=C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-4\\cases.txt",
+            "+INACTIVE_LANES",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /dma_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-4",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "bbfbdb0257d97fb929690f18797494874693f99006c8af59e2183418595c77d4"
+        }
+      ],
+      "case_input_sha256": "7e0e1dc9d99464dc7f90857fbd27850c04c24e70a1af430ea6f15ffadcea5137",
+      "reason": "PROCESS_OR_SIMULATOR_ERROR"
+    },
+    {
+      "name": "inactive-tail-5",
+      "kind": "functional",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-5",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "+incdir+C:\\short\\dma-fix-20261110\\verification\\dma_uvm",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-fix-old-lanes-20261110\\source\\rtl\\axi4_dma_subsystem.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_adapter.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_uvm_pkg.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-5",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "b4e09e9ca96b5be8554657f39d2415e0fc62a93dae54777ebad731368b0cfe46"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.dma_uvm_top",
+            "+CASES=C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-5\\cases.txt",
+            "+INACTIVE_LANES",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /dma_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-5",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "e895d1b213b64e83884a5d44ce890ebb663f520f8d1695784922c63ed567fac2"
+        }
+      ],
+      "case_input_sha256": "1007415f1e96d89ce579ff953e9ce609a6cf75a448773b7ba5b7c50358a548e6",
+      "reason": "PROCESS_OR_SIMULATOR_ERROR"
+    },
+    {
+      "name": "inactive-tail-6",
+      "kind": "functional",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-6",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "+incdir+C:\\short\\dma-fix-20261110\\verification\\dma_uvm",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-fix-old-lanes-20261110\\source\\rtl\\axi4_dma_subsystem.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_adapter.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_uvm_pkg.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-6",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "8d7e6a22138582769248ed28da480b5150a07dcba9aa0411431d802a405b793f"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.dma_uvm_top",
+            "+CASES=C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-6\\cases.txt",
+            "+INACTIVE_LANES",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /dma_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-6",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "24576ba12aa9763340798913733c6cd33e386004cdac6173569a55eeb2d64f82"
+        }
+      ],
+      "case_input_sha256": "c8491aa1b78c2c00c740d0754e580e55304c5172b59d747488a7171d1656db3e",
+      "reason": "PROCESS_OR_SIMULATOR_ERROR"
+    },
+    {
+      "name": "inactive-tail-7",
+      "kind": "functional",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-7",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "+incdir+C:\\short\\dma-fix-20261110\\verification\\dma_uvm",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-fix-old-lanes-20261110\\source\\rtl\\axi4_dma_subsystem.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_adapter.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_uvm_pkg.sv",
+            "C:\\short\\dma-fix-20261110\\verification\\dma_uvm\\dma_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-7",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "564888eef01a5154a742d5cf2e1b033da6ac04074ba35983f1b29c46935cc123"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.dma_uvm_top",
+            "+CASES=C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-7\\cases.txt",
+            "+INACTIVE_LANES",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /dma_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-fix-old-lanes-20261110\\inactive-tail-7",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "e5f14147be7b992011c75c566c8cb65247dd6f037d368a1ed6acdd2275bfdfff"
+        }
+      ],
+      "case_input_sha256": "e63832b1484800c4e6b282de922991a3b31196ef4ad1c5bb3c7171d850c34bab",
+      "reason": "PROCESS_OR_SIMULATOR_ERROR"
+    }
+  ],
+  "expected_inventory": [
+    "sva-aw_hold",
+    "sva-w_hold",
+    "sva-ar_hold",
+    "sva-b_hold",
+    "sva-r_hold",
+    "sva-b_before",
+    "sva-b_aw_only",
+    "sva-b_w_only",
+    "sva-b_same_w",
+    "sva-b_same_aw",
+    "sva-b_same_both",
+    "sva-r_before",
+    "sva-r_same_ar",
+    "sva-aw_attr",
+    "sva-ar_attr",
+    "sva-w_last",
+    "sva-w_last_same_aw",
+    "sva-w_last_early_count",
+    "sva-w_last_early_missing",
+    "sva-r_last",
+    "sva-rid",
+    "sva-bid",
+    "sva-c_aw_hold",
+    "sva-c_w_hold",
+    "sva-c_ar_hold",
+    "sva-c_b_hold",
+    "sva-c_r_hold",
+    "sva-c_b_before",
+    "sva-c_r_before",
+    "sva-legal",
+    "functional",
+    "malformed-wrong_rid",
+    "malformed-wrong_bid",
+    "malformed-early_rlast",
+    "malformed-missing_rlast",
+    "inactive-lanes",
+    "fault-source_alias",
+    "fault-destination_progress",
+    "fault-active_data",
+    "fault-tail_strobe",
+    "fault-duplicate_read",
+    "fault-duplicate_write",
+    "fault-progress",
+    "fault-missing_marker"
+  ],
+  "required_selected": [
+    "inactive-tail-1",
+    "inactive-tail-2",
+    "inactive-tail-3",
+    "inactive-tail-4",
+    "inactive-tail-5",
+    "inactive-tail-6",
+    "inactive-tail-7"
+  ],
+  "aggregate_exit_code": 1,
+  "milestone_pass": false,
+  "input_sha256": {
+    "verification/dma_uvm/dma_adapter.sv": "405c8353728568c133bd7f7c5b8815c69df5b6d4b7fb5b1139c24fd3ec7c7fb2",
+    "verification/dma_uvm/dma_assertions.sv": "6137af8da1a6c54dd493153513644e4811bed07a6fe22a7e6758c0ba6778e1fd",
+    "verification/dma_uvm/dma_bus.sv": "20a62d424feb363c4f6449badb4e141009d54176124639349139951af3e85039",
+    "verification/dma_uvm/dma_common.svh": "b316dacf569b38e3d247bf8882c964e80da1016be884f6f85eff24562e931f7e",
+    "verification/dma_uvm/dma_driver.svh": "3bb2800abedb8632d3c477d11759b19bdca0a72faaa7ce6503555b6e035d87d3",
+    "verification/dma_uvm/dma_pins.svh": "3860921aace190dc02df54119867516bab0502ee131e2e9dcc0634ab135de83c",
+    "verification/dma_uvm/dma_responder.svh": "69eb088ce43b5efabc7a060e809a192beb0f6ba589231ec2f3597b745bd707e6",
+    "verification/dma_uvm/dma_scoreboard.svh": "507ba35dbacee6f32f6571ca2951fb5bb0112862cd4d481030fc9ee61dd02f15",
+    "verification/dma_uvm/dma_sva_control.sv": "b75d32b1d4705522757d9567fe2318e834d2e824b593768d257568b1ef095fe6",
+    "verification/dma_uvm/dma_uvm_pkg.sv": "35ccddafecd5f68759dbff034ef3a5917b03c4b977f09d3aa8dd7a179446313b",
+    "verification/dma_uvm/dma_uvm_top.sv": "71a5f6fed9e43ea04487dbe0560dc74eb1f416dbefeb71f6cb7fadb95902d87b",
+    "verification/dma_uvm/dma_zero_pins.svh": "f8b91769b295aa759ee52a3ef9380652d663ebdab3e658585797591b462d6809",
+    "verification/dma_uvm/inventory.json": "422a68b01fad96d477ee5a1fe8e2f626337fca8b9f2b59827a908552653d511b",
+    "verification/dma_uvm/sources.json": "4ba4f50553923bbc52760c4cadcc9ba03a86837b86fc4289f057b9d572440653",
+    "scripts/run_dma_uvm.py": "fde31f927b1385bbbd9a2be11bcc9da3dd1514fc4fe82340c83e7ddb61d62af8",
+    "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+    "scripts/dma_accounting.py": "83190f90da5e042b963626f33b5f9ccbf19d91af1df85d86b0d1db946a94d16f"
+  },
+  "expected_environment_revision": "c43c631e44452aee0a9447efd3b44b660e8c7119",
+  "runner_revision": "c43c631e44452aee0a9447efd3b44b660e8c7119",
+  "inventory_revision": "c43c631e44452aee0a9447efd3b44b660e8c7119",
+  "configuration": {
+    "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+    "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+    "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+    "timeout_per_command": 90,
+    "global_timeout": 2400,
+    "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "vendor_input_sha256": {
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5"
+    }
+  },
+  "version_command": {
+    "command": [
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+      "-version"
+    ],
+    "cwd": "C:\\short\\dma-fix-old-lanes-20261110",
+    "exit_code": 0,
+    "timed_out": false,
+    "log": "version.log",
+    "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+  },
+  "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+  "source_lock": {
+    "owner": "M-Roohan-Khan-28",
+    "account_id": 270144410,
+    "repository": "AXI4-DMA-Subsystem",
+    "revision": "a2d3d57edaa9eb441f3289bf5320f4df2f074144",
+    "files": [
+      "rtl/axi4_dma_subsystem.sv"
+    ],
+    "commands": [
+      {
+        "command": [
+          "git",
+          "clone",
+          "--quiet",
+          "--no-hardlinks",
+          "--config",
+          "core.autocrlf=false",
+          "--config",
+          "core.longpaths=true",
+          "C:\\short\\dma-uvm-final-remote-run-20261109\\source",
+          "C:\\short\\dma-fix-old-lanes-20261110\\source"
+        ],
+        "cwd": "C:\\short\\dma-fix-old-lanes-20261110",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-0.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "command": [
+          "git",
+          "-C",
+          "C:\\short\\dma-fix-old-lanes-20261110\\source",
+          "checkout",
+          "--quiet",
+          "--detach",
+          "a2d3d57edaa9eb441f3289bf5320f4df2f074144"
+        ],
+        "cwd": "C:\\short\\dma-fix-old-lanes-20261110",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-1.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "command": [
+          "git",
+          "-C",
+          "C:\\short\\dma-fix-old-lanes-20261110\\source",
+          "remote",
+          "set-url",
+          "origin",
+          "https://github.com/M-Roohan-Khan-28/AXI4-DMA-Subsystem.git"
+        ],
+        "cwd": "C:\\short\\dma-fix-old-lanes-20261110",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-2.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "supplier": "C:\\short\\dma-uvm-final-remote-run-20261109\\source",
+    "transport": "verified_local_mirror",
+    "observed_revision": "a2d3d57edaa9eb441f3289bf5320f4df2f074144",
+    "clean": true,
+    "rtl_sha256": {
+      "rtl/axi4_dma_subsystem.sv": "dd709078dc9d91db0d92ba1e4bd34b32cb43f09f8f5739abdb6552313795043b"
+    }
+  },
+  "finished_utc": "2026-11-09T19:46:16.937492+00:00"
+}

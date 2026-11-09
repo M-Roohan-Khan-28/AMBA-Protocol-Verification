@@ -1,0 +1,15 @@
+{
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "-u",
+    "C:\\short\\dma-uvm-final-remote-source-20261109\\scripts\\run_dma_uvm.py",
+    "--expected-env-sha",
+    "e93a6fdff85804dab7b5e636e43880e1ba7615ab",
+    "--output",
+    "C:\\short\\dma-uvm-final-remote-run-20261109"
+  ],
+  "exit_code": 0,
+  "source_revision": "e93a6fdff85804dab7b5e636e43880e1ba7615ab",
+  "clean": true,
+  "console_sha256": "617b71c5b5bbabb23cc14d9c50a93f950d078ade853049725e1bf8b0426a63d1"
+}

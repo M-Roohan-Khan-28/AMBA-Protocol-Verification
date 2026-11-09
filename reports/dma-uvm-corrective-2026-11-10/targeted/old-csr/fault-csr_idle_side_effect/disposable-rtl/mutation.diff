@@ -1,0 +1,13 @@
+--- locked/rtl/axi4_dma_subsystem.sv
++++ disposable/axi4_dma_subsystem.sv
+@@ -163,6 +163,10 @@
+                 s_axil_bresp <= RESP_OKAY;
+                 if (w_strobes != 4'hF) begin
+                     s_axil_bresp <= RESP_SLVERR;
++                    if (aw_address == 0 && state == IDLE) begin
++                        src_reg <= w_data;
++                        $display("DMA_MUTATION_APPLIED csr_idle_side_effect SRC response=SLVERR");
++                    end
+                 end else begin
+                     case (aw_address)
+                         32'h00: if (state == IDLE) src_reg <= w_data;

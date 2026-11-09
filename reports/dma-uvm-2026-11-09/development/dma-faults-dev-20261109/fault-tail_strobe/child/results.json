@@ -1,0 +1,230 @@
+{
+  "started_utc": "2026-11-09T14:12:31.511216+00:00",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\amba-dma-uvm-20261109\\scripts\\run_dma_uvm.py",
+    "--select",
+    "fault-tail_strobe",
+    "--raw-fault",
+    "--output",
+    "C:\\short\\dma-faults-dev-20261109\\fault-tail_strobe\\child",
+    "--sim-bin",
+    "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+    "--uvm-lib",
+    "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+    "--uvm-include",
+    "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+    "--timeout",
+    "90"
+  ],
+  "source_revision": "60b2db25bf007b17d530389cb26a71578f5c28f8",
+  "source_dirty": true,
+  "serial_execution": true,
+  "selection": [
+    "fault-tail_strobe"
+  ],
+  "raw_fault": true,
+  "seed": 682016495,
+  "seed_hex": "0x28A6BEEF",
+  "functional_coverage": "NOT RUN",
+  "constrained_randomization": "NOT RUN",
+  "original_advanced_alu_apb": "NOT RUN",
+  "suites": [
+    {
+      "name": "fault-tail_strobe",
+      "kind": "fault",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-faults-dev-20261109\\fault-tail_strobe\\child\\fault-tail_strobe",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "+incdir+C:\\short\\amba-dma-uvm-20261109\\verification\\dma_uvm",
+            "C:\\short\\amba-dma-uvm-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-faults-dev-20261109\\fault-tail_strobe\\child\\source\\rtl\\axi4_dma_subsystem.sv",
+            "C:\\short\\amba-dma-uvm-20261109\\verification\\dma_uvm\\dma_adapter.sv",
+            "C:\\short\\amba-dma-uvm-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\amba-dma-uvm-20261109\\verification\\dma_uvm\\dma_uvm_pkg.sv",
+            "C:\\short\\amba-dma-uvm-20261109\\verification\\dma_uvm\\dma_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\dma-faults-dev-20261109\\fault-tail_strobe\\child\\fault-tail_strobe",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "44eab95ac0b1e04c2d186d13b8c29b6ec932aa191ffa1e4976a3d9d2e6276c7f"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.dma_uvm_top",
+            "+CASES=C:\\short\\dma-faults-dev-20261109\\fault-tail_strobe\\child\\fault-tail_strobe\\cases.txt",
+            "+FAULT=tail_strobe",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /dma_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-faults-dev-20261109\\fault-tail_strobe\\child\\fault-tail_strobe",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "377c5f81a804818eb75da9e4915432d15ec9508697df536fe3f523e522176030"
+        }
+      ],
+      "case_input_sha256": "43a2dd9b43da962f69bcaa149bdf02b02d56886aeb8b6019488d9f613cfc672e",
+      "reason": "PROCESS_OR_SIMULATOR_ERROR"
+    }
+  ],
+  "expected_inventory": [
+    "sva-aw_hold",
+    "sva-w_hold",
+    "sva-ar_hold",
+    "sva-b_hold",
+    "sva-r_hold",
+    "sva-b_before",
+    "sva-b_aw_only",
+    "sva-b_w_only",
+    "sva-b_same_w",
+    "sva-b_same_aw",
+    "sva-b_same_both",
+    "sva-r_before",
+    "sva-r_same_ar",
+    "sva-aw_attr",
+    "sva-ar_attr",
+    "sva-w_last",
+    "sva-r_last",
+    "sva-rid",
+    "sva-bid",
+    "sva-c_aw_hold",
+    "sva-c_w_hold",
+    "sva-c_ar_hold",
+    "sva-c_b_hold",
+    "sva-c_r_hold",
+    "sva-c_b_before",
+    "sva-c_r_before",
+    "sva-legal",
+    "functional",
+    "malformed-wrong_rid",
+    "malformed-wrong_bid",
+    "malformed-early_rlast",
+    "malformed-missing_rlast",
+    "fault-source_alias",
+    "fault-destination_progress",
+    "fault-active_data",
+    "fault-tail_strobe",
+    "fault-duplicate_read",
+    "fault-duplicate_write",
+    "fault-progress",
+    "fault-missing_marker"
+  ],
+  "required_selected": [
+    "fault-tail_strobe"
+  ],
+  "aggregate_exit_code": 1,
+  "milestone_pass": false,
+  "input_sha256": {
+    "verification/dma_uvm/dma_adapter.sv": "42d5b7dc7245cdd783c066c0cc74593356938bf2632d16c9624276963698f6b7",
+    "verification/dma_uvm/dma_assertions.sv": "2684c7f52fea56c3ee95071de1dbda1ecda95f869ae0516c8761facd4455c5a1",
+    "verification/dma_uvm/dma_bus.sv": "20a62d424feb363c4f6449badb4e141009d54176124639349139951af3e85039",
+    "verification/dma_uvm/dma_common.svh": "b316dacf569b38e3d247bf8882c964e80da1016be884f6f85eff24562e931f7e",
+    "verification/dma_uvm/dma_driver.svh": "3bb2800abedb8632d3c477d11759b19bdca0a72faaa7ce6503555b6e035d87d3",
+    "verification/dma_uvm/dma_pins.svh": "3860921aace190dc02df54119867516bab0502ee131e2e9dcc0634ab135de83c",
+    "verification/dma_uvm/dma_responder.svh": "bcc0b0f6ad6bc22b3176e721f26b586c9bdadeeda77142e2398dde3c3af85bb7",
+    "verification/dma_uvm/dma_scoreboard.svh": "f34b742aed0dd878f3a58db7a0ef1411aea1d6ab171f0a331633822d8d33eb29",
+    "verification/dma_uvm/dma_sva_control.sv": "9f9422697027d6650e5953976900f8a47f4861253c2c52a63c78fd9fbb1c16bd",
+    "verification/dma_uvm/dma_uvm_pkg.sv": "35ccddafecd5f68759dbff034ef3a5917b03c4b977f09d3aa8dd7a179446313b",
+    "verification/dma_uvm/dma_uvm_top.sv": "71a5f6fed9e43ea04487dbe0560dc74eb1f416dbefeb71f6cb7fadb95902d87b",
+    "verification/dma_uvm/dma_zero_pins.svh": "f8b91769b295aa759ee52a3ef9380652d663ebdab3e658585797591b462d6809",
+    "verification/dma_uvm/inventory.json": "f4207c141dd8b95a2fed715e0255955fed9b49e56c049a8584531a24e2ec7c46",
+    "verification/dma_uvm/sources.json": "4ba4f50553923bbc52760c4cadcc9ba03a86837b86fc4289f057b9d572440653",
+    "scripts/run_dma_uvm.py": "25f7f13ab111ce9222872b49935efb82cb6fbbf6d63dcd9f38f9b7f71989aec7",
+    "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+    "scripts/dma_accounting.py": "13c2c71d318d9d6614428d71e5d2c639492fa1767e81ee1d0923d4d9b9d46504"
+  },
+  "expected_environment_revision": null,
+  "version_command": {
+    "command": [
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+      "-version"
+    ],
+    "cwd": "C:\\short\\dma-faults-dev-20261109\\fault-tail_strobe\\child",
+    "exit_code": 0,
+    "timed_out": false,
+    "log": "version.log",
+    "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+  },
+  "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+  "source_lock": {
+    "owner": "M-Roohan-Khan-28",
+    "account_id": 270144410,
+    "repository": "AXI4-DMA-Subsystem",
+    "revision": "a2d3d57edaa9eb441f3289bf5320f4df2f074144",
+    "files": [
+      "rtl/axi4_dma_subsystem.sv"
+    ],
+    "commands": [
+      {
+        "command": [
+          "git",
+          "clone",
+          "--quiet",
+          "--config",
+          "core.autocrlf=false",
+          "--config",
+          "core.longpaths=true",
+          "https://github.com/M-Roohan-Khan-28/AXI4-DMA-Subsystem.git",
+          "C:\\short\\dma-faults-dev-20261109\\fault-tail_strobe\\child\\source"
+        ],
+        "cwd": "C:\\short\\dma-faults-dev-20261109\\fault-tail_strobe\\child",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-0.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "command": [
+          "git",
+          "-C",
+          "C:\\short\\dma-faults-dev-20261109\\fault-tail_strobe\\child\\source",
+          "checkout",
+          "--quiet",
+          "--detach",
+          "a2d3d57edaa9eb441f3289bf5320f4df2f074144"
+        ],
+        "cwd": "C:\\short\\dma-faults-dev-20261109\\fault-tail_strobe\\child",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-1.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "observed_revision": "a2d3d57edaa9eb441f3289bf5320f4df2f074144",
+    "clean": true,
+    "rtl_sha256": {
+      "rtl/axi4_dma_subsystem.sv": "dd709078dc9d91db0d92ba1e4bd34b32cb43f09f8f5739abdb6552313795043b"
+    }
+  },
+  "finished_utc": "2026-11-09T14:12:50.963017+00:00"
+}

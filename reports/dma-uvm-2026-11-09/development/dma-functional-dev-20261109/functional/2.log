@@ -1,0 +1,205 @@
+Reading pref.tcl
+
+# 2025.2
+
+# ** Note: (vsim-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# vsim -c -onfinish stop -voptargs="+acc" -sv_seed 682016495 -L C:\MXR\Quartus\25.1\questa_fse\uvm-1.2 work.dma_uvm_top "+CASES=C:\short\dma-functional-dev-20261109\functional\cases.txt" -do "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /dma_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0" 
+# Start time: 19:06:02 on Nov 09,2026
+# Loading C:/Users/CG/AppData/Local/Temp\CG@DESKTOP-9KOU2NO_dpi_43356\win64_gcc-7.4.0\export_tramp.dll
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.dma_bus(fast)
+# Loading C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.uvm_pkg(fast)
+# Loading work.dma_uvm_pkg(fast)
+# Loading C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.questa_uvm_pkg(fast)
+# Loading work.dma_uvm_top(fast)
+# Loading work.dma_bus(fast__2)
+# Loading work.dma_adapter(fast)
+# Loading work.axi4_dma_subsystem(fast)
+# Loading work.dma_assertions(fast)
+# Compiling C:/Users/CG/AppData/Local/Temp\CG@DESKTOP-9KOU2NO_dpi_43356\win64_gcc-7.4.0\exportwrapper.c
+# Loading C:/Users/CG/AppData/Local/Temp\CG@DESKTOP-9KOU2NO_dpi_43356\win64_gcc-7.4.0\vsim_auto_compile.dll
+# Loading C:/MXR/Quartus/25.1/questa_fse/uvm-1.2\win64\uvm_dpi.dll
+# onerror {quit -force -code 1}
+#  Warning: onerror command for use within macro
+#  vcd file capture.vcd
+#  vcd add /dma_uvm_top/bus/*
+#  run -all
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test dma_test...
+# DMA_CASE_START name=zero_length time=10000
+# DMA_CASE_PASS name=zero_length commands=1 terminals=1 cancelled=0 comparisons=207
+# DMA_CASE_START name=zero_unusual_addresses time=1200000
+# DMA_CASE_PASS name=zero_unusual_addresses commands=1 terminals=1 cancelled=0 comparisons=208
+# DMA_CASE_START name=tail_1 time=2390000
+# DMA_CASE_PASS name=tail_1 commands=1 terminals=1 cancelled=0 comparisons=346
+# DMA_CASE_START name=tail_2 time=3730000
+# DMA_CASE_PASS name=tail_2 commands=1 terminals=1 cancelled=0 comparisons=350
+# DMA_CASE_START name=tail_3 time=5070000
+# DMA_CASE_PASS name=tail_3 commands=1 terminals=1 cancelled=0 comparisons=342
+# DMA_CASE_START name=tail_4 time=6360000
+# DMA_CASE_PASS name=tail_4 commands=1 terminals=1 cancelled=0 comparisons=358
+# DMA_CASE_START name=tail_5 time=7700000
+# DMA_CASE_PASS name=tail_5 commands=1 terminals=1 cancelled=0 comparisons=350
+# DMA_CASE_START name=tail_6 time=8990000
+# DMA_CASE_PASS name=tail_6 commands=1 terminals=1 cancelled=0 comparisons=354
+# DMA_CASE_START name=tail_7 time=10280000
+# DMA_CASE_PASS name=tail_7 commands=1 terminals=1 cancelled=0 comparisons=358
+# DMA_CASE_START name=length_8 time=11570000
+# DMA_CASE_PASS name=length_8 commands=1 terminals=1 cancelled=0 comparisons=374
+# DMA_CASE_START name=length_16 time=12910000
+# DMA_CASE_PASS name=length_16 commands=1 terminals=1 cancelled=0 comparisons=427
+# DMA_CASE_START name=length_128 time=14250000
+# DMA_CASE_PASS name=length_128 commands=1 terminals=1 cancelled=0 comparisons=1313
+# DMA_CASE_START name=length_129 time=16190000
+# DMA_CASE_PASS name=length_129 commands=1 terminals=1 cancelled=0 comparisons=1369
+# DMA_CASE_START name=length_4096 time=18230000
+# DMA_CASE_PASS name=length_4096 commands=1 terminals=1 cancelled=0 comparisons=33386
+# DMA_CASE_START name=source_page_split time=43370000
+# DMA_CASE_PASS name=source_page_split commands=1 terminals=1 cancelled=0 comparisons=1506
+# DMA_CASE_START name=destination_page_split time=45510000
+# DMA_CASE_PASS name=destination_page_split commands=1 terminals=1 cancelled=0 comparisons=1530
+# DMA_CASE_START name=both_page_splits time=47750000
+# DMA_CASE_PASS name=both_page_splits commands=1 terminals=1 cancelled=0 comparisons=1530
+# DMA_CASE_START name=reject_source_alignment time=49990000
+# DMA_CASE_PASS name=reject_source_alignment commands=2 terminals=2 cancelled=0 comparisons=619
+# DMA_CASE_START name=reject_destination_alignment time=52330000
+# DMA_CASE_PASS name=reject_destination_alignment commands=2 terminals=2 cancelled=0 comparisons=619
+# DMA_CASE_START name=reject_overlap time=54670000
+# DMA_CASE_PASS name=reject_overlap commands=2 terminals=2 cancelled=0 comparisons=619
+# DMA_CASE_START name=reject_length time=57010000
+# DMA_CASE_PASS name=reject_length commands=2 terminals=2 cancelled=0 comparisons=619
+# DMA_CASE_START name=reject_source_overflow time=59350000
+# DMA_CASE_PASS name=reject_source_overflow commands=2 terminals=2 cancelled=0 comparisons=619
+# DMA_CASE_START name=reject_destination_overflow time=61690000
+# DMA_CASE_PASS name=reject_destination_overflow commands=2 terminals=2 cancelled=0 comparisons=619
+# DMA_CASE_START name=adjacent_nonoverlap time=64030000
+# DMA_CASE_PASS name=adjacent_nonoverlap commands=1 terminals=1 cancelled=0 comparisons=395
+# DMA_CASE_START name=exact_source_top_end time=65370000
+# DMA_CASE_PASS name=exact_source_top_end commands=1 terminals=1 cancelled=0 comparisons=393
+# DMA_CASE_START name=exact_destination_top_end time=66710000
+# DMA_CASE_PASS name=exact_destination_top_end commands=1 terminals=1 cancelled=0 comparisons=393
+# DMA_CASE_START name=high_address_source time=68050000
+# DMA_CASE_PASS name=high_address_source commands=1 terminals=1 cancelled=0 comparisons=1369
+# DMA_CASE_START name=exact_top_page time=70090000
+# DMA_CASE_PASS name=exact_top_page commands=1 terminals=1 cancelled=0 comparisons=33364
+# DMA_CASE_START name=csr_address_first time=95280000
+# DMA_CASE_PASS name=csr_address_first commands=1 terminals=1 cancelled=0 comparisons=545
+# DMA_CASE_START name=csr_data_first time=96670000
+# DMA_CASE_PASS name=csr_data_first commands=1 terminals=1 cancelled=0 comparisons=545
+# DMA_CASE_START name=csr_simultaneous time=98060000
+# DMA_CASE_PASS name=csr_simultaneous commands=1 terminals=1 cancelled=0 comparisons=530
+# DMA_CASE_START name=csr_invalid_classes time=99300000
+# DMA_CASE_PASS name=csr_invalid_classes commands=1 terminals=1 cancelled=0 comparisons=893
+# DMA_CASE_START name=busy_rejections time=102890000
+# DMA_CASE_PASS name=busy_rejections commands=1 terminals=1 cancelled=0 comparisons=1397
+# DMA_CASE_START name=sticky_ack_new_start time=105360000
+# DMA_CASE_PASS name=sticky_ack_new_start commands=2 terminals=2 cancelled=0 comparisons=1325
+# DMA_CASE_START name=aw_first time=107870000
+# DMA_CASE_PASS name=aw_first commands=1 terminals=1 cancelled=0 comparisons=1381
+# DMA_CASE_START name=w_first time=109960000
+# DMA_CASE_PASS name=w_first commands=1 terminals=1 cancelled=0 comparisons=1381
+# DMA_CASE_START name=all_w_before_aw_1 time=112050000
+# DMA_CASE_PASS name=all_w_before_aw_1 commands=1 terminals=1 cancelled=0 comparisons=362
+# DMA_CASE_START name=all_w_before_aw_2 time=113340000
+# DMA_CASE_PASS name=all_w_before_aw_2 commands=1 terminals=1 cancelled=0 comparisons=427
+# DMA_CASE_START name=all_w_before_aw_16 time=114680000
+# DMA_CASE_PASS name=all_w_before_aw_16 commands=1 terminals=1 cancelled=0 comparisons=1313
+# DMA_CASE_START name=same_edge_aw_w_1 time=116620000
+# DMA_CASE_PASS name=same_edge_aw_w_1 commands=1 terminals=1 cancelled=0 comparisons=362
+# DMA_CASE_START name=same_edge_aw_w_2 time=117910000
+# DMA_CASE_PASS name=same_edge_aw_w_2 commands=1 terminals=1 cancelled=0 comparisons=427
+# DMA_CASE_START name=same_edge_aw_w_16 time=119250000
+# DMA_CASE_PASS name=same_edge_aw_w_16 commands=1 terminals=1 cancelled=0 comparisons=1301
+# DMA_CASE_START name=awready_waits_wvalid time=121140000
+# DMA_CASE_PASS name=awready_waits_wvalid commands=1 terminals=1 cancelled=0 comparisons=1313
+# DMA_CASE_START name=independent_stalls time=123080000
+# DMA_CASE_PASS name=independent_stalls commands=1 terminals=1 cancelled=0 comparisons=2404
+# DMA_CASE_START name=read_error_first time=125870000
+# DMA_CASE_PASS name=read_error_first commands=2 terminals=2 cancelled=0 comparisons=1757
+# DMA_CASE_START name=read_error_middle time=128660000
+# DMA_CASE_PASS name=read_error_middle commands=2 terminals=2 cancelled=0 comparisons=1757
+# DMA_CASE_START name=read_error_final time=131450000
+# DMA_CASE_PASS name=read_error_final commands=2 terminals=2 cancelled=0 comparisons=1769
+# DMA_CASE_START name=read_error_after_commit time=134290000
+# DMA_CASE_PASS name=read_error_after_commit commands=2 terminals=2 cancelled=0 comparisons=3336
+# DMA_CASE_START name=write_error_first_commits time=137930000
+# DMA_CASE_PASS name=write_error_first_commits commands=2 terminals=2 cancelled=0 comparisons=2765
+# DMA_CASE_START name=write_error_later_commits time=140970000
+# DMA_CASE_PASS name=write_error_later_commits commands=2 terminals=2 cancelled=0 comparisons=4056
+# DMA_CASE_START name=write_error_no_commit time=144760000
+# DMA_CASE_PASS name=write_error_no_commit commands=2 terminals=2 cancelled=0 comparisons=2009
+# DMA_CASE_START name=reset_during_read time=147850000
+# DMA_CASE_PASS name=reset_during_read commands=2 terminals=1 cancelled=1 comparisons=2180
+# DMA_CASE_START name=reset_after_accepted_b time=149800000
+# DMA_CASE_PASS name=reset_after_accepted_b commands=2 terminals=1 cancelled=1 comparisons=3334
+# DMA_CASE_START name=reset_commit_before_b time=152410000
+# DMA_CASE_PASS name=reset_commit_before_b commands=2 terminals=1 cancelled=1 comparisons=2561
+# DMA_CASE_START name=reset_control_aw_only time=154980000
+# DMA_CASE_PASS name=reset_control_aw_only commands=1 terminals=1 cancelled=0 comparisons=563
+# DMA_CASE_START name=reset_control_w_only time=156510000
+# DMA_CASE_PASS name=reset_control_w_only commands=1 terminals=1 cancelled=0 comparisons=575
+# DMA_UVM_PASS cases=56 assertions=0 seed=0x28A6BEEF
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_objection.svh(1270) @ 158080000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_report_server.svh(847) @ 158080000: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    5
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# 
+# ** Note: $finish    : C:/MXR/Quartus/25.1/questa_fse/win64/../verilog_src/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 158080 ns  Iteration: 75  Instance: /dma_uvm_top
+# Break in Task uvm_pkg/uvm_root::run_test at C:/MXR/Quartus/25.1/questa_fse/win64/../verilog_src/uvm-1.2/src/base/uvm_root.svh line 517
+# Stopped at C:/MXR/Quartus/25.1/questa_fse/win64/../verilog_src/uvm-1.2/src/base/uvm_root.svh line 517
+#  vcd flush
+#  quit -force -code 0
+# End time: 19:06:10 on Nov 09,2026, Elapsed time: 0:00:08
+# Errors: 0, Warnings: 1

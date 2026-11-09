@@ -1,0 +1,52 @@
+[
+  {
+    "command": [
+      "git",
+      "-C",
+      "C:\\short\\dma-uvm-final-remote-source-20261109",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exit_code": 0,
+    "stdout": "e93a6fdff85804dab7b5e636e43880e1ba7615ab\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "-C",
+      "C:\\short\\dma-uvm-final-remote-source-20261109",
+      "symbolic-ref",
+      "-q",
+      "HEAD"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "-C",
+      "C:\\short\\dma-uvm-final-remote-source-20261109",
+      "status",
+      "--porcelain"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "-C",
+      "C:\\short\\dma-uvm-final-remote-source-20261109",
+      "remote",
+      "get-url",
+      "origin"
+    ],
+    "exit_code": 0,
+    "stdout": "https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git\n",
+    "stderr": ""
+  }
+]

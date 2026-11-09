@@ -1,0 +1,33 @@
+[
+  {
+    "command": [
+      "git",
+      "clone",
+      "--quiet",
+      "--single-branch",
+      "-c",
+      "core.autocrlf=false",
+      "-c",
+      "core.longpaths=true",
+      "--branch",
+      "advanced/dma-deterministic-uvm",
+      "https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git",
+      "C:\\short\\dma-uvm-final-remote-source-20261109"
+    ],
+    "exit_code": 0,
+    "log": "remote-clone-0.log"
+  },
+  {
+    "command": [
+      "git",
+      "-C",
+      "C:\\short\\dma-uvm-final-remote-source-20261109",
+      "checkout",
+      "--quiet",
+      "--detach",
+      "e93a6fdff85804dab7b5e636e43880e1ba7615ab"
+    ],
+    "exit_code": 0,
+    "log": "remote-clone-1.log"
+  }
+]

@@ -1,0 +1,2 @@
+# Exact capture bytes, including CRLF; no text normalization.
+** -text

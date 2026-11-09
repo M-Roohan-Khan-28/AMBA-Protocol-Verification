@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "origin": "simulator",
+  "source_filename": "capture.vcd",
+  "source_sha256": "529dd8408656db7d2c55aca8813561afdfa43018d1e0d4b243585784274e67f4",
+  "timescale": "1ps",
+  "start_tick": 155030000,
+  "end_tick": 155210000,
+  "source_final_tick": 158080000,
+  "signals": [
+    {
+      "name": "dma_uvm_top.bus.clk",
+      "code": "!",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "dma_uvm_top.bus.reset_n",
+      "code": "\"",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "dma_uvm_top.bus.c_awvalid",
+      "code": "$",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "dma_uvm_top.bus.c_awready",
+      "code": "%",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "dma_uvm_top.bus.c_awaddr",
+      "code": "#",
+      "width": 32,
+      "kind": "reg",
+      "bit_range": "[31:0]"
+    },
+    {
+      "name": "dma_uvm_top.bus.c_wvalid",
+      "code": "(",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "dma_uvm_top.bus.c_wready",
+      "code": ")",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "dma_uvm_top.bus.c_bvalid",
+      "code": "+",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "dma_uvm_top.bus.c_bready",
+      "code": ",",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "dma_uvm_top.bus.c_arvalid",
+      "code": ".",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "dma_uvm_top.bus.c_arready",
+      "code": "/",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "dma_uvm_top.bus.c_rvalid",
+      "code": "2",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "dma_uvm_top.bus.c_rready",
+      "code": "3",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "dma_uvm_top.bus.c_rdata",
+      "code": "0",
+      "width": 32,
+      "kind": "reg",
+      "bit_range": "[31:0]"
+    }
+  ],
+  "same_tick_collapses": 0,
+  "functional_result": "NOT_ASSESSED_BY_RENDERER",
+  "source_relative_path": "../run/functional/capture.vcd",
+  "source_revision": "e93a6fdff85804dab7b5e636e43880e1ba7615ab",
+  "source_representation": "original simulator capture bytes; committed without conversion",
+  "captured_sha256": "529dd8408656db7d2c55aca8813561afdfa43018d1e0d4b243585784274e67f4",
+  "source_crlf_count": 113734,
+  "selected_public_pin_events": {
+    "reset_assertion": 155080000
+  }
+}

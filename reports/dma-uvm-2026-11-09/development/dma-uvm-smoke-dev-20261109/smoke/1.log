@@ -1,0 +1,27 @@
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+Start time: 19:00:41 on Nov 09,2026
+vlog -sv -work work -L C:\MXR\Quartus\25.1\questa_fse\uvm-1.2 "+incdir+C:\MXR\Quartus\25.1\questa_fse\verilog_src\uvm-1.2\src" "+incdir+C:\short\amba-dma-uvm-20261109\verification\dma_uvm" C:\short\amba-dma-uvm-20261109\verification\dma_uvm\dma_bus.sv C:\short\dma-uvm-smoke-dev-20261109\source\rtl\axi4_dma_subsystem.sv C:\short\amba-dma-uvm-20261109\verification\dma_uvm\dma_adapter.sv C:\short\amba-dma-uvm-20261109\verification\dma_uvm\dma_assertions.sv C:\short\amba-dma-uvm-20261109\verification\dma_uvm\dma_uvm_pkg.sv C:\short\amba-dma-uvm-20261109\verification\dma_uvm\dma_uvm_top.sv 
+** Note: (vlog-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+-- Compiling interface dma_bus
+-- Compiling module axi4_dma_subsystem
+-- Compiling module dma_adapter
+-- Compiling module dma_assertions
+-- Compiling package dma_uvm_pkg
+-- Importing package C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.uvm_pkg (uvm-1.2 Built-in)
+** Error (suppressible): C:\short\amba-dma-uvm-20261109\verification\dma_uvm/dma_scoreboard.svh(84): (vlog-2911) Argument name 'f' for virtual method 'write' in sub class 'dma_scoreboard' does not match the argument name 't' in superclass 'uvm_subscriber'.
+** Error: C:\short\amba-dma-uvm-20261109\verification\dma_uvm/dma_scoreboard.svh(1): Sub-class 'dma_scoreboard' does not override all virtual methods or pure constraints of abstract superclass 'uvm_subscriber'.
+** Error: C:\short\amba-dma-uvm-20261109\verification\dma_uvm/dma_scoreboard.svh(1): Sub-class 'dma_scoreboard' does not override virtual method 'write' of abstract superclass 'uvm_subscriber'.
+-- Compiling module dma_uvm_top
+** Error: C:\short\amba-dma-uvm-20261109\verification\dma_uvm\dma_uvm_top.sv(3): (vlog-13006) Could not find the package (dma_uvm_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+** Error: (vlog-13069) C:\short\amba-dma-uvm-20261109\verification\dma_uvm\dma_uvm_top.sv(7): near ";": syntax error, unexpected ';', expecting '('.
+** Error: C:\short\amba-dma-uvm-20261109\verification\dma_uvm\dma_uvm_top.sv(7): (vlog-2730) Undefined variable: 'cfg'.
+** Error: C:\short\amba-dma-uvm-20261109\verification\dma_uvm\dma_uvm_top.sv(7): (vlog-2164) Class or package 'dma_config' not found.
+** Error: C:\short\amba-dma-uvm-20261109\verification\dma_uvm\dma_uvm_top.sv(7): (vlog-2730) Undefined variable: 'dma_config'.
+** Error: (vlog-13069) C:\short\amba-dma-uvm-20261109\verification\dma_uvm\dma_uvm_top.sv(7): near "::": syntax error, unexpected ::, expecting ';'.
+** Error: C:\short\amba-dma-uvm-20261109\verification\dma_uvm\dma_uvm_top.sv(7): (vlog-2164) Class or package 'type_id' not found.
+** Error: C:\short\amba-dma-uvm-20261109\verification\dma_uvm\dma_uvm_top.sv(7): (vlog-2164) Class or package 'dma_command' not found.
+** Error: C:\short\amba-dma-uvm-20261109\verification\dma_uvm\dma_uvm_top.sv(7): (vlog-2730) Undefined variable: 'dma_command'.
+** Error: (vlog-13069) C:\short\amba-dma-uvm-20261109\verification\dma_uvm\dma_uvm_top.sv(7): near "::": syntax error, unexpected ::, expecting ';'.
+** Error: C:\short\amba-dma-uvm-20261109\verification\dma_uvm\dma_uvm_top.sv(7): (vlog-2164) Class or package 'type_id' not found.
+End time: 19:00:42 on Nov 09,2026, Elapsed time: 0:00:01
+Errors: 14, Warnings: 0

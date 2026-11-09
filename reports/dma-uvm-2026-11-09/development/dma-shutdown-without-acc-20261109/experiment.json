@@ -1,0 +1,58 @@
+[
+  {
+    "command": [
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+      "work"
+    ],
+    "cwd": "C:\\short\\dma-shutdown-without-acc-20261109",
+    "exit_code": 0,
+    "timed_out": false,
+    "log": "0.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "command": [
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+      "-sv",
+      "-work",
+      "work",
+      "-L",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+      "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+      "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+      "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+      "C:\\short\\dma-uvm-final-run-20261109\\fault-duplicate_read\\child\\source\\rtl\\axi4_dma_subsystem.sv",
+      "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_adapter.sv",
+      "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+      "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_uvm_pkg.sv",
+      "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_uvm_top.sv"
+    ],
+    "cwd": "C:\\short\\dma-shutdown-without-acc-20261109",
+    "exit_code": 0,
+    "timed_out": false,
+    "log": "1.log",
+    "sha256": "b5356b716aa147531c3b623f5f3fe47c1a97b6f162a01a5cd3806179207c3f15"
+  },
+  {
+    "command": [
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+      "-c",
+      "-onfinish",
+      "stop",
+      "-sv_seed",
+      "682016495",
+      "-L",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+      "work.dma_uvm_top",
+      "+CASES=C:\\short\\dma-uvm-final-run-20261109\\fault-duplicate_read\\child\\fault-duplicate_read\\cases.txt",
+      "+FAULT=duplicate_read",
+      "-do",
+      "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /dma_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+    ],
+    "cwd": "C:\\short\\dma-shutdown-without-acc-20261109",
+    "exit_code": 0,
+    "timed_out": false,
+    "log": "2.log",
+    "sha256": "5678499af7303b2a2979a344f9712b9640985a5562a7c0f016bdef901334b284"
+  }
+]

@@ -1,0 +1,38 @@
+Reading pref.tcl
+
+# 2025.2
+
+# ** Note: (vsim-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# vsim -c -onfinish exit -voptargs="+acc" -sv_seed 682016495 work.dma_sva_control "+SCENARIO=w_last" "+EXPECT_SVA=W_LAST" -do "onerror {quit -force -code 1}; run -all; quit -force -code 0" 
+# Start time: 00:52:11 on Nov 10,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.dma_sva_control(fast)
+# Loading work.dma_bus(fast__1)
+# Loading work.dma_assertions(fast)
+# onerror {quit -force -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# DMA_SVA_DETECTED W_LAST time=55000
+# DMA_SVA_CONTROL_PASS name=w_last detections=1
+# ** Note: $finish    : C:/short/dma-fix-20261110/verification/dma_uvm/dma_sva_control.sv(60)
+#    Time: 60 ns  Iteration: 1  Instance: /dma_sva_control
+# End time: 00:52:14 on Nov 10,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 1

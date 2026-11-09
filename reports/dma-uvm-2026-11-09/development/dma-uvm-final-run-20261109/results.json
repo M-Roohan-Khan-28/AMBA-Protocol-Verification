@@ -1,0 +1,5339 @@
+{
+  "started_utc": "2026-11-09T14:18:23.624325+00:00",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\dma-uvm-final-source-20261109\\scripts\\run_dma_uvm.py",
+    "--expected-env-sha",
+    "2638123be40cbb95262682f6c5e1b1d89c0ae7d5",
+    "--output",
+    "C:\\short\\dma-uvm-final-run-20261109"
+  ],
+  "source_revision": "2638123be40cbb95262682f6c5e1b1d89c0ae7d5",
+  "source_dirty": false,
+  "serial_execution": true,
+  "selection": null,
+  "raw_fault": false,
+  "seed": 682016495,
+  "seed_hex": "0x28A6BEEF",
+  "functional_coverage": "NOT RUN",
+  "constrained_randomization": "NOT RUN",
+  "original_advanced_alu_apb": "NOT RUN",
+  "suites": [
+    {
+      "name": "sva-aw_hold",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-aw_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-aw_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "961353850f751635f2159843cbbc5241dc14742bb70284f451047a4410e53b26"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=aw_hold",
+            "+EXPECT_SVA=AW_HOLD",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-aw_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "77531c8184d3fa43ef2810ad54e5c0700a8eb95af12829f8823c4ac523ec8170"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "AW_HOLD"
+      ],
+      "observed": [
+        "AW_HOLD"
+      ]
+    },
+    {
+      "name": "sva-w_hold",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-w_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-w_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "be52fa7f3a4e31105dcf51c4fb8a19c4dc89dd8ce3303103300685ec305d4907"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=w_hold",
+            "+EXPECT_SVA=W_HOLD",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-w_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "cc13130fb6b76c3e3336957d05d0a92fc87c620fb91bcf5dd06bc0e124f13ecb"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "W_HOLD"
+      ],
+      "observed": [
+        "W_HOLD"
+      ]
+    },
+    {
+      "name": "sva-ar_hold",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-ar_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-ar_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "ba2225910cb737fe24b6b82bba8897a2a4db6d4f5d10ac29cdd6dd5469c6bd38"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=ar_hold",
+            "+EXPECT_SVA=AR_HOLD",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-ar_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "fe82d64b2c291fc379942aca21f46429ec56828d41f51c4d90ec62209a2e2925"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "AR_HOLD"
+      ],
+      "observed": [
+        "AR_HOLD"
+      ]
+    },
+    {
+      "name": "sva-b_hold",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-b_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-b_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "f4ab92ea61c78c0e15d1e4395663875a699cf106f02215368b9fe8f11fc51a15"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=b_hold",
+            "+EXPECT_SVA=B_HOLD",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-b_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "759aba9c251c4f6fad99600ba3d9b6841a1d662097fa99e28843ff98528e7547"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "B_HOLD"
+      ],
+      "observed": [
+        "B_HOLD"
+      ]
+    },
+    {
+      "name": "sva-r_hold",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-r_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-r_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "c57f82d839c9c9dfa0c814d5d4a77c93e91e2da57ad3144eab798a1f48dcc648"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=r_hold",
+            "+EXPECT_SVA=R_HOLD",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-r_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "773bb06bef7236eb0e5f2c877a451f9741459562d455ff6f198a364d5ea9c318"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "R_HOLD"
+      ],
+      "observed": [
+        "R_HOLD"
+      ]
+    },
+    {
+      "name": "sva-b_before",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-b_before",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-b_before",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "133ab18491b621fcef8e9cd8923b9d26bda2cae5e8e994d61303ac1535471cfe"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=b_before",
+            "+EXPECT_SVA=B_ELIGIBILITY",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-b_before",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "b287459531dbf2ececc9a384269c181dce4e3ce383909d21c10a9aa40085f532"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "B_ELIGIBILITY"
+      ],
+      "observed": [
+        "B_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "sva-b_aw_only",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-b_aw_only",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-b_aw_only",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "8eba132de56e328e8e9eb24f6d729e8ca013bc3e3773f5c631ffbdc8a3099616"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=b_aw_only",
+            "+EXPECT_SVA=B_ELIGIBILITY",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-b_aw_only",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "474757f30d9a5df95fd82f77499ee60b18f2208ae1e1aa11b076141e737aa264"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "B_ELIGIBILITY"
+      ],
+      "observed": [
+        "B_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "sva-b_w_only",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-b_w_only",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-b_w_only",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "d8f910e397c6ad8cb4fbea19b6ebb8d5032ef9f759212b95f57e5ea973c491d8"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=b_w_only",
+            "+EXPECT_SVA=B_ELIGIBILITY",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-b_w_only",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "51c30961839508a848da34fe6325e1ac94034cd5deedabc0ddff20a5778918f0"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "B_ELIGIBILITY"
+      ],
+      "observed": [
+        "B_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "sva-b_same_w",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-b_same_w",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-b_same_w",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "56f2741ea8b4afe46f6eb73e65c2fb53c53efcff45efde4a0747603c7e6d7dee"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=b_same_w",
+            "+EXPECT_SVA=B_ELIGIBILITY",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-b_same_w",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "1da4fb6a5825093785a1144deff26c024c576d6b02f6899bb86132be0279d020"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "B_ELIGIBILITY"
+      ],
+      "observed": [
+        "B_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "sva-b_same_aw",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-b_same_aw",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-b_same_aw",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "25057301b11f2d0bb4513674861e680369f7a88c05fc36c5e1a29f8df23add26"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=b_same_aw",
+            "+EXPECT_SVA=B_ELIGIBILITY",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-b_same_aw",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "41ba18be6e21b561ea3b979ee95034b90707e6c8c9c7fc01d528d2ce8214a276"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "B_ELIGIBILITY"
+      ],
+      "observed": [
+        "B_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "sva-b_same_both",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-b_same_both",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-b_same_both",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "94318987419d7db29698c88ecb2056f0564872b491ee4ea830c8f04b5230ede1"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=b_same_both",
+            "+EXPECT_SVA=B_ELIGIBILITY",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-b_same_both",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "b90d1bdf6b5988d5ce3ec672642146b28295fbdb1043238957e495cb07afc5ad"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "B_ELIGIBILITY"
+      ],
+      "observed": [
+        "B_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "sva-r_before",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-r_before",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-r_before",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "076afe731b56d19206829b94016838afcf55e9ada472aca977bad0ed9b42c8a9"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=r_before",
+            "+EXPECT_SVA=R_ELIGIBILITY",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-r_before",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "31404dbaf8f51364770b615b26d392dc029aebf8abf0acdcc5f0d300f172b825"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "R_ELIGIBILITY"
+      ],
+      "observed": [
+        "R_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "sva-r_same_ar",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-r_same_ar",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-r_same_ar",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "99758a2778d16dc3ce314ba9c9d6927989021a1f92ffe3030e77ca9e43331b85"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=r_same_ar",
+            "+EXPECT_SVA=R_ELIGIBILITY",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-r_same_ar",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "afd347f1a63a5b929c9504c6f00fd76e2c22e6967e44c6ebf2188b95db1be3b6"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "R_ELIGIBILITY"
+      ],
+      "observed": [
+        "R_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "sva-aw_attr",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-aw_attr",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-aw_attr",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "c9baeb53dbdbf53cbebbc3ff3edf85b5034ea0097ac7cea10f3e4ad49da8d26a"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=aw_attr",
+            "+EXPECT_SVA=AW_ATTR",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-aw_attr",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "c65f3acc6d65fd06e98da9630a9276d96044fdec363353daa0c872968344d890"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "AW_ATTR"
+      ],
+      "observed": [
+        "AW_ATTR"
+      ]
+    },
+    {
+      "name": "sva-ar_attr",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-ar_attr",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-ar_attr",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "fac77394786bd9c836acbd64a8e1bce0180104f43d5d0417aac1d8512fa0e962"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=ar_attr",
+            "+EXPECT_SVA=AR_ATTR",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-ar_attr",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "1fd9f60feb3ffebc8b80428a6601886522dcbd4740f579c3e52cab90b3e4528d"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "AR_ATTR"
+      ],
+      "observed": [
+        "AR_ATTR"
+      ]
+    },
+    {
+      "name": "sva-w_last",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-w_last",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-w_last",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "ab7bf932a30c714073fc8a38f35617d5dce17f8bca487230bbcef905b7e19a02"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=w_last",
+            "+EXPECT_SVA=W_LAST",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-w_last",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "c1367f8d021813ae25b1e98032cd678359f17f48ea3e0523fdcaa6ada7ff29bf"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "W_LAST"
+      ],
+      "observed": [
+        "W_LAST"
+      ]
+    },
+    {
+      "name": "sva-r_last",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-r_last",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-r_last",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "8b72b52b1068fee3c9bccef79606a364be987fb56076e1565254acffa7b14bb5"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=r_last",
+            "+EXPECT_SVA=R_LAST",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-r_last",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "ab2a29a09400acb5337a2d5b64eb5f1bbd42c781676182ed3053677e5f491647"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "R_LAST"
+      ],
+      "observed": [
+        "R_LAST"
+      ]
+    },
+    {
+      "name": "sva-rid",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-rid",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-rid",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "5d2c80715c024f408a6f5337c84f072ebaf1a171e19abdc9f81f74f9ed20b135"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=rid",
+            "+EXPECT_SVA=R_ID",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-rid",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "04908322e7a1b4166bf400500f51c052620f3292cc0638140f7084d11051029a"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "R_ID"
+      ],
+      "observed": [
+        "R_ID"
+      ]
+    },
+    {
+      "name": "sva-bid",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-bid",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-bid",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "7288289115fadfd6ebce636577b5658063c6f5c04f4b1dc828003e62e67be1e2"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=bid",
+            "+EXPECT_SVA=B_ID",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-bid",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "4998bbe120f5535b8dc698b7ab71f3abdd6ab38142e353214879016eee4cddc7"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "B_ID"
+      ],
+      "observed": [
+        "B_ID"
+      ]
+    },
+    {
+      "name": "sva-c_aw_hold",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-c_aw_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-c_aw_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "063c61f3ee85d2091d852f69bb884548d7aae4a5cd3d7ee0ccedfe0321f1babc"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=c_aw_hold",
+            "+EXPECT_SVA=C_AW_HOLD",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-c_aw_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "304c29e59b206bb1383e0b9d7acc764d6815d06a0188dcbaf2f4423a8294cce9"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "C_AW_HOLD"
+      ],
+      "observed": [
+        "C_AW_HOLD"
+      ]
+    },
+    {
+      "name": "sva-c_w_hold",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-c_w_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-c_w_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "29146ffced290ef9d501537db35b8029bc2babde2457305908217760381ba8d6"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=c_w_hold",
+            "+EXPECT_SVA=C_W_HOLD",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-c_w_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "3fbd7429782a6b17a376196bb72986b6276261d800e87b3d428d55fec0e26158"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "C_W_HOLD"
+      ],
+      "observed": [
+        "C_W_HOLD"
+      ]
+    },
+    {
+      "name": "sva-c_ar_hold",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-c_ar_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-c_ar_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "5f6f18a37fdd7c775b2258f41bc74dac1c23016747e3d50f1426f96ce8a4763b"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=c_ar_hold",
+            "+EXPECT_SVA=C_AR_HOLD",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-c_ar_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "43465f27a3496b6aadc1950e6c6e62ff5425c5c586bc7b4555c712b79e18c402"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "C_AR_HOLD"
+      ],
+      "observed": [
+        "C_AR_HOLD"
+      ]
+    },
+    {
+      "name": "sva-c_b_hold",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-c_b_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-c_b_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "17b5f67dd535285720cf064731956e897a7639cd4d4c508e470be61838d8176b"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=c_b_hold",
+            "+EXPECT_SVA=C_B_HOLD",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-c_b_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "a311cb005bfa4b69469cc1d29f1264a0884cfb894558aee088c73bfffc913505"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "C_B_HOLD"
+      ],
+      "observed": [
+        "C_B_HOLD"
+      ]
+    },
+    {
+      "name": "sva-c_r_hold",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-c_r_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-c_r_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "6261d6c03f4aec138af39a7ac8a02cd1e44ab78d1f3678a0ca1326cc5f50e2d2"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=c_r_hold",
+            "+EXPECT_SVA=C_R_HOLD",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-c_r_hold",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "23991ba323e5262357d1a642dce3204e8fc24778d6fdeff0c07acec31fbdb79a"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "C_R_HOLD"
+      ],
+      "observed": [
+        "C_R_HOLD"
+      ]
+    },
+    {
+      "name": "sva-c_b_before",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-c_b_before",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-c_b_before",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "fdc56e1f3b9e4bd8e711723940ef93edf9dbd8871605d64e254bbc745eacc250"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=c_b_before",
+            "+EXPECT_SVA=C_B_ELIGIBILITY",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-c_b_before",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "9b2873bf561f555bf5b220b76b35b115952a5a1141ae76e333b41b6bbc45df39"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "C_B_ELIGIBILITY"
+      ],
+      "observed": [
+        "C_B_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "sva-c_r_before",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-c_r_before",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-c_r_before",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "aa168a763c5418f3e0f2bf018a6857b6e93e2eb7073a763481990d7da293e666"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=c_r_before",
+            "+EXPECT_SVA=C_R_ELIGIBILITY",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-c_r_before",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "d4e8edc70eff9d6d1d569f7349d9001358103fe79b40228f76f3ab0a78e3dacf"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [
+        "C_R_ELIGIBILITY"
+      ],
+      "observed": [
+        "C_R_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "sva-legal",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-legal",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-legal",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "77398a6ba1816bac220d8ce1b7a02a9c71d4c89d096b2551ff115ec7039d6404"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.dma_sva_control",
+            "+SCENARIO=legal",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\sva-legal",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "0bb29c91e88e7c11d2e35935540e9b90077a7bfe8c3cefbf5beed0006798c47c"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected": [],
+      "observed": []
+    },
+    {
+      "name": "functional",
+      "kind": "functional",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\functional",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-run-20261109\\source\\rtl\\axi4_dma_subsystem.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_adapter.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_uvm_pkg.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\functional",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "3b1e2d63d9ebd2a0647a871193da0dfb8b190bc095b04eb233fba8df858c8984"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.dma_uvm_top",
+            "+CASES=C:\\short\\dma-uvm-final-run-20261109\\functional\\cases.txt",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /dma_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\functional",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "73b419debbfb96d3c7ba35f7796da8ffb1c8ad2a932cf58f67c743dc1359b402"
+        }
+      ],
+      "case_input_sha256": "55664789275bc146b11dfeac125200a86d6a7b1846079437a3844e97d677a7e6",
+      "reason": "EXECUTED",
+      "expected": [],
+      "observed": [],
+      "cases": [
+        {
+          "name": "zero_length",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 10,
+          "ar": 0,
+          "aw": 0,
+          "r_beats": 0,
+          "w_beats": 0,
+          "b": 0,
+          "memory_commits": 0,
+          "comparisons": 207,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 0,
+          "simultaneous": 0,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "zero_unusual_addresses",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 10,
+          "ar": 0,
+          "aw": 0,
+          "r_beats": 0,
+          "w_beats": 0,
+          "b": 0,
+          "memory_commits": 0,
+          "comparisons": 208,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 0,
+          "simultaneous": 0,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "tail_1",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 13,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 1,
+          "w_beats": 1,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 346,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "tail_2",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 13,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 1,
+          "w_beats": 1,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 350,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "tail_3",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 12,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 1,
+          "w_beats": 1,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 342,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "tail_4",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 13,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 1,
+          "w_beats": 1,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 358,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "tail_5",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 12,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 1,
+          "w_beats": 1,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 350,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 0,
+          "simultaneous": 1,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "tail_6",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 12,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 1,
+          "w_beats": 1,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 354,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "tail_7",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 12,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 1,
+          "w_beats": 1,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 358,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 0,
+          "simultaneous": 1,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "length_8",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 13,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 1,
+          "w_beats": 1,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 374,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "length_16",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 13,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 2,
+          "w_beats": 2,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 427,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 0,
+          "simultaneous": 1,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "length_128",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 25,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 16,
+          "w_beats": 16,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 1313,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "length_129",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 27,
+          "ar": 2,
+          "aw": 2,
+          "r_beats": 17,
+          "w_beats": 17,
+          "b": 2,
+          "memory_commits": 2,
+          "comparisons": 1369,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 2,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "length_4096",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 489,
+          "ar": 32,
+          "aw": 32,
+          "r_beats": 512,
+          "w_beats": 512,
+          "b": 32,
+          "memory_commits": 32,
+          "comparisons": 33386,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 5,
+          "w_first": 22,
+          "simultaneous": 5,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "source_page_split",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 29,
+          "ar": 3,
+          "aw": 3,
+          "r_beats": 19,
+          "w_beats": 19,
+          "b": 3,
+          "memory_commits": 3,
+          "comparisons": 1506,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 2,
+          "simultaneous": 1,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "destination_page_split",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 31,
+          "ar": 3,
+          "aw": 3,
+          "r_beats": 19,
+          "w_beats": 19,
+          "b": 3,
+          "memory_commits": 3,
+          "comparisons": 1530,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 1,
+          "w_first": 2,
+          "simultaneous": 0,
+          "all_w_before_aw": 2
+        },
+        {
+          "name": "both_page_splits",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 31,
+          "ar": 3,
+          "aw": 3,
+          "r_beats": 19,
+          "w_beats": 19,
+          "b": 3,
+          "memory_commits": 3,
+          "comparisons": 1530,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 3,
+          "simultaneous": 0,
+          "all_w_before_aw": 2
+        },
+        {
+          "name": "reject_source_alignment",
+          "commands": 2,
+          "terminals": 2,
+          "successes": 1,
+          "errors": 1,
+          "reset_cancellations": 0,
+          "acknowledgements": 2,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 23,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 2,
+          "w_beats": 2,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 619,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "reject_destination_alignment",
+          "commands": 2,
+          "terminals": 2,
+          "successes": 1,
+          "errors": 1,
+          "reset_cancellations": 0,
+          "acknowledgements": 2,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 23,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 2,
+          "w_beats": 2,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 619,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "reject_overlap",
+          "commands": 2,
+          "terminals": 2,
+          "successes": 1,
+          "errors": 1,
+          "reset_cancellations": 0,
+          "acknowledgements": 2,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 23,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 2,
+          "w_beats": 2,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 619,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "reject_length",
+          "commands": 2,
+          "terminals": 2,
+          "successes": 1,
+          "errors": 1,
+          "reset_cancellations": 0,
+          "acknowledgements": 2,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 23,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 2,
+          "w_beats": 2,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 619,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "reject_source_overflow",
+          "commands": 2,
+          "terminals": 2,
+          "successes": 1,
+          "errors": 1,
+          "reset_cancellations": 0,
+          "acknowledgements": 2,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 23,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 2,
+          "w_beats": 2,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 619,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "reject_destination_overflow",
+          "commands": 2,
+          "terminals": 2,
+          "successes": 1,
+          "errors": 1,
+          "reset_cancellations": 0,
+          "acknowledgements": 2,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 23,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 2,
+          "w_beats": 2,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 619,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 0,
+          "simultaneous": 1,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "adjacent_nonoverlap",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 13,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 2,
+          "w_beats": 2,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 395,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "exact_source_top_end",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 13,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 2,
+          "w_beats": 2,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 393,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "exact_destination_top_end",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 13,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 2,
+          "w_beats": 2,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 393,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "high_address_source",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 27,
+          "ar": 2,
+          "aw": 2,
+          "r_beats": 17,
+          "w_beats": 17,
+          "b": 2,
+          "memory_commits": 2,
+          "comparisons": 1369,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 1,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "exact_top_page",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 490,
+          "ar": 32,
+          "aw": 32,
+          "r_beats": 512,
+          "w_beats": 512,
+          "b": 32,
+          "memory_commits": 32,
+          "comparisons": 33364,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 27,
+          "simultaneous": 5,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "csr_address_first",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 14,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 4,
+          "w_beats": 4,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 545,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "csr_data_first",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 14,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 4,
+          "w_beats": 4,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 545,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "csr_simultaneous",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 14,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 4,
+          "w_beats": 4,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 530,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "csr_invalid_classes",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 24,
+          "control_cancelled": 0,
+          "csr_reads": 18,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 4,
+          "w_beats": 4,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 893,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "busy_rejections",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 6,
+          "control_cancelled": 0,
+          "csr_reads": 26,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 16,
+          "w_beats": 16,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 1397,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 1,
+          "w_first": 0,
+          "simultaneous": 0,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "sticky_ack_new_start",
+          "commands": 2,
+          "terminals": 2,
+          "successes": 2,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 28,
+          "ar": 2,
+          "aw": 2,
+          "r_beats": 10,
+          "w_beats": 10,
+          "b": 2,
+          "memory_commits": 2,
+          "comparisons": 1325,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 1,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "aw_first",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 28,
+          "ar": 2,
+          "aw": 2,
+          "r_beats": 17,
+          "w_beats": 17,
+          "b": 2,
+          "memory_commits": 2,
+          "comparisons": 1381,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 2,
+          "w_first": 0,
+          "simultaneous": 0,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "w_first",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 28,
+          "ar": 2,
+          "aw": 2,
+          "r_beats": 17,
+          "w_beats": 17,
+          "b": 2,
+          "memory_commits": 2,
+          "comparisons": 1381,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 2,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "all_w_before_aw_1",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 12,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 1,
+          "w_beats": 1,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 362,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "all_w_before_aw_2",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 13,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 2,
+          "w_beats": 2,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 427,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "all_w_before_aw_16",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 25,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 16,
+          "w_beats": 16,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 1313,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "same_edge_aw_w_1",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 12,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 1,
+          "w_beats": 1,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 362,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 0,
+          "simultaneous": 1,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "same_edge_aw_w_2",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 13,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 2,
+          "w_beats": 2,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 427,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 0,
+          "simultaneous": 1,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "same_edge_aw_w_16",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 24,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 16,
+          "w_beats": 16,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 1301,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 0,
+          "simultaneous": 1,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "awready_waits_wvalid",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 25,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 16,
+          "w_beats": 16,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 1313,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 0,
+          "simultaneous": 1,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "independent_stalls",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 42,
+          "ar": 3,
+          "aw": 3,
+          "r_beats": 33,
+          "w_beats": 33,
+          "b": 3,
+          "memory_commits": 3,
+          "comparisons": 2404,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 3,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "read_error_first",
+          "commands": 2,
+          "terminals": 2,
+          "successes": 1,
+          "errors": 1,
+          "reset_cancellations": 0,
+          "acknowledgements": 2,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 32,
+          "ar": 2,
+          "aw": 1,
+          "r_beats": 18,
+          "w_beats": 2,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 1757,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 0,
+          "simultaneous": 1,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "read_error_middle",
+          "commands": 2,
+          "terminals": 2,
+          "successes": 1,
+          "errors": 1,
+          "reset_cancellations": 0,
+          "acknowledgements": 2,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 32,
+          "ar": 2,
+          "aw": 1,
+          "r_beats": 18,
+          "w_beats": 2,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 1757,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "read_error_final",
+          "commands": 2,
+          "terminals": 2,
+          "successes": 1,
+          "errors": 1,
+          "reset_cancellations": 0,
+          "acknowledgements": 2,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 33,
+          "ar": 2,
+          "aw": 1,
+          "r_beats": 18,
+          "w_beats": 2,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 1769,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 0
+        },
+        {
+          "name": "read_error_after_commit",
+          "commands": 2,
+          "terminals": 2,
+          "successes": 1,
+          "errors": 1,
+          "reset_cancellations": 0,
+          "acknowledgements": 2,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 49,
+          "ar": 3,
+          "aw": 2,
+          "r_beats": 34,
+          "w_beats": 18,
+          "b": 2,
+          "memory_commits": 2,
+          "comparisons": 3336,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 1,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "write_error_first_commits",
+          "commands": 2,
+          "terminals": 2,
+          "successes": 1,
+          "errors": 1,
+          "reset_cancellations": 0,
+          "acknowledgements": 2,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 37,
+          "ar": 2,
+          "aw": 2,
+          "r_beats": 18,
+          "w_beats": 18,
+          "b": 2,
+          "memory_commits": 2,
+          "comparisons": 2765,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 1,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "write_error_later_commits",
+          "commands": 2,
+          "terminals": 2,
+          "successes": 1,
+          "errors": 1,
+          "reset_cancellations": 0,
+          "acknowledgements": 2,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 52,
+          "ar": 3,
+          "aw": 3,
+          "r_beats": 34,
+          "w_beats": 34,
+          "b": 3,
+          "memory_commits": 3,
+          "comparisons": 4056,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 3,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "write_error_no_commit",
+          "commands": 2,
+          "terminals": 2,
+          "successes": 1,
+          "errors": 1,
+          "reset_cancellations": 0,
+          "acknowledgements": 2,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 38,
+          "ar": 2,
+          "aw": 2,
+          "r_beats": 18,
+          "w_beats": 18,
+          "b": 2,
+          "memory_commits": 2,
+          "comparisons": 2009,
+          "resets": 1,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 2,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "reset_during_read",
+          "commands": 2,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 1,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 16,
+          "ar": 2,
+          "aw": 1,
+          "r_beats": 4,
+          "w_beats": 2,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 2180,
+          "resets": 2,
+          "cancelled_ar": 1,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 2,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "reset_after_accepted_b",
+          "commands": 2,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 1,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 16,
+          "ar": 2,
+          "aw": 2,
+          "r_beats": 18,
+          "w_beats": 18,
+          "b": 2,
+          "memory_commits": 2,
+          "comparisons": 3334,
+          "resets": 2,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 2,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "reset_commit_before_b",
+          "commands": 2,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 1,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 16,
+          "ar": 2,
+          "aw": 2,
+          "r_beats": 18,
+          "w_beats": 18,
+          "b": 1,
+          "memory_commits": 2,
+          "comparisons": 2561,
+          "resets": 2,
+          "cancelled_ar": 0,
+          "cancelled_aw": 1,
+          "cancelled_r_beats": 16,
+          "cancelled_w_beats": 16,
+          "cancelled_b_pending": 1,
+          "aw_first": 0,
+          "w_first": 2,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "reset_control_aw_only",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 1,
+          "csr_reads": 15,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 4,
+          "w_beats": 4,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 563,
+          "resets": 2,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        },
+        {
+          "name": "reset_control_w_only",
+          "commands": 1,
+          "terminals": 1,
+          "successes": 1,
+          "errors": 0,
+          "reset_cancellations": 0,
+          "acknowledgements": 1,
+          "control_rejected": 0,
+          "control_cancelled": 1,
+          "csr_reads": 16,
+          "ar": 1,
+          "aw": 1,
+          "r_beats": 4,
+          "w_beats": 4,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 575,
+          "resets": 2,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        }
+      ],
+      "capture_sha256": "a40cd7180ab4262253b8f0697173c5ef856c7b2f7e0b30feb954682bd5d6eb47"
+    },
+    {
+      "name": "malformed-wrong_rid",
+      "kind": "functional",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\malformed-wrong_rid",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-run-20261109\\source\\rtl\\axi4_dma_subsystem.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_adapter.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_uvm_pkg.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\malformed-wrong_rid",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "8e679d1485c3b8dd0c9a348a993dd4de3c71fe040ab907afff01290f7a2731b0"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.dma_uvm_top",
+            "+CASES=C:\\short\\dma-uvm-final-run-20261109\\malformed-wrong_rid\\cases.txt",
+            "+EXPECT_SVA=R_ID",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /dma_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\malformed-wrong_rid",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "c2379a3937bc9e5a93bc8cf589722f1b60c91e4cbb024e9a4e678a1435b169ef"
+        }
+      ],
+      "case_input_sha256": "9338785f7fedf45ed5c820623cc04d7f6102a896e36fb627dd7c9807b84d76cd",
+      "reason": "EXECUTED",
+      "expected": [
+        "R_ID"
+      ],
+      "observed": [
+        "R_ID"
+      ],
+      "cases": [
+        {
+          "name": "wrong_rid",
+          "commands": 2,
+          "terminals": 2,
+          "successes": 1,
+          "errors": 1,
+          "reset_cancellations": 0,
+          "acknowledgements": 2,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 28,
+          "ar": 2,
+          "aw": 1,
+          "r_beats": 10,
+          "w_beats": 2,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 1411,
+          "resets": 2,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        }
+      ],
+      "capture_sha256": "4bb24028d75c39ce520e5ff585a41933f4881828b8a0fadcd8ea62a2ef225aa4"
+    },
+    {
+      "name": "malformed-wrong_bid",
+      "kind": "functional",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\malformed-wrong_bid",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-run-20261109\\source\\rtl\\axi4_dma_subsystem.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_adapter.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_uvm_pkg.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\malformed-wrong_bid",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "f3f846ea7077479e71c7f2ca64cca2cf0d95b6162ab017c340706ba5946ce66c"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.dma_uvm_top",
+            "+CASES=C:\\short\\dma-uvm-final-run-20261109\\malformed-wrong_bid\\cases.txt",
+            "+EXPECT_SVA=B_ID",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /dma_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\malformed-wrong_bid",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "43ba1dc559b611db621d8775c62b152d13a3632487e2bc4e63f64294995d00df"
+        }
+      ],
+      "case_input_sha256": "5312222612c1788d1c7a4d3ffc852920e1cd58bd33c770420fa7d79c9298de52",
+      "reason": "EXECUTED",
+      "expected": [
+        "B_ID"
+      ],
+      "observed": [
+        "B_ID"
+      ],
+      "cases": [
+        {
+          "name": "wrong_bid",
+          "commands": 2,
+          "terminals": 2,
+          "successes": 1,
+          "errors": 1,
+          "reset_cancellations": 0,
+          "acknowledgements": 2,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 31,
+          "ar": 2,
+          "aw": 2,
+          "r_beats": 10,
+          "w_beats": 10,
+          "b": 2,
+          "memory_commits": 2,
+          "comparisons": 1539,
+          "resets": 2,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 2,
+          "simultaneous": 0,
+          "all_w_before_aw": 0
+        }
+      ],
+      "capture_sha256": "e09f0cf2f2d78a864b325dc3ad7b49a08643b04e8ed6008e80d29eea7fd0ee13"
+    },
+    {
+      "name": "malformed-early_rlast",
+      "kind": "functional",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\malformed-early_rlast",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-run-20261109\\source\\rtl\\axi4_dma_subsystem.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_adapter.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_uvm_pkg.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\malformed-early_rlast",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "9a8ccaa9a694e8e857fad060cb3aaf00cb7262e1adca56910cb62b9bef79eb1e"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.dma_uvm_top",
+            "+CASES=C:\\short\\dma-uvm-final-run-20261109\\malformed-early_rlast\\cases.txt",
+            "+EXPECT_SVA=R_LAST",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /dma_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\malformed-early_rlast",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "3148dbb77f7ad29cca1137fe02b1a341413796403b23dae8e67f1e78d7930540"
+        }
+      ],
+      "case_input_sha256": "ece2a4fc7d028ac5b88d9c31a3d912e7013bff8ed47563148c5811723ca16a89",
+      "reason": "EXECUTED",
+      "expected": [
+        "R_LAST"
+      ],
+      "observed": [
+        "R_LAST"
+      ],
+      "cases": [
+        {
+          "name": "early_rlast",
+          "commands": 2,
+          "terminals": 2,
+          "successes": 1,
+          "errors": 1,
+          "reset_cancellations": 0,
+          "acknowledgements": 2,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 24,
+          "ar": 2,
+          "aw": 1,
+          "r_beats": 3,
+          "w_beats": 2,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 1293,
+          "resets": 2,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 0,
+          "simultaneous": 1,
+          "all_w_before_aw": 0
+        }
+      ],
+      "capture_sha256": "18f632b59ec170cc6a05c6784c512d715937da8aa7db8d5039a869b6acd18c2a"
+    },
+    {
+      "name": "malformed-missing_rlast",
+      "kind": "functional",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\malformed-missing_rlast",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-uvm-final-run-20261109\\source\\rtl\\axi4_dma_subsystem.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_adapter.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_uvm_pkg.sv",
+            "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\malformed-missing_rlast",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "48cadac06b564c41ef2d2aa3ad887b70ef459251724b78ff283c0cf53490b211"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.dma_uvm_top",
+            "+CASES=C:\\short\\dma-uvm-final-run-20261109\\malformed-missing_rlast\\cases.txt",
+            "+EXPECT_SVA=R_LAST",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /dma_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\malformed-missing_rlast",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "ae0e40167579bbab9d1214a5d8b46ea93133b25fac30b86f01781d0215669acb"
+        }
+      ],
+      "case_input_sha256": "34885677e6f7ed4a2f726a03a5ae24fc4051234929f16aeed898494d6ce07502",
+      "reason": "EXECUTED",
+      "expected": [
+        "R_LAST"
+      ],
+      "observed": [
+        "R_LAST"
+      ],
+      "cases": [
+        {
+          "name": "missing_rlast",
+          "commands": 2,
+          "terminals": 2,
+          "successes": 1,
+          "errors": 1,
+          "reset_cancellations": 0,
+          "acknowledgements": 2,
+          "control_rejected": 0,
+          "control_cancelled": 0,
+          "csr_reads": 28,
+          "ar": 2,
+          "aw": 1,
+          "r_beats": 10,
+          "w_beats": 2,
+          "b": 1,
+          "memory_commits": 1,
+          "comparisons": 1411,
+          "resets": 2,
+          "cancelled_ar": 0,
+          "cancelled_aw": 0,
+          "cancelled_r_beats": 0,
+          "cancelled_w_beats": 0,
+          "cancelled_b_pending": 0,
+          "aw_first": 0,
+          "w_first": 1,
+          "simultaneous": 0,
+          "all_w_before_aw": 1
+        }
+      ],
+      "capture_sha256": "ae80d3603028f5be2fbe96143b1eead5651c48e8a923d36ed6f74f144fa375e8"
+    },
+    {
+      "name": "fault-source_alias",
+      "kind": "fault",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\dma-uvm-final-source-20261109\\scripts\\run_dma_uvm.py",
+            "--select",
+            "fault-source_alias",
+            "--raw-fault",
+            "--output",
+            "C:\\short\\dma-uvm-final-run-20261109\\fault-source_alias\\child",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90",
+            "--expected-env-sha",
+            "2638123be40cbb95262682f6c5e1b1d89c0ae7d5"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-source-20261109",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "child-wrapper.log",
+          "sha256": "2795fb43f83f974af2c5de6b09f50eb2be74a9e78eb23cadb470c1c34aeedeb6"
+        }
+      ],
+      "reason": "EXPECTED_CHILD_FAILURE",
+      "child_wrapper_exit": 1,
+      "passing_control": {
+        "substep": "functional",
+        "case": "length_129"
+      },
+      "expected_fatal": "ORACLE_AR_ADDRESS",
+      "observed_fatals": [
+        "ORACLE_AR_ADDRESS"
+      ],
+      "child_result": {
+        "started_utc": "2026-11-09T14:21:57.210668+00:00",
+        "command": [
+          "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+          "C:\\short\\dma-uvm-final-source-20261109\\scripts\\run_dma_uvm.py",
+          "--select",
+          "fault-source_alias",
+          "--raw-fault",
+          "--output",
+          "C:\\short\\dma-uvm-final-run-20261109\\fault-source_alias\\child",
+          "--sim-bin",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "--uvm-lib",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "--uvm-include",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "--timeout",
+          "90",
+          "--expected-env-sha",
+          "2638123be40cbb95262682f6c5e1b1d89c0ae7d5"
+        ],
+        "source_revision": "2638123be40cbb95262682f6c5e1b1d89c0ae7d5",
+        "source_dirty": false,
+        "serial_execution": true,
+        "selection": [
+          "fault-source_alias"
+        ],
+        "raw_fault": true,
+        "seed": 682016495,
+        "seed_hex": "0x28A6BEEF",
+        "functional_coverage": "NOT RUN",
+        "constrained_randomization": "NOT RUN",
+        "original_advanced_alu_apb": "NOT RUN",
+        "suites": [
+          {
+            "name": "fault-source_alias",
+            "kind": "fault",
+            "status": "FAIL",
+            "commands": [
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+                  "work"
+                ],
+                "cwd": "C:\\short\\dma-uvm-final-run-20261109\\fault-source_alias\\child\\fault-source_alias",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "0.log",
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+                  "-sv",
+                  "-work",
+                  "work",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+                  "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+                  "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+                  "C:\\short\\dma-uvm-final-run-20261109\\fault-source_alias\\child\\source\\rtl\\axi4_dma_subsystem.sv",
+                  "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_adapter.sv",
+                  "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+                  "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_uvm_pkg.sv",
+                  "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_uvm_top.sv"
+                ],
+                "cwd": "C:\\short\\dma-uvm-final-run-20261109\\fault-source_alias\\child\\fault-source_alias",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "1.log",
+                "sha256": "23873191058cd4e73f4487ecc1f935d1c48291be2714fda1952b306e4d7ed427"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+                  "-c",
+                  "-onfinish",
+                  "stop",
+                  "-voptargs=+acc",
+                  "-sv_seed",
+                  "682016495",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "work.dma_uvm_top",
+                  "+CASES=C:\\short\\dma-uvm-final-run-20261109\\fault-source_alias\\child\\fault-source_alias\\cases.txt",
+                  "+FAULT=source_alias",
+                  "-do",
+                  "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /dma_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+                ],
+                "cwd": "C:\\short\\dma-uvm-final-run-20261109\\fault-source_alias\\child\\fault-source_alias",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "2.log",
+                "sha256": "3f1b90baa2a1f135930465c01e1fe429e25b16ee4deadb311f4a6728d0ddd43b"
+              }
+            ],
+            "case_input_sha256": "43a2dd9b43da962f69bcaa149bdf02b02d56886aeb8b6019488d9f613cfc672e",
+            "reason": "PROCESS_OR_SIMULATOR_ERROR"
+          }
+        ],
+        "expected_inventory": [
+          "sva-aw_hold",
+          "sva-w_hold",
+          "sva-ar_hold",
+          "sva-b_hold",
+          "sva-r_hold",
+          "sva-b_before",
+          "sva-b_aw_only",
+          "sva-b_w_only",
+          "sva-b_same_w",
+          "sva-b_same_aw",
+          "sva-b_same_both",
+          "sva-r_before",
+          "sva-r_same_ar",
+          "sva-aw_attr",
+          "sva-ar_attr",
+          "sva-w_last",
+          "sva-r_last",
+          "sva-rid",
+          "sva-bid",
+          "sva-c_aw_hold",
+          "sva-c_w_hold",
+          "sva-c_ar_hold",
+          "sva-c_b_hold",
+          "sva-c_r_hold",
+          "sva-c_b_before",
+          "sva-c_r_before",
+          "sva-legal",
+          "functional",
+          "malformed-wrong_rid",
+          "malformed-wrong_bid",
+          "malformed-early_rlast",
+          "malformed-missing_rlast",
+          "fault-source_alias",
+          "fault-destination_progress",
+          "fault-active_data",
+          "fault-tail_strobe",
+          "fault-duplicate_read",
+          "fault-duplicate_write",
+          "fault-progress",
+          "fault-missing_marker"
+        ],
+        "required_selected": [
+          "fault-source_alias"
+        ],
+        "aggregate_exit_code": 1,
+        "milestone_pass": false,
+        "input_sha256": {
+          "verification/dma_uvm/dma_adapter.sv": "42d5b7dc7245cdd783c066c0cc74593356938bf2632d16c9624276963698f6b7",
+          "verification/dma_uvm/dma_assertions.sv": "2684c7f52fea56c3ee95071de1dbda1ecda95f869ae0516c8761facd4455c5a1",
+          "verification/dma_uvm/dma_bus.sv": "20a62d424feb363c4f6449badb4e141009d54176124639349139951af3e85039",
+          "verification/dma_uvm/dma_common.svh": "b316dacf569b38e3d247bf8882c964e80da1016be884f6f85eff24562e931f7e",
+          "verification/dma_uvm/dma_driver.svh": "3bb2800abedb8632d3c477d11759b19bdca0a72faaa7ce6503555b6e035d87d3",
+          "verification/dma_uvm/dma_pins.svh": "3860921aace190dc02df54119867516bab0502ee131e2e9dcc0634ab135de83c",
+          "verification/dma_uvm/dma_responder.svh": "bcc0b0f6ad6bc22b3176e721f26b586c9bdadeeda77142e2398dde3c3af85bb7",
+          "verification/dma_uvm/dma_scoreboard.svh": "507ba35dbacee6f32f6571ca2951fb5bb0112862cd4d481030fc9ee61dd02f15",
+          "verification/dma_uvm/dma_sva_control.sv": "9f9422697027d6650e5953976900f8a47f4861253c2c52a63c78fd9fbb1c16bd",
+          "verification/dma_uvm/dma_uvm_pkg.sv": "35ccddafecd5f68759dbff034ef3a5917b03c4b977f09d3aa8dd7a179446313b",
+          "verification/dma_uvm/dma_uvm_top.sv": "71a5f6fed9e43ea04487dbe0560dc74eb1f416dbefeb71f6cb7fadb95902d87b",
+          "verification/dma_uvm/dma_zero_pins.svh": "f8b91769b295aa759ee52a3ef9380652d663ebdab3e658585797591b462d6809",
+          "verification/dma_uvm/inventory.json": "f4207c141dd8b95a2fed715e0255955fed9b49e56c049a8584531a24e2ec7c46",
+          "verification/dma_uvm/sources.json": "4ba4f50553923bbc52760c4cadcc9ba03a86837b86fc4289f057b9d572440653",
+          "scripts/run_dma_uvm.py": "18def93c1d29d9fd787221f654e89b90512ee68d347c124e3f8ac566079469d4",
+          "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+          "scripts/dma_accounting.py": "83190f90da5e042b963626f33b5f9ccbf19d91af1df85d86b0d1db946a94d16f"
+        },
+        "expected_environment_revision": "2638123be40cbb95262682f6c5e1b1d89c0ae7d5",
+        "runner_revision": "2638123be40cbb95262682f6c5e1b1d89c0ae7d5",
+        "inventory_revision": "2638123be40cbb95262682f6c5e1b1d89c0ae7d5",
+        "configuration": {
+          "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "timeout_per_command": 90,
+          "global_timeout": 2400,
+          "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+          "vendor_input_sha256": {
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5"
+          }
+        },
+        "version_command": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-version"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\fault-source_alias\\child",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "version.log",
+          "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+        },
+        "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+        "source_lock": {
+          "owner": "M-Roohan-Khan-28",
+          "account_id": 270144410,
+          "repository": "AXI4-DMA-Subsystem",
+          "revision": "a2d3d57edaa9eb441f3289bf5320f4df2f074144",
+          "files": [
+            "rtl/axi4_dma_subsystem.sv"
+          ],
+          "commands": [
+            {
+              "command": [
+                "git",
+                "clone",
+                "--quiet",
+                "--config",
+                "core.autocrlf=false",
+                "--config",
+                "core.longpaths=true",
+                "https://github.com/M-Roohan-Khan-28/AXI4-DMA-Subsystem.git",
+                "C:\\short\\dma-uvm-final-run-20261109\\fault-source_alias\\child\\source"
+              ],
+              "cwd": "C:\\short\\dma-uvm-final-run-20261109\\fault-source_alias\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-0.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\dma-uvm-final-run-20261109\\fault-source_alias\\child\\source",
+                "checkout",
+                "--quiet",
+                "--detach",
+                "a2d3d57edaa9eb441f3289bf5320f4df2f074144"
+              ],
+              "cwd": "C:\\short\\dma-uvm-final-run-20261109\\fault-source_alias\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-1.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            }
+          ],
+          "observed_revision": "a2d3d57edaa9eb441f3289bf5320f4df2f074144",
+          "clean": true,
+          "rtl_sha256": {
+            "rtl/axi4_dma_subsystem.sv": "dd709078dc9d91db0d92ba1e4bd34b32cb43f09f8f5739abdb6552313795043b"
+          }
+        },
+        "finished_utc": "2026-11-09T14:22:13.119310+00:00"
+      }
+    },
+    {
+      "name": "fault-destination_progress",
+      "kind": "fault",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\dma-uvm-final-source-20261109\\scripts\\run_dma_uvm.py",
+            "--select",
+            "fault-destination_progress",
+            "--raw-fault",
+            "--output",
+            "C:\\short\\dma-uvm-final-run-20261109\\fault-destination_progress\\child",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90",
+            "--expected-env-sha",
+            "2638123be40cbb95262682f6c5e1b1d89c0ae7d5"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-source-20261109",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "child-wrapper.log",
+          "sha256": "b7790f0de108ac4a4d9da43c0c05ffb19beaef21322df4e1d92cf288e5685b4d"
+        }
+      ],
+      "reason": "EXPECTED_CHILD_FAILURE",
+      "child_wrapper_exit": 1,
+      "passing_control": {
+        "substep": "functional",
+        "case": "length_129"
+      },
+      "expected_fatal": "ORACLE_AW_ADDRESS",
+      "observed_fatals": [
+        "ORACLE_AW_ADDRESS"
+      ],
+      "child_result": {
+        "started_utc": "2026-11-09T14:22:13.386238+00:00",
+        "command": [
+          "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+          "C:\\short\\dma-uvm-final-source-20261109\\scripts\\run_dma_uvm.py",
+          "--select",
+          "fault-destination_progress",
+          "--raw-fault",
+          "--output",
+          "C:\\short\\dma-uvm-final-run-20261109\\fault-destination_progress\\child",
+          "--sim-bin",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "--uvm-lib",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "--uvm-include",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "--timeout",
+          "90",
+          "--expected-env-sha",
+          "2638123be40cbb95262682f6c5e1b1d89c0ae7d5"
+        ],
+        "source_revision": "2638123be40cbb95262682f6c5e1b1d89c0ae7d5",
+        "source_dirty": false,
+        "serial_execution": true,
+        "selection": [
+          "fault-destination_progress"
+        ],
+        "raw_fault": true,
+        "seed": 682016495,
+        "seed_hex": "0x28A6BEEF",
+        "functional_coverage": "NOT RUN",
+        "constrained_randomization": "NOT RUN",
+        "original_advanced_alu_apb": "NOT RUN",
+        "suites": [
+          {
+            "name": "fault-destination_progress",
+            "kind": "fault",
+            "status": "FAIL",
+            "commands": [
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+                  "work"
+                ],
+                "cwd": "C:\\short\\dma-uvm-final-run-20261109\\fault-destination_progress\\child\\fault-destination_progress",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "0.log",
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+                  "-sv",
+                  "-work",
+                  "work",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+                  "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+                  "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+                  "C:\\short\\dma-uvm-final-run-20261109\\fault-destination_progress\\child\\source\\rtl\\axi4_dma_subsystem.sv",
+                  "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_adapter.sv",
+                  "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+                  "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_uvm_pkg.sv",
+                  "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_uvm_top.sv"
+                ],
+                "cwd": "C:\\short\\dma-uvm-final-run-20261109\\fault-destination_progress\\child\\fault-destination_progress",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "1.log",
+                "sha256": "4765bfe1f6bd55dadcc4435d4a14a9de1daeeb0d97dbfc16792c02435d2dfc89"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+                  "-c",
+                  "-onfinish",
+                  "stop",
+                  "-voptargs=+acc",
+                  "-sv_seed",
+                  "682016495",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "work.dma_uvm_top",
+                  "+CASES=C:\\short\\dma-uvm-final-run-20261109\\fault-destination_progress\\child\\fault-destination_progress\\cases.txt",
+                  "+FAULT=destination_progress",
+                  "-do",
+                  "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /dma_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+                ],
+                "cwd": "C:\\short\\dma-uvm-final-run-20261109\\fault-destination_progress\\child\\fault-destination_progress",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "2.log",
+                "sha256": "cba241a8bd545247c3ea331150a5fb189336f873f83507ecb26b7f884527a563"
+              }
+            ],
+            "case_input_sha256": "43a2dd9b43da962f69bcaa149bdf02b02d56886aeb8b6019488d9f613cfc672e",
+            "reason": "PROCESS_OR_SIMULATOR_ERROR"
+          }
+        ],
+        "expected_inventory": [
+          "sva-aw_hold",
+          "sva-w_hold",
+          "sva-ar_hold",
+          "sva-b_hold",
+          "sva-r_hold",
+          "sva-b_before",
+          "sva-b_aw_only",
+          "sva-b_w_only",
+          "sva-b_same_w",
+          "sva-b_same_aw",
+          "sva-b_same_both",
+          "sva-r_before",
+          "sva-r_same_ar",
+          "sva-aw_attr",
+          "sva-ar_attr",
+          "sva-w_last",
+          "sva-r_last",
+          "sva-rid",
+          "sva-bid",
+          "sva-c_aw_hold",
+          "sva-c_w_hold",
+          "sva-c_ar_hold",
+          "sva-c_b_hold",
+          "sva-c_r_hold",
+          "sva-c_b_before",
+          "sva-c_r_before",
+          "sva-legal",
+          "functional",
+          "malformed-wrong_rid",
+          "malformed-wrong_bid",
+          "malformed-early_rlast",
+          "malformed-missing_rlast",
+          "fault-source_alias",
+          "fault-destination_progress",
+          "fault-active_data",
+          "fault-tail_strobe",
+          "fault-duplicate_read",
+          "fault-duplicate_write",
+          "fault-progress",
+          "fault-missing_marker"
+        ],
+        "required_selected": [
+          "fault-destination_progress"
+        ],
+        "aggregate_exit_code": 1,
+        "milestone_pass": false,
+        "input_sha256": {
+          "verification/dma_uvm/dma_adapter.sv": "42d5b7dc7245cdd783c066c0cc74593356938bf2632d16c9624276963698f6b7",
+          "verification/dma_uvm/dma_assertions.sv": "2684c7f52fea56c3ee95071de1dbda1ecda95f869ae0516c8761facd4455c5a1",
+          "verification/dma_uvm/dma_bus.sv": "20a62d424feb363c4f6449badb4e141009d54176124639349139951af3e85039",
+          "verification/dma_uvm/dma_common.svh": "b316dacf569b38e3d247bf8882c964e80da1016be884f6f85eff24562e931f7e",
+          "verification/dma_uvm/dma_driver.svh": "3bb2800abedb8632d3c477d11759b19bdca0a72faaa7ce6503555b6e035d87d3",
+          "verification/dma_uvm/dma_pins.svh": "3860921aace190dc02df54119867516bab0502ee131e2e9dcc0634ab135de83c",
+          "verification/dma_uvm/dma_responder.svh": "bcc0b0f6ad6bc22b3176e721f26b586c9bdadeeda77142e2398dde3c3af85bb7",
+          "verification/dma_uvm/dma_scoreboard.svh": "507ba35dbacee6f32f6571ca2951fb5bb0112862cd4d481030fc9ee61dd02f15",
+          "verification/dma_uvm/dma_sva_control.sv": "9f9422697027d6650e5953976900f8a47f4861253c2c52a63c78fd9fbb1c16bd",
+          "verification/dma_uvm/dma_uvm_pkg.sv": "35ccddafecd5f68759dbff034ef3a5917b03c4b977f09d3aa8dd7a179446313b",
+          "verification/dma_uvm/dma_uvm_top.sv": "71a5f6fed9e43ea04487dbe0560dc74eb1f416dbefeb71f6cb7fadb95902d87b",
+          "verification/dma_uvm/dma_zero_pins.svh": "f8b91769b295aa759ee52a3ef9380652d663ebdab3e658585797591b462d6809",
+          "verification/dma_uvm/inventory.json": "f4207c141dd8b95a2fed715e0255955fed9b49e56c049a8584531a24e2ec7c46",
+          "verification/dma_uvm/sources.json": "4ba4f50553923bbc52760c4cadcc9ba03a86837b86fc4289f057b9d572440653",
+          "scripts/run_dma_uvm.py": "18def93c1d29d9fd787221f654e89b90512ee68d347c124e3f8ac566079469d4",
+          "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+          "scripts/dma_accounting.py": "83190f90da5e042b963626f33b5f9ccbf19d91af1df85d86b0d1db946a94d16f"
+        },
+        "expected_environment_revision": "2638123be40cbb95262682f6c5e1b1d89c0ae7d5",
+        "runner_revision": "2638123be40cbb95262682f6c5e1b1d89c0ae7d5",
+        "inventory_revision": "2638123be40cbb95262682f6c5e1b1d89c0ae7d5",
+        "configuration": {
+          "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "timeout_per_command": 90,
+          "global_timeout": 2400,
+          "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+          "vendor_input_sha256": {
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5"
+          }
+        },
+        "version_command": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-version"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\fault-destination_progress\\child",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "version.log",
+          "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+        },
+        "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+        "source_lock": {
+          "owner": "M-Roohan-Khan-28",
+          "account_id": 270144410,
+          "repository": "AXI4-DMA-Subsystem",
+          "revision": "a2d3d57edaa9eb441f3289bf5320f4df2f074144",
+          "files": [
+            "rtl/axi4_dma_subsystem.sv"
+          ],
+          "commands": [
+            {
+              "command": [
+                "git",
+                "clone",
+                "--quiet",
+                "--config",
+                "core.autocrlf=false",
+                "--config",
+                "core.longpaths=true",
+                "https://github.com/M-Roohan-Khan-28/AXI4-DMA-Subsystem.git",
+                "C:\\short\\dma-uvm-final-run-20261109\\fault-destination_progress\\child\\source"
+              ],
+              "cwd": "C:\\short\\dma-uvm-final-run-20261109\\fault-destination_progress\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-0.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\dma-uvm-final-run-20261109\\fault-destination_progress\\child\\source",
+                "checkout",
+                "--quiet",
+                "--detach",
+                "a2d3d57edaa9eb441f3289bf5320f4df2f074144"
+              ],
+              "cwd": "C:\\short\\dma-uvm-final-run-20261109\\fault-destination_progress\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-1.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            }
+          ],
+          "observed_revision": "a2d3d57edaa9eb441f3289bf5320f4df2f074144",
+          "clean": true,
+          "rtl_sha256": {
+            "rtl/axi4_dma_subsystem.sv": "dd709078dc9d91db0d92ba1e4bd34b32cb43f09f8f5739abdb6552313795043b"
+          }
+        },
+        "finished_utc": "2026-11-09T14:22:30.295216+00:00"
+      }
+    },
+    {
+      "name": "fault-active_data",
+      "kind": "fault",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\dma-uvm-final-source-20261109\\scripts\\run_dma_uvm.py",
+            "--select",
+            "fault-active_data",
+            "--raw-fault",
+            "--output",
+            "C:\\short\\dma-uvm-final-run-20261109\\fault-active_data\\child",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90",
+            "--expected-env-sha",
+            "2638123be40cbb95262682f6c5e1b1d89c0ae7d5"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-source-20261109",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "child-wrapper.log",
+          "sha256": "24a1d3709a5e478dff6aedcfe4db05ccf64191482abf732e8bb2d32364e42e1f"
+        }
+      ],
+      "reason": "EXPECTED_CHILD_FAILURE",
+      "child_wrapper_exit": 1,
+      "passing_control": {
+        "substep": "functional",
+        "case": "length_129"
+      },
+      "expected_fatal": "ORACLE_WDATA",
+      "observed_fatals": [
+        "ORACLE_WDATA"
+      ],
+      "child_result": {
+        "started_utc": "2026-11-09T14:22:30.502883+00:00",
+        "command": [
+          "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+          "C:\\short\\dma-uvm-final-source-20261109\\scripts\\run_dma_uvm.py",
+          "--select",
+          "fault-active_data",
+          "--raw-fault",
+          "--output",
+          "C:\\short\\dma-uvm-final-run-20261109\\fault-active_data\\child",
+          "--sim-bin",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "--uvm-lib",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "--uvm-include",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "--timeout",
+          "90",
+          "--expected-env-sha",
+          "2638123be40cbb95262682f6c5e1b1d89c0ae7d5"
+        ],
+        "source_revision": "2638123be40cbb95262682f6c5e1b1d89c0ae7d5",
+        "source_dirty": false,
+        "serial_execution": true,
+        "selection": [
+          "fault-active_data"
+        ],
+        "raw_fault": true,
+        "seed": 682016495,
+        "seed_hex": "0x28A6BEEF",
+        "functional_coverage": "NOT RUN",
+        "constrained_randomization": "NOT RUN",
+        "original_advanced_alu_apb": "NOT RUN",
+        "suites": [
+          {
+            "name": "fault-active_data",
+            "kind": "fault",
+            "status": "FAIL",
+            "commands": [
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+                  "work"
+                ],
+                "cwd": "C:\\short\\dma-uvm-final-run-20261109\\fault-active_data\\child\\fault-active_data",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "0.log",
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+                  "-sv",
+                  "-work",
+                  "work",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+                  "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+                  "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+                  "C:\\short\\dma-uvm-final-run-20261109\\fault-active_data\\child\\source\\rtl\\axi4_dma_subsystem.sv",
+                  "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_adapter.sv",
+                  "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+                  "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_uvm_pkg.sv",
+                  "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_uvm_top.sv"
+                ],
+                "cwd": "C:\\short\\dma-uvm-final-run-20261109\\fault-active_data\\child\\fault-active_data",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "1.log",
+                "sha256": "5ce16460f26cea308b286b325da08faa153a819c7200d5e141aa128f5b2cbc5c"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+                  "-c",
+                  "-onfinish",
+                  "stop",
+                  "-voptargs=+acc",
+                  "-sv_seed",
+                  "682016495",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "work.dma_uvm_top",
+                  "+CASES=C:\\short\\dma-uvm-final-run-20261109\\fault-active_data\\child\\fault-active_data\\cases.txt",
+                  "+FAULT=active_data",
+                  "-do",
+                  "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /dma_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+                ],
+                "cwd": "C:\\short\\dma-uvm-final-run-20261109\\fault-active_data\\child\\fault-active_data",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "2.log",
+                "sha256": "ed9ce5ae4d87576baca700e72a21315621d3fdcdbbbfc224230cc2ed4e478724"
+              }
+            ],
+            "case_input_sha256": "43a2dd9b43da962f69bcaa149bdf02b02d56886aeb8b6019488d9f613cfc672e",
+            "reason": "PROCESS_OR_SIMULATOR_ERROR"
+          }
+        ],
+        "expected_inventory": [
+          "sva-aw_hold",
+          "sva-w_hold",
+          "sva-ar_hold",
+          "sva-b_hold",
+          "sva-r_hold",
+          "sva-b_before",
+          "sva-b_aw_only",
+          "sva-b_w_only",
+          "sva-b_same_w",
+          "sva-b_same_aw",
+          "sva-b_same_both",
+          "sva-r_before",
+          "sva-r_same_ar",
+          "sva-aw_attr",
+          "sva-ar_attr",
+          "sva-w_last",
+          "sva-r_last",
+          "sva-rid",
+          "sva-bid",
+          "sva-c_aw_hold",
+          "sva-c_w_hold",
+          "sva-c_ar_hold",
+          "sva-c_b_hold",
+          "sva-c_r_hold",
+          "sva-c_b_before",
+          "sva-c_r_before",
+          "sva-legal",
+          "functional",
+          "malformed-wrong_rid",
+          "malformed-wrong_bid",
+          "malformed-early_rlast",
+          "malformed-missing_rlast",
+          "fault-source_alias",
+          "fault-destination_progress",
+          "fault-active_data",
+          "fault-tail_strobe",
+          "fault-duplicate_read",
+          "fault-duplicate_write",
+          "fault-progress",
+          "fault-missing_marker"
+        ],
+        "required_selected": [
+          "fault-active_data"
+        ],
+        "aggregate_exit_code": 1,
+        "milestone_pass": false,
+        "input_sha256": {
+          "verification/dma_uvm/dma_adapter.sv": "42d5b7dc7245cdd783c066c0cc74593356938bf2632d16c9624276963698f6b7",
+          "verification/dma_uvm/dma_assertions.sv": "2684c7f52fea56c3ee95071de1dbda1ecda95f869ae0516c8761facd4455c5a1",
+          "verification/dma_uvm/dma_bus.sv": "20a62d424feb363c4f6449badb4e141009d54176124639349139951af3e85039",
+          "verification/dma_uvm/dma_common.svh": "b316dacf569b38e3d247bf8882c964e80da1016be884f6f85eff24562e931f7e",
+          "verification/dma_uvm/dma_driver.svh": "3bb2800abedb8632d3c477d11759b19bdca0a72faaa7ce6503555b6e035d87d3",
+          "verification/dma_uvm/dma_pins.svh": "3860921aace190dc02df54119867516bab0502ee131e2e9dcc0634ab135de83c",
+          "verification/dma_uvm/dma_responder.svh": "bcc0b0f6ad6bc22b3176e721f26b586c9bdadeeda77142e2398dde3c3af85bb7",
+          "verification/dma_uvm/dma_scoreboard.svh": "507ba35dbacee6f32f6571ca2951fb5bb0112862cd4d481030fc9ee61dd02f15",
+          "verification/dma_uvm/dma_sva_control.sv": "9f9422697027d6650e5953976900f8a47f4861253c2c52a63c78fd9fbb1c16bd",
+          "verification/dma_uvm/dma_uvm_pkg.sv": "35ccddafecd5f68759dbff034ef3a5917b03c4b977f09d3aa8dd7a179446313b",
+          "verification/dma_uvm/dma_uvm_top.sv": "71a5f6fed9e43ea04487dbe0560dc74eb1f416dbefeb71f6cb7fadb95902d87b",
+          "verification/dma_uvm/dma_zero_pins.svh": "f8b91769b295aa759ee52a3ef9380652d663ebdab3e658585797591b462d6809",
+          "verification/dma_uvm/inventory.json": "f4207c141dd8b95a2fed715e0255955fed9b49e56c049a8584531a24e2ec7c46",
+          "verification/dma_uvm/sources.json": "4ba4f50553923bbc52760c4cadcc9ba03a86837b86fc4289f057b9d572440653",
+          "scripts/run_dma_uvm.py": "18def93c1d29d9fd787221f654e89b90512ee68d347c124e3f8ac566079469d4",
+          "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+          "scripts/dma_accounting.py": "83190f90da5e042b963626f33b5f9ccbf19d91af1df85d86b0d1db946a94d16f"
+        },
+        "expected_environment_revision": "2638123be40cbb95262682f6c5e1b1d89c0ae7d5",
+        "runner_revision": "2638123be40cbb95262682f6c5e1b1d89c0ae7d5",
+        "inventory_revision": "2638123be40cbb95262682f6c5e1b1d89c0ae7d5",
+        "configuration": {
+          "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "timeout_per_command": 90,
+          "global_timeout": 2400,
+          "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+          "vendor_input_sha256": {
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5"
+          }
+        },
+        "version_command": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-version"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\fault-active_data\\child",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "version.log",
+          "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+        },
+        "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+        "source_lock": {
+          "owner": "M-Roohan-Khan-28",
+          "account_id": 270144410,
+          "repository": "AXI4-DMA-Subsystem",
+          "revision": "a2d3d57edaa9eb441f3289bf5320f4df2f074144",
+          "files": [
+            "rtl/axi4_dma_subsystem.sv"
+          ],
+          "commands": [
+            {
+              "command": [
+                "git",
+                "clone",
+                "--quiet",
+                "--config",
+                "core.autocrlf=false",
+                "--config",
+                "core.longpaths=true",
+                "https://github.com/M-Roohan-Khan-28/AXI4-DMA-Subsystem.git",
+                "C:\\short\\dma-uvm-final-run-20261109\\fault-active_data\\child\\source"
+              ],
+              "cwd": "C:\\short\\dma-uvm-final-run-20261109\\fault-active_data\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-0.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\dma-uvm-final-run-20261109\\fault-active_data\\child\\source",
+                "checkout",
+                "--quiet",
+                "--detach",
+                "a2d3d57edaa9eb441f3289bf5320f4df2f074144"
+              ],
+              "cwd": "C:\\short\\dma-uvm-final-run-20261109\\fault-active_data\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-1.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            }
+          ],
+          "observed_revision": "a2d3d57edaa9eb441f3289bf5320f4df2f074144",
+          "clean": true,
+          "rtl_sha256": {
+            "rtl/axi4_dma_subsystem.sv": "dd709078dc9d91db0d92ba1e4bd34b32cb43f09f8f5739abdb6552313795043b"
+          }
+        },
+        "finished_utc": "2026-11-09T14:22:47.864085+00:00"
+      }
+    },
+    {
+      "name": "fault-tail_strobe",
+      "kind": "fault",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\dma-uvm-final-source-20261109\\scripts\\run_dma_uvm.py",
+            "--select",
+            "fault-tail_strobe",
+            "--raw-fault",
+            "--output",
+            "C:\\short\\dma-uvm-final-run-20261109\\fault-tail_strobe\\child",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90",
+            "--expected-env-sha",
+            "2638123be40cbb95262682f6c5e1b1d89c0ae7d5"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-source-20261109",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "child-wrapper.log",
+          "sha256": "67f811652731d6c3dc0e73bc62434bb09f057fee2a08173ac8f1256a4013c57c"
+        }
+      ],
+      "reason": "EXPECTED_CHILD_FAILURE",
+      "child_wrapper_exit": 1,
+      "passing_control": {
+        "substep": "functional",
+        "case": "length_129"
+      },
+      "expected_fatal": "ORACLE_WSTRB",
+      "observed_fatals": [
+        "ORACLE_WSTRB"
+      ],
+      "child_result": {
+        "started_utc": "2026-11-09T14:22:48.192654+00:00",
+        "command": [
+          "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+          "C:\\short\\dma-uvm-final-source-20261109\\scripts\\run_dma_uvm.py",
+          "--select",
+          "fault-tail_strobe",
+          "--raw-fault",
+          "--output",
+          "C:\\short\\dma-uvm-final-run-20261109\\fault-tail_strobe\\child",
+          "--sim-bin",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "--uvm-lib",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "--uvm-include",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "--timeout",
+          "90",
+          "--expected-env-sha",
+          "2638123be40cbb95262682f6c5e1b1d89c0ae7d5"
+        ],
+        "source_revision": "2638123be40cbb95262682f6c5e1b1d89c0ae7d5",
+        "source_dirty": false,
+        "serial_execution": true,
+        "selection": [
+          "fault-tail_strobe"
+        ],
+        "raw_fault": true,
+        "seed": 682016495,
+        "seed_hex": "0x28A6BEEF",
+        "functional_coverage": "NOT RUN",
+        "constrained_randomization": "NOT RUN",
+        "original_advanced_alu_apb": "NOT RUN",
+        "suites": [
+          {
+            "name": "fault-tail_strobe",
+            "kind": "fault",
+            "status": "FAIL",
+            "commands": [
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+                  "work"
+                ],
+                "cwd": "C:\\short\\dma-uvm-final-run-20261109\\fault-tail_strobe\\child\\fault-tail_strobe",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "0.log",
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+                  "-sv",
+                  "-work",
+                  "work",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+                  "+incdir+C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm",
+                  "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_bus.sv",
+                  "C:\\short\\dma-uvm-final-run-20261109\\fault-tail_strobe\\child\\source\\rtl\\axi4_dma_subsystem.sv",
+                  "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_adapter.sv",
+                  "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_assertions.sv",
+                  "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_uvm_pkg.sv",
+                  "C:\\short\\dma-uvm-final-source-20261109\\verification\\dma_uvm\\dma_uvm_top.sv"
+                ],
+                "cwd": "C:\\short\\dma-uvm-final-run-20261109\\fault-tail_strobe\\child\\fault-tail_strobe",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "1.log",
+                "sha256": "08a7c9a68fc42e18abfb5d434c15bd85c7c20f3f1838406a3e31c27300aee26e"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+                  "-c",
+                  "-onfinish",
+                  "stop",
+                  "-voptargs=+acc",
+                  "-sv_seed",
+                  "682016495",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "work.dma_uvm_top",
+                  "+CASES=C:\\short\\dma-uvm-final-run-20261109\\fault-tail_strobe\\child\\fault-tail_strobe\\cases.txt",
+                  "+FAULT=tail_strobe",
+                  "-do",
+                  "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /dma_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+                ],
+                "cwd": "C:\\short\\dma-uvm-final-run-20261109\\fault-tail_strobe\\child\\fault-tail_strobe",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "2.log",
+                "sha256": "203376560fdae6811e39c029cc3e475f2656f3ec79cdbd9be7f21a33913ed22f"
+              }
+            ],
+            "case_input_sha256": "43a2dd9b43da962f69bcaa149bdf02b02d56886aeb8b6019488d9f613cfc672e",
+            "reason": "PROCESS_OR_SIMULATOR_ERROR"
+          }
+        ],
+        "expected_inventory": [
+          "sva-aw_hold",
+          "sva-w_hold",
+          "sva-ar_hold",
+          "sva-b_hold",
+          "sva-r_hold",
+          "sva-b_before",
+          "sva-b_aw_only",
+          "sva-b_w_only",
+          "sva-b_same_w",
+          "sva-b_same_aw",
+          "sva-b_same_both",
+          "sva-r_before",
+          "sva-r_same_ar",
+          "sva-aw_attr",
+          "sva-ar_attr",
+          "sva-w_last",
+          "sva-r_last",
+          "sva-rid",
+          "sva-bid",
+          "sva-c_aw_hold",
+          "sva-c_w_hold",
+          "sva-c_ar_hold",
+          "sva-c_b_hold",
+          "sva-c_r_hold",
+          "sva-c_b_before",
+          "sva-c_r_before",
+          "sva-legal",
+          "functional",
+          "malformed-wrong_rid",
+          "malformed-wrong_bid",
+          "malformed-early_rlast",
+          "malformed-missing_rlast",
+          "fault-source_alias",
+          "fault-destination_progress",
+          "fault-active_data",
+          "fault-tail_strobe",
+          "fault-duplicate_read",
+          "fault-duplicate_write",
+          "fault-progress",
+          "fault-missing_marker"
+        ],
+        "required_selected": [
+          "fault-tail_strobe"
+        ],
+        "aggregate_exit_code": 1,
+        "milestone_pass": false,
+        "input_sha256": {
+          "verification/dma_uvm/dma_adapter.sv": "42d5b7dc7245cdd783c066c0cc74593356938bf2632d16c9624276963698f6b7",
+          "verification/dma_uvm/dma_assertions.sv": "2684c7f52fea56c3ee95071de1dbda1ecda95f869ae0516c8761facd4455c5a1",
+          "verification/dma_uvm/dma_bus.sv": "20a62d424feb363c4f6449badb4e141009d54176124639349139951af3e85039",
+          "verification/dma_uvm/dma_common.svh": "b316dacf569b38e3d247bf8882c964e80da1016be884f6f85eff24562e931f7e",
+          "verification/dma_uvm/dma_driver.svh": "3bb2800abedb8632d3c477d11759b19bdca0a72faaa7ce6503555b6e035d87d3",
+          "verification/dma_uvm/dma_pins.svh": "3860921aace190dc02df54119867516bab0502ee131e2e9dcc0634ab135de83c",
+          "verification/dma_uvm/dma_responder.svh": "bcc0b0f6ad6bc22b3176e721f26b586c9bdadeeda77142e2398dde3c3af85bb7",
+          "verification/dma_uvm/dma_scoreboard.svh": "507ba35dbacee6f32f6571ca2951fb5bb0112862cd4d481030fc9ee61dd02f15",
+          "verification/dma_uvm/dma_sva_control.sv": "9f9422697027d6650e5953976900f8a47f4861253c2c52a63c78fd9fbb1c16bd",
+          "verification/dma_uvm/dma_uvm_pkg.sv": "35ccddafecd5f68759dbff034ef3a5917b03c4b977f09d3aa8dd7a179446313b",
+          "verification/dma_uvm/dma_uvm_top.sv": "71a5f6fed9e43ea04487dbe0560dc74eb1f416dbefeb71f6cb7fadb95902d87b",
+          "verification/dma_uvm/dma_zero_pins.svh": "f8b91769b295aa759ee52a3ef9380652d663ebdab3e658585797591b462d6809",
+          "verification/dma_uvm/inventory.json": "f4207c141dd8b95a2fed715e0255955fed9b49e56c049a8584531a24e2ec7c46",
+          "verification/dma_uvm/sources.json": "4ba4f50553923bbc52760c4cadcc9ba03a86837b86fc4289f057b9d572440653",
+          "scripts/run_dma_uvm.py": "18def93c1d29d9fd787221f654e89b90512ee68d347c124e3f8ac566079469d4",
+          "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+          "scripts/dma_accounting.py": "83190f90da5e042b963626f33b5f9ccbf19d91af1df85d86b0d1db946a94d16f"
+        },
+        "expected_environment_revision": "2638123be40cbb95262682f6c5e1b1d89c0ae7d5",
+        "runner_revision": "2638123be40cbb95262682f6c5e1b1d89c0ae7d5",
+        "inventory_revision": "2638123be40cbb95262682f6c5e1b1d89c0ae7d5",
+        "configuration": {
+          "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "timeout_per_command": 90,
+          "global_timeout": 2400,
+          "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+          "vendor_input_sha256": {
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5"
+          }
+        },
+        "version_command": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-version"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-run-20261109\\fault-tail_strobe\\child",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "version.log",
+          "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+        },
+        "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+        "source_lock": {
+          "owner": "M-Roohan-Khan-28",
+          "account_id": 270144410,
+          "repository": "AXI4-DMA-Subsystem",
+          "revision": "a2d3d57edaa9eb441f3289bf5320f4df2f074144",
+          "files": [
+            "rtl/axi4_dma_subsystem.sv"
+          ],
+          "commands": [
+            {
+              "command": [
+                "git",
+                "clone",
+                "--quiet",
+                "--config",
+                "core.autocrlf=false",
+                "--config",
+                "core.longpaths=true",
+                "https://github.com/M-Roohan-Khan-28/AXI4-DMA-Subsystem.git",
+                "C:\\short\\dma-uvm-final-run-20261109\\fault-tail_strobe\\child\\source"
+              ],
+              "cwd": "C:\\short\\dma-uvm-final-run-20261109\\fault-tail_strobe\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-0.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\dma-uvm-final-run-20261109\\fault-tail_strobe\\child\\source",
+                "checkout",
+                "--quiet",
+                "--detach",
+                "a2d3d57edaa9eb441f3289bf5320f4df2f074144"
+              ],
+              "cwd": "C:\\short\\dma-uvm-final-run-20261109\\fault-tail_strobe\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-1.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            }
+          ],
+          "observed_revision": "a2d3d57edaa9eb441f3289bf5320f4df2f074144",
+          "clean": true,
+          "rtl_sha256": {
+            "rtl/axi4_dma_subsystem.sv": "dd709078dc9d91db0d92ba1e4bd34b32cb43f09f8f5739abdb6552313795043b"
+          }
+        },
+        "finished_utc": "2026-11-09T14:23:06.160014+00:00"
+      }
+    },
+    {
+      "name": "fault-duplicate_read",
+      "kind": "fault",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\dma-uvm-final-source-20261109\\scripts\\run_dma_uvm.py",
+            "--select",
+            "fault-duplicate_read",
+            "--raw-fault",
+            "--output",
+            "C:\\short\\dma-uvm-final-run-20261109\\fault-duplicate_read\\child",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90",
+            "--expected-env-sha",
+            "2638123be40cbb95262682f6c5e1b1d89c0ae7d5"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-source-20261109",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "child-wrapper.log",
+          "sha256": "ae214729b5b5fc6ae6c566ba8db53405d5115faa29e39d40adb0f98a0d2a22dd"
+        }
+      ],
+      "reason": "FAULT_NOT_QUALIFIED",
+      "child_wrapper_exit": 1,
+      "passing_control": {
+        "substep": "functional",
+        "case": "length_8"
+      },
+      "detail": ""
+    },
+    {
+      "name": "fault-duplicate_write",
+      "kind": "fault",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\dma-uvm-final-source-20261109\\scripts\\run_dma_uvm.py",
+            "--select",
+            "fault-duplicate_write",
+            "--raw-fault",
+            "--output",
+            "C:\\short\\dma-uvm-final-run-20261109\\fault-duplicate_write\\child",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90",
+            "--expected-env-sha",
+            "2638123be40cbb95262682f6c5e1b1d89c0ae7d5"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-source-20261109",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "child-wrapper.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "reason": "FAULT_NOT_QUALIFIED",
+      "child_wrapper_exit": 1,
+      "passing_control": {
+        "substep": "functional",
+        "case": "same_edge_aw_w_1"
+      },
+      "detail": "[Errno 2] No such file or directory: 'C:\\\\short\\\\dma-uvm-final-run-20261109\\\\fault-duplicate_write\\\\child\\\\fault-duplicate_write\\\\2.log'"
+    },
+    {
+      "name": "fault-progress",
+      "kind": "fault",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\dma-uvm-final-source-20261109\\scripts\\run_dma_uvm.py",
+            "--select",
+            "fault-progress",
+            "--raw-fault",
+            "--output",
+            "C:\\short\\dma-uvm-final-run-20261109\\fault-progress\\child",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90",
+            "--expected-env-sha",
+            "2638123be40cbb95262682f6c5e1b1d89c0ae7d5"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-source-20261109",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "child-wrapper.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "reason": "FAULT_NOT_QUALIFIED",
+      "child_wrapper_exit": 1,
+      "passing_control": {
+        "substep": "functional",
+        "case": "length_129"
+      },
+      "detail": "[Errno 2] No such file or directory: 'C:\\\\short\\\\dma-uvm-final-run-20261109\\\\fault-progress\\\\child\\\\fault-progress\\\\2.log'"
+    },
+    {
+      "name": "fault-missing_marker",
+      "kind": "fault",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\dma-uvm-final-source-20261109\\scripts\\run_dma_uvm.py",
+            "--select",
+            "fault-missing_marker",
+            "--raw-fault",
+            "--output",
+            "C:\\short\\dma-uvm-final-run-20261109\\fault-missing_marker\\child",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90",
+            "--expected-env-sha",
+            "2638123be40cbb95262682f6c5e1b1d89c0ae7d5"
+          ],
+          "cwd": "C:\\short\\dma-uvm-final-source-20261109",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "child-wrapper.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "reason": "FAULT_NOT_QUALIFIED",
+      "child_wrapper_exit": 1,
+      "passing_control": {
+        "substep": "functional",
+        "case": "length_129"
+      },
+      "detail": "[Errno 2] No such file or directory: 'C:\\\\short\\\\dma-uvm-final-run-20261109\\\\fault-missing_marker\\\\child\\\\fault-missing_marker\\\\2.log'"
+    }
+  ],
+  "expected_inventory": [
+    "sva-aw_hold",
+    "sva-w_hold",
+    "sva-ar_hold",
+    "sva-b_hold",
+    "sva-r_hold",
+    "sva-b_before",
+    "sva-b_aw_only",
+    "sva-b_w_only",
+    "sva-b_same_w",
+    "sva-b_same_aw",
+    "sva-b_same_both",
+    "sva-r_before",
+    "sva-r_same_ar",
+    "sva-aw_attr",
+    "sva-ar_attr",
+    "sva-w_last",
+    "sva-r_last",
+    "sva-rid",
+    "sva-bid",
+    "sva-c_aw_hold",
+    "sva-c_w_hold",
+    "sva-c_ar_hold",
+    "sva-c_b_hold",
+    "sva-c_r_hold",
+    "sva-c_b_before",
+    "sva-c_r_before",
+    "sva-legal",
+    "functional",
+    "malformed-wrong_rid",
+    "malformed-wrong_bid",
+    "malformed-early_rlast",
+    "malformed-missing_rlast",
+    "fault-source_alias",
+    "fault-destination_progress",
+    "fault-active_data",
+    "fault-tail_strobe",
+    "fault-duplicate_read",
+    "fault-duplicate_write",
+    "fault-progress",
+    "fault-missing_marker"
+  ],
+  "required_selected": [
+    "sva-aw_hold",
+    "sva-w_hold",
+    "sva-ar_hold",
+    "sva-b_hold",
+    "sva-r_hold",
+    "sva-b_before",
+    "sva-b_aw_only",
+    "sva-b_w_only",
+    "sva-b_same_w",
+    "sva-b_same_aw",
+    "sva-b_same_both",
+    "sva-r_before",
+    "sva-r_same_ar",
+    "sva-aw_attr",
+    "sva-ar_attr",
+    "sva-w_last",
+    "sva-r_last",
+    "sva-rid",
+    "sva-bid",
+    "sva-c_aw_hold",
+    "sva-c_w_hold",
+    "sva-c_ar_hold",
+    "sva-c_b_hold",
+    "sva-c_r_hold",
+    "sva-c_b_before",
+    "sva-c_r_before",
+    "sva-legal",
+    "functional",
+    "malformed-wrong_rid",
+    "malformed-wrong_bid",
+    "malformed-early_rlast",
+    "malformed-missing_rlast",
+    "fault-source_alias",
+    "fault-destination_progress",
+    "fault-active_data",
+    "fault-tail_strobe",
+    "fault-duplicate_read",
+    "fault-duplicate_write",
+    "fault-progress",
+    "fault-missing_marker"
+  ],
+  "aggregate_exit_code": 1,
+  "milestone_pass": false,
+  "input_sha256": {
+    "verification/dma_uvm/dma_adapter.sv": "42d5b7dc7245cdd783c066c0cc74593356938bf2632d16c9624276963698f6b7",
+    "verification/dma_uvm/dma_assertions.sv": "2684c7f52fea56c3ee95071de1dbda1ecda95f869ae0516c8761facd4455c5a1",
+    "verification/dma_uvm/dma_bus.sv": "20a62d424feb363c4f6449badb4e141009d54176124639349139951af3e85039",
+    "verification/dma_uvm/dma_common.svh": "b316dacf569b38e3d247bf8882c964e80da1016be884f6f85eff24562e931f7e",
+    "verification/dma_uvm/dma_driver.svh": "3bb2800abedb8632d3c477d11759b19bdca0a72faaa7ce6503555b6e035d87d3",
+    "verification/dma_uvm/dma_pins.svh": "3860921aace190dc02df54119867516bab0502ee131e2e9dcc0634ab135de83c",
+    "verification/dma_uvm/dma_responder.svh": "bcc0b0f6ad6bc22b3176e721f26b586c9bdadeeda77142e2398dde3c3af85bb7",
+    "verification/dma_uvm/dma_scoreboard.svh": "507ba35dbacee6f32f6571ca2951fb5bb0112862cd4d481030fc9ee61dd02f15",
+    "verification/dma_uvm/dma_sva_control.sv": "9f9422697027d6650e5953976900f8a47f4861253c2c52a63c78fd9fbb1c16bd",
+    "verification/dma_uvm/dma_uvm_pkg.sv": "35ccddafecd5f68759dbff034ef3a5917b03c4b977f09d3aa8dd7a179446313b",
+    "verification/dma_uvm/dma_uvm_top.sv": "71a5f6fed9e43ea04487dbe0560dc74eb1f416dbefeb71f6cb7fadb95902d87b",
+    "verification/dma_uvm/dma_zero_pins.svh": "f8b91769b295aa759ee52a3ef9380652d663ebdab3e658585797591b462d6809",
+    "verification/dma_uvm/inventory.json": "f4207c141dd8b95a2fed715e0255955fed9b49e56c049a8584531a24e2ec7c46",
+    "verification/dma_uvm/sources.json": "4ba4f50553923bbc52760c4cadcc9ba03a86837b86fc4289f057b9d572440653",
+    "scripts/run_dma_uvm.py": "18def93c1d29d9fd787221f654e89b90512ee68d347c124e3f8ac566079469d4",
+    "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+    "scripts/dma_accounting.py": "83190f90da5e042b963626f33b5f9ccbf19d91af1df85d86b0d1db946a94d16f"
+  },
+  "expected_environment_revision": "2638123be40cbb95262682f6c5e1b1d89c0ae7d5",
+  "runner_revision": "2638123be40cbb95262682f6c5e1b1d89c0ae7d5",
+  "inventory_revision": "2638123be40cbb95262682f6c5e1b1d89c0ae7d5",
+  "configuration": {
+    "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+    "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+    "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+    "timeout_per_command": 90,
+    "global_timeout": 2400,
+    "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "vendor_input_sha256": {
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5"
+    }
+  },
+  "version_command": {
+    "command": [
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+      "-version"
+    ],
+    "cwd": "C:\\short\\dma-uvm-final-run-20261109",
+    "exit_code": 0,
+    "timed_out": false,
+    "log": "version.log",
+    "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+  },
+  "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+  "source_lock": {
+    "owner": "M-Roohan-Khan-28",
+    "account_id": 270144410,
+    "repository": "AXI4-DMA-Subsystem",
+    "revision": "a2d3d57edaa9eb441f3289bf5320f4df2f074144",
+    "files": [
+      "rtl/axi4_dma_subsystem.sv"
+    ],
+    "commands": [
+      {
+        "command": [
+          "git",
+          "clone",
+          "--quiet",
+          "--config",
+          "core.autocrlf=false",
+          "--config",
+          "core.longpaths=true",
+          "https://github.com/M-Roohan-Khan-28/AXI4-DMA-Subsystem.git",
+          "C:\\short\\dma-uvm-final-run-20261109\\source"
+        ],
+        "cwd": "C:\\short\\dma-uvm-final-run-20261109",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-0.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "command": [
+          "git",
+          "-C",
+          "C:\\short\\dma-uvm-final-run-20261109\\source",
+          "checkout",
+          "--quiet",
+          "--detach",
+          "a2d3d57edaa9eb441f3289bf5320f4df2f074144"
+        ],
+        "cwd": "C:\\short\\dma-uvm-final-run-20261109",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-1.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "observed_revision": "a2d3d57edaa9eb441f3289bf5320f4df2f074144",
+    "clean": true,
+    "rtl_sha256": {
+      "rtl/axi4_dma_subsystem.sv": "dd709078dc9d91db0d92ba1e4bd34b32cb43f09f8f5739abdb6552313795043b"
+    }
+  },
+  "functional_case_inventory_matched": true,
+  "finished_utc": "2026-11-09T14:25:30.319863+00:00"
+}

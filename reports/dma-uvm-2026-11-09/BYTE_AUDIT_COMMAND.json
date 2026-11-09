@@ -1,0 +1,85 @@
+{
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\amba-dma-uvm-20261109\\reports\\dma-uvm-2026-11-09\\audit_bytes.py",
+    "--repository",
+    "C:\\short\\amba-dma-uvm-20261109",
+    "--revision",
+    "0ff3706a09945c19ff7ca8367569ec7eec673c72",
+    "--checkout-false",
+    "C:\\short\\dma-uvm-bytes-false-20261109",
+    "--checkout-true",
+    "C:\\short\\dma-uvm-bytes-true-20261109",
+    "--output",
+    "C:\\short\\amba-dma-uvm-20261109\\reports\\dma-uvm-2026-11-09\\BYTE_AUDIT.json"
+  ],
+  "exit_code": 0,
+  "clones": [
+    {
+      "command": [
+        "git",
+        "clone",
+        "--quiet",
+        "-c",
+        "core.longpaths=true",
+        "-c",
+        "core.autocrlf=false",
+        "--branch",
+        "advanced/dma-deterministic-uvm",
+        "https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git",
+        "C:\\short\\dma-uvm-bytes-false-20261109"
+      ],
+      "exit_code": 0,
+      "log": "byte-audit-logs/byte-clone-0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "C:\\short\\dma-uvm-bytes-false-20261109",
+        "checkout",
+        "--quiet",
+        "--detach",
+        "0ff3706a09945c19ff7ca8367569ec7eec673c72"
+      ],
+      "exit_code": 0,
+      "log": "byte-audit-logs/byte-clone-1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "clone",
+        "--quiet",
+        "-c",
+        "core.longpaths=true",
+        "-c",
+        "core.autocrlf=true",
+        "--branch",
+        "advanced/dma-deterministic-uvm",
+        "https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git",
+        "C:\\short\\dma-uvm-bytes-true-20261109"
+      ],
+      "exit_code": 0,
+      "log": "byte-audit-logs/byte-clone-2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "C:\\short\\dma-uvm-bytes-true-20261109",
+        "checkout",
+        "--quiet",
+        "--detach",
+        "0ff3706a09945c19ff7ca8367569ec7eec673c72"
+      ],
+      "exit_code": 0,
+      "log": "byte-audit-logs/byte-clone-3.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "console_log": "byte-audit-logs/audit.log",
+  "console_sha256": "d34ddf342d9e6002fc6217d8ae2b2b0cd16f6ff0b72ed3933e7845073d5dd40d"
+}

@@ -1,0 +1,43 @@
+sva-aw_hold PASS EXECUTED
+sva-w_hold PASS EXECUTED
+sva-ar_hold PASS EXECUTED
+sva-b_hold PASS EXECUTED
+sva-r_hold PASS EXECUTED
+sva-b_before PASS EXECUTED
+sva-b_aw_only PASS EXECUTED
+sva-b_w_only PASS EXECUTED
+sva-b_same_w PASS EXECUTED
+sva-b_same_aw PASS EXECUTED
+sva-b_same_both PASS EXECUTED
+sva-r_before PASS EXECUTED
+sva-r_same_ar PASS EXECUTED
+sva-aw_attr PASS EXECUTED
+sva-ar_attr PASS EXECUTED
+sva-w_last PASS EXECUTED
+sva-w_last_same_aw PASS EXECUTED
+sva-w_last_early_count PASS EXECUTED
+sva-w_last_early_missing PASS EXECUTED
+sva-r_last PASS EXECUTED
+sva-rid PASS EXECUTED
+sva-bid PASS EXECUTED
+sva-c_aw_hold PASS EXECUTED
+sva-c_w_hold PASS EXECUTED
+sva-c_ar_hold PASS EXECUTED
+sva-c_b_hold PASS EXECUTED
+sva-c_r_hold PASS EXECUTED
+sva-c_b_before PASS EXECUTED
+sva-c_r_before PASS EXECUTED
+sva-legal PASS EXECUTED
+functional PASS EXECUTED
+malformed-wrong_rid PASS EXECUTED
+malformed-wrong_bid PASS EXECUTED
+malformed-early_rlast PASS EXECUTED
+malformed-missing_rlast PASS EXECUTED
+fault-source_alias PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-destination_progress PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-active_data PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-tail_strobe PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-duplicate_read PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-duplicate_write PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-progress PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-missing_marker PASS EXPECTED_CHILD_FAILURE child exit 1

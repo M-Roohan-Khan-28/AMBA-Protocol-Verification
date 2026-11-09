@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "evidence_revision": "0ff3706a09945c19ff7ca8367569ec7eec673c72",
+  "policy": "Original capture bytes with scoped -text; no newline conversion",
+  "checked_artifacts": 1192,
+  "vcd_count": 13,
+  "figure_count": 8,
+  "vcds": [
+    {
+      "path": "reports/dma-uvm-2026-11-09/run/fault-active_data/child/fault-active_data/capture.vcd",
+      "original_sha256": "1459ed4f690afd1e86f1ff858942f76baa7860954a661465d32d4bd3bd6b022d",
+      "git_blob_sha256": "1459ed4f690afd1e86f1ff858942f76baa7860954a661465d32d4bd3bd6b022d",
+      "public_raw_sha256": "1459ed4f690afd1e86f1ff858942f76baa7860954a661465d32d4bd3bd6b022d",
+      "both_checkout_sha256": "1459ed4f690afd1e86f1ff858942f76baa7860954a661465d32d4bd3bd6b022d",
+      "bytes": 7523,
+      "crlf_count": 884,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/0ff3706a09945c19ff7ca8367569ec7eec673c72/reports/dma-uvm-2026-11-09/run/fault-active_data/child/fault-active_data/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-2026-11-09/run/fault-destination_progress/child/fault-destination_progress/capture.vcd",
+      "original_sha256": "d6abc5830f444af9687428391a0b7ff31fa0dafc7d9a3adab519e7f1081dd0da",
+      "git_blob_sha256": "d6abc5830f444af9687428391a0b7ff31fa0dafc7d9a3adab519e7f1081dd0da",
+      "public_raw_sha256": "d6abc5830f444af9687428391a0b7ff31fa0dafc7d9a3adab519e7f1081dd0da",
+      "both_checkout_sha256": "d6abc5830f444af9687428391a0b7ff31fa0dafc7d9a3adab519e7f1081dd0da",
+      "bytes": 7696,
+      "crlf_count": 903,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/0ff3706a09945c19ff7ca8367569ec7eec673c72/reports/dma-uvm-2026-11-09/run/fault-destination_progress/child/fault-destination_progress/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-2026-11-09/run/fault-duplicate_read/child/fault-duplicate_read/capture.vcd",
+      "original_sha256": "52320b8b02b8b119e173f5c97b96e120f695a351bd11eb25efebe709596a20f2",
+      "git_blob_sha256": "52320b8b02b8b119e173f5c97b96e120f695a351bd11eb25efebe709596a20f2",
+      "public_raw_sha256": "52320b8b02b8b119e173f5c97b96e120f695a351bd11eb25efebe709596a20f2",
+      "both_checkout_sha256": "52320b8b02b8b119e173f5c97b96e120f695a351bd11eb25efebe709596a20f2",
+      "bytes": 5162,
+      "crlf_count": 641,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/0ff3706a09945c19ff7ca8367569ec7eec673c72/reports/dma-uvm-2026-11-09/run/fault-duplicate_read/child/fault-duplicate_read/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-2026-11-09/run/fault-duplicate_write/child/fault-duplicate_write/capture.vcd",
+      "original_sha256": "9193ada2bc7a851ea38bb22f98fe6ccbc9984f3bdf9863ee96b720188be69b49",
+      "git_blob_sha256": "9193ada2bc7a851ea38bb22f98fe6ccbc9984f3bdf9863ee96b720188be69b49",
+      "public_raw_sha256": "9193ada2bc7a851ea38bb22f98fe6ccbc9984f3bdf9863ee96b720188be69b49",
+      "both_checkout_sha256": "9193ada2bc7a851ea38bb22f98fe6ccbc9984f3bdf9863ee96b720188be69b49",
+      "bytes": 4806,
+      "crlf_count": 567,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/0ff3706a09945c19ff7ca8367569ec7eec673c72/reports/dma-uvm-2026-11-09/run/fault-duplicate_write/child/fault-duplicate_write/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-2026-11-09/run/fault-missing_marker/child/fault-missing_marker/capture.vcd",
+      "original_sha256": "cb1dcba278503319d0f71cf414099aa43457c3b0fad8de155a9e3114832f7a0b",
+      "git_blob_sha256": "cb1dcba278503319d0f71cf414099aa43457c3b0fad8de155a9e3114832f7a0b",
+      "public_raw_sha256": "cb1dcba278503319d0f71cf414099aa43457c3b0fad8de155a9e3114832f7a0b",
+      "both_checkout_sha256": "cb1dcba278503319d0f71cf414099aa43457c3b0fad8de155a9e3114832f7a0b",
+      "bytes": 12709,
+      "crlf_count": 1593,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/0ff3706a09945c19ff7ca8367569ec7eec673c72/reports/dma-uvm-2026-11-09/run/fault-missing_marker/child/fault-missing_marker/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-2026-11-09/run/fault-progress/child/fault-progress/capture.vcd",
+      "original_sha256": "d993fd89e5b160146837457a55da05223ad2dfccdd0298fb0a93eea9855cc9b2",
+      "git_blob_sha256": "d993fd89e5b160146837457a55da05223ad2dfccdd0298fb0a93eea9855cc9b2",
+      "public_raw_sha256": "d993fd89e5b160146837457a55da05223ad2dfccdd0298fb0a93eea9855cc9b2",
+      "both_checkout_sha256": "d993fd89e5b160146837457a55da05223ad2dfccdd0298fb0a93eea9855cc9b2",
+      "bytes": 315623,
+      "crlf_count": 50813,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/0ff3706a09945c19ff7ca8367569ec7eec673c72/reports/dma-uvm-2026-11-09/run/fault-progress/child/fault-progress/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-2026-11-09/run/fault-source_alias/child/fault-source_alias/capture.vcd",
+      "original_sha256": "66f6ff14b85d5584396a5bd24a96f65234f84a035807c7eec6836ec0fb4ad765",
+      "git_blob_sha256": "66f6ff14b85d5584396a5bd24a96f65234f84a035807c7eec6836ec0fb4ad765",
+      "public_raw_sha256": "66f6ff14b85d5584396a5bd24a96f65234f84a035807c7eec6836ec0fb4ad765",
+      "both_checkout_sha256": "66f6ff14b85d5584396a5bd24a96f65234f84a035807c7eec6836ec0fb4ad765",
+      "bytes": 4420,
+      "crlf_count": 520,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/0ff3706a09945c19ff7ca8367569ec7eec673c72/reports/dma-uvm-2026-11-09/run/fault-source_alias/child/fault-source_alias/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-2026-11-09/run/fault-tail_strobe/child/fault-tail_strobe/capture.vcd",
+      "original_sha256": "5ea13b4a4e6bb9c600a24529f06e6f6acd4c3db5e7d14ace6fa41168d6656536",
+      "git_blob_sha256": "5ea13b4a4e6bb9c600a24529f06e6f6acd4c3db5e7d14ace6fa41168d6656536",
+      "public_raw_sha256": "5ea13b4a4e6bb9c600a24529f06e6f6acd4c3db5e7d14ace6fa41168d6656536",
+      "both_checkout_sha256": "5ea13b4a4e6bb9c600a24529f06e6f6acd4c3db5e7d14ace6fa41168d6656536",
+      "bytes": 9970,
+      "crlf_count": 1126,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/0ff3706a09945c19ff7ca8367569ec7eec673c72/reports/dma-uvm-2026-11-09/run/fault-tail_strobe/child/fault-tail_strobe/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-2026-11-09/run/functional/capture.vcd",
+      "original_sha256": "529dd8408656db7d2c55aca8813561afdfa43018d1e0d4b243585784274e67f4",
+      "git_blob_sha256": "529dd8408656db7d2c55aca8813561afdfa43018d1e0d4b243585784274e67f4",
+      "public_raw_sha256": "529dd8408656db7d2c55aca8813561afdfa43018d1e0d4b243585784274e67f4",
+      "both_checkout_sha256": "529dd8408656db7d2c55aca8813561afdfa43018d1e0d4b243585784274e67f4",
+      "bytes": 902724,
+      "crlf_count": 113734,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/0ff3706a09945c19ff7ca8367569ec7eec673c72/reports/dma-uvm-2026-11-09/run/functional/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-2026-11-09/run/malformed-early_rlast/capture.vcd",
+      "original_sha256": "f84a1b04fe74155fafa1c2676fbb48109c264b3d3503268348d5f9999954e459",
+      "git_blob_sha256": "f84a1b04fe74155fafa1c2676fbb48109c264b3d3503268348d5f9999954e459",
+      "public_raw_sha256": "f84a1b04fe74155fafa1c2676fbb48109c264b3d3503268348d5f9999954e459",
+      "both_checkout_sha256": "f84a1b04fe74155fafa1c2676fbb48109c264b3d3503268348d5f9999954e459",
+      "bytes": 12631,
+      "crlf_count": 1860,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/0ff3706a09945c19ff7ca8367569ec7eec673c72/reports/dma-uvm-2026-11-09/run/malformed-early_rlast/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-2026-11-09/run/malformed-missing_rlast/capture.vcd",
+      "original_sha256": "71fb60381f2fe09450b80b69d48aad8b9de6a6b42ebf318f04d0da3aa65b18f5",
+      "git_blob_sha256": "71fb60381f2fe09450b80b69d48aad8b9de6a6b42ebf318f04d0da3aa65b18f5",
+      "public_raw_sha256": "71fb60381f2fe09450b80b69d48aad8b9de6a6b42ebf318f04d0da3aa65b18f5",
+      "both_checkout_sha256": "71fb60381f2fe09450b80b69d48aad8b9de6a6b42ebf318f04d0da3aa65b18f5",
+      "bytes": 13894,
+      "crlf_count": 2003,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/0ff3706a09945c19ff7ca8367569ec7eec673c72/reports/dma-uvm-2026-11-09/run/malformed-missing_rlast/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-2026-11-09/run/malformed-wrong_bid/capture.vcd",
+      "original_sha256": "7451810959b2adf2eaa67d7aae43ee03b18823129c3538ddca09679821708787",
+      "git_blob_sha256": "7451810959b2adf2eaa67d7aae43ee03b18823129c3538ddca09679821708787",
+      "public_raw_sha256": "7451810959b2adf2eaa67d7aae43ee03b18823129c3538ddca09679821708787",
+      "both_checkout_sha256": "7451810959b2adf2eaa67d7aae43ee03b18823129c3538ddca09679821708787",
+      "bytes": 15090,
+      "crlf_count": 2128,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/0ff3706a09945c19ff7ca8367569ec7eec673c72/reports/dma-uvm-2026-11-09/run/malformed-wrong_bid/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-2026-11-09/run/malformed-wrong_rid/capture.vcd",
+      "original_sha256": "966394a86d74cf59dffbfdbbf2c431804d431c01540f3832bb8aa66fe00d147e",
+      "git_blob_sha256": "966394a86d74cf59dffbfdbbf2c431804d431c01540f3832bb8aa66fe00d147e",
+      "public_raw_sha256": "966394a86d74cf59dffbfdbbf2c431804d431c01540f3832bb8aa66fe00d147e",
+      "both_checkout_sha256": "966394a86d74cf59dffbfdbbf2c431804d431c01540f3832bb8aa66fe00d147e",
+      "bytes": 13914,
+      "crlf_count": 2007,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/0ff3706a09945c19ff7ca8367569ec7eec673c72/reports/dma-uvm-2026-11-09/run/malformed-wrong_rid/capture.vcd"
+    }
+  ],
+  "audit_script_sha256": "4edd990636cab4a62217d19b4f462d2c0cf5cb43cbc5e1bec6e0ae7d8a8cfc9d"
+}

@@ -1,0 +1,10 @@
+{
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\dma-uvm-adapter-20261109\\scripts\\check_provenance.py"
+  ],
+  "exit_code": 0,
+  "source_revision": "a2d3d57edaa9eb441f3289bf5320f4df2f074144",
+  "log": "provenance.log",
+  "sha256": "af389d620d204ca41a7d759c09b6feecbe75958993c224f097a6e4862e205cca"
+}

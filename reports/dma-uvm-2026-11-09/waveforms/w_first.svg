@@ -1,0 +1,268 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="931" viewBox="0 0 1440 931">
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif} .signal{font-family:DejaVu Sans Mono,monospace;font-size:13px} .small{font-size:12px;fill:#475569}</style>
+<text x="26" y="31" font-size="21" fill="#0f172a">Measured DMA: w first (original capture bytes)</text>
+<text x="26" y="54" font-size="13" fill="#92400e">VCD TRACE — check the accompanying simulation result</text>
+<text x="26" y="76" class="small">Time in VCD ticks; 1 tick = 1ps. Same-timestamp changes display their final value.</text>
+<path d="M370.00,105 V864" stroke="#dbe3ed"/>
+<text x="370.00" y="99" text-anchor="middle" class="small">1.10975e+08</text>
+<path d="M496.25,105 V864" stroke="#dbe3ed"/>
+<text x="496.25" y="99" text-anchor="middle" class="small">1.11014e+08</text>
+<path d="M622.50,105 V864" stroke="#dbe3ed"/>
+<text x="622.50" y="99" text-anchor="middle" class="small">1.11052e+08</text>
+<path d="M748.75,105 V864" stroke="#dbe3ed"/>
+<text x="748.75" y="99" text-anchor="middle" class="small">1.11091e+08</text>
+<path d="M875.00,105 V864" stroke="#dbe3ed"/>
+<text x="875.00" y="99" text-anchor="middle" class="small">1.1113e+08</text>
+<path d="M1001.25,105 V864" stroke="#dbe3ed"/>
+<text x="1001.25" y="99" text-anchor="middle" class="small">1.11169e+08</text>
+<path d="M1127.50,105 V864" stroke="#dbe3ed"/>
+<text x="1127.50" y="99" text-anchor="middle" class="small">1.11208e+08</text>
+<path d="M1253.75,105 V864" stroke="#dbe3ed"/>
+<text x="1253.75" y="99" text-anchor="middle" class="small">1.11246e+08</text>
+<path d="M1380.00,105 V864" stroke="#dbe3ed"/>
+<text x="1380.00" y="99" text-anchor="middle" class="small">1.11285e+08</text>
+<text x="26" y="135" class="signal"><title>dma_uvm_top.bus.clk</title>dma_uvm_top.bus.clk</text>
+<text x="26" y="151" class="small">1 bit</text>
+<path d="M370.00,122 H386.29" stroke="#0369a1" stroke-width="2"/>
+<path d="M386.29,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M386.29,150 H402.58" stroke="#0369a1" stroke-width="2"/>
+<path d="M402.58,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M402.58,122 H418.87" stroke="#0369a1" stroke-width="2"/>
+<path d="M418.87,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M418.87,150 H435.16" stroke="#0369a1" stroke-width="2"/>
+<path d="M435.16,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M435.16,122 H451.45" stroke="#0369a1" stroke-width="2"/>
+<path d="M451.45,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M451.45,150 H467.74" stroke="#0369a1" stroke-width="2"/>
+<path d="M467.74,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M467.74,122 H484.03" stroke="#0369a1" stroke-width="2"/>
+<path d="M484.03,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M484.03,150 H500.32" stroke="#0369a1" stroke-width="2"/>
+<path d="M500.32,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M500.32,122 H516.61" stroke="#0369a1" stroke-width="2"/>
+<path d="M516.61,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M516.61,150 H532.90" stroke="#0369a1" stroke-width="2"/>
+<path d="M532.90,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M532.90,122 H549.19" stroke="#0369a1" stroke-width="2"/>
+<path d="M549.19,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M549.19,150 H565.48" stroke="#0369a1" stroke-width="2"/>
+<path d="M565.48,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M565.48,122 H581.77" stroke="#0369a1" stroke-width="2"/>
+<path d="M581.77,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M581.77,150 H598.06" stroke="#0369a1" stroke-width="2"/>
+<path d="M598.06,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M598.06,122 H614.35" stroke="#0369a1" stroke-width="2"/>
+<path d="M614.35,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M614.35,150 H630.65" stroke="#0369a1" stroke-width="2"/>
+<path d="M630.65,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M630.65,122 H646.94" stroke="#0369a1" stroke-width="2"/>
+<path d="M646.94,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M646.94,150 H663.23" stroke="#0369a1" stroke-width="2"/>
+<path d="M663.23,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M663.23,122 H679.52" stroke="#0369a1" stroke-width="2"/>
+<path d="M679.52,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M679.52,150 H695.81" stroke="#0369a1" stroke-width="2"/>
+<path d="M695.81,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M695.81,122 H712.10" stroke="#0369a1" stroke-width="2"/>
+<path d="M712.10,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M712.10,150 H728.39" stroke="#0369a1" stroke-width="2"/>
+<path d="M728.39,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M728.39,122 H744.68" stroke="#0369a1" stroke-width="2"/>
+<path d="M744.68,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M744.68,150 H760.97" stroke="#0369a1" stroke-width="2"/>
+<path d="M760.97,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M760.97,122 H777.26" stroke="#0369a1" stroke-width="2"/>
+<path d="M777.26,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M777.26,150 H793.55" stroke="#0369a1" stroke-width="2"/>
+<path d="M793.55,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M793.55,122 H809.84" stroke="#0369a1" stroke-width="2"/>
+<path d="M809.84,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M809.84,150 H826.13" stroke="#0369a1" stroke-width="2"/>
+<path d="M826.13,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M826.13,122 H842.42" stroke="#0369a1" stroke-width="2"/>
+<path d="M842.42,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M842.42,150 H858.71" stroke="#0369a1" stroke-width="2"/>
+<path d="M858.71,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M858.71,122 H875.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M875.00,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M875.00,150 H891.29" stroke="#0369a1" stroke-width="2"/>
+<path d="M891.29,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M891.29,122 H907.58" stroke="#0369a1" stroke-width="2"/>
+<path d="M907.58,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M907.58,150 H923.87" stroke="#0369a1" stroke-width="2"/>
+<path d="M923.87,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M923.87,122 H940.16" stroke="#0369a1" stroke-width="2"/>
+<path d="M940.16,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M940.16,150 H956.45" stroke="#0369a1" stroke-width="2"/>
+<path d="M956.45,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M956.45,122 H972.74" stroke="#0369a1" stroke-width="2"/>
+<path d="M972.74,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M972.74,150 H989.03" stroke="#0369a1" stroke-width="2"/>
+<path d="M989.03,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M989.03,122 H1005.32" stroke="#0369a1" stroke-width="2"/>
+<path d="M1005.32,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M1005.32,150 H1021.61" stroke="#0369a1" stroke-width="2"/>
+<path d="M1021.61,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M1021.61,122 H1037.90" stroke="#0369a1" stroke-width="2"/>
+<path d="M1037.90,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M1037.90,150 H1054.19" stroke="#0369a1" stroke-width="2"/>
+<path d="M1054.19,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M1054.19,122 H1070.48" stroke="#0369a1" stroke-width="2"/>
+<path d="M1070.48,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M1070.48,150 H1086.77" stroke="#0369a1" stroke-width="2"/>
+<path d="M1086.77,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M1086.77,122 H1103.06" stroke="#0369a1" stroke-width="2"/>
+<path d="M1103.06,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M1103.06,150 H1119.35" stroke="#0369a1" stroke-width="2"/>
+<path d="M1119.35,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M1119.35,122 H1135.65" stroke="#0369a1" stroke-width="2"/>
+<path d="M1135.65,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M1135.65,150 H1151.94" stroke="#0369a1" stroke-width="2"/>
+<path d="M1151.94,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M1151.94,122 H1168.23" stroke="#0369a1" stroke-width="2"/>
+<path d="M1168.23,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M1168.23,150 H1184.52" stroke="#0369a1" stroke-width="2"/>
+<path d="M1184.52,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M1184.52,122 H1200.81" stroke="#0369a1" stroke-width="2"/>
+<path d="M1200.81,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M1200.81,150 H1217.10" stroke="#0369a1" stroke-width="2"/>
+<path d="M1217.10,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M1217.10,122 H1233.39" stroke="#0369a1" stroke-width="2"/>
+<path d="M1233.39,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M1233.39,150 H1249.68" stroke="#0369a1" stroke-width="2"/>
+<path d="M1249.68,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M1249.68,122 H1265.97" stroke="#0369a1" stroke-width="2"/>
+<path d="M1265.97,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M1265.97,150 H1282.26" stroke="#0369a1" stroke-width="2"/>
+<path d="M1282.26,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M1282.26,122 H1298.55" stroke="#0369a1" stroke-width="2"/>
+<path d="M1298.55,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M1298.55,150 H1314.84" stroke="#0369a1" stroke-width="2"/>
+<path d="M1314.84,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M1314.84,122 H1331.13" stroke="#0369a1" stroke-width="2"/>
+<path d="M1331.13,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M1331.13,150 H1347.42" stroke="#0369a1" stroke-width="2"/>
+<path d="M1347.42,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M1347.42,122 H1363.71" stroke="#0369a1" stroke-width="2"/>
+<path d="M1363.71,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M1363.71,150 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,162 H1408" stroke="#e2e8f0"/>
+<text x="26" y="192" class="signal"><title>dma_uvm_top.bus.reset_n</title>dma_uvm_top.bus.reset_n</text>
+<text x="26" y="208" class="small">1 bit</text>
+<path d="M370.00,179 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,219 H1408" stroke="#e2e8f0"/>
+<text x="26" y="249" class="signal"><title>dma_uvm_top.bus.d_awvalid</title>dma_uvm_top.bus.d_awvalid</text>
+<text x="26" y="265" class="small">1 bit</text>
+<path d="M370.00,264 H402.58" stroke="#0369a1" stroke-width="2"/>
+<path d="M402.58,264 V236" stroke="#0369a1" stroke-width="2"/>
+<path d="M402.58,236 H467.74" stroke="#0369a1" stroke-width="2"/>
+<path d="M467.74,236 V264" stroke="#0369a1" stroke-width="2"/>
+<path d="M467.74,264 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,276 H1408" stroke="#e2e8f0"/>
+<text x="26" y="306" class="signal"><title>dma_uvm_top.bus.d_awready</title>dma_uvm_top.bus.d_awready</text>
+<text x="26" y="322" class="small">1 bit</text>
+<path d="M370.00,321 H451.45" stroke="#0369a1" stroke-width="2"/>
+<path d="M451.45,321 V293" stroke="#0369a1" stroke-width="2"/>
+<path d="M451.45,293 H484.03" stroke="#0369a1" stroke-width="2"/>
+<path d="M484.03,293 V321" stroke="#0369a1" stroke-width="2"/>
+<path d="M484.03,321 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,333 H1408" stroke="#e2e8f0"/>
+<text x="26" y="363" class="signal"><title>dma_uvm_top.bus.d_awaddr</title>dma_uvm_top.bus.d_awaddr</text>
+<text x="26" y="379" class="small">32 bit [31:0]</text>
+<polygon points="370.00,364 374.00,350 1310.84,350 1314.84,364 1310.84,378 374.00,378" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00000000000000001000000000000000</title></polygon>
+<text x="842.42" y="369" text-anchor="middle" class="signal" fill="#0369a1">0x00008000</text>
+<polygon points="1314.84,364 1318.84,350 1376.00,350 1380.00,364 1376.00,378 1318.84,378" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00000000000000001000000010000000</title></polygon>
+<path d="M26,390 H1408" stroke="#e2e8f0"/>
+<text x="26" y="420" class="signal"><title>dma_uvm_top.bus.d_awlen</title>dma_uvm_top.bus.d_awlen</text>
+<text x="26" y="436" class="small">8 bit [7:0]</text>
+<polygon points="370.00,421 374.00,407 1343.42,407 1347.42,421 1343.42,435 374.00,435" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00001111</title></polygon>
+<text x="858.71" y="426" text-anchor="middle" class="signal" fill="#0369a1">0x0F</text>
+<polygon points="1347.42,421 1351.42,407 1376.00,407 1380.00,421 1376.00,435 1351.42,435" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00000000</title></polygon>
+<path d="M26,447 H1408" stroke="#e2e8f0"/>
+<text x="26" y="477" class="signal"><title>dma_uvm_top.bus.d_wvalid</title>dma_uvm_top.bus.d_wvalid</text>
+<text x="26" y="493" class="small">1 bit</text>
+<path d="M370.00,492 H402.58" stroke="#0369a1" stroke-width="2"/>
+<path d="M402.58,492 V464" stroke="#0369a1" stroke-width="2"/>
+<path d="M402.58,464 H1184.52" stroke="#0369a1" stroke-width="2"/>
+<path d="M1184.52,464 V492" stroke="#0369a1" stroke-width="2"/>
+<path d="M1184.52,492 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,504 H1408" stroke="#e2e8f0"/>
+<text x="26" y="534" class="signal"><title>dma_uvm_top.bus.d_wready</title>dma_uvm_top.bus.d_wready</text>
+<text x="26" y="550" class="small">1 bit</text>
+<path d="M370.00,549 H386.29" stroke="#0369a1" stroke-width="2"/>
+<path d="M386.29,549 V521" stroke="#0369a1" stroke-width="2"/>
+<path d="M386.29,521 H451.45" stroke="#0369a1" stroke-width="2"/>
+<path d="M451.45,521 V549" stroke="#0369a1" stroke-width="2"/>
+<path d="M451.45,549 H484.03" stroke="#0369a1" stroke-width="2"/>
+<path d="M484.03,549 V521" stroke="#0369a1" stroke-width="2"/>
+<path d="M484.03,521 H549.19" stroke="#0369a1" stroke-width="2"/>
+<path d="M549.19,521 V549" stroke="#0369a1" stroke-width="2"/>
+<path d="M549.19,549 H581.77" stroke="#0369a1" stroke-width="2"/>
+<path d="M581.77,549 V521" stroke="#0369a1" stroke-width="2"/>
+<path d="M581.77,521 H646.94" stroke="#0369a1" stroke-width="2"/>
+<path d="M646.94,521 V549" stroke="#0369a1" stroke-width="2"/>
+<path d="M646.94,549 H679.52" stroke="#0369a1" stroke-width="2"/>
+<path d="M679.52,549 V521" stroke="#0369a1" stroke-width="2"/>
+<path d="M679.52,521 H744.68" stroke="#0369a1" stroke-width="2"/>
+<path d="M744.68,521 V549" stroke="#0369a1" stroke-width="2"/>
+<path d="M744.68,549 H777.26" stroke="#0369a1" stroke-width="2"/>
+<path d="M777.26,549 V521" stroke="#0369a1" stroke-width="2"/>
+<path d="M777.26,521 H842.42" stroke="#0369a1" stroke-width="2"/>
+<path d="M842.42,521 V549" stroke="#0369a1" stroke-width="2"/>
+<path d="M842.42,549 H875.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M875.00,549 V521" stroke="#0369a1" stroke-width="2"/>
+<path d="M875.00,521 H940.16" stroke="#0369a1" stroke-width="2"/>
+<path d="M940.16,521 V549" stroke="#0369a1" stroke-width="2"/>
+<path d="M940.16,549 H972.74" stroke="#0369a1" stroke-width="2"/>
+<path d="M972.74,549 V521" stroke="#0369a1" stroke-width="2"/>
+<path d="M972.74,521 H1037.90" stroke="#0369a1" stroke-width="2"/>
+<path d="M1037.90,521 V549" stroke="#0369a1" stroke-width="2"/>
+<path d="M1037.90,549 H1070.48" stroke="#0369a1" stroke-width="2"/>
+<path d="M1070.48,549 V521" stroke="#0369a1" stroke-width="2"/>
+<path d="M1070.48,521 H1135.65" stroke="#0369a1" stroke-width="2"/>
+<path d="M1135.65,521 V549" stroke="#0369a1" stroke-width="2"/>
+<path d="M1135.65,549 H1168.23" stroke="#0369a1" stroke-width="2"/>
+<path d="M1168.23,549 V521" stroke="#0369a1" stroke-width="2"/>
+<path d="M1168.23,521 H1200.81" stroke="#0369a1" stroke-width="2"/>
+<path d="M1200.81,521 V549" stroke="#0369a1" stroke-width="2"/>
+<path d="M1200.81,549 H1363.71" stroke="#0369a1" stroke-width="2"/>
+<path d="M1363.71,549 V521" stroke="#0369a1" stroke-width="2"/>
+<path d="M1363.71,521 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,561 H1408" stroke="#e2e8f0"/>
+<text x="26" y="591" class="signal"><title>dma_uvm_top.bus.d_wstrb</title>dma_uvm_top.bus.d_wstrb</text>
+<text x="26" y="607" class="small">8 bit [7:0]</text>
+<polygon points="370.00,592 374.00,578 1343.42,578 1347.42,592 1343.42,606 374.00,606" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>11111111</title></polygon>
+<text x="858.71" y="597" text-anchor="middle" class="signal" fill="#0369a1">0xFF</text>
+<polygon points="1347.42,592 1351.42,578 1376.00,578 1380.00,592 1376.00,606 1351.42,606" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00000001</title></polygon>
+<path d="M26,618 H1408" stroke="#e2e8f0"/>
+<text x="26" y="648" class="signal"><title>dma_uvm_top.bus.d_wlast</title>dma_uvm_top.bus.d_wlast</text>
+<text x="26" y="664" class="small">1 bit</text>
+<path d="M370.00,663 H1119.35" stroke="#0369a1" stroke-width="2"/>
+<path d="M1119.35,663 V635" stroke="#0369a1" stroke-width="2"/>
+<path d="M1119.35,635 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,675 H1408" stroke="#e2e8f0"/>
+<text x="26" y="705" class="signal"><title>dma_uvm_top.bus.d_bvalid</title>dma_uvm_top.bus.d_bvalid</text>
+<text x="26" y="721" class="small">1 bit</text>
+<path d="M370.00,720 H1298.55" stroke="#0369a1" stroke-width="2"/>
+<path d="M1298.55,720 V692" stroke="#0369a1" stroke-width="2"/>
+<path d="M1298.55,692 H1331.13" stroke="#0369a1" stroke-width="2"/>
+<path d="M1331.13,692 V720" stroke="#0369a1" stroke-width="2"/>
+<path d="M1331.13,720 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,732 H1408" stroke="#e2e8f0"/>
+<text x="26" y="762" class="signal"><title>dma_uvm_top.bus.d_bready</title>dma_uvm_top.bus.d_bready</text>
+<text x="26" y="778" class="small">1 bit</text>
+<path d="M370.00,777 H1184.52" stroke="#0369a1" stroke-width="2"/>
+<path d="M1184.52,777 V749" stroke="#0369a1" stroke-width="2"/>
+<path d="M1184.52,749 H1314.84" stroke="#0369a1" stroke-width="2"/>
+<path d="M1314.84,749 V777" stroke="#0369a1" stroke-width="2"/>
+<path d="M1314.84,777 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,789 H1408" stroke="#e2e8f0"/>
+<text x="26" y="819" class="signal"><title>dma_uvm_top.bus.d_bresp</title>dma_uvm_top.bus.d_bresp</text>
+<text x="26" y="835" class="small">2 bit [1:0]</text>
+<polygon points="370.00,820 374.00,806 1376.00,806 1380.00,820 1376.00,834 374.00,834" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00</title></polygon>
+<text x="875.00" y="825" text-anchor="middle" class="signal" fill="#0369a1">0x0</text>
+<path d="M26,846 H1408" stroke="#e2e8f0"/>
+<text x="26" y="893" class="small">Source: capture.vcd | SHA-256: 529dd8408656db7d2c55aca8813561afdfa43018d1e0d4b243585784274e67f4</text>
+<text x="26" y="914" class="small">A waveform is evidence of recorded signal values; it does not establish functional, protocol, or timing closure.</text>
+</svg>
