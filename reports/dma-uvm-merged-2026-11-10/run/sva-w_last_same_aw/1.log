@@ -1,0 +1,12 @@
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+Start time: 01:27:35 on Nov 10,2026
+vlog -sv -work work "+incdir+C:\short\dma-closeout-source-20261110\verification\dma_uvm" C:\short\dma-closeout-source-20261110\verification\dma_uvm\dma_bus.sv C:\short\dma-closeout-source-20261110\verification\dma_uvm\dma_assertions.sv C:\short\dma-closeout-source-20261110\verification\dma_uvm\dma_sva_control.sv 
+** Note: (vlog-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+-- Compiling interface dma_bus
+-- Compiling module dma_assertions
+-- Compiling module dma_sva_control
+
+Top level modules:
+	dma_sva_control
+End time: 01:27:35 on Nov 10,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

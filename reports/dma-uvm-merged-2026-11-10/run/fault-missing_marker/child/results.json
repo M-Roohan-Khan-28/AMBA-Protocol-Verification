@@ -1,0 +1,277 @@
+{
+  "started_utc": "2026-11-09T20:31:46.980500+00:00",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\dma-closeout-source-20261110\\scripts\\run_dma_uvm.py",
+    "--select",
+    "fault-missing_marker",
+    "--raw-fault",
+    "--output",
+    "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child",
+    "--sim-bin",
+    "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+    "--uvm-lib",
+    "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+    "--uvm-include",
+    "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+    "--timeout",
+    "90",
+    "--source-cache",
+    "C:\\short\\dma-closeout-run-20261110\\source",
+    "--expected-env-sha",
+    "54833a559d7afbc741c08f41f7df6b3dd24a2b52"
+  ],
+  "source_revision": "54833a559d7afbc741c08f41f7df6b3dd24a2b52",
+  "source_dirty": false,
+  "serial_execution": true,
+  "selection": [
+    "fault-missing_marker"
+  ],
+  "raw_fault": true,
+  "seed": 682016495,
+  "seed_hex": "0x28A6BEEF",
+  "functional_coverage": "NOT RUN",
+  "constrained_randomization": "NOT RUN",
+  "original_advanced_alu_apb": "NOT RUN",
+  "suites": [
+    {
+      "name": "fault-missing_marker",
+      "kind": "fault",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child\\fault-missing_marker",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "+incdir+C:\\short\\dma-closeout-source-20261110\\verification\\dma_uvm",
+            "C:\\short\\dma-closeout-source-20261110\\verification\\dma_uvm\\dma_bus.sv",
+            "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child\\source\\rtl\\axi4_dma_subsystem.sv",
+            "C:\\short\\dma-closeout-source-20261110\\verification\\dma_uvm\\dma_adapter.sv",
+            "C:\\short\\dma-closeout-source-20261110\\verification\\dma_uvm\\dma_assertions.sv",
+            "C:\\short\\dma-closeout-source-20261110\\verification\\dma_uvm\\dma_uvm_pkg.sv",
+            "C:\\short\\dma-closeout-source-20261110\\verification\\dma_uvm\\dma_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child\\fault-missing_marker",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "1537c5ebba7d64a607b477ff25b4675cce4c2870b9ad7be0f3852241c3b31912"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.dma_uvm_top",
+            "+CASES=C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child\\fault-missing_marker\\cases.txt",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /dma_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child\\fault-missing_marker",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "4f5944b2c976cd551ed933c72d6f3dfb9ee735288a67f38b563ceee6d9198e76"
+        }
+      ],
+      "case_input_sha256": "43a2dd9b43da962f69bcaa149bdf02b02d56886aeb8b6019488d9f613cfc672e",
+      "reason": "MISSING_RESULT_MARKER"
+    }
+  ],
+  "expected_inventory": [
+    "sva-aw_hold",
+    "sva-w_hold",
+    "sva-ar_hold",
+    "sva-b_hold",
+    "sva-r_hold",
+    "sva-b_before",
+    "sva-b_aw_only",
+    "sva-b_w_only",
+    "sva-b_same_w",
+    "sva-b_same_aw",
+    "sva-b_same_both",
+    "sva-r_before",
+    "sva-r_same_ar",
+    "sva-aw_attr",
+    "sva-ar_attr",
+    "sva-w_last",
+    "sva-w_last_same_aw",
+    "sva-w_last_early_count",
+    "sva-w_last_early_missing",
+    "sva-r_last",
+    "sva-rid",
+    "sva-bid",
+    "sva-c_aw_hold",
+    "sva-c_w_hold",
+    "sva-c_ar_hold",
+    "sva-c_b_hold",
+    "sva-c_r_hold",
+    "sva-c_b_before",
+    "sva-c_r_before",
+    "sva-legal",
+    "functional",
+    "malformed-wrong_rid",
+    "malformed-wrong_bid",
+    "malformed-early_rlast",
+    "malformed-missing_rlast",
+    "inactive-lanes",
+    "csr-protected-state",
+    "fault-source_alias",
+    "fault-destination_progress",
+    "fault-active_data",
+    "fault-tail_strobe",
+    "fault-duplicate_read",
+    "fault-duplicate_write",
+    "fault-progress",
+    "fault-missing_marker",
+    "fault-csr_idle_side_effect",
+    "fault-csr_busy_side_effect"
+  ],
+  "required_selected": [
+    "fault-missing_marker"
+  ],
+  "aggregate_exit_code": 1,
+  "milestone_pass": false,
+  "input_sha256": {
+    "verification/dma_uvm/dma_adapter.sv": "2b1babfd62a694a66673533f8a6244a9560f1fe0d1be94013e46cba31964a848",
+    "verification/dma_uvm/dma_assertions.sv": "6137af8da1a6c54dd493153513644e4811bed07a6fe22a7e6758c0ba6778e1fd",
+    "verification/dma_uvm/dma_bus.sv": "20a62d424feb363c4f6449badb4e141009d54176124639349139951af3e85039",
+    "verification/dma_uvm/dma_common.svh": "b316dacf569b38e3d247bf8882c964e80da1016be884f6f85eff24562e931f7e",
+    "verification/dma_uvm/dma_driver.svh": "c2ae2829efb21a63445fca5c503230460449e1479c28e155ebeac98b4c6154a5",
+    "verification/dma_uvm/dma_pins.svh": "3860921aace190dc02df54119867516bab0502ee131e2e9dcc0634ab135de83c",
+    "verification/dma_uvm/dma_responder.svh": "69eb088ce43b5efabc7a060e809a192beb0f6ba589231ec2f3597b745bd707e6",
+    "verification/dma_uvm/dma_scoreboard.svh": "254b7d19822d76dea2bf10d47dc91f14a9c5a755601294a70c91859c2fe6f7bb",
+    "verification/dma_uvm/dma_sva_control.sv": "b75d32b1d4705522757d9567fe2318e834d2e824b593768d257568b1ef095fe6",
+    "verification/dma_uvm/dma_uvm_pkg.sv": "35ccddafecd5f68759dbff034ef3a5917b03c4b977f09d3aa8dd7a179446313b",
+    "verification/dma_uvm/dma_uvm_top.sv": "71a5f6fed9e43ea04487dbe0560dc74eb1f416dbefeb71f6cb7fadb95902d87b",
+    "verification/dma_uvm/dma_zero_pins.svh": "f8b91769b295aa759ee52a3ef9380652d663ebdab3e658585797591b462d6809",
+    "verification/dma_uvm/inventory.json": "d5ae8a94f1bc3ef874bd98c1da81b7ef48a205adb3f099df15101b0e29adec5c",
+    "verification/dma_uvm/sources.json": "4ba4f50553923bbc52760c4cadcc9ba03a86837b86fc4289f057b9d572440653",
+    "scripts/run_dma_uvm.py": "376fe9cfd721332a5d6c0ea43945345bbfb81a65b7b12272a6838f8f8244fda5",
+    "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+    "scripts/dma_accounting.py": "3834009f94a8fb4dbffc4a9405327e55ae7fe650a47f3c9fac189306105cbfc4",
+    "scripts/dma_mutations.py": "6b09cfdad04f069b1394048c8a677478d0b17c88e5e58d41ff6a494db919b5ab"
+  },
+  "expected_environment_revision": "54833a559d7afbc741c08f41f7df6b3dd24a2b52",
+  "runner_revision": "e6fbb510aa88b1f5aa8a7cc04926eeefbfb5be4d",
+  "inventory_revision": "e6fbb510aa88b1f5aa8a7cc04926eeefbfb5be4d",
+  "configuration": {
+    "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+    "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+    "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+    "timeout_per_command": 90,
+    "global_timeout": 2400,
+    "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "vendor_input_sha256": {
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5"
+    }
+  },
+  "version_command": {
+    "command": [
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+      "-version"
+    ],
+    "cwd": "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child",
+    "exit_code": 0,
+    "timed_out": false,
+    "log": "version.log",
+    "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+  },
+  "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+  "source_lock": {
+    "owner": "M-Roohan-Khan-28",
+    "account_id": 270144410,
+    "repository": "AXI4-DMA-Subsystem",
+    "revision": "a2d3d57edaa9eb441f3289bf5320f4df2f074144",
+    "files": [
+      "rtl/axi4_dma_subsystem.sv"
+    ],
+    "commands": [
+      {
+        "command": [
+          "git",
+          "clone",
+          "--quiet",
+          "--no-hardlinks",
+          "--config",
+          "core.autocrlf=false",
+          "--config",
+          "core.longpaths=true",
+          "C:\\short\\dma-closeout-run-20261110\\source",
+          "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child\\source"
+        ],
+        "cwd": "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-0.log",
+        "sha256": "d300046a6172dd51ab54b47c3e9e4427a08287980759e3c08489c274579eae81"
+      },
+      {
+        "command": [
+          "git",
+          "-C",
+          "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child\\source",
+          "checkout",
+          "--quiet",
+          "--detach",
+          "a2d3d57edaa9eb441f3289bf5320f4df2f074144"
+        ],
+        "cwd": "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-1.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "command": [
+          "git",
+          "-C",
+          "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child\\source",
+          "remote",
+          "set-url",
+          "origin",
+          "https://github.com/M-Roohan-Khan-28/AXI4-DMA-Subsystem.git"
+        ],
+        "cwd": "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-2.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "supplier": "C:\\short\\dma-closeout-run-20261110\\source",
+    "transport": "verified_local_mirror",
+    "observed_revision": "a2d3d57edaa9eb441f3289bf5320f4df2f074144",
+    "clean": true,
+    "rtl_sha256": {
+      "rtl/axi4_dma_subsystem.sv": "dd709078dc9d91db0d92ba1e4bd34b32cb43f09f8f5739abdb6552313795043b"
+    },
+    "clean_after_execution": true
+  },
+  "finished_utc": "2026-11-09T20:31:59.434825+00:00"
+}

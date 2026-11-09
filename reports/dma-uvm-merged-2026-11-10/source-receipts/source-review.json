@@ -1,0 +1,39 @@
+[
+  {
+    "repository": "AMBA-Protocol-Verification",
+    "path": "C:\\short\\dma-closeout-review-12-20261110",
+    "head": "08bde7496be07c83c3acd546ecef6bc7e6cc40b5",
+    "base": "60b2db25bf007b17d530389cb26a71578f5c28f8",
+    "clean": true,
+    "detached": true,
+    "execution_input_sha256": {
+      "verification/dma_uvm/dma_adapter.sv": "2b1babfd62a694a66673533f8a6244a9560f1fe0d1be94013e46cba31964a848",
+      "verification/dma_uvm/dma_assertions.sv": "6137af8da1a6c54dd493153513644e4811bed07a6fe22a7e6758c0ba6778e1fd",
+      "verification/dma_uvm/dma_bus.sv": "20a62d424feb363c4f6449badb4e141009d54176124639349139951af3e85039",
+      "verification/dma_uvm/dma_common.svh": "b316dacf569b38e3d247bf8882c964e80da1016be884f6f85eff24562e931f7e",
+      "verification/dma_uvm/dma_driver.svh": "c2ae2829efb21a63445fca5c503230460449e1479c28e155ebeac98b4c6154a5",
+      "verification/dma_uvm/dma_pins.svh": "3860921aace190dc02df54119867516bab0502ee131e2e9dcc0634ab135de83c",
+      "verification/dma_uvm/dma_responder.svh": "69eb088ce43b5efabc7a060e809a192beb0f6ba589231ec2f3597b745bd707e6",
+      "verification/dma_uvm/dma_scoreboard.svh": "254b7d19822d76dea2bf10d47dc91f14a9c5a755601294a70c91859c2fe6f7bb",
+      "verification/dma_uvm/dma_sva_control.sv": "b75d32b1d4705522757d9567fe2318e834d2e824b593768d257568b1ef095fe6",
+      "verification/dma_uvm/dma_uvm_pkg.sv": "35ccddafecd5f68759dbff034ef3a5917b03c4b977f09d3aa8dd7a179446313b",
+      "verification/dma_uvm/dma_uvm_top.sv": "71a5f6fed9e43ea04487dbe0560dc74eb1f416dbefeb71f6cb7fadb95902d87b",
+      "verification/dma_uvm/dma_zero_pins.svh": "f8b91769b295aa759ee52a3ef9380652d663ebdab3e658585797591b462d6809",
+      "verification/dma_uvm/inventory.json": "d5ae8a94f1bc3ef874bd98c1da81b7ef48a205adb3f099df15101b0e29adec5c",
+      "verification/dma_uvm/sources.json": "4ba4f50553923bbc52760c4cadcc9ba03a86837b86fc4289f057b9d572440653",
+      "scripts/run_dma_uvm.py": "376fe9cfd721332a5d6c0ea43945345bbfb81a65b7b12272a6838f8f8244fda5",
+      "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+      "scripts/dma_accounting.py": "3834009f94a8fb4dbffc4a9405327e55ae7fe650a47f3c9fac189306105cbfc4",
+      "scripts/dma_mutations.py": "6b09cfdad04f069b1394048c8a677478d0b17c88e5e58d41ff6a494db919b5ab"
+    }
+  },
+  {
+    "repository": "AXI4-DMA-Subsystem",
+    "path": "C:\\short\\dma-closeout-review-4-20261110",
+    "head": "60d6b5862b3fc28e12202998a8046fa67be4ae12",
+    "base": "a2d3d57edaa9eb441f3289bf5320f4df2f074144",
+    "clean": true,
+    "detached": true,
+    "execution_input_sha256": {}
+  }
+]

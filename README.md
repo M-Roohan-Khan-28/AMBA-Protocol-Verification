@@ -4,17 +4,17 @@
 
 The [DMA contract and requirements guide](docs/DETERMINISTIC_DMA_UVM.md) describes
 the UVM control initiator, early-W-buffering responder and independent public-pin
-oracle. [Corrected fresh detached evidence](reports/dma-uvm-corrective-2026-11-10/SUMMARY.md)
-records **47/47 required PASS**: 30 SVA controls, seven functional groups
-with 68 scenarios, and ten qualified fault detections with
-nonzero child exits. Enabled-lane WDATA checking and rejected-CSR readbacks are
-qualified against old-checker false rejection and missed side-effect mutations.
-[Reproduce](reports/dma-uvm-corrective-2026-11-10/REPRODUCE.md) with a normal clone
-and detached full-SHA checkout. Three new measured crops include exact byte
-provenance. The [original 43-substep report](reports/dma-uvm-2026-11-09/SUMMARY.md),
-40-case portable evidence and 11-file provenance are preserved unchanged.
-Functional coverage, randomization and original advanced ALU/APB remain NOT RUN.
-Both review PRs remain open and unmerged; completed releases below are preserved.
+oracle. The [merged-source closeout](reports/dma-uvm-merged-2026-11-10/SUMMARY.md)
+records **47/47 required PASS** at merge `54833a559d7afbc741c08f41f7df6b3dd24a2b52`:
+30 SVA controls, seven groups / 68 scenarios, and ten qualified faults whose
+children each exit 1. Aggregate and outer wrapper exit 0; all 18 execution inputs
+match the reviewed corrective implementation. Both milestone PRs are merged.
+[Reproduce](reports/dma-uvm-merged-2026-11-10/REPRODUCE.md) with a normal clone
+and explicit detached merge SHA. New captures retain exact byte provenance.
+The [old/new corrective controls](reports/dma-uvm-corrective-2026-11-10/SUMMARY.md),
+original 43-substep report, portable evidence and completed releases are unchanged.
+Functional coverage, constrained randomization and original advanced ALU/APB
+remain **NOT RUN**; the bounded contract and physical-implementation limits remain.
 
 ## Separate deterministic AXI4-Lite UVM/SVA milestone
 

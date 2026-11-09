@@ -1,0 +1,59 @@
+{
+  "identity": {
+    "id": 270144410,
+    "login": "M-Roohan-Khan-28"
+  },
+  "review": {
+    "repository": "AXI4-DMA-Subsystem",
+    "pr": 4,
+    "url": "https://github.com/M-Roohan-Khan-28/AXI4-DMA-Subsystem/pull/4",
+    "head": "60d6b5862b3fc28e12202998a8046fa67be4ae12",
+    "main": "a2d3d57edaa9eb441f3289bf5320f4df2f074144",
+    "state": "open",
+    "draft": false,
+    "mergeable": true,
+    "mergeable_state": "clean",
+    "permissions": {
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "changed_file_count": 2,
+    "files": [
+      {
+        "filename": "README.md",
+        "status": "modified",
+        "additions": 12,
+        "deletions": 0
+      },
+      {
+        "filename": "docs/DETERMINISTIC_UVM_ADAPTER.md",
+        "status": "added",
+        "additions": 87,
+        "deletions": 0
+      }
+    ],
+    "reviews": [],
+    "review_comments_count": 0,
+    "issue_comments_count": 0,
+    "review_threads": 0,
+    "unresolved_review_threads": 0,
+    "check_runs": [],
+    "combined_status": "pending",
+    "statuses": [],
+    "required_status_contexts": [],
+    "required_checks": [],
+    "branch_protection_present": false,
+    "allow_merge_commit": true,
+    "active_branch_rules": [],
+    "review_comments": [],
+    "issue_comments": []
+  },
+  "url": "https://github.com/M-Roohan-Khan-28/AXI4-DMA-Subsystem/pull/4",
+  "reviewed_head": "60d6b5862b3fc28e12202998a8046fa67be4ae12",
+  "merge_commit": "18f1a822da8ca00b5eb9b8a63c13d6e79123b6f1",
+  "method": "merge",
+  "merged_at": "2026-11-09T20:25:55Z"
+}
