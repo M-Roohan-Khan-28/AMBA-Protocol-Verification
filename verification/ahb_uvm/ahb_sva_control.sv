@@ -28,7 +28,7 @@ module ahb_sva_control;
       end
       "write_data":begin tick(1,2,1);tick(0,0,0,0,32'h1234,0);tick(0,0,0,0,32'h1235);end
       "idle_to_seq":begin tick(0,0,0,0,0,0);tick(1,3);end
-      "busy_control":begin tick(1,1,0,4,0,0);tick(1,3,1,4);end
+      "busy_control":begin tick(1,2,0,0);tick(1,1,0,4,0,0);tick(1,3,1,4);end
       "response_owner":tick(0,0,0,0,0,0,0,1);
       "short_error":begin tick(1,2);tick(0,0,0,0,0,1,1,1);end
       "long_error":begin tick(1,2);tick(0,0,0,0,0,0,0,1);tick(0,0,0,0,0,0,0,1);end
@@ -38,9 +38,9 @@ module ahb_sva_control;
       "reset_output":begin @(negedge clk);b.reset_n=0;b.rdata=1;@(posedge clk);#2;end
       "legal_read_wdata":begin tick(1,2);tick(0,0,0,0,32'h1111,0);tick(0,0,0,4,32'h2222,0);tick(0,0,0,8,32'h3333);end
       "legal_idle_change":begin tick(0,0,0,4,0,0);tick(0,0,1,8,1,0);tick(1,2,0,12,2,0);tick(1,2,0,12,3);end
-      "legal_busy_seq":begin tick(1,1,0,4,0,0);tick(1,3,0,4,1,0);tick(1,3,0,4,2);end
-      "legal_busy_nonseq":begin tick(1,1,0,4,0,0);tick(1,2,1,8,1,0);tick(1,2,1,8,2);end
-      "legal_busy_idle":begin tick(1,1,0,4,0,0);tick(0,0,0,8,1,0);tick();end
+      "legal_busy_seq":begin tick(1,2,0,0);tick(1,1,0,4,0,0);tick(1,3,0,4,1,0);tick(1,3,0,4,2);end
+      "legal_busy_nonseq":begin tick(1,2,0,0);tick(1,1,0,4,0,0);tick(1,2,1,8,1,0);tick(1,2,1,8,2);end
+      "legal_busy_idle":begin tick(1,2,0,0);tick(1,1,0,4,0,0);tick(0,0,0,8,1,0);tick();end
       "legal_error_cancel":begin tick(1,2,1,1);tick(1,2,0,4,32'h55,0,0,1);tick(0,0,0,12,32'h55,0,1,1);tick(0,0,0,20,32'h55,1,1,1);end
       "legal_error_continue":begin tick(1,2,0,1);tick(1,2,0,4,0,0,0,1);tick(1,2,0,4,0,1,1,1);end
       "legal_reset_cancel":begin tick(1,2,1);tick(1,2,0,4,32'h55,0);tick(0,0,0,0,0,1,1,0,0);tick(1,2,1,8,1);tick(0,0,0,0,32'h7788);end
