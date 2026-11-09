@@ -1,0 +1,1142 @@
+{
+  "source_revision": "1263410134a27dda2c93741c3aa526001bf4469a",
+  "renderer_revision": "3da848965b00f97d7488e4b98e362cf21f67644d",
+  "renderer_sha256": "5f5d7a93c7a9e518d47c33f38b1783ea0543167a0dd36f5f632e13076bbb5b5e",
+  "policy": "Exact simulator capture bytes; scoped Git -text; no newline conversion",
+  "figures": [
+    {
+      "figure": "adapter-0-address-first.svg",
+      "metadata": "adapter-0-address-first.json",
+      "schema_version": 1,
+      "origin": "simulator",
+      "source_filename": "capture.vcd",
+      "source_sha256": "cbc58ef0a691d0d6a5cfbe3c5e8ac5dc35710c182e50a4ad166d8b6a3ffd4c11",
+      "timescale": "1ps",
+      "start_tick": 40000,
+      "end_tick": 160000,
+      "source_final_tick": 22310000,
+      "signals": [
+        {
+          "name": "axil_uvm_top.bus.clk",
+          "code": "!",
+          "width": 1,
+          "kind": "wire",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.reset_n",
+          "code": "\"",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.awvalid",
+          "code": ",",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.awready",
+          "code": "-",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.awaddr",
+          "code": "#",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.wvalid",
+          "code": ".",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.wready",
+          "code": "/",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.wdata",
+          "code": "$",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.wstrb",
+          "code": ")",
+          "width": 4,
+          "kind": "reg",
+          "bit_range": "[3:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.bvalid",
+          "code": "0",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.bready",
+          "code": "1",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.bresp",
+          "code": "*",
+          "width": 2,
+          "kind": "reg",
+          "bit_range": "[1:0]"
+        }
+      ],
+      "same_tick_collapses": 0,
+      "functional_result": "NOT_ASSESSED_BY_RENDERER",
+      "source_relative_path": "../full/adapter-0/capture.vcd",
+      "source_revision": "1263410134a27dda2c93741c3aa526001bf4469a",
+      "source_representation": "original simulator capture bytes; committed without conversion",
+      "captured_sha256": "cbc58ef0a691d0d6a5cfbe3c5e8ac5dc35710c182e50a4ad166d8b6a3ffd4c11",
+      "crlf_count": 12437,
+      "lf_count": 12437
+    },
+    {
+      "figure": "adapter-0-data-first.svg",
+      "metadata": "adapter-0-data-first.json",
+      "schema_version": 1,
+      "origin": "simulator",
+      "source_filename": "capture.vcd",
+      "source_sha256": "cbc58ef0a691d0d6a5cfbe3c5e8ac5dc35710c182e50a4ad166d8b6a3ffd4c11",
+      "timescale": "1ps",
+      "start_tick": 120000,
+      "end_tick": 240000,
+      "source_final_tick": 22310000,
+      "signals": [
+        {
+          "name": "axil_uvm_top.bus.clk",
+          "code": "!",
+          "width": 1,
+          "kind": "wire",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.reset_n",
+          "code": "\"",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.awvalid",
+          "code": ",",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.awready",
+          "code": "-",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.awaddr",
+          "code": "#",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.wvalid",
+          "code": ".",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.wready",
+          "code": "/",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.wdata",
+          "code": "$",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.wstrb",
+          "code": ")",
+          "width": 4,
+          "kind": "reg",
+          "bit_range": "[3:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.bvalid",
+          "code": "0",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.bready",
+          "code": "1",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.bresp",
+          "code": "*",
+          "width": 2,
+          "kind": "reg",
+          "bit_range": "[1:0]"
+        }
+      ],
+      "same_tick_collapses": 0,
+      "functional_result": "NOT_ASSESSED_BY_RENDERER",
+      "source_relative_path": "../full/adapter-0/capture.vcd",
+      "source_revision": "1263410134a27dda2c93741c3aa526001bf4469a",
+      "source_representation": "original simulator capture bytes; committed without conversion",
+      "captured_sha256": "cbc58ef0a691d0d6a5cfbe3c5e8ac5dc35710c182e50a4ad166d8b6a3ffd4c11",
+      "crlf_count": 12437,
+      "lf_count": 12437
+    },
+    {
+      "figure": "adapter-0-simultaneous.svg",
+      "metadata": "adapter-0-simultaneous.json",
+      "schema_version": 1,
+      "origin": "simulator",
+      "source_filename": "capture.vcd",
+      "source_sha256": "cbc58ef0a691d0d6a5cfbe3c5e8ac5dc35710c182e50a4ad166d8b6a3ffd4c11",
+      "timescale": "1ps",
+      "start_tick": 220000,
+      "end_tick": 300000,
+      "source_final_tick": 22310000,
+      "signals": [
+        {
+          "name": "axil_uvm_top.bus.clk",
+          "code": "!",
+          "width": 1,
+          "kind": "wire",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.reset_n",
+          "code": "\"",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.awvalid",
+          "code": ",",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.awready",
+          "code": "-",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.awaddr",
+          "code": "#",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.wvalid",
+          "code": ".",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.wready",
+          "code": "/",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.wdata",
+          "code": "$",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.wstrb",
+          "code": ")",
+          "width": 4,
+          "kind": "reg",
+          "bit_range": "[3:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.bvalid",
+          "code": "0",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.bready",
+          "code": "1",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.bresp",
+          "code": "*",
+          "width": 2,
+          "kind": "reg",
+          "bit_range": "[1:0]"
+        }
+      ],
+      "same_tick_collapses": 0,
+      "functional_result": "NOT_ASSESSED_BY_RENDERER",
+      "source_relative_path": "../full/adapter-0/capture.vcd",
+      "source_revision": "1263410134a27dda2c93741c3aa526001bf4469a",
+      "source_representation": "original simulator capture bytes; committed without conversion",
+      "captured_sha256": "cbc58ef0a691d0d6a5cfbe3c5e8ac5dc35710c182e50a4ad166d8b6a3ffd4c11",
+      "crlf_count": 12437,
+      "lf_count": 12437
+    },
+    {
+      "figure": "adapter-0-b-backpressure.svg",
+      "metadata": "adapter-0-b-backpressure.json",
+      "schema_version": 1,
+      "origin": "simulator",
+      "source_filename": "capture.vcd",
+      "source_sha256": "cbc58ef0a691d0d6a5cfbe3c5e8ac5dc35710c182e50a4ad166d8b6a3ffd4c11",
+      "timescale": "1ps",
+      "start_tick": 90000,
+      "end_tick": 190000,
+      "source_final_tick": 22310000,
+      "signals": [
+        {
+          "name": "axil_uvm_top.bus.clk",
+          "code": "!",
+          "width": 1,
+          "kind": "wire",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.reset_n",
+          "code": "\"",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.awvalid",
+          "code": ",",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.awready",
+          "code": "-",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.awaddr",
+          "code": "#",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.wvalid",
+          "code": ".",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.wready",
+          "code": "/",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.wdata",
+          "code": "$",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.wstrb",
+          "code": ")",
+          "width": 4,
+          "kind": "reg",
+          "bit_range": "[3:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.bvalid",
+          "code": "0",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.bready",
+          "code": "1",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.bresp",
+          "code": "*",
+          "width": 2,
+          "kind": "reg",
+          "bit_range": "[1:0]"
+        }
+      ],
+      "same_tick_collapses": 0,
+      "functional_result": "NOT_ASSESSED_BY_RENDERER",
+      "source_relative_path": "../full/adapter-0/capture.vcd",
+      "source_revision": "1263410134a27dda2c93741c3aa526001bf4469a",
+      "source_representation": "original simulator capture bytes; committed without conversion",
+      "captured_sha256": "cbc58ef0a691d0d6a5cfbe3c5e8ac5dc35710c182e50a4ad166d8b6a3ffd4c11",
+      "crlf_count": 12437,
+      "lf_count": 12437
+    },
+    {
+      "figure": "adapter-0-partial-write-reset.svg",
+      "metadata": "adapter-0-partial-write-reset.json",
+      "schema_version": 1,
+      "origin": "simulator",
+      "source_filename": "capture.vcd",
+      "source_sha256": "cbc58ef0a691d0d6a5cfbe3c5e8ac5dc35710c182e50a4ad166d8b6a3ffd4c11",
+      "timescale": "1ps",
+      "start_tick": 14212000,
+      "end_tick": 14302000,
+      "source_final_tick": 22310000,
+      "signals": [
+        {
+          "name": "axil_uvm_top.bus.clk",
+          "code": "!",
+          "width": 1,
+          "kind": "wire",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.reset_n",
+          "code": "\"",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.awvalid",
+          "code": ",",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.awready",
+          "code": "-",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.awaddr",
+          "code": "#",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.wvalid",
+          "code": ".",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.wready",
+          "code": "/",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.wdata",
+          "code": "$",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.wstrb",
+          "code": ")",
+          "width": 4,
+          "kind": "reg",
+          "bit_range": "[3:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.bvalid",
+          "code": "0",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.bready",
+          "code": "1",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.bresp",
+          "code": "*",
+          "width": 2,
+          "kind": "reg",
+          "bit_range": "[1:0]"
+        }
+      ],
+      "same_tick_collapses": 0,
+      "functional_result": "NOT_ASSESSED_BY_RENDERER",
+      "source_relative_path": "../full/adapter-0/capture.vcd",
+      "source_revision": "1263410134a27dda2c93741c3aa526001bf4469a",
+      "source_representation": "original simulator capture bytes; committed without conversion",
+      "captured_sha256": "cbc58ef0a691d0d6a5cfbe3c5e8ac5dc35710c182e50a4ad166d8b6a3ffd4c11",
+      "crlf_count": 12437,
+      "lf_count": 12437
+    },
+    {
+      "figure": "adapter-1-independent-write-stalls.svg",
+      "metadata": "adapter-1-independent-write-stalls.json",
+      "schema_version": 1,
+      "origin": "simulator",
+      "source_filename": "capture.vcd",
+      "source_sha256": "2aedc70211e878d35b35be73d57038bffa60750e103658b472a835eceb632a5b",
+      "timescale": "1ps",
+      "start_tick": 150000,
+      "end_tick": 270000,
+      "source_final_tick": 20410000,
+      "signals": [
+        {
+          "name": "axil_uvm_top.bus.clk",
+          "code": "!",
+          "width": 1,
+          "kind": "wire",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.reset_n",
+          "code": "\"",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.awvalid",
+          "code": ",",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.awready",
+          "code": "-",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.awaddr",
+          "code": "#",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.wvalid",
+          "code": ".",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.wready",
+          "code": "/",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.wdata",
+          "code": "$",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.wstrb",
+          "code": ")",
+          "width": 4,
+          "kind": "reg",
+          "bit_range": "[3:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.bvalid",
+          "code": "0",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.bready",
+          "code": "1",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.bresp",
+          "code": "*",
+          "width": 2,
+          "kind": "reg",
+          "bit_range": "[1:0]"
+        }
+      ],
+      "same_tick_collapses": 0,
+      "functional_result": "NOT_ASSESSED_BY_RENDERER",
+      "source_relative_path": "../full/adapter-1/capture.vcd",
+      "source_revision": "1263410134a27dda2c93741c3aa526001bf4469a",
+      "source_representation": "original simulator capture bytes; committed without conversion",
+      "captured_sha256": "2aedc70211e878d35b35be73d57038bffa60750e103658b472a835eceb632a5b",
+      "crlf_count": 13211,
+      "lf_count": 13211
+    },
+    {
+      "figure": "adapter-1-read-and-cpu-completion.svg",
+      "metadata": "adapter-1-read-and-cpu-completion.json",
+      "schema_version": 1,
+      "origin": "simulator",
+      "source_filename": "capture.vcd",
+      "source_sha256": "2aedc70211e878d35b35be73d57038bffa60750e103658b472a835eceb632a5b",
+      "timescale": "1ps",
+      "start_tick": 1570000,
+      "end_tick": 1705000,
+      "source_final_tick": 20410000,
+      "signals": [
+        {
+          "name": "axil_uvm_top.bus.clk",
+          "code": "!",
+          "width": 1,
+          "kind": "wire",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.reset_n",
+          "code": "\"",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.arvalid",
+          "code": "2",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.arready",
+          "code": "3",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.araddr",
+          "code": "%",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.rvalid",
+          "code": "4",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.rready",
+          "code": "5",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.rdata",
+          "code": "&",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.rresp",
+          "code": "+",
+          "width": 2,
+          "kind": "reg",
+          "bit_range": "[1:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.req_valid",
+          "code": "6",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.req_ready",
+          "code": "8",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.response_valid",
+          "code": "9",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.response_data",
+          "code": "=",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        }
+      ],
+      "same_tick_collapses": 0,
+      "functional_result": "NOT_ASSESSED_BY_RENDERER",
+      "source_relative_path": "../full/adapter-1/capture.vcd",
+      "source_revision": "1263410134a27dda2c93741c3aa526001bf4469a",
+      "source_representation": "original simulator capture bytes; committed without conversion",
+      "captured_sha256": "2aedc70211e878d35b35be73d57038bffa60750e103658b472a835eceb632a5b",
+      "crlf_count": 13211,
+      "lf_count": 13211
+    },
+    {
+      "figure": "adapter-2-partial-strobe-integration.svg",
+      "metadata": "adapter-2-partial-strobe-integration.json",
+      "schema_version": 1,
+      "origin": "simulator",
+      "source_filename": "capture.vcd",
+      "source_sha256": "fbe4b69d64ea1998f4ee98c3fbb7a74fac31b852211fb25cd638916979b6b20d",
+      "timescale": "1ps",
+      "start_tick": 3440000,
+      "end_tick": 3590000,
+      "source_final_tick": 11910000,
+      "signals": [
+        {
+          "name": "axil_uvm_top.bus.clk",
+          "code": "!",
+          "width": 1,
+          "kind": "wire",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.reset_n",
+          "code": "\"",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.awvalid",
+          "code": ",",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.awready",
+          "code": "-",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.awaddr",
+          "code": "#",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.wvalid",
+          "code": ".",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.wready",
+          "code": "/",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.wdata",
+          "code": "$",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.wstrb",
+          "code": ")",
+          "width": 4,
+          "kind": "reg",
+          "bit_range": "[3:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.bvalid",
+          "code": "0",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.bready",
+          "code": "1",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.bresp",
+          "code": "*",
+          "width": 2,
+          "kind": "reg",
+          "bit_range": "[1:0]"
+        },
+        {
+          "name": "axil_uvm_top.bus.req_valid",
+          "code": "6",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.req_ready",
+          "code": "8",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_uvm_top.bus.response_valid",
+          "code": "9",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        }
+      ],
+      "same_tick_collapses": 0,
+      "functional_result": "NOT_ASSESSED_BY_RENDERER",
+      "source_relative_path": "../full/adapter-2/capture.vcd",
+      "source_revision": "1263410134a27dda2c93741c3aa526001bf4469a",
+      "source_representation": "original simulator capture bytes; committed without conversion",
+      "captured_sha256": "fbe4b69d64ea1998f4ee98c3fbb7a74fac31b852211fb25cd638916979b6b20d",
+      "crlf_count": 9196,
+      "lf_count": 9196
+    },
+    {
+      "figure": "old-checker-duplicate-write.svg",
+      "metadata": "old-checker-duplicate-write.json",
+      "schema_version": 1,
+      "origin": "simulator",
+      "source_filename": "capture.vcd",
+      "source_sha256": "ae8d0b57c37e4606552102b0246ea86dd1db8a80955f2329115e4cdbc9bcf83a",
+      "timescale": "1ps",
+      "start_tick": 3355000,
+      "end_tick": 3475000,
+      "source_final_tick": 3500000,
+      "signals": [
+        {
+          "name": "axil_request_control.bus.clk",
+          "code": "!",
+          "width": 1,
+          "kind": "wire",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_request_control.bus.reset_n",
+          "code": "\"",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_request_control.bus.req_valid",
+          "code": "6",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_request_control.bus.req_ready",
+          "code": "8",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_request_control.bus.req_write",
+          "code": "7",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_request_control.bus.req_addr",
+          "code": ";",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "axil_request_control.bus.response_valid",
+          "code": "9",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_request_control.bus.awvalid",
+          "code": ",",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_request_control.bus.awready",
+          "code": "-",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_request_control.bus.awaddr",
+          "code": "#",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "axil_request_control.bus.wvalid",
+          "code": ".",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_request_control.bus.wready",
+          "code": "/",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_request_control.bus.wdata",
+          "code": "$",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "axil_request_control.bus.wstrb",
+          "code": ")",
+          "width": 4,
+          "kind": "reg",
+          "bit_range": "[3:0]"
+        },
+        {
+          "name": "axil_request_control.bus.bvalid",
+          "code": "0",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_request_control.bus.bready",
+          "code": "1",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        }
+      ],
+      "same_tick_collapses": 0,
+      "functional_result": "NOT_ASSESSED_BY_RENDERER",
+      "source_relative_path": "../targeted/old-1-duplicate-write/capture.vcd",
+      "source_revision": "49d41c5859fd8a5111ee3ba19735d32fe4a6134e",
+      "control_source_revision": "1263410134a27dda2c93741c3aa526001bf4469a",
+      "checker_package_sha256": "880ca57c811e2e2f55dded6b7ca6c64b5827908a108f5cffde01f9ac5e85af03",
+      "source_representation": "original synthetic checker-control simulator bytes; committed without conversion",
+      "captured_sha256": "ae8d0b57c37e4606552102b0246ea86dd1db8a80955f2329115e4cdbc9bcf83a",
+      "crlf_count": 2312,
+      "lf_count": 2312
+    },
+    {
+      "figure": "old-checker-duplicate-read.svg",
+      "metadata": "old-checker-duplicate-read.json",
+      "schema_version": 1,
+      "origin": "simulator",
+      "source_filename": "capture.vcd",
+      "source_sha256": "fcff19c115942e28da000746053554ecb476d60cb593eedc1d35381750e083d1",
+      "timescale": "1ps",
+      "start_tick": 3355000,
+      "end_tick": 3465000,
+      "source_final_tick": 3490000,
+      "signals": [
+        {
+          "name": "axil_request_control.bus.clk",
+          "code": "!",
+          "width": 1,
+          "kind": "wire",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_request_control.bus.reset_n",
+          "code": "\"",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_request_control.bus.req_valid",
+          "code": "6",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_request_control.bus.req_ready",
+          "code": "8",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_request_control.bus.req_write",
+          "code": "7",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_request_control.bus.req_addr",
+          "code": ";",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "axil_request_control.bus.response_valid",
+          "code": "9",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_request_control.bus.arvalid",
+          "code": "2",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_request_control.bus.arready",
+          "code": "3",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_request_control.bus.araddr",
+          "code": "%",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "axil_request_control.bus.rvalid",
+          "code": "4",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_request_control.bus.rready",
+          "code": "5",
+          "width": 1,
+          "kind": "reg",
+          "bit_range": ""
+        },
+        {
+          "name": "axil_request_control.bus.rdata",
+          "code": "&",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        },
+        {
+          "name": "axil_request_control.bus.response_data",
+          "code": "=",
+          "width": 32,
+          "kind": "reg",
+          "bit_range": "[31:0]"
+        }
+      ],
+      "same_tick_collapses": 0,
+      "functional_result": "NOT_ASSESSED_BY_RENDERER",
+      "source_relative_path": "../targeted/old-1-duplicate-read/capture.vcd",
+      "source_revision": "49d41c5859fd8a5111ee3ba19735d32fe4a6134e",
+      "control_source_revision": "1263410134a27dda2c93741c3aa526001bf4469a",
+      "checker_package_sha256": "880ca57c811e2e2f55dded6b7ca6c64b5827908a108f5cffde01f9ac5e85af03",
+      "source_representation": "original synthetic checker-control simulator bytes; committed without conversion",
+      "captured_sha256": "fcff19c115942e28da000746053554ecb476d60cb593eedc1d35381750e083d1",
+      "crlf_count": 2303,
+      "lf_count": 2303
+    }
+  ]
+}

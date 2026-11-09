@@ -1,0 +1,140 @@
+{
+  "source_revision": "1263410134a27dda2c93741c3aa526001bf4469a",
+  "source_dirty": false,
+  "mode": "legal",
+  "adapter": 1,
+  "seed": 682016495,
+  "scope": "synthetic public-pin checker control; no DUT",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\axil-correct-source-20261109\\scripts\\run_axil_request_control.py",
+    "--adapter",
+    "1",
+    "--mode",
+    "legal",
+    "--output",
+    "C:\\short\\axil-correct-full-20261109\\request-1-legal",
+    "--sim-bin",
+    "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+    "--uvm-lib",
+    "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+    "--uvm-include",
+    "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+    "--timeout",
+    "90"
+  ],
+  "commands": [
+    {
+      "command": [
+        "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+        "work"
+      ],
+      "cwd": "C:\\short\\axil-correct-full-20261109\\request-1-legal",
+      "exit_code": 0,
+      "timed_out": false,
+      "log": "0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+        "-sv",
+        "-work",
+        "work",
+        "-L",
+        "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+        "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+        "+define+AXIL_ADAPTER=1",
+        "C:\\short\\axil-correct-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+        "C:\\short\\axil-correct-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+        "C:\\short\\axil-correct-source-20261109\\verification\\axil_uvm\\axil_uvm_pkg.sv",
+        "C:\\short\\axil-correct-source-20261109\\verification\\axil_uvm\\axil_request_control.sv"
+      ],
+      "cwd": "C:\\short\\axil-correct-full-20261109\\request-1-legal",
+      "exit_code": 0,
+      "timed_out": false,
+      "log": "1.log",
+      "sha256": "621ec82719d7160b6b1b29ce2e5c65056f84b36599aaa3eaeefb1e958237c3d3"
+    },
+    {
+      "command": [
+        "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "stop",
+        "-voptargs=+acc",
+        "-sv_seed",
+        "682016495",
+        "-L",
+        "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+        "work.axil_request_control",
+        "+CONTROL=0",
+        "-do",
+        "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /axil_request_control/bus/*; run -all; vcd flush; quit -force -code 0"
+      ],
+      "cwd": "C:\\short\\axil-correct-full-20261109\\request-1-legal",
+      "exit_code": 0,
+      "timed_out": false,
+      "log": "2.log",
+      "sha256": "488f5ec971a1fe08c01d60a850303b9b5b0405c0713b788c7f30154ea5101b16"
+    }
+  ],
+  "status": "PASS",
+  "input_sha256": {
+    "verification/axil_uvm/axil_bus.sv": "f5c5fca0d228b8fcbed7d4bd6c47fabd2fd505fd6f27f67ae179679a65c44524",
+    "verification/axil_uvm/axil_assertions.sv": "afab6005064abf8c9bf0bb28167cfb281eaf05c62bf85bca7ced408de4e53dc6",
+    "verification/axil_uvm/axil_uvm_pkg.sv": "4601e73ccaa814f44c61526edbe185f20ce6f0afdd6803bd4267574f8af707c9",
+    "verification/axil_uvm/axil_request_control.sv": "1b5bcefbe8fcc88c39515b967d1b268f20927720eaf0b3cf845e9bba1fc6dc8e",
+    "scripts/run_axil_request_control.py": "50988c1fa4de96e9c56ab12b8136e1fb2e6f0e8c2222adb87ae26723cacaed21",
+    "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+    "scripts/axil_accounting.py": "32b600716c5b9facbd6827cc0f7230589744dd6167a3deb4a0a5be561079f409"
+  },
+  "started_utc": "2026-11-09T09:03:38.877899+00:00",
+  "version_command": {
+    "command": [
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+      "-version"
+    ],
+    "cwd": "C:\\short\\axil-correct-full-20261109\\request-1-legal",
+    "exit_code": 0,
+    "timed_out": false,
+    "log": "version.log",
+    "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+  },
+  "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+  "counts": {
+    "adapter": 1,
+    "mode": 0,
+    "requests": 58,
+    "completed": 50,
+    "writes": 34,
+    "reads": 18,
+    "cancelled": 8
+  },
+  "accounting": {
+    "adapter": 1,
+    "requests": 58,
+    "completions": 50,
+    "write_requests": 38,
+    "read_requests": 20,
+    "write_completions": 33,
+    "read_completions": 17,
+    "write_cancelled": 5,
+    "read_cancelled": 3,
+    "aw_accepted": 36,
+    "w_accepted": 36,
+    "ar_accepted": 19,
+    "b_accepted": 34,
+    "r_accepted": 18,
+    "cancelled_aw": 3,
+    "cancelled_w": 3,
+    "cancelled_ar": 2,
+    "cancelled_b": 1,
+    "cancelled_r": 1
+  },
+  "reason": "EXECUTED",
+  "wrapper_exit_code": 0,
+  "missed_negative_control": false,
+  "finished_utc": "2026-11-09T09:04:13.804117+00:00",
+  "capture_sha256": "40597e750d92b8c6b88dad2020b8715f61bee1755f409c9b47722037ae0aa912"
+}

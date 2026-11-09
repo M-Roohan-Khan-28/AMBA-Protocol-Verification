@@ -1,0 +1,12 @@
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+Start time: 14:12:08 on Nov 08,2026
+vlog -sv -work work -L C:\MXR\Quartus\25.1\questa_fse\uvm-1.2 "+incdir+C:\MXR\Quartus\25.1\questa_fse\verilog_src\uvm-1.2\src" C:\short\amba-axil-uvm-20261108\verification\axil_uvm\axil_bus.sv C:\short\amba-axil-uvm-20261108\verification\axil_uvm\axil_assertions.sv C:\short\amba-axil-uvm-20261108\verification\axil_uvm\axil_assertion_control.sv 
+** Note: (vlog-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+-- Compiling interface axil_bus
+-- Compiling module axil_assertions
+-- Compiling module axil_assertion_control
+
+Top level modules:
+	axil_assertion_control
+End time: 14:12:08 on Nov 08,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

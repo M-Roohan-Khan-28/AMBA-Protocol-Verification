@@ -1,0 +1,186 @@
+{
+  "started_utc": "2026-11-09T09:09:22.537943+00:00",
+  "source_revision": "1263410134a27dda2c93741c3aa526001bf4469a",
+  "source_dirty": false,
+  "scope": "diagnostic",
+  "mode": "deterministic",
+  "seed": 682016495,
+  "seed_hex": "0x28A6BEEF",
+  "fault_control": "address",
+  "functional_coverage": "NOT RUN",
+  "constrained_randomization": "NOT RUN",
+  "original_advanced_environments": "NOT RUN",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\axil-correct-source-20261109\\scripts\\run_axil_uvm.py",
+    "--output",
+    "C:\\short\\axil-correct-fault-address-20261109",
+    "--diagnostic-adapters",
+    "1",
+    "--fault",
+    "address"
+  ],
+  "suites": [
+    {
+      "name": "adapter-1",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\axil-correct-fault-address-20261109\\adapter-1",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "+define+AXIL_ADAPTER=1",
+            "C:\\short\\axil-correct-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+            "C:\\short\\axil-correct-fault-address-20261109\\source\\rtl\\axi\\axi_lite_if.sv",
+            "C:\\short\\axil-correct-fault-address-20261109\\source\\rtl\\axi\\axi_lite_master.sv",
+            "C:\\short\\axil-correct-fault-address-20261109\\source\\rtl\\axi\\axi_lite_slave.sv",
+            "C:\\short\\axil-correct-fault-address-20261109\\source\\rtl\\memory\\sram.sv",
+            "C:\\short\\axil-correct-fault-address-20261109\\source\\rtl\\axi4_lite_memory_top.sv",
+            "C:\\short\\axil-correct-source-20261109\\verification\\axil_uvm\\axil_adapter.sv",
+            "C:\\short\\axil-correct-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+            "C:\\short\\axil-correct-source-20261109\\verification\\axil_uvm\\axil_uvm_pkg.sv",
+            "C:\\short\\axil-correct-source-20261109\\verification\\axil_uvm\\axil_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\axil-correct-fault-address-20261109\\adapter-1",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "43aa8974122f1b0424965b0560613b89dc34be5a12c7e619bf869eec4f3a54bd"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.axil_uvm_top",
+            "+FAULT_ADDRESS",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /axil_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\axil-correct-fault-address-20261109\\adapter-1",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "787dd89ba3c1fe3dd3b59b2b856269030176057ec37c71d007f49e6b713909c4"
+        }
+      ],
+      "reason": "PROCESS_OR_SIMULATOR_ERROR"
+    }
+  ],
+  "serial_execution": true,
+  "input_sha256": {
+    "verification/axil_uvm/axil_adapter.sv": "6e219ba466f4d38776d67e1cc2c010ec408bba3628a752388be3d10e2b45b3f8",
+    "verification/axil_uvm/axil_assertions.sv": "afab6005064abf8c9bf0bb28167cfb281eaf05c62bf85bca7ced408de4e53dc6",
+    "verification/axil_uvm/axil_assertion_control.sv": "15d2b605f77ef22bb55d42b428158d16956e18c383a8550319b3b9f7a3b6e816",
+    "verification/axil_uvm/axil_bus.sv": "f5c5fca0d228b8fcbed7d4bd6c47fabd2fd505fd6f27f67ae179679a65c44524",
+    "verification/axil_uvm/axil_request_control.sv": "1b5bcefbe8fcc88c39515b967d1b268f20927720eaf0b3cf845e9bba1fc6dc8e",
+    "verification/axil_uvm/axil_uvm_pkg.sv": "4601e73ccaa814f44c61526edbe185f20ce6f0afdd6803bd4267574f8af707c9",
+    "verification/axil_uvm/axil_uvm_top.sv": "9a9e3b9db63b7e1775b604493c3a85f9604f4ce16a7b1ea739b0026fc35664f4",
+    "verification/axil_uvm/sources.json": "4f93ed306c27e5a7176d3086d56ff662be3b94cc4ca32d64c8000dc11328413d",
+    "scripts/run_axil_uvm.py": "208a65ec2f72c83318b39e46bab25b6776df5e670e39718d116213c6be9fc63b",
+    "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+    "scripts/axil_accounting.py": "32b600716c5b9facbd6827cc0f7230589744dd6167a3deb4a0a5be561079f409",
+    "scripts/run_axil_request_control.py": "50988c1fa4de96e9c56ab12b8136e1fb2e6f0e8c2222adb87ae26723cacaed21"
+  },
+  "version_command": {
+    "command": [
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+      "-version"
+    ],
+    "cwd": "C:\\short\\axil-correct-fault-address-20261109",
+    "exit_code": 0,
+    "timed_out": false,
+    "log": "version.log",
+    "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+  },
+  "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+  "source_lock": {
+    "owner": "M-Roohan-Khan-28",
+    "account_id": 270144410,
+    "repository": "AXI4-Lite-Memory-Interface",
+    "revision": "faf43379b24a524999eb2c8ad7e100cde35054c3",
+    "files": [
+      "rtl/axi/axi_lite_if.sv",
+      "rtl/axi/axi_lite_master.sv",
+      "rtl/axi/axi_lite_slave.sv",
+      "rtl/memory/sram.sv",
+      "rtl/axi4_lite_memory_top.sv"
+    ],
+    "configuration": {
+      "base_address": "0x10000000",
+      "sram_depth_words": 16,
+      "data_width": 32
+    },
+    "commands": [
+      {
+        "command": [
+          "git",
+          "clone",
+          "--quiet",
+          "--config",
+          "core.autocrlf=false",
+          "--config",
+          "core.longpaths=true",
+          "https://github.com/M-Roohan-Khan-28/AXI4-Lite-Memory-Interface.git",
+          "C:\\short\\axil-correct-fault-address-20261109\\source"
+        ],
+        "cwd": "C:\\short\\axil-correct-fault-address-20261109",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-0.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "command": [
+          "git",
+          "-C",
+          "C:\\short\\axil-correct-fault-address-20261109\\source",
+          "checkout",
+          "--quiet",
+          "--detach",
+          "faf43379b24a524999eb2c8ad7e100cde35054c3"
+        ],
+        "cwd": "C:\\short\\axil-correct-fault-address-20261109",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-1.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "observed_revision": "faf43379b24a524999eb2c8ad7e100cde35054c3",
+    "clean": true,
+    "rtl_sha256": {
+      "rtl/axi/axi_lite_if.sv": "463f775261a7489ae6b8a3481930b4be2aae290f7ef3a14f0892b1e59483a0d9",
+      "rtl/axi/axi_lite_master.sv": "3c27fd2b8b898523cb4784e00e9c0872486f33ee36ba96bddf499118bb74965f",
+      "rtl/axi/axi_lite_slave.sv": "ea2c83602f2056ba779e1270749181e0e5aeb415a5043b90e6ca29ee9906005e",
+      "rtl/memory/sram.sv": "d42677005b233ebffb7a25b2d138b83a4a3ec3fc7891c9657c82988306165f3a",
+      "rtl/axi4_lite_memory_top.sv": "48c4e15d35dbf0029af49184cf7e2c2655b5fe923862e750a8406ff4a5505323"
+    }
+  },
+  "required_substeps": 1,
+  "aggregate_exit_code": 1,
+  "milestone_pass": false,
+  "finished_utc": "2026-11-09T09:10:04.610914+00:00"
+}

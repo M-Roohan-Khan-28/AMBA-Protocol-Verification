@@ -1,0 +1,29 @@
+{
+  "label": "old",
+  "adapter": 2,
+  "mode": "duplicate-write",
+  "path": "C:\\short\\axil-correct-targeted-20261109\\old-2-duplicate-write",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\axil-old-oracle-20261108\\scripts\\run_axil_request_control.py",
+    "--adapter",
+    "2",
+    "--mode",
+    "duplicate-write",
+    "--output",
+    "C:\\short\\axil-correct-targeted-20261109\\old-2-duplicate-write"
+  ],
+  "wrapper_exit_code": 0,
+  "outcome": "OLD_CHECKER_MISSED_DUPLICATE",
+  "console_sha256": "62a3eef36cbd5dde4dd19c48eb7e8c068ca1f38731a11a43f4ca516c3a21ba18",
+  "counts": {
+    "adapter": 2,
+    "mode": 1,
+    "requests": 59,
+    "completed": 51,
+    "writes": 36,
+    "reads": 18,
+    "cancelled": 8
+  },
+  "accounting": null
+}

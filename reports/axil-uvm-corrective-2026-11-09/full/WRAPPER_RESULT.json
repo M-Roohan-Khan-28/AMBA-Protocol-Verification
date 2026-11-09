@@ -1,0 +1,12 @@
+{
+  "label": "full",
+  "path": "C:\\short\\axil-correct-full-20261109",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\axil-correct-source-20261109\\scripts\\run_axil_uvm.py",
+    "--output",
+    "C:\\short\\axil-correct-full-20261109"
+  ],
+  "actual_wrapper_exit": 0,
+  "console_sha256": "84ae1e7ea1e79b20d32f2ae643be24d83e52fee726b2de5ce4c91144b9c2f865"
+}

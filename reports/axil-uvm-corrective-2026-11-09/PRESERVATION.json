@@ -1,0 +1,14 @@
+{
+  "reviewed_base": "49d41c5859fd8a5111ee3ba19735d32fe4a6134e",
+  "tested_source": "1263410134a27dda2c93741c3aa526001bf4469a",
+  "prior_tracked_paths_checked": 2057,
+  "unchanged_source_lock": true,
+  "unchanged_historical_reports": true,
+  "unchanged_apb_and_portable_inputs": true,
+  "permitted_modified_paths": [
+    "README.md",
+    "docs/DETERMINISTIC_AXIL_UVM.md",
+    "scripts/run_axil_uvm.py",
+    "verification/axil_uvm/axil_uvm_pkg.sv"
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "origin": "simulator",
+  "source_filename": "capture.vcd",
+  "source_sha256": "ae8d0b57c37e4606552102b0246ea86dd1db8a80955f2329115e4cdbc9bcf83a",
+  "timescale": "1ps",
+  "start_tick": 3355000,
+  "end_tick": 3475000,
+  "source_final_tick": 3500000,
+  "signals": [
+    {
+      "name": "axil_request_control.bus.clk",
+      "code": "!",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "axil_request_control.bus.reset_n",
+      "code": "\"",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axil_request_control.bus.req_valid",
+      "code": "6",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axil_request_control.bus.req_ready",
+      "code": "8",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axil_request_control.bus.req_write",
+      "code": "7",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axil_request_control.bus.req_addr",
+      "code": ";",
+      "width": 32,
+      "kind": "reg",
+      "bit_range": "[31:0]"
+    },
+    {
+      "name": "axil_request_control.bus.response_valid",
+      "code": "9",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axil_request_control.bus.awvalid",
+      "code": ",",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axil_request_control.bus.awready",
+      "code": "-",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axil_request_control.bus.awaddr",
+      "code": "#",
+      "width": 32,
+      "kind": "reg",
+      "bit_range": "[31:0]"
+    },
+    {
+      "name": "axil_request_control.bus.wvalid",
+      "code": ".",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axil_request_control.bus.wready",
+      "code": "/",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axil_request_control.bus.wdata",
+      "code": "$",
+      "width": 32,
+      "kind": "reg",
+      "bit_range": "[31:0]"
+    },
+    {
+      "name": "axil_request_control.bus.wstrb",
+      "code": ")",
+      "width": 4,
+      "kind": "reg",
+      "bit_range": "[3:0]"
+    },
+    {
+      "name": "axil_request_control.bus.bvalid",
+      "code": "0",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "axil_request_control.bus.bready",
+      "code": "1",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    }
+  ],
+  "same_tick_collapses": 0,
+  "functional_result": "NOT_ASSESSED_BY_RENDERER",
+  "source_relative_path": "../targeted/old-1-duplicate-write/capture.vcd",
+  "source_revision": "49d41c5859fd8a5111ee3ba19735d32fe4a6134e",
+  "control_source_revision": "1263410134a27dda2c93741c3aa526001bf4469a",
+  "checker_package_sha256": "880ca57c811e2e2f55dded6b7ca6c64b5827908a108f5cffde01f9ac5e85af03",
+  "source_representation": "original synthetic checker-control simulator bytes; committed without conversion",
+  "captured_sha256": "ae8d0b57c37e4606552102b0246ea86dd1db8a80955f2329115e4cdbc9bcf83a",
+  "crlf_count": 2312,
+  "lf_count": 2312
+}

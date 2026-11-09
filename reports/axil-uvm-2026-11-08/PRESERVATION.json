@@ -1,0 +1,27 @@
+{
+  "baseline_amba": "d826c798bc7c1d07204a2db414128f6f0774d0fe",
+  "tested_amba_source": "3da848965b00f97d7488e4b98e362cf21f67644d",
+  "unchanged_paths": [
+    "scripts/run_apb_uvm.py",
+    "scripts/advanced_sim.py",
+    "verification/apb_uvm",
+    "verification/capabilities",
+    "scripts/run_portfolio_regression.ps1",
+    "scripts/portfolio_suites.json",
+    "scripts/run_amba.ps1",
+    "reports"
+  ],
+  "git_diff_empty": true,
+  "dut_revision": "faf43379b24a524999eb2c8ad7e100cde35054c3",
+  "compiled_dut_hashes": {
+    "rtl/axi/axi_lite_if.sv": "463f775261a7489ae6b8a3481930b4be2aae290f7ef3a14f0892b1e59483a0d9",
+    "rtl/axi/axi_lite_master.sv": "3c27fd2b8b898523cb4784e00e9c0872486f33ee36ba96bddf499118bb74965f",
+    "rtl/axi/axi_lite_slave.sv": "ea2c83602f2056ba779e1270749181e0e5aeb415a5043b90e6ca29ee9906005e",
+    "rtl/memory/sram.sv": "d42677005b233ebffb7a25b2d138b83a4a3ec3fc7891c9657c82988306165f3a",
+    "rtl/axi4_lite_memory_top.sv": "48c4e15d35dbf0029af49184cf7e2c2655b5fe923862e750a8406ff4a5505323"
+  },
+  "original_rtl_changes": false,
+  "coverage": "NOT RUN",
+  "randomization": "NOT RUN",
+  "original_advanced_alu_apb": "NOT RUN"
+}

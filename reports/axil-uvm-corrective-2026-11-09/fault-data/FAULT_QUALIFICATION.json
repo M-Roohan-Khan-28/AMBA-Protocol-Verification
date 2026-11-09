@@ -1,0 +1,39 @@
+{
+  "label": "fault-data",
+  "path": "C:\\short\\axil-correct-fault-data-20261109",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\axil-correct-source-20261109\\scripts\\run_axil_uvm.py",
+    "--output",
+    "C:\\short\\axil-correct-fault-data-20261109",
+    "--diagnostic-adapters",
+    "0",
+    "1",
+    "2",
+    "--fault",
+    "data"
+  ],
+  "actual_wrapper_exit": 1,
+  "console_sha256": "54f24d49ed0bb8a11a735c46ead431ac11bbd960af390a37076dac8e95bda88f",
+  "events": [
+    {
+      "suite": "adapter-0",
+      "expected_fatal": "ORACLE_DATA",
+      "observed": true,
+      "simulator_exit": 0
+    },
+    {
+      "suite": "adapter-1",
+      "expected_fatal": "CPU_DATA",
+      "observed": true,
+      "simulator_exit": 0
+    },
+    {
+      "suite": "adapter-2",
+      "expected_fatal": "CPU_DATA",
+      "observed": true,
+      "simulator_exit": 0
+    }
+  ],
+  "qualified": "EXPECTED_FAULT_DETECTION"
+}

@@ -1,0 +1,1 @@
+{"kind":"procedural_requirement_hits_NOT_functional_coverage","address_first":11,"data_first":12,"simultaneous":11,"aw_stall_cycles":25,"w_stall_cycles":25,"ar_stall_cycles":19,"b_stall_cycles":0,"r_stall_cycles":0,"invalid_writes":1,"invalid_reads":1,"strobe_masks_observed":16,"resets":9,"discarded_transactions":8}

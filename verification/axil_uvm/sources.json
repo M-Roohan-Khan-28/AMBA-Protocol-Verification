@@ -1,0 +1,8 @@
+{
+  "owner": "M-Roohan-Khan-28",
+  "account_id": 270144410,
+  "repository": "AXI4-Lite-Memory-Interface",
+  "revision": "faf43379b24a524999eb2c8ad7e100cde35054c3",
+  "files": ["rtl/axi/axi_lite_if.sv", "rtl/axi/axi_lite_master.sv", "rtl/axi/axi_lite_slave.sv", "rtl/memory/sram.sv", "rtl/axi4_lite_memory_top.sv"],
+  "configuration": {"base_address": "0x10000000", "sram_depth_words": 16, "data_width": 32}
+}

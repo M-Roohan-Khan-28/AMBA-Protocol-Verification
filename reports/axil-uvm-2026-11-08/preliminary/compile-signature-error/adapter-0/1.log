@@ -1,0 +1,25 @@
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+Start time: 14:07:10 on Nov 08,2026
+vlog -sv -work work -L C:\MXR\Quartus\25.1\questa_fse\uvm-1.2 "+incdir+C:\MXR\Quartus\25.1\questa_fse\verilog_src\uvm-1.2\src" "+define+AXIL_ADAPTER=0" C:\short\amba-axil-uvm-20261108\verification\axil_uvm\axil_bus.sv C:\short\axil-uvm-dev1-20261108\source\rtl\axi\axi_lite_if.sv C:\short\axil-uvm-dev1-20261108\source\rtl\axi\axi_lite_master.sv C:\short\axil-uvm-dev1-20261108\source\rtl\axi\axi_lite_slave.sv C:\short\axil-uvm-dev1-20261108\source\rtl\memory\sram.sv C:\short\axil-uvm-dev1-20261108\source\rtl\axi4_lite_memory_top.sv C:\short\amba-axil-uvm-20261108\verification\axil_uvm\axil_adapter.sv C:\short\amba-axil-uvm-20261108\verification\axil_uvm\axil_assertions.sv C:\short\amba-axil-uvm-20261108\verification\axil_uvm\axil_uvm_pkg.sv C:\short\amba-axil-uvm-20261108\verification\axil_uvm\axil_uvm_top.sv 
+** Note: (vlog-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+-- Compiling interface axil_bus
+-- Compiling interface axi_lite_if
+-- Compiling module axi_lite_master
+-- Compiling module axi_lite_slave
+-- Compiling module sram
+-- Compiling module axi4_lite_memory_top
+-- Compiling module axil_adapter
+-- Compiling module axil_assertions
+-- Compiling package axil_uvm_pkg
+-- Importing package C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.uvm_pkg (uvm-1.2 Built-in)
+** Error (suppressible): C:\short\amba-axil-uvm-20261108\verification\axil_uvm\axil_uvm_pkg.sv(80): (vlog-2911) Argument name 'f' for virtual method 'write' in sub class 'axil_scoreboard' does not match the argument name 't' in superclass 'uvm_subscriber'.
+** Error: C:\short\amba-axil-uvm-20261108\verification\axil_uvm\axil_uvm_pkg.sv(54): Sub-class 'axil_scoreboard' does not override all virtual methods or pure constraints of abstract superclass 'uvm_subscriber'.
+** Error: C:\short\amba-axil-uvm-20261108\verification\axil_uvm\axil_uvm_pkg.sv(54): Sub-class 'axil_scoreboard' does not override virtual method 'write' of abstract superclass 'uvm_subscriber'.
+-- Compiling module axil_uvm_top
+** Error: C:\short\amba-axil-uvm-20261108\verification\axil_uvm\axil_uvm_top.sv(3): (vlog-13006) Could not find the package (axil_uvm_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+** Error: (vlog-13069) C:\short\amba-axil-uvm-20261108\verification\axil_uvm\axil_uvm_top.sv(9): near "=": syntax error, unexpected '=', expecting '('.
+** Error: C:\short\amba-axil-uvm-20261108\verification\axil_uvm\axil_uvm_top.sv(9): (vlog-2164) Class or package 'axil_config' not found.
+** Error: C:\short\amba-axil-uvm-20261108\verification\axil_uvm\axil_uvm_top.sv(9): (vlog-2164) Class or package 'type_id' not found.
+** Error: C:\short\amba-axil-uvm-20261108\verification\axil_uvm\axil_uvm_top.sv(11): (vlog-2730) Undefined variable: 'axil_config'.
+End time: 14:07:10 on Nov 08,2026, Elapsed time: 0:00:00
+Errors: 8, Warnings: 0
