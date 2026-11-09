@@ -1,0 +1,3 @@
+fault-csr_idle_side_effect PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-csr_busy_side_effect PASS EXPECTED_CHILD_FAILURE child exit 1
+csr-readbacks PASS EXECUTED

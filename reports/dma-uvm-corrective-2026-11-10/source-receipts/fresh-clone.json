@@ -1,0 +1,37 @@
+{
+  "revision": "e6fbb510aa88b1f5aa8a7cc04926eeefbfb5be4d",
+  "commands": [
+    {
+      "command": [
+        "git",
+        "clone",
+        "--quiet",
+        "--config",
+        "core.longpaths=true",
+        "--config",
+        "core.autocrlf=false",
+        "https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git",
+        "C:\\short\\dma-fix-remote-source-20261110"
+      ],
+      "exit_code": 0,
+      "log": "fresh-clone-0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "C:\\short\\dma-fix-remote-source-20261110",
+        "checkout",
+        "--quiet",
+        "--detach",
+        "e6fbb510aa88b1f5aa8a7cc04926eeefbfb5be4d"
+      ],
+      "exit_code": 0,
+      "log": "fresh-clone-1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "clean": true,
+  "detached": true
+}

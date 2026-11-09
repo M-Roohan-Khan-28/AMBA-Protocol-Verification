@@ -1,0 +1,20 @@
+{
+  "disposable_revision": "6ad8c7e18c742412fb53b18d69df08ba99d39f96",
+  "restored_exact_inputs": [
+    {
+      "path": "verification/dma_uvm/dma_driver.svh",
+      "baseline": "e93a6fdff85804dab7b5e636e43880e1ba7615ab",
+      "sha256": "3bb2800abedb8632d3c477d11759b19bdca0a72faaa7ce6503555b6e035d87d3"
+    },
+    {
+      "path": "verification/dma_uvm/dma_scoreboard.svh",
+      "baseline": "e93a6fdff85804dab7b5e636e43880e1ba7615ab",
+      "sha256": "507ba35dbacee6f32f6571ca2951fb5bb0112862cd4d481030fc9ee61dd02f15"
+    },
+    {
+      "path": "scripts/dma_accounting.py",
+      "baseline": "e93a6fdff85804dab7b5e636e43880e1ba7615ab",
+      "sha256": "83190f90da5e042b963626f33b5f9ccbf19d91af1df85d86b0d1db946a94d16f"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "origin": "simulator",
+  "source_filename": "capture.vcd",
+  "source_sha256": "25070be0b24d06e78012168d58e053fddc6256894e0f5aa15955220b13083e51",
+  "timescale": "1ps",
+  "start_tick": 1300000,
+  "end_tick": 1390000,
+  "source_final_tick": 14280000,
+  "signals": [
+    {
+      "name": "dma_uvm_top.bus.clk",
+      "code": "!",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "dma_uvm_top.bus.reset_n",
+      "code": "\"",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "dma_uvm_top.bus.d_awvalid",
+      "code": ":",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "dma_uvm_top.bus.d_awready",
+      "code": ";",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "dma_uvm_top.bus.d_awaddr",
+      "code": "6",
+      "width": 32,
+      "kind": "reg",
+      "bit_range": "[31:0]"
+    },
+    {
+      "name": "dma_uvm_top.bus.d_wvalid",
+      "code": "?",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "dma_uvm_top.bus.d_wready",
+      "code": "@",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "dma_uvm_top.bus.d_wdata",
+      "code": "<",
+      "width": 64,
+      "kind": "reg",
+      "bit_range": "[63:0]"
+    },
+    {
+      "name": "dma_uvm_top.bus.d_wstrb",
+      "code": "=",
+      "width": 8,
+      "kind": "reg",
+      "bit_range": "[7:0]"
+    },
+    {
+      "name": "dma_uvm_top.bus.d_wlast",
+      "code": ">",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "dma_uvm_top.bus.d_bvalid",
+      "code": "C",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "dma_uvm_top.bus.d_bready",
+      "code": "D",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    }
+  ],
+  "same_tick_collapses": 7,
+  "functional_result": "NOT_ASSESSED_BY_RENDERER",
+  "source_relative_path": "../run/inactive-lanes/capture.vcd",
+  "source_revision": "e6fbb510aa88b1f5aa8a7cc04926eeefbfb5be4d",
+  "source_representation": "original simulator capture; Git -text; no conversion",
+  "captured_sha256": "25070be0b24d06e78012168d58e053fddc6256894e0f5aa15955220b13083e51",
+  "selected_public_pin_events": {
+    "partial_stall_edges": [
+      1315000,
+      1325000,
+      1335000
+    ],
+    "tail_acceptance": 1345000,
+    "wdata": "0x84cc59a999145585",
+    "strobe": "0x1"
+  }
+}

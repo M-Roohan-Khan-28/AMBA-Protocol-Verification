@@ -1,0 +1,11 @@
+{
+  "kind": "csr_busy_side_effect",
+  "source_revision": "a2d3d57edaa9eb441f3289bf5320f4df2f074144",
+  "locked_input": "C:\\short\\dma-fix-full-remote-20261110\\fault-csr_busy_side_effect\\child\\source\\rtl\\axi4_dma_subsystem.sv",
+  "locked_sha256": "dd709078dc9d91db0d92ba1e4bd34b32cb43f09f8f5739abdb6552313795043b",
+  "compiled_input": "C:\\short\\dma-fix-full-remote-20261110\\fault-csr_busy_side_effect\\child\\fault-csr_busy_side_effect\\disposable-rtl\\axi4_dma_subsystem.sv",
+  "compiled_sha256": "6c04a0cc013cf9938feb84f3208f382dc89f2751b954ad6c76d207d5b3bca41e",
+  "patch_sha256": "b95973602fd8b0ae5852a69646800e666dbbf7d1cca1d1e21b19bc26e41451a4",
+  "checkout_modified": false,
+  "scope": "Rejected CSR write modifies SRC; BRESP remains SLVERR; active cur_src untouched"
+}

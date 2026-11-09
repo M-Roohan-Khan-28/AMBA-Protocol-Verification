@@ -112,7 +112,7 @@ full AXI compliance, coverage closure, synthesis, timing, FPGA and hardware are
 separate milestones. Progress limits belong to the test environment, not AXI.
 No new portable eleven-project aggregate is claimed.
 
-## Executed review milestone
+## Original executed review milestone (preserved)
 
 The [separate report](../reports/dma-uvm-2026-11-09/SUMMARY.md) records 43/43
 required substeps PASS at environment `e93a6fdff85804dab7b5e636e43880e1ba7615ab`: 60 functional scenarios,
@@ -121,3 +121,20 @@ required substeps PASS at environment `e93a6fdff85804dab7b5e636e43880e1ba7615ab`
 needed. [Reproduction](../reports/dma-uvm-2026-11-09/REPRODUCE.md) pins the complete
 environment SHA and preserves the DUT lock. New evidence is separate from every
 previous report. These procedural counts do not measure functional coverage.
+
+## Corrective review milestone — 10 November 2026
+
+[Corrected evidence](../reports/dma-uvm-corrective-2026-11-10/SUMMARY.md)
+records **47/47 required PASS** at `e6fbb510aa88b1f5aa8a7cc04926eeefbfb5be4d`, unchanged DUT lock.
+There are 68 scenarios in 7 groups,
+30 assertion controls and ten fault qualifications. WDATA comparisons select only
+the independently expected enabled lanes; exact WSTRB/LAST/stability and memory
+checks remain. Seven legal changed-inactive-lane tail controls include held
+partial writes. Each rejected CSR write is read back through SRC/DST/LENGTH and
+status/error/control before overwrite or reset, including while the responder
+is paused and after sticky success/error. Old tests missed two separately
+recorded side-effect mutations; the corrected tests reject both. The runner
+validates per-case rejection/readback and command/burst/beat relationships.
+[Reproduce](../reports/dma-uvm-corrective-2026-11-10/REPRODUCE.md) by normal clone
+and explicit detached full-SHA checkout; no feature-branch name is required.
+The original report and all NOT RUN/bounded-scope limitations above remain.

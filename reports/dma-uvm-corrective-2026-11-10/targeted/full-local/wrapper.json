@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\dma-fix-20261110\\scripts\\run_dma_uvm.py",
+    "--expected-env-sha",
+    "e6fbb510aa88b1f5aa8a7cc04926eeefbfb5be4d",
+    "--output",
+    "C:\\short\\dma-fix-full-local-20261110",
+    "--dut-mirror",
+    "C:/short/dma-uvm-final-remote-run-20261109/source"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 350.01447149994783,
+  "log": "full-local-wrapper.log",
+  "sha256": "ddbe8dd20c051460faf75fa62fbb693d67c236e4b75e8a897f72d8dad1b1a6fa",
+  "output": "C:\\short\\dma-fix-full-local-20261110",
+  "source_revision": "e6fbb510aa88b1f5aa8a7cc04926eeefbfb5be4d"
+}

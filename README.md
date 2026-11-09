@@ -3,15 +3,18 @@
 ## Separate deterministic AXI4 DMA UVM/SVA milestone
 
 The [DMA contract and requirements guide](docs/DETERMINISTIC_DMA_UVM.md) describes
-the new UVM control initiator, early-W-buffering memory responder, independent
-public-pin command/byte oracle and qualified concurrent assertions. The
-[fresh detached results](reports/dma-uvm-2026-11-09/SUMMARY.md) record 43 required
-substeps PASS: 30 SVA controls, five functional groups containing 60 scenarios,
-and eight expected fault detections with nonzero child wrappers. The unmodified
-DMA also passed its existing 40-case portable regression and provenance check.
-Measured figures and exact byte hashes accompany the raw evidence. Coverage,
-randomization and original advanced ALU/APB remain NOT RUN. This separate
-milestone is open for review; the completed releases below are preserved.
+the UVM control initiator, early-W-buffering responder and independent public-pin
+oracle. [Corrected fresh detached evidence](reports/dma-uvm-corrective-2026-11-10/SUMMARY.md)
+records **47/47 required PASS**: 30 SVA controls, seven functional groups
+with 68 scenarios, and ten qualified fault detections with
+nonzero child exits. Enabled-lane WDATA checking and rejected-CSR readbacks are
+qualified against old-checker false rejection and missed side-effect mutations.
+[Reproduce](reports/dma-uvm-corrective-2026-11-10/REPRODUCE.md) with a normal clone
+and detached full-SHA checkout. Three new measured crops include exact byte
+provenance. The [original 43-substep report](reports/dma-uvm-2026-11-09/SUMMARY.md),
+40-case portable evidence and 11-file provenance are preserved unchanged.
+Functional coverage, randomization and original advanced ALU/APB remain NOT RUN.
+Both review PRs remain open and unmerged; completed releases below are preserved.
 
 ## Separate deterministic AXI4-Lite UVM/SVA milestone
 

@@ -1,0 +1,520 @@
+$date
+	Tue Nov 10 01:01:16 2026
+$end
+$version
+	Questa Altera Starter FPGA Edition Version 2025.2
+$end
+$timescale
+	1ps
+$end
+
+$scope module dma_uvm_top $end
+
+$scope module bus $end
+$var wire 1 ! clk $end
+$var reg 1 " reset_n $end
+$var reg 32 # c_awaddr [31:0] $end
+$var reg 1 $ c_awvalid $end
+$var reg 1 % c_awready $end
+$var reg 32 & c_wdata [31:0] $end
+$var reg 4 ' c_wstrb [3:0] $end
+$var reg 1 ( c_wvalid $end
+$var reg 1 ) c_wready $end
+$var reg 2 * c_bresp [1:0] $end
+$var reg 1 + c_bvalid $end
+$var reg 1 , c_bready $end
+$var reg 32 - c_araddr [31:0] $end
+$var reg 1 . c_arvalid $end
+$var reg 1 / c_arready $end
+$var reg 32 0 c_rdata [31:0] $end
+$var reg 2 1 c_rresp [1:0] $end
+$var reg 1 2 c_rvalid $end
+$var reg 1 3 c_rready $end
+$var reg 1 4 irq $end
+$var reg 4 5 d_awid [3:0] $end
+$var reg 32 6 d_awaddr [31:0] $end
+$var reg 8 7 d_awlen [7:0] $end
+$var reg 3 8 d_awsize [2:0] $end
+$var reg 2 9 d_awburst [1:0] $end
+$var reg 1 : d_awvalid $end
+$var reg 1 ; d_awready $end
+$var reg 64 < d_wdata [63:0] $end
+$var reg 8 = d_wstrb [7:0] $end
+$var reg 1 > d_wlast $end
+$var reg 1 ? d_wvalid $end
+$var reg 1 @ d_wready $end
+$var reg 4 A d_bid [3:0] $end
+$var reg 2 B d_bresp [1:0] $end
+$var reg 1 C d_bvalid $end
+$var reg 1 D d_bready $end
+$var reg 4 E d_arid [3:0] $end
+$var reg 32 F d_araddr [31:0] $end
+$var reg 8 G d_arlen [7:0] $end
+$var reg 3 H d_arsize [2:0] $end
+$var reg 2 I d_arburst [1:0] $end
+$var reg 1 J d_arvalid $end
+$var reg 1 K d_arready $end
+$var reg 4 L d_rid [3:0] $end
+$var reg 64 M d_rdata [63:0] $end
+$var reg 2 N d_rresp [1:0] $end
+$var reg 1 O d_rlast $end
+$var reg 1 P d_rvalid $end
+$var reg 1 Q d_rready $end
+$var integer 32 R sva_count $end
+$var reg 1 S control_done $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0"
+bx #
+x$
+1%
+bx &
+bx '
+x(
+1)
+b0 *
+0+
+x,
+bx -
+x.
+1/
+b0 0
+b0 1
+02
+x3
+04
+b0 5
+b0 6
+b11111111 7
+b11 8
+b1 9
+0:
+x;
+bx <
+b11111111 =
+0>
+0?
+x@
+bx A
+bx B
+xC
+0D
+b0 E
+b100000000 F
+b11111111 G
+b11 H
+b1 I
+0J
+xK
+bx L
+bx M
+bx N
+xO
+xP
+0Q
+0S
+b0 R
+0!
+$end
+#5000
+1!
+#10000
+0!
+0K
+0;
+0@
+0P
+0C
+#15000
+1!
+#20000
+0!
+0$
+0(
+0.
+0,
+03
+#25000
+1!
+#30000
+0!
+#35000
+1!
+#40000
+0!
+#45000
+1!
+#50000
+0!
+#55000
+1!
+#60000
+0!
+1"
+#65000
+1!
+#70000
+0!
+1K
+1@
+b0 M
+b0 N
+b0 L
+0O
+b0 B
+b0 A
+#75000
+1!
+#80000
+0!
+1;
+#85000
+1!
+#90000
+0!
+0K
+0;
+#95000
+1!
+#100000
+0!
+1K
+0@
+b0 #
+b1000010000000 &
+b1111 '
+1$
+#105000
+1!
+0%
+#110000
+0!
+1@
+0$
+#115000
+1!
+#120000
+0!
+0K
+#125000
+1!
+#130000
+0!
+1K
+1(
+#135000
+1!
+0)
+#140000
+0!
+0(
+#145000
+1!
+1+
+#150000
+0!
+0K
+1;
+0@
+#155000
+1!
+#160000
+0!
+1K
+0;
+1@
+1,
+#165000
+1!
+0+
+1%
+1)
+#170000
+0!
+0,
+#175000
+1!
+#180000
+0!
+0K
+b100 #
+b1000000000000000 &
+1$
+#185000
+1!
+0%
+#190000
+0!
+1K
+0$
+#195000
+1!
+#200000
+0!
+0@
+#205000
+1!
+#210000
+0!
+0K
+1@
+1(
+#215000
+1!
+0)
+#220000
+0!
+1K
+1;
+0(
+#225000
+1!
+1+
+#230000
+0!
+0;
+#235000
+1!
+#240000
+0!
+0K
+1,
+#245000
+1!
+0+
+1%
+1)
+#250000
+0!
+1K
+0@
+0,
+#255000
+1!
+#260000
+0!
+1@
+b1000 #
+b10000001 &
+1$
+#265000
+1!
+0%
+#270000
+0!
+0K
+0$
+#275000
+1!
+#280000
+0!
+1K
+#285000
+1!
+#290000
+0!
+1;
+1(
+#295000
+1!
+0)
+#300000
+0!
+0K
+0;
+0@
+0(
+#305000
+1!
+1+
+#310000
+0!
+1K
+1@
+#315000
+1!
+#320000
+0!
+1,
+#325000
+1!
+0+
+1%
+1)
+#330000
+0!
+0K
+0,
+#335000
+1!
+#340000
+0!
+1K
+b0 -
+1.
+#345000
+1!
+b1000010000000 0
+12
+0/
+#350000
+0!
+0@
+0.
+#355000
+1!
+#360000
+0!
+0K
+1;
+1@
+#365000
+1!
+#370000
+0!
+1K
+0;
+13
+#375000
+1!
+02
+1/
+#380000
+0!
+03
+#385000
+1!
+#390000
+0!
+0K
+b100 -
+1.
+#395000
+1!
+b1000000000000000 0
+12
+0/
+#400000
+0!
+1K
+0@
+0.
+#405000
+1!
+#410000
+0!
+1@
+#415000
+1!
+#420000
+0!
+0K
+13
+#425000
+1!
+02
+1/
+#430000
+0!
+1K
+1;
+03
+#435000
+1!
+#440000
+0!
+0;
+b1000 -
+1.
+#445000
+1!
+b10000001 0
+12
+0/
+#450000
+0!
+0K
+0@
+0.
+#455000
+1!
+#460000
+0!
+1K
+1@
+#465000
+1!
+#470000
+0!
+13
+#475000
+1!
+02
+1/
+#480000
+0!
+0K
+03
+#485000
+1!
+#490000
+0!
+1K
+b1100 #
+b1 &
+1$
+#495000
+1!
+0%
+#500000
+0!
+1;
+0@
+0$
+#505000
+1!
+#510000
+0!
+0K
+0;
+1@
+#515000
+1!
+#520000
+0!
+1K
+1(
+#525000
+1!
+0)
+#530000
+0!
+0(
+#535000
+1!
+1+
+b1000000000000000 6
+b1000110000000 F
+#540000
+0!
+0K
+#545000
+1!
+b1111 G
+b1111 7
+1J
+#550000
+0!
+1K
+0@
+1,
+#555000
+1!
+0+
+1%
+1)
+1Q
+0J

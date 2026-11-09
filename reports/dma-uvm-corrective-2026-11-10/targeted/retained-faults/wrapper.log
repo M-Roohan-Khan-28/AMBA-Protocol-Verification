@@ -1,0 +1,2 @@
+fault-active_data PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-tail_strobe PASS EXPECTED_CHILD_FAILURE child exit 1

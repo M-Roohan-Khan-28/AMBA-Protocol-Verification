@@ -1,0 +1,152 @@
+diff --git a/scripts/dma_accounting.py b/scripts/dma_accounting.py
+index 65fc77b..a3838e8 100644
+--- a/scripts/dma_accounting.py
++++ b/scripts/dma_accounting.py
+@@ -19,13 +19,8 @@ def validate(case,r):
+     check(r['errors']==int(error) and r['successes']==r['terminals']-r['errors'],'terminal outcomes')
+     check(r['acknowledgements']==1+int(error),'acknowledgements (status reads are not completions)')
+     check(r['control_cancelled']==int(case['reset_kind'] in (4,5)),'partial control cancellation')
+-    check(r['control_rejected']==(48 if case['csr_tests'] in (1,3) else 6 if case['csr_tests']==2 else 0),'rejected control writes')
+-    check(r['rejection_checkpoints']==r['control_rejected'],'each rejected write read back before overwrite/release')
+-    check(r['csr_reads']>=6*r['rejection_checkpoints']+7,'protected register/status readbacks executed')
++    check(r['control_rejected']==(24 if case['csr_tests']==1 else 6 if case['csr_tests']==2 else 0),'rejected control writes')
+     check(r['comparisons']>0 and r['csr_reads']>=7,'executed comparisons/CSR reads')
+-    if case['name'].startswith('inactive_tail_'):
+-        check(r['disabled_write_bytes']==8-case['length']%8,'disabled lane observations')
+-        check(r['partial_write_stalls']>=3,'bounded stalled partial write observed')
+     bursts=plan(case['src'],case['dst'],case['length']);ar=aw=b=len(bursts);rb=wb=sum(bursts)
+     if case['expected_error']==1:ar=aw=b=rb=wb=0
+     elif case['expected_error']==2:
+diff --git a/verification/dma_uvm/dma_driver.svh b/verification/dma_uvm/dma_driver.svh
+index 37f577d..9f9f9b5 100644
+--- a/verification/dma_uvm/dma_driver.svh
++++ b/verification/dma_uvm/dma_driver.svh
+@@ -76,32 +76,20 @@ class dma_control_driver extends uvm_driver#(dma_command);
+     cfg.scenario.read_error_burst=-1;cfg.scenario.write_error_burst=-1;cfg.scenario.malformed=0;cfg.scenario.reset_kind=0;
+     program_command(32'h30000,32'h70000,16);wait_terminal(0);acknowledge();
+   endtask
+-  task check_rejected_state;
+-    bit[31:0] v;
+-    // Passive public-pin scoreboard retains independent expected CSR/status/IRQ state.
+-    // All six reads occur before another write, overwrite, reset or responder release.
+-    read_csr(0,v);read_csr(4,v);read_csr(8,v);
+-    read_csr(16,v);read_csr(20,v);read_csr(12,v);
+-    sb.rejection_checkpoints++;
+-    $display("DMA_REJECTED_STATE_PASS case=%s checkpoint=%0d",cfg.scenario.label,sb.rejection_checkpoints);
+-  endtask
+-  task reject_write(bit[31:0] address,data,bit[3:0] strobes=15);
+-    write_csr(address,data,strobes,2);check_rejected_state();
+-  endtask
+   task invalid_controls;
+     bit[31:0] v;
+-    for(int i=0;i<16;i++)if(i!=15)reject_write(0,32'hbad00000,i[3:0]);
+-    reject_write(16,0);reject_write(20,0);reject_write(24,0);
+-    reject_write(1,0);reject_write(2,0);reject_write(3,0);
+-    reject_write(12,3);reject_write(12,4);reject_write(12,32'h80000000);
++    for(int i=0;i<16;i++)if(i!=15)write_csr(0,32'hbad00000,i[3:0],2);
++    write_csr(16,0,15,2);write_csr(20,0,15,2);write_csr(24,0,15,2);
++    write_csr(1,0,15,2);write_csr(2,0,15,2);write_csr(3,0,15,2);
++    write_csr(12,3,15,2);write_csr(12,4,15,2);write_csr(12,32'h80000000,15,2);
+     write_csr(12,0);read_csr(12,v);if(v!=0)`uvm_fatal("CONTROL_READBACK","CONTROL read must be zero")
+     read_csr(1,v,2);read_csr(24,v,2);read_csr(32'hfffffff0,v,2);
+   endtask
+   task busy_controls;
+     bit[31:0] v;
+     read_csr(16,v);if(v!=1)`uvm_fatal("BUSY_STATUS","Expected busy while responder paused")
+-    reject_write(0,32'hdead0000);reject_write(4,32'hdead1000);reject_write(8,8);
+-    reject_write(12,1);reject_write(12,2);reject_write(12,0);
++    write_csr(0,32'hdead0000,15,2);write_csr(4,32'hdead1000,15,2);write_csr(8,8,15,2);
++    write_csr(12,1,15,2);write_csr(12,2,15,2);write_csr(12,0,15,2);
+     cfg.freeze_data=0;
+   endtask
+   task cancel_partial_control(int kind);bit[31:0] v;
+@@ -119,10 +107,7 @@ class dma_control_driver extends uvm_driver#(dma_command);
+       sb.begin_case(item.label);$display("DMA_CASE_START name=%s time=%0t",item.label,$time);
+       reset();
+       if(item.reset_kind>=4)cancel_partial_control(item.reset_kind);
+-      if(item.csr_tests==1||item.csr_tests==3)begin
+-        write_csr(0,32'h23400);write_csr(4,32'h89000);write_csr(8,64);
+-        invalid_controls();
+-      end
++      if(item.csr_tests==1)invalid_controls();
+       if(item.csr_tests==2)cfg.freeze_data=1;
+       program_command(item.src,item.dst,item.length);
+       if(item.csr_tests==2)busy_controls();
+@@ -135,7 +120,6 @@ class dma_control_driver extends uvm_driver#(dma_command);
+       end else begin
+         wait_terminal(item.expected_error);
+         if(item.chain)begin program_command(32'h30000,32'h70000,16);wait_terminal(0);end
+-        if(item.csr_tests==1||item.csr_tests==3)invalid_controls();
+         acknowledge();
+         if(item.expected_error!=0)begin if(item.malformed!=0)reset();clean_recovery();end
+       end
+diff --git a/verification/dma_uvm/dma_scoreboard.svh b/verification/dma_uvm/dma_scoreboard.svh
+index 041c478..e8de215 100644
+--- a/verification/dma_uvm/dma_scoreboard.svh
++++ b/verification/dma_uvm/dma_scoreboard.svh
+@@ -2,12 +2,11 @@ class dma_scoreboard extends uvm_subscriber#(dma_frame);
+   `uvm_component_utils(dma_scoreboard)
+   dma_config cfg;dma_memory_responder backing;
+   byte unsigned memory[addr_t],snapshot[int];bit protected_bytes[addr_t];
+-  bit ca,cw,cb_seen,cr;bit[31:0] caddr,cdata,crdata,craddr;bit[3:0] cstrb;bit[1:0] crresp;
++  bit ca,cw,cb_seen,cr;bit[31:0] caddr,cdata,crdata;bit[3:0] cstrb;bit[1:0] crresp;
+   bit[31:0] src,dst,length;bit active,done,error,in_reset;int code,stage;
+   addr_t offset,chunk;int beats,rn,wn;bit aw_seen,write_committed,read_fault;
+   int commands,terminals,successes,errors,cancellations,acks,control_rejected,control_cancelled,reads;
+   int ars,aws,rbeats,wbeats,bs,commits,comparisons,reset_count;
+-  int disabled_write_bytes,partial_write_stalls,rejection_checkpoints;
+   int cancelled_ar,cancelled_aw,cancelled_rbeats,cancelled_wbeats,cancelled_b;
+   int aw_cycle,w_cycle,cycle,aw_first,w_first,same_edge,all_w_before_aw;
+   string label;
+@@ -20,7 +19,7 @@ class dma_scoreboard extends uvm_subscriber#(dma_frame);
+   function void begin_case(string n);
+     label=n;memory.delete();snapshot.delete();protected_bytes.delete();
+     commands=0;terminals=0;successes=0;errors=0;cancellations=0;acks=0;control_rejected=0;control_cancelled=0;reads=0;
+-    rejection_checkpoints=0;disabled_write_bytes=0;partial_write_stalls=0;ars=0;aws=0;rbeats=0;wbeats=0;bs=0;commits=0;comparisons=0;reset_count=0;
++    ars=0;aws=0;rbeats=0;wbeats=0;bs=0;commits=0;comparisons=0;reset_count=0;
+     cancelled_ar=0;cancelled_aw=0;cancelled_rbeats=0;cancelled_wbeats=0;cancelled_b=0;
+     aw_first=0;w_first=0;same_edge=0;all_w_before_aw=0;active=0;in_reset=0;
+   endfunction
+@@ -72,11 +71,11 @@ class dma_scoreboard extends uvm_subscriber#(dma_frame);
+     end
+     if(f.c_bvalid&&f.c_bready)begin ca=0;cw=0;cb_seen=0;end
+     if(f.c_rvalid)begin
+-      require(cr,"CSR_ELIGIBILITY","R before AR");require(f.c_rdata===crdata&&f.c_rresp===crresp,"CSR_READ",$sformatf("address=%h expected=%h observed=%h expected_resp=%h observed_resp=%h",craddr,crdata,f.c_rdata,crresp,f.c_rresp));
++      require(cr,"CSR_ELIGIBILITY","R before AR");require(f.c_rdata===crdata&&f.c_rresp===crresp,"CSR_READ","CSR data/status mismatch");
+       if(f.c_rready)begin cr=0;reads++;end
+     end
+     if(f.c_arvalid&&f.c_arready)begin
+-      require(!cr,"CSR_OWNERSHIP","second outstanding control read");cr=1;crresp=0;craddr=f.c_araddr;
++      require(!cr,"CSR_OWNERSHIP","second outstanding control read");cr=1;crresp=0;
+       case(f.c_araddr)
+         0:crdata=src;4:crdata=dst;8:crdata=length;12:crdata=0;
+         16:crdata={28'd0,done,error,done,active};20:crdata=code;
+@@ -115,7 +114,6 @@ class dma_scoreboard extends uvm_subscriber#(dma_frame);
+       aw_seen=1;aw_cycle=cycle;aws++;if(wn==beats)all_w_before_aw++;
+       last_awaddr=f.d_awaddr;last_awlen=f.d_awlen;
+     end
+-    if(f.d_wvalid&&!f.d_wready&&f.d_wstrb!=255)partial_write_stalls++;
+     if(f.d_wvalid&&f.d_wready)begin
+       require(active&&stage==2&&wn<beats,"ORACLE_W_OWNERSHIP","unsolicited/duplicate W beat");
+       if(wn==0)w_cycle=cycle;
+@@ -124,10 +122,7 @@ class dma_scoreboard extends uvm_subscriber#(dma_frame);
+       require(f.d_wlast===(wn==beats-1),"ORACLE_WLAST","write LAST progression");
+       for(int i=0;i<8;i++)begin
+         a=offset+8*wn+i;
+-        // The independently planned mask, not observed WSTRB, selects data obligations.
+-        // Exact observed WSTRB and WLAST were checked above; disabled data is unconstrained.
+-        if(mask[i])require(f.d_wdata[8*i+:8]===snapshot[int'(a)],"ORACLE_WDATA","enabled source byte mismatch");
+-        else disabled_write_bytes++;
++        require(f.d_wdata[8*i+:8]===((a<length)?snapshot[int'(a)]:mem(addr_t'(src)+a)),"ORACLE_WDATA","buffered source byte mismatch");
+       end
+       wn++;wbeats++;
+       last_wdata=f.d_wdata;last_wstrb=f.d_wstrb;
+@@ -172,7 +167,7 @@ class dma_scoreboard extends uvm_subscriber#(dma_frame);
+     require(!active&&!ca&&!cw&&!cr,"ORACLE_ACCOUNTING","pending obligation at case end");
+     require(commands==terminals+cancellations&&terminals==successes+errors,"ORACLE_ACCOUNTING","command terminal/reset totals");
+     f=$fopen({"case-",label,".json"},"w");if(!f)`uvm_fatal("RESULT_IO","Cannot open case result")
+-    $fwrite(f,"{\"name\":\"%s\",\"commands\":%0d,\"terminals\":%0d,\"successes\":%0d,\"errors\":%0d,\"reset_cancellations\":%0d,\"acknowledgements\":%0d,\"control_rejected\":%0d,\"control_cancelled\":%0d,\"rejection_checkpoints\":%0d,\"csr_reads\":%0d,\"ar\":%0d,\"aw\":%0d,\"r_beats\":%0d,\"w_beats\":%0d,\"b\":%0d,\"memory_commits\":%0d,\"disabled_write_bytes\":%0d,\"partial_write_stalls\":%0d,\"comparisons\":%0d,\"resets\":%0d,\"cancelled_ar\":%0d,\"cancelled_aw\":%0d,\"cancelled_r_beats\":%0d,\"cancelled_w_beats\":%0d,\"cancelled_b_pending\":%0d,\"aw_first\":%0d,\"w_first\":%0d,\"simultaneous\":%0d,\"all_w_before_aw\":%0d}\n",label,commands,terminals,successes,errors,cancellations,acks,control_rejected,control_cancelled,rejection_checkpoints,reads,ars,aws,rbeats,wbeats,bs,commits,disabled_write_bytes,partial_write_stalls,comparisons,reset_count,cancelled_ar,cancelled_aw,cancelled_rbeats,cancelled_wbeats,cancelled_b,aw_first,w_first,same_edge,all_w_before_aw);$fclose(f);
++    $fwrite(f,"{\"name\":\"%s\",\"commands\":%0d,\"terminals\":%0d,\"successes\":%0d,\"errors\":%0d,\"reset_cancellations\":%0d,\"acknowledgements\":%0d,\"control_rejected\":%0d,\"control_cancelled\":%0d,\"csr_reads\":%0d,\"ar\":%0d,\"aw\":%0d,\"r_beats\":%0d,\"w_beats\":%0d,\"b\":%0d,\"memory_commits\":%0d,\"comparisons\":%0d,\"resets\":%0d,\"cancelled_ar\":%0d,\"cancelled_aw\":%0d,\"cancelled_r_beats\":%0d,\"cancelled_w_beats\":%0d,\"cancelled_b_pending\":%0d,\"aw_first\":%0d,\"w_first\":%0d,\"simultaneous\":%0d,\"all_w_before_aw\":%0d}\n",label,commands,terminals,successes,errors,cancellations,acks,control_rejected,control_cancelled,reads,ars,aws,rbeats,wbeats,bs,commits,comparisons,reset_count,cancelled_ar,cancelled_aw,cancelled_rbeats,cancelled_wbeats,cancelled_b,aw_first,w_first,same_edge,all_w_before_aw);$fclose(f);
+     $display("DMA_CASE_PASS name=%s commands=%0d terminals=%0d cancelled=%0d comparisons=%0d",label,commands,terminals,cancellations,comparisons);
+   endfunction
+ endclass

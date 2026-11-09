@@ -1,0 +1,20 @@
+[
+  {
+    "repository": "AMBA-Protocol-Verification",
+    "number": 12,
+    "head": "3d17e3bed5396c828a76be13ff18229e39dea740",
+    "base": "60b2db25bf007b17d530389cb26a71578f5c28f8",
+    "state": "open",
+    "branch": "advanced/dma-deterministic-uvm",
+    "reviews": []
+  },
+  {
+    "repository": "AXI4-DMA-Subsystem",
+    "number": 4,
+    "head": "93f98e0885a7df0ecf4ebc13a27df89185f6a132",
+    "base": "a2d3d57edaa9eb441f3289bf5320f4df2f074144",
+    "state": "open",
+    "branch": "advanced/dma-uvm-adapter",
+    "reviews": []
+  }
+]
