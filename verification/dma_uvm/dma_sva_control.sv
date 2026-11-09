@@ -31,6 +31,9 @@ module dma_sva_control;
       "aw_attr":begin b.d_awsize=2;aw();end
       "ar_attr":begin b.d_arburst=0;ar();end
       "w_last":begin aw(1);w();end
+      "w_last_same_aw":begin b.d_awvalid=1;b.d_awready=1;b.d_awlen=1;w();end
+      "w_last_early_count":begin w(0);w(1);aw(0);end
+      "w_last_early_missing":begin w(0);aw(0);end
       "r_last":begin ar(1);b.d_rvalid=1;b.d_rready=1;tick();end
       "rid":begin ar();b.d_rvalid=1;b.d_rid=1;tick();end
       "bid":begin aw();w();b.d_bvalid=1;b.d_bid=1;tick();end

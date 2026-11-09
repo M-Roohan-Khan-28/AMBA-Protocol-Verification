@@ -1121,6 +1121,24 @@
       "expected": "W_LAST"
     },
     {
+      "name": "sva-w_last_same_aw",
+      "kind": "sva",
+      "scenario": "w_last_same_aw",
+      "expected": "W_LAST"
+    },
+    {
+      "name": "sva-w_last_early_count",
+      "kind": "sva",
+      "scenario": "w_last_early_count",
+      "expected": "W_LAST"
+    },
+    {
+      "name": "sva-w_last_early_missing",
+      "kind": "sva",
+      "scenario": "w_last_early_missing",
+      "expected": "W_LAST"
+    },
+    {
       "name": "sva-r_last",
       "kind": "sva",
       "scenario": "r_last",

@@ -50,6 +50,10 @@ module dma_assertions(dma_bus b);
     b.d_wvalid&&b.d_wready |-> !w_end&&wn<16&&(!aw_seen||(b.d_wlast==(wn==alen))))else violation("W_LAST");
   a_early_w:assert property(@(posedge b.clk) disable iff(!b.reset_n)
     b.d_awvalid&&b.d_awready&&w_end |-> wn==b.d_awlen+1)else violation("W_LAST");
+  // Reconcile partial early W and a same-edge AW/W against the newly accepted AW.
+  a_join_w:assert property(@(posedge b.clk) disable iff(!b.reset_n)
+    b.d_awvalid&&b.d_awready&&!w_end |-> wn<=b.d_awlen&&
+      (!(b.d_wvalid&&b.d_wready)||(b.d_wlast==(wn==b.d_awlen))))else violation("W_LAST");
   a_rl:assert property(@(posedge b.clk) disable iff(!b.reset_n)
     b.d_rvalid&&ar_seen |-> b.d_rlast==(rn==rlen))else violation("R_LAST");
   a_rid:assert property(@(posedge b.clk) disable iff(!b.reset_n) b.d_rvalid |-> b.d_rid==0)else violation("R_ID");
