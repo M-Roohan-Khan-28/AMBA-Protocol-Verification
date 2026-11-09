@@ -1,0 +1,30 @@
+adapter-0 PASS EXECUTED {'adapter': 0, 'completed': 274, 'writes': 74, 'reads': 200, 'comparisons': 1577, 'resets': 7, 'cancelled': 5}
+adapter-1 PASS EXECUTED {'adapter': 1, 'completed': 240, 'writes': 72, 'reads': 168, 'comparisons': 1207, 'resets': 6, 'cancelled': 4}
+adapter-2 PASS EXECUTED {'adapter': 2, 'completed': 208, 'writes': 72, 'reads': 136, 'comparisons': 1044, 'resets': 4, 'cancelled': 2}
+assertion-0 PASS EXECUTED 
+assertion-1 PASS EXECUTED 
+assertion-2 PASS EXECUTED 
+assertion-3 PASS EXECUTED 
+assertion-4 PASS EXECUTED 
+assertion-5 PASS EXECUTED 
+assertion-6 PASS EXECUTED 
+assertion-7 PASS EXECUTED 
+assertion-8 PASS EXECUTED 
+assertion-9 PASS EXECUTED 
+assertion-10 PASS EXECUTED 
+assertion-11 PASS EXECUTED 
+assertion-12 PASS EXECUTED 
+assertion-13 PASS EXECUTED 
+request-1-legal PASS EXECUTED 
+request-1-duplicate-write PASS EXPECTED_ORACLE_DETECTION 
+request-1-duplicate-read PASS EXPECTED_ORACLE_DETECTION 
+request-2-legal PASS EXECUTED 
+request-2-duplicate-write PASS EXPECTED_ORACLE_DETECTION 
+request-2-duplicate-read PASS EXPECTED_ORACLE_DETECTION 
+{
+  "source_revision": "1263410134a27dda2c93741c3aa526001bf4469a",
+  "source_dirty": false,
+  "scope": "full deterministic milestone",
+  "aggregate_exit_code": 0,
+  "milestone_pass": true
+}

@@ -28,6 +28,11 @@ control state. Adapter 1's active responder uses a word memory; the independent
 scoreboard uses a byte array and separate address arithmetic. The scoreboard
 checks the master's bus addresses, data and strobes against the accepted CPU
 request, and checks completion against the prior accepted bus response.
+For master/integration, per-request AW/W or AR issue flags and the accepted
+bus response remain associated with that CPU request until CPU completion or
+reset cancellation. Clearing outstanding bus-channel state at a response does
+not permit another transaction for the still-pending CPU request. A second
+AW/W, AR or response is rejected even if its data and address are unchanged.
 
 SRAM starts uninitialized. The sequences initialize all 16 words before any
 checked read. Synchronous reset preserves memory. The oracle retains expected
@@ -48,13 +53,29 @@ tests reset before a pending write issues or before a read response appears.
 | Response backpressure | Held B and R with stable response data/status | Direct slave and legal SVA control |
 | Pending reset | Partial AW/W, pending/held B, accepted AR, held R, retained memory/readback | Target-specific cases; no unsupported master backpressure control is invented |
 | Bounded progress | At most 80 sampled cycles per driver transaction; simulation watchdog; wall timeout per process | All targets |
-| Exactly once | Sequence/driver completions; CPU acceptance/completion counts; no leftover channel state | All targets |
+| Exactly once | Per-CPU request issue/response ownership; reconciled channel, response, CPU completion and reset counts; no leftover state | All targets; separate legal-AXI duplicate controls for master/integration oracle |
 
 `requirements.json` records procedural requirement hits, not simulator functional
 coverage. Missing required ordering, strobes, word readbacks, reset/error cases
 or applicable stall observations are fatal. Reset cancellations and completed
 transactions are recorded separately. The progress bounds are test assumptions,
 not AXI latency limits.
+
+`accounting.json` records independently sampled counts. Both the scoreboard and
+Python runner enforce, separately for writes and reads:
+
+- Accepted CPU requests = CPU completions + reset-canceled CPU requests.
+- Accepted AW/W = completed CPU writes + the corresponding channels accepted
+  by reset-canceled requests. Accepted AR uses the analogous read relationship.
+- Accepted B/R = completed CPU writes/reads + responses already accepted for
+  requests canceled before CPU completion.
+- Reported driver completion/cancellation and log counts match those totals.
+
+This explicitly permits reset after bus-response acceptance but before CPU
+completion. The legal oracle controls exercise all eight cancellation stages:
+write before either channel, AW-only, W-only, both before B, accepted B before
+CPU completion; read before AR, accepted AR before R, accepted R before CPU
+completion. Reset clears ownership once; memory remains retained.
 
 ## Assertion qualification
 
@@ -83,6 +104,29 @@ The independent scoreboard also checks response eligibility before processing
 the current sampled frame's channel handshakes. Expected-negative simulations
 are qualification results, not failing DUT transactions or coverage percentages.
 
+## CPU-to-AXI oracle qualification
+
+Six additional required simulations use the production passive monitor,
+scoreboard, its full requirement/check phases, and the unchanged AXI SVA. They
+drive a synthetic public-pin bus; they are **checker controls, not DUT runs**.
+For each of master and integration scoreboard modes:
+
+1. A legal control has 58 accepted CPU requests, 50 completions and 8 reset
+   cancellations. It includes one accepted B and one accepted R canceled before
+   CPU completion, so its 52 bus responses correctly exceed 50 CPU completions.
+2. A duplicate-write control repeats a complete, legal, bit-identical AXI write
+   after its first B response and before the one owning CPU request completes.
+3. A duplicate-read control repeats a complete, legal, bit-identical AXI read
+   in the equivalent window after its first R response.
+
+No protocol-assertion violation or bad data is injected. The negative child
+wrappers must return **1** for exactly `REQUEST_DUPLICATE_WRITE` or
+`REQUEST_DUPLICATE_READ`, with zero SVA detections. The parent qualifies those
+individual expected failures; missing results, wrong errors, timeouts or a
+permissive wrapper exit 0 fail the required milestone. The same controls run
+against the reviewed old package in a disposable worktree demonstrate its
+misses; old source and raw comparison logs are retained separately.
+
 ## One-command execution
 
 With Python, Git and the already qualified local Questa/UVM installation:
@@ -92,8 +136,9 @@ python scripts/run_axil_uvm.py --output C:/short/axil-uvm-results-new
 if ($LASTEXITCODE -ne 0) { throw 'Required AXI4-Lite UVM/SVA substep failed or was blocked' }
 ```
 
-The output directory must not exist. The default full regression runs three UVM
-targets and fourteen assertion qualifications **serially**. This Starter licence
+The output directory must not exist. The default full regression runs **23
+required substeps**: three UVM targets, fourteen assertion qualifications and six
+request-oracle controls, all **serially**. This Starter licence
 allows one simulator session at a time. Defaults are:
 
 ```text
@@ -107,6 +152,8 @@ records the actual version, process commands, source revision/dirty state, input
 hashes, source lock, seed `682016495` (`0x28A6BEEF`), statuses, counts and exit codes.
 Missing tools/markers, wrong assertion IDs, simulator errors/fatals and timeouts
 produce nonzero exit. A diagnostic selection never sets `milestone_pass=true`.
+Missing accounting files, impossible reset stages or mismatched result-count
+relationships also produce nonzero exit.
 
 Each UVM simulation emits a real `capture.vcd`. The separate renderer accepts
 only a successful full run and creates measured crops with exact byte hashes.
@@ -126,6 +173,18 @@ These runs are expected to return **nonzero**. Data corruption must be caught
 by the independent bus or CPU oracle; altered AWADDR by request checking; a
 dropped read response by the bounded progress guard. Inspect the cause and
 raw log, not just the exit code, to qualify a fault detection.
+
+The focused request-oracle controls can also be executed individually:
+
+```powershell
+python scripts/run_axil_request_control.py --adapter 1 --mode legal --output C:/short/axil-request-legal-new
+python scripts/run_axil_request_control.py --adapter 1 --mode duplicate-write --output C:/short/axil-request-duplicate-write-new
+python scripts/run_axil_request_control.py --adapter 1 --mode duplicate-read --output C:/short/axil-request-duplicate-read-new
+```
+
+Use `--adapter 2` for the integration scoreboard mode. Legal returns 0;
+duplicates must return 1 with their specific oracle fatal. These are diagnostic
+child executions; only the full runner qualifies the complete 23-substep result.
 
 Functional coverage and constrained randomization are **NOT RUN**. Prior real
 [APB capability probes](../reports/advanced-apb-2026-11-08/SUMMARY.md) found the

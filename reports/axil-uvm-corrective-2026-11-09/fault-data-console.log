@@ -1,0 +1,10 @@
+adapter-0 FAIL PROCESS_OR_SIMULATOR_ERROR 
+adapter-1 FAIL PROCESS_OR_SIMULATOR_ERROR 
+adapter-2 FAIL PROCESS_OR_SIMULATOR_ERROR 
+{
+  "source_revision": "1263410134a27dda2c93741c3aa526001bf4469a",
+  "source_dirty": false,
+  "scope": "diagnostic",
+  "aggregate_exit_code": 1,
+  "milestone_pass": false
+}

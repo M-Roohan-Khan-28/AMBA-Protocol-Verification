@@ -1,0 +1,21 @@
+{
+  "label": "corrected",
+  "adapter": 1,
+  "mode": "duplicate-read",
+  "path": "C:\\short\\axil-correct-targeted-20261109\\corrected-1-duplicate-read",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\amba-axil-uvm-20261108\\scripts\\run_axil_request_control.py",
+    "--adapter",
+    "1",
+    "--mode",
+    "duplicate-read",
+    "--output",
+    "C:\\short\\axil-correct-targeted-20261109\\corrected-1-duplicate-read"
+  ],
+  "wrapper_exit_code": 1,
+  "outcome": "EXPECTED_DUPLICATE_DETECTED",
+  "console_sha256": "f93cc7fca640bf56bbfb0fc565429d02fe38f1204ac9a0f863b539dd8272bb48",
+  "counts": null,
+  "accounting": null
+}

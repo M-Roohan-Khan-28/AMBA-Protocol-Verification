@@ -1,0 +1,102 @@
+{
+  "source_revision": "1263410134a27dda2c93741c3aa526001bf4469a",
+  "source_dirty": false,
+  "mode": "duplicate-write",
+  "adapter": 1,
+  "seed": 682016495,
+  "scope": "synthetic public-pin checker control; no DUT",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\amba-axil-uvm-20261108\\scripts\\run_axil_request_control.py",
+    "--adapter",
+    "1",
+    "--mode",
+    "duplicate-write",
+    "--output",
+    "C:\\short\\axil-correct-targeted-20261109\\corrected-1-duplicate-write"
+  ],
+  "commands": [
+    {
+      "command": [
+        "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+        "work"
+      ],
+      "cwd": "C:\\short\\axil-correct-targeted-20261109\\corrected-1-duplicate-write",
+      "exit_code": 0,
+      "timed_out": false,
+      "log": "0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+        "-sv",
+        "-work",
+        "work",
+        "-L",
+        "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+        "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+        "+define+AXIL_ADAPTER=1",
+        "C:\\short\\amba-axil-uvm-20261108\\verification\\axil_uvm\\axil_bus.sv",
+        "C:\\short\\amba-axil-uvm-20261108\\verification\\axil_uvm\\axil_assertions.sv",
+        "C:\\short\\amba-axil-uvm-20261108\\verification\\axil_uvm\\axil_uvm_pkg.sv",
+        "C:\\short\\amba-axil-uvm-20261108\\verification\\axil_uvm\\axil_request_control.sv"
+      ],
+      "cwd": "C:\\short\\axil-correct-targeted-20261109\\corrected-1-duplicate-write",
+      "exit_code": 0,
+      "timed_out": false,
+      "log": "1.log",
+      "sha256": "c361fe3e7b0f6ec76e382ada3aa7ecc057ab151b3e11117ee7188c62e0027a8b"
+    },
+    {
+      "command": [
+        "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "stop",
+        "-voptargs=+acc",
+        "-sv_seed",
+        "682016495",
+        "-L",
+        "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+        "work.axil_request_control",
+        "+CONTROL=1",
+        "-do",
+        "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /axil_request_control/bus/*; run -all; vcd flush; quit -force -code 0"
+      ],
+      "cwd": "C:\\short\\axil-correct-targeted-20261109\\corrected-1-duplicate-write",
+      "exit_code": 0,
+      "timed_out": false,
+      "log": "2.log",
+      "sha256": "99d24a14d828633eaab2a999f110d04ae8a41274eebbb6b3996f6fcadffc940a"
+    }
+  ],
+  "status": "FAIL",
+  "input_sha256": {
+    "verification/axil_uvm/axil_bus.sv": "f5c5fca0d228b8fcbed7d4bd6c47fabd2fd505fd6f27f67ae179679a65c44524",
+    "verification/axil_uvm/axil_assertions.sv": "afab6005064abf8c9bf0bb28167cfb281eaf05c62bf85bca7ced408de4e53dc6",
+    "verification/axil_uvm/axil_uvm_pkg.sv": "4601e73ccaa814f44c61526edbe185f20ce6f0afdd6803bd4267574f8af707c9",
+    "verification/axil_uvm/axil_request_control.sv": "1b5bcefbe8fcc88c39515b967d1b268f20927720eaf0b3cf845e9bba1fc6dc8e",
+    "scripts/run_axil_request_control.py": "50988c1fa4de96e9c56ab12b8136e1fb2e6f0e8c2222adb87ae26723cacaed21",
+    "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+    "scripts/axil_accounting.py": "32b600716c5b9facbd6827cc0f7230589744dd6167a3deb4a0a5be561079f409"
+  },
+  "started_utc": "2026-11-09T08:53:45.471790+00:00",
+  "version_command": {
+    "command": [
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+      "-version"
+    ],
+    "cwd": "C:\\short\\axil-correct-targeted-20261109\\corrected-1-duplicate-write",
+    "exit_code": 0,
+    "timed_out": false,
+    "log": "version.log",
+    "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+  },
+  "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+  "reason": "PROCESS_OR_SIMULATOR_ERROR",
+  "wrapper_exit_code": 1,
+  "missed_negative_control": false,
+  "finished_utc": "2026-11-09T08:53:57.966525+00:00",
+  "capture_sha256": "3ad64d290fa1189099fbb0af98561eb559465a69091b5fb936e04420ff956071"
+}

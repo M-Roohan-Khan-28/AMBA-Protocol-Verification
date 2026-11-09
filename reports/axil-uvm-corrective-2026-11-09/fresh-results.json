@@ -1,0 +1,139 @@
+{
+  "source_revision": "1263410134a27dda2c93741c3aa526001bf4469a",
+  "clone_commands": [
+    {
+      "command": [
+        "git",
+        "clone",
+        "--config",
+        "core.longpaths=true",
+        "--config",
+        "core.autocrlf=false",
+        "--branch",
+        "advanced/axil-deterministic-uvm",
+        "https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git",
+        "C:\\short\\axil-correct-source-20261109"
+      ],
+      "exit_code": 0,
+      "log": "fresh-clone-0.log",
+      "sha256": "22ca69baec8b3d4be87c67a3a095e16c401ad34c5b76d8648f85544f033ab226"
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "C:\\short\\axil-correct-source-20261109",
+        "checkout",
+        "--detach",
+        "1263410134a27dda2c93741c3aa526001bf4469a"
+      ],
+      "exit_code": 0,
+      "log": "fresh-clone-1.log",
+      "sha256": "13941635e870d0d4e44fe2b6e703e21fc91d80c08b496a34707d9c9b0fcb9082"
+    }
+  ],
+  "runs": [
+    {
+      "label": "full",
+      "path": "C:\\short\\axil-correct-full-20261109",
+      "command": [
+        "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "C:\\short\\axil-correct-source-20261109\\scripts\\run_axil_uvm.py",
+        "--output",
+        "C:\\short\\axil-correct-full-20261109"
+      ],
+      "actual_wrapper_exit": 0,
+      "console_sha256": "84ae1e7ea1e79b20d32f2ae643be24d83e52fee726b2de5ce4c91144b9c2f865",
+      "qualified": "23_REQUIRED_PASS"
+    },
+    {
+      "label": "fault-data",
+      "path": "C:\\short\\axil-correct-fault-data-20261109",
+      "command": [
+        "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "C:\\short\\axil-correct-source-20261109\\scripts\\run_axil_uvm.py",
+        "--output",
+        "C:\\short\\axil-correct-fault-data-20261109",
+        "--diagnostic-adapters",
+        "0",
+        "1",
+        "2",
+        "--fault",
+        "data"
+      ],
+      "actual_wrapper_exit": 1,
+      "console_sha256": "54f24d49ed0bb8a11a735c46ead431ac11bbd960af390a37076dac8e95bda88f",
+      "events": [
+        {
+          "suite": "adapter-0",
+          "expected_fatal": "ORACLE_DATA",
+          "observed": true,
+          "simulator_exit": 0
+        },
+        {
+          "suite": "adapter-1",
+          "expected_fatal": "CPU_DATA",
+          "observed": true,
+          "simulator_exit": 0
+        },
+        {
+          "suite": "adapter-2",
+          "expected_fatal": "CPU_DATA",
+          "observed": true,
+          "simulator_exit": 0
+        }
+      ],
+      "qualified": "EXPECTED_FAULT_DETECTION"
+    },
+    {
+      "label": "fault-address",
+      "path": "C:\\short\\axil-correct-fault-address-20261109",
+      "command": [
+        "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "C:\\short\\axil-correct-source-20261109\\scripts\\run_axil_uvm.py",
+        "--output",
+        "C:\\short\\axil-correct-fault-address-20261109",
+        "--diagnostic-adapters",
+        "1",
+        "--fault",
+        "address"
+      ],
+      "actual_wrapper_exit": 1,
+      "console_sha256": "d6621bdf3b9cb6a802c33508e99f624099b87e8b80ed616a3c1f72c0ee9704ac",
+      "events": [
+        {
+          "suite": "adapter-1",
+          "expected_fatal": "REQUEST_ADDRESS",
+          "observed": true,
+          "simulator_exit": 0
+        }
+      ],
+      "qualified": "EXPECTED_FAULT_DETECTION"
+    },
+    {
+      "label": "fault-progress",
+      "path": "C:\\short\\axil-correct-fault-progress-20261109",
+      "command": [
+        "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "C:\\short\\axil-correct-source-20261109\\scripts\\run_axil_uvm.py",
+        "--output",
+        "C:\\short\\axil-correct-fault-progress-20261109",
+        "--diagnostic-adapters",
+        "1",
+        "--fault",
+        "drop-response"
+      ],
+      "actual_wrapper_exit": 1,
+      "console_sha256": "d6621bdf3b9cb6a802c33508e99f624099b87e8b80ed616a3c1f72c0ee9704ac",
+      "events": [
+        {
+          "suite": "adapter-1",
+          "expected_fatal": "PROGRESS",
+          "observed": true,
+          "simulator_exit": 0
+        }
+      ],
+      "qualified": "EXPECTED_FAULT_DETECTION"
+    }
+  ]
+}
