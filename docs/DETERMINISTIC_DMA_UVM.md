@@ -138,3 +138,19 @@ validates per-case rejection/readback and command/burst/beat relationships.
 [Reproduce](../reports/dma-uvm-corrective-2026-11-10/REPRODUCE.md) by normal clone
 and explicit detached full-SHA checkout; no feature-branch name is required.
 The original report and all NOT RUN/bounded-scope limitations above remain.
+
+## Merged-source closeout — 10 November 2026
+
+[AMBA #12](https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/pull/12) merged at `54833a559d7afbc741c08f41f7df6b3dd24a2b52`;
+[DMA docs #4](https://github.com/M-Roohan-Khan-28/AXI4-DMA-Subsystem/pull/4) merged at `18f1a822da8ca00b5eb9b8a63c13d6e79123b6f1`.
+The [new merged-source report](../reports/dma-uvm-merged-2026-11-10/SUMMARY.md)
+records a fresh detached **47/47 PASS**, aggregate/outer wrapper exit 0, with
+30 SVA controls, 68 scenarios in seven groups and ten fault parents whose
+children each exit 1. All 18 execution hashes match `e6fbb510aa88b1f5aa8a7cc04926eeefbfb5be4d`;
+runner and inventory last-change revisions both remain that SHA. The DUT lock
+stays `a2d3d57edaa9eb441f3289bf5320f4df2f074144`. All per-case counts match the qualified run:
+150,777 comparisons, 90 commands = 87 terminals + 3 cancellations, and 102
+rejected-write readback checkpoints. The enabled-lane oracle and CSR-side-effect
+findings are resolved with the preserved old/new controls linked above.
+[Reproduce the actual merge](../reports/dma-uvm-merged-2026-11-10/REPRODUCE.md).
+Historical reports, completed releases, NOT RUN statuses and scope limits remain.

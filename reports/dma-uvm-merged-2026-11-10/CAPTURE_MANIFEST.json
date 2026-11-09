@@ -1,0 +1,2052 @@
+{
+  "policy": "Exact original capture bytes; scoped -text; no newline conversion",
+  "tested_source": "54833a559d7afbc741c08f41f7df6b3dd24a2b52",
+  "files": [
+    {
+      "path": "run/csr-protected-state/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\csr-protected-state\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/csr-protected-state/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\csr-protected-state\\1.log",
+      "sha256": "f8ff25e36bfd67b9cf5f5d7f42bfd3ce31cba31d7effab9ad2513962230cc3a4",
+      "bytes": 1301
+    },
+    {
+      "path": "run/csr-protected-state/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\csr-protected-state\\2.log",
+      "sha256": "0b0a6f7185dfa4a5845cc0a4288377ced75a5c5db261a00b9a826e3819838814",
+      "bytes": 8308
+    },
+    {
+      "path": "run/csr-protected-state/capture.vcd",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\csr-protected-state\\capture.vcd",
+      "sha256": "d5ecc69b67cdb3e69cb4c740527bb3f429df7c3de8822125a0ac9008622de6fd",
+      "bytes": 96605
+    },
+    {
+      "path": "run/csr-protected-state/case-csr_rejections_sticky_error.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\csr-protected-state\\case-csr_rejections_sticky_error.json",
+      "sha256": "8c2fc74e77491dd486e61949b7ee6e760ec404fc03e79daadfd41be4b3a58f92",
+      "bytes": 531
+    },
+    {
+      "path": "run/csr-protected-state/cases.txt",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\csr-protected-state\\cases.txt",
+      "sha256": "cbd1b59bfca9c98d8986f68359b89fd67b21fdae3176768097f37603182fa9ef",
+      "bytes": 68
+    },
+    {
+      "path": "run/csr-protected-state/tr_db.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\csr-protected-state\\tr_db.log",
+      "sha256": "c624542a645580032d949176b50126e6f98ce76702d6cecb5634f80ed1da350b",
+      "bytes": 97
+    },
+    {
+      "path": "run/fault-active_data/child/fault-active_data/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-active_data\\child\\fault-active_data\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-active_data/child/fault-active_data/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-active_data\\child\\fault-active_data\\1.log",
+      "sha256": "29af29bc5be4067bc01b240763a71f7a756f36f75487b1cdccfb1178871092bd",
+      "bytes": 1325
+    },
+    {
+      "path": "run/fault-active_data/child/fault-active_data/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-active_data\\child\\fault-active_data\\2.log",
+      "sha256": "9c3047b2cd3a8b5d16141c4bc1a1d2477cf3a6bf5816cb9f2cf7bb2c2378f875",
+      "bytes": 4696
+    },
+    {
+      "path": "run/fault-active_data/child/fault-active_data/capture.vcd",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-active_data\\child\\fault-active_data\\capture.vcd",
+      "sha256": "d53a5f2ff0f592ca09917c4b5d82bd24a1614e148a256f2faa03527007e7e1d9",
+      "bytes": 7523
+    },
+    {
+      "path": "run/fault-active_data/child/fault-active_data/cases.txt",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-active_data\\child\\fault-active_data\\cases.txt",
+      "sha256": "43a2dd9b43da962f69bcaa149bdf02b02d56886aeb8b6019488d9f613cfc672e",
+      "bytes": 49
+    },
+    {
+      "path": "run/fault-active_data/child/fault-active_data/tr_db.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-active_data\\child\\fault-active_data\\tr_db.log",
+      "sha256": "c624542a645580032d949176b50126e6f98ce76702d6cecb5634f80ed1da350b",
+      "bytes": 97
+    },
+    {
+      "path": "run/fault-active_data/child/results.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-active_data\\child\\results.json",
+      "sha256": "d746d1e6e416610f57321e2e4926fc2569e2f29d56b6ed80ec605289e7ad702c",
+      "bytes": 11596
+    },
+    {
+      "path": "run/fault-active_data/child/source-0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-active_data\\child\\source-0.log",
+      "sha256": "d300046a6172dd51ab54b47c3e9e4427a08287980759e3c08489c274579eae81",
+      "bytes": 580
+    },
+    {
+      "path": "run/fault-active_data/child/source-1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-active_data\\child\\source-1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-active_data/child/source-2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-active_data\\child\\source-2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-active_data/child/version.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-active_data\\child\\version.log",
+      "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "bytes": 83
+    },
+    {
+      "path": "run/fault-active_data/child-wrapper.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-active_data\\child-wrapper.log",
+      "sha256": "24a1d3709a5e478dff6aedcfe4db05ccf64191482abf732e8bb2d32364e42e1f",
+      "bytes": 51
+    },
+    {
+      "path": "run/fault-csr_busy_side_effect/child/fault-csr_busy_side_effect/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_busy_side_effect\\child\\fault-csr_busy_side_effect\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-csr_busy_side_effect/child/fault-csr_busy_side_effect/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_busy_side_effect\\child\\fault-csr_busy_side_effect\\1.log",
+      "sha256": "aadcb17036ee0d8970acde4e80ff124a701db470ecd5b6da83db916511c1bf74",
+      "bytes": 1365
+    },
+    {
+      "path": "run/fault-csr_busy_side_effect/child/fault-csr_busy_side_effect/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_busy_side_effect\\child\\fault-csr_busy_side_effect\\2.log",
+      "sha256": "dbd539954a4bdc4a35d736d64ea6a749af1073331bbea4a28b3ac78e1a158272",
+      "bytes": 4843
+    },
+    {
+      "path": "run/fault-csr_busy_side_effect/child/fault-csr_busy_side_effect/capture.vcd",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_busy_side_effect\\child\\fault-csr_busy_side_effect\\capture.vcd",
+      "sha256": "cfb11f04868eca3ddf25e930df3fd85cfeef9df69ac61a5d0398d280cdaeb3e4",
+      "bytes": 5089
+    },
+    {
+      "path": "run/fault-csr_busy_side_effect/child/fault-csr_busy_side_effect/cases.txt",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_busy_side_effect\\child\\fault-csr_busy_side_effect\\cases.txt",
+      "sha256": "0b0cffdbb31c9b9f13158fe4886bc8bc71b671700df9f442f5848c6eec5b07be",
+      "bytes": 54
+    },
+    {
+      "path": "run/fault-csr_busy_side_effect/child/fault-csr_busy_side_effect/disposable-rtl/axi4_dma_subsystem.sv",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_busy_side_effect\\child\\fault-csr_busy_side_effect\\disposable-rtl\\axi4_dma_subsystem.sv",
+      "sha256": "6c04a0cc013cf9938feb84f3208f382dc89f2751b954ad6c76d207d5b3bca41e",
+      "bytes": 12434
+    },
+    {
+      "path": "run/fault-csr_busy_side_effect/child/fault-csr_busy_side_effect/disposable-rtl/mutation.diff",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_busy_side_effect\\child\\fault-csr_busy_side_effect\\disposable-rtl\\mutation.diff",
+      "sha256": "b95973602fd8b0ae5852a69646800e666dbbf7d1cca1d1e21b19bc26e41451a4",
+      "bytes": 835
+    },
+    {
+      "path": "run/fault-csr_busy_side_effect/child/fault-csr_busy_side_effect/disposable-rtl/mutation.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_busy_side_effect\\child\\fault-csr_busy_side_effect\\disposable-rtl\\mutation.json",
+      "sha256": "a7d06544557a9300f1e22866059def4b71978342c661ec7884741184a5c85958",
+      "bytes": 790
+    },
+    {
+      "path": "run/fault-csr_busy_side_effect/child/fault-csr_busy_side_effect/tr_db.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_busy_side_effect\\child\\fault-csr_busy_side_effect\\tr_db.log",
+      "sha256": "c624542a645580032d949176b50126e6f98ce76702d6cecb5634f80ed1da350b",
+      "bytes": 97
+    },
+    {
+      "path": "run/fault-csr_busy_side_effect/child/results.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_busy_side_effect\\child\\results.json",
+      "sha256": "7d61739f47e21f6492d9056323aff49cbd38d72b60a6c5ce3efaaaf14716d705",
+      "bytes": 12694
+    },
+    {
+      "path": "run/fault-csr_busy_side_effect/child/source-0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_busy_side_effect\\child\\source-0.log",
+      "sha256": "d300046a6172dd51ab54b47c3e9e4427a08287980759e3c08489c274579eae81",
+      "bytes": 580
+    },
+    {
+      "path": "run/fault-csr_busy_side_effect/child/source-1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_busy_side_effect\\child\\source-1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-csr_busy_side_effect/child/source-2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_busy_side_effect\\child\\source-2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-csr_busy_side_effect/child/version.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_busy_side_effect\\child\\version.log",
+      "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "bytes": 83
+    },
+    {
+      "path": "run/fault-csr_busy_side_effect/child-wrapper.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_busy_side_effect\\child-wrapper.log",
+      "sha256": "935c246d91d4c1f685f62ff25f2e5306154c49eff565752123d6ee7c23c64525",
+      "bytes": 60
+    },
+    {
+      "path": "run/fault-csr_idle_side_effect/child/fault-csr_idle_side_effect/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_idle_side_effect\\child\\fault-csr_idle_side_effect\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-csr_idle_side_effect/child/fault-csr_idle_side_effect/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_idle_side_effect\\child\\fault-csr_idle_side_effect\\1.log",
+      "sha256": "ac8c471a982de95a197535dbd40af099b9f8cb9baaf2126e1cf0d5099a7d0883",
+      "bytes": 1365
+    },
+    {
+      "path": "run/fault-csr_idle_side_effect/child/fault-csr_idle_side_effect/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_idle_side_effect\\child\\fault-csr_idle_side_effect\\2.log",
+      "sha256": "3295b7b86e88e15a5dbfd39ad64b4d3847403975430c2152b062fbacb1f7c76a",
+      "bytes": 4848
+    },
+    {
+      "path": "run/fault-csr_idle_side_effect/child/fault-csr_idle_side_effect/capture.vcd",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_idle_side_effect\\child\\fault-csr_idle_side_effect\\capture.vcd",
+      "sha256": "2cb53f86531fd128dd0ebafdf73f423c97ed16b30e557ee949c3807273b2d446",
+      "bytes": 3908
+    },
+    {
+      "path": "run/fault-csr_idle_side_effect/child/fault-csr_idle_side_effect/cases.txt",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_idle_side_effect\\child\\fault-csr_idle_side_effect\\cases.txt",
+      "sha256": "22a41e0d4f119c081965c9059b238cfa884d7e59768143bd8655f71310257ff6",
+      "bytes": 58
+    },
+    {
+      "path": "run/fault-csr_idle_side_effect/child/fault-csr_idle_side_effect/disposable-rtl/axi4_dma_subsystem.sv",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_idle_side_effect\\child\\fault-csr_idle_side_effect\\disposable-rtl\\axi4_dma_subsystem.sv",
+      "sha256": "42fd6ef73832d326218a13b5ecca80ce2925367bef8edccbe2ceb59ee7dcc57f",
+      "bytes": 12416
+    },
+    {
+      "path": "run/fault-csr_idle_side_effect/child/fault-csr_idle_side_effect/disposable-rtl/mutation.diff",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_idle_side_effect\\child\\fault-csr_idle_side_effect\\disposable-rtl\\mutation.diff",
+      "sha256": "60e97a43d7c4847fef705480da55ebad7334ec2242964d68ee5160a4102834bb",
+      "bytes": 611
+    },
+    {
+      "path": "run/fault-csr_idle_side_effect/child/fault-csr_idle_side_effect/disposable-rtl/mutation.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_idle_side_effect\\child\\fault-csr_idle_side_effect\\disposable-rtl\\mutation.json",
+      "sha256": "fd5f8676ed43080350eb4d02caff7fc74d06c77fc1dc1af259142eba5dbd3b60",
+      "bytes": 790
+    },
+    {
+      "path": "run/fault-csr_idle_side_effect/child/fault-csr_idle_side_effect/tr_db.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_idle_side_effect\\child\\fault-csr_idle_side_effect\\tr_db.log",
+      "sha256": "c624542a645580032d949176b50126e6f98ce76702d6cecb5634f80ed1da350b",
+      "bytes": 97
+    },
+    {
+      "path": "run/fault-csr_idle_side_effect/child/results.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_idle_side_effect\\child\\results.json",
+      "sha256": "ad48b52e4a888222f602183bab4c82521549f2094054b36f812a5eebaf69d968",
+      "bytes": 12694
+    },
+    {
+      "path": "run/fault-csr_idle_side_effect/child/source-0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_idle_side_effect\\child\\source-0.log",
+      "sha256": "d300046a6172dd51ab54b47c3e9e4427a08287980759e3c08489c274579eae81",
+      "bytes": 580
+    },
+    {
+      "path": "run/fault-csr_idle_side_effect/child/source-1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_idle_side_effect\\child\\source-1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-csr_idle_side_effect/child/source-2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_idle_side_effect\\child\\source-2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-csr_idle_side_effect/child/version.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_idle_side_effect\\child\\version.log",
+      "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "bytes": 83
+    },
+    {
+      "path": "run/fault-csr_idle_side_effect/child-wrapper.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-csr_idle_side_effect\\child-wrapper.log",
+      "sha256": "0d0ccf9fe9bcf575446adb82a1a2ad244e15f47963a23a915e9adfc7da6dd2ff",
+      "bytes": 60
+    },
+    {
+      "path": "run/fault-destination_progress/child/fault-destination_progress/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-destination_progress\\child\\fault-destination_progress\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-destination_progress/child/fault-destination_progress/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-destination_progress\\child\\fault-destination_progress\\1.log",
+      "sha256": "31a12e3e3be098700b4f3c1f0ac5806f2bad4613426a9ee3ec1352fef2af4bac",
+      "bytes": 1334
+    },
+    {
+      "path": "run/fault-destination_progress/child/fault-destination_progress/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-destination_progress\\child\\fault-destination_progress\\2.log",
+      "sha256": "b5c01d2db9b0bf1bcfd2ff0865d9c9eb92ae2c9e23a807a74ec01b243c0839bc",
+      "bytes": 4734
+    },
+    {
+      "path": "run/fault-destination_progress/child/fault-destination_progress/capture.vcd",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-destination_progress\\child\\fault-destination_progress\\capture.vcd",
+      "sha256": "bfddbe21561d29814e6e3ca5b909a2fb419e6e1a6fb110c2ef2a393a40435dd8",
+      "bytes": 7696
+    },
+    {
+      "path": "run/fault-destination_progress/child/fault-destination_progress/cases.txt",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-destination_progress\\child\\fault-destination_progress\\cases.txt",
+      "sha256": "43a2dd9b43da962f69bcaa149bdf02b02d56886aeb8b6019488d9f613cfc672e",
+      "bytes": 49
+    },
+    {
+      "path": "run/fault-destination_progress/child/fault-destination_progress/tr_db.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-destination_progress\\child\\fault-destination_progress\\tr_db.log",
+      "sha256": "c624542a645580032d949176b50126e6f98ce76702d6cecb5634f80ed1da350b",
+      "bytes": 97
+    },
+    {
+      "path": "run/fault-destination_progress/child/results.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-destination_progress\\child\\results.json",
+      "sha256": "b7180e975c953e5aead5a37c1544ca369fc4d1bb529965650408b915290afa58",
+      "bytes": 11794
+    },
+    {
+      "path": "run/fault-destination_progress/child/source-0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-destination_progress\\child\\source-0.log",
+      "sha256": "d300046a6172dd51ab54b47c3e9e4427a08287980759e3c08489c274579eae81",
+      "bytes": 580
+    },
+    {
+      "path": "run/fault-destination_progress/child/source-1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-destination_progress\\child\\source-1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-destination_progress/child/source-2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-destination_progress\\child\\source-2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-destination_progress/child/version.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-destination_progress\\child\\version.log",
+      "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "bytes": 83
+    },
+    {
+      "path": "run/fault-destination_progress/child-wrapper.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-destination_progress\\child-wrapper.log",
+      "sha256": "b7790f0de108ac4a4d9da43c0c05ffb19beaef21322df4e1d92cf288e5685b4d",
+      "bytes": 60
+    },
+    {
+      "path": "run/fault-duplicate_read/child/fault-duplicate_read/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-duplicate_read\\child\\fault-duplicate_read\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-duplicate_read/child/fault-duplicate_read/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-duplicate_read\\child\\fault-duplicate_read\\1.log",
+      "sha256": "f5491ed25619ede25fe7c13c5a8eba0c622697b508b4713815981dfc2faac37e",
+      "bytes": 1328
+    },
+    {
+      "path": "run/fault-duplicate_read/child/fault-duplicate_read/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-duplicate_read\\child\\fault-duplicate_read\\2.log",
+      "sha256": "eafd5bda02b3f0ff3a0814f3101b137ee4cd569ee8d100c0f0f8a45c44893f38",
+      "bytes": 4880
+    },
+    {
+      "path": "run/fault-duplicate_read/child/fault-duplicate_read/capture.vcd",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-duplicate_read\\child\\fault-duplicate_read\\capture.vcd",
+      "sha256": "3c2a5cae00a0e94ee17e5c2c91926fe0d65a2aec21c0f022337c179c620a782f",
+      "bytes": 5162
+    },
+    {
+      "path": "run/fault-duplicate_read/child/fault-duplicate_read/cases.txt",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-duplicate_read\\child\\fault-duplicate_read\\cases.txt",
+      "sha256": "44b7354e258c2774bb0ad31f8f98ccac551c68c49156a9d9d2075e3adbc44b3f",
+      "bytes": 46
+    },
+    {
+      "path": "run/fault-duplicate_read/child/fault-duplicate_read/tr_db.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-duplicate_read\\child\\fault-duplicate_read\\tr_db.log",
+      "sha256": "c624542a645580032d949176b50126e6f98ce76702d6cecb5634f80ed1da350b",
+      "bytes": 97
+    },
+    {
+      "path": "run/fault-duplicate_read/child/results.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-duplicate_read\\child\\results.json",
+      "sha256": "78a92ccda92b29e6ea88a0a99295d4f26512b1b3928e80a9d810f02063615564",
+      "bytes": 11662
+    },
+    {
+      "path": "run/fault-duplicate_read/child/source-0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-duplicate_read\\child\\source-0.log",
+      "sha256": "d300046a6172dd51ab54b47c3e9e4427a08287980759e3c08489c274579eae81",
+      "bytes": 580
+    },
+    {
+      "path": "run/fault-duplicate_read/child/source-1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-duplicate_read\\child\\source-1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-duplicate_read/child/source-2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-duplicate_read\\child\\source-2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-duplicate_read/child/version.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-duplicate_read\\child\\version.log",
+      "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "bytes": 83
+    },
+    {
+      "path": "run/fault-duplicate_read/child-wrapper.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-duplicate_read\\child-wrapper.log",
+      "sha256": "ae214729b5b5fc6ae6c566ba8db53405d5115faa29e39d40adb0f98a0d2a22dd",
+      "bytes": 54
+    },
+    {
+      "path": "run/fault-duplicate_write/child/fault-duplicate_write/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-duplicate_write\\child\\fault-duplicate_write\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-duplicate_write/child/fault-duplicate_write/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-duplicate_write\\child\\fault-duplicate_write\\1.log",
+      "sha256": "48e762af3b71872c4e232138043c849adbcdfcad017c18fd0863c4b11f7fc67f",
+      "bytes": 1329
+    },
+    {
+      "path": "run/fault-duplicate_write/child/fault-duplicate_write/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-duplicate_write\\child\\fault-duplicate_write\\2.log",
+      "sha256": "4bcc6087a19b0d08fd30b6534cbd6e1c7183064345e2c32dd1323275cdb35767",
+      "bytes": 4925
+    },
+    {
+      "path": "run/fault-duplicate_write/child/fault-duplicate_write/capture.vcd",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-duplicate_write\\child\\fault-duplicate_write\\capture.vcd",
+      "sha256": "0f72f809c9c392b66d2680d11709b2c1576cc38df934316a282ba698460cf2fe",
+      "bytes": 4806
+    },
+    {
+      "path": "run/fault-duplicate_write/child/fault-duplicate_write/cases.txt",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-duplicate_write\\child\\fault-duplicate_write\\cases.txt",
+      "sha256": "070f4f283646655af7a818f0454bd2360149f7be443174a480923ac4cf18c193",
+      "bytes": 54
+    },
+    {
+      "path": "run/fault-duplicate_write/child/fault-duplicate_write/tr_db.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-duplicate_write\\child\\fault-duplicate_write\\tr_db.log",
+      "sha256": "c624542a645580032d949176b50126e6f98ce76702d6cecb5634f80ed1da350b",
+      "bytes": 97
+    },
+    {
+      "path": "run/fault-duplicate_write/child/results.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-duplicate_write\\child\\results.json",
+      "sha256": "3d59ca1cadc02821a7ab9994c8f15519c269e3f0a6d81d7ffe1d62ffcbbc985c",
+      "bytes": 11684
+    },
+    {
+      "path": "run/fault-duplicate_write/child/source-0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-duplicate_write\\child\\source-0.log",
+      "sha256": "d300046a6172dd51ab54b47c3e9e4427a08287980759e3c08489c274579eae81",
+      "bytes": 580
+    },
+    {
+      "path": "run/fault-duplicate_write/child/source-1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-duplicate_write\\child\\source-1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-duplicate_write/child/source-2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-duplicate_write\\child\\source-2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-duplicate_write/child/version.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-duplicate_write\\child\\version.log",
+      "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "bytes": 83
+    },
+    {
+      "path": "run/fault-duplicate_write/child-wrapper.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-duplicate_write\\child-wrapper.log",
+      "sha256": "8e475c57ca4cf9234d24bf9e77b322504f0a378731f8df8e00434c29307dd596",
+      "bytes": 55
+    },
+    {
+      "path": "run/fault-missing_marker/child/fault-missing_marker/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child\\fault-missing_marker\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-missing_marker/child/fault-missing_marker/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child\\fault-missing_marker\\1.log",
+      "sha256": "1537c5ebba7d64a607b477ff25b4675cce4c2870b9ad7be0f3852241c3b31912",
+      "bytes": 1328
+    },
+    {
+      "path": "run/fault-missing_marker/child/fault-missing_marker/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child\\fault-missing_marker\\2.log",
+      "sha256": "4f5944b2c976cd551ed933c72d6f3dfb9ee735288a67f38b563ceee6d9198e76",
+      "bytes": 4756
+    },
+    {
+      "path": "run/fault-missing_marker/child/fault-missing_marker/capture.vcd",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child\\fault-missing_marker\\capture.vcd",
+      "sha256": "7574cb57b9ef3429b2c0fd980d620a27e9660e7616a067aba0c3d186b090f098",
+      "bytes": 12709
+    },
+    {
+      "path": "run/fault-missing_marker/child/fault-missing_marker/case-length_129.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child\\fault-missing_marker\\case-length_129.json",
+      "sha256": "1030610bbc767c86efce6e7ed920b79c645f65372d297f8b4078785a10df5b59",
+      "bytes": 513
+    },
+    {
+      "path": "run/fault-missing_marker/child/fault-missing_marker/cases.txt",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child\\fault-missing_marker\\cases.txt",
+      "sha256": "43a2dd9b43da962f69bcaa149bdf02b02d56886aeb8b6019488d9f613cfc672e",
+      "bytes": 49
+    },
+    {
+      "path": "run/fault-missing_marker/child/fault-missing_marker/tr_db.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child\\fault-missing_marker\\tr_db.log",
+      "sha256": "c624542a645580032d949176b50126e6f98ce76702d6cecb5634f80ed1da350b",
+      "bytes": 97
+    },
+    {
+      "path": "run/fault-missing_marker/child/results.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child\\results.json",
+      "sha256": "2dd9f4fc7a116bac52f34a925ad608631257a7bb6593916c87c9598dc0bb6358",
+      "bytes": 11619
+    },
+    {
+      "path": "run/fault-missing_marker/child/source-0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child\\source-0.log",
+      "sha256": "d300046a6172dd51ab54b47c3e9e4427a08287980759e3c08489c274579eae81",
+      "bytes": 580
+    },
+    {
+      "path": "run/fault-missing_marker/child/source-1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child\\source-1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-missing_marker/child/source-2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child\\source-2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-missing_marker/child/version.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child\\version.log",
+      "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "bytes": 83
+    },
+    {
+      "path": "run/fault-missing_marker/child-wrapper.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-missing_marker\\child-wrapper.log",
+      "sha256": "cdc9a9ca56e402d64da9a050675fb426602c39b238c1f2f65321591749e1e1c9",
+      "bytes": 49
+    },
+    {
+      "path": "run/fault-progress/child/fault-progress/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-progress\\child\\fault-progress\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-progress/child/fault-progress/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-progress\\child\\fault-progress\\1.log",
+      "sha256": "089f0ff92eb7beb6d33c3a4994ac9a89dbfeab416027b6a251c9f6fa24b50cb7",
+      "bytes": 1322
+    },
+    {
+      "path": "run/fault-progress/child/fault-progress/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-progress\\child\\fault-progress\\2.log",
+      "sha256": "609155501477548b25abe3e8bcd028530eb0e48f78470c27e19ce19b8ed63ef5",
+      "bytes": 4668
+    },
+    {
+      "path": "run/fault-progress/child/fault-progress/capture.vcd",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-progress\\child\\fault-progress\\capture.vcd",
+      "sha256": "0259968afe514e7600d8b87db7c58afd276e2c6b85747e46bb1ed2e19f302e26",
+      "bytes": 315623
+    },
+    {
+      "path": "run/fault-progress/child/fault-progress/cases.txt",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-progress\\child\\fault-progress\\cases.txt",
+      "sha256": "43a2dd9b43da962f69bcaa149bdf02b02d56886aeb8b6019488d9f613cfc672e",
+      "bytes": 49
+    },
+    {
+      "path": "run/fault-progress/child/fault-progress/tr_db.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-progress\\child\\fault-progress\\tr_db.log",
+      "sha256": "c624542a645580032d949176b50126e6f98ce76702d6cecb5634f80ed1da350b",
+      "bytes": 97
+    },
+    {
+      "path": "run/fault-progress/child/results.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-progress\\child\\results.json",
+      "sha256": "3015c656f585cf9488d4124863b6c6b1757a674fb0edb1ad8b26c7f2e3f49658",
+      "bytes": 11530
+    },
+    {
+      "path": "run/fault-progress/child/source-0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-progress\\child\\source-0.log",
+      "sha256": "d300046a6172dd51ab54b47c3e9e4427a08287980759e3c08489c274579eae81",
+      "bytes": 580
+    },
+    {
+      "path": "run/fault-progress/child/source-1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-progress\\child\\source-1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-progress/child/source-2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-progress\\child\\source-2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-progress/child/version.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-progress\\child\\version.log",
+      "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "bytes": 83
+    },
+    {
+      "path": "run/fault-progress/child-wrapper.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-progress\\child-wrapper.log",
+      "sha256": "eb7fe16f3648decd6c4b2f38348f2fdb38c3010c69c30487912e25f5ed275adf",
+      "bytes": 48
+    },
+    {
+      "path": "run/fault-source_alias/child/fault-source_alias/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-source_alias\\child\\fault-source_alias\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-source_alias/child/fault-source_alias/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-source_alias\\child\\fault-source_alias\\1.log",
+      "sha256": "3ef4cd1f16787ded711b1e23dc078f47eb4f2f0650f5f34d010a0fbc1b291242",
+      "bytes": 1326
+    },
+    {
+      "path": "run/fault-source_alias/child/fault-source_alias/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-source_alias\\child\\fault-source_alias\\2.log",
+      "sha256": "dba7256e088575d7cb4f1f94fbe42bfec06cee7a4c02a66a4efd0522590be28f",
+      "bytes": 4702
+    },
+    {
+      "path": "run/fault-source_alias/child/fault-source_alias/capture.vcd",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-source_alias\\child\\fault-source_alias\\capture.vcd",
+      "sha256": "f42d9761b92d1984091a8883a60cea5eb3ca3c0335da16272d370246609c153f",
+      "bytes": 4420
+    },
+    {
+      "path": "run/fault-source_alias/child/fault-source_alias/cases.txt",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-source_alias\\child\\fault-source_alias\\cases.txt",
+      "sha256": "43a2dd9b43da962f69bcaa149bdf02b02d56886aeb8b6019488d9f613cfc672e",
+      "bytes": 49
+    },
+    {
+      "path": "run/fault-source_alias/child/fault-source_alias/tr_db.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-source_alias\\child\\fault-source_alias\\tr_db.log",
+      "sha256": "c624542a645580032d949176b50126e6f98ce76702d6cecb5634f80ed1da350b",
+      "bytes": 97
+    },
+    {
+      "path": "run/fault-source_alias/child/results.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-source_alias\\child\\results.json",
+      "sha256": "8a884a1d939a9b25c040662365ddfe9bb7ee0f0064af0d40a0eff9784461f16d",
+      "bytes": 11618
+    },
+    {
+      "path": "run/fault-source_alias/child/source-0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-source_alias\\child\\source-0.log",
+      "sha256": "d300046a6172dd51ab54b47c3e9e4427a08287980759e3c08489c274579eae81",
+      "bytes": 580
+    },
+    {
+      "path": "run/fault-source_alias/child/source-1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-source_alias\\child\\source-1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-source_alias/child/source-2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-source_alias\\child\\source-2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-source_alias/child/version.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-source_alias\\child\\version.log",
+      "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "bytes": 83
+    },
+    {
+      "path": "run/fault-source_alias/child-wrapper.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-source_alias\\child-wrapper.log",
+      "sha256": "2795fb43f83f974af2c5de6b09f50eb2be74a9e78eb23cadb470c1c34aeedeb6",
+      "bytes": 52
+    },
+    {
+      "path": "run/fault-tail_strobe/child/fault-tail_strobe/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-tail_strobe\\child\\fault-tail_strobe\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-tail_strobe/child/fault-tail_strobe/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-tail_strobe\\child\\fault-tail_strobe\\1.log",
+      "sha256": "fc6e661004e96da2f96473813f9cac49a50d5aaf1e16506309af618dc4e456b7",
+      "bytes": 1325
+    },
+    {
+      "path": "run/fault-tail_strobe/child/fault-tail_strobe/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-tail_strobe\\child\\fault-tail_strobe\\2.log",
+      "sha256": "defcf5e674ad780f4902cf41604f70210cba9385a7467098cac6a508f3574eca",
+      "bytes": 4689
+    },
+    {
+      "path": "run/fault-tail_strobe/child/fault-tail_strobe/capture.vcd",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-tail_strobe\\child\\fault-tail_strobe\\capture.vcd",
+      "sha256": "1aad6c5862101c1cbda1eca17f6fd15270d9efb0ac267c01b458eb84ba5ca29b",
+      "bytes": 9970
+    },
+    {
+      "path": "run/fault-tail_strobe/child/fault-tail_strobe/cases.txt",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-tail_strobe\\child\\fault-tail_strobe\\cases.txt",
+      "sha256": "43a2dd9b43da962f69bcaa149bdf02b02d56886aeb8b6019488d9f613cfc672e",
+      "bytes": 49
+    },
+    {
+      "path": "run/fault-tail_strobe/child/fault-tail_strobe/tr_db.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-tail_strobe\\child\\fault-tail_strobe\\tr_db.log",
+      "sha256": "c624542a645580032d949176b50126e6f98ce76702d6cecb5634f80ed1da350b",
+      "bytes": 97
+    },
+    {
+      "path": "run/fault-tail_strobe/child/results.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-tail_strobe\\child\\results.json",
+      "sha256": "eef610409cd51209c63b413eab3d7c4ca786470be9c466a938be871f7bdaaa06",
+      "bytes": 11596
+    },
+    {
+      "path": "run/fault-tail_strobe/child/source-0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-tail_strobe\\child\\source-0.log",
+      "sha256": "d300046a6172dd51ab54b47c3e9e4427a08287980759e3c08489c274579eae81",
+      "bytes": 580
+    },
+    {
+      "path": "run/fault-tail_strobe/child/source-1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-tail_strobe\\child\\source-1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-tail_strobe/child/source-2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-tail_strobe\\child\\source-2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/fault-tail_strobe/child/version.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-tail_strobe\\child\\version.log",
+      "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "bytes": 83
+    },
+    {
+      "path": "run/fault-tail_strobe/child-wrapper.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\fault-tail_strobe\\child-wrapper.log",
+      "sha256": "67f811652731d6c3dc0e73bc62434bb09f057fee2a08173ac8f1256a4013c57c",
+      "bytes": 51
+    },
+    {
+      "path": "run/functional/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/functional/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\1.log",
+      "sha256": "b6a1c989c973b1fbb75fed4967c90df3bce780011f708426b7087e73cb0e9316",
+      "bytes": 1301
+    },
+    {
+      "path": "run/functional/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\2.log",
+      "sha256": "3eba0689cdefaeae29ea04970aa2c3773f029cf2b7adcc31333befe535b22979",
+      "bytes": 16238
+    },
+    {
+      "path": "run/functional/capture.vcd",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\capture.vcd",
+      "sha256": "b43fa508cd3ce9f4e9060e9f3f972b9810fae2571dc3e744abdc39cc1c9b16ba",
+      "bytes": 990393
+    },
+    {
+      "path": "run/functional/case-adjacent_nonoverlap.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-adjacent_nonoverlap.json",
+      "sha256": "5d01aee4a36273bb97d8859f926ca5d1568cee4aa22a1411fd1d9b10dd81c8bd",
+      "bytes": 519
+    },
+    {
+      "path": "run/functional/case-all_w_before_aw_1.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-all_w_before_aw_1.json",
+      "sha256": "c8c5368b5c6ca3ebbc3150f59487e66ec8834a6dd08cf29702b9d2f51e9ce908",
+      "bytes": 517
+    },
+    {
+      "path": "run/functional/case-all_w_before_aw_16.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-all_w_before_aw_16.json",
+      "sha256": "cd1850c38a993c9256fe1111fdfe2317e57421e56c08cd07bebc86288f90fddd",
+      "bytes": 521
+    },
+    {
+      "path": "run/functional/case-all_w_before_aw_2.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-all_w_before_aw_2.json",
+      "sha256": "6e3318170e8eaa71592ac016dbb7c5a109fd7d16b5aabbbce11637fa15ab1015",
+      "bytes": 517
+    },
+    {
+      "path": "run/functional/case-aw_first.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-aw_first.json",
+      "sha256": "b8486a6707869cc2e814baf674e180959e9e4631664ae292ab1a901849ae4140",
+      "bytes": 511
+    },
+    {
+      "path": "run/functional/case-awready_waits_wvalid.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-awready_waits_wvalid.json",
+      "sha256": "65bac3e3f5bd4792bfe685116917817d7167dc71562ff2c83acbf6ba2eabedff",
+      "bytes": 523
+    },
+    {
+      "path": "run/functional/case-both_page_splits.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-both_page_splits.json",
+      "sha256": "502219e0cce729bff7244f00575f5c807591ca2556956ba2a7260579a22dd5d2",
+      "bytes": 519
+    },
+    {
+      "path": "run/functional/case-busy_rejections.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-busy_rejections.json",
+      "sha256": "5b2fb887b4221300e6bdf9c06c63b69a53516498074b02925df165ae97960906",
+      "bytes": 518
+    },
+    {
+      "path": "run/functional/case-csr_address_first.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-csr_address_first.json",
+      "sha256": "44d7ae4b9a006bcddb002043743c696ac5ed22944178218551d83ec5d0d9169b",
+      "bytes": 517
+    },
+    {
+      "path": "run/functional/case-csr_data_first.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-csr_data_first.json",
+      "sha256": "6da9c40dd7291a1f8f1d8b8ff56ce88fd8ba8c1f94275af8a82d2d3f8a2fadcc",
+      "bytes": 514
+    },
+    {
+      "path": "run/functional/case-csr_invalid_classes.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-csr_invalid_classes.json",
+      "sha256": "07a240802dabcb92905172d1762869377827b0dcfdc2aed18d168f930e480e7d",
+      "bytes": 523
+    },
+    {
+      "path": "run/functional/case-csr_simultaneous.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-csr_simultaneous.json",
+      "sha256": "ddd329b0f761e072cb955aeac894f6b5f165b89f1b43ae3f992baa4e175127cc",
+      "bytes": 516
+    },
+    {
+      "path": "run/functional/case-destination_page_split.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-destination_page_split.json",
+      "sha256": "c55edb0f7a8649315e76ba613f53efeb03eca2581ca93315ceea0acb283b5884",
+      "bytes": 525
+    },
+    {
+      "path": "run/functional/case-exact_destination_top_end.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-exact_destination_top_end.json",
+      "sha256": "ea1e4d74d53facf8ed855ff215e909cb1f9c0dae0d075a3da3267e8d7eef9963",
+      "bytes": 525
+    },
+    {
+      "path": "run/functional/case-exact_source_top_end.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-exact_source_top_end.json",
+      "sha256": "40e85d2ac45bceef4dae7ef391a9ddfe157da429b9259b4eac3ae56dead7ced0",
+      "bytes": 520
+    },
+    {
+      "path": "run/functional/case-exact_top_page.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-exact_top_page.json",
+      "sha256": "6e8dd2f9bfc60b4e01564be0c0a4ef7083e4a21dc78d464434f5e648d6c388c8",
+      "bytes": 526
+    },
+    {
+      "path": "run/functional/case-high_address_source.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-high_address_source.json",
+      "sha256": "e062b1e04f7261f7db8dff4e5b74d27e35e742dfab71c6ab2ab3a5fd9752423e",
+      "bytes": 522
+    },
+    {
+      "path": "run/functional/case-independent_stalls.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-independent_stalls.json",
+      "sha256": "3ade533541a4537f6dfe8286167a842dc2c51788e9e57e262bad428031318804",
+      "bytes": 521
+    },
+    {
+      "path": "run/functional/case-length_128.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-length_128.json",
+      "sha256": "6c928a75c5dcf40def31a3cc086c5770d999a41769b844039efd3bead94cfff2",
+      "bytes": 513
+    },
+    {
+      "path": "run/functional/case-length_129.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-length_129.json",
+      "sha256": "72f7ac24a89ff153a36026a9fae164bdbe8ed218c49709ef0c5cfe672042f5e0",
+      "bytes": 513
+    },
+    {
+      "path": "run/functional/case-length_16.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-length_16.json",
+      "sha256": "7821254f84d92b172d757f83a07c6bdd98b110c879017f7759a6b06ac040e578",
+      "bytes": 509
+    },
+    {
+      "path": "run/functional/case-length_4096.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-length_4096.json",
+      "sha256": "5a0ef0363463b3431b7b04d098c2a969201934e3cd22c4dbf440fc6d00a146e8",
+      "bytes": 523
+    },
+    {
+      "path": "run/functional/case-length_8.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-length_8.json",
+      "sha256": "60e702e4223eac4cb3765f2b704b65ec4f9b68691d9501169db2bb230932f24b",
+      "bytes": 508
+    },
+    {
+      "path": "run/functional/case-read_error_after_commit.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-read_error_after_commit.json",
+      "sha256": "0c70e3f4f519a9cd1d53738133c508b5696eafcf92ff429652cdc499bf07ab81",
+      "bytes": 526
+    },
+    {
+      "path": "run/functional/case-read_error_final.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-read_error_final.json",
+      "sha256": "696f4e22f53e21315647b60973bc221119c2aa4c32d83e66c424e6abde2b7031",
+      "bytes": 518
+    },
+    {
+      "path": "run/functional/case-read_error_first.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-read_error_first.json",
+      "sha256": "92b0ea40228ac0057fa204acc9557e5ccda7fb22d766096156d6355fac79e0fe",
+      "bytes": 518
+    },
+    {
+      "path": "run/functional/case-read_error_middle.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-read_error_middle.json",
+      "sha256": "ad11b33f71569a8306db79a4a1c6173457746746ae17cac6eb7ce1ea173c1519",
+      "bytes": 519
+    },
+    {
+      "path": "run/functional/case-reject_destination_alignment.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-reject_destination_alignment.json",
+      "sha256": "3836c03f1d1b00c548df3effacbc35c5a50d4fcbe87ca95c036468418bceeb09",
+      "bytes": 528
+    },
+    {
+      "path": "run/functional/case-reject_destination_overflow.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-reject_destination_overflow.json",
+      "sha256": "0bb244fe43fd1c132f14d54f7f3e811f812f6fb98342adc246f80c816f65a62c",
+      "bytes": 527
+    },
+    {
+      "path": "run/functional/case-reject_length.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-reject_length.json",
+      "sha256": "7df6420bb653948fc72927225d3a1e632a982a4c52ab4fef61cce355e1904be4",
+      "bytes": 513
+    },
+    {
+      "path": "run/functional/case-reject_overlap.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-reject_overlap.json",
+      "sha256": "bcc907063bba6c3d7e8b3dbf48649bc7e29c3d437ac65811b7546c129eded6ed",
+      "bytes": 514
+    },
+    {
+      "path": "run/functional/case-reject_source_alignment.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-reject_source_alignment.json",
+      "sha256": "8459d68ae828738fdb1ff0a4d79d57932b5ba77fa4c261709eeee38e750c535e",
+      "bytes": 523
+    },
+    {
+      "path": "run/functional/case-reject_source_overflow.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-reject_source_overflow.json",
+      "sha256": "d23eca1a53c6a6eb3c6e42e0dedea63f3fe225065d23cea320e491cbb133c0b0",
+      "bytes": 522
+    },
+    {
+      "path": "run/functional/case-reset_after_accepted_b.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-reset_after_accepted_b.json",
+      "sha256": "dccc406b141843563635d912ea6d774298dbdfe1040f93029892cc7763e13d0f",
+      "bytes": 525
+    },
+    {
+      "path": "run/functional/case-reset_commit_before_b.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-reset_commit_before_b.json",
+      "sha256": "243194120133a7557688e2ca87eed09994279bf05306473c72d3fa3bf1006e94",
+      "bytes": 526
+    },
+    {
+      "path": "run/functional/case-reset_control_aw_only.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-reset_control_aw_only.json",
+      "sha256": "93dec32595a8eba90d803da876bd54df5aa0e81d219a40071a9cfa2bc19f0706",
+      "bytes": 521
+    },
+    {
+      "path": "run/functional/case-reset_control_w_only.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-reset_control_w_only.json",
+      "sha256": "a45c6e5cf44787c4709c5c24602376a9010f917980086a88d19e09234da0a5cc",
+      "bytes": 520
+    },
+    {
+      "path": "run/functional/case-reset_during_read.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-reset_during_read.json",
+      "sha256": "31be8c4a3837b228be45bea03f64418f95393f28f782976e9814adaa8205e93b",
+      "bytes": 518
+    },
+    {
+      "path": "run/functional/case-same_edge_aw_w_1.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-same_edge_aw_w_1.json",
+      "sha256": "1087e627f57b3b9a86632019e7174f237760bc6416bbdb006a9704f51e5d9950",
+      "bytes": 516
+    },
+    {
+      "path": "run/functional/case-same_edge_aw_w_16.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-same_edge_aw_w_16.json",
+      "sha256": "fb6843503f8bbccb83b438e999625a08901da4cb2b927650113cedac5e7351db",
+      "bytes": 520
+    },
+    {
+      "path": "run/functional/case-same_edge_aw_w_2.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-same_edge_aw_w_2.json",
+      "sha256": "51d45674e11ce25a5fd8d014a65501afb2b37121d31d07add5946d882aa935f3",
+      "bytes": 516
+    },
+    {
+      "path": "run/functional/case-source_page_split.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-source_page_split.json",
+      "sha256": "f9a1e656ee4254371e4c2cd753df98284ba7cdb4ede2d08d9333552037f615ba",
+      "bytes": 520
+    },
+    {
+      "path": "run/functional/case-sticky_ack_new_start.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-sticky_ack_new_start.json",
+      "sha256": "615153a59649c39e5842cef771927200e700232ead45f6e8ccaa669cb38c0cc5",
+      "bytes": 523
+    },
+    {
+      "path": "run/functional/case-tail_1.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-tail_1.json",
+      "sha256": "34c2255288b2ba24c8516f3b055598fd1d8e72dd83f82d5bd0afbfab95959b05",
+      "bytes": 506
+    },
+    {
+      "path": "run/functional/case-tail_2.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-tail_2.json",
+      "sha256": "76411ddc970724d6eb15dd031246906352e77480dc5b84d353a3dd3f815eae14",
+      "bytes": 506
+    },
+    {
+      "path": "run/functional/case-tail_3.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-tail_3.json",
+      "sha256": "0a64871cf150ddae7a60918b4ed35beea4aad67df559756d6cc54c7ccaf9f8ad",
+      "bytes": 506
+    },
+    {
+      "path": "run/functional/case-tail_4.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-tail_4.json",
+      "sha256": "548ab589c1283b5ffb49ad5735d001687b33f7c906ce7317c26afb5baa699a9b",
+      "bytes": 506
+    },
+    {
+      "path": "run/functional/case-tail_5.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-tail_5.json",
+      "sha256": "50770e366fd5e9d9d918a4ef83c9431adc67d112efa48301e99421bb920f62c3",
+      "bytes": 506
+    },
+    {
+      "path": "run/functional/case-tail_6.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-tail_6.json",
+      "sha256": "671473764477a831aa3ebf57a55886ffb06c32c227373ffce36a86da9c733150",
+      "bytes": 506
+    },
+    {
+      "path": "run/functional/case-tail_7.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-tail_7.json",
+      "sha256": "8ac37b6130c0dd90aac27a9138550967b86efb2aef8211f6f08bf1672e04e1e2",
+      "bytes": 506
+    },
+    {
+      "path": "run/functional/case-w_first.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-w_first.json",
+      "sha256": "974d693b52ccf9e788ee8f3ab84385a112b8d4dc166a840e14461bdf4a6be680",
+      "bytes": 510
+    },
+    {
+      "path": "run/functional/case-write_error_first_commits.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-write_error_first_commits.json",
+      "sha256": "02a912cc8d1d981d42e8a0250d03554fd70812e0b2e455a74a1455ddf5a2f91c",
+      "bytes": 528
+    },
+    {
+      "path": "run/functional/case-write_error_later_commits.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-write_error_later_commits.json",
+      "sha256": "d3413038c343d79b77f7a7817dc0731fe41b7055060efcf2115f3169d625945e",
+      "bytes": 528
+    },
+    {
+      "path": "run/functional/case-write_error_no_commit.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-write_error_no_commit.json",
+      "sha256": "372a1ad170225dea596c1b3a3d46b7cc4aaea78df1b39a73e19900b0bfd7ae5b",
+      "bytes": 524
+    },
+    {
+      "path": "run/functional/case-zero_length.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-zero_length.json",
+      "sha256": "d70b568b8543772685cdb7af0589a4568b4413ca7aaa5707e36f94030107b33d",
+      "bytes": 511
+    },
+    {
+      "path": "run/functional/case-zero_unusual_addresses.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\case-zero_unusual_addresses.json",
+      "sha256": "3d18efe9de5380f2367563b2172d832280a33dccf87adbfc4a10fefa19e1e1ec",
+      "bytes": 522
+    },
+    {
+      "path": "run/functional/cases.txt",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\cases.txt",
+      "sha256": "55664789275bc146b11dfeac125200a86d6a7b1846079437a3844e97d677a7e6",
+      "bytes": 3099
+    },
+    {
+      "path": "run/functional/tr_db.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\functional\\tr_db.log",
+      "sha256": "c624542a645580032d949176b50126e6f98ce76702d6cecb5634f80ed1da350b",
+      "bytes": 97
+    },
+    {
+      "path": "run/inactive-lanes/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\inactive-lanes\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/inactive-lanes/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\inactive-lanes\\1.log",
+      "sha256": "36c4d49842ad9e70298920f1c420ef50030c1c6db543bce3e1418cee339545b1",
+      "bytes": 1301
+    },
+    {
+      "path": "run/inactive-lanes/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\inactive-lanes\\2.log",
+      "sha256": "9334af5ecd6c6a36bb6f4090a668557105b99ec9a06f8d922c5c4e31d166ab7b",
+      "bytes": 6189
+    },
+    {
+      "path": "run/inactive-lanes/capture.vcd",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\inactive-lanes\\capture.vcd",
+      "sha256": "6a161712b08ff8e82a49b7bf5636bb888335f362c5cd4531e9d162c0bcd9c209",
+      "bytes": 75921
+    },
+    {
+      "path": "run/inactive-lanes/case-inactive_tail_1.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\inactive-lanes\\case-inactive_tail_1.json",
+      "sha256": "7c31aba1a2414fb1a9f24fb2894c0b728a471d3a649985528a5c5dc7a09bef02",
+      "bytes": 518
+    },
+    {
+      "path": "run/inactive-lanes/case-inactive_tail_2.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\inactive-lanes\\case-inactive_tail_2.json",
+      "sha256": "69a575e230ed75fb8ac30643f88b6bd78eceb6a61986962d5ced204eb82745b0",
+      "bytes": 518
+    },
+    {
+      "path": "run/inactive-lanes/case-inactive_tail_3.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\inactive-lanes\\case-inactive_tail_3.json",
+      "sha256": "7de6121525f8e7f873fa0b97ec7f36b6ff903688f4130cc95536153a33ba917a",
+      "bytes": 518
+    },
+    {
+      "path": "run/inactive-lanes/case-inactive_tail_4.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\inactive-lanes\\case-inactive_tail_4.json",
+      "sha256": "b897977d1941c0340d546d29ad1537fd6f85e81686d4a1e046b33baf6259d47c",
+      "bytes": 518
+    },
+    {
+      "path": "run/inactive-lanes/case-inactive_tail_5.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\inactive-lanes\\case-inactive_tail_5.json",
+      "sha256": "a80ad6d3e9bee3f9aab950e9e6032e622ef34723984eaee8a45206045aafc806",
+      "bytes": 518
+    },
+    {
+      "path": "run/inactive-lanes/case-inactive_tail_6.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\inactive-lanes\\case-inactive_tail_6.json",
+      "sha256": "7abf24b0394170415b0ad5a1c4532fc7345431fa00a8c1e7f530e7ca1a310f3a",
+      "bytes": 518
+    },
+    {
+      "path": "run/inactive-lanes/case-inactive_tail_7.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\inactive-lanes\\case-inactive_tail_7.json",
+      "sha256": "5a5becef2aa97b019e8db4f8bfc0e58bcdcc0ed10f60280c29c3d1456f3faf7c",
+      "bytes": 518
+    },
+    {
+      "path": "run/inactive-lanes/cases.txt",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\inactive-lanes\\cases.txt",
+      "sha256": "3d896f5c916dc3d7bcb67aaae4383d50495113f5fc479ba5ef8bca3a5a7ac0d4",
+      "bytes": 378
+    },
+    {
+      "path": "run/inactive-lanes/tr_db.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\inactive-lanes\\tr_db.log",
+      "sha256": "c624542a645580032d949176b50126e6f98ce76702d6cecb5634f80ed1da350b",
+      "bytes": 97
+    },
+    {
+      "path": "run/malformed-early_rlast/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-early_rlast\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/malformed-early_rlast/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-early_rlast\\1.log",
+      "sha256": "1712658d76b774817a8846a83fabdea3b192c1611f2705d47b89ec3b4602cc7e",
+      "bytes": 1301
+    },
+    {
+      "path": "run/malformed-early_rlast/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-early_rlast\\2.log",
+      "sha256": "838fb2cacb707f2125a03ae7c2739166f28e73364be8ad9ecc99694816a3fd04",
+      "bytes": 4789
+    },
+    {
+      "path": "run/malformed-early_rlast/capture.vcd",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-early_rlast\\capture.vcd",
+      "sha256": "be49376533e6cbb8e96fc966b5123d0a3666f1b4edc4ddc5fd31b066446a6bb5",
+      "bytes": 12631
+    },
+    {
+      "path": "run/malformed-early_rlast/case-early_rlast.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-early_rlast\\case-early_rlast.json",
+      "sha256": "200e68a15c720e3b2c24636975599c83769f03a3926098bc8e1847aec53f07a3",
+      "bytes": 512
+    },
+    {
+      "path": "run/malformed-early_rlast/cases.txt",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-early_rlast\\cases.txt",
+      "sha256": "ece2a4fc7d028ac5b88d9c31a3d912e7013bff8ed47563148c5811723ca16a89",
+      "bytes": 50
+    },
+    {
+      "path": "run/malformed-early_rlast/tr_db.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-early_rlast\\tr_db.log",
+      "sha256": "c624542a645580032d949176b50126e6f98ce76702d6cecb5634f80ed1da350b",
+      "bytes": 97
+    },
+    {
+      "path": "run/malformed-missing_rlast/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-missing_rlast\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/malformed-missing_rlast/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-missing_rlast\\1.log",
+      "sha256": "ed6a7f809420f99ec79a8fa5193a9c3a7b8749d60602ce82387475aed7cb3b07",
+      "bytes": 1301
+    },
+    {
+      "path": "run/malformed-missing_rlast/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-missing_rlast\\2.log",
+      "sha256": "4186cb666d5285948a9aee2ee575d978f9b330b68a9bfc72546e669a92fa56da",
+      "bytes": 4798
+    },
+    {
+      "path": "run/malformed-missing_rlast/capture.vcd",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-missing_rlast\\capture.vcd",
+      "sha256": "d8c5b6b0d2ed804f62b8c96a7410b500f3ecff00cc3b281f002ceacd817227cf",
+      "bytes": 13894
+    },
+    {
+      "path": "run/malformed-missing_rlast/case-missing_rlast.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-missing_rlast\\case-missing_rlast.json",
+      "sha256": "d47cfd9025d1b4aede84961468ea5338280aee7dd0a225d594db3710a991e2b8",
+      "bytes": 515
+    },
+    {
+      "path": "run/malformed-missing_rlast/cases.txt",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-missing_rlast\\cases.txt",
+      "sha256": "34885677e6f7ed4a2f726a03a5ae24fc4051234929f16aeed898494d6ce07502",
+      "bytes": 52
+    },
+    {
+      "path": "run/malformed-missing_rlast/tr_db.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-missing_rlast\\tr_db.log",
+      "sha256": "c624542a645580032d949176b50126e6f98ce76702d6cecb5634f80ed1da350b",
+      "bytes": 97
+    },
+    {
+      "path": "run/malformed-wrong_bid/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-wrong_bid\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/malformed-wrong_bid/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-wrong_bid\\1.log",
+      "sha256": "99f147519e44df3fe84c69a8ef26a44b8b031bafa23990322528bb2990b4258b",
+      "bytes": 1301
+    },
+    {
+      "path": "run/malformed-wrong_bid/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-wrong_bid\\2.log",
+      "sha256": "d6f8964146d42159123dbef2e2d60f9abf5d27a81fb8f0a9d4422a9d317b7ff6",
+      "bytes": 4782
+    },
+    {
+      "path": "run/malformed-wrong_bid/capture.vcd",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-wrong_bid\\capture.vcd",
+      "sha256": "1eb5625f866df3e0d4bec169ad28fdb30f28a132acc2e22a5ddbf86824b08d57",
+      "bytes": 15090
+    },
+    {
+      "path": "run/malformed-wrong_bid/case-wrong_bid.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-wrong_bid\\case-wrong_bid.json",
+      "sha256": "41497d2e89b5fc9c5eecfa78ae8da9e6c5c6530ce8ddc0b44ea5717ce12b13c0",
+      "bytes": 512
+    },
+    {
+      "path": "run/malformed-wrong_bid/cases.txt",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-wrong_bid\\cases.txt",
+      "sha256": "5312222612c1788d1c7a4d3ffc852920e1cd58bd33c770420fa7d79c9298de52",
+      "bytes": 48
+    },
+    {
+      "path": "run/malformed-wrong_bid/tr_db.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-wrong_bid\\tr_db.log",
+      "sha256": "c624542a645580032d949176b50126e6f98ce76702d6cecb5634f80ed1da350b",
+      "bytes": 97
+    },
+    {
+      "path": "run/malformed-wrong_rid/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-wrong_rid\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/malformed-wrong_rid/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-wrong_rid\\1.log",
+      "sha256": "10600673b353e1e0bf477179e493964c1015869797e1d53db8c4c17a45a8e0af",
+      "bytes": 1301
+    },
+    {
+      "path": "run/malformed-wrong_rid/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-wrong_rid\\2.log",
+      "sha256": "83466faaaf2af9b1d64c5954da59c6b304263b5062a8536c1e9d0bae1e1468d5",
+      "bytes": 4782
+    },
+    {
+      "path": "run/malformed-wrong_rid/capture.vcd",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-wrong_rid\\capture.vcd",
+      "sha256": "5c850048a5cee704e03c9897704463c649ff00f873a8359d8cad0f45c33b58e8",
+      "bytes": 13914
+    },
+    {
+      "path": "run/malformed-wrong_rid/case-wrong_rid.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-wrong_rid\\case-wrong_rid.json",
+      "sha256": "854be856fc0de4a0c753e198274d22dc68b9da65fa8a490835ee5abfbd4e0494",
+      "bytes": 511
+    },
+    {
+      "path": "run/malformed-wrong_rid/cases.txt",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-wrong_rid\\cases.txt",
+      "sha256": "9338785f7fedf45ed5c820623cc04d7f6102a896e36fb627dd7c9807b84d76cd",
+      "bytes": 48
+    },
+    {
+      "path": "run/malformed-wrong_rid/tr_db.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\malformed-wrong_rid\\tr_db.log",
+      "sha256": "c624542a645580032d949176b50126e6f98ce76702d6cecb5634f80ed1da350b",
+      "bytes": 97
+    },
+    {
+      "path": "run/results.json",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\results.json",
+      "sha256": "6ba786557c71fc7246753110cc75d6de8ef332f67eedf617b37b7537222ac513",
+      "bytes": 310301
+    },
+    {
+      "path": "run/source-0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\source-0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/source-1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\source-1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/source-2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\source-2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-ar_attr/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-ar_attr\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-ar_attr/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-ar_attr\\1.log",
+      "sha256": "29c6a248c569074d7707970fa7b49175504ea531c63a8d0baefb495d69862486",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-ar_attr/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-ar_attr\\2.log",
+      "sha256": "aa5d2c4d9bc14225aeebce08ddbb5824c6663ea9a67d9cb6fe312729aa2124bf",
+      "bytes": 2005
+    },
+    {
+      "path": "run/sva-ar_hold/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-ar_hold\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-ar_hold/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-ar_hold\\1.log",
+      "sha256": "fbf2053d492069b39209b88a7b23b7b6a48dc618ce732e36e260409e9dc65fe9",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-ar_hold/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-ar_hold\\2.log",
+      "sha256": "5e2109d5f1fecf803f2fded73c9d0f5c6e28138b3b260ae3d1831ef932fd68a5",
+      "bytes": 2005
+    },
+    {
+      "path": "run/sva-aw_attr/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-aw_attr\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-aw_attr/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-aw_attr\\1.log",
+      "sha256": "bbb13ff23f66a4c6e4d1e5bdef551ddc52ac12e9cbcc29cb52d2b553a0563a5f",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-aw_attr/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-aw_attr\\2.log",
+      "sha256": "3e4962c95c659b16a858bd5685d7d61a50d88f1e8c0e9c39e2b0e7936c26631a",
+      "bytes": 2005
+    },
+    {
+      "path": "run/sva-aw_hold/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-aw_hold\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-aw_hold/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-aw_hold\\1.log",
+      "sha256": "2bbb4b5b9eb9263410775e4f390ec7c5349c4f5ca0ae29d89e6b954f4d430fab",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-aw_hold/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-aw_hold\\2.log",
+      "sha256": "d0a0491e8a3d5399235811171c6e8a139042734833ef3f9058ab5b2f4c932d44",
+      "bytes": 2005
+    },
+    {
+      "path": "run/sva-b_aw_only/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-b_aw_only\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-b_aw_only/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-b_aw_only\\1.log",
+      "sha256": "e7de179175d489b1fdf76e332063ff59f9279744ffea71823fffbb7bd7d5f89b",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-b_aw_only/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-b_aw_only\\2.log",
+      "sha256": "143411c0daf6897de79a021034128a25f82608349eb8c96135bcbf73afddc7a4",
+      "bytes": 2021
+    },
+    {
+      "path": "run/sva-b_before/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-b_before\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-b_before/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-b_before\\1.log",
+      "sha256": "3adeb6dda0cf28dcf0fc4ba9366bb98a5a82f0679353b82475ca94e733ef83ed",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-b_before/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-b_before\\2.log",
+      "sha256": "8e9135bfe2dce686ac78a00acaab4ab351da1a3f8278c209620b51749f6b5c1c",
+      "bytes": 2019
+    },
+    {
+      "path": "run/sva-b_hold/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-b_hold\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-b_hold/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-b_hold\\1.log",
+      "sha256": "0b99530f4b1f250f714417116a57088b60ad6228697410eece8bdd1218056a72",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-b_hold/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-b_hold\\2.log",
+      "sha256": "6c67a4d69c800380e977886bbcc690ce7c9bdc707c84499cd722856d9c1290cd",
+      "bytes": 2001
+    },
+    {
+      "path": "run/sva-b_same_aw/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-b_same_aw\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-b_same_aw/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-b_same_aw\\1.log",
+      "sha256": "bdba1b1a0064608c636d102a4aea589c59a2adec3cc03d104b80a9d3511f7289",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-b_same_aw/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-b_same_aw\\2.log",
+      "sha256": "9c4064c145fe670160ba5dd90c41c55dc7cf69fc780961342f76270299209fbb",
+      "bytes": 2021
+    },
+    {
+      "path": "run/sva-b_same_both/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-b_same_both\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-b_same_both/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-b_same_both\\1.log",
+      "sha256": "133cf2476c8de3751d72962e3a26a4abfcf831c18033eccac1885fc29af7c0c2",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-b_same_both/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-b_same_both\\2.log",
+      "sha256": "edd52467d20ba8f72bb7f4a21265581bc51b5f2f512e9aaeebab11b6e5479592",
+      "bytes": 2025
+    },
+    {
+      "path": "run/sva-b_same_w/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-b_same_w\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-b_same_w/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-b_same_w\\1.log",
+      "sha256": "b2f8fcfcd5e07349076da6aa36237daf1b6e69579127b505b2d66888aa2eadef",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-b_same_w/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-b_same_w\\2.log",
+      "sha256": "0b5a542afc3a50dc92144ff54a2ffceb3a4db0ded00a57a03ec336a5fa8f5ce2",
+      "bytes": 2019
+    },
+    {
+      "path": "run/sva-b_w_only/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-b_w_only\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-b_w_only/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-b_w_only\\1.log",
+      "sha256": "a3ecc6cd5532d36297e7b5ea72ecda4ccd79ab5c6715a5e176912dd48b350129",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-b_w_only/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-b_w_only\\2.log",
+      "sha256": "000ffec3c2fdcce8d24eba4eb332ab4b0deb6df20ffbf65d9c1c8efe91e32c17",
+      "bytes": 2019
+    },
+    {
+      "path": "run/sva-bid/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-bid\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-bid/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-bid\\1.log",
+      "sha256": "a9e3b8d3ddf36b1c027213a93c6ff1ed637c879d021fe7b78fa20321e027df85",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-bid/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-bid\\2.log",
+      "sha256": "c83b42914c06605c9d66aac84a4ac0558e7c2fc062e765bcb0549f61351ce9f9",
+      "bytes": 1991
+    },
+    {
+      "path": "run/sva-c_ar_hold/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-c_ar_hold\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-c_ar_hold/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-c_ar_hold\\1.log",
+      "sha256": "88deae607fdf58cb3fa3fd3c891814cfad1b569f825091c1dd7fcff35e1c8a5b",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-c_ar_hold/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-c_ar_hold\\2.log",
+      "sha256": "fbae8ee7737179d6e8069f36237f1f66bd5e4b27564069deb9bafb9558ba7018",
+      "bytes": 2013
+    },
+    {
+      "path": "run/sva-c_aw_hold/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-c_aw_hold\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-c_aw_hold/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-c_aw_hold\\1.log",
+      "sha256": "387ac6a1ab37f2e848af54fbb78417dc81292cc7bf31255edf71cb77b40c93dc",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-c_aw_hold/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-c_aw_hold\\2.log",
+      "sha256": "be8af0e30d66c73f97711d4607e8e385ac78912178349b79b1f1356a69578c1b",
+      "bytes": 2013
+    },
+    {
+      "path": "run/sva-c_b_before/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-c_b_before\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-c_b_before/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-c_b_before\\1.log",
+      "sha256": "7377b13dbb0a5467551f50fe517128516a4850178595a1ede775300ca9966547",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-c_b_before/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-c_b_before\\2.log",
+      "sha256": "370c94f7bf2829fde4560448db6a9416e07769060920c3a45595d6cb641085da",
+      "bytes": 2027
+    },
+    {
+      "path": "run/sva-c_b_hold/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-c_b_hold\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-c_b_hold/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-c_b_hold\\1.log",
+      "sha256": "0537cae41dc0e3df64144fda67cdcaae95e46d7cdd3c1fac95b74d9ca0aa3b0b",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-c_b_hold/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-c_b_hold\\2.log",
+      "sha256": "94d70c603a1c29f2418147de92b57b3b733f31e21dfdf85908869d7f340a2b69",
+      "bytes": 2009
+    },
+    {
+      "path": "run/sva-c_r_before/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-c_r_before\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-c_r_before/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-c_r_before\\1.log",
+      "sha256": "d63cd9473c752f5faa8b8d8bc39c971f1b6e9bcc20360664a86bd0d2e722d272",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-c_r_before/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-c_r_before\\2.log",
+      "sha256": "ee0de0d264e7399f2ada8b5754449a4162db15f36d7acc342201067042531d71",
+      "bytes": 2027
+    },
+    {
+      "path": "run/sva-c_r_hold/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-c_r_hold\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-c_r_hold/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-c_r_hold\\1.log",
+      "sha256": "11b352367f0da1ff9dc7ab805f4fecc22d519d6a70313a2d1ee830236b9a757b",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-c_r_hold/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-c_r_hold\\2.log",
+      "sha256": "c276fa6a25a020f3b98914e937e55aebccb5e351522e82f9e6a8f5c6ad14d19e",
+      "bytes": 2009
+    },
+    {
+      "path": "run/sva-c_w_hold/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-c_w_hold\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-c_w_hold/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-c_w_hold\\1.log",
+      "sha256": "07ef62f39df6412a88bcb2baa824e2a630bbeb30f36bba3971dc0bd4587d2513",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-c_w_hold/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-c_w_hold\\2.log",
+      "sha256": "83cd1e640a77048993d41769c4a69824e4a9fb0b6f8e4af52311f6b73e682223",
+      "bytes": 2009
+    },
+    {
+      "path": "run/sva-legal/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-legal\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-legal/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-legal\\1.log",
+      "sha256": "bc4e3638df072e56d0911947dfe0e389a62cd5a5072449c2ef579b0a0db3ea0b",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-legal/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-legal\\2.log",
+      "sha256": "e71d0dd6315f537e4adc689b80d73aadd647170be8bd8ba78557fe22583ec368",
+      "bytes": 1941
+    },
+    {
+      "path": "run/sva-r_before/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-r_before\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-r_before/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-r_before\\1.log",
+      "sha256": "2c2acd8952615580b7204b1dfe94d57169519a93e9a9f3962a2ea91db22645d3",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-r_before/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-r_before\\2.log",
+      "sha256": "8ea35dcbceb156379024b80f51417e385f09337e9cbb23401d82cc302a7ec4e6",
+      "bytes": 2019
+    },
+    {
+      "path": "run/sva-r_hold/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-r_hold\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-r_hold/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-r_hold\\1.log",
+      "sha256": "597ab6c4a49a24ae385e04a0658852750bcb2187ab98446b127cc78b56c2865e",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-r_hold/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-r_hold\\2.log",
+      "sha256": "da4424d6f5db6a0dc4bc1d035504b14dc6170487cd7489462c4396c3cb5fb292",
+      "bytes": 2001
+    },
+    {
+      "path": "run/sva-r_last/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-r_last\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-r_last/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-r_last\\1.log",
+      "sha256": "50ed5474ec3e9ee4fb079b73467f88c51929c1e95d448292dba1db52b03a1fd7",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-r_last/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-r_last\\2.log",
+      "sha256": "253e5f180a54f0d0b0e57a59d0f9295076731f8a3ced28256b913a4d13bae36d",
+      "bytes": 2001
+    },
+    {
+      "path": "run/sva-r_same_ar/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-r_same_ar\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-r_same_ar/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-r_same_ar\\1.log",
+      "sha256": "19c367aaa5da0c0c80e0b706bb9e7258449b3982788a74d0dc37d0786003fd54",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-r_same_ar/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-r_same_ar\\2.log",
+      "sha256": "019847b59ee8996c4dedb0f5c05927cf8ab673bff7636b7b19481140e7ba9637",
+      "bytes": 2021
+    },
+    {
+      "path": "run/sva-rid/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-rid\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-rid/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-rid\\1.log",
+      "sha256": "fe9843e4909aa6d96f2f2ead103217e5bcf29eb548ba4af0224749b0fa5a7be6",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-rid/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-rid\\2.log",
+      "sha256": "1f817d05018f8c69501ff1b4dccf7824204610d39903e7ed4e6644cad2af09bd",
+      "bytes": 1991
+    },
+    {
+      "path": "run/sva-w_hold/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-w_hold\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-w_hold/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-w_hold\\1.log",
+      "sha256": "70d785c7aedba10b3428ba173065c3e46834e1a2a6f107f70f2afdc99e52666b",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-w_hold/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-w_hold\\2.log",
+      "sha256": "fe7c020297b48a026bd2da9e404398f52bda86c4fd6f64a44e6f8bf349856d11",
+      "bytes": 2001
+    },
+    {
+      "path": "run/sva-w_last/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-w_last\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-w_last/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-w_last\\1.log",
+      "sha256": "dd56ba77bceaf343cbebce1d349d3e712ecb688376d26ed76bf7e8dc273b647b",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-w_last/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-w_last\\2.log",
+      "sha256": "12229c2d008fd3cb7244a3eb6478812385fa9e1b36810c67cb31151d93d9535a",
+      "bytes": 2001
+    },
+    {
+      "path": "run/sva-w_last_early_count/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-w_last_early_count\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-w_last_early_count/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-w_last_early_count\\1.log",
+      "sha256": "aff0d5546b1a518d3b56c80901dee4946f18ea80c13d821208abc41b57b929bb",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-w_last_early_count/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-w_last_early_count\\2.log",
+      "sha256": "1399c531adce8dd1975e537c2686d26582ba875a7bc140dfcb35641bd88f3cc6",
+      "bytes": 2025
+    },
+    {
+      "path": "run/sva-w_last_early_missing/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-w_last_early_missing\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-w_last_early_missing/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-w_last_early_missing\\1.log",
+      "sha256": "61207590f23a42f1dbab313e54dc5da898927e624dda19bcd09d4c4d0990b5ce",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-w_last_early_missing/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-w_last_early_missing\\2.log",
+      "sha256": "7e61372b737828ffac7568b6626c5ebb66943f3af65b08f4e69bac4d50a18bd0",
+      "bytes": 2029
+    },
+    {
+      "path": "run/sva-w_last_same_aw/0.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-w_last_same_aw\\0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "run/sva-w_last_same_aw/1.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-w_last_same_aw\\1.log",
+      "sha256": "a2e715c619bb1142b148ea02a405b9d5ee77abfd6ae878bd9401321a18e45dc0",
+      "bytes": 761
+    },
+    {
+      "path": "run/sva-w_last_same_aw/2.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\sva-w_last_same_aw\\2.log",
+      "sha256": "0e4d7f27015c2c43195bd5bc7680f7dfd8012da24767b86044a7f0d2edb15bb3",
+      "bytes": 2017
+    },
+    {
+      "path": "run/version.log",
+      "original_path": "C:\\short\\dma-closeout-run-20261110\\version.log",
+      "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "bytes": 83
+    },
+    {
+      "path": "run/wrapper.json",
+      "original_path": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\dma-closeout-20261110\\merged-wrapper.json",
+      "sha256": "ecb96b5cdaf32e7c7879a28e9a1ff2e3b551815af8aa9f2307d5955e630dd21b",
+      "bytes": 608
+    },
+    {
+      "path": "run/wrapper.log",
+      "original_path": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\dma-closeout-20261110\\merged-wrapper.log",
+      "sha256": "ddbe8dd20c051460faf75fa62fbb693d67c236e4b75e8a897f72d8dad1b1a6fa",
+      "bytes": 1725
+    },
+    {
+      "path": "source-receipts/initial-audit.json",
+      "original_path": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\dma-closeout-20261110\\initial-audit.json",
+      "sha256": "f1722dcf67ab47e2ec8c51665493fe89493a83ff8b609a4097c27aebc0038009",
+      "bytes": 469475
+    },
+    {
+      "path": "source-receipts/source-review.json",
+      "original_path": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\dma-closeout-20261110\\source-review.json",
+      "sha256": "97b958d64187622cdf6df774339943564a7b5f0213ac0ee41c44ac195ecb7841",
+      "bytes": 2636
+    },
+    {
+      "path": "source-receipts/fresh-clone.json",
+      "original_path": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\dma-closeout-20261110\\fresh-clone.json",
+      "sha256": "b25266911299a7f72260c52d8a0d6beee6740ae669a43e92e067f386511a27a4",
+      "bytes": 3179
+    },
+    {
+      "path": "source-receipts/merge-12.json",
+      "original_path": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\dma-closeout-20261110\\merge-12.json",
+      "sha256": "6c3f41d813ce37a26443862e17a5edb836d9c344f8e101499421f366eedefece",
+      "bytes": 442783
+    },
+    {
+      "path": "source-receipts/merge-4.json",
+      "original_path": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\dma-closeout-20261110\\merge-4.json",
+      "sha256": "f420e32b8cdd067862684f87269d551dfbbd1007ba74d034a8f898792187d6aa",
+      "bytes": 1649
+    },
+    {
+      "path": "source-receipts/fresh-clone-0.log",
+      "original_path": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\dma-closeout-20261110\\fresh-clone-0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "source-receipts/fresh-clone-1.log",
+      "original_path": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\dma-closeout-20261110\\fresh-clone-1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ]
+}

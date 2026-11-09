@@ -1,0 +1,11 @@
+{
+  "kind": "csr_idle_side_effect",
+  "source_revision": "a2d3d57edaa9eb441f3289bf5320f4df2f074144",
+  "locked_input": "C:\\short\\dma-closeout-run-20261110\\fault-csr_idle_side_effect\\child\\source\\rtl\\axi4_dma_subsystem.sv",
+  "locked_sha256": "dd709078dc9d91db0d92ba1e4bd34b32cb43f09f8f5739abdb6552313795043b",
+  "compiled_input": "C:\\short\\dma-closeout-run-20261110\\fault-csr_idle_side_effect\\child\\fault-csr_idle_side_effect\\disposable-rtl\\axi4_dma_subsystem.sv",
+  "compiled_sha256": "42fd6ef73832d326218a13b5ecca80ce2925367bef8edccbe2ceb59ee7dcc57f",
+  "patch_sha256": "60e97a43d7c4847fef705480da55ebad7334ec2242964d68ee5160a4102834bb",
+  "checkout_modified": false,
+  "scope": "Rejected CSR write modifies SRC; BRESP remains SLVERR; active cur_src untouched"
+}
