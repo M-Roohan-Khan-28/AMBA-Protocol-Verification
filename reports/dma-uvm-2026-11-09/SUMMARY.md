@@ -126,3 +126,13 @@ Archived multichannel DMA, descriptors/scatter-gather, peripheral handshakes,
 multiple outstanding/reordering, full AXI compliance, synthesis, timing, FPGA and
 hardware remain separate milestones. Historical releases, inventories, licences
 and M. Roohan Khan/Talib attribution are unchanged. No RTL correction was needed.
+
+## Published-byte audit
+
+At evidence revision `0ff3706a09945c19ff7ca8367569ec7eec673c72`, [BYTE_AUDIT.json](BYTE_AUDIT.json) verified
+1192 original artifacts against Git blobs and fresh detached
+checkouts with `core.autocrlf=false` and `true`. All 13 VCDs also
+matched public raw downloads; all 8 figure metadata/caption
+hashes matched their original capture bytes. [Actual audit command and exits](BYTE_AUDIT_COMMAND.json)
+are recorded. This receipt is a later evidence-only addition; the tested
+implementation and archived capture bytes are unchanged.
