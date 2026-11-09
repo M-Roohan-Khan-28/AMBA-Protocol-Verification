@@ -76,20 +76,32 @@ class dma_control_driver extends uvm_driver#(dma_command);
     cfg.scenario.read_error_burst=-1;cfg.scenario.write_error_burst=-1;cfg.scenario.malformed=0;cfg.scenario.reset_kind=0;
     program_command(32'h30000,32'h70000,16);wait_terminal(0);acknowledge();
   endtask
+  task check_rejected_state;
+    bit[31:0] v;
+    // Passive public-pin scoreboard retains independent expected CSR/status/IRQ state.
+    // All six reads occur before another write, overwrite, reset or responder release.
+    read_csr(0,v);read_csr(4,v);read_csr(8,v);
+    read_csr(16,v);read_csr(20,v);read_csr(12,v);
+    sb.rejection_checkpoints++;
+    $display("DMA_REJECTED_STATE_PASS case=%s checkpoint=%0d",cfg.scenario.label,sb.rejection_checkpoints);
+  endtask
+  task reject_write(bit[31:0] address,data,bit[3:0] strobes=15);
+    write_csr(address,data,strobes,2);check_rejected_state();
+  endtask
   task invalid_controls;
     bit[31:0] v;
-    for(int i=0;i<16;i++)if(i!=15)write_csr(0,32'hbad00000,i[3:0],2);
-    write_csr(16,0,15,2);write_csr(20,0,15,2);write_csr(24,0,15,2);
-    write_csr(1,0,15,2);write_csr(2,0,15,2);write_csr(3,0,15,2);
-    write_csr(12,3,15,2);write_csr(12,4,15,2);write_csr(12,32'h80000000,15,2);
+    for(int i=0;i<16;i++)if(i!=15)reject_write(0,32'hbad00000,i[3:0]);
+    reject_write(16,0);reject_write(20,0);reject_write(24,0);
+    reject_write(1,0);reject_write(2,0);reject_write(3,0);
+    reject_write(12,3);reject_write(12,4);reject_write(12,32'h80000000);
     write_csr(12,0);read_csr(12,v);if(v!=0)`uvm_fatal("CONTROL_READBACK","CONTROL read must be zero")
     read_csr(1,v,2);read_csr(24,v,2);read_csr(32'hfffffff0,v,2);
   endtask
   task busy_controls;
     bit[31:0] v;
     read_csr(16,v);if(v!=1)`uvm_fatal("BUSY_STATUS","Expected busy while responder paused")
-    write_csr(0,32'hdead0000,15,2);write_csr(4,32'hdead1000,15,2);write_csr(8,8,15,2);
-    write_csr(12,1,15,2);write_csr(12,2,15,2);write_csr(12,0,15,2);
+    reject_write(0,32'hdead0000);reject_write(4,32'hdead1000);reject_write(8,8);
+    reject_write(12,1);reject_write(12,2);reject_write(12,0);
     cfg.freeze_data=0;
   endtask
   task cancel_partial_control(int kind);bit[31:0] v;
@@ -107,7 +119,10 @@ class dma_control_driver extends uvm_driver#(dma_command);
       sb.begin_case(item.label);$display("DMA_CASE_START name=%s time=%0t",item.label,$time);
       reset();
       if(item.reset_kind>=4)cancel_partial_control(item.reset_kind);
-      if(item.csr_tests==1)invalid_controls();
+      if(item.csr_tests==1||item.csr_tests==3)begin
+        write_csr(0,32'h23400);write_csr(4,32'h89000);write_csr(8,64);
+        invalid_controls();
+      end
       if(item.csr_tests==2)cfg.freeze_data=1;
       program_command(item.src,item.dst,item.length);
       if(item.csr_tests==2)busy_controls();
@@ -120,6 +135,7 @@ class dma_control_driver extends uvm_driver#(dma_command);
       end else begin
         wait_terminal(item.expected_error);
         if(item.chain)begin program_command(32'h30000,32'h70000,16);wait_terminal(0);end
+        if(item.csr_tests==1||item.csr_tests==3)invalid_controls();
         acknowledge();
         if(item.expected_error!=0)begin if(item.malformed!=0)reset();clean_recovery();end
       end

@@ -4,6 +4,7 @@ import argparse,datetime,json,re,sys,time
 from pathlib import Path
 from advanced_sim import digest,failure,git,run,tool
 from dma_accounting import validate
+from dma_mutations import prepare as prepare_mutation
 
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
@@ -30,7 +31,7 @@ def main():
       source_revision=git(repo,'rev-parse','HEAD'),source_dirty=bool(git(repo,'status','--porcelain')),serial_execution=True,
       selection=a.select,raw_fault=a.raw_fault,seed=682016495,seed_hex='0x28A6BEEF',functional_coverage='NOT RUN',constrained_randomization='NOT RUN',original_advanced_alu_apb='NOT RUN',suites=[],
       expected_inventory=names,required_selected=[s['name'] for s in steps],aggregate_exit_code=1,milestone_pass=False)
-    report['input_sha256']={p.relative_to(repo).as_posix():digest(p) for p in [*src.glob('*'),Path(__file__),repo/'scripts/advanced_sim.py',repo/'scripts/dma_accounting.py'] if p.is_file()}
+    report['input_sha256']={p.relative_to(repo).as_posix():digest(p) for p in [*src.glob('*'),Path(__file__),repo/'scripts/advanced_sim.py',repo/'scripts/dma_accounting.py',repo/'scripts/dma_mutations.py'] if p.is_file()}
     report['expected_environment_revision']=a.expected_env_sha
     report['runner_revision']=git(repo,'log','-1','--format=%H','--','scripts/run_dma_uvm.py')
     report['inventory_revision']=git(repo,'log','-1','--format=%H','--','verification/dma_uvm/inventory.json')
@@ -42,6 +43,7 @@ def main():
     def invoke(cmd,cwd,log):return run(cmd,cwd,max(1,min(a.timeout,int(a.global_timeout-(time.monotonic()-start)))),log)
     v,t=invoke([tool(a.sim_bin,'vsim'),'-version'],out,out/'version.log');report['version_command']=v;report['simulator_version']=t.strip()
     prereq=failure(v,t)
+    if report['source_dirty']:prereq='ENVIRONMENT_SOURCE_MISMATCH'
     if a.expected_env_sha and (len(a.expected_env_sha)!=40 or a.expected_env_sha!=report['source_revision'] or report['source_dirty']):prereq='ENVIRONMENT_SOURCE_MISMATCH'
     if not a.select and not a.expected_env_sha:prereq='FULL_RUN_REQUIRES_ENVIRONMENT_SHA'
     source=out/'source';lock=json.loads((src/'sources.json').read_text())
@@ -78,6 +80,7 @@ def main():
                 assert c['exit_code']==result['aggregate_exit_code']==1 and not c['timed_out']
                 assert result['source_revision']==report['source_revision'] and result['input_sha256']==report['input_sha256']
                 assert result['source_lock']['observed_revision']==lock['revision'] and result['source_lock']['clean']
+                assert result['source_lock']['clean_after_execution']
                 assert len(result['suites'])==1 and len(childstep['commands'])==3
                 assert all(x['exit_code']==0 and not x['timed_out'] for x in childstep['commands'])
                 assert childstep['status']=='FAIL' and not re.search(r'\*\* (?:Error|Fatal)|^# UVM_ERROR .*?@|DMA_SVA_DETECTED',log,re.M)
@@ -88,6 +91,13 @@ def main():
                 else:
                     assert fatals==[entry['expected_fatal']] and childstep['reason']=='PROCESS_OR_SIMULATOR_ERROR'
                     assert 'DMA_UVM_PASS' not in log
+                    if entry.get('mutation'):
+                        mutation=childstep['mutation']
+                        assert mutation['kind']==entry['mutation'] and mutation['source_revision']==lock['revision']
+                        assert mutation['locked_sha256']==report['source_lock']['rtl_sha256']['rtl/axi4_dma_subsystem.sv']
+                        assert mutation['compiled_sha256']!=mutation['locked_sha256'] and not mutation['checkout_modified']
+                        assert 'DMA_MUTATION_APPLIED '+entry['mutation']+' SRC response=SLVERR' in log
+                        assert re.search(r'\[CSR_READ\].*address=00000000 expected=[0-9a-f]+ observed=(?:bad00000|dead0000)',log)
                     if entry['fault'].startswith('duplicate'):
                         kind=entry['fault'].split('_')[1]
                         assert f'DMA_DUPLICATE_ACCEPTED kind={kind} bit_identical=1' in log
@@ -105,7 +115,12 @@ def main():
             fields=['name','src','dst','length','order','csr_order','expected_error','read_error_burst','read_error_beat','write_error_burst','commit_error','reset_kind','malformed','csr_tests','chain']
             rows=[' '.join(format(c[k],'x') if k in ('src','dst','length') else str(c[k]) for k in fields) for c in selected]
             casefile=wd/'cases.txt';casefile.write_bytes(('\n'.join(rows)+'\n').encode());s['case_input_sha256']=digest(casefile)
-            files=[src/'dma_bus.sv',*[source/p for p in lock['files']],src/'dma_adapter.sv',src/'dma_assertions.sv',src/'dma_uvm_pkg.sv',src/'dma_uvm_top.sv'];top='dma_uvm_top'
+            rtl=[source/p for p in lock['files']]
+            if entry.get('mutation'):
+                original=source/'rtl/axi4_dma_subsystem.sv'
+                mutated,s['mutation']=prepare_mutation(original,wd/'disposable-rtl',entry['mutation'],lock['revision'])
+                rtl=[mutated if p==original else p for p in rtl]
+            files=[src/'dma_bus.sv',*rtl,src/'dma_adapter.sv',src/'dma_assertions.sv',src/'dma_uvm_pkg.sv',src/'dma_uvm_top.sv'];top='dma_uvm_top'
             compile_extra=['-L',str(a.uvm_lib),'+incdir+'+str(a.uvm_include),'+incdir+'+str(src)];sim_extra=['-L',str(a.uvm_lib)]
             plus=['+CASES='+str(casefile)]+(['+EXPECT_SVA='+entry['expected']] if entry.get('expected') else [])
             if entry.get('inactive_lanes'):plus+=['+INACTIVE_LANES']
@@ -125,7 +140,7 @@ def main():
             found=re.findall(r'^# DMA_SVA_DETECTED (\w+) time=',text,re.M)
             expected=[entry['expected']] if entry['expected'] else []
             s.update(status='PASS' if found==expected else 'FAIL',reason='EXECUTED' if found==expected else 'WRONG_DETECTION',expected=expected,observed=found)
-            if entry['kind']=='functional' and s['status']=='PASS':
+            if entry['kind'] in ('functional','fault') and s['status']=='PASS':
                 try:
                     starts=re.findall(r'^# DMA_CASE_START name=(\w+) time=',text,re.M);passes=re.findall(r'^# DMA_CASE_PASS name=(\w+) ',text,re.M)
                     assert starts==passes==entry['cases'],'Functional inventory mismatch'
@@ -152,6 +167,9 @@ def main():
             if s['kind']=='fault' and (control.get('substep'),control.get('case')) not in passed_cases:
                 s.update(status='FAIL',reason='PASSING_CONTROL_NOT_EXECUTED')
     report['aggregate_exit_code']=int(len(report['suites'])!=len(steps) or any(s['status']!='PASS' for s in report['suites']) or report.get('functional_case_inventory_matched') is False)
+    if 'source_lock' in report and 'observed_revision' in report['source_lock']:
+        report['source_lock']['clean_after_execution']=not bool(git(source,'status','--porcelain')) and all(digest(source/p)==h for p,h in report['source_lock']['rtl_sha256'].items())
+        if not report['source_lock']['clean_after_execution']:report['aggregate_exit_code']=1
     report['milestone_pass']=not a.select and not a.raw_fault and report['aggregate_exit_code']==0
     report['finished_utc']=datetime.datetime.now(datetime.timezone.utc).isoformat();save()
     return report['aggregate_exit_code']

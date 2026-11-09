@@ -19,7 +19,9 @@ def validate(case,r):
     check(r['errors']==int(error) and r['successes']==r['terminals']-r['errors'],'terminal outcomes')
     check(r['acknowledgements']==1+int(error),'acknowledgements (status reads are not completions)')
     check(r['control_cancelled']==int(case['reset_kind'] in (4,5)),'partial control cancellation')
-    check(r['control_rejected']==(24 if case['csr_tests']==1 else 6 if case['csr_tests']==2 else 0),'rejected control writes')
+    check(r['control_rejected']==(48 if case['csr_tests'] in (1,3) else 6 if case['csr_tests']==2 else 0),'rejected control writes')
+    check(r['rejection_checkpoints']==r['control_rejected'],'each rejected write read back before overwrite/release')
+    check(r['csr_reads']>=6*r['rejection_checkpoints']+7,'protected register/status readbacks executed')
     check(r['comparisons']>0 and r['csr_reads']>=7,'executed comparisons/CSR reads')
     if case['name'].startswith('inactive_tail_'):
         check(r['disabled_write_bytes']==8-case['length']%8,'disabled lane observations')

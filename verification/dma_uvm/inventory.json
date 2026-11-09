@@ -1140,6 +1140,23 @@
       "malformed": 0,
       "csr_tests": 0,
       "chain": 0
+    },
+    {
+      "name": "csr_rejections_sticky_error",
+      "src": 4224,
+      "dst": 32768,
+      "length": 4097,
+      "order": 4,
+      "csr_order": 0,
+      "expected_error": 1,
+      "read_error_burst": -1,
+      "read_error_beat": -1,
+      "write_error_burst": -1,
+      "commit_error": 1,
+      "reset_kind": 0,
+      "malformed": 0,
+      "csr_tests": 3,
+      "chain": 0
     }
   ],
   "required_substeps": [
@@ -1434,6 +1451,14 @@
       "inactive_lanes": true
     },
     {
+      "name": "csr-protected-state",
+      "kind": "functional",
+      "cases": [
+        "csr_rejections_sticky_error"
+      ],
+      "expected": null
+    },
+    {
       "name": "fault-source_alias",
       "kind": "fault",
       "fault": "source_alias",
@@ -1544,6 +1569,36 @@
         "substep": "functional",
         "case": "length_129"
       }
+    },
+    {
+      "name": "fault-csr_idle_side_effect",
+      "kind": "fault",
+      "fault": "csr_idle_side_effect",
+      "cases": [
+        "csr_invalid_classes"
+      ],
+      "expected": null,
+      "expected_fatal": "CSR_READ",
+      "mutation": "csr_idle_side_effect",
+      "passing_control": {
+        "substep": "functional",
+        "case": "csr_invalid_classes"
+      }
+    },
+    {
+      "name": "fault-csr_busy_side_effect",
+      "kind": "fault",
+      "fault": "csr_busy_side_effect",
+      "cases": [
+        "busy_rejections"
+      ],
+      "expected": null,
+      "expected_fatal": "CSR_READ",
+      "mutation": "csr_busy_side_effect",
+      "passing_control": {
+        "substep": "functional",
+        "case": "busy_rejections"
+      }
     }
   ],
   "diagnostic_substeps": [
@@ -1617,6 +1672,16 @@
       ],
       "expected": null,
       "inactive_lanes": true
+    },
+    {
+      "name": "csr-readbacks",
+      "kind": "functional",
+      "cases": [
+        "csr_invalid_classes",
+        "busy_rejections",
+        "csr_rejections_sticky_error"
+      ],
+      "expected": null
     }
   ]
 }
