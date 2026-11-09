@@ -94,3 +94,13 @@ No coverage percentage is inferred from counters. Archived multichannel DMA,
 descriptors/scatter-gather, peripheral handshakes, multiple outstanding/reordered
 traffic, arbitrary malformed-response recovery, full AXI compliance, coverage
 closure, synthesis, timing, FPGA and hardware remain separate milestones.
+
+## Published-byte verification
+
+At evidence revision `b0e7e0bf48f87438ae9170451ec04a1ff510cfd6`, [BYTE_AUDIT.json](BYTE_AUDIT.json) verified
+856 captured artifacts against Git blobs and fresh detached
+checkouts with `core.autocrlf=false` and `true`. All 49 VCDs also
+matched public raw downloads, and all 3 current figure metadata
+and caption hashes matched the original capture bytes. The [audit command and
+actual exits](BYTE_AUDIT_COMMAND.json) are recorded. This later receipt changes
+no tested input, capture or historical evidence.
