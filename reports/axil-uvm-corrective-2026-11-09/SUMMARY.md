@@ -137,8 +137,12 @@ duplicate controls. The latter are explicitly labelled synthetic: they show
 legal AXI reuse that violates CPU request association. All are actual simulator
 samples, not expected diagrams; same-timestamp rendering is not delta-cycle
 analysis. Metadata identifies the source representation, checker/control source
-revisions, hashes and tick ranges. Public-byte verification is recorded after
-the evidence push. No behavior change is attributed to newline differences.
+revisions, hashes and tick ranges. [Public-byte verification](BYTE_AUDIT.json)
+passed at evidence revision `543d6c0fde9937fab1d83bef396f141d4cff2f07`: all 260
+artifacts match Git blobs and fresh detached `core.autocrlf=false`/`true`
+checkouts; all 25 VCDs also match public raw downloads; all ten figure metadata
+and caption hash references match their captures. This audit and paragraph are
+later evidence-only additions. No behavior change is attributed to newlines.
 
 ## Reproduce the corrected full run
 
