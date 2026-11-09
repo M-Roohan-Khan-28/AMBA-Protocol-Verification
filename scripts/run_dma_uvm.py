@@ -16,6 +16,7 @@ def main():
     ap.add_argument('--global-timeout',type=int,default=2400)
     ap.add_argument('--expected-env-sha',help='Full environment SHA required for a full release run')
     ap.add_argument('--raw-fault',action='store_true',help='Internal diagnostic child: preserve the genuine nonzero fault result')
+    ap.add_argument('--source-cache',type=Path,help=argparse.SUPPRESS)
     a=ap.parse_args();repo=Path(__file__).resolve().parent.parent;src=repo/'verification/dma_uvm'
     if a.output.exists() or a.timeout<1 or a.global_timeout<1:ap.error('Require fresh output and positive bounds')
     out=a.output.resolve();out.mkdir(parents=True)
@@ -45,7 +46,14 @@ def main():
     source=out/'source';lock=json.loads((src/'sources.json').read_text())
     if any(s['kind']!='sva' for s in steps):
         report['source_lock']=dict(lock,commands=[])
-        for command in [['git','clone','--quiet','--config','core.autocrlf=false','--config','core.longpaths=true',f'https://github.com/{lock["owner"]}/{lock["repository"]}.git',str(source)],['git','-C',str(source),'checkout','--quiet','--detach',lock['revision']]]:
+        url=f'https://github.com/{lock["owner"]}/{lock["repository"]}.git';supplier=url
+        if a.source_cache:
+            if not a.raw_fault:ap.error('Source cache is only for internal fault children')
+            assert git(a.source_cache,'rev-parse','HEAD')==lock['revision'] and not git(a.source_cache,'status','--porcelain')
+            assert git(a.source_cache,'remote','get-url','origin')==url
+            supplier=str(a.source_cache.resolve())
+        report['source_lock']['supplier']=supplier
+        for command in [['git','clone','--quiet','--no-hardlinks','--config','core.autocrlf=false','--config','core.longpaths=true',supplier,str(source)],['git','-C',str(source),'checkout','--quiet','--detach',lock['revision']]]:
             c,text=invoke(command,out,out/f'source-{len(report["source_lock"]["commands"])}.log');report['source_lock']['commands'].append(c)
             if failure(c,text):prereq=prereq or failure(c,text);break
         else:
@@ -58,6 +66,7 @@ def main():
         if entry['kind']=='fault' and not a.raw_fault:
             child=wd/'child'
             cmd=[sys.executable,str(Path(__file__)),'--select',entry['name'],'--raw-fault','--output',str(child),'--sim-bin',str(a.sim_bin),'--uvm-lib',str(a.uvm_lib),'--uvm-include',str(a.uvm_include),'--timeout',str(a.timeout)]
+            cmd+=['--source-cache',str(source)]
             if a.expected_env_sha:cmd+=['--expected-env-sha',a.expected_env_sha]
             c,text=run(cmd,repo,max(1,min(6*a.timeout,int(a.global_timeout-(time.monotonic()-start)))),wd/'child-wrapper.log');s['commands'].append(c)
             s.update(status='FAIL',reason='FAULT_NOT_QUALIFIED',child_wrapper_exit=c['exit_code'],passing_control=entry['passing_control'])
@@ -103,7 +112,7 @@ def main():
         else:
             s.update(status='NOT RUN',reason='UNIMPLEMENTED_REQUIRED_STEP');save();continue
         commands=[[tool(a.sim_bin,'vlib'),'work'],[tool(a.sim_bin,'vlog'),'-sv','-work','work',*compile_extra,*files],
-          [tool(a.sim_bin,'vsim'),'-c','-onfinish','stop','-voptargs=+acc','-sv_seed','682016495',*sim_extra,'work.'+top,*plus,'-do','onerror {quit -force -code 1}; '+do+'quit -force -code 0']]
+          [tool(a.sim_bin,'vsim'),'-c','-onfinish','exit','-voptargs=+acc','-sv_seed','682016495',*sim_extra,'work.'+top,*plus,'-do','onerror {quit -force -code 1}; '+do+'quit -force -code 0']]
         for i,cmd in enumerate(commands):
             c,text=invoke(cmd,wd,wd/f'{i}.log');s['commands'].append(c)
             reason=failure(c,text,marker if i==2 else None)
