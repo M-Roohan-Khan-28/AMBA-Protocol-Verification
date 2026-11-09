@@ -1,0 +1,1 @@
+{"adapter":1,"requests":244,"completions":240,"write_requests":75,"read_requests":169,"write_completions":72,"read_completions":168,"write_cancelled":3,"read_cancelled":1,"aw_accepted":74,"w_accepted":74,"ar_accepted":169,"b_accepted":72,"r_accepted":168,"cancelled_aw":2,"cancelled_w":2,"cancelled_ar":1,"cancelled_b":0,"cancelled_r":0}

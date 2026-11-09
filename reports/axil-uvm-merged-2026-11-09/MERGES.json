@@ -1,0 +1,38 @@
+{
+  "owner": "M-Roohan-Khan-28",
+  "account_id": 270144410,
+  "pull_requests": [
+    {
+      "repository": "AMBA-Protocol-Verification",
+      "pr": 10,
+      "url": "https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/pull/10",
+      "reviewed_head": "4278d78cdc41edc64f33507ee9e1b4172ff83768",
+      "base": "d826c798bc7c1d07204a2db414128f6f0774d0fe",
+      "merge_commit": "cdbb7b1d2e1ae73e621f9de884119c44b19efd99",
+      "merged_at": "2026-11-09T12:30:08Z",
+      "method": "merge",
+      "head_sha_guard": "4278d78cdc41edc64f33507ee9e1b4172ff83768",
+      "unresolved_threads": 0,
+      "reviews": [],
+      "check_runs": [],
+      "required_checks": [],
+      "required_contexts": []
+    },
+    {
+      "repository": "AXI4-Lite-Memory-Interface",
+      "pr": 3,
+      "url": "https://github.com/M-Roohan-Khan-28/AXI4-Lite-Memory-Interface/pull/3",
+      "reviewed_head": "13fc1e167c7ede5898fc91a32b64862ab2ae7032",
+      "base": "faf43379b24a524999eb2c8ad7e100cde35054c3",
+      "merge_commit": "97f10ce845c83932c4d88743f1929ecf786cf54e",
+      "merged_at": "2026-11-09T12:30:39Z",
+      "method": "merge",
+      "head_sha_guard": "13fc1e167c7ede5898fc91a32b64862ab2ae7032",
+      "unresolved_threads": 0,
+      "reviews": [],
+      "check_runs": [],
+      "required_checks": [],
+      "required_contexts": []
+    }
+  ]
+}

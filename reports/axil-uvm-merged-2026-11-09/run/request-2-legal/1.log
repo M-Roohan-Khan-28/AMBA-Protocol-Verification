@@ -1,0 +1,17 @@
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+Start time: 17:33:55 on Nov 09,2026
+vlog -sv -work work -L C:\MXR\Quartus\25.1\questa_fse\uvm-1.2 "+incdir+C:\MXR\Quartus\25.1\questa_fse\verilog_src\uvm-1.2\src" "+define+AXIL_ADAPTER=2" C:\short\axil-uvm-merged-source-20261109\verification\axil_uvm\axil_bus.sv C:\short\axil-uvm-merged-source-20261109\verification\axil_uvm\axil_assertions.sv C:\short\axil-uvm-merged-source-20261109\verification\axil_uvm\axil_uvm_pkg.sv C:\short\axil-uvm-merged-source-20261109\verification\axil_uvm\axil_request_control.sv 
+** Note: (vlog-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+-- Compiling interface axil_bus
+-- Compiling module axil_assertions
+-- Compiling package axil_uvm_pkg
+-- Importing package C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.uvm_pkg (uvm-1.2 Built-in)
+-- Compiling package axil_request_control_pkg
+-- Importing package axil_uvm_pkg
+-- Compiling module axil_request_control
+-- Importing package axil_request_control_pkg
+
+Top level modules:
+	axil_request_control
+End time: 17:33:55 on Nov 09,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

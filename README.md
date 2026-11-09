@@ -14,6 +14,11 @@ request oracle, and five rerun data/address/progress fault detections. The
 [earlier 17-substep evidence](reports/axil-uvm-2026-11-08/SUMMARY.md) remains unchanged.
 
 
+The [merged-source closeout](reports/axil-uvm-merged-2026-11-09/SUMMARY.md)
+records a new 23/23 serial pass from AMBA merge `cdbb7b1d2e1ae73e621f9de884119c44b19efd99`,
+actual wrapper exit 0, unchanged DUT lock and reconciled CPU/bus/reset accounting.
+Both reviewed milestone PRs are merged; prior controls and reports are preserved.
+
 ## Separate APB UVM milestone
 
 The [APB advanced-verification guide](docs/ADVANCED_APB.md) describes a reusable

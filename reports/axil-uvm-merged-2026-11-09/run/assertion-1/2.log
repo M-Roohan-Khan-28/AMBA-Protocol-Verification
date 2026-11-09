@@ -1,0 +1,42 @@
+Reading pref.tcl
+
+# 2025.2
+
+# ** Note: (vsim-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# vsim -c -onfinish stop -voptargs="+acc" -sv_seed 682016495 -L C:\MXR\Quartus\25.1\questa_fse\uvm-1.2 work.axil_assertion_control "+CASE=1" "+EXPECT_ASSERT" -do "onerror {quit -force -code 1}; run -all; quit -force -code 0" 
+# Start time: 17:32:07 on Nov 09,2026
+# Loading C:/Users/CG/AppData/Local/Temp\CG@DESKTOP-9KOU2NO_dpi_42320\win64_gcc-7.4.0\export_tramp.dll
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.axil_assertion_control(fast)
+# Loading work.axil_bus(fast__1)
+# Loading work.axil_assertions(fast)
+# onerror {quit -force -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# AXIL_ASSERT_DETECTED W_HOLD time=45000
+# AXIL_SVA_CONTROL_PASS case=1 detections=1
+# ** Note: $finish    : C:/short/axil-uvm-merged-source-20261109/verification/axil_uvm/axil_assertion_control.sv(58)
+#    Time: 46 ns  Iteration: 0  Instance: /axil_assertion_control
+# Break in Module axil_assertion_control at C:/short/axil-uvm-merged-source-20261109/verification/axil_uvm/axil_assertion_control.sv line 58
+# Stopped at C:/short/axil-uvm-merged-source-20261109/verification/axil_uvm/axil_assertion_control.sv line 58
+#  quit -force -code 0
+# End time: 17:32:10 on Nov 09,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 1
