@@ -2,10 +2,11 @@
 // ARM IHI 0033A sections 3.6, 5.1 and 6.1; endpoint checks explicitly EP_.
 module ahb_assertions(ahb_bus b);
   bit pending=0,pwrite=0,error_started=0;
-  string expected="";bit reported[string];
+  string expected="";
   initial void'($value$plusargs("EXPECT_SVA=%s",expected));
   task automatic violation(string id);
-    if(!reported.exists(id))begin reported[id]=1;b.sva_count++;$display("AHB_SVA_DETECTED %s time=%0t",id,$time);end
+    // Count every occurrence: repeated expected failures must not be hidden.
+    b.sva_count++;$display("AHB_SVA_DETECTED %s time=%0t",id,$time);
     if(id!=expected)$fatal(1,"AHB_SVA_UNEXPECTED %s",id);
   endtask
   // NBA updates preserve pre-edge ownership for concurrent properties.

@@ -156,6 +156,9 @@ def main():
         qualified=False
         for i,cmd in enumerate(commands):
             c,text=invoke(cmd,wd,wd/f'{i}.log');s['commands'].append(c)
+            if i==2:
+                versions=re.findall(r'\[Questa UVM\] (QUESTA_UVM-[\d.]+)',text)
+                if versions:s['uvm_runtime_versions']=sorted(set(versions))
             reason=failure(c,text,marker if i==2 else None)
             if i==2 and entry['kind']=='checker' and entry['expected']:
                 fatals=re.findall(r'^# UVM_FATAL .*?\[(\w+)\]',text,re.M)
@@ -195,6 +198,9 @@ def main():
     if 'source_lock' in report and 'observed_revision' in report['source_lock']:
         report['source_lock']['clean_after_execution']=not bool(git(source,'status','--porcelain')) and all(digest(source/p)==h for p,h in report['source_lock']['execution_files_sha256'].items())
         if not report['source_lock']['clean_after_execution']:report['aggregate_exit_code']=1
+    report['environment_clean_after_execution']=(git(repo,'rev-parse','HEAD')==report['source_revision'] and not git(repo,'status','--porcelain') and all(digest(repo/p)==h for p,h in report['input_sha256'].items()))
+    if not report['environment_clean_after_execution']:report['aggregate_exit_code']=1
+    report['uvm_runtime_versions']=sorted({v for s in report['suites'] for v in s.get('uvm_runtime_versions',[])})
     report['milestone_pass']=not a.select and not a.raw_fault and report['aggregate_exit_code']==0
     report['finished_utc']=datetime.datetime.now(datetime.timezone.utc).isoformat();save()
     return report['aggregate_exit_code']
