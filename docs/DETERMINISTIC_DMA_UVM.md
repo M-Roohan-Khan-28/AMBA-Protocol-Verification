@@ -111,3 +111,13 @@ multiple outstanding/reordered transactions, arbitrary malformed-target recovery
 full AXI compliance, coverage closure, synthesis, timing, FPGA and hardware are
 separate milestones. Progress limits belong to the test environment, not AXI.
 No new portable eleven-project aggregate is claimed.
+
+## Executed review milestone
+
+The [separate report](../reports/dma-uvm-2026-11-09/SUMMARY.md) records 43/43
+required substeps PASS at environment `e93a6fdff85804dab7b5e636e43880e1ba7615ab`: 60 functional scenarios,
+30 SVA controls and eight qualified nonzero fault children. The existing DMA
+40-case portable suite and 11-file provenance check also passed. No RTL fix was
+needed. [Reproduction](../reports/dma-uvm-2026-11-09/REPRODUCE.md) pins the complete
+environment SHA and preserves the DUT lock. New evidence is separate from every
+previous report. These procedural counts do not measure functional coverage.

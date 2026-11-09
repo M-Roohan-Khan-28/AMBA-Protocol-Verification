@@ -1,0 +1,25 @@
+{
+  "identity": {
+    "id": 270144410,
+    "login": "M-Roohan-Khan-28"
+  },
+  "repositories": [
+    {
+      "repository": "AMBA-Protocol-Verification",
+      "baseline": "60b2db25bf007b17d530389cb26a71578f5c28f8",
+      "path": "C:/short/amba-dma-uvm-20261109",
+      "branch": "advanced/dma-deterministic-uvm",
+      "clean": true,
+      "push": true
+    },
+    {
+      "repository": "AXI4-DMA-Subsystem",
+      "baseline": "a2d3d57edaa9eb441f3289bf5320f4df2f074144",
+      "path": "C:/short/dma-uvm-adapter-20261109",
+      "branch": "advanced/dma-uvm-adapter",
+      "clean": true,
+      "push": true
+    }
+  ],
+  "brief_sha256": "ed601499a994b506c07063ae80c01e207fae49a7df7f9cb48f5b5695c16d70c9"
+}

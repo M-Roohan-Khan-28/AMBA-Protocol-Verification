@@ -1,0 +1,7 @@
+﻿{
+    "portable_wrapper_exit":  0,
+    "provenance_exit":  0,
+    "revision":  "a2d3d57edaa9eb441f3289bf5320f4df2f074144",
+    "clean":  true,
+    "command":  "MODELSIM_BIN=C:/intelFPGA/20.1/modelsim_ase/win32aloem python scripts/run_qualified.py --output-dir C:/short/dma-portable-20261109; python scripts/check_provenance.py"
+}

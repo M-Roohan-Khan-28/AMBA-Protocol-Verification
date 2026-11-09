@@ -1,0 +1,94 @@
+Reading pref.tcl
+
+# 2025.2
+
+# ** Note: (vsim-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# vsim -c -onfinish stop -voptargs="+acc" -sv_seed 682016495 -L C:\MXR\Quartus\25.1\questa_fse\uvm-1.2 work.dma_uvm_top "+CASES=C:\short\dma-uvm-smoke-v2-20261109\smoke\cases.txt" -do "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /dma_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0" 
+# Start time: 19:01:34 on Nov 09,2026
+# Loading C:/Users/CG/AppData/Local/Temp\CG@DESKTOP-9KOU2NO_dpi_2584\win64_gcc-7.4.0\export_tramp.dll
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.dma_bus(fast)
+# Loading C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.uvm_pkg(fast)
+# Loading work.dma_uvm_pkg(fast)
+# Loading C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.questa_uvm_pkg(fast)
+# Loading work.dma_uvm_top(fast)
+# Loading work.dma_bus(fast__2)
+# Loading work.dma_adapter(fast)
+# Loading work.axi4_dma_subsystem(fast)
+# Loading work.dma_assertions(fast)
+# ** Error (suppressible): (vsim-3839) Variable '/dma_uvm_top/bus/d_rready', driven via a port connection, is multiply driven. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/bus File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv Line: 50
+# ** Error (suppressible): (vsim-3839) Variable '/dma_uvm_top/bus/d_arvalid', driven via a port connection, is multiply driven. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/bus File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv Line: 43
+# ** Error (suppressible): (vsim-3839) Variable '/dma_uvm_top/bus/d_arburst', driven via a port connection, is multiply driven. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/bus File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv Line: 42
+# ** Error (suppressible): (vsim-3839) Variable '/dma_uvm_top/bus/d_arsize', driven via a port connection, is multiply driven. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/bus File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv Line: 41
+# ** Error (suppressible): (vsim-3839) Variable '/dma_uvm_top/bus/d_arlen', driven via a port connection, is multiply driven. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/bus File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv Line: 40
+# ** Error (suppressible): (vsim-3839) Variable '/dma_uvm_top/bus/d_arid', driven via a port connection, is multiply driven. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/bus File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv Line: 38
+# ** Error (suppressible): (vsim-3839) Variable '/dma_uvm_top/bus/d_bready', driven via a port connection, is multiply driven. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/bus File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv Line: 37
+# ** Error (suppressible): (vsim-3839) Variable '/dma_uvm_top/bus/d_wvalid', driven via a port connection, is multiply driven. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/bus File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv Line: 32
+# ** Error (suppressible): (vsim-3839) Variable '/dma_uvm_top/bus/d_wlast', driven via a port connection, is multiply driven. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/bus File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv Line: 31
+# ** Error (suppressible): (vsim-3839) Variable '/dma_uvm_top/bus/d_awvalid', driven via a port connection, is multiply driven. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/bus File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv Line: 27
+# ** Error (suppressible): (vsim-3839) Variable '/dma_uvm_top/bus/d_awburst', driven via a port connection, is multiply driven. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/bus File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv Line: 26
+# ** Error (suppressible): (vsim-3839) Variable '/dma_uvm_top/bus/d_awsize', driven via a port connection, is multiply driven. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/bus File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv Line: 25
+# ** Error (suppressible): (vsim-3839) Variable '/dma_uvm_top/bus/d_awlen', driven via a port connection, is multiply driven. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/bus File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv Line: 24
+# ** Error (suppressible): (vsim-3839) Variable '/dma_uvm_top/bus/d_awid', driven via a port connection, is multiply driven. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/bus File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv Line: 22
+# ** Error (suppressible): (vsim-3839) Variable '/dma_uvm_top/bus/irq', driven via a port connection, is multiply driven. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/bus File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv Line: 21
+# ** Error (suppressible): (vsim-3839) Variable '/dma_uvm_top/bus/c_rvalid', driven via a port connection, is multiply driven. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/bus File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv Line: 19
+# ** Error (suppressible): (vsim-3839) Variable '/dma_uvm_top/bus/c_rresp', driven via a port connection, is multiply driven. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/bus File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv Line: 18
+# ** Error (suppressible): (vsim-3839) Variable '/dma_uvm_top/bus/c_rdata', driven via a port connection, is multiply driven. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/bus File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv Line: 17
+# ** Error (suppressible): (vsim-3839) Variable '/dma_uvm_top/bus/c_arready', driven via a port connection, is multiply driven. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/bus File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv Line: 16
+# ** Error (suppressible): (vsim-3839) Variable '/dma_uvm_top/bus/c_bvalid', driven via a port connection, is multiply driven. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/bus File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv Line: 12
+# ** Error (suppressible): (vsim-3839) Variable '/dma_uvm_top/bus/c_bresp', driven via a port connection, is multiply driven. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/bus File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv Line: 11
+# ** Error (suppressible): (vsim-3839) Variable '/dma_uvm_top/bus/c_wready', driven via a port connection, is multiply driven. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/bus File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv Line: 10
+# ** Error (suppressible): (vsim-3839) Variable '/dma_uvm_top/bus/c_awready', driven via a port connection, is multiply driven. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/bus File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv Line: 6
+# ** Error (suppressible): (vsim-12003) Variable '/dma_uvm_top/bus/d_wstrb' written by continuous and procedural assignments. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv(30).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/adapter File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv Line: 8
+# ** Error (suppressible): (vsim-12003) Variable '/dma_uvm_top/bus/d_wdata' written by continuous and procedural assignments. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv(29).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/adapter File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv Line: 7
+# ** Error (suppressible): (vsim-12003) Variable '/dma_uvm_top/bus/d_awaddr' written by continuous and procedural assignments. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv(23).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/adapter File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv Line: 6
+# ** Error (suppressible): (vsim-12003) Variable '/dma_uvm_top/bus/d_araddr' written by continuous and procedural assignments. See C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_bus.sv(39).
+#    Time: 0 ps  Iteration: 0  Instance: /dma_uvm_top/adapter File: C:/short/amba-dma-uvm-20261109/verification/dma_uvm/dma_adapter.sv Line: 5
+# Error loading design
+Error loading design
+# End time: 19:01:39 on Nov 09,2026, Elapsed time: 0:00:05
+# Errors: 27, Warnings: 1
