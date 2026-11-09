@@ -1021,6 +1021,125 @@
       "malformed": 4,
       "csr_tests": 0,
       "chain": 0
+    },
+    {
+      "name": "inactive_tail_1",
+      "src": 4224,
+      "dst": 32768,
+      "length": 129,
+      "order": 6,
+      "csr_order": 0,
+      "expected_error": 0,
+      "read_error_burst": -1,
+      "read_error_beat": -1,
+      "write_error_burst": -1,
+      "commit_error": 1,
+      "reset_kind": 0,
+      "malformed": 0,
+      "csr_tests": 0,
+      "chain": 0
+    },
+    {
+      "name": "inactive_tail_2",
+      "src": 4224,
+      "dst": 32768,
+      "length": 130,
+      "order": 6,
+      "csr_order": 0,
+      "expected_error": 0,
+      "read_error_burst": -1,
+      "read_error_beat": -1,
+      "write_error_burst": -1,
+      "commit_error": 1,
+      "reset_kind": 0,
+      "malformed": 0,
+      "csr_tests": 0,
+      "chain": 0
+    },
+    {
+      "name": "inactive_tail_3",
+      "src": 4224,
+      "dst": 32768,
+      "length": 131,
+      "order": 6,
+      "csr_order": 0,
+      "expected_error": 0,
+      "read_error_burst": -1,
+      "read_error_beat": -1,
+      "write_error_burst": -1,
+      "commit_error": 1,
+      "reset_kind": 0,
+      "malformed": 0,
+      "csr_tests": 0,
+      "chain": 0
+    },
+    {
+      "name": "inactive_tail_4",
+      "src": 4224,
+      "dst": 32768,
+      "length": 132,
+      "order": 6,
+      "csr_order": 0,
+      "expected_error": 0,
+      "read_error_burst": -1,
+      "read_error_beat": -1,
+      "write_error_burst": -1,
+      "commit_error": 1,
+      "reset_kind": 0,
+      "malformed": 0,
+      "csr_tests": 0,
+      "chain": 0
+    },
+    {
+      "name": "inactive_tail_5",
+      "src": 4224,
+      "dst": 32768,
+      "length": 133,
+      "order": 6,
+      "csr_order": 0,
+      "expected_error": 0,
+      "read_error_burst": -1,
+      "read_error_beat": -1,
+      "write_error_burst": -1,
+      "commit_error": 1,
+      "reset_kind": 0,
+      "malformed": 0,
+      "csr_tests": 0,
+      "chain": 0
+    },
+    {
+      "name": "inactive_tail_6",
+      "src": 4224,
+      "dst": 32768,
+      "length": 134,
+      "order": 6,
+      "csr_order": 0,
+      "expected_error": 0,
+      "read_error_burst": -1,
+      "read_error_beat": -1,
+      "write_error_burst": -1,
+      "commit_error": 1,
+      "reset_kind": 0,
+      "malformed": 0,
+      "csr_tests": 0,
+      "chain": 0
+    },
+    {
+      "name": "inactive_tail_7",
+      "src": 4224,
+      "dst": 32768,
+      "length": 135,
+      "order": 6,
+      "csr_order": 0,
+      "expected_error": 0,
+      "read_error_burst": -1,
+      "read_error_beat": -1,
+      "write_error_burst": -1,
+      "commit_error": 1,
+      "reset_kind": 0,
+      "malformed": 0,
+      "csr_tests": 0,
+      "chain": 0
     }
   ],
   "required_substeps": [
@@ -1300,6 +1419,21 @@
       "expected": "R_LAST"
     },
     {
+      "name": "inactive-lanes",
+      "kind": "functional",
+      "cases": [
+        "inactive_tail_1",
+        "inactive_tail_2",
+        "inactive_tail_3",
+        "inactive_tail_4",
+        "inactive_tail_5",
+        "inactive_tail_6",
+        "inactive_tail_7"
+      ],
+      "expected": null,
+      "inactive_lanes": true
+    },
+    {
       "name": "fault-source_alias",
       "kind": "fault",
       "fault": "source_alias",
@@ -1420,6 +1554,69 @@
         "length_129"
       ],
       "expected": null
+    },
+    {
+      "name": "inactive-tail-1",
+      "kind": "functional",
+      "cases": [
+        "inactive_tail_1"
+      ],
+      "expected": null,
+      "inactive_lanes": true
+    },
+    {
+      "name": "inactive-tail-2",
+      "kind": "functional",
+      "cases": [
+        "inactive_tail_2"
+      ],
+      "expected": null,
+      "inactive_lanes": true
+    },
+    {
+      "name": "inactive-tail-3",
+      "kind": "functional",
+      "cases": [
+        "inactive_tail_3"
+      ],
+      "expected": null,
+      "inactive_lanes": true
+    },
+    {
+      "name": "inactive-tail-4",
+      "kind": "functional",
+      "cases": [
+        "inactive_tail_4"
+      ],
+      "expected": null,
+      "inactive_lanes": true
+    },
+    {
+      "name": "inactive-tail-5",
+      "kind": "functional",
+      "cases": [
+        "inactive_tail_5"
+      ],
+      "expected": null,
+      "inactive_lanes": true
+    },
+    {
+      "name": "inactive-tail-6",
+      "kind": "functional",
+      "cases": [
+        "inactive_tail_6"
+      ],
+      "expected": null,
+      "inactive_lanes": true
+    },
+    {
+      "name": "inactive-tail-7",
+      "kind": "functional",
+      "cases": [
+        "inactive_tail_7"
+      ],
+      "expected": null,
+      "inactive_lanes": true
     }
   ]
 }

@@ -5,7 +5,14 @@ module dma_adapter(dma_bus b);
   string fault; initial if(!$value$plusargs("FAULT=%s",fault)) fault="none";
   assign b.d_araddr=actual_araddr ^ ((fault=="source_alias")?32'h100:0);
   assign b.d_awaddr=actual_awaddr ^ ((fault=="destination_progress")?32'h100:0);
-  assign b.d_wdata=actual_wdata ^ ((fault=="active_data")?64'h1:0);
+  // Legal test-only transform: disabled byte lanes have no memory effect.
+  // Constant mode + unchanged WSTRB/payload makes this stable throughout stalls.
+  bit inactive_lanes; initial inactive_lanes=$test$plusargs("INACTIVE_LANES");
+  wire [63:0] lane_xor;
+  for(genvar lane=0;lane<8;lane++)begin: inactive_transform
+    assign lane_xor[8*lane+:8]=(inactive_lanes&&!actual_wstrb[lane])?8'hff:8'h00;
+  end
+  assign b.d_wdata=actual_wdata ^ lane_xor ^ ((fault=="active_data")?64'h1:0);
   assign b.d_wstrb=(fault=="tail_strobe" && actual_wstrb!=255)?8'hff:actual_wstrb;
   assign b.d_arvalid=actual_arvalid || (fault=="duplicate_read" && b.irq);
   assign b.d_awvalid=actual_awvalid || (fault=="duplicate_write" && b.irq);

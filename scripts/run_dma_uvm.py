@@ -108,6 +108,7 @@ def main():
             files=[src/'dma_bus.sv',*[source/p for p in lock['files']],src/'dma_adapter.sv',src/'dma_assertions.sv',src/'dma_uvm_pkg.sv',src/'dma_uvm_top.sv'];top='dma_uvm_top'
             compile_extra=['-L',str(a.uvm_lib),'+incdir+'+str(a.uvm_include),'+incdir+'+str(src)];sim_extra=['-L',str(a.uvm_lib)]
             plus=['+CASES='+str(casefile)]+(['+EXPECT_SVA='+entry['expected']] if entry.get('expected') else [])
+            if entry.get('inactive_lanes'):plus+=['+INACTIVE_LANES']
             if entry['kind']=='fault' and entry['fault']!='missing_marker':plus+=['+FAULT='+entry['fault']]
             marker=rf'^# DMA_UVM_PASS cases={len(selected)} assertions={int(bool(entry.get("expected")))} seed=0x28A6BEEF\s*$'
             if entry.get('fault')=='missing_marker':marker=r'^# DMA_INTENTIONALLY_MISSING_REQUIRED_MARKER$'

@@ -2,7 +2,7 @@ class dma_memory_responder extends uvm_component;
   `uvm_component_utils(dma_memory_responder)
   dma_config cfg;byte unsigned ram[addr_t];
   bit rp=0,ap=0,wl=0,committed=0,rv=0,bv=0;
-  addr_t ra,wa;int rlen,alen,ri=0,qn=0,rb=0,wb=0,cycle=0,delay_b=0,last_epoch=-1;
+  addr_t ra,wa;int partial_wait=0;int rlen,alen,ri=0,qn=0,rb=0,wb=0,cycle=0,delay_b=0,last_epoch=-1;
   bit[63:0] dataq[16];bit[7:0] strbq[16];
   bit[63:0] rd;bit[1:0] rr,br;bit[3:0] rid,bid;bit rlast;
   function new(string n,uvm_component p);super.new(n,p);endfunction
@@ -18,7 +18,7 @@ class dma_memory_responder extends uvm_component;
     forever begin
       @(cfg.vif.sample);cycle++;
       if(last_epoch!=cfg.epoch)begin ram.delete();last_epoch=cfg.epoch;end
-      if(!cfg.vif.sample.reset_n)begin rp=0;ap=0;wl=0;committed=0;rv=0;bv=0;ri=0;qn=0;rb=0;wb=0;delay_b=0;end
+      if(!cfg.vif.sample.reset_n)begin rp=0;ap=0;wl=0;committed=0;rv=0;bv=0;ri=0;qn=0;rb=0;wb=0;delay_b=0;partial_wait=0;end
       else begin
         if(cfg.vif.sample.d_rvalid&&cfg.vif.sample.d_rready)begin
           cfg.read_beats++;rv=0;
@@ -54,7 +54,9 @@ class dma_memory_responder extends uvm_component;
         cfg.vif.d_arready=0;cfg.vif.d_awready=0;cfg.vif.d_wready=0;cfg.vif.d_rvalid=0;cfg.vif.d_bvalid=0;
       end else begin
         cfg.vif.d_arready=!rp&&(cycle%3!=0);
+        if(cfg.vif.d_wvalid&&cfg.vif.d_wstrb!=255&&partial_wait<4)partial_wait++;
         case(cfg.scenario.order)
+          6:begin cfg.vif.d_awready=!ap;cfg.vif.d_wready=ap&&(cfg.vif.d_wstrb==255||partial_wait>=4);end
           0:begin cfg.vif.d_awready=!ap;cfg.vif.d_wready=ap&&(cycle%3!=0);end
           1:begin cfg.vif.d_awready=!ap&&qn>0;cfg.vif.d_wready=!wl&&(cycle%3!=0);end
           2:begin cfg.vif.d_awready=!ap&&wl;cfg.vif.d_wready=!wl&&(cycle%3!=0);end
