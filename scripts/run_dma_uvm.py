@@ -132,6 +132,14 @@ def main():
                     s['cases']=[]
                     for case in selected:
                         row=json.loads((wd/('case-'+case['name']+'.json')).read_text());validate(case,row);s['cases'].append(row)
+                    if entry.get('inactive_lanes'):
+                        changes=re.findall(r'^# DMA_INACTIVE_ACCEPT mask=([0-9a-f]+) original=([0-9a-f]+) observed=([0-9a-f]+)',text,re.M)
+                        assert len(changes)==len(selected),'Missing inactive-lane acceptance evidence'
+                        for case,(mask,before,after) in zip(selected,changes):
+                            mask=int(mask,16);before=int(before,16);after=int(after,16)
+                            assert mask==(1<<(case['length']%8))-1
+                            enabled=sum(255<<(8*i) for i in range(8) if mask&(1<<i))
+                            assert (before&enabled)==(after&enabled) and before^after==((2**64-1)^enabled)
                     capture=wd/'capture.vcd';assert capture.is_file() and capture.stat().st_size,'Missing VCD'
                     s['capture_sha256']=digest(capture)
                 except (OSError,ValueError,KeyError,AssertionError) as error:s.update(status='FAIL',reason='RESULT_ACCOUNTING: '+str(error))

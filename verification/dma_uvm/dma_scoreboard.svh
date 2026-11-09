@@ -7,6 +7,7 @@ class dma_scoreboard extends uvm_subscriber#(dma_frame);
   addr_t offset,chunk;int beats,rn,wn;bit aw_seen,write_committed,read_fault;
   int commands,terminals,successes,errors,cancellations,acks,control_rejected,control_cancelled,reads;
   int ars,aws,rbeats,wbeats,bs,commits,comparisons,reset_count;
+  int disabled_write_bytes,partial_write_stalls;
   int cancelled_ar,cancelled_aw,cancelled_rbeats,cancelled_wbeats,cancelled_b;
   int aw_cycle,w_cycle,cycle,aw_first,w_first,same_edge,all_w_before_aw;
   string label;
@@ -19,7 +20,7 @@ class dma_scoreboard extends uvm_subscriber#(dma_frame);
   function void begin_case(string n);
     label=n;memory.delete();snapshot.delete();protected_bytes.delete();
     commands=0;terminals=0;successes=0;errors=0;cancellations=0;acks=0;control_rejected=0;control_cancelled=0;reads=0;
-    ars=0;aws=0;rbeats=0;wbeats=0;bs=0;commits=0;comparisons=0;reset_count=0;
+    disabled_write_bytes=0;partial_write_stalls=0;ars=0;aws=0;rbeats=0;wbeats=0;bs=0;commits=0;comparisons=0;reset_count=0;
     cancelled_ar=0;cancelled_aw=0;cancelled_rbeats=0;cancelled_wbeats=0;cancelled_b=0;
     aw_first=0;w_first=0;same_edge=0;all_w_before_aw=0;active=0;in_reset=0;
   endfunction
@@ -114,6 +115,7 @@ class dma_scoreboard extends uvm_subscriber#(dma_frame);
       aw_seen=1;aw_cycle=cycle;aws++;if(wn==beats)all_w_before_aw++;
       last_awaddr=f.d_awaddr;last_awlen=f.d_awlen;
     end
+    if(f.d_wvalid&&!f.d_wready&&f.d_wstrb!=255)partial_write_stalls++;
     if(f.d_wvalid&&f.d_wready)begin
       require(active&&stage==2&&wn<beats,"ORACLE_W_OWNERSHIP","unsolicited/duplicate W beat");
       if(wn==0)w_cycle=cycle;
@@ -122,7 +124,10 @@ class dma_scoreboard extends uvm_subscriber#(dma_frame);
       require(f.d_wlast===(wn==beats-1),"ORACLE_WLAST","write LAST progression");
       for(int i=0;i<8;i++)begin
         a=offset+8*wn+i;
-        require(f.d_wdata[8*i+:8]===((a<length)?snapshot[int'(a)]:mem(addr_t'(src)+a)),"ORACLE_WDATA","buffered source byte mismatch");
+        // The independently planned mask, not observed WSTRB, selects data obligations.
+        // Exact observed WSTRB and WLAST were checked above; disabled data is unconstrained.
+        if(mask[i])require(f.d_wdata[8*i+:8]===snapshot[int'(a)],"ORACLE_WDATA","enabled source byte mismatch");
+        else disabled_write_bytes++;
       end
       wn++;wbeats++;
       last_wdata=f.d_wdata;last_wstrb=f.d_wstrb;
@@ -167,7 +172,7 @@ class dma_scoreboard extends uvm_subscriber#(dma_frame);
     require(!active&&!ca&&!cw&&!cr,"ORACLE_ACCOUNTING","pending obligation at case end");
     require(commands==terminals+cancellations&&terminals==successes+errors,"ORACLE_ACCOUNTING","command terminal/reset totals");
     f=$fopen({"case-",label,".json"},"w");if(!f)`uvm_fatal("RESULT_IO","Cannot open case result")
-    $fwrite(f,"{\"name\":\"%s\",\"commands\":%0d,\"terminals\":%0d,\"successes\":%0d,\"errors\":%0d,\"reset_cancellations\":%0d,\"acknowledgements\":%0d,\"control_rejected\":%0d,\"control_cancelled\":%0d,\"csr_reads\":%0d,\"ar\":%0d,\"aw\":%0d,\"r_beats\":%0d,\"w_beats\":%0d,\"b\":%0d,\"memory_commits\":%0d,\"comparisons\":%0d,\"resets\":%0d,\"cancelled_ar\":%0d,\"cancelled_aw\":%0d,\"cancelled_r_beats\":%0d,\"cancelled_w_beats\":%0d,\"cancelled_b_pending\":%0d,\"aw_first\":%0d,\"w_first\":%0d,\"simultaneous\":%0d,\"all_w_before_aw\":%0d}\n",label,commands,terminals,successes,errors,cancellations,acks,control_rejected,control_cancelled,reads,ars,aws,rbeats,wbeats,bs,commits,comparisons,reset_count,cancelled_ar,cancelled_aw,cancelled_rbeats,cancelled_wbeats,cancelled_b,aw_first,w_first,same_edge,all_w_before_aw);$fclose(f);
+    $fwrite(f,"{\"name\":\"%s\",\"commands\":%0d,\"terminals\":%0d,\"successes\":%0d,\"errors\":%0d,\"reset_cancellations\":%0d,\"acknowledgements\":%0d,\"control_rejected\":%0d,\"control_cancelled\":%0d,\"csr_reads\":%0d,\"ar\":%0d,\"aw\":%0d,\"r_beats\":%0d,\"w_beats\":%0d,\"b\":%0d,\"memory_commits\":%0d,\"disabled_write_bytes\":%0d,\"partial_write_stalls\":%0d,\"comparisons\":%0d,\"resets\":%0d,\"cancelled_ar\":%0d,\"cancelled_aw\":%0d,\"cancelled_r_beats\":%0d,\"cancelled_w_beats\":%0d,\"cancelled_b_pending\":%0d,\"aw_first\":%0d,\"w_first\":%0d,\"simultaneous\":%0d,\"all_w_before_aw\":%0d}\n",label,commands,terminals,successes,errors,cancellations,acks,control_rejected,control_cancelled,reads,ars,aws,rbeats,wbeats,bs,commits,disabled_write_bytes,partial_write_stalls,comparisons,reset_count,cancelled_ar,cancelled_aw,cancelled_rbeats,cancelled_wbeats,cancelled_b,aw_first,w_first,same_edge,all_w_before_aw);$fclose(f);
     $display("DMA_CASE_PASS name=%s commands=%0d terminals=%0d cancelled=%0d comparisons=%0d",label,commands,terminals,cancellations,comparisons);
   endfunction
 endclass

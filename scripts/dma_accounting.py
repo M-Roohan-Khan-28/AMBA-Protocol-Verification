@@ -21,6 +21,9 @@ def validate(case,r):
     check(r['control_cancelled']==int(case['reset_kind'] in (4,5)),'partial control cancellation')
     check(r['control_rejected']==(24 if case['csr_tests']==1 else 6 if case['csr_tests']==2 else 0),'rejected control writes')
     check(r['comparisons']>0 and r['csr_reads']>=7,'executed comparisons/CSR reads')
+    if case['name'].startswith('inactive_tail_'):
+        check(r['disabled_write_bytes']==8-case['length']%8,'disabled lane observations')
+        check(r['partial_write_stalls']>=3,'bounded stalled partial write observed')
     bursts=plan(case['src'],case['dst'],case['length']);ar=aw=b=len(bursts);rb=wb=sum(bursts)
     if case['expected_error']==1:ar=aw=b=rb=wb=0
     elif case['expected_error']==2:

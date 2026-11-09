@@ -17,6 +17,13 @@ module dma_adapter(dma_bus b);
   assign b.d_arvalid=actual_arvalid || (fault=="duplicate_read" && b.irq);
   assign b.d_awvalid=actual_awvalid || (fault=="duplicate_write" && b.irq);
   assign b.d_wvalid=actual_wvalid || (fault=="duplicate_write" && b.irq);
+  always @(posedge b.clk)if(b.reset_n&&inactive_lanes&&b.d_wvalid&&b.d_wready&&actual_wstrb!=255)begin
+    for(int lane=0;lane<8;lane++)begin
+      if(actual_wstrb[lane])assert(b.d_wdata[8*lane+:8]===actual_wdata[8*lane+:8])else $fatal(1,"Inactive transform changed active data");
+      else assert(b.d_wdata[8*lane+:8]===~actual_wdata[8*lane+:8])else $fatal(1,"Inactive transform missing");
+    end
+    $display("DMA_INACTIVE_ACCEPT mask=%h original=%h observed=%h",actual_wstrb,actual_wdata,b.d_wdata);
+  end
   axi4_dma_subsystem dut(
     .aclk(b.clk),
     .aresetn(b.reset_n),
