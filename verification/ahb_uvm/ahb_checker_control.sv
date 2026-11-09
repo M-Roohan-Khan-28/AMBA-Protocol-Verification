@@ -37,6 +37,9 @@ package ahb_checker_pkg;
 endpackage
 module ahb_checker_control;
   import uvm_pkg::*;import ahb_checker_pkg::*;
+  // Elaboration anchor for virtual-interface types in the reusable package.
+  // This unit control feeds samples directly; it does not instantiate a DUT.
+  logic clk=0;ahb_bus unused_interface(clk);
   initial run_test("ahb_checker_test");
   initial begin #10000;$fatal(1,"CHECKER_TIMEOUT");end
 endmodule
