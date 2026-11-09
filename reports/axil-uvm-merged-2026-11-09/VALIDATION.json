@@ -1,0 +1,372 @@
+{
+  "source_revision": "cdbb7b1d2e1ae73e621f9de884119c44b19efd99",
+  "source_clean": true,
+  "detached": true,
+  "serial_execution": true,
+  "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+  "seed": 682016495,
+  "required_substeps": 23,
+  "passing_substeps": 23,
+  "actual_wrapper_exit": 0,
+  "aggregate_exit": 0,
+  "command_logs_hash_verified": 75,
+  "script_and_lock_revisions": {
+    "scripts/run_axil_uvm.py": "1263410134a27dda2c93741c3aa526001bf4469a",
+    "scripts/run_axil_request_control.py": "1263410134a27dda2c93741c3aa526001bf4469a",
+    "scripts/axil_accounting.py": "1263410134a27dda2c93741c3aa526001bf4469a",
+    "scripts/advanced_sim.py": "6d53f6b840529aec272844a701eaab6650e748ec",
+    "verification/axil_uvm/sources.json": "3da848965b00f97d7488e4b98e362cf21f67644d",
+    "scripts/render_axil_uvm_waves.py": "3da848965b00f97d7488e4b98e362cf21f67644d"
+  },
+  "substeps": [
+    {
+      "name": "adapter-0",
+      "status": "PASS",
+      "reason": "EXECUTED",
+      "counts": {
+        "adapter": 0,
+        "completed": 274,
+        "writes": 74,
+        "reads": 200,
+        "comparisons": 1577,
+        "resets": 7,
+        "cancelled": 5
+      },
+      "accounting": {
+        "adapter": 0,
+        "requests": 0,
+        "completions": 0,
+        "write_requests": 0,
+        "read_requests": 0,
+        "write_completions": 0,
+        "read_completions": 0,
+        "write_cancelled": 0,
+        "read_cancelled": 0,
+        "aw_accepted": 76,
+        "w_accepted": 76,
+        "ar_accepted": 202,
+        "b_accepted": 74,
+        "r_accepted": 200,
+        "cancelled_aw": 0,
+        "cancelled_w": 0,
+        "cancelled_ar": 0,
+        "cancelled_b": 0,
+        "cancelled_r": 0
+      }
+    },
+    {
+      "name": "adapter-1",
+      "status": "PASS",
+      "reason": "EXECUTED",
+      "counts": {
+        "adapter": 1,
+        "completed": 240,
+        "writes": 72,
+        "reads": 168,
+        "comparisons": 1207,
+        "resets": 6,
+        "cancelled": 4
+      },
+      "accounting": {
+        "adapter": 1,
+        "requests": 244,
+        "completions": 240,
+        "write_requests": 75,
+        "read_requests": 169,
+        "write_completions": 72,
+        "read_completions": 168,
+        "write_cancelled": 3,
+        "read_cancelled": 1,
+        "aw_accepted": 74,
+        "w_accepted": 74,
+        "ar_accepted": 169,
+        "b_accepted": 72,
+        "r_accepted": 168,
+        "cancelled_aw": 2,
+        "cancelled_w": 2,
+        "cancelled_ar": 1,
+        "cancelled_b": 0,
+        "cancelled_r": 0
+      }
+    },
+    {
+      "name": "adapter-2",
+      "status": "PASS",
+      "reason": "EXECUTED",
+      "counts": {
+        "adapter": 2,
+        "completed": 208,
+        "writes": 72,
+        "reads": 136,
+        "comparisons": 1044,
+        "resets": 4,
+        "cancelled": 2
+      },
+      "accounting": {
+        "adapter": 2,
+        "requests": 210,
+        "completions": 208,
+        "write_requests": 73,
+        "read_requests": 137,
+        "write_completions": 72,
+        "read_completions": 136,
+        "write_cancelled": 1,
+        "read_cancelled": 1,
+        "aw_accepted": 73,
+        "w_accepted": 73,
+        "ar_accepted": 137,
+        "b_accepted": 72,
+        "r_accepted": 136,
+        "cancelled_aw": 1,
+        "cancelled_w": 1,
+        "cancelled_ar": 1,
+        "cancelled_b": 0,
+        "cancelled_r": 0
+      }
+    },
+    {
+      "name": "assertion-0",
+      "status": "PASS",
+      "reason": "EXECUTED",
+      "expected": [
+        "AW_HOLD"
+      ],
+      "observed": [
+        "AW_HOLD"
+      ]
+    },
+    {
+      "name": "assertion-1",
+      "status": "PASS",
+      "reason": "EXECUTED",
+      "expected": [
+        "W_HOLD"
+      ],
+      "observed": [
+        "W_HOLD"
+      ]
+    },
+    {
+      "name": "assertion-2",
+      "status": "PASS",
+      "reason": "EXECUTED",
+      "expected": [
+        "AR_HOLD"
+      ],
+      "observed": [
+        "AR_HOLD"
+      ]
+    },
+    {
+      "name": "assertion-3",
+      "status": "PASS",
+      "reason": "EXECUTED",
+      "expected": [
+        "B_HOLD"
+      ],
+      "observed": [
+        "B_HOLD"
+      ]
+    },
+    {
+      "name": "assertion-4",
+      "status": "PASS",
+      "reason": "EXECUTED",
+      "expected": [
+        "R_HOLD"
+      ],
+      "observed": [
+        "R_HOLD"
+      ]
+    },
+    {
+      "name": "assertion-5",
+      "status": "PASS",
+      "reason": "EXECUTED",
+      "expected": [
+        "B_ELIGIBILITY"
+      ],
+      "observed": [
+        "B_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "assertion-6",
+      "status": "PASS",
+      "reason": "EXECUTED",
+      "expected": [
+        "B_ELIGIBILITY"
+      ],
+      "observed": [
+        "B_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "assertion-7",
+      "status": "PASS",
+      "reason": "EXECUTED",
+      "expected": [
+        "B_ELIGIBILITY"
+      ],
+      "observed": [
+        "B_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "assertion-8",
+      "status": "PASS",
+      "reason": "EXECUTED",
+      "expected": [
+        "B_ELIGIBILITY"
+      ],
+      "observed": [
+        "B_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "assertion-9",
+      "status": "PASS",
+      "reason": "EXECUTED",
+      "expected": [
+        "R_ELIGIBILITY"
+      ],
+      "observed": [
+        "R_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "assertion-10",
+      "status": "PASS",
+      "reason": "EXECUTED",
+      "expected": [
+        "R_ELIGIBILITY"
+      ],
+      "observed": [
+        "R_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "assertion-11",
+      "status": "PASS",
+      "reason": "EXECUTED",
+      "expected": [
+        "B_ELIGIBILITY"
+      ],
+      "observed": [
+        "B_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "assertion-12",
+      "status": "PASS",
+      "reason": "EXECUTED",
+      "expected": [
+        "B_ELIGIBILITY"
+      ],
+      "observed": [
+        "B_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "assertion-13",
+      "status": "PASS",
+      "reason": "EXECUTED",
+      "expected": [],
+      "observed": []
+    },
+    {
+      "name": "request-1-legal",
+      "status": "PASS",
+      "reason": "EXECUTED",
+      "child_wrapper_exit": 0,
+      "accounting": {
+        "adapter": 1,
+        "requests": 58,
+        "completions": 50,
+        "write_requests": 38,
+        "read_requests": 20,
+        "write_completions": 33,
+        "read_completions": 17,
+        "write_cancelled": 5,
+        "read_cancelled": 3,
+        "aw_accepted": 36,
+        "w_accepted": 36,
+        "ar_accepted": 19,
+        "b_accepted": 34,
+        "r_accepted": 18,
+        "cancelled_aw": 3,
+        "cancelled_w": 3,
+        "cancelled_ar": 2,
+        "cancelled_b": 1,
+        "cancelled_r": 1
+      }
+    },
+    {
+      "name": "request-1-duplicate-write",
+      "status": "PASS",
+      "reason": "EXPECTED_ORACLE_DETECTION",
+      "child_wrapper_exit": 1,
+      "expected_fatal": "REQUEST_DUPLICATE_WRITE",
+      "observed_fatals": [
+        "REQUEST_DUPLICATE_WRITE"
+      ]
+    },
+    {
+      "name": "request-1-duplicate-read",
+      "status": "PASS",
+      "reason": "EXPECTED_ORACLE_DETECTION",
+      "child_wrapper_exit": 1,
+      "expected_fatal": "REQUEST_DUPLICATE_READ",
+      "observed_fatals": [
+        "REQUEST_DUPLICATE_READ"
+      ]
+    },
+    {
+      "name": "request-2-legal",
+      "status": "PASS",
+      "reason": "EXECUTED",
+      "child_wrapper_exit": 0,
+      "accounting": {
+        "adapter": 2,
+        "requests": 58,
+        "completions": 50,
+        "write_requests": 38,
+        "read_requests": 20,
+        "write_completions": 33,
+        "read_completions": 17,
+        "write_cancelled": 5,
+        "read_cancelled": 3,
+        "aw_accepted": 36,
+        "w_accepted": 36,
+        "ar_accepted": 19,
+        "b_accepted": 34,
+        "r_accepted": 18,
+        "cancelled_aw": 3,
+        "cancelled_w": 3,
+        "cancelled_ar": 2,
+        "cancelled_b": 1,
+        "cancelled_r": 1
+      }
+    },
+    {
+      "name": "request-2-duplicate-write",
+      "status": "PASS",
+      "reason": "EXPECTED_ORACLE_DETECTION",
+      "child_wrapper_exit": 1,
+      "expected_fatal": "REQUEST_DUPLICATE_WRITE",
+      "observed_fatals": [
+        "REQUEST_DUPLICATE_WRITE"
+      ]
+    },
+    {
+      "name": "request-2-duplicate-read",
+      "status": "PASS",
+      "reason": "EXPECTED_ORACLE_DETECTION",
+      "child_wrapper_exit": 1,
+      "expected_fatal": "REQUEST_DUPLICATE_READ",
+      "observed_fatals": [
+        "REQUEST_DUPLICATE_READ"
+      ]
+    }
+  ]
+}

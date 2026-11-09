@@ -5,6 +5,22 @@ and the merged APB UVM/SVA milestone. Their runners, inventories, source locks
 and evidence are unchanged. The original RTL, licences and upstream attribution
 remain in [AXI4-Lite-Memory-Interface](https://github.com/M-Roohan-Khan-28/AXI4-Lite-Memory-Interface).
 
+## Merged-source validation — 9 November 2026
+
+[AMBA PR #10](https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/pull/10)
+merged at `cdbb7b1d2e1ae73e621f9de884119c44b19efd99`;
+[AXI4-Lite documentation PR #3](https://github.com/M-Roohan-Khan-28/AXI4-Lite-Memory-Interface/pull/3)
+merged at `97f10ce845c83932c4d88743f1929ecf786cf54e`.
+The [new merged-source report](../reports/axil-uvm-merged-2026-11-09/SUMMARY.md)
+records **23/23 required substeps PASS**, wrapper/aggregate exit **0** from a
+fresh detached clone. It includes all logs, input hashes, CPU/reset accounting,
+measured captures and the exact reproduction command pinned to the merged source.
+Inputs match reviewed head `4278d78cdc41edc64f33507ee9e1b4172ff83768` and
+corrected implementation `1263410134a27dda2c93741c3aa526001bf4469a`.
+The DUT remains locked to `faf43379b24a524999eb2c8ad7e100cde35054c3`.
+Historical old-checker and data/address/progress fault evidence is preserved
+separately; coverage, randomization and original advanced ALU/APB remain NOT RUN.
+
 ## Three targets and independent checking
 
 The full source lock is in [sources.json](../verification/axil_uvm/sources.json):

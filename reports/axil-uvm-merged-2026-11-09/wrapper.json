@@ -1,0 +1,23 @@
+{
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\axil-uvm-merged-source-20261109\\scripts\\run_axil_uvm.py",
+    "--sim-bin",
+    "C:/MXR/Quartus/25.1/questa_fse/win64",
+    "--uvm-lib",
+    "C:/MXR/Quartus/25.1/questa_fse/uvm-1.2",
+    "--uvm-include",
+    "C:/MXR/Quartus/25.1/questa_fse/verilog_src/uvm-1.2/src",
+    "--output",
+    "C:\\short\\axil-uvm-merged-results-20261109"
+  ],
+  "cwd": "C:\\short\\axil-uvm-merged-source-20261109",
+  "source_revision": "cdbb7b1d2e1ae73e621f9de884119c44b19efd99",
+  "source_detached": true,
+  "source_clean_after": true,
+  "started_utc": "2026-11-09T12:31:11.777519+00:00",
+  "finished_utc": "2026-11-09T12:34:30.538370+00:00",
+  "wrapper_exit_code": 0,
+  "console": "wrapper-console.log",
+  "console_sha256": "f7d84d4891660b094295586f571025d5174ad9c4b4ac30704634468cfbae6a2a"
+}

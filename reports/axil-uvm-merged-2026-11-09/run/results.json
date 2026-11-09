@@ -1,0 +1,2313 @@
+{
+  "started_utc": "2026-11-09T12:31:11.913508+00:00",
+  "source_revision": "cdbb7b1d2e1ae73e621f9de884119c44b19efd99",
+  "source_dirty": false,
+  "scope": "full deterministic milestone",
+  "mode": "deterministic",
+  "seed": 682016495,
+  "seed_hex": "0x28A6BEEF",
+  "fault_control": null,
+  "functional_coverage": "NOT RUN",
+  "constrained_randomization": "NOT RUN",
+  "original_advanced_environments": "NOT RUN",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\axil-uvm-merged-source-20261109\\scripts\\run_axil_uvm.py",
+    "--sim-bin",
+    "C:/MXR/Quartus/25.1/questa_fse/win64",
+    "--uvm-lib",
+    "C:/MXR/Quartus/25.1/questa_fse/uvm-1.2",
+    "--uvm-include",
+    "C:/MXR/Quartus/25.1/questa_fse/verilog_src/uvm-1.2/src",
+    "--output",
+    "C:\\short\\axil-uvm-merged-results-20261109"
+  ],
+  "suites": [
+    {
+      "name": "adapter-0",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\adapter-0",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "+define+AXIL_ADAPTER=0",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+            "C:\\short\\axil-uvm-merged-results-20261109\\source\\rtl\\axi\\axi_lite_if.sv",
+            "C:\\short\\axil-uvm-merged-results-20261109\\source\\rtl\\axi\\axi_lite_master.sv",
+            "C:\\short\\axil-uvm-merged-results-20261109\\source\\rtl\\axi\\axi_lite_slave.sv",
+            "C:\\short\\axil-uvm-merged-results-20261109\\source\\rtl\\memory\\sram.sv",
+            "C:\\short\\axil-uvm-merged-results-20261109\\source\\rtl\\axi4_lite_memory_top.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_adapter.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_uvm_pkg.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\adapter-0",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "19ab493fb9ecf1b3412399c0cc842467aeacb29e750183ad99de48193bdcb50b"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.axil_uvm_top",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /axil_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\adapter-0",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "4f8684ff225f718ddb1ffdcecfdb6323119d74bf6437f80c5406e7493e5f84dd"
+        }
+      ],
+      "reason": "EXECUTED",
+      "counts": {
+        "adapter": 0,
+        "completed": 274,
+        "writes": 74,
+        "reads": 200,
+        "comparisons": 1577,
+        "resets": 7,
+        "cancelled": 5
+      },
+      "requirements": {
+        "kind": "procedural_requirement_hits_NOT_functional_coverage",
+        "address_first": 25,
+        "data_first": 24,
+        "simultaneous": 26,
+        "aw_stall_cycles": 6,
+        "w_stall_cycles": 6,
+        "ar_stall_cycles": 0,
+        "b_stall_cycles": 157,
+        "r_stall_cycles": 473,
+        "invalid_writes": 8,
+        "invalid_reads": 8,
+        "strobe_masks_observed": 16,
+        "resets": 7,
+        "discarded_transactions": 5
+      },
+      "capture_sha256": "172366986ee795c1dcb268f79b0a0eb6aa4d39a7209e81d5312739c885166af7",
+      "accounting": {
+        "adapter": 0,
+        "requests": 0,
+        "completions": 0,
+        "write_requests": 0,
+        "read_requests": 0,
+        "write_completions": 0,
+        "read_completions": 0,
+        "write_cancelled": 0,
+        "read_cancelled": 0,
+        "aw_accepted": 76,
+        "w_accepted": 76,
+        "ar_accepted": 202,
+        "b_accepted": 74,
+        "r_accepted": 200,
+        "cancelled_aw": 0,
+        "cancelled_w": 0,
+        "cancelled_ar": 0,
+        "cancelled_b": 0,
+        "cancelled_r": 0
+      }
+    },
+    {
+      "name": "adapter-1",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\adapter-1",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "+define+AXIL_ADAPTER=1",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+            "C:\\short\\axil-uvm-merged-results-20261109\\source\\rtl\\axi\\axi_lite_if.sv",
+            "C:\\short\\axil-uvm-merged-results-20261109\\source\\rtl\\axi\\axi_lite_master.sv",
+            "C:\\short\\axil-uvm-merged-results-20261109\\source\\rtl\\axi\\axi_lite_slave.sv",
+            "C:\\short\\axil-uvm-merged-results-20261109\\source\\rtl\\memory\\sram.sv",
+            "C:\\short\\axil-uvm-merged-results-20261109\\source\\rtl\\axi4_lite_memory_top.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_adapter.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_uvm_pkg.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\adapter-1",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "a7837482c562280966fbb7d9cb7f4b4e0fc1d7c879c9ce08ec53793bca80b08d"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.axil_uvm_top",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /axil_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\adapter-1",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "0612742b587142576d66457b87ebe2b32294fda1bd1db372edfd66288e26e0e9"
+        }
+      ],
+      "reason": "EXECUTED",
+      "counts": {
+        "adapter": 1,
+        "completed": 240,
+        "writes": 72,
+        "reads": 168,
+        "comparisons": 1207,
+        "resets": 6,
+        "cancelled": 4
+      },
+      "requirements": {
+        "kind": "procedural_requirement_hits_NOT_functional_coverage",
+        "address_first": 24,
+        "data_first": 24,
+        "simultaneous": 24,
+        "aw_stall_cycles": 197,
+        "w_stall_cycles": 197,
+        "ar_stall_cycles": 452,
+        "b_stall_cycles": 0,
+        "r_stall_cycles": 0,
+        "invalid_writes": 8,
+        "invalid_reads": 8,
+        "strobe_masks_observed": 16,
+        "resets": 6,
+        "discarded_transactions": 4
+      },
+      "capture_sha256": "d0d2ab0e25cbdb176f36a7494697c410d1794b2a0da58a009c3d198d2efc9b87",
+      "accounting": {
+        "adapter": 1,
+        "requests": 244,
+        "completions": 240,
+        "write_requests": 75,
+        "read_requests": 169,
+        "write_completions": 72,
+        "read_completions": 168,
+        "write_cancelled": 3,
+        "read_cancelled": 1,
+        "aw_accepted": 74,
+        "w_accepted": 74,
+        "ar_accepted": 169,
+        "b_accepted": 72,
+        "r_accepted": 168,
+        "cancelled_aw": 2,
+        "cancelled_w": 2,
+        "cancelled_ar": 1,
+        "cancelled_b": 0,
+        "cancelled_r": 0
+      }
+    },
+    {
+      "name": "adapter-2",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\adapter-2",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "+define+AXIL_ADAPTER=2",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+            "C:\\short\\axil-uvm-merged-results-20261109\\source\\rtl\\axi\\axi_lite_if.sv",
+            "C:\\short\\axil-uvm-merged-results-20261109\\source\\rtl\\axi\\axi_lite_master.sv",
+            "C:\\short\\axil-uvm-merged-results-20261109\\source\\rtl\\axi\\axi_lite_slave.sv",
+            "C:\\short\\axil-uvm-merged-results-20261109\\source\\rtl\\memory\\sram.sv",
+            "C:\\short\\axil-uvm-merged-results-20261109\\source\\rtl\\axi4_lite_memory_top.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_adapter.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_uvm_pkg.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\adapter-2",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "e61dc7b07e3b934eac83b4fcf8c8be40e9623976aa0d728c12c6bc2c8c6a8d46"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.axil_uvm_top",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /axil_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\adapter-2",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "198c94685dc36e8546dafe9f2867f57ee1e3b5016ea905cdcd5ce2c207c2840f"
+        }
+      ],
+      "reason": "EXECUTED",
+      "counts": {
+        "adapter": 2,
+        "completed": 208,
+        "writes": 72,
+        "reads": 136,
+        "comparisons": 1044,
+        "resets": 4,
+        "cancelled": 2
+      },
+      "requirements": {
+        "kind": "procedural_requirement_hits_NOT_functional_coverage",
+        "address_first": 0,
+        "data_first": 0,
+        "simultaneous": 72,
+        "aw_stall_cycles": 0,
+        "w_stall_cycles": 0,
+        "ar_stall_cycles": 0,
+        "b_stall_cycles": 0,
+        "r_stall_cycles": 0,
+        "invalid_writes": 8,
+        "invalid_reads": 8,
+        "strobe_masks_observed": 16,
+        "resets": 4,
+        "discarded_transactions": 2
+      },
+      "capture_sha256": "c6443de2dfea92f43fce37f2c0873d5f683d192e8a9de1aa77824e4df9ad97ff",
+      "accounting": {
+        "adapter": 2,
+        "requests": 210,
+        "completions": 208,
+        "write_requests": 73,
+        "read_requests": 137,
+        "write_completions": 72,
+        "read_completions": 136,
+        "write_cancelled": 1,
+        "read_cancelled": 1,
+        "aw_accepted": 73,
+        "w_accepted": 73,
+        "ar_accepted": 137,
+        "b_accepted": 72,
+        "r_accepted": 136,
+        "cancelled_aw": 1,
+        "cancelled_w": 1,
+        "cancelled_ar": 1,
+        "cancelled_b": 0,
+        "cancelled_r": 0
+      }
+    },
+    {
+      "name": "assertion-0",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-0",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertion_control.sv"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-0",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "32afe4b8bc5fdb63549a1a9b4ff15cdbc0acef66dace57bb414ca7bc3ad39dbb"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.axil_assertion_control",
+            "+CASE=0",
+            "+EXPECT_ASSERT",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-0",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "f5a0a2f779f9c5b93f04fa8223023a9bed45725affee9f1724e687437767c276"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected_detections": [
+        "AW_HOLD"
+      ],
+      "observed_detections": [
+        "AW_HOLD"
+      ]
+    },
+    {
+      "name": "assertion-1",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-1",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertion_control.sv"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-1",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "96c4e653dc6d9dcee54644b9dcf716b5382164d19b03782e9dd48bd2bcc5f0d4"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.axil_assertion_control",
+            "+CASE=1",
+            "+EXPECT_ASSERT",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-1",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "0e39813d6ab5c482e9641732c43082051c6804a0450711420a316b18b941b570"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected_detections": [
+        "W_HOLD"
+      ],
+      "observed_detections": [
+        "W_HOLD"
+      ]
+    },
+    {
+      "name": "assertion-2",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-2",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertion_control.sv"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-2",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "160394668282473643cf60fe77eb475986f64db73ae835f392c8c06eced2f6a4"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.axil_assertion_control",
+            "+CASE=2",
+            "+EXPECT_ASSERT",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-2",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "ed4bd04d0e6d2f4053956ea377b8e289b9dd9b22630dffe3157f91ff56496c91"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected_detections": [
+        "AR_HOLD"
+      ],
+      "observed_detections": [
+        "AR_HOLD"
+      ]
+    },
+    {
+      "name": "assertion-3",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-3",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertion_control.sv"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-3",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "0d59d84670f9d2fac3d49aaef664a3abf49ef9c9296d0819f577ede27a4898c3"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.axil_assertion_control",
+            "+CASE=3",
+            "+EXPECT_ASSERT",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-3",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "b98e23c9c69a406ab2f8b8c592054d1e6a7cdaa97ea266890ff9f06532c8a70b"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected_detections": [
+        "B_HOLD"
+      ],
+      "observed_detections": [
+        "B_HOLD"
+      ]
+    },
+    {
+      "name": "assertion-4",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-4",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertion_control.sv"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-4",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "228cff366a640ada7a386b8d6226aa268701912045a08450c5f7028cc99f014d"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.axil_assertion_control",
+            "+CASE=4",
+            "+EXPECT_ASSERT",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-4",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "e1f659513bd1d19f30270f4ccbda26127a8889d3bb3e2d3724e425c03d13bb42"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected_detections": [
+        "R_HOLD"
+      ],
+      "observed_detections": [
+        "R_HOLD"
+      ]
+    },
+    {
+      "name": "assertion-5",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-5",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertion_control.sv"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-5",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "bd6ed3892680d6f439887f13534f8c67c05245599035ba2fef15acf01c40ccb5"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.axil_assertion_control",
+            "+CASE=5",
+            "+EXPECT_ASSERT",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-5",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "6098d16a0cc9b167b60fc448d240a2c2eac3bfe3dfdb6cbedc26856515989025"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected_detections": [
+        "B_ELIGIBILITY"
+      ],
+      "observed_detections": [
+        "B_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "assertion-6",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-6",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertion_control.sv"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-6",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "fcc2cdeaf691cc608f6407196e214c412a260e486fc88b06a0605353940f53d2"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.axil_assertion_control",
+            "+CASE=6",
+            "+EXPECT_ASSERT",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-6",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "886f8b2223a34b01ae36e0e583b2dc0d1999d2404b2285915884b1129cc6926f"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected_detections": [
+        "B_ELIGIBILITY"
+      ],
+      "observed_detections": [
+        "B_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "assertion-7",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-7",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertion_control.sv"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-7",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "29e57237a0d542a0a1c6557bbfe4953450e781675cb04e45d499c880b9be1c1a"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.axil_assertion_control",
+            "+CASE=7",
+            "+EXPECT_ASSERT",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-7",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "c792ceb2447c8a05e69b5952d9df5b183224d17c01d98f1b485196ec2f1a7f51"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected_detections": [
+        "B_ELIGIBILITY"
+      ],
+      "observed_detections": [
+        "B_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "assertion-8",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-8",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertion_control.sv"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-8",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "5df5dabcacee5301ead353b2d3bf2e3da62e93c4f07b743218743c609b07a04d"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.axil_assertion_control",
+            "+CASE=8",
+            "+EXPECT_ASSERT",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-8",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "e57b9cef6afd888cfea049b8deeb0fef2fbf4b46d0a2c637a532f3b432529128"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected_detections": [
+        "B_ELIGIBILITY"
+      ],
+      "observed_detections": [
+        "B_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "assertion-9",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-9",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertion_control.sv"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-9",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "14671eb6d7c3389c9af792e1a1abf6a583ca3b153476959718e0702813344941"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.axil_assertion_control",
+            "+CASE=9",
+            "+EXPECT_ASSERT",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-9",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "5ea14a487b0a5b222e3f072f09f350ec51df27ed08a3b21e521dc1118f29f8d1"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected_detections": [
+        "R_ELIGIBILITY"
+      ],
+      "observed_detections": [
+        "R_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "assertion-10",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-10",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertion_control.sv"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-10",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "f28bb56d2f2c6bd548171389ba6a8dfb03e758662b6f0a21bd1ce22171780565"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.axil_assertion_control",
+            "+CASE=10",
+            "+EXPECT_ASSERT",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-10",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "f731b46ae4ff7625b541966c3d84794bf5f8d6cb557e0c86ccd9b60b3fbca1a8"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected_detections": [
+        "R_ELIGIBILITY"
+      ],
+      "observed_detections": [
+        "R_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "assertion-11",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-11",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertion_control.sv"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-11",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "a6ed5b1bd392183534e37c1a5254f8449f3a93766758e49c6b3f5430778ae49d"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.axil_assertion_control",
+            "+CASE=11",
+            "+EXPECT_ASSERT",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-11",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "bf17e8d074de62a708d9e57af135539310fdcd5ead97eb3fbd67124015705145"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected_detections": [
+        "B_ELIGIBILITY"
+      ],
+      "observed_detections": [
+        "B_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "assertion-12",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-12",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertion_control.sv"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-12",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "ac70df7e423e058b99179a651d268b33bbd3e3e8294e53de904785607765c863"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.axil_assertion_control",
+            "+CASE=12",
+            "+EXPECT_ASSERT",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-12",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "f24ebb7d5b99afd0556229b96a6d2c7929d677ac2d84381eb5f70a80c0f1a581"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected_detections": [
+        "B_ELIGIBILITY"
+      ],
+      "observed_detections": [
+        "B_ELIGIBILITY"
+      ]
+    },
+    {
+      "name": "assertion-13",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-13",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+            "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertion_control.sv"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-13",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "ec8eec282a43355f441ee2d7f882dd40b4f0896c3bc06bb97fe3afe6e2f45483"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "stop",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.axil_assertion_control",
+            "+CASE=13",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\assertion-13",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "b4e1c57b6540b48d98b29360ca664016ac904bd1ec6bd1fb05472d7f16ba082e"
+        }
+      ],
+      "reason": "EXECUTED",
+      "expected_detections": [],
+      "observed_detections": []
+    },
+    {
+      "name": "request-1-legal",
+      "status": "PASS",
+      "reason": "EXECUTED",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\axil-uvm-merged-source-20261109\\scripts\\run_axil_request_control.py",
+            "--adapter",
+            "1",
+            "--mode",
+            "legal",
+            "--output",
+            "C:\\short\\axil-uvm-merged-results-20261109\\request-1-legal",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-source-20261109",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "request-1-legal-wrapper.log",
+          "sha256": "d01e14bb4d0b5e5db9db0760d6653cb4bec97968bc50dbe1f75fc6536295e75c"
+        }
+      ],
+      "child_result": {
+        "source_revision": "cdbb7b1d2e1ae73e621f9de884119c44b19efd99",
+        "source_dirty": false,
+        "mode": "legal",
+        "adapter": 1,
+        "seed": 682016495,
+        "scope": "synthetic public-pin checker control; no DUT",
+        "command": [
+          "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+          "C:\\short\\axil-uvm-merged-source-20261109\\scripts\\run_axil_request_control.py",
+          "--adapter",
+          "1",
+          "--mode",
+          "legal",
+          "--output",
+          "C:\\short\\axil-uvm-merged-results-20261109\\request-1-legal",
+          "--sim-bin",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "--uvm-lib",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "--uvm-include",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "--timeout",
+          "90"
+        ],
+        "commands": [
+          {
+            "command": [
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+              "work"
+            ],
+            "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\request-1-legal",
+            "exit_code": 0,
+            "timed_out": false,
+            "log": "0.log",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "command": [
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+              "-sv",
+              "-work",
+              "work",
+              "-L",
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+              "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+              "+define+AXIL_ADAPTER=1",
+              "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+              "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+              "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_uvm_pkg.sv",
+              "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_request_control.sv"
+            ],
+            "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\request-1-legal",
+            "exit_code": 0,
+            "timed_out": false,
+            "log": "1.log",
+            "sha256": "563679d50a36089a27eb0ca700a7f64ab4b629837ee87a14c01304fb46b46d29"
+          },
+          {
+            "command": [
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+              "-c",
+              "-onfinish",
+              "stop",
+              "-voptargs=+acc",
+              "-sv_seed",
+              "682016495",
+              "-L",
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+              "work.axil_request_control",
+              "+CONTROL=0",
+              "-do",
+              "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /axil_request_control/bus/*; run -all; vcd flush; quit -force -code 0"
+            ],
+            "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\request-1-legal",
+            "exit_code": 0,
+            "timed_out": false,
+            "log": "2.log",
+            "sha256": "10715cffba9c2f41e18828ee571ba035a0d630f4efb9ae931c3adbf3aff68aa3"
+          }
+        ],
+        "status": "PASS",
+        "input_sha256": {
+          "verification/axil_uvm/axil_bus.sv": "f5c5fca0d228b8fcbed7d4bd6c47fabd2fd505fd6f27f67ae179679a65c44524",
+          "verification/axil_uvm/axil_assertions.sv": "afab6005064abf8c9bf0bb28167cfb281eaf05c62bf85bca7ced408de4e53dc6",
+          "verification/axil_uvm/axil_uvm_pkg.sv": "4601e73ccaa814f44c61526edbe185f20ce6f0afdd6803bd4267574f8af707c9",
+          "verification/axil_uvm/axil_request_control.sv": "1b5bcefbe8fcc88c39515b967d1b268f20927720eaf0b3cf845e9bba1fc6dc8e",
+          "scripts/run_axil_request_control.py": "50988c1fa4de96e9c56ab12b8136e1fb2e6f0e8c2222adb87ae26723cacaed21",
+          "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+          "scripts/axil_accounting.py": "32b600716c5b9facbd6827cc0f7230589744dd6167a3deb4a0a5be561079f409"
+        },
+        "started_utc": "2026-11-09T12:33:17.106416+00:00",
+        "version_command": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-version"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\request-1-legal",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "version.log",
+          "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+        },
+        "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+        "counts": {
+          "adapter": 1,
+          "mode": 0,
+          "requests": 58,
+          "completed": 50,
+          "writes": 34,
+          "reads": 18,
+          "cancelled": 8
+        },
+        "accounting": {
+          "adapter": 1,
+          "requests": 58,
+          "completions": 50,
+          "write_requests": 38,
+          "read_requests": 20,
+          "write_completions": 33,
+          "read_completions": 17,
+          "write_cancelled": 5,
+          "read_cancelled": 3,
+          "aw_accepted": 36,
+          "w_accepted": 36,
+          "ar_accepted": 19,
+          "b_accepted": 34,
+          "r_accepted": 18,
+          "cancelled_aw": 3,
+          "cancelled_w": 3,
+          "cancelled_ar": 2,
+          "cancelled_b": 1,
+          "cancelled_r": 1
+        },
+        "reason": "EXECUTED",
+        "wrapper_exit_code": 0,
+        "missed_negative_control": false,
+        "finished_utc": "2026-11-09T12:33:29.680995+00:00",
+        "capture_sha256": "f17dc5f091e3dfe95c3ea553e7f3bc062434b1faff06cbaa06485ca5b1fc5eaa"
+      },
+      "child_wrapper_exit_code": 0
+    },
+    {
+      "name": "request-1-duplicate-write",
+      "status": "PASS",
+      "reason": "EXPECTED_ORACLE_DETECTION",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\axil-uvm-merged-source-20261109\\scripts\\run_axil_request_control.py",
+            "--adapter",
+            "1",
+            "--mode",
+            "duplicate-write",
+            "--output",
+            "C:\\short\\axil-uvm-merged-results-20261109\\request-1-duplicate-write",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-source-20261109",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "request-1-duplicate-write-wrapper.log",
+          "sha256": "823edbe4ff716907eb53dda5ac1e0920aa475f8f0c1e2f22e9d803fa0f60a1be"
+        }
+      ],
+      "child_result": {
+        "source_revision": "cdbb7b1d2e1ae73e621f9de884119c44b19efd99",
+        "source_dirty": false,
+        "mode": "duplicate-write",
+        "adapter": 1,
+        "seed": 682016495,
+        "scope": "synthetic public-pin checker control; no DUT",
+        "command": [
+          "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+          "C:\\short\\axil-uvm-merged-source-20261109\\scripts\\run_axil_request_control.py",
+          "--adapter",
+          "1",
+          "--mode",
+          "duplicate-write",
+          "--output",
+          "C:\\short\\axil-uvm-merged-results-20261109\\request-1-duplicate-write",
+          "--sim-bin",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "--uvm-lib",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "--uvm-include",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "--timeout",
+          "90"
+        ],
+        "commands": [
+          {
+            "command": [
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+              "work"
+            ],
+            "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\request-1-duplicate-write",
+            "exit_code": 0,
+            "timed_out": false,
+            "log": "0.log",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "command": [
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+              "-sv",
+              "-work",
+              "work",
+              "-L",
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+              "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+              "+define+AXIL_ADAPTER=1",
+              "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+              "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+              "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_uvm_pkg.sv",
+              "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_request_control.sv"
+            ],
+            "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\request-1-duplicate-write",
+            "exit_code": 0,
+            "timed_out": false,
+            "log": "1.log",
+            "sha256": "e6479eea09f070cc629c78b71ed5ad6156b93f30034c95a873b623c680b10126"
+          },
+          {
+            "command": [
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+              "-c",
+              "-onfinish",
+              "stop",
+              "-voptargs=+acc",
+              "-sv_seed",
+              "682016495",
+              "-L",
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+              "work.axil_request_control",
+              "+CONTROL=1",
+              "-do",
+              "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /axil_request_control/bus/*; run -all; vcd flush; quit -force -code 0"
+            ],
+            "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\request-1-duplicate-write",
+            "exit_code": 0,
+            "timed_out": false,
+            "log": "2.log",
+            "sha256": "30bb98541de7c89e6807779fc219d9182a559be5d5d74f808ef975ed17f61aba"
+          }
+        ],
+        "status": "FAIL",
+        "input_sha256": {
+          "verification/axil_uvm/axil_bus.sv": "f5c5fca0d228b8fcbed7d4bd6c47fabd2fd505fd6f27f67ae179679a65c44524",
+          "verification/axil_uvm/axil_assertions.sv": "afab6005064abf8c9bf0bb28167cfb281eaf05c62bf85bca7ced408de4e53dc6",
+          "verification/axil_uvm/axil_uvm_pkg.sv": "4601e73ccaa814f44c61526edbe185f20ce6f0afdd6803bd4267574f8af707c9",
+          "verification/axil_uvm/axil_request_control.sv": "1b5bcefbe8fcc88c39515b967d1b268f20927720eaf0b3cf845e9bba1fc6dc8e",
+          "scripts/run_axil_request_control.py": "50988c1fa4de96e9c56ab12b8136e1fb2e6f0e8c2222adb87ae26723cacaed21",
+          "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+          "scripts/axil_accounting.py": "32b600716c5b9facbd6827cc0f7230589744dd6167a3deb4a0a5be561079f409"
+        },
+        "started_utc": "2026-11-09T12:33:30.057927+00:00",
+        "version_command": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-version"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\request-1-duplicate-write",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "version.log",
+          "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+        },
+        "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+        "reason": "PROCESS_OR_SIMULATOR_ERROR",
+        "wrapper_exit_code": 1,
+        "missed_negative_control": false,
+        "finished_utc": "2026-11-09T12:33:41.647449+00:00",
+        "capture_sha256": "68a6e17d82fe8574be79ec08d18476ea5b068d3dfd30c6f548fcd51a561452ad"
+      },
+      "child_wrapper_exit_code": 1,
+      "expected_fatal": "REQUEST_DUPLICATE_WRITE",
+      "observed_fatals": [
+        "REQUEST_DUPLICATE_WRITE"
+      ]
+    },
+    {
+      "name": "request-1-duplicate-read",
+      "status": "PASS",
+      "reason": "EXPECTED_ORACLE_DETECTION",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\axil-uvm-merged-source-20261109\\scripts\\run_axil_request_control.py",
+            "--adapter",
+            "1",
+            "--mode",
+            "duplicate-read",
+            "--output",
+            "C:\\short\\axil-uvm-merged-results-20261109\\request-1-duplicate-read",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-source-20261109",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "request-1-duplicate-read-wrapper.log",
+          "sha256": "50a37e7c5a4ed32f0e6781f71ee2a6f1737ba527b7ae7117d986e947e5e415df"
+        }
+      ],
+      "child_result": {
+        "source_revision": "cdbb7b1d2e1ae73e621f9de884119c44b19efd99",
+        "source_dirty": false,
+        "mode": "duplicate-read",
+        "adapter": 1,
+        "seed": 682016495,
+        "scope": "synthetic public-pin checker control; no DUT",
+        "command": [
+          "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+          "C:\\short\\axil-uvm-merged-source-20261109\\scripts\\run_axil_request_control.py",
+          "--adapter",
+          "1",
+          "--mode",
+          "duplicate-read",
+          "--output",
+          "C:\\short\\axil-uvm-merged-results-20261109\\request-1-duplicate-read",
+          "--sim-bin",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "--uvm-lib",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "--uvm-include",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "--timeout",
+          "90"
+        ],
+        "commands": [
+          {
+            "command": [
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+              "work"
+            ],
+            "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\request-1-duplicate-read",
+            "exit_code": 0,
+            "timed_out": false,
+            "log": "0.log",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "command": [
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+              "-sv",
+              "-work",
+              "work",
+              "-L",
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+              "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+              "+define+AXIL_ADAPTER=1",
+              "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+              "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+              "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_uvm_pkg.sv",
+              "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_request_control.sv"
+            ],
+            "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\request-1-duplicate-read",
+            "exit_code": 0,
+            "timed_out": false,
+            "log": "1.log",
+            "sha256": "9f6a970b84cae36c127661975a6ff4059588c94977f9266b0bed9bfbaeeb0730"
+          },
+          {
+            "command": [
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+              "-c",
+              "-onfinish",
+              "stop",
+              "-voptargs=+acc",
+              "-sv_seed",
+              "682016495",
+              "-L",
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+              "work.axil_request_control",
+              "+CONTROL=2",
+              "-do",
+              "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /axil_request_control/bus/*; run -all; vcd flush; quit -force -code 0"
+            ],
+            "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\request-1-duplicate-read",
+            "exit_code": 0,
+            "timed_out": false,
+            "log": "2.log",
+            "sha256": "0ae5d383048150e5245caf5bc9757e8905679760f8cce04d0dbdc351fb6f5b9f"
+          }
+        ],
+        "status": "FAIL",
+        "input_sha256": {
+          "verification/axil_uvm/axil_bus.sv": "f5c5fca0d228b8fcbed7d4bd6c47fabd2fd505fd6f27f67ae179679a65c44524",
+          "verification/axil_uvm/axil_assertions.sv": "afab6005064abf8c9bf0bb28167cfb281eaf05c62bf85bca7ced408de4e53dc6",
+          "verification/axil_uvm/axil_uvm_pkg.sv": "4601e73ccaa814f44c61526edbe185f20ce6f0afdd6803bd4267574f8af707c9",
+          "verification/axil_uvm/axil_request_control.sv": "1b5bcefbe8fcc88c39515b967d1b268f20927720eaf0b3cf845e9bba1fc6dc8e",
+          "scripts/run_axil_request_control.py": "50988c1fa4de96e9c56ab12b8136e1fb2e6f0e8c2222adb87ae26723cacaed21",
+          "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+          "scripts/axil_accounting.py": "32b600716c5b9facbd6827cc0f7230589744dd6167a3deb4a0a5be561079f409"
+        },
+        "started_utc": "2026-11-09T12:33:41.977376+00:00",
+        "version_command": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-version"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\request-1-duplicate-read",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "version.log",
+          "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+        },
+        "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+        "reason": "PROCESS_OR_SIMULATOR_ERROR",
+        "wrapper_exit_code": 1,
+        "missed_negative_control": false,
+        "finished_utc": "2026-11-09T12:33:54.155187+00:00",
+        "capture_sha256": "e5e4e56325142ace1164c8dfc267a40e0859308bb37220f8d7c02524b9edf6a9"
+      },
+      "child_wrapper_exit_code": 1,
+      "expected_fatal": "REQUEST_DUPLICATE_READ",
+      "observed_fatals": [
+        "REQUEST_DUPLICATE_READ"
+      ]
+    },
+    {
+      "name": "request-2-legal",
+      "status": "PASS",
+      "reason": "EXECUTED",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\axil-uvm-merged-source-20261109\\scripts\\run_axil_request_control.py",
+            "--adapter",
+            "2",
+            "--mode",
+            "legal",
+            "--output",
+            "C:\\short\\axil-uvm-merged-results-20261109\\request-2-legal",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-source-20261109",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "request-2-legal-wrapper.log",
+          "sha256": "3ef39f112c260c7153482c58a4a3cc104bc8b28470dc57fde8562a3dd63137cd"
+        }
+      ],
+      "child_result": {
+        "source_revision": "cdbb7b1d2e1ae73e621f9de884119c44b19efd99",
+        "source_dirty": false,
+        "mode": "legal",
+        "adapter": 2,
+        "seed": 682016495,
+        "scope": "synthetic public-pin checker control; no DUT",
+        "command": [
+          "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+          "C:\\short\\axil-uvm-merged-source-20261109\\scripts\\run_axil_request_control.py",
+          "--adapter",
+          "2",
+          "--mode",
+          "legal",
+          "--output",
+          "C:\\short\\axil-uvm-merged-results-20261109\\request-2-legal",
+          "--sim-bin",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "--uvm-lib",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "--uvm-include",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "--timeout",
+          "90"
+        ],
+        "commands": [
+          {
+            "command": [
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+              "work"
+            ],
+            "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\request-2-legal",
+            "exit_code": 0,
+            "timed_out": false,
+            "log": "0.log",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "command": [
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+              "-sv",
+              "-work",
+              "work",
+              "-L",
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+              "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+              "+define+AXIL_ADAPTER=2",
+              "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+              "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+              "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_uvm_pkg.sv",
+              "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_request_control.sv"
+            ],
+            "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\request-2-legal",
+            "exit_code": 0,
+            "timed_out": false,
+            "log": "1.log",
+            "sha256": "307845837f08afe8990cd005e445a3812302e4b68bb8deef6f5779d38f28a2ce"
+          },
+          {
+            "command": [
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+              "-c",
+              "-onfinish",
+              "stop",
+              "-voptargs=+acc",
+              "-sv_seed",
+              "682016495",
+              "-L",
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+              "work.axil_request_control",
+              "+CONTROL=0",
+              "-do",
+              "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /axil_request_control/bus/*; run -all; vcd flush; quit -force -code 0"
+            ],
+            "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\request-2-legal",
+            "exit_code": 0,
+            "timed_out": false,
+            "log": "2.log",
+            "sha256": "71085225a30afabf13467596d1377e7bd28ed612e48556f256a42fa164903405"
+          }
+        ],
+        "status": "PASS",
+        "input_sha256": {
+          "verification/axil_uvm/axil_bus.sv": "f5c5fca0d228b8fcbed7d4bd6c47fabd2fd505fd6f27f67ae179679a65c44524",
+          "verification/axil_uvm/axil_assertions.sv": "afab6005064abf8c9bf0bb28167cfb281eaf05c62bf85bca7ced408de4e53dc6",
+          "verification/axil_uvm/axil_uvm_pkg.sv": "4601e73ccaa814f44c61526edbe185f20ce6f0afdd6803bd4267574f8af707c9",
+          "verification/axil_uvm/axil_request_control.sv": "1b5bcefbe8fcc88c39515b967d1b268f20927720eaf0b3cf845e9bba1fc6dc8e",
+          "scripts/run_axil_request_control.py": "50988c1fa4de96e9c56ab12b8136e1fb2e6f0e8c2222adb87ae26723cacaed21",
+          "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+          "scripts/axil_accounting.py": "32b600716c5b9facbd6827cc0f7230589744dd6167a3deb4a0a5be561079f409"
+        },
+        "started_utc": "2026-11-09T12:33:54.463642+00:00",
+        "version_command": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-version"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\request-2-legal",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "version.log",
+          "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+        },
+        "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+        "counts": {
+          "adapter": 2,
+          "mode": 0,
+          "requests": 58,
+          "completed": 50,
+          "writes": 34,
+          "reads": 18,
+          "cancelled": 8
+        },
+        "accounting": {
+          "adapter": 2,
+          "requests": 58,
+          "completions": 50,
+          "write_requests": 38,
+          "read_requests": 20,
+          "write_completions": 33,
+          "read_completions": 17,
+          "write_cancelled": 5,
+          "read_cancelled": 3,
+          "aw_accepted": 36,
+          "w_accepted": 36,
+          "ar_accepted": 19,
+          "b_accepted": 34,
+          "r_accepted": 18,
+          "cancelled_aw": 3,
+          "cancelled_w": 3,
+          "cancelled_ar": 2,
+          "cancelled_b": 1,
+          "cancelled_r": 1
+        },
+        "reason": "EXECUTED",
+        "wrapper_exit_code": 0,
+        "missed_negative_control": false,
+        "finished_utc": "2026-11-09T12:34:06.101274+00:00",
+        "capture_sha256": "9431a92b6313ba4e65974ec772cf307e244acd9dbe626dc71332f5e841f9c716"
+      },
+      "child_wrapper_exit_code": 0
+    },
+    {
+      "name": "request-2-duplicate-write",
+      "status": "PASS",
+      "reason": "EXPECTED_ORACLE_DETECTION",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\axil-uvm-merged-source-20261109\\scripts\\run_axil_request_control.py",
+            "--adapter",
+            "2",
+            "--mode",
+            "duplicate-write",
+            "--output",
+            "C:\\short\\axil-uvm-merged-results-20261109\\request-2-duplicate-write",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-source-20261109",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "request-2-duplicate-write-wrapper.log",
+          "sha256": "57e648341f1066e46bc43384f7c11e87e68777be828febd8112d766b19ce511c"
+        }
+      ],
+      "child_result": {
+        "source_revision": "cdbb7b1d2e1ae73e621f9de884119c44b19efd99",
+        "source_dirty": false,
+        "mode": "duplicate-write",
+        "adapter": 2,
+        "seed": 682016495,
+        "scope": "synthetic public-pin checker control; no DUT",
+        "command": [
+          "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+          "C:\\short\\axil-uvm-merged-source-20261109\\scripts\\run_axil_request_control.py",
+          "--adapter",
+          "2",
+          "--mode",
+          "duplicate-write",
+          "--output",
+          "C:\\short\\axil-uvm-merged-results-20261109\\request-2-duplicate-write",
+          "--sim-bin",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "--uvm-lib",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "--uvm-include",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "--timeout",
+          "90"
+        ],
+        "commands": [
+          {
+            "command": [
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+              "work"
+            ],
+            "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\request-2-duplicate-write",
+            "exit_code": 0,
+            "timed_out": false,
+            "log": "0.log",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "command": [
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+              "-sv",
+              "-work",
+              "work",
+              "-L",
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+              "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+              "+define+AXIL_ADAPTER=2",
+              "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+              "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+              "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_uvm_pkg.sv",
+              "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_request_control.sv"
+            ],
+            "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\request-2-duplicate-write",
+            "exit_code": 0,
+            "timed_out": false,
+            "log": "1.log",
+            "sha256": "375e2a7b9b28494d440b90846d0e990179a0c978b631cc13ba7927cc332a312a"
+          },
+          {
+            "command": [
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+              "-c",
+              "-onfinish",
+              "stop",
+              "-voptargs=+acc",
+              "-sv_seed",
+              "682016495",
+              "-L",
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+              "work.axil_request_control",
+              "+CONTROL=1",
+              "-do",
+              "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /axil_request_control/bus/*; run -all; vcd flush; quit -force -code 0"
+            ],
+            "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\request-2-duplicate-write",
+            "exit_code": 0,
+            "timed_out": false,
+            "log": "2.log",
+            "sha256": "ad4c3fc3074cf5f90868e43ee92f3a0ed84836d6dd09efd3c6d147699aa39b4a"
+          }
+        ],
+        "status": "FAIL",
+        "input_sha256": {
+          "verification/axil_uvm/axil_bus.sv": "f5c5fca0d228b8fcbed7d4bd6c47fabd2fd505fd6f27f67ae179679a65c44524",
+          "verification/axil_uvm/axil_assertions.sv": "afab6005064abf8c9bf0bb28167cfb281eaf05c62bf85bca7ced408de4e53dc6",
+          "verification/axil_uvm/axil_uvm_pkg.sv": "4601e73ccaa814f44c61526edbe185f20ce6f0afdd6803bd4267574f8af707c9",
+          "verification/axil_uvm/axil_request_control.sv": "1b5bcefbe8fcc88c39515b967d1b268f20927720eaf0b3cf845e9bba1fc6dc8e",
+          "scripts/run_axil_request_control.py": "50988c1fa4de96e9c56ab12b8136e1fb2e6f0e8c2222adb87ae26723cacaed21",
+          "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+          "scripts/axil_accounting.py": "32b600716c5b9facbd6827cc0f7230589744dd6167a3deb4a0a5be561079f409"
+        },
+        "started_utc": "2026-11-09T12:34:06.400496+00:00",
+        "version_command": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-version"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\request-2-duplicate-write",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "version.log",
+          "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+        },
+        "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+        "reason": "PROCESS_OR_SIMULATOR_ERROR",
+        "wrapper_exit_code": 1,
+        "missed_negative_control": false,
+        "finished_utc": "2026-11-09T12:34:18.211355+00:00",
+        "capture_sha256": "31785732577fa871eb764b87a038a72159f3a3b07a2a4a2906d33933963d135e"
+      },
+      "child_wrapper_exit_code": 1,
+      "expected_fatal": "REQUEST_DUPLICATE_WRITE",
+      "observed_fatals": [
+        "REQUEST_DUPLICATE_WRITE"
+      ]
+    },
+    {
+      "name": "request-2-duplicate-read",
+      "status": "PASS",
+      "reason": "EXPECTED_ORACLE_DETECTION",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\axil-uvm-merged-source-20261109\\scripts\\run_axil_request_control.py",
+            "--adapter",
+            "2",
+            "--mode",
+            "duplicate-read",
+            "--output",
+            "C:\\short\\axil-uvm-merged-results-20261109\\request-2-duplicate-read",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-source-20261109",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "request-2-duplicate-read-wrapper.log",
+          "sha256": "061f02e509de25c27bbab64252544f8ac564fa23d2c3143da9e90df8a3148a5e"
+        }
+      ],
+      "child_result": {
+        "source_revision": "cdbb7b1d2e1ae73e621f9de884119c44b19efd99",
+        "source_dirty": false,
+        "mode": "duplicate-read",
+        "adapter": 2,
+        "seed": 682016495,
+        "scope": "synthetic public-pin checker control; no DUT",
+        "command": [
+          "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+          "C:\\short\\axil-uvm-merged-source-20261109\\scripts\\run_axil_request_control.py",
+          "--adapter",
+          "2",
+          "--mode",
+          "duplicate-read",
+          "--output",
+          "C:\\short\\axil-uvm-merged-results-20261109\\request-2-duplicate-read",
+          "--sim-bin",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "--uvm-lib",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "--uvm-include",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "--timeout",
+          "90"
+        ],
+        "commands": [
+          {
+            "command": [
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+              "work"
+            ],
+            "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\request-2-duplicate-read",
+            "exit_code": 0,
+            "timed_out": false,
+            "log": "0.log",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "command": [
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+              "-sv",
+              "-work",
+              "work",
+              "-L",
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+              "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+              "+define+AXIL_ADAPTER=2",
+              "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_bus.sv",
+              "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_assertions.sv",
+              "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_uvm_pkg.sv",
+              "C:\\short\\axil-uvm-merged-source-20261109\\verification\\axil_uvm\\axil_request_control.sv"
+            ],
+            "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\request-2-duplicate-read",
+            "exit_code": 0,
+            "timed_out": false,
+            "log": "1.log",
+            "sha256": "d44eab866a418397fe2ebb769bb7363cb058b30060e983def3db13ada48324a0"
+          },
+          {
+            "command": [
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+              "-c",
+              "-onfinish",
+              "stop",
+              "-voptargs=+acc",
+              "-sv_seed",
+              "682016495",
+              "-L",
+              "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+              "work.axil_request_control",
+              "+CONTROL=2",
+              "-do",
+              "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /axil_request_control/bus/*; run -all; vcd flush; quit -force -code 0"
+            ],
+            "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\request-2-duplicate-read",
+            "exit_code": 0,
+            "timed_out": false,
+            "log": "2.log",
+            "sha256": "b813159360db2eef130dad4cb2baa924a1eec38b391542bc8cbe000c2ee940af"
+          }
+        ],
+        "status": "FAIL",
+        "input_sha256": {
+          "verification/axil_uvm/axil_bus.sv": "f5c5fca0d228b8fcbed7d4bd6c47fabd2fd505fd6f27f67ae179679a65c44524",
+          "verification/axil_uvm/axil_assertions.sv": "afab6005064abf8c9bf0bb28167cfb281eaf05c62bf85bca7ced408de4e53dc6",
+          "verification/axil_uvm/axil_uvm_pkg.sv": "4601e73ccaa814f44c61526edbe185f20ce6f0afdd6803bd4267574f8af707c9",
+          "verification/axil_uvm/axil_request_control.sv": "1b5bcefbe8fcc88c39515b967d1b268f20927720eaf0b3cf845e9bba1fc6dc8e",
+          "scripts/run_axil_request_control.py": "50988c1fa4de96e9c56ab12b8136e1fb2e6f0e8c2222adb87ae26723cacaed21",
+          "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+          "scripts/axil_accounting.py": "32b600716c5b9facbd6827cc0f7230589744dd6167a3deb4a0a5be561079f409"
+        },
+        "started_utc": "2026-11-09T12:34:18.546747+00:00",
+        "version_command": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-version"
+          ],
+          "cwd": "C:\\short\\axil-uvm-merged-results-20261109\\request-2-duplicate-read",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "version.log",
+          "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+        },
+        "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+        "reason": "PROCESS_OR_SIMULATOR_ERROR",
+        "wrapper_exit_code": 1,
+        "missed_negative_control": false,
+        "finished_utc": "2026-11-09T12:34:30.408119+00:00",
+        "capture_sha256": "fecf8f1612b046d7b5ff4ebe3bb5800b5ebb13174c9b65e3c4982a2e21557749"
+      },
+      "child_wrapper_exit_code": 1,
+      "expected_fatal": "REQUEST_DUPLICATE_READ",
+      "observed_fatals": [
+        "REQUEST_DUPLICATE_READ"
+      ]
+    }
+  ],
+  "serial_execution": true,
+  "input_sha256": {
+    "verification/axil_uvm/axil_adapter.sv": "6e219ba466f4d38776d67e1cc2c010ec408bba3628a752388be3d10e2b45b3f8",
+    "verification/axil_uvm/axil_assertions.sv": "afab6005064abf8c9bf0bb28167cfb281eaf05c62bf85bca7ced408de4e53dc6",
+    "verification/axil_uvm/axil_assertion_control.sv": "15d2b605f77ef22bb55d42b428158d16956e18c383a8550319b3b9f7a3b6e816",
+    "verification/axil_uvm/axil_bus.sv": "f5c5fca0d228b8fcbed7d4bd6c47fabd2fd505fd6f27f67ae179679a65c44524",
+    "verification/axil_uvm/axil_request_control.sv": "1b5bcefbe8fcc88c39515b967d1b268f20927720eaf0b3cf845e9bba1fc6dc8e",
+    "verification/axil_uvm/axil_uvm_pkg.sv": "4601e73ccaa814f44c61526edbe185f20ce6f0afdd6803bd4267574f8af707c9",
+    "verification/axil_uvm/axil_uvm_top.sv": "9a9e3b9db63b7e1775b604493c3a85f9604f4ce16a7b1ea739b0026fc35664f4",
+    "verification/axil_uvm/sources.json": "4f93ed306c27e5a7176d3086d56ff662be3b94cc4ca32d64c8000dc11328413d",
+    "scripts/run_axil_uvm.py": "208a65ec2f72c83318b39e46bab25b6776df5e670e39718d116213c6be9fc63b",
+    "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+    "scripts/axil_accounting.py": "32b600716c5b9facbd6827cc0f7230589744dd6167a3deb4a0a5be561079f409",
+    "scripts/run_axil_request_control.py": "50988c1fa4de96e9c56ab12b8136e1fb2e6f0e8c2222adb87ae26723cacaed21"
+  },
+  "version_command": {
+    "command": [
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+      "-version"
+    ],
+    "cwd": "C:\\short\\axil-uvm-merged-results-20261109",
+    "exit_code": 0,
+    "timed_out": false,
+    "log": "version.log",
+    "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+  },
+  "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+  "source_lock": {
+    "owner": "M-Roohan-Khan-28",
+    "account_id": 270144410,
+    "repository": "AXI4-Lite-Memory-Interface",
+    "revision": "faf43379b24a524999eb2c8ad7e100cde35054c3",
+    "files": [
+      "rtl/axi/axi_lite_if.sv",
+      "rtl/axi/axi_lite_master.sv",
+      "rtl/axi/axi_lite_slave.sv",
+      "rtl/memory/sram.sv",
+      "rtl/axi4_lite_memory_top.sv"
+    ],
+    "configuration": {
+      "base_address": "0x10000000",
+      "sram_depth_words": 16,
+      "data_width": 32
+    },
+    "commands": [
+      {
+        "command": [
+          "git",
+          "clone",
+          "--quiet",
+          "--config",
+          "core.autocrlf=false",
+          "--config",
+          "core.longpaths=true",
+          "https://github.com/M-Roohan-Khan-28/AXI4-Lite-Memory-Interface.git",
+          "C:\\short\\axil-uvm-merged-results-20261109\\source"
+        ],
+        "cwd": "C:\\short\\axil-uvm-merged-results-20261109",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-0.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "command": [
+          "git",
+          "-C",
+          "C:\\short\\axil-uvm-merged-results-20261109\\source",
+          "checkout",
+          "--quiet",
+          "--detach",
+          "faf43379b24a524999eb2c8ad7e100cde35054c3"
+        ],
+        "cwd": "C:\\short\\axil-uvm-merged-results-20261109",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-1.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "observed_revision": "faf43379b24a524999eb2c8ad7e100cde35054c3",
+    "clean": true,
+    "rtl_sha256": {
+      "rtl/axi/axi_lite_if.sv": "463f775261a7489ae6b8a3481930b4be2aae290f7ef3a14f0892b1e59483a0d9",
+      "rtl/axi/axi_lite_master.sv": "3c27fd2b8b898523cb4784e00e9c0872486f33ee36ba96bddf499118bb74965f",
+      "rtl/axi/axi_lite_slave.sv": "ea2c83602f2056ba779e1270749181e0e5aeb415a5043b90e6ca29ee9906005e",
+      "rtl/memory/sram.sv": "d42677005b233ebffb7a25b2d138b83a4a3ec3fc7891c9657c82988306165f3a",
+      "rtl/axi4_lite_memory_top.sv": "48c4e15d35dbf0029af49184cf7e2c2655b5fe923862e750a8406ff4a5505323"
+    }
+  },
+  "required_substeps": 23,
+  "aggregate_exit_code": 0,
+  "milestone_pass": true,
+  "finished_utc": "2026-11-09T12:34:30.450664+00:00"
+}

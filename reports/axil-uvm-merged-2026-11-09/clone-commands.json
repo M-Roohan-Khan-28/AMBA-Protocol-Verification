@@ -1,0 +1,62 @@
+[
+  {
+    "command": [
+      "git",
+      "clone",
+      "--config",
+      "core.autocrlf=false",
+      "--config",
+      "core.longpaths=true",
+      "--branch",
+      "main",
+      "https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git",
+      "C:\\short\\axil-uvm-merged-source-20261109"
+    ],
+    "exit_code": 0,
+    "log": "clone-0.log",
+    "sha256": "807e6b861b306ab63db89ebeb3d161c1f4aa11b051ce667408a0ac2325802c9a"
+  },
+  {
+    "command": [
+      "git",
+      "-C",
+      "C:\\short\\axil-uvm-merged-source-20261109",
+      "checkout",
+      "--detach",
+      "cdbb7b1d2e1ae73e621f9de884119c44b19efd99"
+    ],
+    "exit_code": 0,
+    "log": "clone-1.log",
+    "sha256": "470c81f5bcb4d5b3462df15b49bb491fc9b32c63deb6a3aae6ba856583e08920"
+  },
+  {
+    "command": [
+      "git",
+      "clone",
+      "--config",
+      "core.autocrlf=false",
+      "--config",
+      "core.longpaths=true",
+      "--branch",
+      "main",
+      "https://github.com/M-Roohan-Khan-28/AXI4-Lite-Memory-Interface.git",
+      "C:\\short\\axil-docs-merged-20261109"
+    ],
+    "exit_code": 0,
+    "log": "clone-2.log",
+    "sha256": "0e32ae09f57cb6de90de7a93cd834b75e3dbf9df1005cbb97a57571b580292c0"
+  },
+  {
+    "command": [
+      "git",
+      "-C",
+      "C:\\short\\axil-docs-merged-20261109",
+      "checkout",
+      "--detach",
+      "97f10ce845c83932c4d88743f1929ecf786cf54e"
+    ],
+    "exit_code": 0,
+    "log": "clone-3.log",
+    "sha256": "2fceef9bebb4cc0b15c9fb8b4077ff19c86e046e868bc8f71a239e10b61702fe"
+  }
+]
