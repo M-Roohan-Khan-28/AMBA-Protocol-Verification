@@ -17,6 +17,7 @@ def main():
     ap.add_argument('--expected-env-sha',help='Full environment SHA required for a full release run')
     ap.add_argument('--raw-fault',action='store_true',help='Internal diagnostic child: preserve the genuine nonzero fault result')
     ap.add_argument('--source-cache',type=Path,help=argparse.SUPPRESS)
+    ap.add_argument('--dut-mirror',type=Path,help='Optional clean local DUT mirror at the exact lock; transport is recorded')
     a=ap.parse_args();repo=Path(__file__).resolve().parent.parent;src=repo/'verification/dma_uvm'
     if a.output.exists() or a.timeout<1 or a.global_timeout<1:ap.error('Require fresh output and positive bounds')
     out=a.output.resolve();out.mkdir(parents=True)
@@ -47,13 +48,15 @@ def main():
     if any(s['kind']!='sva' for s in steps):
         report['source_lock']=dict(lock,commands=[])
         url=f'https://github.com/{lock["owner"]}/{lock["repository"]}.git';supplier=url
-        if a.source_cache:
-            if not a.raw_fault:ap.error('Source cache is only for internal fault children')
-            assert git(a.source_cache,'rev-parse','HEAD')==lock['revision'] and not git(a.source_cache,'status','--porcelain')
-            assert git(a.source_cache,'remote','get-url','origin')==url
-            supplier=str(a.source_cache.resolve())
+        mirror=a.source_cache or a.dut_mirror
+        if a.source_cache and (not a.raw_fault or a.dut_mirror):ap.error('Source cache is only for internal fault children')
+        if mirror:
+            assert git(mirror,'rev-parse','HEAD')==lock['revision'] and not git(mirror,'status','--porcelain')
+            assert git(mirror,'remote','get-url','origin')==url
+            supplier=str(mirror.resolve())
         report['source_lock']['supplier']=supplier
-        for command in [['git','clone','--quiet','--no-hardlinks','--config','core.autocrlf=false','--config','core.longpaths=true',supplier,str(source)],['git','-C',str(source),'checkout','--quiet','--detach',lock['revision']]]:
+        report['source_lock']['transport']='verified_local_mirror' if mirror else 'GitHub_HTTPS'
+        for command in [['git','clone','--quiet','--no-hardlinks','--config','core.autocrlf=false','--config','core.longpaths=true',supplier,str(source)],['git','-C',str(source),'checkout','--quiet','--detach',lock['revision']],['git','-C',str(source),'remote','set-url','origin',url]]:
             c,text=invoke(command,out,out/f'source-{len(report["source_lock"]["commands"])}.log');report['source_lock']['commands'].append(c)
             if failure(c,text):prereq=prereq or failure(c,text);break
         else:
