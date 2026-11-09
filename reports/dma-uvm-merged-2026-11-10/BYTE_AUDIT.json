@@ -1,0 +1,181 @@
+{
+  "status": "PASS",
+  "evidence_revision": "f56d992ffbf02fc88ab830409ce69eb575fe54f0",
+  "policy": "Original capture bytes with scoped -text; no newline conversion",
+  "checked_artifacts": 341,
+  "vcd_count": 17,
+  "figure_count": 3,
+  "vcds": [
+    {
+      "path": "reports/dma-uvm-merged-2026-11-10/run/csr-protected-state/capture.vcd",
+      "original_sha256": "d5ecc69b67cdb3e69cb4c740527bb3f429df7c3de8822125a0ac9008622de6fd",
+      "git_blob_sha256": "d5ecc69b67cdb3e69cb4c740527bb3f429df7c3de8822125a0ac9008622de6fd",
+      "public_raw_sha256": "d5ecc69b67cdb3e69cb4c740527bb3f429df7c3de8822125a0ac9008622de6fd",
+      "both_checkout_sha256": "d5ecc69b67cdb3e69cb4c740527bb3f429df7c3de8822125a0ac9008622de6fd",
+      "bytes": 96605,
+      "crlf_count": 15566,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/f56d992ffbf02fc88ab830409ce69eb575fe54f0/reports/dma-uvm-merged-2026-11-10/run/csr-protected-state/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-merged-2026-11-10/run/fault-active_data/child/fault-active_data/capture.vcd",
+      "original_sha256": "d53a5f2ff0f592ca09917c4b5d82bd24a1614e148a256f2faa03527007e7e1d9",
+      "git_blob_sha256": "d53a5f2ff0f592ca09917c4b5d82bd24a1614e148a256f2faa03527007e7e1d9",
+      "public_raw_sha256": "d53a5f2ff0f592ca09917c4b5d82bd24a1614e148a256f2faa03527007e7e1d9",
+      "both_checkout_sha256": "d53a5f2ff0f592ca09917c4b5d82bd24a1614e148a256f2faa03527007e7e1d9",
+      "bytes": 7523,
+      "crlf_count": 884,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/f56d992ffbf02fc88ab830409ce69eb575fe54f0/reports/dma-uvm-merged-2026-11-10/run/fault-active_data/child/fault-active_data/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-merged-2026-11-10/run/fault-csr_busy_side_effect/child/fault-csr_busy_side_effect/capture.vcd",
+      "original_sha256": "cfb11f04868eca3ddf25e930df3fd85cfeef9df69ac61a5d0398d280cdaeb3e4",
+      "git_blob_sha256": "cfb11f04868eca3ddf25e930df3fd85cfeef9df69ac61a5d0398d280cdaeb3e4",
+      "public_raw_sha256": "cfb11f04868eca3ddf25e930df3fd85cfeef9df69ac61a5d0398d280cdaeb3e4",
+      "both_checkout_sha256": "cfb11f04868eca3ddf25e930df3fd85cfeef9df69ac61a5d0398d280cdaeb3e4",
+      "bytes": 5089,
+      "crlf_count": 629,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/f56d992ffbf02fc88ab830409ce69eb575fe54f0/reports/dma-uvm-merged-2026-11-10/run/fault-csr_busy_side_effect/child/fault-csr_busy_side_effect/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-merged-2026-11-10/run/fault-csr_idle_side_effect/child/fault-csr_idle_side_effect/capture.vcd",
+      "original_sha256": "2cb53f86531fd128dd0ebafdf73f423c97ed16b30e557ee949c3807273b2d446",
+      "git_blob_sha256": "2cb53f86531fd128dd0ebafdf73f423c97ed16b30e557ee949c3807273b2d446",
+      "public_raw_sha256": "2cb53f86531fd128dd0ebafdf73f423c97ed16b30e557ee949c3807273b2d446",
+      "both_checkout_sha256": "2cb53f86531fd128dd0ebafdf73f423c97ed16b30e557ee949c3807273b2d446",
+      "bytes": 3908,
+      "crlf_count": 428,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/f56d992ffbf02fc88ab830409ce69eb575fe54f0/reports/dma-uvm-merged-2026-11-10/run/fault-csr_idle_side_effect/child/fault-csr_idle_side_effect/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-merged-2026-11-10/run/fault-destination_progress/child/fault-destination_progress/capture.vcd",
+      "original_sha256": "bfddbe21561d29814e6e3ca5b909a2fb419e6e1a6fb110c2ef2a393a40435dd8",
+      "git_blob_sha256": "bfddbe21561d29814e6e3ca5b909a2fb419e6e1a6fb110c2ef2a393a40435dd8",
+      "public_raw_sha256": "bfddbe21561d29814e6e3ca5b909a2fb419e6e1a6fb110c2ef2a393a40435dd8",
+      "both_checkout_sha256": "bfddbe21561d29814e6e3ca5b909a2fb419e6e1a6fb110c2ef2a393a40435dd8",
+      "bytes": 7696,
+      "crlf_count": 903,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/f56d992ffbf02fc88ab830409ce69eb575fe54f0/reports/dma-uvm-merged-2026-11-10/run/fault-destination_progress/child/fault-destination_progress/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-merged-2026-11-10/run/fault-duplicate_read/child/fault-duplicate_read/capture.vcd",
+      "original_sha256": "3c2a5cae00a0e94ee17e5c2c91926fe0d65a2aec21c0f022337c179c620a782f",
+      "git_blob_sha256": "3c2a5cae00a0e94ee17e5c2c91926fe0d65a2aec21c0f022337c179c620a782f",
+      "public_raw_sha256": "3c2a5cae00a0e94ee17e5c2c91926fe0d65a2aec21c0f022337c179c620a782f",
+      "both_checkout_sha256": "3c2a5cae00a0e94ee17e5c2c91926fe0d65a2aec21c0f022337c179c620a782f",
+      "bytes": 5162,
+      "crlf_count": 641,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/f56d992ffbf02fc88ab830409ce69eb575fe54f0/reports/dma-uvm-merged-2026-11-10/run/fault-duplicate_read/child/fault-duplicate_read/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-merged-2026-11-10/run/fault-duplicate_write/child/fault-duplicate_write/capture.vcd",
+      "original_sha256": "0f72f809c9c392b66d2680d11709b2c1576cc38df934316a282ba698460cf2fe",
+      "git_blob_sha256": "0f72f809c9c392b66d2680d11709b2c1576cc38df934316a282ba698460cf2fe",
+      "public_raw_sha256": "0f72f809c9c392b66d2680d11709b2c1576cc38df934316a282ba698460cf2fe",
+      "both_checkout_sha256": "0f72f809c9c392b66d2680d11709b2c1576cc38df934316a282ba698460cf2fe",
+      "bytes": 4806,
+      "crlf_count": 567,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/f56d992ffbf02fc88ab830409ce69eb575fe54f0/reports/dma-uvm-merged-2026-11-10/run/fault-duplicate_write/child/fault-duplicate_write/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-merged-2026-11-10/run/fault-missing_marker/child/fault-missing_marker/capture.vcd",
+      "original_sha256": "7574cb57b9ef3429b2c0fd980d620a27e9660e7616a067aba0c3d186b090f098",
+      "git_blob_sha256": "7574cb57b9ef3429b2c0fd980d620a27e9660e7616a067aba0c3d186b090f098",
+      "public_raw_sha256": "7574cb57b9ef3429b2c0fd980d620a27e9660e7616a067aba0c3d186b090f098",
+      "both_checkout_sha256": "7574cb57b9ef3429b2c0fd980d620a27e9660e7616a067aba0c3d186b090f098",
+      "bytes": 12709,
+      "crlf_count": 1593,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/f56d992ffbf02fc88ab830409ce69eb575fe54f0/reports/dma-uvm-merged-2026-11-10/run/fault-missing_marker/child/fault-missing_marker/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-merged-2026-11-10/run/fault-progress/child/fault-progress/capture.vcd",
+      "original_sha256": "0259968afe514e7600d8b87db7c58afd276e2c6b85747e46bb1ed2e19f302e26",
+      "git_blob_sha256": "0259968afe514e7600d8b87db7c58afd276e2c6b85747e46bb1ed2e19f302e26",
+      "public_raw_sha256": "0259968afe514e7600d8b87db7c58afd276e2c6b85747e46bb1ed2e19f302e26",
+      "both_checkout_sha256": "0259968afe514e7600d8b87db7c58afd276e2c6b85747e46bb1ed2e19f302e26",
+      "bytes": 315623,
+      "crlf_count": 50813,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/f56d992ffbf02fc88ab830409ce69eb575fe54f0/reports/dma-uvm-merged-2026-11-10/run/fault-progress/child/fault-progress/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-merged-2026-11-10/run/fault-source_alias/child/fault-source_alias/capture.vcd",
+      "original_sha256": "f42d9761b92d1984091a8883a60cea5eb3ca3c0335da16272d370246609c153f",
+      "git_blob_sha256": "f42d9761b92d1984091a8883a60cea5eb3ca3c0335da16272d370246609c153f",
+      "public_raw_sha256": "f42d9761b92d1984091a8883a60cea5eb3ca3c0335da16272d370246609c153f",
+      "both_checkout_sha256": "f42d9761b92d1984091a8883a60cea5eb3ca3c0335da16272d370246609c153f",
+      "bytes": 4420,
+      "crlf_count": 520,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/f56d992ffbf02fc88ab830409ce69eb575fe54f0/reports/dma-uvm-merged-2026-11-10/run/fault-source_alias/child/fault-source_alias/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-merged-2026-11-10/run/fault-tail_strobe/child/fault-tail_strobe/capture.vcd",
+      "original_sha256": "1aad6c5862101c1cbda1eca17f6fd15270d9efb0ac267c01b458eb84ba5ca29b",
+      "git_blob_sha256": "1aad6c5862101c1cbda1eca17f6fd15270d9efb0ac267c01b458eb84ba5ca29b",
+      "public_raw_sha256": "1aad6c5862101c1cbda1eca17f6fd15270d9efb0ac267c01b458eb84ba5ca29b",
+      "both_checkout_sha256": "1aad6c5862101c1cbda1eca17f6fd15270d9efb0ac267c01b458eb84ba5ca29b",
+      "bytes": 9970,
+      "crlf_count": 1126,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/f56d992ffbf02fc88ab830409ce69eb575fe54f0/reports/dma-uvm-merged-2026-11-10/run/fault-tail_strobe/child/fault-tail_strobe/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-merged-2026-11-10/run/functional/capture.vcd",
+      "original_sha256": "b43fa508cd3ce9f4e9060e9f3f972b9810fae2571dc3e744abdc39cc1c9b16ba",
+      "git_blob_sha256": "b43fa508cd3ce9f4e9060e9f3f972b9810fae2571dc3e744abdc39cc1c9b16ba",
+      "public_raw_sha256": "b43fa508cd3ce9f4e9060e9f3f972b9810fae2571dc3e744abdc39cc1c9b16ba",
+      "both_checkout_sha256": "b43fa508cd3ce9f4e9060e9f3f972b9810fae2571dc3e744abdc39cc1c9b16ba",
+      "bytes": 990393,
+      "crlf_count": 127132,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/f56d992ffbf02fc88ab830409ce69eb575fe54f0/reports/dma-uvm-merged-2026-11-10/run/functional/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-merged-2026-11-10/run/inactive-lanes/capture.vcd",
+      "original_sha256": "6a161712b08ff8e82a49b7bf5636bb888335f362c5cd4531e9d162c0bcd9c209",
+      "git_blob_sha256": "6a161712b08ff8e82a49b7bf5636bb888335f362c5cd4531e9d162c0bcd9c209",
+      "public_raw_sha256": "6a161712b08ff8e82a49b7bf5636bb888335f362c5cd4531e9d162c0bcd9c209",
+      "both_checkout_sha256": "6a161712b08ff8e82a49b7bf5636bb888335f362c5cd4531e9d162c0bcd9c209",
+      "bytes": 75921,
+      "crlf_count": 9555,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/f56d992ffbf02fc88ab830409ce69eb575fe54f0/reports/dma-uvm-merged-2026-11-10/run/inactive-lanes/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-merged-2026-11-10/run/malformed-early_rlast/capture.vcd",
+      "original_sha256": "be49376533e6cbb8e96fc966b5123d0a3666f1b4edc4ddc5fd31b066446a6bb5",
+      "git_blob_sha256": "be49376533e6cbb8e96fc966b5123d0a3666f1b4edc4ddc5fd31b066446a6bb5",
+      "public_raw_sha256": "be49376533e6cbb8e96fc966b5123d0a3666f1b4edc4ddc5fd31b066446a6bb5",
+      "both_checkout_sha256": "be49376533e6cbb8e96fc966b5123d0a3666f1b4edc4ddc5fd31b066446a6bb5",
+      "bytes": 12631,
+      "crlf_count": 1860,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/f56d992ffbf02fc88ab830409ce69eb575fe54f0/reports/dma-uvm-merged-2026-11-10/run/malformed-early_rlast/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-merged-2026-11-10/run/malformed-missing_rlast/capture.vcd",
+      "original_sha256": "d8c5b6b0d2ed804f62b8c96a7410b500f3ecff00cc3b281f002ceacd817227cf",
+      "git_blob_sha256": "d8c5b6b0d2ed804f62b8c96a7410b500f3ecff00cc3b281f002ceacd817227cf",
+      "public_raw_sha256": "d8c5b6b0d2ed804f62b8c96a7410b500f3ecff00cc3b281f002ceacd817227cf",
+      "both_checkout_sha256": "d8c5b6b0d2ed804f62b8c96a7410b500f3ecff00cc3b281f002ceacd817227cf",
+      "bytes": 13894,
+      "crlf_count": 2003,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/f56d992ffbf02fc88ab830409ce69eb575fe54f0/reports/dma-uvm-merged-2026-11-10/run/malformed-missing_rlast/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-merged-2026-11-10/run/malformed-wrong_bid/capture.vcd",
+      "original_sha256": "1eb5625f866df3e0d4bec169ad28fdb30f28a132acc2e22a5ddbf86824b08d57",
+      "git_blob_sha256": "1eb5625f866df3e0d4bec169ad28fdb30f28a132acc2e22a5ddbf86824b08d57",
+      "public_raw_sha256": "1eb5625f866df3e0d4bec169ad28fdb30f28a132acc2e22a5ddbf86824b08d57",
+      "both_checkout_sha256": "1eb5625f866df3e0d4bec169ad28fdb30f28a132acc2e22a5ddbf86824b08d57",
+      "bytes": 15090,
+      "crlf_count": 2128,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/f56d992ffbf02fc88ab830409ce69eb575fe54f0/reports/dma-uvm-merged-2026-11-10/run/malformed-wrong_bid/capture.vcd"
+    },
+    {
+      "path": "reports/dma-uvm-merged-2026-11-10/run/malformed-wrong_rid/capture.vcd",
+      "original_sha256": "5c850048a5cee704e03c9897704463c649ff00f873a8359d8cad0f45c33b58e8",
+      "git_blob_sha256": "5c850048a5cee704e03c9897704463c649ff00f873a8359d8cad0f45c33b58e8",
+      "public_raw_sha256": "5c850048a5cee704e03c9897704463c649ff00f873a8359d8cad0f45c33b58e8",
+      "both_checkout_sha256": "5c850048a5cee704e03c9897704463c649ff00f873a8359d8cad0f45c33b58e8",
+      "bytes": 13914,
+      "crlf_count": 2007,
+      "raw_url": "https://raw.githubusercontent.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/f56d992ffbf02fc88ab830409ce69eb575fe54f0/reports/dma-uvm-merged-2026-11-10/run/malformed-wrong_rid/capture.vcd"
+    }
+  ],
+  "audit_script_sha256": "b7e81a5f0347f31cbaae007e9d8cc4f1094246dabbcca7bcde59dad86d22d0da"
+}

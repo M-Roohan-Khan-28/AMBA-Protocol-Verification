@@ -134,3 +134,13 @@ coverage. Full AXI compliance, archived multichannel DMA, descriptors/scatter-ga
 peripheral handshakes, multiple outstanding/reordered traffic, arbitrary malformed
 recovery, coverage closure, synthesis, timing, FPGA and hardware remain separate
 milestones. Food Court and HDL-Design-Labs were untouched.
+
+## Published-byte verification
+
+Evidence commit `f56d992ffbf02fc88ab830409ce69eb575fe54f0` was audited before this receipt was added.
+[BYTE_AUDIT.json](BYTE_AUDIT.json) verifies 341 original
+artifacts against Git blobs and fresh detached checkouts with `core.autocrlf=false`
+and `true`. All 17 VCDs match public raw downloads; all
+3 current figure metadata/captions identify those exact captures.
+[Audit commands and exits](BYTE_AUDIT_COMMAND.json) are preserved. This receipt
+changes no execution input, original artifact or historical report.

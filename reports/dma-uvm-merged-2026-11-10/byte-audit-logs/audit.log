@@ -1,0 +1,1 @@
+{"status": "PASS", "evidence_revision": "f56d992ffbf02fc88ab830409ce69eb575fe54f0", "policy": "Original capture bytes with scoped -text; no newline conversion", "checked_artifacts": 341, "vcd_count": 17, "figure_count": 3, "audit_script_sha256": "b7e81a5f0347f31cbaae007e9d8cc4f1094246dabbcca7bcde59dad86d22d0da"}
