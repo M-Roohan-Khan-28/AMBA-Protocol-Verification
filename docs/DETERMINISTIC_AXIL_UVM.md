@@ -132,7 +132,7 @@ misses; old source and raw comparison logs are retained separately.
 With Python, Git and the already qualified local Questa/UVM installation:
 
 ```powershell
-python scripts/run_axil_uvm.py --output C:/short/axil-uvm-results-new
+& 'C:/Users/CG/AppData/Local/Python/pythoncore-3.14-64/python.exe' scripts/run_axil_uvm.py --output C:/short/axil-uvm-results-new
 if ($LASTEXITCODE -ne 0) { throw 'Required AXI4-Lite UVM/SVA substep failed or was blocked' }
 ```
 
@@ -164,9 +164,9 @@ No expected diagrams are presented as simulator output.
 Explicit verification-boundary faults leave source RTL unchanged:
 
 ```powershell
-python scripts/run_axil_uvm.py --diagnostic-adapters 0 1 2 --fault data --output C:/short/axil-bad-data-new
-python scripts/run_axil_uvm.py --diagnostic-adapters 1 --fault address --output C:/short/axil-bad-address-new
-python scripts/run_axil_uvm.py --diagnostic-adapters 1 --fault drop-response --output C:/short/axil-no-response-new
+& 'C:/Users/CG/AppData/Local/Python/pythoncore-3.14-64/python.exe' scripts/run_axil_uvm.py --diagnostic-adapters 0 1 2 --fault data --output C:/short/axil-bad-data-new
+& 'C:/Users/CG/AppData/Local/Python/pythoncore-3.14-64/python.exe' scripts/run_axil_uvm.py --diagnostic-adapters 1 --fault address --output C:/short/axil-bad-address-new
+& 'C:/Users/CG/AppData/Local/Python/pythoncore-3.14-64/python.exe' scripts/run_axil_uvm.py --diagnostic-adapters 1 --fault drop-response --output C:/short/axil-no-response-new
 ```
 
 These runs are expected to return **nonzero**. Data corruption must be caught
@@ -177,9 +177,9 @@ raw log, not just the exit code, to qualify a fault detection.
 The focused request-oracle controls can also be executed individually:
 
 ```powershell
-python scripts/run_axil_request_control.py --adapter 1 --mode legal --output C:/short/axil-request-legal-new
-python scripts/run_axil_request_control.py --adapter 1 --mode duplicate-write --output C:/short/axil-request-duplicate-write-new
-python scripts/run_axil_request_control.py --adapter 1 --mode duplicate-read --output C:/short/axil-request-duplicate-read-new
+& 'C:/Users/CG/AppData/Local/Python/pythoncore-3.14-64/python.exe' scripts/run_axil_request_control.py --adapter 1 --mode legal --output C:/short/axil-request-legal-new
+& 'C:/Users/CG/AppData/Local/Python/pythoncore-3.14-64/python.exe' scripts/run_axil_request_control.py --adapter 1 --mode duplicate-write --output C:/short/axil-request-duplicate-write-new
+& 'C:/Users/CG/AppData/Local/Python/pythoncore-3.14-64/python.exe' scripts/run_axil_request_control.py --adapter 1 --mode duplicate-read --output C:/short/axil-request-duplicate-read-new
 ```
 
 Use `--adapter 2` for the integration scoreboard mode. Legal returns 0;

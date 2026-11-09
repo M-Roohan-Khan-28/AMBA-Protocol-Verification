@@ -151,7 +151,7 @@ Choose unused short paths and run one simulator session at a time:
 ```powershell
 git clone --config core.longpaths=true --config core.autocrlf=false --branch advanced/axil-deterministic-uvm https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git C:/short/axil-correct-reproduce-source
 git -C C:/short/axil-correct-reproduce-source checkout --detach 1263410134a27dda2c93741c3aa526001bf4469a
-python C:/short/axil-correct-reproduce-source/scripts/run_axil_uvm.py --output C:/short/axil-correct-reproduce-results
+& 'C:/Users/CG/AppData/Local/Python/pythoncore-3.14-64/python.exe' C:/short/axil-correct-reproduce-source/scripts/run_axil_uvm.py --output C:/short/axil-correct-reproduce-results
 if ($LASTEXITCODE -ne 0) { throw 'Required AXI4-Lite UVM/SVA substep failed or was blocked' }
 ```
 
