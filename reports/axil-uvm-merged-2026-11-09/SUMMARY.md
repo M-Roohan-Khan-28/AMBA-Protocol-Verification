@@ -94,6 +94,13 @@ diagrams or delta-cycle analysis. No simulation behavior is attributed to newlin
 conversion. The included [audit utility](audit_bytes.py) checks Git blobs,
 public raw VCDs and detached checkouts with both newline-conversion settings.
 
+The [completed byte audit](BYTE_AUDIT.json) at
+evidence commit `48171ff14ca075b551e958eda2a4b716c888cd1d` verified all 121 archived artifacts
+against Git blobs and fresh detached `core.autocrlf=false` / `true` checkouts;
+all 9 VCDs also matched public raw downloads. All 8
+figure metadata and caption hash references matched the captured bytes. This
+audit receipt and paragraph are later evidence-only additions.
+
 ## Reproduce the merged source
 
 The following paths were fresh for this execution. Choose unused source and
