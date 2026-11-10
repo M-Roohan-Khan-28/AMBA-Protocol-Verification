@@ -1,0 +1,34 @@
+{
+  "label": "simulation-reconstructed frame",
+  "source": "C:\\short\\vga-complete-target-v1-20261111\\functional\\actual-frame.rgb444",
+  "source_sha256": "1748eebde5f94c3faad5f3ab05d0007b0d7cb4540f85dcf7420869f8c0b1f1ef",
+  "source_representation": "four exact actual-pin bytes per raster sample: R4 G4 B4 {HS,VS,ACTIVE}",
+  "image_sha256": "82722db7aa2ae92c96126939418212f3fea2630dc1aae91c7384ef7d581715a5",
+  "image_dimensions": [
+    640,
+    480
+  ],
+  "raster_dimensions": [
+    800,
+    525
+  ],
+  "sample_phase": "first rising input clock of each raster pixel (post-model divider=1), output captured +1 ns after edge",
+  "input_period_ns": 10,
+  "sample_period_ns": 40,
+  "start_tick_ps": 26000,
+  "end_tick_ps": 16799986000,
+  "conversion": "each observed 4-bit channel multiplied by 17",
+  "active_samples": 307200,
+  "hsync_low_samples": 50400,
+  "vsync_low_samples": 1600,
+  "source_revision": "20c9eaa4d79209fb46323451be0783f1d8fe6df2",
+  "renderer_sha256": "6456728794288f0224d0533c22772b805a0065854494a7a23097fbd1acb694cc",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\vga-uvm-20261111\\tools\\render_vga_evidence.py",
+    "--run",
+    "C:\\short\\vga-complete-target-v1-20261111",
+    "--output",
+    "C:\\short\\vga-complete-target-v1-20261111\\measured-evidence\\figures"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "label": "Initial three-band RGB332 background and retained DIL signature",
+  "actual_source": "actual-frame.rgb444",
+  "actual_source_sha256": "1748eebde5f94c3faad5f3ab05d0007b0d7cb4540f85dcf7420869f8c0b1f1ef",
+  "actual_decoded_framebuffer_sha256": "3d8b9dda66300ea2f31b98ed69e14e014f5333c262fa45e5d7458c3a0b3d3f74",
+  "expected_specification_framebuffer_sha256": "3d8b9dda66300ea2f31b98ed69e14e014f5333c262fa45e5d7458c3a0b3d3f74",
+  "framebuffer_dimensions": [
+    80,
+    60
+  ],
+  "method": "One recorded actual active pixel at each 8 by 8 cell origin, inverse RGB332 mapping; expected bytes independently constructed from the documented initial artwork. PNG pixels are never supplied by the expected atlas."
+}

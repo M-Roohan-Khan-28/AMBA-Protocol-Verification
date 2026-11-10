@@ -1,0 +1,1 @@
+{"name":"intent","observations":4,"clocks":2,"control_only":1,"initial_samples":1,"comparisons":24,"enabled_writes":1,"valid_writes":1,"ignored_writes":0,"reset_writes":1,"pixel_advances":0,"pixel_samples":0,"active_samples":0,"hs_low":0,"vs_low":0,"complete_lines":0,"complete_frames":0,"reset_edges":1,"distinct_addresses":1,"distinct_colors":1,"phase_writes":[0,0,0,0]}

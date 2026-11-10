@@ -1,0 +1,1050 @@
+{
+  "started_utc": "2026-11-10T20:21:35.143106+00:00",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\vga-uvm-20261111\\scripts\\run_vga_uvm.py",
+    "--expected-env-sha",
+    "de3cc53c5d921e6511bb9da76ee6736824a79939",
+    "--output",
+    "C:\\short\\vga-receipts-controls-v1-20261111",
+    "--select",
+    "runner-qualification",
+    "smoke",
+    "control-intent",
+    "control-phase",
+    "control-row"
+  ],
+  "run_id": "f806e41b13374ec3a7746c7036fc8f9d",
+  "source_revision": "de3cc53c5d921e6511bb9da76ee6736824a79939",
+  "expected_environment_revision": "de3cc53c5d921e6511bb9da76ee6736824a79939",
+  "source_dirty": false,
+  "serial_execution": true,
+  "raw_fault": false,
+  "selection": [
+    "runner-qualification",
+    "smoke",
+    "control-intent",
+    "control-phase",
+    "control-row"
+  ],
+  "seed": 682016495,
+  "seed_hex": "0x28A6BEEF",
+  "expected_inventory": [
+    "runner-qualification",
+    "sva-hsync",
+    "sva-vsync",
+    "sva-active",
+    "sva-blank",
+    "sva-rgb",
+    "sva-reset",
+    "sva-legal_reset_write",
+    "sva-legal_reset_nonblack",
+    "sva-legal_current_write",
+    "sva-legal_inactive_inputs",
+    "smoke",
+    "functional",
+    "control-framewrap",
+    "control-horizontal",
+    "control-intent",
+    "control-invalid",
+    "control-phase",
+    "control-scale",
+    "control-vertical",
+    "control-row",
+    "fault-hsync",
+    "fault-vsync",
+    "fault-frame_wrap",
+    "fault-divider",
+    "fault-scale",
+    "fault-row_stride",
+    "fault-rgb",
+    "fault-blank",
+    "fault-invalid_alias",
+    "fault-clear_reset",
+    "fault-disabled_reset_write",
+    "fault-gated_write",
+    "fault-driver_alias",
+    "fault-missing_marker",
+    "portable"
+  ],
+  "required_selected": [
+    "runner-qualification",
+    "smoke",
+    "control-intent",
+    "control-phase",
+    "control-row"
+  ],
+  "suites": [
+    {
+      "name": "runner-qualification",
+      "kind": "runner",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\vga-uvm-20261111\\scripts\\qualify_vga_runner.py",
+            "--output",
+            "C:\\short\\vga-receipts-controls-v1-20261111\\runner-qualification\\run"
+          ],
+          "cwd": "C:\\short\\vga-uvm-20261111",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "qualification.log",
+          "sha256": "4d909bc2d0be6a8c01691a0bbe75d4b777dfac4e8de11a2d5e4356f75baf09bf"
+        }
+      ],
+      "reason": "SYNTHETIC_RECORD_FIXTURES",
+      "result": {
+        "kind": "SYNTHETIC_RECORD_FIXTURES_NOT_INDUCED_CRASHES",
+        "status": "PASS",
+        "exit_code": 0,
+        "checks": 49,
+        "cases": [
+          {
+            "name": "valid_intended_failure",
+            "expected_accept": true,
+            "accepted": true,
+            "pass_": true
+          },
+          {
+            "name": "tool_0_exit_211",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_0_exit_127",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_0_exit_-11",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_0_timeout",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_0_incomplete_arguments",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_1_exit_211",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_1_exit_127",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_1_exit_-11",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_1_timeout",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_1_incomplete_arguments",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_2_exit_211",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_2_exit_127",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_2_exit_-11",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_2_timeout",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_2_incomplete_arguments",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "outer_timeout",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "outer_success",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "missing_command",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "stale_nonce_json",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "stale_nonce_log",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "changed_source",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "expected_source_mismatch",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "changed_inputs",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "dirty_source",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "changed_dut",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "changed_dut_inputs",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "wrong_mutation",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "missing_diagnostic",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "wrong_diagnostic",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "extra_diagnostic",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "wrong_sva",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "extra_sva",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "unrelated_fatal",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "unrelated_error",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "timeout_text",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "valid_missing_marker",
+            "expected_accept": true,
+            "accepted": true,
+            "pass_": true
+          },
+          {
+            "name": "missing_marker_without_completion",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "extra_completion",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "receipt_valid_held_enable",
+            "expected_accept": true,
+            "accepted": true,
+            "pass_": true
+          },
+          {
+            "name": "receipt_missing_held_write",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "receipt_extra_write",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "receipt_address_alias",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "receipt_wrong_data",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "receipt_wrong_reset",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "receipt_wrong_validity",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "receipt_out_of_order",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "receipt_legal_coincident_reset",
+            "expected_accept": true,
+            "accepted": true,
+            "pass_": true
+          },
+          {
+            "name": "receipt_ambiguous_clock_data",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          }
+        ],
+        "tested_environment": "de3cc53c5d921e6511bb9da76ee6736824a79939",
+        "production_sha256": "eeaa9a82bb6dbe3bace4fdfe26ed27d653ae934ec3effdecba9372e967056ee6",
+        "qualification_sha256": "c373fdb7c7ac9ba0a6ce31569fb5d7b51a0bbf11b3975bf98911e315075d99e5"
+      }
+    },
+    {
+      "name": "smoke",
+      "kind": "functional",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\vga-receipts-controls-v1-20261111\\smoke",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_bus.sv",
+            "C:\\short\\vga-receipts-controls-v1-20261111\\source\\rtl\\design.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_assertions.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_uvm_pkg.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\vga-receipts-controls-v1-20261111\\smoke",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "1b0508444efcc50f2c440031afafaadd0c5c6bb640a2774b8367b91aaa533b3f"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.vga_uvm_top",
+            "+RUN_ID=f806e41b13374ec3a7746c7036fc8f9d",
+            "+GROUP=smoke",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\vga-receipts-controls-v1-20261111\\smoke",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "5a9c53bac56c51e00c22c25d2b1b0299f1fd02c484753e88f58f32433200bd4a"
+        }
+      ],
+      "reason": "EXECUTED",
+      "observed_sva": [],
+      "cases": [
+        {
+          "name": "smoke",
+          "observations": 89,
+          "clocks": 85,
+          "control_only": 3,
+          "initial_samples": 1,
+          "comparisons": 534,
+          "enabled_writes": 2,
+          "valid_writes": 2,
+          "ignored_writes": 0,
+          "reset_writes": 2,
+          "pixel_advances": 20,
+          "pixel_samples": 20,
+          "active_samples": 20,
+          "hs_low": 0,
+          "vs_low": 0,
+          "complete_lines": 0,
+          "complete_frames": 0,
+          "reset_edges": 1,
+          "distinct_addresses": 3,
+          "distinct_colors": 2,
+          "phase_writes": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "totals": {
+        "cases": 1,
+        "observations": 89,
+        "comparisons": 534,
+        "clocks": 85,
+        "writes": 2,
+        "ignored": 0,
+        "frames": 0,
+        "frame_pixels": 0,
+        "assertion_samples": 7,
+        "end_tick_ps": 847000,
+        "last_clock_edge_ps": 845000,
+        "phase_writes": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "write_receipts": {
+        "intended_records": 4,
+        "accepted_clock_records": 2,
+        "valid": 2,
+        "ignored": 0,
+        "reset_writes": 2,
+        "sha256": {
+          "intents.csv": "97773a1da89fa075f2a385793a785d82fc10086724b1fe55a5e1fa6367cd16e2",
+          "accepted-writes.csv": "5da8f641b63106071c6a5f1d81aa060102cdf38c86cddc1ec9f1a01200d2d8a1"
+        }
+      },
+      "uvm_runtime_versions": [
+        "QUESTA_UVM-1.2.3"
+      ]
+    },
+    {
+      "name": "control-intent",
+      "kind": "functional",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\vga-receipts-controls-v1-20261111\\control-intent",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_bus.sv",
+            "C:\\short\\vga-receipts-controls-v1-20261111\\source\\rtl\\design.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_assertions.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_uvm_pkg.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\vga-receipts-controls-v1-20261111\\control-intent",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "243bb5ccaec123400804575be33c0a3e79cefa3a99756a7a45f79e7843440a47"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.vga_uvm_top",
+            "+RUN_ID=f806e41b13374ec3a7746c7036fc8f9d",
+            "+GROUP=intent",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\vga-receipts-controls-v1-20261111\\control-intent",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "e839d0cbc3968f655182eed4dc2a7f6030aedd32b072cc0a72a0011edb8fc5ed"
+        }
+      ],
+      "reason": "EXECUTED",
+      "observed_sva": [],
+      "cases": [
+        {
+          "name": "intent",
+          "observations": 4,
+          "clocks": 2,
+          "control_only": 1,
+          "initial_samples": 1,
+          "comparisons": 24,
+          "enabled_writes": 1,
+          "valid_writes": 1,
+          "ignored_writes": 0,
+          "reset_writes": 1,
+          "pixel_advances": 0,
+          "pixel_samples": 0,
+          "active_samples": 0,
+          "hs_low": 0,
+          "vs_low": 0,
+          "complete_lines": 0,
+          "complete_frames": 0,
+          "reset_edges": 1,
+          "distinct_addresses": 1,
+          "distinct_colors": 1,
+          "phase_writes": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "totals": {
+        "cases": 1,
+        "observations": 4,
+        "comparisons": 24,
+        "clocks": 2,
+        "writes": 1,
+        "ignored": 0,
+        "frames": 0,
+        "frame_pixels": 0,
+        "assertion_samples": 3,
+        "end_tick_ps": 17000,
+        "last_clock_edge_ps": 15000,
+        "phase_writes": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "write_receipts": {
+        "intended_records": 2,
+        "accepted_clock_records": 1,
+        "valid": 1,
+        "ignored": 0,
+        "reset_writes": 1,
+        "sha256": {
+          "intents.csv": "d0973bdbd5505d66c5326d05778cb71b54874f84d7cbd92ba68fbfbb6d26edf8",
+          "accepted-writes.csv": "2c2de3aec085506fc1a6831ff2189942515d09dd8820016d3ac7c1d00f65ff21"
+        }
+      },
+      "uvm_runtime_versions": [
+        "QUESTA_UVM-1.2.3"
+      ]
+    },
+    {
+      "name": "control-phase",
+      "kind": "functional",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\vga-receipts-controls-v1-20261111\\control-phase",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_bus.sv",
+            "C:\\short\\vga-receipts-controls-v1-20261111\\source\\rtl\\design.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_assertions.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_uvm_pkg.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\vga-receipts-controls-v1-20261111\\control-phase",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "b21c44eb4f54a93858fd3c133069d4d3e1087d029ac8048834c33c3101fc15de"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.vga_uvm_top",
+            "+RUN_ID=f806e41b13374ec3a7746c7036fc8f9d",
+            "+GROUP=phase",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\vga-receipts-controls-v1-20261111\\control-phase",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "47a46a7c2d6f43aab355cc3db7a99f850a53a187a40508d0bc2c3f2cc4a82e37"
+        }
+      ],
+      "reason": "EXECUTED",
+      "observed_sva": [],
+      "cases": [
+        {
+          "name": "phase",
+          "observations": 11,
+          "clocks": 7,
+          "control_only": 3,
+          "initial_samples": 1,
+          "comparisons": 66,
+          "enabled_writes": 1,
+          "valid_writes": 1,
+          "ignored_writes": 0,
+          "reset_writes": 0,
+          "pixel_advances": 1,
+          "pixel_samples": 2,
+          "active_samples": 2,
+          "hs_low": 0,
+          "vs_low": 0,
+          "complete_lines": 0,
+          "complete_frames": 0,
+          "reset_edges": 1,
+          "distinct_addresses": 1,
+          "distinct_colors": 2,
+          "phase_writes": [
+            0,
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "totals": {
+        "cases": 1,
+        "observations": 11,
+        "comparisons": 66,
+        "clocks": 7,
+        "writes": 1,
+        "ignored": 0,
+        "frames": 0,
+        "frame_pixels": 0,
+        "assertion_samples": 5,
+        "end_tick_ps": 67000,
+        "last_clock_edge_ps": 65000,
+        "phase_writes": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "write_receipts": {
+        "intended_records": 4,
+        "accepted_clock_records": 1,
+        "valid": 1,
+        "ignored": 0,
+        "reset_writes": 0,
+        "sha256": {
+          "intents.csv": "93807f80154ad664ec87f333c72ce5c33ff4195d26c00614259a6c5f2e76c2a4",
+          "accepted-writes.csv": "5cbe645b15603302bf30901076c59e29601a98d2c7b86177f9e2ce27abbe2f58"
+        }
+      },
+      "uvm_runtime_versions": [
+        "QUESTA_UVM-1.2.3"
+      ]
+    },
+    {
+      "name": "control-row",
+      "kind": "functional",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\vga-receipts-controls-v1-20261111\\control-row",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_bus.sv",
+            "C:\\short\\vga-receipts-controls-v1-20261111\\source\\rtl\\design.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_assertions.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_uvm_pkg.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\vga-receipts-controls-v1-20261111\\control-row",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "75edc2d6ef034715264601a8709706f491640eb061664f37c679ff5677d5eb98"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.vga_uvm_top",
+            "+RUN_ID=f806e41b13374ec3a7746c7036fc8f9d",
+            "+GROUP=row",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\vga-receipts-controls-v1-20261111\\control-row",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "964bf2905e61f0d8ef4bbc4bf37d3618ff47dfb5f6dd31e581319f8e82182c49"
+        }
+      ],
+      "reason": "EXECUTED",
+      "observed_sva": [],
+      "cases": [
+        {
+          "name": "row",
+          "observations": 25619,
+          "clocks": 25617,
+          "control_only": 1,
+          "initial_samples": 1,
+          "comparisons": 153714,
+          "enabled_writes": 0,
+          "valid_writes": 0,
+          "ignored_writes": 0,
+          "reset_writes": 0,
+          "pixel_advances": 6404,
+          "pixel_samples": 6404,
+          "active_samples": 5124,
+          "hs_low": 768,
+          "vs_low": 0,
+          "complete_lines": 8,
+          "complete_frames": 0,
+          "reset_edges": 1,
+          "distinct_addresses": 81,
+          "distinct_colors": 3,
+          "phase_writes": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "totals": {
+        "cases": 1,
+        "observations": 25619,
+        "comparisons": 153714,
+        "clocks": 25617,
+        "writes": 0,
+        "ignored": 0,
+        "frames": 0,
+        "frame_pixels": 0,
+        "assertion_samples": 50,
+        "end_tick_ps": 256167000,
+        "last_clock_edge_ps": 256165000,
+        "phase_writes": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "write_receipts": {
+        "intended_records": 2,
+        "accepted_clock_records": 0,
+        "valid": 0,
+        "ignored": 0,
+        "reset_writes": 0,
+        "sha256": {
+          "intents.csv": "8c2ab9716e93f9eaa0097cfdf59905a9e3c4191d6f96c8fca00d0feecd896aac",
+          "accepted-writes.csv": "b3f3eb2946d342aec4f8a1f616f398e98371733ea7d68dd0101bc554369a470f"
+        }
+      },
+      "uvm_runtime_versions": [
+        "QUESTA_UVM-1.2.3"
+      ]
+    }
+  ],
+  "aggregate_exit_code": 0,
+  "milestone_pass": false,
+  "functional_coverage": "NOT RUN",
+  "constrained_randomization": "NOT RUN",
+  "original_advanced_alu_apb": "NOT RUN",
+  "input_sha256": {
+    "verification/vga_uvm/inventory.json": "3451b367ba91be3728a6c15c42f45829f68eae87d6137b9c9b962e566782a7cd",
+    "verification/vga_uvm/sources.json": "84734fb7dc4372e561f85be3735d26f8470813fbc5477f73e8cda6f61f7ae41a",
+    "verification/vga_uvm/vga_assertions.sv": "c017b8d78c04377cb5841e6a86a8435f133aedce587f0932deac627ee4b3a7c8",
+    "verification/vga_uvm/vga_bus.sv": "9e0b664753bec62b1397bb2883829299f6dfe3d7ea23d31e928c126f4deefdb4",
+    "verification/vga_uvm/vga_sva_control.sv": "d97fa15b914d7697238006cca2d5376a92ea18bebccbf8e8615399d4edaca237",
+    "verification/vga_uvm/vga_uvm_pkg.sv": "f0e1a26dd3a723c34e323287304e25799ca48c81e13b0ec32bf1b2bf2f5306fd",
+    "verification/vga_uvm/vga_uvm_top.sv": "bd087e848bb67de0e8b2a83cc7e5f4c3f8159ac6b63f4e485371df63d9ad5992",
+    "scripts/run_vga_uvm.py": "eeaa9a82bb6dbe3bace4fdfe26ed27d653ae934ec3effdecba9372e967056ee6",
+    "scripts/vga_mutations.py": "5748a4d2ebe612d986204e2621306fe5690b91fca758ce55445bfb202e98dc62",
+    "scripts/vga_write_receipts.py": "837120fcbdd7554633e3ce050e84a5962dca163ca636db6fa9c621305dfab068",
+    "scripts/qualify_vga_runner.py": "c373fdb7c7ac9ba0a6ce31569fb5d7b51a0bbf11b3975bf98911e315075d99e5",
+    "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93"
+  },
+  "runner_revision": "de3cc53c5d921e6511bb9da76ee6736824a79939",
+  "inventory_revision": "b0c95137bdb031fda152fcd5a062eea21808ce62",
+  "configuration": {
+    "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+    "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+    "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+    "timeout_per_command": 180,
+    "raster_timeout": 900,
+    "global_timeout": 5400,
+    "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "vendor_input_sha256": {
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8"
+    }
+  },
+  "version_command": {
+    "command": [
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+      "-version"
+    ],
+    "cwd": "C:\\short\\vga-receipts-controls-v1-20261111",
+    "exit_code": 0,
+    "timed_out": false,
+    "log": "version.log",
+    "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+  },
+  "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+  "source_lock": {
+    "owner": "M-Roohan-Khan-28",
+    "owner_id": 270144410,
+    "repository": "VGA-SRAM-Framebuffer",
+    "revision": "8e257d11b1964fe82d4d4f3c3192b6a315d3b93d",
+    "execution_files": [
+      "rtl/design.sv",
+      "docs/SPECIFICATION.md",
+      "scripts/run_regression.ps1",
+      "scripts/run_raster.py",
+      "tb/tb_top.sv",
+      "tb/vga_raster_test.sv"
+    ],
+    "execution_sha256": {
+      "rtl/design.sv": "746939f9c0cb902c36d633b68a7aee709a0c4c053feb26f845d29f2c7d009ec3",
+      "docs/SPECIFICATION.md": "987d341dc5df257981c35eefb10d78c33abaf6b68a70c497d2dda65809f14409",
+      "scripts/run_regression.ps1": "c0f369c8397823044784f9b51c8eb444888a93a74aa8ad197e4f9e0eb47c6445",
+      "scripts/run_raster.py": "5a7188689ee3d0ff0aed9d6a87b045804b52fe79216df62abf8ea9a8e455b67c",
+      "tb/tb_top.sv": "65e1221ef62db28c23e3e43e7339b8c6e6d9966e1d25ce55e72da667bf83e49b",
+      "tb/vga_raster_test.sv": "02e67eb396eb9f05d588c1c7a130cecda029148353d1c09ecf52e58108ef4a58"
+    },
+    "supplier": "https://github.com/M-Roohan-Khan-28/VGA-SRAM-Framebuffer.git",
+    "commands": [
+      {
+        "command": [
+          "git",
+          "clone",
+          "--quiet",
+          "--no-hardlinks",
+          "--config",
+          "core.longpaths=true",
+          "--config",
+          "core.autocrlf=false",
+          "https://github.com/M-Roohan-Khan-28/VGA-SRAM-Framebuffer.git",
+          "C:\\short\\vga-receipts-controls-v1-20261111\\source"
+        ],
+        "cwd": "C:\\short\\vga-receipts-controls-v1-20261111",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-0.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "command": [
+          "git",
+          "-C",
+          "C:\\short\\vga-receipts-controls-v1-20261111\\source",
+          "checkout",
+          "--quiet",
+          "--detach",
+          "8e257d11b1964fe82d4d4f3c3192b6a315d3b93d"
+        ],
+        "cwd": "C:\\short\\vga-receipts-controls-v1-20261111",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-1.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "command": [
+          "git",
+          "-C",
+          "C:\\short\\vga-receipts-controls-v1-20261111\\source",
+          "remote",
+          "set-url",
+          "origin",
+          "https://github.com/M-Roohan-Khan-28/VGA-SRAM-Framebuffer.git"
+        ],
+        "cwd": "C:\\short\\vga-receipts-controls-v1-20261111",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-2.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "observed_revision": "8e257d11b1964fe82d4d4f3c3192b6a315d3b93d",
+    "clean": true,
+    "execution_files_sha256": {
+      "rtl/design.sv": "746939f9c0cb902c36d633b68a7aee709a0c4c053feb26f845d29f2c7d009ec3",
+      "docs/SPECIFICATION.md": "987d341dc5df257981c35eefb10d78c33abaf6b68a70c497d2dda65809f14409",
+      "scripts/run_regression.ps1": "c0f369c8397823044784f9b51c8eb444888a93a74aa8ad197e4f9e0eb47c6445",
+      "scripts/run_raster.py": "5a7188689ee3d0ff0aed9d6a87b045804b52fe79216df62abf8ea9a8e455b67c",
+      "tb/tb_top.sv": "65e1221ef62db28c23e3e43e7339b8c6e6d9966e1d25ce55e72da667bf83e49b",
+      "tb/vga_raster_test.sv": "02e67eb396eb9f05d588c1c7a130cecda029148353d1c09ecf52e58108ef4a58"
+    },
+    "clean_after_execution": true
+  },
+  "environment_clean_after_execution": true,
+  "finished_utc": "2026-11-10T20:22:55.551295+00:00"
+}

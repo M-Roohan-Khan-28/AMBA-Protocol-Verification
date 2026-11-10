@@ -1,0 +1,374 @@
+{
+  "started_utc": "2026-11-10T19:52:40.588126+00:00",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\vga-uvm-20261111\\scripts\\run_vga_uvm.py",
+    "--expected-env-sha",
+    "a935e3381f5cae2faa4503e7b8c38a2e1833e28b",
+    "--output",
+    "C:\\short\\vga-functional-v1-20261111",
+    "--select",
+    "smoke",
+    "functional"
+  ],
+  "run_id": "1cdc58d65fd44f3497eda5c550d868c5",
+  "source_revision": "a935e3381f5cae2faa4503e7b8c38a2e1833e28b",
+  "expected_environment_revision": "a935e3381f5cae2faa4503e7b8c38a2e1833e28b",
+  "source_dirty": false,
+  "serial_execution": true,
+  "raw_fault": false,
+  "selection": [
+    "smoke",
+    "functional"
+  ],
+  "seed": 682016495,
+  "seed_hex": "0x28A6BEEF",
+  "expected_inventory": [
+    "runner-qualification",
+    "sva-hsync",
+    "sva-vsync",
+    "sva-active",
+    "sva-blank",
+    "sva-rgb",
+    "sva-reset",
+    "sva-legal_reset_write",
+    "sva-legal_reset_nonblack",
+    "sva-legal_current_write",
+    "sva-legal_inactive_inputs",
+    "smoke",
+    "functional",
+    "control-framewrap",
+    "control-horizontal",
+    "control-intent",
+    "control-invalid",
+    "control-phase",
+    "control-scale",
+    "control-vertical",
+    "fault-hsync",
+    "fault-vsync",
+    "fault-frame_wrap",
+    "fault-divider",
+    "fault-scale",
+    "fault-rgb",
+    "fault-blank",
+    "fault-invalid_alias",
+    "fault-clear_reset",
+    "fault-disabled_reset_write",
+    "fault-gated_write",
+    "fault-driver_alias",
+    "fault-missing_marker",
+    "portable"
+  ],
+  "required_selected": [
+    "smoke",
+    "functional"
+  ],
+  "suites": [
+    {
+      "name": "smoke",
+      "kind": "functional",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\vga-functional-v1-20261111\\smoke",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_bus.sv",
+            "C:\\short\\vga-functional-v1-20261111\\source\\rtl\\design.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_assertions.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_uvm_pkg.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\vga-functional-v1-20261111\\smoke",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "ea5b96602dd9e6dc6fa6308ee3fee69c11084250ebbc4c55e9b409dc7bdb195a"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.vga_uvm_top",
+            "+RUN_ID=1cdc58d65fd44f3497eda5c550d868c5",
+            "+GROUP=smoke",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\vga-functional-v1-20261111\\smoke",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "c5e68a0b6ba24d501f99c5218cff3fb81ced17b08ec0f04c9de8f3e615c871a9"
+        }
+      ],
+      "reason": "EXECUTED",
+      "observed_sva": [],
+      "cases": [
+        {
+          "name": "smoke",
+          "observations": 89,
+          "clocks": 85,
+          "control_only": 3,
+          "initial_samples": 1,
+          "comparisons": 534,
+          "enabled_writes": 2,
+          "valid_writes": 2,
+          "ignored_writes": 0,
+          "reset_writes": 2,
+          "pixel_advances": 20,
+          "pixel_samples": 20,
+          "active_samples": 20,
+          "hs_low": 0,
+          "vs_low": 0,
+          "complete_lines": 0,
+          "complete_frames": 0,
+          "reset_edges": 1,
+          "distinct_addresses": 3,
+          "distinct_colors": 2
+        }
+      ],
+      "totals": {
+        "cases": 1,
+        "observations": 89,
+        "comparisons": 534,
+        "clocks": 85,
+        "writes": 2,
+        "ignored": 0,
+        "frames": 0,
+        "frame_pixels": 0,
+        "phase_writes": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "uvm_runtime_versions": [
+        "QUESTA_UVM-1.2.3"
+      ]
+    },
+    {
+      "name": "functional",
+      "kind": "functional",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\vga-functional-v1-20261111\\functional",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_bus.sv",
+            "C:\\short\\vga-functional-v1-20261111\\source\\rtl\\design.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_assertions.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_uvm_pkg.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\vga-functional-v1-20261111\\functional",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "bf26103d77603f35bdfa3e07091067a545974d9748f115470a5d35402f54e89c"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.vga_uvm_top",
+            "+RUN_ID=1cdc58d65fd44f3497eda5c550d868c5",
+            "+GROUP=functional",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\vga-functional-v1-20261111\\functional",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "05a806098c98cfbe66304d94a6f432184140ae4c77103dab0fb357bd2993b24c"
+        }
+      ],
+      "reason": "PROCESS_OR_SIMULATOR_ERROR"
+    }
+  ],
+  "aggregate_exit_code": 1,
+  "milestone_pass": false,
+  "functional_coverage": "NOT RUN",
+  "constrained_randomization": "NOT RUN",
+  "original_advanced_alu_apb": "NOT RUN",
+  "input_sha256": {
+    "verification/vga_uvm/inventory.json": "3c9b44b6c1dc1b426427cd1b81e9964cfaaf1c5a1765001b2afff5df6d06a7d1",
+    "verification/vga_uvm/sources.json": "84734fb7dc4372e561f85be3735d26f8470813fbc5477f73e8cda6f61f7ae41a",
+    "verification/vga_uvm/vga_assertions.sv": "c017b8d78c04377cb5841e6a86a8435f133aedce587f0932deac627ee4b3a7c8",
+    "verification/vga_uvm/vga_bus.sv": "1662742ddc3c98b9322d13dc04fdc9ac21c61ea299c680c40464a9d0e9c254c0",
+    "verification/vga_uvm/vga_sva_control.sv": "d97fa15b914d7697238006cca2d5376a92ea18bebccbf8e8615399d4edaca237",
+    "verification/vga_uvm/vga_uvm_pkg.sv": "501a50e51839b3ed652ece06be8cc42a25c38434ba8849bbbbebe4e50e45aa56",
+    "verification/vga_uvm/vga_uvm_top.sv": "bd087e848bb67de0e8b2a83cc7e5f4c3f8159ac6b63f4e485371df63d9ad5992",
+    "scripts/run_vga_uvm.py": "03d9ea01bbcda943f201f68e93e4f2a251b3ec09b400b94f17f0431831c5c972",
+    "scripts/vga_mutations.py": "9d02e88f34e0a0ebb6924d727e0d95f92c0aa06819351183aa39acde7dbc00a5",
+    "scripts/qualify_vga_runner.py": "d02f3f4ab7c98f5bf56929a9a88183cf4c6a1da808eddc6571b8d316dd3b00bc",
+    "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93"
+  },
+  "runner_revision": "ba665a7d9cc5aadc11b808d211285f6070a16b54",
+  "inventory_revision": "ba665a7d9cc5aadc11b808d211285f6070a16b54",
+  "configuration": {
+    "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+    "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+    "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+    "timeout_per_command": 180,
+    "raster_timeout": 900,
+    "global_timeout": 5400,
+    "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "vendor_input_sha256": {
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8"
+    }
+  },
+  "version_command": {
+    "command": [
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+      "-version"
+    ],
+    "cwd": "C:\\short\\vga-functional-v1-20261111",
+    "exit_code": 0,
+    "timed_out": false,
+    "log": "version.log",
+    "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+  },
+  "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+  "source_lock": {
+    "owner": "M-Roohan-Khan-28",
+    "owner_id": 270144410,
+    "repository": "VGA-SRAM-Framebuffer",
+    "revision": "8e257d11b1964fe82d4d4f3c3192b6a315d3b93d",
+    "execution_files": [
+      "rtl/design.sv",
+      "docs/SPECIFICATION.md",
+      "scripts/run_regression.ps1",
+      "scripts/run_raster.py",
+      "tb/tb_top.sv",
+      "tb/vga_raster_test.sv"
+    ],
+    "execution_sha256": {
+      "rtl/design.sv": "746939f9c0cb902c36d633b68a7aee709a0c4c053feb26f845d29f2c7d009ec3",
+      "docs/SPECIFICATION.md": "987d341dc5df257981c35eefb10d78c33abaf6b68a70c497d2dda65809f14409",
+      "scripts/run_regression.ps1": "c0f369c8397823044784f9b51c8eb444888a93a74aa8ad197e4f9e0eb47c6445",
+      "scripts/run_raster.py": "5a7188689ee3d0ff0aed9d6a87b045804b52fe79216df62abf8ea9a8e455b67c",
+      "tb/tb_top.sv": "65e1221ef62db28c23e3e43e7339b8c6e6d9966e1d25ce55e72da667bf83e49b",
+      "tb/vga_raster_test.sv": "02e67eb396eb9f05d588c1c7a130cecda029148353d1c09ecf52e58108ef4a58"
+    },
+    "supplier": "https://github.com/M-Roohan-Khan-28/VGA-SRAM-Framebuffer.git",
+    "commands": [
+      {
+        "command": [
+          "git",
+          "clone",
+          "--quiet",
+          "--no-hardlinks",
+          "--config",
+          "core.longpaths=true",
+          "--config",
+          "core.autocrlf=false",
+          "https://github.com/M-Roohan-Khan-28/VGA-SRAM-Framebuffer.git",
+          "C:\\short\\vga-functional-v1-20261111\\source"
+        ],
+        "cwd": "C:\\short\\vga-functional-v1-20261111",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-0.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "command": [
+          "git",
+          "-C",
+          "C:\\short\\vga-functional-v1-20261111\\source",
+          "checkout",
+          "--quiet",
+          "--detach",
+          "8e257d11b1964fe82d4d4f3c3192b6a315d3b93d"
+        ],
+        "cwd": "C:\\short\\vga-functional-v1-20261111",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-1.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "command": [
+          "git",
+          "-C",
+          "C:\\short\\vga-functional-v1-20261111\\source",
+          "remote",
+          "set-url",
+          "origin",
+          "https://github.com/M-Roohan-Khan-28/VGA-SRAM-Framebuffer.git"
+        ],
+        "cwd": "C:\\short\\vga-functional-v1-20261111",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-2.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "observed_revision": "8e257d11b1964fe82d4d4f3c3192b6a315d3b93d",
+    "clean": true,
+    "execution_files_sha256": {
+      "rtl/design.sv": "746939f9c0cb902c36d633b68a7aee709a0c4c053feb26f845d29f2c7d009ec3",
+      "docs/SPECIFICATION.md": "987d341dc5df257981c35eefb10d78c33abaf6b68a70c497d2dda65809f14409",
+      "scripts/run_regression.ps1": "c0f369c8397823044784f9b51c8eb444888a93a74aa8ad197e4f9e0eb47c6445",
+      "scripts/run_raster.py": "5a7188689ee3d0ff0aed9d6a87b045804b52fe79216df62abf8ea9a8e455b67c",
+      "tb/tb_top.sv": "65e1221ef62db28c23e3e43e7339b8c6e6d9966e1d25ce55e72da667bf83e49b",
+      "tb/vga_raster_test.sv": "02e67eb396eb9f05d588c1c7a130cecda029148353d1c09ecf52e58108ef4a58"
+    },
+    "clean_after_execution": true
+  },
+  "environment_clean_after_execution": true,
+  "finished_utc": "2026-11-10T20:03:49.515646+00:00"
+}

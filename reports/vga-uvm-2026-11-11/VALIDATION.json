@@ -1,0 +1,443 @@
+{
+  "status": "PASS",
+  "required": 37,
+  "required_names": [
+    "runner-qualification",
+    "sva-hsync",
+    "sva-vsync",
+    "sva-active",
+    "sva-blank",
+    "sva-rgb",
+    "sva-reset",
+    "sva-legal_reset_write",
+    "sva-legal_reset_nonblack",
+    "sva-legal_current_write",
+    "sva-legal_inactive_inputs",
+    "smoke",
+    "functional",
+    "control-framewrap",
+    "control-horizontal",
+    "control-intent",
+    "control-invalid",
+    "control-phase",
+    "control-scale",
+    "control-vertical",
+    "control-row",
+    "fault-hsync",
+    "fault-vsync",
+    "fault-frame_wrap",
+    "fault-divider",
+    "fault-scale",
+    "fault-row_stride",
+    "fault-rgb",
+    "fault-blank",
+    "fault-invalid_alias",
+    "fault-clear_reset",
+    "fault-disabled_reset_write",
+    "fault-gated_write",
+    "fault-driver_alias",
+    "fault-missing_marker",
+    "portable",
+    "measured-evidence"
+  ],
+  "source_revision": "3afa2912076b6e7dadf6c958d444e2dc9a2a87f4",
+  "runner_revision": "20c9eaa4d79209fb46323451be0783f1d8fe6df2",
+  "inventory_revision": "20c9eaa4d79209fb46323451be0783f1d8fe6df2",
+  "dut_lock": "8e257d11b1964fe82d4d4f3c3192b6a315d3b93d",
+  "fixtures": 49,
+  "sva_controls": 10,
+  "principal_scenarios": 30,
+  "positive_control_scenarios": 8,
+  "principal_counts": {
+    "observations": 8622612,
+    "clocks": 8612680,
+    "control_only": 9930,
+    "initial_samples": 2,
+    "comparisons": 51735672,
+    "enabled_writes": 9896,
+    "valid_writes": 9882,
+    "ignored_writes": 14,
+    "reset_writes": 9886,
+    "pixel_advances": 2150691,
+    "pixel_samples": 2150693,
+    "active_samples": 1599152,
+    "hs_low": 257956,
+    "vs_low": 6401,
+    "complete_lines": 2687,
+    "complete_frames": 4,
+    "reset_edges": 14
+  },
+  "faults": [
+    {
+      "name": "fault-hsync",
+      "status": "PASS",
+      "diagnostic": "VGA_HSYNC",
+      "assertions": [
+        "HSYNC"
+      ],
+      "child_wrapper_exit": 1,
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ],
+      "passing_control": "control-horizontal",
+      "source_inputs_match": true
+    },
+    {
+      "name": "fault-vsync",
+      "status": "PASS",
+      "diagnostic": "VGA_VSYNC",
+      "assertions": [
+        "VSYNC"
+      ],
+      "child_wrapper_exit": 1,
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ],
+      "passing_control": "control-vertical",
+      "source_inputs_match": true
+    },
+    {
+      "name": "fault-frame_wrap",
+      "status": "PASS",
+      "diagnostic": "VGA_ACTIVE",
+      "assertions": [
+        "ACTIVE",
+        "BLANK"
+      ],
+      "child_wrapper_exit": 1,
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ],
+      "passing_control": "control-framewrap",
+      "source_inputs_match": true
+    },
+    {
+      "name": "fault-divider",
+      "status": "PASS",
+      "diagnostic": "VGA_RGB",
+      "assertions": [
+        "RGB"
+      ],
+      "child_wrapper_exit": 1,
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ],
+      "passing_control": "control-scale",
+      "source_inputs_match": true
+    },
+    {
+      "name": "fault-scale",
+      "status": "PASS",
+      "diagnostic": "VGA_RGB",
+      "assertions": [
+        "RGB"
+      ],
+      "child_wrapper_exit": 1,
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ],
+      "passing_control": "control-scale",
+      "source_inputs_match": true
+    },
+    {
+      "name": "fault-row_stride",
+      "status": "PASS",
+      "diagnostic": "VGA_RGB",
+      "assertions": [
+        "RGB"
+      ],
+      "child_wrapper_exit": 1,
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ],
+      "passing_control": "control-row",
+      "source_inputs_match": true
+    },
+    {
+      "name": "fault-rgb",
+      "status": "PASS",
+      "diagnostic": "VGA_RESET",
+      "assertions": [
+        "RESET"
+      ],
+      "child_wrapper_exit": 1,
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ],
+      "passing_control": "smoke",
+      "source_inputs_match": true
+    },
+    {
+      "name": "fault-blank",
+      "status": "PASS",
+      "diagnostic": "VGA_BLANK",
+      "assertions": [
+        "BLANK"
+      ],
+      "child_wrapper_exit": 1,
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ],
+      "passing_control": "control-horizontal",
+      "source_inputs_match": true
+    },
+    {
+      "name": "fault-invalid_alias",
+      "status": "PASS",
+      "diagnostic": "VGA_RESET",
+      "assertions": [
+        "RESET"
+      ],
+      "child_wrapper_exit": 1,
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ],
+      "passing_control": "control-invalid",
+      "source_inputs_match": true
+    },
+    {
+      "name": "fault-clear_reset",
+      "status": "PASS",
+      "diagnostic": "VGA_RESET",
+      "assertions": [
+        "RESET"
+      ],
+      "child_wrapper_exit": 1,
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ],
+      "passing_control": "smoke",
+      "source_inputs_match": true
+    },
+    {
+      "name": "fault-disabled_reset_write",
+      "status": "PASS",
+      "diagnostic": "VGA_RESET",
+      "assertions": [
+        "RESET"
+      ],
+      "child_wrapper_exit": 1,
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ],
+      "passing_control": "smoke",
+      "source_inputs_match": true
+    },
+    {
+      "name": "fault-gated_write",
+      "status": "PASS",
+      "diagnostic": "VGA_RGB",
+      "assertions": [
+        "RGB"
+      ],
+      "child_wrapper_exit": 1,
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ],
+      "passing_control": "control-phase",
+      "source_inputs_match": true
+    },
+    {
+      "name": "fault-driver_alias",
+      "status": "PASS",
+      "diagnostic": "VGA_INTENT",
+      "assertions": [],
+      "child_wrapper_exit": 1,
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ],
+      "passing_control": "control-intent",
+      "source_inputs_match": true
+    },
+    {
+      "name": "fault-missing_marker",
+      "status": "PASS",
+      "diagnostic": "MISSING_RESULT_MARKER",
+      "assertions": [],
+      "child_wrapper_exit": 1,
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ],
+      "passing_control": "smoke",
+      "source_inputs_match": true
+    }
+  ],
+  "wrapper_exit": 0,
+  "aggregate_exit": 0,
+  "simulator": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+  "seed": "0x28A6BEEF",
+  "uvm": "QUESTA_UVM-1.2.3",
+  "portable": {
+    "repository": "VGA-SRAM-Framebuffer",
+    "source_revision": "8e257d11b1964fe82d4d4f3c3192b6a315d3b93d",
+    "source_dirty": false,
+    "sources": [
+      {
+        "path": "C:\\short\\vga-uvm-fresh-run-20261111\\source\\rtl\\design.sv",
+        "sha256": "746939f9c0cb902c36d633b68a7aee709a0c4c053feb26f845d29f2c7d009ec3"
+      },
+      {
+        "path": "C:\\short\\vga-uvm-fresh-run-20261111\\source\\tb\\tb_top.sv",
+        "sha256": "65e1221ef62db28c23e3e43e7339b8c6e6d9966e1d25ce55e72da667bf83e49b"
+      },
+      {
+        "path": "C:\\short\\vga-uvm-fresh-run-20261111\\source\\tb\\vga_raster_test.sv",
+        "sha256": "02e67eb396eb9f05d588c1c7a130cecda029148353d1c09ecf52e58108ef4a58"
+      }
+    ],
+    "seed": "exhaustive RGB332 0..255",
+    "timeout_seconds_per_command": 180,
+    "simulations": [
+      {
+        "top": "tb_vga_controller_sram",
+        "command": [
+          "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+          "-c",
+          "-onfinish",
+          "exit",
+          "tb_vga_controller_sram",
+          "-do",
+          "run -all; quit -code 0"
+        ],
+        "simulator_exit_code": 0,
+        "status": "PASS",
+        "marker": "# ALL VGA TESTS PASSED"
+      },
+      {
+        "top": "vga_raster_test",
+        "command": [
+          "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+          "-c",
+          "-onfinish",
+          "exit",
+          "vga_raster_test",
+          "+RESET_WRITE_EDGE",
+          "-do",
+          "run -all; quit -code 0"
+        ],
+        "simulator_exit_code": 0,
+        "status": "PASS",
+        "marker": "# VGA_RESET_WRITE_EDGE_PASS checks=8 reset_held=1"
+      },
+      {
+        "top": "vga_raster_test",
+        "command": [
+          "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+          "-c",
+          "-onfinish",
+          "exit",
+          "vga_raster_test",
+          "-do",
+          "run -all; quit -code 0"
+        ],
+        "simulator_exit_code": 0,
+        "status": "PASS",
+        "marker": "# VGA_RASTER_PASS checks=29588940 pixels=1232740 active=922318 hsync_low=147845 vsync_low=3201 frames=2 writes=258 invalid=2 resets=4 seed=all256"
+      }
+    ],
+    "overall": "PASS",
+    "simulator_version": "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020",
+    "elapsed_seconds": 32.66
+  },
+  "clean": true,
+  "detached": true,
+  "serial": true
+}

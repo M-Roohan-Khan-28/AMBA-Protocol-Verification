@@ -1,0 +1,305 @@
+{
+  "kind": "SYNTHETIC_RECORD_FIXTURES_NOT_INDUCED_CRASHES",
+  "status": "PASS",
+  "exit_code": 0,
+  "checks": 49,
+  "cases": [
+    {
+      "name": "valid_intended_failure",
+      "expected_accept": true,
+      "accepted": true,
+      "pass_": true
+    },
+    {
+      "name": "tool_0_exit_211",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_0_exit_127",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_0_exit_-11",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_0_timeout",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_0_incomplete_arguments",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_1_exit_211",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_1_exit_127",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_1_exit_-11",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_1_timeout",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_1_incomplete_arguments",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_2_exit_211",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_2_exit_127",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_2_exit_-11",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_2_timeout",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_2_incomplete_arguments",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "outer_timeout",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "outer_success",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "missing_command",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "stale_nonce_json",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "stale_nonce_log",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "changed_source",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "expected_source_mismatch",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "changed_inputs",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "dirty_source",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "changed_dut",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "changed_dut_inputs",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "wrong_mutation",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "missing_diagnostic",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "wrong_diagnostic",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "extra_diagnostic",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "wrong_sva",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "extra_sva",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "unrelated_fatal",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "unrelated_error",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "timeout_text",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "valid_missing_marker",
+      "expected_accept": true,
+      "accepted": true,
+      "pass_": true
+    },
+    {
+      "name": "missing_marker_without_completion",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "extra_completion",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "receipt_valid_held_enable",
+      "expected_accept": true,
+      "accepted": true,
+      "pass_": true
+    },
+    {
+      "name": "receipt_missing_held_write",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "receipt_extra_write",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "receipt_address_alias",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "receipt_wrong_data",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "receipt_wrong_reset",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "receipt_wrong_validity",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "receipt_out_of_order",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "receipt_legal_coincident_reset",
+      "expected_accept": true,
+      "accepted": true,
+      "pass_": true
+    },
+    {
+      "name": "receipt_ambiguous_clock_data",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    }
+  ],
+  "tested_environment": "20c9eaa4d79209fb46323451be0783f1d8fe6df2",
+  "production_sha256": "f45657f0dac888cebb60072eec0124fd837c011fe5b866bc701095f14fd36ff4",
+  "qualification_sha256": "c373fdb7c7ac9ba0a6ce31569fb5d7b51a0bbf11b3975bf98911e315075d99e5"
+}

@@ -1,0 +1,11 @@
+--- locked/design.sv
++++ disposable/design.sv
+@@ -97,7 +97,7 @@
+             begin
+                 h_count <= 10'd0;
+ 
+-                if(v_count == 10'd524)
++                if(v_count == 10'd523)
+                     v_count <= 10'd0;
+                 else
+                     v_count <= v_count + 1'b1;

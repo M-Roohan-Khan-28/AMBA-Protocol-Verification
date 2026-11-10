@@ -1,0 +1,157 @@
+Reading pref.tcl
+
+# 2025.2
+
+# ** Note: (vsim-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# vsim -c -onfinish exit -voptargs="+acc" -sv_seed 682016495 -L C:\MXR\Quartus\25.1\questa_fse\uvm-1.2 work.vga_uvm_top "+RUN_ID=c8c909e365ed44e4b0acae56215768d9" "+GROUP=functional" -do "onerror {quit -force -code 1}; run -all; quit -force -code 0" 
+# Start time: 01:05:37 on Nov 11,2026
+# Loading C:/Users/CG/AppData/Local/Temp\CG@DESKTOP-9KOU2NO_dpi_42812\win64_gcc-7.4.0\export_tramp.dll
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.vga_bus(fast)
+# Loading C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.uvm_pkg(fast)
+# Loading work.vga_uvm_pkg(fast)
+# Loading C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.questa_uvm_pkg(fast)
+# Loading work.vga_uvm_top(fast)
+# Loading work.vga_bus(fast__2)
+# Loading work.vga_controller_sram(fast)
+# Loading work.vga_assertions(fast)
+# Compiling C:/Users/CG/AppData/Local/Temp\CG@DESKTOP-9KOU2NO_dpi_42812\win64_gcc-7.4.0\exportwrapper.c
+# Loading C:/Users/CG/AppData/Local/Temp\CG@DESKTOP-9KOU2NO_dpi_42812\win64_gcc-7.4.0\vsim_auto_compile.dll
+# Loading C:/MXR/Quartus/25.1/questa_fse/uvm-1.2\win64\uvm_dpi.dll
+# onerror {quit -force -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# VGA_RUN_ID c8c909e365ed44e4b0acae56215768d9
+# UVM_INFO @ 0: reporter [RNTST] Running test vga_test...
+# VGA_CASE_START name=initial_image time=0
+# VGA_CASE_PASS name=initial_image observations=4 comparisons=24 clocks=2 writes=0 ignored=0 frames=0 time=23000
+# VGA_CASE_START name=horizontal_boundaries time=23000
+# VGA_FRAME_CAPTURE_START time=26000 clock=3
+# VGA_WAVE_START name=horizontal time=25537000
+# VGA_WAVE_END name=horizontal time=30177000
+# VGA_CASE_PASS name=horizontal_boundaries observations=3016 comparisons=18096 clocks=3016 writes=0 ignored=0 frames=0 time=30177000
+# VGA_CASE_START name=line_wrap time=30177000
+# VGA_CASE_PASS name=line_wrap observations=200 comparisons=1200 clocks=200 writes=0 ignored=0 frames=0 time=32177000
+# VGA_CASE_START name=vertical_active_boundary time=32177000
+# VGA_CASE_PASS name=vertical_active_boundary observations=1532800 comparisons=9196800 clocks=1532800 writes=0 ignored=0 frames=0 time=15360177000
+# VGA_CASE_START name=vertical_sync_boundaries time=15360177000
+# VGA_WAVE_START name=vertical_sync time=15679857000
+# VGA_WAVE_END name=vertical_sync time=15744177000
+# VGA_CASE_PASS name=vertical_sync_boundaries observations=38400 comparisons=230400 clocks=38400 writes=0 ignored=0 frames=0 time=15744177000
+# VGA_CASE_START name=frame_wrap time=15744177000
+# VGA_WAVE_START name=frame_wrap time=16799857000
+# VGA_FRAME_CAPTURE_PASS pixels=420000 time=16799986000
+# VGA_WAVE_END name=frame_wrap time=16800177000
+# VGA_CASE_PASS name=frame_wrap observations=105600 comparisons=633600 clocks=105600 writes=0 ignored=0 frames=1 time=16800177000
+# VGA_CASE_START name=consecutive_second_frame time=16800177000
+# VGA_CASE_PASS name=consecutive_second_frame observations=1679984 comparisons=10079904 clocks=1679984 writes=0 ignored=0 frames=1 time=33600017000
+# VGA_CASE_START name=pattern_low_load time=33600017000
+# VGA_CASE_PASS name=pattern_low_load observations=9601 comparisons=57606 clocks=4800 writes=4800 ignored=0 frames=0 time=33648023000
+# VGA_CASE_START name=invalid_low_sideeffects time=33648023000
+# VGA_CASE_PASS name=invalid_low_sideeffects observations=16 comparisons=96 clocks=8 writes=0 ignored=7 frames=0 time=33648103000
+# VGA_CASE_START name=pattern_low_scan time=33648103000
+# VGA_CASE_PASS name=pattern_low_scan observations=1680002 comparisons=10080012 clocks=1680001 writes=0 ignored=0 frames=1 time=50448107000
+# VGA_CASE_START name=pattern_high_load time=50448107000
+# VGA_CASE_PASS name=pattern_high_load observations=9601 comparisons=57606 clocks=4800 writes=4800 ignored=0 frames=0 time=50496113000
+# VGA_CASE_START name=invalid_high_sideeffects time=50496113000
+# VGA_CASE_PASS name=invalid_high_sideeffects observations=16 comparisons=96 clocks=8 writes=0 ignored=7 frames=0 time=50496193000
+# VGA_CASE_START name=pattern_high_scan time=50496193000
+# VGA_CASE_PASS name=pattern_high_scan observations=1680002 comparisons=10080012 clocks=1680001 writes=0 ignored=0 frames=1 time=67296197000
+# VGA_CASE_START name=all_rgb332 time=67296197000
+# VGA_CASE_PASS name=all_rgb332 observations=513 comparisons=3078 clocks=256 writes=256 ignored=0 frames=0 time=67298763000
+# VGA_CASE_START name=back_to_back_edges time=67298763000
+# VGA_CASE_PASS name=back_to_back_edges observations=10 comparisons=60 clocks=5 writes=4 ignored=0 frames=0 time=67298813000
+# VGA_CASE_START name=held_enable time=67298813000
+# VGA_CASE_PASS name=held_enable observations=7 comparisons=42 clocks=5 writes=4 ignored=0 frames=0 time=67298863000
+# VGA_CASE_START name=inactive_input_changes time=67298863000
+# VGA_CASE_PASS name=inactive_input_changes observations=6 comparisons=36 clocks=4 writes=0 ignored=0 frames=0 time=67298897000
+# VGA_CASE_START name=divider_phase_writes time=67298897000
+# VGA_CASE_PASS name=divider_phase_writes observations=29 comparisons=174 clocks=20 writes=4 ignored=0 frames=0 time=67299103000
+# VGA_CASE_START name=current_previous_future time=67299103000
+# VGA_WAVE_START name=current_pixel time=67815117000
+# VGA_WAVE_END name=current_pixel time=67815133000
+# VGA_CASE_PASS name=current_previous_future observations=308505 comparisons=1851030 clocks=308498 writes=3 ignored=0 frames=0 time=70384077000
+# VGA_CASE_START name=horizontal_blanking_write time=70384077000
+# VGA_CASE_PASS name=horizontal_blanking_write observations=3234 comparisons=19404 clocks=3232 writes=1 ignored=0 frames=0 time=70416397000
+# VGA_CASE_START name=active_reset time=70416397000
+# VGA_CASE_PASS name=active_reset observations=87 comparisons=522 clocks=83 writes=0 ignored=0 frames=0 time=70417233000
+# VGA_CASE_START name=hsync_reset time=70417233000
+# VGA_CASE_PASS name=hsync_reset observations=2643 comparisons=15858 clocks=2641 writes=0 ignored=0 frames=0 time=70443643000
+# VGA_CASE_START name=vertical_blanking_write_and_sync_reset time=70443643000
+# VGA_CASE_PASS name=vertical_blanking_write_and_sync_reset observations=1568058 comparisons=9408348 clocks=1568053 writes=2 ignored=0 frames=0 time=86124167000
+# VGA_CASE_START name=asynchronous_pending_write time=86124167000
+# VGA_WAVE_START name=async_reset time=86124167000
+# VGA_CASE_PASS name=asynchronous_pending_write observations=3 comparisons=18 clocks=1 writes=1 ignored=0 frames=0 time=86124177000
+# VGA_CASE_START name=held_reset_writes time=86124177000
+# VGA_WAVE_END name=async_reset time=86124213000
+# VGA_CASE_PASS name=held_reset_writes observations=5 comparisons=30 clocks=3 writes=3 ignored=0 frames=0 time=86124213000
+# VGA_CASE_START name=coincident_reset_write time=86124213000
+# VGA_CASE_PASS name=coincident_reset_write observations=5 comparisons=30 clocks=3 writes=2 ignored=0 frames=0 time=86124243000
+# VGA_CASE_START name=release_first_four_clocks time=86124243000
+# VGA_CASE_PASS name=release_first_four_clocks observations=6 comparisons=36 clocks=5 writes=0 ignored=0 frames=0 time=86124287000
+# VGA_CASE_START name=repeated_reset_retention time=86124287000
+# VGA_CASE_PASS name=repeated_reset_retention observations=10 comparisons=60 clocks=6 writes=0 ignored=0 frames=0 time=86124353000
+# VGA_CASE_START name=post_reset_operation time=86124353000
+# VGA_CASE_PASS name=post_reset_operation observations=160 comparisons=960 clocks=160 writes=0 ignored=0 frames=0 time=86125947000
+# VGA_UVM_PASS cases=29 observations=8622523 comparisons=51735138 assertions=0 seed=0x28A6BEEF
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_objection.svh(1270) @ 86125947000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_report_server.svh(847) @ 86125947000: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    5
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# 
+# ** Note: $finish    : C:/MXR/Quartus/25.1/questa_fse/win64/../verilog_src/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 86125947 ns  Iteration: 74  Instance: /vga_uvm_top
+# End time: 01:16:16 on Nov 11,2026, Elapsed time: 0:10:39
+# Errors: 0, Warnings: 1

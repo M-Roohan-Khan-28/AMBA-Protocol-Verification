@@ -124,3 +124,13 @@ Original reference projects were jointly developed by M. Roohan Khan and Talib,
 per owner confirmation. Existing licences, notices, source history and attribution
 are retained; no new licence is assigned to inherited material. The VGA source
 repository SOURCE_PROVENANCE.json and SOURCE_README.md retain extraction history.
+
+## Executed review package
+
+Fresh detached environment `3afa2912076b6e7dadf6c958d444e2dc9a2a87f4`, runner `20c9eaa4d79209fb46323451be0783f1d8fe6df2` and
+inventory `20c9eaa4d79209fb46323451be0783f1d8fe6df2` passed **37/37 required**,
+aggregate and actual wrapper exit 0. The [new report](../reports/vga-uvm-2026-11-11/SUMMARY.md) contains
+the exact named outcomes, measured counts, all fault/fixture evidence, raw logs,
+input hashes, captures and byte provenance. [Reproduce](../reports/vga-uvm-2026-11-11/REPRODUCE.md)
+using an ordinary clone and explicit detached SHA. Technical PRs are open;
+these results do not claim a merged-main release or alter earlier evidence.

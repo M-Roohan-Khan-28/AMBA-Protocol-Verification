@@ -1,0 +1,102 @@
+[
+  {
+    "name": "horizontal",
+    "test": "functional",
+    "source_revision": "20c9eaa4d79209fb46323451be0783f1d8fe6df2",
+    "capture": "C:\\short\\vga-complete-target-v1-20261111\\functional\\pins.vcd",
+    "source_sha256": "2915aeb91acc5af97fae214d98ad5365499817361167bd582dd924eccda342a9",
+    "start_tick": 25537000,
+    "end_tick": 30177000,
+    "figure": "horizontal.svg",
+    "command": [
+      "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+      "C:\\short\\vga-uvm-20261111\\tools\\render_vga_evidence.py",
+      "--run",
+      "C:\\short\\vga-complete-target-v1-20261111",
+      "--output",
+      "C:\\short\\vga-complete-target-v1-20261111\\measured-evidence\\figures"
+    ],
+    "renderer_sha256": "6456728794288f0224d0533c22772b805a0065854494a7a23097fbd1acb694cc",
+    "exit_code": 0
+  },
+  {
+    "name": "vertical_sync",
+    "test": "functional",
+    "source_revision": "20c9eaa4d79209fb46323451be0783f1d8fe6df2",
+    "capture": "C:\\short\\vga-complete-target-v1-20261111\\functional\\pins.vcd",
+    "source_sha256": "2915aeb91acc5af97fae214d98ad5365499817361167bd582dd924eccda342a9",
+    "start_tick": 15679857000,
+    "end_tick": 15744177000,
+    "figure": "vertical_sync.svg",
+    "command": [
+      "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+      "C:\\short\\vga-uvm-20261111\\tools\\render_vga_evidence.py",
+      "--run",
+      "C:\\short\\vga-complete-target-v1-20261111",
+      "--output",
+      "C:\\short\\vga-complete-target-v1-20261111\\measured-evidence\\figures"
+    ],
+    "renderer_sha256": "6456728794288f0224d0533c22772b805a0065854494a7a23097fbd1acb694cc",
+    "exit_code": 0
+  },
+  {
+    "name": "frame_wrap",
+    "test": "functional",
+    "source_revision": "20c9eaa4d79209fb46323451be0783f1d8fe6df2",
+    "capture": "C:\\short\\vga-complete-target-v1-20261111\\functional\\pins.vcd",
+    "source_sha256": "2915aeb91acc5af97fae214d98ad5365499817361167bd582dd924eccda342a9",
+    "start_tick": 16799857000,
+    "end_tick": 16800177000,
+    "figure": "frame_wrap.svg",
+    "command": [
+      "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+      "C:\\short\\vga-uvm-20261111\\tools\\render_vga_evidence.py",
+      "--run",
+      "C:\\short\\vga-complete-target-v1-20261111",
+      "--output",
+      "C:\\short\\vga-complete-target-v1-20261111\\measured-evidence\\figures"
+    ],
+    "renderer_sha256": "6456728794288f0224d0533c22772b805a0065854494a7a23097fbd1acb694cc",
+    "exit_code": 0
+  },
+  {
+    "name": "current_pixel",
+    "test": "functional",
+    "source_revision": "20c9eaa4d79209fb46323451be0783f1d8fe6df2",
+    "capture": "C:\\short\\vga-complete-target-v1-20261111\\functional\\pins.vcd",
+    "source_sha256": "2915aeb91acc5af97fae214d98ad5365499817361167bd582dd924eccda342a9",
+    "start_tick": 67815117000,
+    "end_tick": 67815133000,
+    "figure": "current_pixel.svg",
+    "command": [
+      "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+      "C:\\short\\vga-uvm-20261111\\tools\\render_vga_evidence.py",
+      "--run",
+      "C:\\short\\vga-complete-target-v1-20261111",
+      "--output",
+      "C:\\short\\vga-complete-target-v1-20261111\\measured-evidence\\figures"
+    ],
+    "renderer_sha256": "6456728794288f0224d0533c22772b805a0065854494a7a23097fbd1acb694cc",
+    "exit_code": 0
+  },
+  {
+    "name": "async_reset",
+    "test": "functional",
+    "source_revision": "20c9eaa4d79209fb46323451be0783f1d8fe6df2",
+    "capture": "C:\\short\\vga-complete-target-v1-20261111\\functional\\pins.vcd",
+    "source_sha256": "2915aeb91acc5af97fae214d98ad5365499817361167bd582dd924eccda342a9",
+    "start_tick": 86124167000,
+    "end_tick": 86124213000,
+    "figure": "async_reset.svg",
+    "command": [
+      "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+      "C:\\short\\vga-uvm-20261111\\tools\\render_vga_evidence.py",
+      "--run",
+      "C:\\short\\vga-complete-target-v1-20261111",
+      "--output",
+      "C:\\short\\vga-complete-target-v1-20261111\\measured-evidence\\figures"
+    ],
+    "renderer_sha256": "6456728794288f0224d0533c22772b805a0065854494a7a23097fbd1acb694cc",
+    "exit_code": 0
+  }
+]

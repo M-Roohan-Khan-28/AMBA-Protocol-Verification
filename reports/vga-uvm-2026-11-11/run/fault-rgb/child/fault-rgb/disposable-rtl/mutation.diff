@@ -1,0 +1,11 @@
+--- locked/design.sv
++++ disposable/design.sv
+@@ -130,7 +130,7 @@
+ 
+     if(active_video)
+     begin
+-        red   = {pixel_data[7:5], pixel_data[7]};
++        red   = {pixel_data[7:5], ~pixel_data[7]};
+         green = {pixel_data[4:2], pixel_data[4]};
+         blue  = {pixel_data[1:0], pixel_data[1:0]};
+     end

@@ -1,0 +1,11 @@
+{
+  "status": "INTERRUPTED - NOT A PASS",
+  "utc": "2026-11-10T20:03:48.913181+00:00",
+  "source_revision": "a935e3381f5cae2faa4503e7b8c38a2e1833e28b",
+  "run_id": "1cdc58d65fd44f3497eda5c550d868c5",
+  "process": {
+    "ProcessId": 27768,
+    "CommandLine": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe -c -onfinish exit -voptargs=+acc -sv_seed 682016495 -L C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2 work.vga_uvm_top +RUN_ID=1cdc58d65fd44f3497eda5c550d868c5 +GROUP=functional -do \"onerror {quit -force -code 1}; run -all; quit -force -code 0\""
+  },
+  "reason": "Stop prototype before optimizing redundant assertion scheduling. All completed observations retained; no bound weakened; this interruption is not fault-detection proof."
+}

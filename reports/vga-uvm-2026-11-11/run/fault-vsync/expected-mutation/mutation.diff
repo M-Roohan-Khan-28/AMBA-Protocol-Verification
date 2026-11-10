@@ -1,0 +1,11 @@
+--- locked/design.sv
++++ disposable/design.sv
+@@ -115,7 +115,7 @@
+ begin
+ 
+     hsync = ~((h_count >= 10'd656) && (h_count < 10'd752));
+-    vsync = ~((v_count >= 10'd490) && (v_count < 10'd492));
++    vsync = ~((v_count >= 10'd489) && (v_count < 10'd492));
+ 
+     active_video = (h_count < 10'd640) && (v_count < 10'd480);
+ 

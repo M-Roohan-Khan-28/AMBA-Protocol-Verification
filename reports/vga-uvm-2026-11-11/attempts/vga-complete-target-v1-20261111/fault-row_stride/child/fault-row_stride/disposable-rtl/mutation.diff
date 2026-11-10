@@ -1,0 +1,11 @@
+--- locked/design.sv
++++ disposable/design.sv
+@@ -121,7 +121,7 @@
+ 
+     frame_x = h_count[9:3];
+     frame_y = v_count[8:3];
+-    read_address = frame_y * 13'd80 + frame_x;
++    read_address = frame_y * 13'd79 + frame_x;
+ 
+     if(active_video)
+         pixel_data = sram[read_address];

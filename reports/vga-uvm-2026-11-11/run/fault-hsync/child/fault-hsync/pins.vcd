@@ -1,0 +1,138 @@
+$date
+	Wed Nov 11 02:06:04 2026
+$end
+$version
+	Questa Altera Starter FPGA Edition Version 2025.2
+$end
+$timescale
+	1ps
+$end
+
+$scope module vga_uvm_top $end
+
+$scope module bus $end
+$var reg 1 ! clk $end
+$var wire 1 " reset $end
+$var wire 1 # sram_we $end
+$var wire 1 $ sram_addr [12] $end
+$var wire 1 % sram_addr [11] $end
+$var wire 1 & sram_addr [10] $end
+$var wire 1 ' sram_addr [9] $end
+$var wire 1 ( sram_addr [8] $end
+$var wire 1 ) sram_addr [7] $end
+$var wire 1 * sram_addr [6] $end
+$var wire 1 + sram_addr [5] $end
+$var wire 1 , sram_addr [4] $end
+$var wire 1 - sram_addr [3] $end
+$var wire 1 . sram_addr [2] $end
+$var wire 1 / sram_addr [1] $end
+$var wire 1 0 sram_addr [0] $end
+$var wire 1 1 sram_data_in [7] $end
+$var wire 1 2 sram_data_in [6] $end
+$var wire 1 3 sram_data_in [5] $end
+$var wire 1 4 sram_data_in [4] $end
+$var wire 1 5 sram_data_in [3] $end
+$var wire 1 6 sram_data_in [2] $end
+$var wire 1 7 sram_data_in [1] $end
+$var wire 1 8 sram_data_in [0] $end
+$var wire 1 9 hsync $end
+$var wire 1 : vsync $end
+$var wire 1 ; active_video $end
+$var wire 1 < red [3] $end
+$var wire 1 = red [2] $end
+$var wire 1 > red [1] $end
+$var wire 1 ? red [0] $end
+$var wire 1 @ green [3] $end
+$var wire 1 A green [2] $end
+$var wire 1 B green [1] $end
+$var wire 1 C green [0] $end
+$var wire 1 D blue [3] $end
+$var wire 1 E blue [2] $end
+$var wire 1 F blue [1] $end
+$var wire 1 G blue [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+x"
+x#
+x0
+x/
+x.
+x-
+x,
+x+
+x*
+x)
+x(
+x'
+x&
+x%
+x$
+x8
+x7
+x6
+x5
+x4
+x3
+x2
+x1
+x9
+x:
+x;
+x?
+x>
+x=
+x<
+xC
+xB
+xA
+x@
+xG
+xF
+xE
+xD
+$end
+$dumpoff
+x!
+x"
+x#
+x0
+x/
+x.
+x-
+x,
+x+
+x*
+x)
+x(
+x'
+x&
+x%
+x$
+x8
+x7
+x6
+x5
+x4
+x3
+x2
+x1
+x9
+x:
+x;
+x?
+x>
+x=
+x<
+xC
+xB
+xA
+x@
+xG
+xF
+xE
+xD
+$end

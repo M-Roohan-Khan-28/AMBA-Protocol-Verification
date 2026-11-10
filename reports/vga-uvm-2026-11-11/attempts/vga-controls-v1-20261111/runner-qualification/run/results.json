@@ -1,0 +1,245 @@
+{
+  "kind": "SYNTHETIC_RECORD_FIXTURES_NOT_INDUCED_CRASHES",
+  "status": "PASS",
+  "exit_code": 0,
+  "checks": 39,
+  "cases": [
+    {
+      "name": "valid_intended_failure",
+      "expected_accept": true,
+      "accepted": true,
+      "pass_": true
+    },
+    {
+      "name": "tool_0_exit_211",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_0_exit_127",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_0_exit_-11",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_0_timeout",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_0_incomplete_arguments",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_1_exit_211",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_1_exit_127",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_1_exit_-11",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_1_timeout",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_1_incomplete_arguments",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_2_exit_211",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_2_exit_127",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_2_exit_-11",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_2_timeout",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_2_incomplete_arguments",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "outer_timeout",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "outer_success",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "missing_command",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "stale_nonce_json",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "stale_nonce_log",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "changed_source",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "expected_source_mismatch",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "changed_inputs",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "dirty_source",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "changed_dut",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "changed_dut_inputs",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "wrong_mutation",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "missing_diagnostic",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "wrong_diagnostic",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "extra_diagnostic",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "wrong_sva",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "extra_sva",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "unrelated_fatal",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "unrelated_error",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "timeout_text",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "valid_missing_marker",
+      "expected_accept": true,
+      "accepted": true,
+      "pass_": true
+    },
+    {
+      "name": "missing_marker_without_completion",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "extra_completion",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    }
+  ],
+  "tested_environment": "ba665a7d9cc5aadc11b808d211285f6070a16b54",
+  "production_sha256": "03d9ea01bbcda943f201f68e93e4f2a251b3ec09b400b94f17f0431831c5c972",
+  "qualification_sha256": "d02f3f4ab7c98f5bf56929a9a88183cf4c6a1da808eddc6571b8d316dd3b00bc"
+}

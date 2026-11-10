@@ -1,0 +1,992 @@
+{
+  "started_utc": "2026-11-10T19:48:43.820505+00:00",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\vga-uvm-20261111\\scripts\\run_vga_uvm.py",
+    "--expected-env-sha",
+    "ba665a7d9cc5aadc11b808d211285f6070a16b54",
+    "--output",
+    "C:\\short\\vga-controls-v1-20261111",
+    "--select",
+    "runner-qualification",
+    "sva-hsync",
+    "sva-vsync",
+    "sva-active",
+    "sva-blank",
+    "sva-rgb",
+    "sva-reset",
+    "sva-legal_reset_write",
+    "sva-legal_reset_nonblack",
+    "sva-legal_current_write",
+    "sva-legal_inactive_inputs"
+  ],
+  "run_id": "3d7a27d18cca458dbf92002ff70c8cd7",
+  "source_revision": "ba665a7d9cc5aadc11b808d211285f6070a16b54",
+  "expected_environment_revision": "ba665a7d9cc5aadc11b808d211285f6070a16b54",
+  "source_dirty": false,
+  "serial_execution": true,
+  "raw_fault": false,
+  "selection": [
+    "runner-qualification",
+    "sva-hsync",
+    "sva-vsync",
+    "sva-active",
+    "sva-blank",
+    "sva-rgb",
+    "sva-reset",
+    "sva-legal_reset_write",
+    "sva-legal_reset_nonblack",
+    "sva-legal_current_write",
+    "sva-legal_inactive_inputs"
+  ],
+  "seed": 682016495,
+  "seed_hex": "0x28A6BEEF",
+  "expected_inventory": [
+    "runner-qualification",
+    "sva-hsync",
+    "sva-vsync",
+    "sva-active",
+    "sva-blank",
+    "sva-rgb",
+    "sva-reset",
+    "sva-legal_reset_write",
+    "sva-legal_reset_nonblack",
+    "sva-legal_current_write",
+    "sva-legal_inactive_inputs",
+    "smoke",
+    "functional",
+    "control-framewrap",
+    "control-horizontal",
+    "control-intent",
+    "control-invalid",
+    "control-phase",
+    "control-scale",
+    "control-vertical",
+    "fault-hsync",
+    "fault-vsync",
+    "fault-frame_wrap",
+    "fault-divider",
+    "fault-scale",
+    "fault-rgb",
+    "fault-blank",
+    "fault-invalid_alias",
+    "fault-clear_reset",
+    "fault-disabled_reset_write",
+    "fault-gated_write",
+    "fault-driver_alias",
+    "fault-missing_marker",
+    "portable"
+  ],
+  "required_selected": [
+    "runner-qualification",
+    "sva-hsync",
+    "sva-vsync",
+    "sva-active",
+    "sva-blank",
+    "sva-rgb",
+    "sva-reset",
+    "sva-legal_reset_write",
+    "sva-legal_reset_nonblack",
+    "sva-legal_current_write",
+    "sva-legal_inactive_inputs"
+  ],
+  "suites": [
+    {
+      "name": "runner-qualification",
+      "kind": "runner",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\vga-uvm-20261111\\scripts\\qualify_vga_runner.py",
+            "--output",
+            "C:\\short\\vga-controls-v1-20261111\\runner-qualification\\run"
+          ],
+          "cwd": "C:\\short\\vga-uvm-20261111",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "qualification.log",
+          "sha256": "ec2f820d9044a86d8743a6509d2d6e5cfc5103d67e14256d88a9c5223284169b"
+        }
+      ],
+      "reason": "SYNTHETIC_RECORD_FIXTURES",
+      "result": {
+        "kind": "SYNTHETIC_RECORD_FIXTURES_NOT_INDUCED_CRASHES",
+        "status": "PASS",
+        "exit_code": 0,
+        "checks": 39,
+        "cases": [
+          {
+            "name": "valid_intended_failure",
+            "expected_accept": true,
+            "accepted": true,
+            "pass_": true
+          },
+          {
+            "name": "tool_0_exit_211",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_0_exit_127",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_0_exit_-11",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_0_timeout",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_0_incomplete_arguments",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_1_exit_211",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_1_exit_127",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_1_exit_-11",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_1_timeout",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_1_incomplete_arguments",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_2_exit_211",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_2_exit_127",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_2_exit_-11",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_2_timeout",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "tool_2_incomplete_arguments",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "outer_timeout",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "outer_success",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "missing_command",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "stale_nonce_json",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "stale_nonce_log",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "changed_source",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "expected_source_mismatch",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "changed_inputs",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "dirty_source",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "changed_dut",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "changed_dut_inputs",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "wrong_mutation",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "missing_diagnostic",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "wrong_diagnostic",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "extra_diagnostic",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "wrong_sva",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "extra_sva",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "unrelated_fatal",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "unrelated_error",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "timeout_text",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "valid_missing_marker",
+            "expected_accept": true,
+            "accepted": true,
+            "pass_": true
+          },
+          {
+            "name": "missing_marker_without_completion",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          },
+          {
+            "name": "extra_completion",
+            "expected_accept": false,
+            "accepted": false,
+            "pass_": true
+          }
+        ],
+        "tested_environment": "ba665a7d9cc5aadc11b808d211285f6070a16b54",
+        "production_sha256": "03d9ea01bbcda943f201f68e93e4f2a251b3ec09b400b94f17f0431831c5c972",
+        "qualification_sha256": "d02f3f4ab7c98f5bf56929a9a88183cf4c6a1da808eddc6571b8d316dd3b00bc"
+      }
+    },
+    {
+      "name": "sva-hsync",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-hsync",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_bus.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_assertions.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-hsync",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "6d431cc38ec5766af3c587eb7b0ecadd80de24c0ad4699af86a3dd35f4c853e2"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.vga_sva_control",
+            "+RUN_ID=3d7a27d18cca458dbf92002ff70c8cd7",
+            "+SCENARIO=hsync",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-hsync",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "bcb48454d241c3965efd4865bd6fa3f16960a582114fc4fa64dba1c0059efa46"
+        }
+      ],
+      "reason": "EXECUTED",
+      "observed_sva": [
+        "HSYNC"
+      ]
+    },
+    {
+      "name": "sva-vsync",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-vsync",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_bus.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_assertions.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-vsync",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "c71e119186cd7673f1902b1a9c3547b55945259ca16042fcaa71a12b39343976"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.vga_sva_control",
+            "+RUN_ID=3d7a27d18cca458dbf92002ff70c8cd7",
+            "+SCENARIO=vsync",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-vsync",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "2188396154a22b0830f577d843b3a3e1581d1f02c579a5b721bda2b8a65de667"
+        }
+      ],
+      "reason": "EXECUTED",
+      "observed_sva": [
+        "VSYNC"
+      ]
+    },
+    {
+      "name": "sva-active",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-active",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_bus.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_assertions.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-active",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "772fa9370dd7c7859991bd4c7077c12c61b06f97858a45d3c0e18b9532a5dc90"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.vga_sva_control",
+            "+RUN_ID=3d7a27d18cca458dbf92002ff70c8cd7",
+            "+SCENARIO=active",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-active",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "e227635f9c14f399024869354781af990eed10e9174919392d46a12107a13d97"
+        }
+      ],
+      "reason": "EXECUTED",
+      "observed_sva": [
+        "ACTIVE"
+      ]
+    },
+    {
+      "name": "sva-blank",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-blank",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_bus.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_assertions.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-blank",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "42c24a9315e46fa33295ba4754c9a5ad4ded4b075ee966a9630bf4188396e245"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.vga_sva_control",
+            "+RUN_ID=3d7a27d18cca458dbf92002ff70c8cd7",
+            "+SCENARIO=blank",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-blank",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "f401343884d4623a5e1b430cdb25f851aeb46bd3d1ac77be83290b0fe8a68f95"
+        }
+      ],
+      "reason": "EXECUTED",
+      "observed_sva": [
+        "BLANK"
+      ]
+    },
+    {
+      "name": "sva-rgb",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-rgb",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_bus.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_assertions.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-rgb",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "001800237ff6ea25dbb2bcbf8932baf408131412f29149b4b4cd1b367495b203"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.vga_sva_control",
+            "+RUN_ID=3d7a27d18cca458dbf92002ff70c8cd7",
+            "+SCENARIO=rgb",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-rgb",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "de00754eb96a2afc137295f0820e1f3026f570ed7bc4b5acfc0c85149b656c55"
+        }
+      ],
+      "reason": "EXECUTED",
+      "observed_sva": [
+        "RGB"
+      ]
+    },
+    {
+      "name": "sva-reset",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-reset",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_bus.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_assertions.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-reset",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "6832a4ccf324058d4fec3251f566b942b2b4d5525e6fc01a9f6ffb468582d072"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.vga_sva_control",
+            "+RUN_ID=3d7a27d18cca458dbf92002ff70c8cd7",
+            "+SCENARIO=reset",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-reset",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "a2e53f8cbe2bf4f409dae014aae8ed6309802f343cff6e48c380032649e708dd"
+        }
+      ],
+      "reason": "EXECUTED",
+      "observed_sva": [
+        "RESET"
+      ]
+    },
+    {
+      "name": "sva-legal_reset_write",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-legal_reset_write",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_bus.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_assertions.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-legal_reset_write",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "9b01d9d320bf9de8fc5b28773f151ce0ff084b20b1f53180008051ee6afb097c"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.vga_sva_control",
+            "+RUN_ID=3d7a27d18cca458dbf92002ff70c8cd7",
+            "+SCENARIO=legal_reset_write",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-legal_reset_write",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "e1556f57219c790a594dc57c9e4acb181957cf383844801c49d4c841362cfafc"
+        }
+      ],
+      "reason": "EXECUTED",
+      "observed_sva": []
+    },
+    {
+      "name": "sva-legal_reset_nonblack",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-legal_reset_nonblack",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_bus.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_assertions.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-legal_reset_nonblack",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "7b70dbf2c1e0f48509f7aebf57bccb685fd63fe3383882c3a0e0e33a64ed47dc"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.vga_sva_control",
+            "+RUN_ID=3d7a27d18cca458dbf92002ff70c8cd7",
+            "+SCENARIO=legal_reset_nonblack",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-legal_reset_nonblack",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "965d5f9364bbf503f83251765af9b52d7083280c06baaa39a1e0d2715571994b"
+        }
+      ],
+      "reason": "EXECUTED",
+      "observed_sva": []
+    },
+    {
+      "name": "sva-legal_current_write",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-legal_current_write",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_bus.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_assertions.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-legal_current_write",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "98ed1647c10250f203095261b9fdc3954c41308643c7d5abc727cd788cfbcb05"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.vga_sva_control",
+            "+RUN_ID=3d7a27d18cca458dbf92002ff70c8cd7",
+            "+SCENARIO=legal_current_write",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-legal_current_write",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "49cb55ad0a784cb06a130f5aad4e6ec1e8f44a0fe5aeef66cffda3a5d04a9f19"
+        }
+      ],
+      "reason": "EXECUTED",
+      "observed_sva": []
+    },
+    {
+      "name": "sva-legal_inactive_inputs",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-legal_inactive_inputs",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_bus.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_assertions.sv",
+            "C:\\short\\vga-uvm-20261111\\verification\\vga_uvm\\vga_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-legal_inactive_inputs",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "f42d62af1d20a2251fbc99c28b7c0908dc356d3af57299b9f4e702353c0680af"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.vga_sva_control",
+            "+RUN_ID=3d7a27d18cca458dbf92002ff70c8cd7",
+            "+SCENARIO=legal_inactive_inputs",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\vga-controls-v1-20261111\\sva-legal_inactive_inputs",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "b0f52b224b125d4fb57a5039dbce962fcc9f3aea8158c0e3a1a000e89398b02b"
+        }
+      ],
+      "reason": "EXECUTED",
+      "observed_sva": []
+    }
+  ],
+  "aggregate_exit_code": 0,
+  "milestone_pass": false,
+  "functional_coverage": "NOT RUN",
+  "constrained_randomization": "NOT RUN",
+  "original_advanced_alu_apb": "NOT RUN",
+  "input_sha256": {
+    "verification/vga_uvm/inventory.json": "3c9b44b6c1dc1b426427cd1b81e9964cfaaf1c5a1765001b2afff5df6d06a7d1",
+    "verification/vga_uvm/sources.json": "84734fb7dc4372e561f85be3735d26f8470813fbc5477f73e8cda6f61f7ae41a",
+    "verification/vga_uvm/vga_assertions.sv": "c017b8d78c04377cb5841e6a86a8435f133aedce587f0932deac627ee4b3a7c8",
+    "verification/vga_uvm/vga_bus.sv": "1662742ddc3c98b9322d13dc04fdc9ac21c61ea299c680c40464a9d0e9c254c0",
+    "verification/vga_uvm/vga_sva_control.sv": "5c39b16a18a5634eeec1d01de61da87d5e75ea55c72632aee7bf3124b034a784",
+    "verification/vga_uvm/vga_uvm_pkg.sv": "0fc49a602572e510d25f16de12474bfc2962a315ec53ab054ad3b0cbddb20305",
+    "verification/vga_uvm/vga_uvm_top.sv": "bd087e848bb67de0e8b2a83cc7e5f4c3f8159ac6b63f4e485371df63d9ad5992",
+    "scripts/run_vga_uvm.py": "03d9ea01bbcda943f201f68e93e4f2a251b3ec09b400b94f17f0431831c5c972",
+    "scripts/vga_mutations.py": "9d02e88f34e0a0ebb6924d727e0d95f92c0aa06819351183aa39acde7dbc00a5",
+    "scripts/qualify_vga_runner.py": "d02f3f4ab7c98f5bf56929a9a88183cf4c6a1da808eddc6571b8d316dd3b00bc",
+    "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93"
+  },
+  "runner_revision": "ba665a7d9cc5aadc11b808d211285f6070a16b54",
+  "inventory_revision": "ba665a7d9cc5aadc11b808d211285f6070a16b54",
+  "configuration": {
+    "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+    "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+    "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+    "timeout_per_command": 180,
+    "raster_timeout": 900,
+    "global_timeout": 5400,
+    "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "vendor_input_sha256": {
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8"
+    }
+  },
+  "version_command": {
+    "command": [
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+      "-version"
+    ],
+    "cwd": "C:\\short\\vga-controls-v1-20261111",
+    "exit_code": 0,
+    "timed_out": false,
+    "log": "version.log",
+    "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+  },
+  "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+  "environment_clean_after_execution": true,
+  "finished_utc": "2026-11-10T19:49:31.827763+00:00"
+}
