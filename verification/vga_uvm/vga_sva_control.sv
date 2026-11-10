@@ -27,7 +27,7 @@ module vga_sva_control;
       "reset":begin bus.check_reset=1;rgb=0;end
       "legal_reset_write":begin
         expected=0;bus.check_reset=1;bus.controls={1'b1,1'b1,13'd0,8'ha5};
-        rgb=12'hb2a;bus.expected_rgb=rgb;
+        rgb=12'hb25;bus.expected_rgb=rgb;
       end
       "legal_reset_nonblack":begin expected=0;bus.check_reset=1;end
       "legal_current_write":begin expected=0;rgb=12'hfed;bus.expected_rgb=rgb;end

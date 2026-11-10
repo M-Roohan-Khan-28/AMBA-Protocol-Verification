@@ -31,7 +31,9 @@ Control/reset changes between clocks create observations without writes or
 raster advances. Falling clocks alone create no comparison observation.
 
 The separate raster and memory models export expected pins to concurrent
-assertions on the settled observation event. Assertion diagnostics execute
+assertions on an event 1 ps after publishing the settled expectations. This
+separate time slot gives Preponed assertion sampling the current expectations;
+the actual pin observation remains at +1 ns. Assertion diagnostics execute
 before the scoreboard verdict 10 ps later. Reset-specific checking includes
 retained RGB and writes during reset; it is never disabled with disable-iff.
 No unconditional four-clock RGB stability rule exists. Current-entry writes

@@ -252,7 +252,10 @@ package vga_uvm_pkg;
       o.controls=vif.controls;o.intended=vif.intended;
       #0.999;
       o.hs=vif.hsync;o.vs=vif.vsync;o.av=vif.active_video;o.rgb={vif.red,vif.green,vif.blue};
-      ap.write(o);vif.sample_tick=~vif.sample_tick;
+      ap.write(o);
+      // Concurrent assertions sample in Preponed. Publish expectations in
+      // the preceding time slot, without changing the +1 ns pin observation.
+      #0.001;vif.sample_tick=~vif.sample_tick;
       #0.01;checked.write(o);
     endtask
     task run_phase(uvm_phase phase);
