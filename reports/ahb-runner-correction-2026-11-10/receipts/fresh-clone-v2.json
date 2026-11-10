@@ -1,0 +1,61 @@
+{
+  "commands": [
+    {
+      "command": [
+        "git",
+        "clone",
+        "--quiet",
+        "--config",
+        "core.longpaths=true",
+        "--config",
+        "core.autocrlf=false",
+        "https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git",
+        "C:\\short\\ahb-fix-fresh-v2-20261110"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "C:\\short\\ahb-fix-fresh-v2-20261110",
+        "checkout",
+        "--quiet",
+        "--detach",
+        "3eb0e520a880b2cfb13d304bbeea119dbe917fb3"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "source_revision": "3eb0e520a880b2cfb13d304bbeea119dbe917fb3",
+  "clean": true,
+  "input_sha256": {
+    "verification/ahb_uvm/ahb_assertions.sv": "0a8392029ad5b2de09aacc02934120295eb451d1022e34570ce9bccbfa59ab49",
+    "verification/ahb_uvm/ahb_bus.sv": "25a9c2097a945277a03c1d9c326865b3dc480747d8d35639b877293db4a9d8f9",
+    "verification/ahb_uvm/ahb_checker_control.sv": "bef3d12f7bb26d1165bbb18b4196a6c39b61e25af012b6310729188b752851ed",
+    "verification/ahb_uvm/ahb_sva_control.sv": "f1f1d95de78c1f4e0ded70746009c0158f480195925174dcfb5c79c1aa756a78",
+    "verification/ahb_uvm/ahb_uvm_pkg.sv": "1babb26b0f51ecc0806c0589189e944ef1fd9177ad66a6250b1da427591e2697",
+    "verification/ahb_uvm/ahb_uvm_top.sv": "c67aabebcf3af3034a526a9ab9a2ae74f599649a3bc667c8515f75523366989d",
+    "verification/ahb_uvm/inventory.json": "9b69ebc7a34f782b5dee8a5892ddfccfb7be3cebf819285af5796457f1a3782c",
+    "verification/ahb_uvm/runner_fixtures.json": "79aa4d621f78f36dac29a8ae2a8b8b668855bad83296fbe74124c059bfbe0ac3",
+    "verification/ahb_uvm/sources.json": "0d9cea95213cfd687aea3f14c17e6beef280caad25528abb97f995398f995e2b",
+    "scripts/run_ahb_uvm.py": "8d47f20dcd0101dff5b5519e5bc7d03077c4ad10ec0aaa44736597e3fd744af3",
+    "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+    "scripts/ahb_program.py": "f629dd12073c5f9b4065d79b7a5c39e9164a93a1035f39a9ae762826a4018c85",
+    "scripts/ahb_mutations.py": "23b5b113e15ba73f83d0515c477b0e26ae9fdd564c6faa00bd85890831ef3faf",
+    "scripts/qualify_ahb_runner.py": "1571a7ee221c689d53ed67a9832b35711dee5de31b0137d0ba55e24cefbce011",
+    "reports/ahb-uvm-2026-11-10/run/results.json": "5241987073cc792b5e3e804f785901208748683bdfc68c5d0f3bf26a09d00874",
+    "reports/ahb-uvm-2026-11-10/run/fault-short_error/child/results.json": "99faae35662a3a6178d3ed2d9799b6bc104b31cfa634ae02a1dfb9b277483b58",
+    "reports/ahb-uvm-2026-11-10/run/fault-short_error/child/fault-short_error/2.log": "ae38f4c0191863c20cbc448a0b45668dc0951bdddeb886575f6f4137b69b1e6c",
+    "reports/ahb-uvm-2026-11-10/run/fault-missing_error/child/results.json": "e7def524e7c7f4c2170a2790b1f88472921dd12e91d4f369de2eaa7ef7cf6ff4",
+    "reports/ahb-uvm-2026-11-10/run/fault-missing_error/child/fault-missing_error/2.log": "0badb14be0d885ee3dbc92474d46c5c71e7461b4d9a941fb29a83b71fe0fc073",
+    "reports/ahb-uvm-2026-11-10/run/fault-read_data/child/results.json": "ba8ec66970e082ee8ad59a758a822d0bbeaa67e494f6245ed90dfefb4d6a12b4",
+    "reports/ahb-uvm-2026-11-10/run/fault-read_data/child/fault-read_data/2.log": "6e4596a73c5b9152b500502dce7441e911eedaac144f48ec6676851a9b43bbf5",
+    "reports/ahb-uvm-2026-11-10/run/fault-missing_marker/child/results.json": "307842d4eea7b0ae292d15408c088587505c848163818ce4a418ecc67e7dc7fe",
+    "reports/ahb-uvm-2026-11-10/run/fault-missing_marker/child/fault-missing_marker/2.log": "9f01386199e482204f16a71d1f02ef02e7e1925ca3f566b0fde690747bf499bb"
+  }
+}

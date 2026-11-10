@@ -1,0 +1,1 @@
+{"name":"error_continue","offered":51,"accepted":51,"success":50,"errors":1,"writes":18,"reads":32,"withdrawn":0,"reset_accepted":0,"reset_offered":0,"wait_edges":1,"pipeline_edges":46,"resets":1,"comparisons":282,"cycles":61}

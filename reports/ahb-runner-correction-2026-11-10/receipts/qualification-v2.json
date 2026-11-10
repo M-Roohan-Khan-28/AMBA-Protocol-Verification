@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\ahb-runner-fix-20261110\\scripts\\run_ahb_uvm.py",
+    "--select",
+    "runner-qualification",
+    "--expected-env-sha",
+    "3eb0e520a880b2cfb13d304bbeea119dbe917fb3",
+    "--output",
+    "C:/short/ahb-fix-qualification-v2-20261110"
+  ],
+  "cwd": "C:\\short\\ahb-runner-fix-20261110",
+  "started_utc": "2026-11-10T00:29:12.547858+00:00",
+  "finished_utc": "2026-11-10T00:29:16.914560+00:00",
+  "exit_code": 0,
+  "log": "qualification-v2.log",
+  "sha256": "aae581cbcd51325973c85d79ecc1cba067f53b747b74cb22ee882168a83ac53c"
+}

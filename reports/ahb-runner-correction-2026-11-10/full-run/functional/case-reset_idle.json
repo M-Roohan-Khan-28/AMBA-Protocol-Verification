@@ -1,0 +1,1 @@
+{"name":"reset_idle","offered":49,"accepted":49,"success":49,"errors":0,"writes":17,"reads":32,"withdrawn":0,"reset_accepted":0,"reset_offered":0,"wait_edges":0,"pipeline_edges":45,"resets":2,"comparisons":269,"cycles":60}

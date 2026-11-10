@@ -1,0 +1,52 @@
+{
+  "revision": "d403d88a71e7c55a46641366007ebd0af9e444a4",
+  "clean": true,
+  "detached": true,
+  "core_autocrlf": "false",
+  "git_blob_matching_inputs": {
+    "verification/ahb_uvm/ahb_assertions.sv": "0a8392029ad5b2de09aacc02934120295eb451d1022e34570ce9bccbfa59ab49",
+    "verification/ahb_uvm/ahb_bus.sv": "25a9c2097a945277a03c1d9c326865b3dc480747d8d35639b877293db4a9d8f9",
+    "verification/ahb_uvm/ahb_checker_control.sv": "bef3d12f7bb26d1165bbb18b4196a6c39b61e25af012b6310729188b752851ed",
+    "verification/ahb_uvm/ahb_sva_control.sv": "f1f1d95de78c1f4e0ded70746009c0158f480195925174dcfb5c79c1aa756a78",
+    "verification/ahb_uvm/ahb_uvm_pkg.sv": "1babb26b0f51ecc0806c0589189e944ef1fd9177ad66a6250b1da427591e2697",
+    "verification/ahb_uvm/ahb_uvm_top.sv": "c67aabebcf3af3034a526a9ab9a2ae74f599649a3bc667c8515f75523366989d",
+    "verification/ahb_uvm/inventory.json": "99ba31c7eb0790e8cac3e1dc56d7e180e1f840def2c2bde741d0b5fbc632d6b0",
+    "verification/ahb_uvm/sources.json": "0d9cea95213cfd687aea3f14c17e6beef280caad25528abb97f995398f995e2b",
+    "scripts/run_ahb_uvm.py": "c593143229b734b10a9215aaafbe5dad8522fca2e632e6355b6acd775455bd0e",
+    "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+    "scripts/ahb_program.py": "f629dd12073c5f9b4065d79b7a5c39e9164a93a1035f39a9ae762826a4018c85",
+    "scripts/ahb_mutations.py": "23b5b113e15ba73f83d0515c477b0e26ae9fdd564c6faa00bd85890831ef3faf"
+  },
+  "commands": [
+    {
+      "command": [
+        "git",
+        "clone",
+        "--quiet",
+        "--config",
+        "core.longpaths=true",
+        "--config",
+        "core.autocrlf=false",
+        "https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git",
+        "C:\\short\\ahb-uvm-fresh-v3-20261110"
+      ],
+      "exit_code": 0,
+      "log": "fresh-v3-clone-0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "C:\\short\\ahb-uvm-fresh-v3-20261110",
+        "checkout",
+        "--quiet",
+        "--detach",
+        "d403d88a71e7c55a46641366007ebd0af9e444a4"
+      ],
+      "exit_code": 0,
+      "log": "fresh-v3-clone-1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

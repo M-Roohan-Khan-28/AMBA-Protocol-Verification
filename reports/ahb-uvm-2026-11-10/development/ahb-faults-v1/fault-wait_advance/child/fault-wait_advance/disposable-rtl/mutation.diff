@@ -1,0 +1,11 @@
+--- locked/rtl/design.sv
++++ disposable/rtl/design.sv
+@@ -53,7 +53,7 @@
+         // Advance the locally inserted wait independently of global HREADY.
+         response_state <= RESP_ERROR_FINISH;
+     end
+-    else if(HREADY)
++    else if(1'b1)
+     begin
+ 
+         if(transfer_q && write_q && !error_q)

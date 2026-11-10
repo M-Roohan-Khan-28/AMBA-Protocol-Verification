@@ -1,0 +1,52 @@
+{
+  "reason": "Intentionally stopped after pre-publication stimulus review found unrelated SEQ addresses; replace with NONSEQ and rerun all affected gates",
+  "interrupted_source": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+  "outer_wrapper": {
+    "command": [
+      "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+      "C:\\short\\ahb-uvm-fresh-20261110\\scripts\\run_ahb_uvm.py",
+      "--output",
+      "C:\\short\\ahb-uvm-fresh-run-20261110",
+      "--expected-env-sha",
+      "48437f440cbd1b10b4abc73c254363ad9c6a06fa"
+    ],
+    "cwd": "C:\\short\\ahb-uvm-fresh-20261110",
+    "source_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+    "started_utc": "2026-11-09T23:13:05.944694+00:00",
+    "finished_utc": "2026-11-09T23:21:28.855943+00:00",
+    "exit_code": 1,
+    "log": "fresh-wrapper.log",
+    "sha256": "487b904e906b148d60fd2fa0b27423c07c45c32189ea01419d0cd0cca9a8d5ee"
+  },
+  "completed_substeps": [
+    "sva-address_hold",
+    "sva-direction_hold",
+    "sva-size_hold",
+    "sva-selection_hold",
+    "sva-active_to_idle",
+    "sva-write_data",
+    "sva-idle_to_seq",
+    "sva-busy_control",
+    "sva-response_owner",
+    "sva-short_error",
+    "sva-long_error",
+    "sva-held_error_lost",
+    "sva-local_ok_wait",
+    "sva-global_through_error",
+    "sva-reset_output",
+    "sva-legal_read_wdata",
+    "sva-legal_idle_change",
+    "sva-legal_busy_seq",
+    "sva-legal_busy_nonseq",
+    "sva-legal_busy_idle",
+    "sva-legal_error_cancel",
+    "sva-legal_error_continue",
+    "sva-legal_reset_cancel",
+    "checker-legal",
+    "checker-reset",
+    "checker-pairing",
+    "checker-alias"
+  ],
+  "full_milestone_pass": false,
+  "action": "taskkill /PID 43128 /T /F after matching the exact milestone runner command line"
+}

@@ -1,0 +1,13 @@
+diff --git a/scripts/qualify_ahb_runner.py b/scripts/qualify_ahb_runner.py
+index c20521f..b2ecc3c 100644
+--- a/scripts/qualify_ahb_runner.py
++++ b/scripts/qualify_ahb_runner.py
+@@ -69,7 +69,7 @@ def main():
+     historical = subprocess.check_output(['git', '-C', str(repo), 'show', ref['revision']+':'+ref['path']])
+     assert digest(historical) == ref['sha256']
+     old, lines = legacy_qualifier(historical)
+-    current = qualify_fault
++    current = old  # DISPOSABLE intentional qualification regression
+     parent = json.loads((repo/manifest['parent_result']).read_bytes())
+     report = dict(
+         description=__doc__, tested_environment=subprocess.check_output(

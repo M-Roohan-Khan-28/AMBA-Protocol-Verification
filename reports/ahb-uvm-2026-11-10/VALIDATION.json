@@ -1,0 +1,218 @@
+{
+  "environment_revision": "d403d88a71e7c55a46641366007ebd0af9e444a4",
+  "runner_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+  "inventory_revision": "f49314d214da41400b9155dd86207da6764ddeec",
+  "dut_revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+  "required_substeps": 43,
+  "functional_scenarios": 45,
+  "functional_totals": {
+    "offered": 1896,
+    "accepted": 1879,
+    "success": 1858,
+    "errors": 17,
+    "writes": 766,
+    "reads": 1092,
+    "withdrawn": 16,
+    "reset_accepted": 4,
+    "reset_offered": 1,
+    "wait_edges": 65,
+    "pipeline_edges": 1700,
+    "resets": 50,
+    "comparisons": 10497,
+    "cycles": 2322
+  },
+  "sva_controls": 23,
+  "scoreboard_controls": 6,
+  "fault_controls": [
+    {
+      "name": "fault-live_address",
+      "expected": "READ_DATA",
+      "fatals": [
+        "READ_DATA"
+      ],
+      "sva": [],
+      "child_exit": 1,
+      "parent_status": "PASS"
+    },
+    {
+      "name": "fault-address_phase_data",
+      "expected": "READ_DATA",
+      "fatals": [
+        "READ_DATA"
+      ],
+      "sva": [],
+      "child_exit": 1,
+      "parent_status": "PASS"
+    },
+    {
+      "name": "fault-read_data",
+      "expected": "READ_DATA",
+      "fatals": [
+        "READ_DATA"
+      ],
+      "sva": [],
+      "child_exit": 1,
+      "parent_status": "PASS"
+    },
+    {
+      "name": "fault-invalid_write",
+      "expected": "READ_DATA",
+      "fatals": [
+        "READ_DATA"
+      ],
+      "sva": [],
+      "child_exit": 1,
+      "parent_status": "PASS"
+    },
+    {
+      "name": "fault-wait_advance",
+      "expected": "READ_DATA",
+      "fatals": [
+        "READ_DATA"
+      ],
+      "sva": [],
+      "child_exit": 1,
+      "parent_status": "PASS"
+    },
+    {
+      "name": "fault-short_error",
+      "expected": "SVA:ERROR_FIRST",
+      "fatals": [],
+      "sva": [
+        "ERROR_FIRST"
+      ],
+      "child_exit": 1,
+      "parent_status": "PASS"
+    },
+    {
+      "name": "fault-missing_error",
+      "expected": "SVA:EP_ZERO_WAIT",
+      "fatals": [],
+      "sva": [
+        "EP_ZERO_WAIT"
+      ],
+      "child_exit": 1,
+      "parent_status": "PASS"
+    },
+    {
+      "name": "fault-address_alias",
+      "expected": "ADDRESS_INTENT",
+      "fatals": [
+        "ADDRESS_INTENT"
+      ],
+      "sva": [],
+      "child_exit": 1,
+      "parent_status": "PASS"
+    },
+    {
+      "name": "fault-duplicate",
+      "expected": "UNSOLICITED_ADDRESS",
+      "fatals": [
+        "UNSOLICITED_ADDRESS"
+      ],
+      "sva": [],
+      "child_exit": 1,
+      "parent_status": "PASS"
+    },
+    {
+      "name": "fault-omit_observation",
+      "expected": "ADDRESS_INTENT",
+      "fatals": [
+        "ADDRESS_INTENT"
+      ],
+      "sva": [],
+      "child_exit": 1,
+      "parent_status": "PASS"
+    },
+    {
+      "name": "fault-missing_marker",
+      "expected": "",
+      "fatals": [],
+      "sva": [],
+      "child_exit": 1,
+      "parent_status": "PASS"
+    }
+  ],
+  "wrapper_exit": 0,
+  "aggregate_exit": 0,
+  "input_sha256": {
+    "verification/ahb_uvm/ahb_assertions.sv": "0a8392029ad5b2de09aacc02934120295eb451d1022e34570ce9bccbfa59ab49",
+    "verification/ahb_uvm/ahb_bus.sv": "25a9c2097a945277a03c1d9c326865b3dc480747d8d35639b877293db4a9d8f9",
+    "verification/ahb_uvm/ahb_checker_control.sv": "bef3d12f7bb26d1165bbb18b4196a6c39b61e25af012b6310729188b752851ed",
+    "verification/ahb_uvm/ahb_sva_control.sv": "f1f1d95de78c1f4e0ded70746009c0158f480195925174dcfb5c79c1aa756a78",
+    "verification/ahb_uvm/ahb_uvm_pkg.sv": "1babb26b0f51ecc0806c0589189e944ef1fd9177ad66a6250b1da427591e2697",
+    "verification/ahb_uvm/ahb_uvm_top.sv": "c67aabebcf3af3034a526a9ab9a2ae74f599649a3bc667c8515f75523366989d",
+    "verification/ahb_uvm/inventory.json": "99ba31c7eb0790e8cac3e1dc56d7e180e1f840def2c2bde741d0b5fbc632d6b0",
+    "verification/ahb_uvm/sources.json": "0d9cea95213cfd687aea3f14c17e6beef280caad25528abb97f995398f995e2b",
+    "scripts/run_ahb_uvm.py": "c593143229b734b10a9215aaafbe5dad8522fca2e632e6355b6acd775455bd0e",
+    "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+    "scripts/ahb_program.py": "f629dd12073c5f9b4065d79b7a5c39e9164a93a1035f39a9ae762826a4018c85",
+    "scripts/ahb_mutations.py": "23b5b113e15ba73f83d0515c477b0e26ae9fdd564c6faa00bd85890831ef3faf"
+  },
+  "verified_command_logs": 186,
+  "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+  "uvm_runtime_versions": [
+    "QUESTA_UVM-1.2.3"
+  ],
+  "seed": "0x28A6BEEF",
+  "portable": {
+    "repository": "AHB-Lite-RAM-Interface",
+    "source_revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+    "source_dirty": false,
+    "sources": [
+      {
+        "path": "C:\\short\\ahb-uvm-fresh-run-v3-20261110\\source\\rtl\\design.sv",
+        "sha256": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+      },
+      {
+        "path": "C:\\short\\ahb-uvm-fresh-run-v3-20261110\\source\\verification\\assertions\\ahb16_master_monitor.sv",
+        "sha256": "ff4359c55d2938917435f040819f6934901013728989ba543de567bf36675dbc"
+      },
+      {
+        "path": "C:\\short\\ahb-uvm-fresh-run-v3-20261110\\source\\tb\\ahb16_contract_test.sv",
+        "sha256": "f6ff5b4c2e61470235547f1ef99fcac7c08744718af22f2c1484cdf2272265b4"
+      },
+      {
+        "path": "C:\\short\\ahb-uvm-fresh-run-v3-20261110\\source\\verification\\negative\\ahb16_master_negative.sv",
+        "sha256": "33ded800ec0b9b96e25b87ddc26e5c1fb5d64f953eff82b36cd9139a098587c6"
+      }
+    ],
+    "seed": "0x28A81607 xorshift32",
+    "timeout_seconds_per_command": 120,
+    "simulations": [
+      {
+        "top": "ahb16_contract_test",
+        "command": [
+          "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+          "-c",
+          "-onfinish",
+          "exit",
+          "ahb16_contract_test",
+          "-do",
+          "run -all; quit -code 0"
+        ],
+        "simulator_exit_code": 0,
+        "status": "PASS",
+        "marker": "AHB16_CONTRACT_PASS checks=924 accepted=139 retired=135 commits=40 errors=12 stalls=9 seed=0x28A81607"
+      },
+      {
+        "top": "ahb16_master_negative",
+        "command": [
+          "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+          "-c",
+          "-onfinish",
+          "exit",
+          "ahb16_master_negative",
+          "-do",
+          "run -all; quit -code 0"
+        ],
+        "simulator_exit_code": 0,
+        "status": "PASS",
+        "marker": "AHB16_MASTER_NEGATIVE_PASS cases=3 legal=1"
+      }
+    ],
+    "overall": "PASS",
+    "simulator_version": "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020",
+    "elapsed_seconds": 5.012
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "started_utc": "2026-11-10T00:29:40.114749+00:00",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\ahb-fix-gate-control-v2-20261110\\scripts\\run_ahb_uvm.py",
+    "--select",
+    "runner-qualification",
+    "--expected-env-sha",
+    "f86dbfe92aef1391c6d59099f3ed91a7052daef5",
+    "--output",
+    "C:/short/ahb-fix-gate-control-run-v2-20261110"
+  ],
+  "source_revision": "f86dbfe92aef1391c6d59099f3ed91a7052daef5",
+  "source_dirty": false,
+  "serial_execution": true,
+  "selection": [
+    "runner-qualification"
+  ],
+  "raw_fault": false,
+  "seed": 682016495,
+  "seed_hex": "0x28A6BEEF",
+  "functional_coverage": "NOT RUN",
+  "constrained_randomization": "NOT RUN",
+  "original_advanced_alu_apb": "NOT RUN",
+  "suites": [
+    {
+      "name": "runner-qualification",
+      "kind": "runner",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\ahb-fix-gate-control-v2-20261110\\scripts\\qualify_ahb_runner.py",
+            "--output",
+            "C:\\short\\ahb-fix-gate-control-run-v2-20261110\\runner-qualification\\run"
+          ],
+          "cwd": "C:\\short\\ahb-fix-gate-control-v2-20261110",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "qualification.log",
+          "sha256": "a2721766edae1cff8b24ea7a0a182f8155e30e932a404278c0eae5f843d76ab5"
+        }
+      ],
+      "reason": "PROCESS_OR_SIMULATOR_ERROR",
+      "detail": ""
+    }
+  ],
+  "expected_inventory": [
+    "runner-qualification",
+    "sva-address_hold",
+    "sva-direction_hold",
+    "sva-size_hold",
+    "sva-selection_hold",
+    "sva-active_to_idle",
+    "sva-write_data",
+    "sva-idle_to_seq",
+    "sva-busy_control",
+    "sva-response_owner",
+    "sva-short_error",
+    "sva-long_error",
+    "sva-held_error_lost",
+    "sva-local_ok_wait",
+    "sva-global_through_error",
+    "sva-reset_output",
+    "sva-legal_read_wdata",
+    "sva-legal_idle_change",
+    "sva-legal_busy_seq",
+    "sva-legal_busy_nonseq",
+    "sva-legal_busy_idle",
+    "sva-legal_error_cancel",
+    "sva-legal_error_continue",
+    "sva-legal_reset_cancel",
+    "checker-legal",
+    "checker-reset",
+    "checker-pairing",
+    "checker-alias",
+    "checker-duplicate",
+    "checker-omitted",
+    "smoke",
+    "functional",
+    "fault-live_address",
+    "fault-address_phase_data",
+    "fault-read_data",
+    "fault-invalid_write",
+    "fault-wait_advance",
+    "fault-short_error",
+    "fault-missing_error",
+    "fault-address_alias",
+    "fault-duplicate",
+    "fault-omit_observation",
+    "fault-missing_marker",
+    "portable"
+  ],
+  "required_selected": [
+    "runner-qualification"
+  ],
+  "aggregate_exit_code": 1,
+  "milestone_pass": false,
+  "input_sha256": {
+    "verification/ahb_uvm/ahb_assertions.sv": "0a8392029ad5b2de09aacc02934120295eb451d1022e34570ce9bccbfa59ab49",
+    "verification/ahb_uvm/ahb_bus.sv": "25a9c2097a945277a03c1d9c326865b3dc480747d8d35639b877293db4a9d8f9",
+    "verification/ahb_uvm/ahb_checker_control.sv": "bef3d12f7bb26d1165bbb18b4196a6c39b61e25af012b6310729188b752851ed",
+    "verification/ahb_uvm/ahb_sva_control.sv": "f1f1d95de78c1f4e0ded70746009c0158f480195925174dcfb5c79c1aa756a78",
+    "verification/ahb_uvm/ahb_uvm_pkg.sv": "1babb26b0f51ecc0806c0589189e944ef1fd9177ad66a6250b1da427591e2697",
+    "verification/ahb_uvm/ahb_uvm_top.sv": "c67aabebcf3af3034a526a9ab9a2ae74f599649a3bc667c8515f75523366989d",
+    "verification/ahb_uvm/inventory.json": "9b69ebc7a34f782b5dee8a5892ddfccfb7be3cebf819285af5796457f1a3782c",
+    "verification/ahb_uvm/runner_fixtures.json": "79aa4d621f78f36dac29a8ae2a8b8b668855bad83296fbe74124c059bfbe0ac3",
+    "verification/ahb_uvm/sources.json": "0d9cea95213cfd687aea3f14c17e6beef280caad25528abb97f995398f995e2b",
+    "scripts/run_ahb_uvm.py": "8d47f20dcd0101dff5b5519e5bc7d03077c4ad10ec0aaa44736597e3fd744af3",
+    "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+    "scripts/ahb_program.py": "f629dd12073c5f9b4065d79b7a5c39e9164a93a1035f39a9ae762826a4018c85",
+    "scripts/ahb_mutations.py": "23b5b113e15ba73f83d0515c477b0e26ae9fdd564c6faa00bd85890831ef3faf",
+    "scripts/qualify_ahb_runner.py": "5560ce49ed0570f2ecd7b53e0a956739a1df877acb72fedc3e6472a944ce1836",
+    "reports/ahb-uvm-2026-11-10/run/results.json": "5241987073cc792b5e3e804f785901208748683bdfc68c5d0f3bf26a09d00874",
+    "reports/ahb-uvm-2026-11-10/run/fault-short_error/child/results.json": "99faae35662a3a6178d3ed2d9799b6bc104b31cfa634ae02a1dfb9b277483b58",
+    "reports/ahb-uvm-2026-11-10/run/fault-short_error/child/fault-short_error/2.log": "ae38f4c0191863c20cbc448a0b45668dc0951bdddeb886575f6f4137b69b1e6c",
+    "reports/ahb-uvm-2026-11-10/run/fault-missing_error/child/results.json": "e7def524e7c7f4c2170a2790b1f88472921dd12e91d4f369de2eaa7ef7cf6ff4",
+    "reports/ahb-uvm-2026-11-10/run/fault-missing_error/child/fault-missing_error/2.log": "0badb14be0d885ee3dbc92474d46c5c71e7461b4d9a941fb29a83b71fe0fc073",
+    "reports/ahb-uvm-2026-11-10/run/fault-read_data/child/results.json": "ba8ec66970e082ee8ad59a758a822d0bbeaa67e494f6245ed90dfefb4d6a12b4",
+    "reports/ahb-uvm-2026-11-10/run/fault-read_data/child/fault-read_data/2.log": "6e4596a73c5b9152b500502dce7441e911eedaac144f48ec6676851a9b43bbf5",
+    "reports/ahb-uvm-2026-11-10/run/fault-missing_marker/child/results.json": "307842d4eea7b0ae292d15408c088587505c848163818ce4a418ecc67e7dc7fe",
+    "reports/ahb-uvm-2026-11-10/run/fault-missing_marker/child/fault-missing_marker/2.log": "9f01386199e482204f16a71d1f02ef02e7e1925ca3f566b0fde690747bf499bb"
+  },
+  "qualification_reference": {
+    "revision": "faf8291b5d7b40362f30c79f12ed49453158dfc4",
+    "path": "scripts/run_ahb_uvm.py",
+    "sha256": "c593143229b734b10a9215aaafbe5dad8522fca2e632e6355b6acd775455bd0e"
+  },
+  "expected_environment_revision": "f86dbfe92aef1391c6d59099f3ed91a7052daef5",
+  "runner_revision": "3eb0e520a880b2cfb13d304bbeea119dbe917fb3",
+  "inventory_revision": "33f33d6034165085833d5f16390f6a625d15a2bc",
+  "configuration": {
+    "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+    "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+    "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+    "timeout_per_command": 90,
+    "global_timeout": 3600,
+    "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "vendor_input_sha256": {
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5"
+    }
+  },
+  "version_command": {
+    "command": [
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+      "-version"
+    ],
+    "cwd": "C:\\short\\ahb-fix-gate-control-run-v2-20261110",
+    "exit_code": 0,
+    "timed_out": false,
+    "log": "version.log",
+    "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+  },
+  "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+  "environment_clean_after_execution": true,
+  "uvm_runtime_versions": [],
+  "finished_utc": "2026-11-10T00:29:43.818727+00:00"
+}

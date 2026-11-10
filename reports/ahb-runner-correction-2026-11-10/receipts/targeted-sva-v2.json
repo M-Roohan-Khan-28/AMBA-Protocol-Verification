@@ -1,0 +1,19 @@
+{
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\ahb-runner-fix-20261110\\scripts\\run_ahb_uvm.py",
+    "--select",
+    "fault-short_error",
+    "fault-missing_error",
+    "--expected-env-sha",
+    "3eb0e520a880b2cfb13d304bbeea119dbe917fb3",
+    "--output",
+    "C:/short/ahb-fix-targeted-v2-20261110"
+  ],
+  "cwd": "C:\\short\\ahb-runner-fix-20261110",
+  "started_utc": "2026-11-10T00:29:43.869875+00:00",
+  "finished_utc": "2026-11-10T00:31:09.964996+00:00",
+  "exit_code": 0,
+  "log": "targeted-sva-v2.log",
+  "sha256": "71f6227442323c847c7d3d8b84731b22c79822a1c5369a065d707a3b40fddd4e"
+}

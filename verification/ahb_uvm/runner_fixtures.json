@@ -1,0 +1,103 @@
+{
+  "description": "Published real fault-child records, preserved identities; variants are runner fixtures, not induced simulator crashes.",
+  "published_revision": "faf8291b5d7b40362f30c79f12ed49453158dfc4",
+  "parent_result": "reports/ahb-uvm-2026-11-10/run/results.json",
+  "old_runner": {
+    "revision": "faf8291b5d7b40362f30c79f12ed49453158dfc4",
+    "path": "scripts/run_ahb_uvm.py",
+    "sha256": "c593143229b734b10a9215aaafbe5dad8522fca2e632e6355b6acd775455bd0e"
+  },
+  "files": {
+    "reports/ahb-uvm-2026-11-10/run/results.json": "5241987073cc792b5e3e804f785901208748683bdfc68c5d0f3bf26a09d00874",
+    "reports/ahb-uvm-2026-11-10/run/fault-short_error/child/results.json": "99faae35662a3a6178d3ed2d9799b6bc104b31cfa634ae02a1dfb9b277483b58",
+    "reports/ahb-uvm-2026-11-10/run/fault-short_error/child/fault-short_error/2.log": "ae38f4c0191863c20cbc448a0b45668dc0951bdddeb886575f6f4137b69b1e6c",
+    "reports/ahb-uvm-2026-11-10/run/fault-missing_error/child/results.json": "e7def524e7c7f4c2170a2790b1f88472921dd12e91d4f369de2eaa7ef7cf6ff4",
+    "reports/ahb-uvm-2026-11-10/run/fault-missing_error/child/fault-missing_error/2.log": "0badb14be0d885ee3dbc92474d46c5c71e7461b4d9a941fb29a83b71fe0fc073",
+    "reports/ahb-uvm-2026-11-10/run/fault-read_data/child/results.json": "ba8ec66970e082ee8ad59a758a822d0bbeaa67e494f6245ed90dfefb4d6a12b4",
+    "reports/ahb-uvm-2026-11-10/run/fault-read_data/child/fault-read_data/2.log": "6e4596a73c5b9152b500502dce7441e911eedaac144f48ec6676851a9b43bbf5",
+    "reports/ahb-uvm-2026-11-10/run/fault-missing_marker/child/results.json": "307842d4eea7b0ae292d15408c088587505c848163818ce4a418ecc67e7dc7fe",
+    "reports/ahb-uvm-2026-11-10/run/fault-missing_marker/child/fault-missing_marker/2.log": "9f01386199e482204f16a71d1f02ef02e7e1925ca3f566b0fde690747bf499bb"
+  },
+  "cases": [
+    {
+      "name": "fault-short_error",
+      "entry": {
+        "name": "fault-short_error",
+        "kind": "fault",
+        "fault": "short_error",
+        "cases": [
+          "bad_address_01"
+        ],
+        "expected": "",
+        "expected_fatal": "SVA:ERROR_FIRST",
+        "mutation": "short_error",
+        "passing_control": {
+          "substep": "functional",
+          "case": "bad_address_01"
+        }
+      },
+      "result": "reports/ahb-uvm-2026-11-10/run/fault-short_error/child/results.json",
+      "log": "reports/ahb-uvm-2026-11-10/run/fault-short_error/child/fault-short_error/2.log"
+    },
+    {
+      "name": "fault-missing_error",
+      "entry": {
+        "name": "fault-missing_error",
+        "kind": "fault",
+        "fault": "missing_error",
+        "cases": [
+          "bad_address_01"
+        ],
+        "expected": "",
+        "expected_fatal": "SVA:EP_ZERO_WAIT",
+        "mutation": "missing_error",
+        "passing_control": {
+          "substep": "functional",
+          "case": "bad_address_01"
+        }
+      },
+      "result": "reports/ahb-uvm-2026-11-10/run/fault-missing_error/child/results.json",
+      "log": "reports/ahb-uvm-2026-11-10/run/fault-missing_error/child/fault-missing_error/2.log"
+    },
+    {
+      "name": "fault-read_data",
+      "entry": {
+        "name": "fault-read_data",
+        "kind": "fault",
+        "fault": "read_data",
+        "cases": [
+          "all_words_overwrite"
+        ],
+        "expected": "",
+        "expected_fatal": "READ_DATA",
+        "mutation": "read_data",
+        "passing_control": {
+          "substep": "functional",
+          "case": "all_words_overwrite"
+        }
+      },
+      "result": "reports/ahb-uvm-2026-11-10/run/fault-read_data/child/results.json",
+      "log": "reports/ahb-uvm-2026-11-10/run/fault-read_data/child/fault-read_data/2.log"
+    },
+    {
+      "name": "fault-missing_marker",
+      "entry": {
+        "name": "fault-missing_marker",
+        "kind": "fault",
+        "fault": "missing_marker",
+        "cases": [
+          "smoke"
+        ],
+        "expected": "",
+        "expected_fatal": "",
+        "mutation": null,
+        "passing_control": {
+          "substep": "smoke",
+          "case": "smoke"
+        }
+      },
+      "result": "reports/ahb-uvm-2026-11-10/run/fault-missing_marker/child/results.json",
+      "log": "reports/ahb-uvm-2026-11-10/run/fault-missing_marker/child/fault-missing_marker/2.log"
+    }
+  ]
+}

@@ -1,0 +1,671 @@
+{
+  "seed": "0x28A6BEEF",
+  "required_substeps": [
+    {
+      "name": "runner-qualification",
+      "kind": "runner"
+    },
+    {
+      "name": "sva-address_hold",
+      "kind": "sva",
+      "scenario": "address_hold",
+      "expected": "ADDRESS_HOLD"
+    },
+    {
+      "name": "sva-direction_hold",
+      "kind": "sva",
+      "scenario": "direction_hold",
+      "expected": "ADDRESS_HOLD"
+    },
+    {
+      "name": "sva-size_hold",
+      "kind": "sva",
+      "scenario": "size_hold",
+      "expected": "ADDRESS_HOLD"
+    },
+    {
+      "name": "sva-selection_hold",
+      "kind": "sva",
+      "scenario": "selection_hold",
+      "expected": "ADDRESS_HOLD"
+    },
+    {
+      "name": "sva-active_to_idle",
+      "kind": "sva",
+      "scenario": "active_to_idle",
+      "expected": "ADDRESS_HOLD"
+    },
+    {
+      "name": "sva-write_data",
+      "kind": "sva",
+      "scenario": "write_data",
+      "expected": "WRITE_DATA_HOLD"
+    },
+    {
+      "name": "sva-idle_to_seq",
+      "kind": "sva",
+      "scenario": "idle_to_seq",
+      "expected": "IDLE_TRANSITION"
+    },
+    {
+      "name": "sva-busy_control",
+      "kind": "sva",
+      "scenario": "busy_control",
+      "expected": "BUSY_CONTROL"
+    },
+    {
+      "name": "sva-response_owner",
+      "kind": "sva",
+      "scenario": "response_owner",
+      "expected": "RESPONSE_OWNER"
+    },
+    {
+      "name": "sva-short_error",
+      "kind": "sva",
+      "scenario": "short_error",
+      "expected": "ERROR_FIRST"
+    },
+    {
+      "name": "sva-long_error",
+      "kind": "sva",
+      "scenario": "long_error",
+      "expected": "ERROR_SECOND"
+    },
+    {
+      "name": "sva-held_error_lost",
+      "kind": "sva",
+      "scenario": "held_error_lost",
+      "expected": "ERROR_HOLD"
+    },
+    {
+      "name": "sva-local_ok_wait",
+      "kind": "sva",
+      "scenario": "local_ok_wait",
+      "expected": "EP_ZERO_WAIT"
+    },
+    {
+      "name": "sva-global_through_error",
+      "kind": "sva",
+      "scenario": "global_through_error",
+      "expected": "GLOBAL_READY"
+    },
+    {
+      "name": "sva-reset_output",
+      "kind": "sva",
+      "scenario": "reset_output",
+      "expected": "EP_RESET"
+    },
+    {
+      "name": "sva-legal_read_wdata",
+      "kind": "sva",
+      "scenario": "legal_read_wdata",
+      "expected": ""
+    },
+    {
+      "name": "sva-legal_idle_change",
+      "kind": "sva",
+      "scenario": "legal_idle_change",
+      "expected": ""
+    },
+    {
+      "name": "sva-legal_busy_seq",
+      "kind": "sva",
+      "scenario": "legal_busy_seq",
+      "expected": ""
+    },
+    {
+      "name": "sva-legal_busy_nonseq",
+      "kind": "sva",
+      "scenario": "legal_busy_nonseq",
+      "expected": ""
+    },
+    {
+      "name": "sva-legal_busy_idle",
+      "kind": "sva",
+      "scenario": "legal_busy_idle",
+      "expected": ""
+    },
+    {
+      "name": "sva-legal_error_cancel",
+      "kind": "sva",
+      "scenario": "legal_error_cancel",
+      "expected": ""
+    },
+    {
+      "name": "sva-legal_error_continue",
+      "kind": "sva",
+      "scenario": "legal_error_continue",
+      "expected": ""
+    },
+    {
+      "name": "sva-legal_reset_cancel",
+      "kind": "sva",
+      "scenario": "legal_reset_cancel",
+      "expected": ""
+    },
+    {
+      "name": "checker-legal",
+      "kind": "checker",
+      "scenario": "legal",
+      "expected": ""
+    },
+    {
+      "name": "checker-reset",
+      "kind": "checker",
+      "scenario": "reset",
+      "expected": ""
+    },
+    {
+      "name": "checker-pairing",
+      "kind": "checker",
+      "scenario": "pairing",
+      "expected": "WRITE_PAIR"
+    },
+    {
+      "name": "checker-alias",
+      "kind": "checker",
+      "scenario": "alias",
+      "expected": "ADDRESS_INTENT"
+    },
+    {
+      "name": "checker-duplicate",
+      "kind": "checker",
+      "scenario": "duplicate",
+      "expected": "UNSOLICITED_ADDRESS"
+    },
+    {
+      "name": "checker-omitted",
+      "kind": "checker",
+      "scenario": "omitted",
+      "expected": "REQUEST_ACCOUNT"
+    },
+    {
+      "name": "smoke",
+      "kind": "functional",
+      "cases": [
+        "smoke"
+      ],
+      "expected": ""
+    },
+    {
+      "name": "functional",
+      "kind": "functional",
+      "cases": [
+        "all_words_overwrite",
+        "pipeline_WW_different",
+        "pipeline_WW_same",
+        "pipeline_WR_different",
+        "pipeline_WR_same",
+        "pipeline_RW_different",
+        "pipeline_RW_same",
+        "pipeline_RR_different",
+        "pipeline_RR_same",
+        "ignored_unselected",
+        "ignored_idle",
+        "ignored_busy",
+        "wait_read_1",
+        "wait_read_2",
+        "wait_read_5",
+        "wait_write_1",
+        "wait_write_2",
+        "wait_write_5",
+        "wait_idle_nonseq",
+        "wait_busy_seq",
+        "wait_busy_nonseq",
+        "wait_busy_idle",
+        "bad_size_0",
+        "bad_size_1",
+        "bad_size_3",
+        "bad_size_4",
+        "bad_size_5",
+        "bad_size_6",
+        "bad_size_7",
+        "bad_address_01",
+        "bad_address_02",
+        "bad_address_03",
+        "bad_address_3d",
+        "bad_address_40",
+        "bad_address_80",
+        "bad_address_fc",
+        "invalid_read",
+        "error_continue",
+        "error_final_held",
+        "reset_idle",
+        "reset_normal",
+        "reset_write_wait",
+        "reset_error_first",
+        "reset_error_finish"
+      ],
+      "expected": ""
+    },
+    {
+      "name": "fault-live_address",
+      "kind": "fault",
+      "fault": "live_address",
+      "cases": [
+        "pipeline_WW_different"
+      ],
+      "expected": "",
+      "expected_fatal": "READ_DATA",
+      "mutation": "live_address",
+      "passing_control": {
+        "substep": "functional",
+        "case": "pipeline_WW_different"
+      }
+    },
+    {
+      "name": "fault-address_phase_data",
+      "kind": "fault",
+      "fault": "address_phase_data",
+      "cases": [
+        "pipeline_WR_same"
+      ],
+      "expected": "",
+      "expected_fatal": "READ_DATA",
+      "mutation": "address_phase_data",
+      "passing_control": {
+        "substep": "functional",
+        "case": "pipeline_WR_same"
+      }
+    },
+    {
+      "name": "fault-read_data",
+      "kind": "fault",
+      "fault": "read_data",
+      "cases": [
+        "all_words_overwrite"
+      ],
+      "expected": "",
+      "expected_fatal": "READ_DATA",
+      "mutation": "read_data",
+      "passing_control": {
+        "substep": "functional",
+        "case": "all_words_overwrite"
+      }
+    },
+    {
+      "name": "fault-invalid_write",
+      "kind": "fault",
+      "fault": "invalid_write",
+      "cases": [
+        "bad_address_01"
+      ],
+      "expected": "",
+      "expected_fatal": "READ_DATA",
+      "mutation": "invalid_write",
+      "passing_control": {
+        "substep": "functional",
+        "case": "bad_address_01"
+      }
+    },
+    {
+      "name": "fault-wait_advance",
+      "kind": "fault",
+      "fault": "wait_advance",
+      "cases": [
+        "wait_read_5"
+      ],
+      "expected": "",
+      "expected_fatal": "READ_DATA",
+      "mutation": "wait_advance",
+      "passing_control": {
+        "substep": "functional",
+        "case": "wait_read_5"
+      }
+    },
+    {
+      "name": "fault-short_error",
+      "kind": "fault",
+      "fault": "short_error",
+      "cases": [
+        "bad_address_01"
+      ],
+      "expected": "",
+      "expected_fatal": "SVA:ERROR_FIRST",
+      "mutation": "short_error",
+      "passing_control": {
+        "substep": "functional",
+        "case": "bad_address_01"
+      }
+    },
+    {
+      "name": "fault-missing_error",
+      "kind": "fault",
+      "fault": "missing_error",
+      "cases": [
+        "bad_address_01"
+      ],
+      "expected": "",
+      "expected_fatal": "SVA:EP_ZERO_WAIT",
+      "mutation": "missing_error",
+      "passing_control": {
+        "substep": "functional",
+        "case": "bad_address_01"
+      }
+    },
+    {
+      "name": "fault-address_alias",
+      "kind": "fault",
+      "fault": "address_alias",
+      "cases": [
+        "all_words_overwrite"
+      ],
+      "expected": "",
+      "expected_fatal": "ADDRESS_INTENT",
+      "mutation": null,
+      "passing_control": {
+        "substep": "functional",
+        "case": "all_words_overwrite"
+      }
+    },
+    {
+      "name": "fault-duplicate",
+      "kind": "fault",
+      "fault": "duplicate",
+      "cases": [
+        "smoke"
+      ],
+      "expected": "",
+      "expected_fatal": "UNSOLICITED_ADDRESS",
+      "mutation": null,
+      "passing_control": {
+        "substep": "smoke",
+        "case": "smoke"
+      }
+    },
+    {
+      "name": "fault-omit_observation",
+      "kind": "fault",
+      "fault": "omit_observation",
+      "cases": [
+        "smoke"
+      ],
+      "expected": "",
+      "expected_fatal": "ADDRESS_INTENT",
+      "mutation": null,
+      "passing_control": {
+        "substep": "smoke",
+        "case": "smoke"
+      }
+    },
+    {
+      "name": "fault-missing_marker",
+      "kind": "fault",
+      "fault": "missing_marker",
+      "cases": [
+        "smoke"
+      ],
+      "expected": "",
+      "expected_fatal": "",
+      "mutation": null,
+      "passing_control": {
+        "substep": "smoke",
+        "case": "smoke"
+      }
+    },
+    {
+      "name": "portable",
+      "kind": "portable"
+    }
+  ],
+  "functional_cases": [
+    {
+      "name": "smoke",
+      "kind": "smoke"
+    },
+    {
+      "name": "all_words_overwrite",
+      "kind": "all_words"
+    },
+    {
+      "name": "pipeline_WW_different",
+      "kind": "pipeline",
+      "directions": "WW",
+      "same": false
+    },
+    {
+      "name": "pipeline_WW_same",
+      "kind": "pipeline",
+      "directions": "WW",
+      "same": true
+    },
+    {
+      "name": "pipeline_WR_different",
+      "kind": "pipeline",
+      "directions": "WR",
+      "same": false
+    },
+    {
+      "name": "pipeline_WR_same",
+      "kind": "pipeline",
+      "directions": "WR",
+      "same": true
+    },
+    {
+      "name": "pipeline_RW_different",
+      "kind": "pipeline",
+      "directions": "RW",
+      "same": false
+    },
+    {
+      "name": "pipeline_RW_same",
+      "kind": "pipeline",
+      "directions": "RW",
+      "same": true
+    },
+    {
+      "name": "pipeline_RR_different",
+      "kind": "pipeline",
+      "directions": "RR",
+      "same": false
+    },
+    {
+      "name": "pipeline_RR_same",
+      "kind": "pipeline",
+      "directions": "RR",
+      "same": true
+    },
+    {
+      "name": "ignored_unselected",
+      "kind": "ignored",
+      "sel": 0,
+      "trans": 2
+    },
+    {
+      "name": "ignored_idle",
+      "kind": "ignored",
+      "sel": 1,
+      "trans": 0
+    },
+    {
+      "name": "ignored_busy",
+      "kind": "ignored",
+      "sel": 1,
+      "trans": 1
+    },
+    {
+      "name": "wait_read_1",
+      "kind": "wait",
+      "write": 0,
+      "waits": 1
+    },
+    {
+      "name": "wait_read_2",
+      "kind": "wait",
+      "write": 0,
+      "waits": 2
+    },
+    {
+      "name": "wait_read_5",
+      "kind": "wait",
+      "write": 0,
+      "waits": 5
+    },
+    {
+      "name": "wait_write_1",
+      "kind": "wait",
+      "write": 1,
+      "waits": 1
+    },
+    {
+      "name": "wait_write_2",
+      "kind": "wait",
+      "write": 1,
+      "waits": 2
+    },
+    {
+      "name": "wait_write_5",
+      "kind": "wait",
+      "write": 1,
+      "waits": 5
+    },
+    {
+      "name": "wait_idle_nonseq",
+      "kind": "wait_exception",
+      "initial": 0,
+      "next": 2,
+      "write": 1
+    },
+    {
+      "name": "wait_busy_seq",
+      "kind": "wait_exception",
+      "initial": 1,
+      "next": 3,
+      "write": 0
+    },
+    {
+      "name": "wait_busy_nonseq",
+      "kind": "wait_exception",
+      "initial": 1,
+      "next": 2,
+      "write": 1
+    },
+    {
+      "name": "wait_busy_idle",
+      "kind": "wait_exception",
+      "initial": 1,
+      "next": 0,
+      "write": 0
+    },
+    {
+      "name": "bad_size_0",
+      "kind": "invalid",
+      "addr": 20,
+      "size": 0
+    },
+    {
+      "name": "bad_size_1",
+      "kind": "invalid",
+      "addr": 20,
+      "size": 1
+    },
+    {
+      "name": "bad_size_3",
+      "kind": "invalid",
+      "addr": 20,
+      "size": 3
+    },
+    {
+      "name": "bad_size_4",
+      "kind": "invalid",
+      "addr": 20,
+      "size": 4
+    },
+    {
+      "name": "bad_size_5",
+      "kind": "invalid",
+      "addr": 20,
+      "size": 5
+    },
+    {
+      "name": "bad_size_6",
+      "kind": "invalid",
+      "addr": 20,
+      "size": 6
+    },
+    {
+      "name": "bad_size_7",
+      "kind": "invalid",
+      "addr": 20,
+      "size": 7
+    },
+    {
+      "name": "bad_address_01",
+      "kind": "invalid",
+      "addr": 1
+    },
+    {
+      "name": "bad_address_02",
+      "kind": "invalid",
+      "addr": 2
+    },
+    {
+      "name": "bad_address_03",
+      "kind": "invalid",
+      "addr": 3
+    },
+    {
+      "name": "bad_address_3d",
+      "kind": "invalid",
+      "addr": 61
+    },
+    {
+      "name": "bad_address_40",
+      "kind": "invalid",
+      "addr": 64
+    },
+    {
+      "name": "bad_address_80",
+      "kind": "invalid",
+      "addr": 128
+    },
+    {
+      "name": "bad_address_fc",
+      "kind": "invalid",
+      "addr": 252
+    },
+    {
+      "name": "invalid_read",
+      "kind": "invalid",
+      "addr": 5,
+      "write": 0
+    },
+    {
+      "name": "error_continue",
+      "kind": "invalid",
+      "addr": 1,
+      "continue": true
+    },
+    {
+      "name": "error_final_held",
+      "kind": "invalid",
+      "addr": 2,
+      "hold": 4
+    },
+    {
+      "name": "reset_idle",
+      "kind": "reset",
+      "mode": "idle"
+    },
+    {
+      "name": "reset_normal",
+      "kind": "reset",
+      "mode": "normal"
+    },
+    {
+      "name": "reset_write_wait",
+      "kind": "reset",
+      "mode": "write_wait"
+    },
+    {
+      "name": "reset_error_first",
+      "kind": "reset",
+      "mode": "error_first"
+    },
+    {
+      "name": "reset_error_finish",
+      "kind": "reset",
+      "mode": "error_finish"
+    }
+  ]
+}

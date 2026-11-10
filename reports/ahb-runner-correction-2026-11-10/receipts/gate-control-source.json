@@ -1,0 +1,6 @@
+{
+  "passing_revision": "33f33d6034165085833d5f16390f6a625d15a2bc",
+  "disposable_revision": "d3d6f6c261ad7d3a760fbcd4a53738cd2d54b8f1",
+  "mutation": "Use the extracted historical qualifier as current in fixture tests only",
+  "published": false
+}

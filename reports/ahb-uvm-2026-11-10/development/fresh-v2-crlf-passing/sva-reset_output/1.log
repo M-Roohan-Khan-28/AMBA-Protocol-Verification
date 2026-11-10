@@ -1,0 +1,12 @@
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+Start time: 04:35:22 on Nov 10,2026
+vlog -sv -work work C:\short\ahb-uvm-fresh-v2-20261110\verification\ahb_uvm\ahb_bus.sv C:\short\ahb-uvm-fresh-v2-20261110\verification\ahb_uvm\ahb_assertions.sv C:\short\ahb-uvm-fresh-v2-20261110\verification\ahb_uvm\ahb_sva_control.sv 
+** Note: (vlog-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+-- Compiling interface ahb_bus
+-- Compiling module ahb_assertions
+-- Compiling module ahb_sva_control
+
+Top level modules:
+	ahb_sva_control
+End time: 04:35:22 on Nov 10,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

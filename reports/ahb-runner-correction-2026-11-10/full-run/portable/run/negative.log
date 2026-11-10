@@ -1,0 +1,21 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit ahb16_master_negative -do "run -all; quit -code 0" 
+# Start time: 05:38:36 on Nov 10,2026
+# Loading sv_std.std
+# Loading work.ahb16_master_negative
+# Loading work.ahb16_master_monitor
+# run -all
+# AHB16_MASTER_VIOLATION address/control changed during global HREADY wait
+# AHB16_MASTER_NEGATIVE_CASE_PASS address
+# AHB16_MASTER_VIOLATION write data changed during global HREADY wait
+# AHB16_MASTER_NEGATIVE_CASE_PASS write_data
+# AHB16_MASTER_VIOLATION address/control changed during global HREADY wait
+# AHB16_MASTER_NEGATIVE_CASE_PASS transfer_control
+# AHB16_MASTER_NEGATIVE_PASS cases=3 legal=1
+# ** Note: $finish    : C:/short/ahb-fix-fresh-run-v2-20261110/source/verification/negative/ahb16_master_negative.sv(57)
+#    Time: 236 ns  Iteration: 0  Instance: /ahb16_master_negative
+# End time: 05:38:37 on Nov 10,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

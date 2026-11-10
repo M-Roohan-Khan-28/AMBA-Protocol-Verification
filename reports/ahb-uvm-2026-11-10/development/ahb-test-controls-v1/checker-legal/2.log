@@ -1,0 +1,64 @@
+Reading pref.tcl
+
+# 2025.2
+
+# ** Note: (vsim-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# vsim -c -onfinish exit -voptargs="+acc" -sv_seed 682016495 -L C:\MXR\Quartus\25.1\questa_fse\uvm-1.2 work.ahb_checker_control "+SCENARIO=legal" -do "onerror {quit -force -code 1}; run -all; quit -force -code 0" 
+# Start time: 03:51:13 on Nov 10,2026
+# Loading C:/Users/CG/AppData/Local/Temp\CG@DESKTOP-9KOU2NO_dpi_44112\win64_gcc-7.4.0\export_tramp.dll
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.ahb_bus(fast)
+# Loading C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.uvm_pkg(fast)
+# Loading work.ahb_uvm_pkg(fast)
+# Loading work.ahb_checker_pkg(fast)
+# Loading C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.questa_uvm_pkg(fast)
+# Loading work.ahb_checker_control(fast)
+# Compiling C:/Users/CG/AppData/Local/Temp\CG@DESKTOP-9KOU2NO_dpi_44112\win64_gcc-7.4.0\exportwrapper.c
+# Loading C:/Users/CG/AppData/Local/Temp\CG@DESKTOP-9KOU2NO_dpi_44112\win64_gcc-7.4.0\vsim_auto_compile.dll
+# Loading C:/MXR/Quartus/25.1/questa_fse/uvm-1.2\win64\uvm_dpi.dll
+# ** Error (suppressible): (vsim-8451) C:/short/ahb-uvm-20261110/verification/ahb_uvm/ahb_uvm_pkg.sv(128): Virtual interface resolution cannot find a matching instance for 'virtual ahb_bus'.
+#    Time: 0 ps  Iteration: 0  Instance: /ahb_checker_control File: C:/short/ahb-uvm-20261110/verification/ahb_uvm/ahb_uvm_pkg.sv Line: 128
+# ** Error (suppressible): (vsim-8451) C:/short/ahb-uvm-20261110/verification/ahb_uvm/ahb_uvm_pkg.sv(167): Virtual interface resolution cannot find a matching instance for 'virtual ahb_bus'.
+#    Time: 0 ps  Iteration: 0  Instance: /ahb_checker_control File: C:/short/ahb-uvm-20261110/verification/ahb_uvm/ahb_uvm_pkg.sv Line: 167
+# ** Error (suppressible): (vsim-8451) C:/short/ahb-uvm-20261110/verification/ahb_uvm/ahb_uvm_pkg.sv(112): Virtual interface resolution cannot find a matching instance for 'virtual ahb_bus'.
+#    Time: 0 ps  Iteration: 0  Instance: /ahb_checker_control File: C:/short/ahb-uvm-20261110/verification/ahb_uvm/ahb_uvm_pkg.sv Line: 112
+# ** Error (suppressible): (vsim-8451) C:/short/ahb-uvm-20261110/verification/ahb_uvm/ahb_uvm_pkg.sv(113): Virtual interface resolution cannot find a matching instance for 'virtual ahb_bus'.
+#    Time: 0 ps  Iteration: 0  Instance: /ahb_checker_control File: C:/short/ahb-uvm-20261110/verification/ahb_uvm/ahb_uvm_pkg.sv Line: 113
+# ** Error (suppressible): (vsim-8451) C:/short/ahb-uvm-20261110/verification/ahb_uvm/ahb_uvm_pkg.sv(113): Virtual interface resolution cannot find a matching instance for 'virtual ahb_bus'.
+#    Time: 0 ps  Iteration: 0  Instance: /ahb_checker_control File: C:/short/ahb-uvm-20261110/verification/ahb_uvm/ahb_uvm_pkg.sv Line: 113
+# ** Error (suppressible): (vsim-8451) C:/short/ahb-uvm-20261110/verification/ahb_uvm/ahb_uvm_pkg.sv(113): Virtual interface resolution cannot find a matching instance for 'virtual ahb_bus'.
+#    Time: 0 ps  Iteration: 0  Instance: /ahb_checker_control File: C:/short/ahb-uvm-20261110/verification/ahb_uvm/ahb_uvm_pkg.sv Line: 113
+# ** Error (suppressible): (vsim-8451) C:/short/ahb-uvm-20261110/verification/ahb_uvm/ahb_uvm_pkg.sv(113): Virtual interface resolution cannot find a matching instance for 'virtual ahb_bus'.
+#    Time: 0 ps  Iteration: 0  Instance: /ahb_checker_control File: C:/short/ahb-uvm-20261110/verification/ahb_uvm/ahb_uvm_pkg.sv Line: 113
+# ** Error (suppressible): (vsim-8451) C:/short/ahb-uvm-20261110/verification/ahb_uvm/ahb_uvm_pkg.sv(113): Virtual interface resolution cannot find a matching instance for 'virtual ahb_bus'.
+#    Time: 0 ps  Iteration: 0  Instance: /ahb_checker_control File: C:/short/ahb-uvm-20261110/verification/ahb_uvm/ahb_uvm_pkg.sv Line: 113
+# ** Error (suppressible): (vsim-8451) C:/short/ahb-uvm-20261110/verification/ahb_uvm/ahb_uvm_pkg.sv(113): Virtual interface resolution cannot find a matching instance for 'virtual ahb_bus'.
+#    Time: 0 ps  Iteration: 0  Instance: /ahb_checker_control File: C:/short/ahb-uvm-20261110/verification/ahb_uvm/ahb_uvm_pkg.sv Line: 113
+# ** Error (suppressible): (vsim-8451) C:/short/ahb-uvm-20261110/verification/ahb_uvm/ahb_uvm_pkg.sv(115): Virtual interface resolution cannot find a matching instance for 'virtual ahb_bus'.
+#    Time: 0 ps  Iteration: 0  Instance: /ahb_checker_control File: C:/short/ahb-uvm-20261110/verification/ahb_uvm/ahb_uvm_pkg.sv Line: 115
+# ** Error (suppressible): (vsim-8451) C:/short/ahb-uvm-20261110/verification/ahb_uvm/ahb_uvm_pkg.sv(115): Virtual interface resolution cannot find a matching instance for 'virtual ahb_bus'.
+#    Time: 0 ps  Iteration: 0  Instance: /ahb_checker_control File: C:/short/ahb-uvm-20261110/verification/ahb_uvm/ahb_uvm_pkg.sv Line: 115
+# ** Error (suppressible): (vsim-8451) C:/short/ahb-uvm-20261110/verification/ahb_uvm/ahb_uvm_pkg.sv(116): Virtual interface resolution cannot find a matching instance for 'virtual ahb_bus'.
+#    Time: 0 ps  Iteration: 0  Instance: /ahb_checker_control File: C:/short/ahb-uvm-20261110/verification/ahb_uvm/ahb_uvm_pkg.sv Line: 116
+# Error loading design
+Error loading design
+# End time: 03:51:24 on Nov 10,2026, Elapsed time: 0:00:11
+# Errors: 12, Warnings: 1

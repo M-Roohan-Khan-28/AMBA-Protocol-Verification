@@ -1,0 +1,5 @@
+runner-qualification FAIL MISSING_RESULT_MARKER
+sva-address_hold PASS EXECUTED
+sva-direction_hold PASS EXECUTED
+sva-size_hold PASS EXECUTED
+sva-selection_hold PASS EXECUTED

@@ -1,0 +1,29 @@
+{
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+    "--output",
+    "C:\\short\\ahb-faults-v1",
+    "--expected-env-sha",
+    "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+    "--select",
+    "fault-live_address",
+    "fault-address_phase_data",
+    "fault-read_data",
+    "fault-invalid_write",
+    "fault-wait_advance",
+    "fault-short_error",
+    "fault-missing_error",
+    "fault-address_alias",
+    "fault-duplicate",
+    "fault-omit_observation",
+    "fault-missing_marker"
+  ],
+  "cwd": "C:\\short\\ahb-uvm-20261110",
+  "started_utc": "2026-11-09T23:03:45.501284+00:00",
+  "finished_utc": "2026-11-09T23:11:03.378577+00:00",
+  "source_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+  "exit_code": 0,
+  "log": "faults-v1-wrapper.log",
+  "sha256": "08e499cfac5dd387a682cde457a74a039542b06a293392dc583a3361b2014fe0"
+}
