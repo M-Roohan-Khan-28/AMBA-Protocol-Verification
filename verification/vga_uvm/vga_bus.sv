@@ -2,7 +2,7 @@
 interface vga_bus;
   logic clk=0;
   // Packed controls permit an atomic, race-free stimulus update.
-  logic [22:0] controls={1'b1,22'd0}, intended={1'b1,22'd0};
+  logic [22:0] controls={1'b1,22'd0};
   wire reset=controls[22],sram_we=controls[21];
   wire [12:0] sram_addr=controls[20:8];
   wire [7:0] sram_data_in=controls[7:0];

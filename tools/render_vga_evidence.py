@@ -2,9 +2,24 @@
 """Render only recorded actual VGA pin bytes and bounded public VCD windows."""
 import argparse,hashlib,json,re,struct,subprocess,sys,zlib
 from pathlib import Path
+from vcd_to_svg import parse_vcd,Signal,render_svg
 def sha(b):return hashlib.sha256(b).hexdigest()
 def save(p,v):p.write_text(json.dumps(v,indent=2)+'\n',encoding='utf-8')
 def chunk(kind,data):return struct.pack('>I',len(data))+kind+data+struct.pack('>I',zlib.crc32(kind+data)&0xffffffff)
+def group_bits(trace,base,width):
+ if base in trace.signals:return dict(name=base,source_bits=[base],transformation='none')
+ signals=[trace.signals[f'{base}[{i}]'] for i in range(width)]
+ updates={}
+ for i,signal in enumerate(signals):
+  for tick,bits in trace.events[signal.code]:updates.setdefault(tick,{})[i]=bits
+ values=['x']*width;events=[]
+ for tick,changes in sorted(updates.items()):
+  for i,bits in changes.items():values[i]=bits
+  value=''.join(reversed(values))
+  if not events or events[-1][1]!=value:events.append((tick,value))
+ code='__public_vector__'+base;assert code not in trace.events
+ trace.events[code]=events;trace.signals[base]=Signal(base,code,width,'display-group',f'[{width-1}:0]')
+ return dict(name=base,source_bits=[s.name for s in reversed(signals)],transformation='MSB-to-LSB vector display assembled from recorded public scalar-bit values at each timestamp; original VCD unchanged')
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--run',type=Path,required=True);ap.add_argument('--output',type=Path,required=True);a=ap.parse_args()
  assert not a.output.exists();a.output.mkdir(parents=True)
@@ -28,13 +43,20 @@ def main():
  start=int(re.search(r'^# VGA_FRAME_CAPTURE_START time=(\d+) clock=\d+',log,re.M)[1]);end=int(re.search(r'^# VGA_FRAME_CAPTURE_PASS pixels=420000 time=(\d+)',log,re.M)[1]);assert end-start==(420000-1)*40000
  save(image.with_suffix('.json'),dict(label='simulation-reconstructed frame',source=str(f/'actual-frame.rgb444'),source_sha256=sha(raw),source_representation='four exact actual-pin bytes per raster sample: R4 G4 B4 {HS,VS,ACTIVE}',image_sha256=sha(png),image_dimensions=[640,480],raster_dimensions=[800,525],sample_phase='first rising input clock of each raster pixel (post-model divider=1), output captured +1 ns after edge',input_period_ns=10,sample_period_ns=40,start_tick_ps=start,end_tick_ps=end,conversion='each observed 4-bit channel multiplied by 17',active_samples=active,hsync_low_samples=hs,vsync_low_samples=vs,source_revision=result['source_revision'],renderer_sha256=sha(Path(__file__).read_bytes()),command=[sys.executable,*sys.argv]))
  waves=[];vcd=f/'pins.vcd';assert vcd.is_file() and vcd.stat().st_size
+ trace=parse_vcd(vcd);grouping=[group_bits(trace,'vga_uvm_top.bus.'+name,width) for name,width in [('sram_addr',13),('sram_data_in',8),('red',4),('green',4),('blue',4)]]
+ selected={'horizontal':['clk','hsync','active_video','red','green','blue'],
+  'vertical_sync':['hsync','vsync','active_video','reset'],
+  'frame_wrap':['clk','hsync','vsync','active_video','red','green','blue'],
+  'current_pixel':['clk','sram_we','sram_addr','sram_data_in','active_video','red','green','blue'],
+  'async_reset':['clk','reset','sram_we','sram_addr','sram_data_in','red','green','blue','active_video']}
  for name in ('horizontal','vertical_sync','frame_wrap','current_pixel','async_reset'):
   begin=int(re.search(r'^# VGA_WAVE_START name='+name+r' time=(\d+)',log,re.M)[1]);finish=int(re.search(r'^# VGA_WAVE_END name='+name+r' time=(\d+)',log,re.M)[1]);assert finish>begin
   figure=a.output/(name+'.svg')
-  command=[sys.executable,str(Path(__file__).with_name('vcd_to_svg.py')),'--vcd',str(vcd),'--signals',*[f'vga_uvm_top.bus.{p}' for p in ('clk','reset','sram_we','sram_addr*','sram_data_in*','hsync','vsync','active_video','red*','green*','blue*')],'--start',str(begin),'--end',str(finish),'--output',str(figure),'--origin','simulator','--title','Measured VGA '+name]
-  run=subprocess.run(command,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=90);figure.with_suffix('.log').write_bytes(run.stdout);assert run.returncode==0,run.stdout
-  meta=json.loads(figure.with_suffix('.json').read_bytes());assert meta['source_sha256']==sha(vcd.read_bytes())
-  waves.append(dict(name=name,test='functional',source_revision=result['source_revision'],capture=str(vcd),source_sha256=sha(vcd.read_bytes()),start_tick=begin,end_tick=finish,figure=figure.name,command=command,exit_code=run.returncode))
+  pins=[trace.signals['vga_uvm_top.bus.'+p] for p in selected[name]];source_hash=sha(vcd.read_bytes())
+  figure.write_text(render_svg(trace,pins,begin,finish,'Measured VGA '+name,'simulator',source_hash,vcd.name),encoding='utf-8')
+  meta=dict(origin='simulator',source_sha256=source_hash,source_filename=vcd.name,timescale=trace.timescale,start_tick=begin,end_tick=finish,source_final_tick=trace.last_tick,signals=[vars(s) for s in pins],public_bit_grouping=grouping,same_tick_collapses=trace.same_tick_collapses,functional_result='NOT_ASSESSED_BY_RENDERER',source_revision=result['source_revision'],command=[sys.executable,*sys.argv])
+  save(figure.with_suffix('.json'),meta)
+  waves.append(dict(name=name,test='functional',source_revision=result['source_revision'],capture=str(vcd),source_sha256=source_hash,start_tick=begin,end_tick=finish,figure=figure.name,command=[sys.executable,*sys.argv],renderer_sha256=sha(Path(__file__).read_bytes()),exit_code=0))
  save(a.output/'WAVEFORMS.json',waves)
  print(json.dumps(dict(status='PASS',frame_samples=420000,active_pixels=active,image_sha256=sha(png),waveforms=len(waves))))
 if __name__=='__main__':main()

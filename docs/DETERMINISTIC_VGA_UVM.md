@@ -73,6 +73,13 @@ are harness scheduling assumptions, not hardware timing guarantees.
 | Oracle/failure reliability | disposable fault children and actual production-predicate synthetic runner fixtures |
 
 Intended controls are recorded independently by the driver before actual drive.
+They travel on a separate UVM analysis port and are retained in `intents.csv`;
+the passive monitor reconstructs actual public input wires. Enabled clock-edge
+observations are retained in `accepted-writes.csv`. A separate Python interval
+model derives every intended rising-edge write from the drive windows and
+reconciles the entire accepted-record sequence, including held enables,
+invalid addresses and coincident reset. This audit checks timestamps, address,
+data, validity and reset classification, not only aggregate counts.
 The passive oracle compares the complete observed input window with that intent,
 then models public accepted writes. Held enable permits one write per clock.
 These are public write attempts/contract commits; an idempotent internal write

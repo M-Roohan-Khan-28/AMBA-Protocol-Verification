@@ -4,6 +4,7 @@ import argparse,copy,json
 from pathlib import Path
 from run_vga_uvm import qualify_fault
 from advanced_sim import digest,git
+from vga_write_receipts import reconcile
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--output',required=True,type=Path);a=ap.parse_args()
  assert not a.output.exists();a.output.mkdir(parents=True);repo=Path(__file__).resolve().parents[1]
@@ -55,6 +56,22 @@ def main():
  check('valid_missing_marker',True,marker,completed)
  check('missing_marker_without_completion',False,marker,'# VGA_RUN_ID '+nonce+'\n')
  check('extra_completion',False,marker,completed+completed.splitlines()[-1]+'\n')
+ intent=[(0,1,0,0,0),(7000,0,1,0,90),(32000,0,0,0,0)]
+ accepted=[(15000,0,0,90,1),(25000,0,0,90,1)]
+ def receipt(name,expect,i=intent,a=accepted):
+  try:reconcile(i,a,40000);actual=True
+  except (AssertionError,ValueError,IndexError,TypeError):actual=False
+  rows.append(dict(name='receipt_'+name,expected_accept=expect,accepted=actual,pass_=actual==expect))
+ receipt('valid_held_enable',True)
+ receipt('missing_held_write',False,a=accepted[:1])
+ receipt('extra_write',False,a=accepted+[(35000,0,0,90,1)])
+ receipt('address_alias',False,a=[(15000,0,256,90,1),accepted[1]])
+ receipt('wrong_data',False,a=[(15000,0,0,91,1),accepted[1]])
+ receipt('wrong_reset',False,a=[(15000,1,0,90,1),accepted[1]])
+ receipt('wrong_validity',False,a=[(15000,0,0,90,0),accepted[1]])
+ receipt('out_of_order',False,a=list(reversed(accepted)))
+ receipt('legal_coincident_reset',True,i=[*intent[:2],(15000,1,1,0,90),intent[-1]],a=[(15000,1,0,90,1),(25000,1,0,90,1)])
+ receipt('ambiguous_clock_data',False,i=[*intent[:2],(15000,0,1,0,91),intent[-1]],a=[(15000,0,0,91,1),(25000,0,0,91,1)])
  code=int(not all(r['pass_'] for r in rows))
  out=dict(kind='SYNTHETIC_RECORD_FIXTURES_NOT_INDUCED_CRASHES',status='FAIL' if code else 'PASS',exit_code=code,checks=len(rows),cases=rows,tested_environment=git(repo,'rev-parse','HEAD'),production_sha256=digest(repo/'scripts/run_vga_uvm.py'),qualification_sha256=digest(Path(__file__)))
  (a.output/'results.json').write_text(json.dumps(out,indent=2)+'\n',encoding='utf-8')

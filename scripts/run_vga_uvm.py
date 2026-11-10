@@ -4,6 +4,7 @@ import argparse,datetime,json,os,re,sys,time,uuid
 from pathlib import Path
 from advanced_sim import run,failure,digest,git,tool
 from vga_mutations import prepare,TRANSFORMS
+from vga_write_receipts import validate as validate_writes
 
 def qualify_fault(entry,outer,result,log,report,lock,nonce,expected_mutation=None):
  assert outer['exit_code']==1 and not outer['timed_out']
@@ -51,6 +52,8 @@ def validate_functional(result,entry,wd,log):
   assert row['reset_writes']<=row['valid_writes']+row['ignored_writes']
   rows.append(row)
  totals=json.loads((wd/'totals.json').read_bytes())
+ receipts=validate_writes(wd,totals['end_tick_ps'])
+ assert receipts['valid']==totals['writes'] and receipts['ignored']==totals['ignored']
  assert totals['cases']==len(rows)
  for key,source in [('observations','observations'),('comparisons','comparisons'),('clocks','clocks'),('writes','valid_writes'),('ignored','ignored_writes'),('frames','complete_frames')]:assert totals[key]==sum(r[source] for r in rows),(key,totals,rows)
  if entry['group']=='functional':
@@ -63,7 +66,7 @@ def validate_functional(result,entry,wd,log):
   assert all(n>0 for n in byname['divider_phase_writes']['phase_writes'])
   assert totals['frame_pixels']==420000 and (wd/'actual-frame.rgb444').stat().st_size==420000*4
   assert len(re.findall(r'^# VGA_FRAME_CAPTURE_PASS pixels=420000 time=',log,re.M))==1
- return dict(cases=rows,totals=totals)
+ return dict(cases=rows,totals=totals,write_receipts=receipts)
 
 def main():
  ap=argparse.ArgumentParser(description=__doc__)
@@ -83,7 +86,7 @@ def main():
  if a.raw_fault and (len(steps)!=1 or steps[0]['kind']!='fault'):ap.error('Raw fault requires one fault entry')
  out=a.output.resolve();out.mkdir(parents=True);start=time.monotonic();nonce=a.run_id or uuid.uuid4().hex
  report=dict(started_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),command=[sys.executable,*sys.argv],run_id=nonce,source_revision=git(repo,'rev-parse','HEAD'),expected_environment_revision=a.expected_env_sha,source_dirty=bool(git(repo,'status','--porcelain')),serial_execution=True,raw_fault=a.raw_fault,selection=a.select,seed=682016495,seed_hex='0x28A6BEEF',expected_inventory=names,required_selected=[s['name'] for s in steps],suites=[],aggregate_exit_code=1,milestone_pass=False,functional_coverage='NOT RUN',constrained_randomization='NOT RUN',original_advanced_alu_apb='NOT RUN')
- inputs=[*src.glob('*'),Path(__file__),repo/'scripts/vga_mutations.py',repo/'scripts/qualify_vga_runner.py',repo/'scripts/advanced_sim.py']
+ inputs=[*src.glob('*'),Path(__file__),repo/'scripts/vga_mutations.py',repo/'scripts/vga_write_receipts.py',repo/'scripts/qualify_vga_runner.py',repo/'scripts/advanced_sim.py']
  report['input_sha256']={p.relative_to(repo).as_posix():digest(p) for p in inputs if p.is_file()}
  report['runner_revision']=git(repo,'log','-1','--format=%H','--','scripts/run_vga_uvm.py');report['inventory_revision']=git(repo,'log','-1','--format=%H','--','verification/vga_uvm/inventory.json')
  report['configuration']=dict(sim_bin=str(a.sim_bin),uvm_lib=str(a.uvm_lib),uvm_include=str(a.uvm_include),timeout_per_command=a.timeout,raster_timeout=a.raster_timeout,global_timeout=a.global_timeout,python_version=sys.version,vendor_input_sha256={str(p):digest(p) for p in [a.uvm_include/'uvm_pkg.sv',a.uvm_include/'uvm_macros.svh',tool(a.sim_bin,'vlog'),tool(a.sim_bin,'vsim')] if p.is_file()})

@@ -3,9 +3,11 @@ package vga_uvm_pkg;
   import uvm_pkg::*;
   `include "uvm_macros.svh"
   `uvm_analysis_imp_decl(_verdict)
+  `uvm_analysis_imp_decl(_intent)
   typedef struct packed {
     bit rising,reset_rise,control_only,initial_sample;
-    logic [22:0] controls,intended;
+    logic [22:0] controls;
+    longint unsigned edge_time_ns;
     logic hs,vs,av;
     logic [11:0] rgb;
   } vga_observation;
@@ -59,19 +61,22 @@ package vga_uvm_pkg;
     `uvm_component_utils(vga_scoreboard)
     uvm_analysis_imp#(vga_observation,vga_scoreboard) observed;
     uvm_analysis_imp_verdict#(vga_observation,vga_scoreboard) verdict;
+    uvm_analysis_imp_intent#(logic[22:0],vga_scoreboard) intention;
+    logic [22:0] planned_controls={1'b1,22'd0};
     virtual vga_bus vif;
     vga_raster_model raster;
     vga_frame_model fb;
     vga_counts total,start_counts;
     string current_case="",pending_id="",pending_detail="";
-    int case_count=0,frame_fd=0,recorded_pixels=0;
+    int case_count=0,frame_fd=0,recorded_pixels=0,accepted_fd=0;
+    longint unsigned last_clock_edge_ps=0;
     bit record_frame=0,frame_started=0;
     bit address_seen[4800],color_seen[256];
     int distinct_addresses=0,distinct_colors=0;
     int phase_writes[4],start_phase_writes[4];
     bit line_complete=0,frame_complete=0;
     function new(string name,uvm_component parent);
-      super.new(name,parent);observed=new("observed",this);verdict=new("verdict",this);
+      super.new(name,parent);observed=new("observed",this);verdict=new("verdict",this);intention=new("intention",this);
       raster=new;fb=new;total='0;start_counts='0;
       foreach(address_seen[i])address_seen[i]=0;
       foreach(color_seen[i])color_seen[i]=0;
@@ -80,7 +85,11 @@ package vga_uvm_pkg;
     function void build_phase(uvm_phase phase);
       super.build_phase(phase);
       if(!uvm_config_db#(virtual vga_bus)::get(this,"","vif",vif))`uvm_fatal("VGA_CONFIG","vif missing")
+      accepted_fd=$fopen("accepted-writes.csv","w");
+      if(!accepted_fd)`uvm_fatal("VGA_IO","accepted-write log unavailable")
+      $fwrite(accepted_fd,"time_ps,reset,address,data,valid\n");
     endfunction
+    function void write_intent(logic[22:0] value);planned_controls=value;endfunction
     function void mark(input string name);
       if(current_case!="") finish_case();
       current_case=name;start_counts=total;distinct_addresses=0;distinct_colors=0;
@@ -119,13 +128,15 @@ package vga_uvm_pkg;
       logic[11:0] ergb;
       reset=o.controls[22];we=o.controls[21];address=o.controls[20:8];data=o.controls[7:0];
       pending_id="";pending_detail="";
-      if(o.controls!==o.intended) pending_id="VGA_INTENT";
+      if(o.controls!==planned_controls) pending_id="VGA_INTENT";
       total.observations++;total.comparisons+=6;
       if(o.initial_sample)total.initial_samples++;
       else if(o.rising)total.clocks++;else total.control_only++;
       old_d=raster.d;old_h=raster.h;old_v=raster.v;
+      if(o.rising)last_clock_edge_ps=o.edge_time_ns*1000;
       if(o.reset_rise)begin total.reset_edges++;line_complete=0;frame_complete=0;end
       if(o.rising && we)begin
+        $fwrite(accepted_fd,"%0d,%0d,%0d,%0d,%0d\n",o.edge_time_ns*1000,reset,address,data,address<4800);
         total.enabled_writes++;
         if(reset)total.reset_writes++;
         else phase_writes[old_d]++;
@@ -154,7 +165,7 @@ package vga_uvm_pkg;
         else if(!ea && o.rgb!==12'h0)pending_id="VGA_BLANK";
         else if(o.rgb!==ergb)pending_id="VGA_RGB";
       end
-      if(pending_id!="")pending_detail=$sformatf("case=%s h=%0d v=%0d div=%0d expected=%b%b%b/%h actual=%b%b%b/%h controls=%h intended=%h",current_case,raster.h,raster.v,raster.d,eh,ev,ea,ergb,o.hs,o.vs,o.av,o.rgb,o.controls,o.intended);
+      if(pending_id!="")pending_detail=$sformatf("case=%s h=%0d v=%0d div=%0d expected=%b%b%b/%h actual=%b%b%b/%h controls=%h intended=%h",current_case,raster.h,raster.v,raster.d,eh,ev,ea,ergb,o.hs,o.vs,o.av,o.rgb,o.controls,planned_controls);
       if(ea)begin
         if(!address_seen[index])begin address_seen[index]=1;distinct_addresses++;end
         if(!color_seen[p])begin color_seen[p]=1;distinct_colors++;end
@@ -184,7 +195,7 @@ package vga_uvm_pkg;
       finish_case();
       if(vif.assertion_detections!=0)`uvm_fatal("VGA_ASSERTION_COUNT","Unexpected assertion detection")
       fd=$fopen("totals.json","w");
-      $fwrite(fd,"{\"cases\":%0d,\"observations\":%0d,\"comparisons\":%0d,\"clocks\":%0d,\"writes\":%0d,\"ignored\":%0d,\"frames\":%0d,\"frame_pixels\":%0d,\"assertion_samples\":%0d,\"phase_writes\":[%0d,%0d,%0d,%0d]}\n",case_count,total.observations,total.comparisons,total.clocks,total.valid_writes,total.ignored_writes,total.complete_frames,recorded_pixels,vif.assertion_samples,phase_writes[0],phase_writes[1],phase_writes[2],phase_writes[3]);$fclose(fd);
+      $fwrite(fd,"{\"cases\":%0d,\"observations\":%0d,\"comparisons\":%0d,\"clocks\":%0d,\"writes\":%0d,\"ignored\":%0d,\"frames\":%0d,\"frame_pixels\":%0d,\"assertion_samples\":%0d,\"end_tick_ps\":%0d,\"last_clock_edge_ps\":%0d,\"phase_writes\":[%0d,%0d,%0d,%0d]}\n",case_count,total.observations,total.comparisons,total.clocks,total.valid_writes,total.ignored_writes,total.complete_frames,recorded_pixels,vif.assertion_samples,longint'($realtime*1000),last_clock_edge_ps,phase_writes[0],phase_writes[1],phase_writes[2],phase_writes[3]);$fclose(fd);$fclose(accepted_fd);
       $display("VGA_UVM_PASS cases=%0d observations=%0d comparisons=%0d assertions=0 seed=0x28A6BEEF",case_count,total.observations,total.comparisons);
     endfunction
   endclass
@@ -202,14 +213,22 @@ package vga_uvm_pkg;
   class vga_driver extends uvm_driver#(vga_item);
     `uvm_component_utils(vga_driver)
     virtual vga_bus vif;vga_scoreboard sb;bit driver_alias;
-    function new(string name,uvm_component parent);super.new(name,parent);endfunction
+    uvm_analysis_port#(logic[22:0]) intended;
+    int intent_fd=0;
+    function new(string name,uvm_component parent);super.new(name,parent);intended=new("intended",this);endfunction
     function void build_phase(uvm_phase phase);
       super.build_phase(phase);if(!uvm_config_db#(virtual vga_bus)::get(this,"","vif",vif))`uvm_fatal("VGA_CONFIG","vif missing")
       driver_alias=$test$plusargs("DRIVER_ALIAS");
+      intent_fd=$fopen("intents.csv","w");if(!intent_fd)`uvm_fatal("VGA_IO","intent log unavailable")
+      $fwrite(intent_fd,"time_ps,reset,we,address,data\n0,1,0,0,0\n");
+    endfunction
+    function void record_intent(input logic[22:0] ctrl);
+      intended.write(ctrl);
+      $fwrite(intent_fd,"%0t,%0d,%0d,%0d,%0d\n",$realtime,ctrl[22],ctrl[21],ctrl[20:8],ctrl[7:0]);
     endfunction
     function void drive(input bit reset,input bit we,input int addr,input int data);
       logic[22:0] ctrl;
-      ctrl={reset,we,13'(addr),8'(data)};vif.intended=ctrl;
+      ctrl={reset,we,13'(addr),8'(data)};record_intent(ctrl);
       if(driver_alias)ctrl[20:8]=ctrl[20:8]&13'hff;
       vif.controls=ctrl;
     endfunction
@@ -231,7 +250,7 @@ package vga_uvm_pkg;
           end
           COINCIDENT:begin
             @(negedge vif.clk);#2;drive(0,1,0,8'ha6);
-            @(posedge vif.clk);vif.intended={2'b11,13'd0,8'ha6};vif.controls<={2'b11,13'd0,8'ha6};#2;
+            @(posedge vif.clk);record_intent({2'b11,13'd0,8'ha6});vif.controls<={2'b11,13'd0,8'ha6};#2;
           end
           WAVE:begin
             vif.capture=req.a;
@@ -257,7 +276,7 @@ package vga_uvm_pkg;
       vga_observation o;
       logic [30:0] signature;bit evaluate;
       o.rising=rising;o.reset_rise=rr;o.initial_sample=initial_sample;o.control_only=!rising&&!initial_sample;
-      o.controls=vif.controls;o.intended=vif.intended;
+      o.controls={vif.reset,vif.sram_we,vif.sram_addr,vif.sram_data_in};o.edge_time_ns=$time;
       #0.999;
       o.hs=vif.hsync;o.vs=vif.vsync;o.av=vif.active_video;o.rgb={vif.red,vif.green,vif.blue};
       ap.write(o);
@@ -363,7 +382,7 @@ package vga_uvm_pkg;
       sequencer=vga_sequencer::type_id::create("sequencer",this);scoreboard=vga_scoreboard::type_id::create("scoreboard",this);
     endfunction
     function void connect_phase(uvm_phase phase);
-      driver.seq_item_port.connect(sequencer.seq_item_export);monitor.ap.connect(scoreboard.observed);monitor.checked.connect(scoreboard.verdict);driver.sb=scoreboard;
+      driver.seq_item_port.connect(sequencer.seq_item_export);monitor.ap.connect(scoreboard.observed);monitor.checked.connect(scoreboard.verdict);driver.intended.connect(scoreboard.intention);driver.sb=scoreboard;
     endfunction
   endclass
   class vga_test extends uvm_test;
