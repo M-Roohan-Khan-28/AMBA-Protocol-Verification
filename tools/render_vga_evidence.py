@@ -40,6 +40,24 @@ def main():
  scans=b''.join(b'\x00'+rgb[y*640*3:(y+1)*640*3] for y in range(480))
  png=b'\x89PNG\r\n\x1a\n'+chunk(b'IHDR',struct.pack('>IIBBBBB',640,480,8,2,0,0,0))+chunk(b'IDAT',zlib.compress(scans,9))+chunk(b'IEND',b'')
  image=a.output/'simulation-reconstructed-frame.png';image.write_bytes(png)
+ # Decode representative pixels back to RGB332 only for an independent artwork
+ # signature check. The PNG above is built exclusively from actual RGB samples.
+ atlas=bytearray();expected=bytearray()
+ for row in range(60):
+  for col in range(80):
+   i=((row*8)*800+col*8)*4;red,green,blue=raw[i:i+3]
+   assert red&1==red>>3 and green&1==green>>3 and blue in (0,5,10,15)
+   atlas.append((red//2)*32+(green//2)*4+blue//5)
+   p=224 if col<27 else (28 if col<54 else 3)
+   if row in range(24,35):
+    d=col==28 or (row in (24,34) and col in range(28,34)) or (col==34 and row in range(25,34))
+    letter_i=col==40 or (row in (24,34) and col in range(38,43))
+    letter_l=col==46 or (row==34 and col in range(46,53))
+    if d or letter_i or letter_l:p=255
+   expected.append(p)
+ assert atlas==expected
+ (a.output/'initial-framebuffer-from-pins.bin').write_bytes(atlas)
+ save(a.output/'initial-artwork-signature.json',dict(label='Initial three-band RGB332 background and retained DIL signature',actual_source='actual-frame.rgb444',actual_source_sha256=sha(raw),actual_decoded_framebuffer_sha256=sha(atlas),expected_specification_framebuffer_sha256=sha(expected),framebuffer_dimensions=[80,60],method='One recorded actual active pixel at each 8 by 8 cell origin, inverse RGB332 mapping; expected bytes independently constructed from the documented initial artwork. PNG pixels are never supplied by the expected atlas.'))
  start=int(re.search(r'^# VGA_FRAME_CAPTURE_START time=(\d+) clock=\d+',log,re.M)[1]);end=int(re.search(r'^# VGA_FRAME_CAPTURE_PASS pixels=420000 time=(\d+)',log,re.M)[1]);assert end-start==(420000-1)*40000
  save(image.with_suffix('.json'),dict(label='simulation-reconstructed frame',source=str(f/'actual-frame.rgb444'),source_sha256=sha(raw),source_representation='four exact actual-pin bytes per raster sample: R4 G4 B4 {HS,VS,ACTIVE}',image_sha256=sha(png),image_dimensions=[640,480],raster_dimensions=[800,525],sample_phase='first rising input clock of each raster pixel (post-model divider=1), output captured +1 ns after edge',input_period_ns=10,sample_period_ns=40,start_tick_ps=start,end_tick_ps=end,conversion='each observed 4-bit channel multiplied by 17',active_samples=active,hsync_low_samples=hs,vsync_low_samples=vs,source_revision=result['source_revision'],renderer_sha256=sha(Path(__file__).read_bytes()),command=[sys.executable,*sys.argv]))
  waves=[];vcd=f/'pins.vcd';assert vcd.is_file() and vcd.stat().st_size

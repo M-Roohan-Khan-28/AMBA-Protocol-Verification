@@ -89,6 +89,17 @@ Complete reset-aligned lines/frames are counted independently of partial reset
 intervals. Input clocks, advances, once-per-pixel samples, active samples, write
 attempts, and six-pin-group comparisons are separate measurements, not coverage.
 
+The required measured-evidence substep renders five bounded public-pin VCD
+windows and one **simulation-reconstructed frame** from the actual recorded
+R4/G4/B4/HS/VS/active bytes. It samples the first rising clock per raster pixel
+(post-divider phase 1), at the same +1 ns output observation. Display channels
+are each multiplied by 17 to map 4-bit values to 8-bit image channels. Scalar
+public VCD bits are grouped for readable bus displays without rewriting the
+capture. Metadata records every source hash, test, window and grouping.
+The original DIL initialization is additionally checked by a specification
+checksum against RGB332 bytes decoded from actual cell-origin pixels. Expected
+bytes do not supply the measured image. Missing/invalid evidence fails the runner.
+
 ## Qualification policy and limits
 
 Synthetic controls exercise the exact concurrent assertion module with legal or

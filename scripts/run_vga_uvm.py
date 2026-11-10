@@ -86,7 +86,7 @@ def main():
  if a.raw_fault and (len(steps)!=1 or steps[0]['kind']!='fault'):ap.error('Raw fault requires one fault entry')
  out=a.output.resolve();out.mkdir(parents=True);start=time.monotonic();nonce=a.run_id or uuid.uuid4().hex
  report=dict(started_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),command=[sys.executable,*sys.argv],run_id=nonce,source_revision=git(repo,'rev-parse','HEAD'),expected_environment_revision=a.expected_env_sha,source_dirty=bool(git(repo,'status','--porcelain')),serial_execution=True,raw_fault=a.raw_fault,selection=a.select,seed=682016495,seed_hex='0x28A6BEEF',expected_inventory=names,required_selected=[s['name'] for s in steps],suites=[],aggregate_exit_code=1,milestone_pass=False,functional_coverage='NOT RUN',constrained_randomization='NOT RUN',original_advanced_alu_apb='NOT RUN')
- inputs=[*src.glob('*'),Path(__file__),repo/'scripts/vga_mutations.py',repo/'scripts/vga_write_receipts.py',repo/'scripts/qualify_vga_runner.py',repo/'scripts/advanced_sim.py']
+ inputs=[*src.glob('*'),Path(__file__),repo/'scripts/vga_mutations.py',repo/'scripts/vga_write_receipts.py',repo/'scripts/qualify_vga_runner.py',repo/'scripts/advanced_sim.py',repo/'tools/render_vga_evidence.py',repo/'tools/vcd_to_svg.py']
  report['input_sha256']={p.relative_to(repo).as_posix():digest(p) for p in inputs if p.is_file()}
  report['runner_revision']=git(repo,'log','-1','--format=%H','--','scripts/run_vga_uvm.py');report['inventory_revision']=git(repo,'log','-1','--format=%H','--','verification/vga_uvm/inventory.json')
  report['configuration']=dict(sim_bin=str(a.sim_bin),uvm_lib=str(a.uvm_lib),uvm_include=str(a.uvm_include),timeout_per_command=a.timeout,raster_timeout=a.raster_timeout,global_timeout=a.global_timeout,python_version=sys.version,vendor_input_sha256={str(p):digest(p) for p in [a.uvm_include/'uvm_pkg.sv',a.uvm_include/'uvm_macros.svh',tool(a.sim_bin,'vlog'),tool(a.sim_bin,'vsim')] if p.is_file()})
@@ -129,6 +129,15 @@ def main():
     assert 'VGA_RASTER_PASS checks=29588940 ' in sims[2]['marker']
     assert len(re.findall(r'^VGA_RASTER_REGRESSION_PASS output=',t,re.M))==1
     s.update(status='PASS',reason='EXECUTED',result=r)
+   elif e['kind']=='evidence':
+    assert next(x for x in report['suites'] if x['name']=='functional')['status']=='PASS'
+    c,t=invoke([sys.executable,str(repo/'tools/render_vga_evidence.py'),'--run',str(out),'--output',str(wd/'figures')],repo,wd/'render.log',180);s['commands'].append(c)
+    assert not failure(c,t)
+    figures=wd/'figures';waves=json.loads((figures/'WAVEFORMS.json').read_bytes());frame=json.loads((figures/'simulation-reconstructed-frame.json').read_bytes())
+    assert len(waves)==5 and {x['name'] for x in waves}=={'horizontal','vertical_sync','frame_wrap','current_pixel','async_reset'}
+    assert frame['source_revision']==report['source_revision'] and frame['source_sha256']==digest(out/'functional/actual-frame.rgb444') and frame['image_sha256']==digest(figures/'simulation-reconstructed-frame.png')
+    for wave in waves:assert wave['source_revision']==report['source_revision'] and wave['source_sha256']==digest(out/'functional/pins.vcd') and wave['exit_code']==0
+    s.update(status='PASS',reason='ACTUAL_PIN_EVIDENCE',waveforms=waves,frame=frame)
    elif e['kind']=='fault' and not a.raw_fault:
     child_nonce=uuid.uuid4().hex
     cmd=[sys.executable,str(Path(__file__)),'--output',str(wd/'child'),'--expected-env-sha',report['source_revision'],'--select',e['name'],'--raw-fault','--run-id',child_nonce,'--source-cache',str(source),'--sim-bin',str(a.sim_bin),'--uvm-lib',str(a.uvm_lib),'--uvm-include',str(a.uvm_include),'--raster-timeout',str(a.raster_timeout)]
