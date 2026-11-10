@@ -1,0 +1,2556 @@
+{
+  "policy": "Exact original capture/log bytes preserved; scoped -text; no transformation or simulation-behavior claim.",
+  "tested_source": "b9c35a85113c99715ede572ab1f5dd94574b23e6",
+  "artifacts": [
+    {
+      "path": "run/fault-corrupted_data/child/fault-corrupted_data/0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-corrupted_data\\child\\fault-corrupted_data\\0.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-corrupted_data/child/fault-corrupted_data/1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-corrupted_data\\child\\fault-corrupted_data\\1.log",
+      "original_sha256": "54b504ac9e463d8344928de6c018c6d5c20ab0f77cad36b4dd9e0dfafb673136",
+      "sha256": "54b504ac9e463d8344928de6c018c6d5c20ab0f77cad36b4dd9e0dfafb673136",
+      "bytes": 1185,
+      "crlf": 16,
+      "lf": 16,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-corrupted_data/child/fault-corrupted_data/2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-corrupted_data\\child\\fault-corrupted_data\\2.log",
+      "original_sha256": "8c9d1bc05fbaa8b465c3b81e0a81f9740fe8e0fb4ce159a370770e6ef7591cdc",
+      "sha256": "8c9d1bc05fbaa8b465c3b81e0a81f9740fe8e0fb4ce159a370770e6ef7591cdc",
+      "bytes": 4646,
+      "crlf": 88,
+      "lf": 88,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-corrupted_data/child/fault-corrupted_data/capture.vcd",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-corrupted_data\\child\\fault-corrupted_data\\capture.vcd",
+      "original_sha256": "8d8ac51c43f5ae82838b1b860fd64adf6fd35dbceb4ddff92334d5bbd21dc52b",
+      "sha256": "8d8ac51c43f5ae82838b1b860fd64adf6fd35dbceb4ddff92334d5bbd21dc52b",
+      "bytes": 1145,
+      "crlf": 81,
+      "lf": 81,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-corrupted_data/child/fault-corrupted_data/disposable-rtl/design.sv",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-corrupted_data\\child\\fault-corrupted_data\\disposable-rtl\\design.sv",
+      "original_sha256": "6745768d009f06e439742265c280218ea65a4cb452e7fcb2300b5a43a9caeed8",
+      "sha256": "6745768d009f06e439742265c280218ea65a4cb452e7fcb2300b5a43a9caeed8",
+      "bytes": 1313,
+      "crlf": 0,
+      "lf": 77,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-corrupted_data/child/fault-corrupted_data/program.txt",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-corrupted_data\\child\\fault-corrupted_data\\program.txt",
+      "original_sha256": "9f80617245b5bd98d45477de740149d56990ae36f6d665617490773f1a9a4dfb",
+      "sha256": "9f80617245b5bd98d45477de740149d56990ae36f6d665617490773f1a9a4dfb",
+      "bytes": 608,
+      "crlf": 0,
+      "lf": 44,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-corrupted_data/child/fault-corrupted_data/tr_db.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-corrupted_data\\child\\fault-corrupted_data\\tr_db.log",
+      "original_sha256": "83520c06effe6e69ea57fb5edb4e2e9ea699261679d1db190c66dbfb9eaf79ae",
+      "sha256": "83520c06effe6e69ea57fb5edb4e2e9ea699261679d1db190c66dbfb9eaf79ae",
+      "bytes": 100,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-corrupted_data/child/results.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-corrupted_data\\child\\results.json",
+      "original_sha256": "00f9f7ada268190432036c1bc6cd3c30d18d08f999c7c338dea151c61fe3cbd0",
+      "sha256": "00f9f7ada268190432036c1bc6cd3c30d18d08f999c7c338dea151c61fe3cbd0",
+      "bytes": 12019,
+      "crlf": 283,
+      "lf": 283,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-corrupted_data/child/source-0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-corrupted_data\\child\\source-0.log",
+      "original_sha256": "2128a37863404e3087cd86bd82e5001b25999be07f89aedacc28e7335b02240c",
+      "sha256": "2128a37863404e3087cd86bd82e5001b25999be07f89aedacc28e7335b02240c",
+      "bytes": 580,
+      "crlf": 0,
+      "lf": 17,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-corrupted_data/child/source-1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-corrupted_data\\child\\source-1.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-corrupted_data/child/source-2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-corrupted_data\\child\\source-2.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-corrupted_data/child/version.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-corrupted_data\\child\\version.log",
+      "original_sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "bytes": 83,
+      "crlf": 2,
+      "lf": 2,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-corrupted_data/child-wrapper.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-corrupted_data\\child-wrapper.log",
+      "original_sha256": "b24a4fc071081b1cd891fd89e5a4fc268613e13e08151dde66507c15e0977191",
+      "sha256": "b24a4fc071081b1cd891fd89e5a4fc268613e13e08151dde66507c15e0977191",
+      "bytes": 54,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-false_hit/child/fault-false_hit/0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-false_hit\\child\\fault-false_hit\\0.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-false_hit/child/fault-false_hit/1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-false_hit\\child\\fault-false_hit\\1.log",
+      "original_sha256": "60eb3466f640845c5b7e9c03d4e0341af566d1e104ea47ab81cab4e774da0a9a",
+      "sha256": "60eb3466f640845c5b7e9c03d4e0341af566d1e104ea47ab81cab4e774da0a9a",
+      "bytes": 1175,
+      "crlf": 16,
+      "lf": 16,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-false_hit/child/fault-false_hit/2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-false_hit\\child\\fault-false_hit\\2.log",
+      "original_sha256": "cf3e5b6bc36966b49072691ed5a8aa5d07a4c45d291e71b80a2d4601cdc7d4e1",
+      "sha256": "cf3e5b6bc36966b49072691ed5a8aa5d07a4c45d291e71b80a2d4601cdc7d4e1",
+      "bytes": 4632,
+      "crlf": 88,
+      "lf": 88,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-false_hit/child/fault-false_hit/capture.vcd",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-false_hit\\child\\fault-false_hit\\capture.vcd",
+      "original_sha256": "54f75af58e31012294c33332b8087e1b310d956e7e87795d92b8497db44b9f76",
+      "sha256": "54f75af58e31012294c33332b8087e1b310d956e7e87795d92b8497db44b9f76",
+      "bytes": 1020,
+      "crlf": 64,
+      "lf": 64,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-false_hit/child/fault-false_hit/disposable-rtl/design.sv",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-false_hit\\child\\fault-false_hit\\disposable-rtl\\design.sv",
+      "original_sha256": "bba060fd2473d1559a64a1fa7b80b0ac4162ff27a7dc1a61fdfd53697f416b7a",
+      "sha256": "bba060fd2473d1559a64a1fa7b80b0ac4162ff27a7dc1a61fdfd53697f416b7a",
+      "bytes": 1305,
+      "crlf": 0,
+      "lf": 77,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-false_hit/child/fault-false_hit/program.txt",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-false_hit\\child\\fault-false_hit\\program.txt",
+      "original_sha256": "9f80617245b5bd98d45477de740149d56990ae36f6d665617490773f1a9a4dfb",
+      "sha256": "9f80617245b5bd98d45477de740149d56990ae36f6d665617490773f1a9a4dfb",
+      "bytes": 608,
+      "crlf": 0,
+      "lf": 44,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-false_hit/child/fault-false_hit/tr_db.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-false_hit\\child\\fault-false_hit\\tr_db.log",
+      "original_sha256": "83520c06effe6e69ea57fb5edb4e2e9ea699261679d1db190c66dbfb9eaf79ae",
+      "sha256": "83520c06effe6e69ea57fb5edb4e2e9ea699261679d1db190c66dbfb9eaf79ae",
+      "bytes": 100,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-false_hit/child/results.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-false_hit\\child\\results.json",
+      "original_sha256": "5cc21de4bb83855f6106943440ccfa5bde2dfbfeeba6f054b81a885b78ee9365",
+      "sha256": "5cc21de4bb83855f6106943440ccfa5bde2dfbfeeba6f054b81a885b78ee9365",
+      "bytes": 11904,
+      "crlf": 283,
+      "lf": 283,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-false_hit/child/source-0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-false_hit\\child\\source-0.log",
+      "original_sha256": "2128a37863404e3087cd86bd82e5001b25999be07f89aedacc28e7335b02240c",
+      "sha256": "2128a37863404e3087cd86bd82e5001b25999be07f89aedacc28e7335b02240c",
+      "bytes": 580,
+      "crlf": 0,
+      "lf": 17,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-false_hit/child/source-1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-false_hit\\child\\source-1.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-false_hit/child/source-2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-false_hit\\child\\source-2.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-false_hit/child/version.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-false_hit\\child\\version.log",
+      "original_sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "bytes": 83,
+      "crlf": 2,
+      "lf": 2,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-false_hit/child-wrapper.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-false_hit\\child-wrapper.log",
+      "original_sha256": "4981593836d2cac11186c2f0e8fc8e9edc7831aaa55f001d12eeec9dc7024931",
+      "sha256": "4981593836d2cac11186c2f0e8fc8e9edc7831aaa55f001d12eeec9dc7024931",
+      "bytes": 49,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-forbidden_reset_write/child/fault-forbidden_reset_write/0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-forbidden_reset_write\\child\\fault-forbidden_reset_write\\0.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-forbidden_reset_write/child/fault-forbidden_reset_write/1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-forbidden_reset_write\\child\\fault-forbidden_reset_write\\1.log",
+      "original_sha256": "b66415faf03b98480153fe5d8aedc631c01566b4b5fcb6f3a8f477ce311c1090",
+      "sha256": "b66415faf03b98480153fe5d8aedc631c01566b4b5fcb6f3a8f477ce311c1090",
+      "bytes": 1199,
+      "crlf": 16,
+      "lf": 16,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-forbidden_reset_write/child/fault-forbidden_reset_write/2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-forbidden_reset_write\\child\\fault-forbidden_reset_write\\2.log",
+      "original_sha256": "29987f021000ea813d52a38bb8a939641540b34d9d3fbf1081285fd43310f800",
+      "sha256": "29987f021000ea813d52a38bb8a939641540b34d9d3fbf1081285fd43310f800",
+      "bytes": 4672,
+      "crlf": 88,
+      "lf": 88,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-forbidden_reset_write/child/fault-forbidden_reset_write/capture.vcd",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-forbidden_reset_write\\child\\fault-forbidden_reset_write\\capture.vcd",
+      "original_sha256": "caf20fa9bf964ccc2d1e8ee6a968eee4436f2e29b387a84e773750975e4d8996",
+      "sha256": "caf20fa9bf964ccc2d1e8ee6a968eee4436f2e29b387a84e773750975e4d8996",
+      "bytes": 1318,
+      "crlf": 108,
+      "lf": 108,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-forbidden_reset_write/child/fault-forbidden_reset_write/disposable-rtl/design.sv",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-forbidden_reset_write\\child\\fault-forbidden_reset_write\\disposable-rtl\\design.sv",
+      "original_sha256": "685200bf4e29bf993f9134e1e6ae02ac8e556cfcc906163aa95f9698c6bb62d4",
+      "sha256": "685200bf4e29bf993f9134e1e6ae02ac8e556cfcc906163aa95f9698c6bb62d4",
+      "bytes": 1315,
+      "crlf": 0,
+      "lf": 77,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-forbidden_reset_write/child/fault-forbidden_reset_write/program.txt",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-forbidden_reset_write\\child\\fault-forbidden_reset_write\\program.txt",
+      "original_sha256": "512e550a1d1d38a8eff26dab8e09259a617881615c8df2d31be7196887ba291a",
+      "sha256": "512e550a1d1d38a8eff26dab8e09259a617881615c8df2d31be7196887ba291a",
+      "bytes": 1004,
+      "crlf": 0,
+      "lf": 46,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-forbidden_reset_write/child/fault-forbidden_reset_write/tr_db.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-forbidden_reset_write\\child\\fault-forbidden_reset_write\\tr_db.log",
+      "original_sha256": "83520c06effe6e69ea57fb5edb4e2e9ea699261679d1db190c66dbfb9eaf79ae",
+      "sha256": "83520c06effe6e69ea57fb5edb4e2e9ea699261679d1db190c66dbfb9eaf79ae",
+      "bytes": 100,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-forbidden_reset_write/child/results.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-forbidden_reset_write\\child\\results.json",
+      "original_sha256": "46e50a0b2d993d5f85283761264336cb3e7a44416fd7103715d4a1408170e35c",
+      "sha256": "46e50a0b2d993d5f85283761264336cb3e7a44416fd7103715d4a1408170e35c",
+      "bytes": 12188,
+      "crlf": 283,
+      "lf": 283,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-forbidden_reset_write/child/source-0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-forbidden_reset_write\\child\\source-0.log",
+      "original_sha256": "2128a37863404e3087cd86bd82e5001b25999be07f89aedacc28e7335b02240c",
+      "sha256": "2128a37863404e3087cd86bd82e5001b25999be07f89aedacc28e7335b02240c",
+      "bytes": 580,
+      "crlf": 0,
+      "lf": 17,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-forbidden_reset_write/child/source-1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-forbidden_reset_write\\child\\source-1.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-forbidden_reset_write/child/source-2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-forbidden_reset_write\\child\\source-2.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-forbidden_reset_write/child/version.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-forbidden_reset_write\\child\\version.log",
+      "original_sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "bytes": 83,
+      "crlf": 2,
+      "lf": 2,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-forbidden_reset_write/child-wrapper.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-forbidden_reset_write\\child-wrapper.log",
+      "original_sha256": "06696b66a3c634fb0a0b0785ec08bc3ceac8cd6f2e40ecdbf3b01fdf542f1ff6",
+      "sha256": "06696b66a3c634fb0a0b0785ec08bc3ceac8cd6f2e40ecdbf3b01fdf542f1ff6",
+      "bytes": 61,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_marker/child/fault-missing_marker/0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_marker\\child\\fault-missing_marker\\0.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_marker/child/fault-missing_marker/1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_marker\\child\\fault-missing_marker\\1.log",
+      "original_sha256": "f4a2a924f0e47832af2d451da981bb221b016f6dc101b2d510b0e049d09d1ab0",
+      "sha256": "f4a2a924f0e47832af2d451da981bb221b016f6dc101b2d510b0e049d09d1ab0",
+      "bytes": 1160,
+      "crlf": 16,
+      "lf": 16,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_marker/child/fault-missing_marker/2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_marker\\child\\fault-missing_marker\\2.log",
+      "original_sha256": "6df7f084d02e380c6fc3c59034abb7b61a23f6acaa7f60e432efeeffcd899ec1",
+      "sha256": "6df7f084d02e380c6fc3c59034abb7b61a23f6acaa7f60e432efeeffcd899ec1",
+      "bytes": 4736,
+      "crlf": 90,
+      "lf": 90,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_marker/child/fault-missing_marker/capture.vcd",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_marker\\child\\fault-missing_marker\\capture.vcd",
+      "original_sha256": "37938bcc75de4eb2245bb146cea64779cd4b0e85fef265db5230a294c1eb184d",
+      "sha256": "37938bcc75de4eb2245bb146cea64779cd4b0e85fef265db5230a294c1eb184d",
+      "bytes": 2510,
+      "crlf": 252,
+      "lf": 252,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_marker/child/fault-missing_marker/case-smoke.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_marker\\child\\fault-missing_marker\\case-smoke.json",
+      "original_sha256": "3cbf564ab81393c903e9a093eec1f80d2f5f44afccd47155641679a03130c3ab",
+      "sha256": "3cbf564ab81393c903e9a093eec1f80d2f5f44afccd47155641679a03130c3ab",
+      "bytes": 139,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_marker/child/fault-missing_marker/program.txt",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_marker\\child\\fault-missing_marker\\program.txt",
+      "original_sha256": "9f80617245b5bd98d45477de740149d56990ae36f6d665617490773f1a9a4dfb",
+      "sha256": "9f80617245b5bd98d45477de740149d56990ae36f6d665617490773f1a9a4dfb",
+      "bytes": 608,
+      "crlf": 0,
+      "lf": 44,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_marker/child/fault-missing_marker/tr_db.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_marker\\child\\fault-missing_marker\\tr_db.log",
+      "original_sha256": "83520c06effe6e69ea57fb5edb4e2e9ea699261679d1db190c66dbfb9eaf79ae",
+      "sha256": "83520c06effe6e69ea57fb5edb4e2e9ea699261679d1db190c66dbfb9eaf79ae",
+      "bytes": 100,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_marker/child/results.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_marker\\child\\results.json",
+      "original_sha256": "2f7d431b20cc58c8e09ed7fc32f39ac579e52aa27e9afa09b8fa7ebdfe7feeaf",
+      "sha256": "2f7d431b20cc58c8e09ed7fc32f39ac579e52aa27e9afa09b8fa7ebdfe7feeaf",
+      "bytes": 11625,
+      "crlf": 276,
+      "lf": 276,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_marker/child/source-0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_marker\\child\\source-0.log",
+      "original_sha256": "2128a37863404e3087cd86bd82e5001b25999be07f89aedacc28e7335b02240c",
+      "sha256": "2128a37863404e3087cd86bd82e5001b25999be07f89aedacc28e7335b02240c",
+      "bytes": 580,
+      "crlf": 0,
+      "lf": 17,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_marker/child/source-1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_marker\\child\\source-1.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_marker/child/source-2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_marker\\child\\source-2.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_marker/child/version.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_marker\\child\\version.log",
+      "original_sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "bytes": 83,
+      "crlf": 2,
+      "lf": 2,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_marker/child-wrapper.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_marker\\child-wrapper.log",
+      "original_sha256": "cdc9a9ca56e402d64da9a050675fb426602c39b238c1f2f65321591749e1e1c9",
+      "sha256": "cdc9a9ca56e402d64da9a050675fb426602c39b238c1f2f65321591749e1e1c9",
+      "bytes": 49,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_reset/child/fault-missing_reset/0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_reset\\child\\fault-missing_reset\\0.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_reset/child/fault-missing_reset/1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_reset\\child\\fault-missing_reset\\1.log",
+      "original_sha256": "49ee4d412e42cb8c6c8f319bbba4ef49c6bfa1ad9a9bb27d9132a75c1b04f232",
+      "sha256": "49ee4d412e42cb8c6c8f319bbba4ef49c6bfa1ad9a9bb27d9132a75c1b04f232",
+      "bytes": 1183,
+      "crlf": 16,
+      "lf": 16,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_reset/child/fault-missing_reset/2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_reset\\child\\fault-missing_reset\\2.log",
+      "original_sha256": "2bc523f53550be6f74d7c445a12b58518a415d3e197022f73bb95a3b0d37c1eb",
+      "sha256": "2bc523f53550be6f74d7c445a12b58518a415d3e197022f73bb95a3b0d37c1eb",
+      "bytes": 4661,
+      "crlf": 88,
+      "lf": 88,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_reset/child/fault-missing_reset/capture.vcd",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_reset\\child\\fault-missing_reset\\capture.vcd",
+      "original_sha256": "786e15f13f100811d3b98835ab36e2c84e8b7c3cfdace04d2f80e37a795ed91c",
+      "sha256": "786e15f13f100811d3b98835ab36e2c84e8b7c3cfdace04d2f80e37a795ed91c",
+      "bytes": 3626,
+      "crlf": 407,
+      "lf": 407,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_reset/child/fault-missing_reset/disposable-rtl/design.sv",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_reset\\child\\fault-missing_reset\\disposable-rtl\\design.sv",
+      "original_sha256": "65912afc841f6992965fe1b7c66e978f18c68a4b70b4a11e63cdff20b2f0cfc0",
+      "sha256": "65912afc841f6992965fe1b7c66e978f18c68a4b70b4a11e63cdff20b2f0cfc0",
+      "bytes": 1312,
+      "crlf": 0,
+      "lf": 77,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_reset/child/fault-missing_reset/program.txt",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_reset\\child\\fault-missing_reset\\program.txt",
+      "original_sha256": "45369250b866f678236f1c5b2ed958ad9f011e355ef687e1e85f875c5ef9a391",
+      "sha256": "45369250b866f678236f1c5b2ed958ad9f011e355ef687e1e85f875c5ef9a391",
+      "bytes": 6248,
+      "crlf": 0,
+      "lf": 272,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_reset/child/fault-missing_reset/tr_db.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_reset\\child\\fault-missing_reset\\tr_db.log",
+      "original_sha256": "83520c06effe6e69ea57fb5edb4e2e9ea699261679d1db190c66dbfb9eaf79ae",
+      "sha256": "83520c06effe6e69ea57fb5edb4e2e9ea699261679d1db190c66dbfb9eaf79ae",
+      "bytes": 100,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_reset/child/results.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_reset\\child\\results.json",
+      "original_sha256": "ec8c85eca8a43f4162433f472aa34e6c2ce5ab170bc1cc7d91acb7eca9259426",
+      "sha256": "ec8c85eca8a43f4162433f472aa34e6c2ce5ab170bc1cc7d91acb7eca9259426",
+      "bytes": 12012,
+      "crlf": 283,
+      "lf": 283,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_reset/child/source-0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_reset\\child\\source-0.log",
+      "original_sha256": "2128a37863404e3087cd86bd82e5001b25999be07f89aedacc28e7335b02240c",
+      "sha256": "2128a37863404e3087cd86bd82e5001b25999be07f89aedacc28e7335b02240c",
+      "bytes": 580,
+      "crlf": 0,
+      "lf": 17,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_reset/child/source-1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_reset\\child\\source-1.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_reset/child/source-2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_reset\\child\\source-2.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_reset/child/version.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_reset\\child\\version.log",
+      "original_sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "bytes": 83,
+      "crlf": 2,
+      "lf": 2,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-missing_reset/child-wrapper.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-missing_reset\\child-wrapper.log",
+      "original_sha256": "b3695cf83a1892f725a4777e0e438fd924b54d7f95ec1110d52dd5f281fddcc1",
+      "sha256": "b3695cf83a1892f725a4777e0e438fd924b54d7f95ec1110d52dd5f281fddcc1",
+      "bytes": 53,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_priority/child/fault-wrong_priority/0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_priority\\child\\fault-wrong_priority\\0.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_priority/child/fault-wrong_priority/1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_priority\\child\\fault-wrong_priority\\1.log",
+      "original_sha256": "d0d01117aae406221f5c2826d3167c5136b92ae4b43b34a03a832df0b44bc306",
+      "sha256": "d0d01117aae406221f5c2826d3167c5136b92ae4b43b34a03a832df0b44bc306",
+      "bytes": 1185,
+      "crlf": 16,
+      "lf": 16,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_priority/child/fault-wrong_priority/2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_priority\\child\\fault-wrong_priority\\2.log",
+      "original_sha256": "e8896ecfbd2f84d6f15dabd59c47e9772be0b48ef2bda18ff4bfa030aeec9f1e",
+      "sha256": "e8896ecfbd2f84d6f15dabd59c47e9772be0b48ef2bda18ff4bfa030aeec9f1e",
+      "bytes": 4658,
+      "crlf": 88,
+      "lf": 88,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_priority/child/fault-wrong_priority/capture.vcd",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_priority\\child\\fault-wrong_priority\\capture.vcd",
+      "original_sha256": "963d3c096ec875e08b2d022070b2d1e0c40462f67ec9a5b31316a893754af0c4",
+      "sha256": "963d3c096ec875e08b2d022070b2d1e0c40462f67ec9a5b31316a893754af0c4",
+      "bytes": 1290,
+      "crlf": 101,
+      "lf": 101,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_priority/child/fault-wrong_priority/disposable-rtl/design.sv",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_priority\\child\\fault-wrong_priority\\disposable-rtl\\design.sv",
+      "original_sha256": "92e8da757dae3d723b92047294e9042bb9cf1a76658f02dba56c3b7273e1ff84",
+      "sha256": "92e8da757dae3d723b92047294e9042bb9cf1a76658f02dba56c3b7273e1ff84",
+      "bytes": 1305,
+      "crlf": 0,
+      "lf": 77,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_priority/child/fault-wrong_priority/program.txt",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_priority\\child\\fault-wrong_priority\\program.txt",
+      "original_sha256": "de7efa76ed2d8c882ac245f96afb25fbc4b55d500e6dd301a69ab2d683a3ec66",
+      "sha256": "de7efa76ed2d8c882ac245f96afb25fbc4b55d500e6dd301a69ab2d683a3ec66",
+      "bytes": 352,
+      "crlf": 0,
+      "lf": 18,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_priority/child/fault-wrong_priority/tr_db.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_priority\\child\\fault-wrong_priority\\tr_db.log",
+      "original_sha256": "83520c06effe6e69ea57fb5edb4e2e9ea699261679d1db190c66dbfb9eaf79ae",
+      "sha256": "83520c06effe6e69ea57fb5edb4e2e9ea699261679d1db190c66dbfb9eaf79ae",
+      "bytes": 100,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_priority/child/results.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_priority\\child\\results.json",
+      "original_sha256": "cab1173c6427df1c2bff2ca240d9535174f6f811a0e4fa8c93b47ba06baeae4f",
+      "sha256": "cab1173c6427df1c2bff2ca240d9535174f6f811a0e4fa8c93b47ba06baeae4f",
+      "bytes": 12025,
+      "crlf": 283,
+      "lf": 283,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_priority/child/source-0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_priority\\child\\source-0.log",
+      "original_sha256": "2128a37863404e3087cd86bd82e5001b25999be07f89aedacc28e7335b02240c",
+      "sha256": "2128a37863404e3087cd86bd82e5001b25999be07f89aedacc28e7335b02240c",
+      "bytes": 580,
+      "crlf": 0,
+      "lf": 17,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_priority/child/source-1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_priority\\child\\source-1.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_priority/child/source-2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_priority\\child\\source-2.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_priority/child/version.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_priority\\child\\version.log",
+      "original_sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "bytes": 83,
+      "crlf": 2,
+      "lf": 2,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_priority/child-wrapper.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_priority\\child-wrapper.log",
+      "original_sha256": "ba45bce984889f41700b1f6d3cc86aff513673ccbdfffe91bc538c8bceb35fab",
+      "sha256": "ba45bce984889f41700b1f6d3cc86aff513673ccbdfffe91bc538c8bceb35fab",
+      "bytes": 54,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_set/child/fault-wrong_set/0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_set\\child\\fault-wrong_set\\0.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_set/child/fault-wrong_set/1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_set\\child\\fault-wrong_set\\1.log",
+      "original_sha256": "fba7ef65b2de82e4cd26fa1aa60d77b33fc943bcefb38354875ef0c22ac46911",
+      "sha256": "fba7ef65b2de82e4cd26fa1aa60d77b33fc943bcefb38354875ef0c22ac46911",
+      "bytes": 1175,
+      "crlf": 16,
+      "lf": 16,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_set/child/fault-wrong_set/2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_set\\child\\fault-wrong_set\\2.log",
+      "original_sha256": "3975dc36461e87b56b9f73dd37c2712011831aeb19afaf9a8fce3110287b0449",
+      "sha256": "3975dc36461e87b56b9f73dd37c2712011831aeb19afaf9a8fce3110287b0449",
+      "bytes": 4632,
+      "crlf": 88,
+      "lf": 88,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_set/child/fault-wrong_set/capture.vcd",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_set\\child\\fault-wrong_set\\capture.vcd",
+      "original_sha256": "5351a48d7cfc13ffafded65a288839f19c56a5e626abb10ab86688af4ce2aacd",
+      "sha256": "5351a48d7cfc13ffafded65a288839f19c56a5e626abb10ab86688af4ce2aacd",
+      "bytes": 1128,
+      "crlf": 79,
+      "lf": 79,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_set/child/fault-wrong_set/disposable-rtl/design.sv",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_set\\child\\fault-wrong_set\\disposable-rtl\\design.sv",
+      "original_sha256": "63975df5d63598739e0aeef6a00bd061eab97da17d42ec41c5dde86f00bc3ecb",
+      "sha256": "63975df5d63598739e0aeef6a00bd061eab97da17d42ec41c5dde86f00bc3ecb",
+      "bytes": 1329,
+      "crlf": 0,
+      "lf": 77,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_set/child/fault-wrong_set/program.txt",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_set\\child\\fault-wrong_set\\program.txt",
+      "original_sha256": "9f80617245b5bd98d45477de740149d56990ae36f6d665617490773f1a9a4dfb",
+      "sha256": "9f80617245b5bd98d45477de740149d56990ae36f6d665617490773f1a9a4dfb",
+      "bytes": 608,
+      "crlf": 0,
+      "lf": 44,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_set/child/fault-wrong_set/tr_db.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_set\\child\\fault-wrong_set\\tr_db.log",
+      "original_sha256": "83520c06effe6e69ea57fb5edb4e2e9ea699261679d1db190c66dbfb9eaf79ae",
+      "sha256": "83520c06effe6e69ea57fb5edb4e2e9ea699261679d1db190c66dbfb9eaf79ae",
+      "bytes": 100,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_set/child/results.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_set\\child\\results.json",
+      "original_sha256": "a705161114dd1c866f452899873e935dff70e22865ed3c511ee84c6b30487c09",
+      "sha256": "a705161114dd1c866f452899873e935dff70e22865ed3c511ee84c6b30487c09",
+      "bytes": 11904,
+      "crlf": 283,
+      "lf": 283,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_set/child/source-0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_set\\child\\source-0.log",
+      "original_sha256": "2128a37863404e3087cd86bd82e5001b25999be07f89aedacc28e7335b02240c",
+      "sha256": "2128a37863404e3087cd86bd82e5001b25999be07f89aedacc28e7335b02240c",
+      "bytes": 580,
+      "crlf": 0,
+      "lf": 17,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_set/child/source-1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_set\\child\\source-1.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_set/child/source-2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_set\\child\\source-2.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_set/child/version.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_set\\child\\version.log",
+      "original_sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "bytes": 83,
+      "crlf": 2,
+      "lf": 2,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_set/child-wrapper.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_set\\child-wrapper.log",
+      "original_sha256": "83bda2438c48e54e08d9153cb30cbe06f180a3317acaca2fa8a2b1f884f00af0",
+      "sha256": "83bda2438c48e54e08d9153cb30cbe06f180a3317acaca2fa8a2b1f884f00af0",
+      "bytes": 49,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_tag/child/fault-wrong_tag/0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_tag\\child\\fault-wrong_tag\\0.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_tag/child/fault-wrong_tag/1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_tag\\child\\fault-wrong_tag\\1.log",
+      "original_sha256": "eff3be56f62c6314fde36cc5b534fb793b9d097b9553aae16f5ced1875bc60ce",
+      "sha256": "eff3be56f62c6314fde36cc5b534fb793b9d097b9553aae16f5ced1875bc60ce",
+      "bytes": 1175,
+      "crlf": 16,
+      "lf": 16,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_tag/child/fault-wrong_tag/2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_tag\\child\\fault-wrong_tag\\2.log",
+      "original_sha256": "e78377e7513b3296ced5c60381e52eca0f54b9b399b515119da29534f0d27f13",
+      "sha256": "e78377e7513b3296ced5c60381e52eca0f54b9b399b515119da29534f0d27f13",
+      "bytes": 4632,
+      "crlf": 88,
+      "lf": 88,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_tag/child/fault-wrong_tag/capture.vcd",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_tag\\child\\fault-wrong_tag\\capture.vcd",
+      "original_sha256": "e7a84a30f75c498c63b9bf5896a64ffaa509df52aa4407fd288df13ca7a5107b",
+      "sha256": "e7a84a30f75c498c63b9bf5896a64ffaa509df52aa4407fd288df13ca7a5107b",
+      "bytes": 1128,
+      "crlf": 79,
+      "lf": 79,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_tag/child/fault-wrong_tag/disposable-rtl/design.sv",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_tag\\child\\fault-wrong_tag\\disposable-rtl\\design.sv",
+      "original_sha256": "884d39310b502d64a6db7c63021237a9679821c37eb4b33b1d852caa63b259d6",
+      "sha256": "884d39310b502d64a6db7c63021237a9679821c37eb4b33b1d852caa63b259d6",
+      "bytes": 1314,
+      "crlf": 0,
+      "lf": 77,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_tag/child/fault-wrong_tag/program.txt",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_tag\\child\\fault-wrong_tag\\program.txt",
+      "original_sha256": "9f80617245b5bd98d45477de740149d56990ae36f6d665617490773f1a9a4dfb",
+      "sha256": "9f80617245b5bd98d45477de740149d56990ae36f6d665617490773f1a9a4dfb",
+      "bytes": 608,
+      "crlf": 0,
+      "lf": 44,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_tag/child/fault-wrong_tag/tr_db.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_tag\\child\\fault-wrong_tag\\tr_db.log",
+      "original_sha256": "83520c06effe6e69ea57fb5edb4e2e9ea699261679d1db190c66dbfb9eaf79ae",
+      "sha256": "83520c06effe6e69ea57fb5edb4e2e9ea699261679d1db190c66dbfb9eaf79ae",
+      "bytes": 100,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_tag/child/results.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_tag\\child\\results.json",
+      "original_sha256": "ccb6dd72cb97a61d0d6bf35be4ccb83df57a243fe149371caefad2477eb593a2",
+      "sha256": "ccb6dd72cb97a61d0d6bf35be4ccb83df57a243fe149371caefad2477eb593a2",
+      "bytes": 11904,
+      "crlf": 283,
+      "lf": 283,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_tag/child/source-0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_tag\\child\\source-0.log",
+      "original_sha256": "2128a37863404e3087cd86bd82e5001b25999be07f89aedacc28e7335b02240c",
+      "sha256": "2128a37863404e3087cd86bd82e5001b25999be07f89aedacc28e7335b02240c",
+      "bytes": 580,
+      "crlf": 0,
+      "lf": 17,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_tag/child/source-1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_tag\\child\\source-1.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_tag/child/source-2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_tag\\child\\source-2.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_tag/child/version.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_tag\\child\\version.log",
+      "original_sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "bytes": 83,
+      "crlf": 2,
+      "lf": 2,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_tag/child-wrapper.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_tag\\child-wrapper.log",
+      "original_sha256": "ccd7b5e476b53e8873099b18ab8ce1e285f3003a0846518db6c064418550e7d2",
+      "sha256": "ccd7b5e476b53e8873099b18ab8ce1e285f3003a0846518db6c064418550e7d2",
+      "bytes": 49,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_way/child/fault-wrong_way/0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_way\\child\\fault-wrong_way\\0.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_way/child/fault-wrong_way/1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_way\\child\\fault-wrong_way\\1.log",
+      "original_sha256": "5d717f17767673ff0b3edd330ac75585d8f586fe2000f0753d6d194d9a39a2f4",
+      "sha256": "5d717f17767673ff0b3edd330ac75585d8f586fe2000f0753d6d194d9a39a2f4",
+      "bytes": 1175,
+      "crlf": 16,
+      "lf": 16,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_way/child/fault-wrong_way/2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_way\\child\\fault-wrong_way\\2.log",
+      "original_sha256": "e5e3b72d0d6205d50a39a424e091e4cb1578ba71f050d871cb30cd67106b7334",
+      "sha256": "e5e3b72d0d6205d50a39a424e091e4cb1578ba71f050d871cb30cd67106b7334",
+      "bytes": 4648,
+      "crlf": 88,
+      "lf": 88,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_way/child/fault-wrong_way/capture.vcd",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_way\\child\\fault-wrong_way\\capture.vcd",
+      "original_sha256": "05c238ce6699d5c50f7383d0cf3ec7eeda272ea294b51a397427f26ad067deb1",
+      "sha256": "05c238ce6699d5c50f7383d0cf3ec7eeda272ea294b51a397427f26ad067deb1",
+      "bytes": 1290,
+      "crlf": 101,
+      "lf": 101,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_way/child/fault-wrong_way/disposable-rtl/design.sv",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_way\\child\\fault-wrong_way\\disposable-rtl\\design.sv",
+      "original_sha256": "b6b7815a1bdd4aaf76c7f119f029033294c2ca678cdaf53e4d5a644a86ec5ec2",
+      "sha256": "b6b7815a1bdd4aaf76c7f119f029033294c2ca678cdaf53e4d5a644a86ec5ec2",
+      "bytes": 1308,
+      "crlf": 0,
+      "lf": 77,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_way/child/fault-wrong_way/program.txt",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_way\\child\\fault-wrong_way\\program.txt",
+      "original_sha256": "de7efa76ed2d8c882ac245f96afb25fbc4b55d500e6dd301a69ab2d683a3ec66",
+      "sha256": "de7efa76ed2d8c882ac245f96afb25fbc4b55d500e6dd301a69ab2d683a3ec66",
+      "bytes": 352,
+      "crlf": 0,
+      "lf": 18,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_way/child/fault-wrong_way/tr_db.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_way\\child\\fault-wrong_way\\tr_db.log",
+      "original_sha256": "83520c06effe6e69ea57fb5edb4e2e9ea699261679d1db190c66dbfb9eaf79ae",
+      "sha256": "83520c06effe6e69ea57fb5edb4e2e9ea699261679d1db190c66dbfb9eaf79ae",
+      "bytes": 100,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_way/child/results.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_way\\child\\results.json",
+      "original_sha256": "3f4b4b2e28f086406cad9a36f2f75c4c9a8c3cedb1a13929701711c44203d296",
+      "sha256": "3f4b4b2e28f086406cad9a36f2f75c4c9a8c3cedb1a13929701711c44203d296",
+      "bytes": 11910,
+      "crlf": 283,
+      "lf": 283,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_way/child/source-0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_way\\child\\source-0.log",
+      "original_sha256": "2128a37863404e3087cd86bd82e5001b25999be07f89aedacc28e7335b02240c",
+      "sha256": "2128a37863404e3087cd86bd82e5001b25999be07f89aedacc28e7335b02240c",
+      "bytes": 580,
+      "crlf": 0,
+      "lf": 17,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_way/child/source-1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_way\\child\\source-1.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_way/child/source-2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_way\\child\\source-2.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_way/child/version.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_way\\child\\version.log",
+      "original_sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "bytes": 83,
+      "crlf": 2,
+      "lf": 2,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/fault-wrong_way/child-wrapper.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\fault-wrong_way\\child-wrapper.log",
+      "original_sha256": "2577cd565ba002d836901b461368216c31363661eeaede9cfad57af47fd3037a",
+      "sha256": "2577cd565ba002d836901b461368216c31363661eeaede9cfad57af47fd3037a",
+      "bytes": 49,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\0.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\1.log",
+      "original_sha256": "97c20546dd7b7edaf22167956e7d86447276f0223798c122ad6b7fa6f4e1539d",
+      "sha256": "97c20546dd7b7edaf22167956e7d86447276f0223798c122ad6b7fa6f4e1539d",
+      "bytes": 1133,
+      "crlf": 16,
+      "lf": 16,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\2.log",
+      "original_sha256": "9ba42410ff1e5969d994163cf61e0b4840e1e1f2ed30333be53cc7637a867301",
+      "sha256": "9ba42410ff1e5969d994163cf61e0b4840e1e1f2ed30333be53cc7637a867301",
+      "bytes": 16261,
+      "crlf": 244,
+      "lf": 244,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/capture.vcd",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\capture.vcd",
+      "original_sha256": "d013e2224624b70ca927e1575f3bd5847823528d8e921a2268614d81cbe30913",
+      "sha256": "d013e2224624b70ca927e1575f3bd5847823528d8e921a2268614d81cbe30913",
+      "bytes": 214962,
+      "crlf": 25924,
+      "lf": 25924,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-async_lookup.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-async_lookup.json",
+      "original_sha256": "5364763c396d13e8ad6eacd45b0f7926f9c25cd4ec5b87a5969a8af8f8c1abba",
+      "sha256": "5364763c396d13e8ad6eacd45b0f7926f9c25cd4ec5b87a5969a8af8f8c1abba",
+      "bytes": 148,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-data_256.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-data_256.json",
+      "original_sha256": "66b2f17a8feb14401dddf7aa32e98cbe24165b606b0528ee5ae12db27c13101c",
+      "sha256": "66b2f17a8feb14401dddf7aa32e98cbe24165b606b0528ee5ae12db27c13101c",
+      "bytes": 156,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-duplicate_0.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-duplicate_0.json",
+      "original_sha256": "b6f6839a71e47200bf89627084fff649aaed781e8113200e55605d065568fdc0",
+      "sha256": "b6f6839a71e47200bf89627084fff649aaed781e8113200e55605d065568fdc0",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-duplicate_1.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-duplicate_1.json",
+      "original_sha256": "9d30d53c9b1135ead5b024e2b01bc3126905196a3a76a0fcabe2e3a48d50a337",
+      "sha256": "9d30d53c9b1135ead5b024e2b01bc3126905196a3a76a0fcabe2e3a48d50a337",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-duplicate_2.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-duplicate_2.json",
+      "original_sha256": "8ac9d0ec7cfe05f26cd0222750fe9420d0d87dc6c0b4918f6f6bdd673eb36151",
+      "sha256": "8ac9d0ec7cfe05f26cd0222750fe9420d0d87dc6c0b4918f6f6bdd673eb36151",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-duplicate_3.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-duplicate_3.json",
+      "original_sha256": "ccc9c2dd7e112f5669eeb5671a0a2d26fa9bfba9e299b5dd0ab77a67ddcbc220",
+      "sha256": "ccc9c2dd7e112f5669eeb5671a0a2d26fa9bfba9e299b5dd0ab77a67ddcbc220",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-entry_isolation.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-entry_isolation.json",
+      "original_sha256": "7cd2fcb47d9daf6960945aa48c90f9538cbb3ec49048c99b5450772d6e49f836",
+      "sha256": "7cd2fcb47d9daf6960945aa48c90f9538cbb3ec49048c99b5450772d6e49f836",
+      "bytes": 157,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-held_writes.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-held_writes.json",
+      "original_sha256": "cfaa69218cae8f9e6e2bd67a0f06a09cb2fdcc8a4f7d2be146102fd185f7f6bd",
+      "sha256": "cfaa69218cae8f9e6e2bd67a0f06a09cb2fdcc8a4f7d2be146102fd185f7f6bd",
+      "bytes": 146,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-no_write.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-no_write.json",
+      "original_sha256": "88e80e37cb6d672f7bfc8176ec9349ca0fd286bc4d0df41c2481906a9c2f4ab4",
+      "sha256": "88e80e37cb6d672f7bfc8176ec9349ca0fd286bc4d0df41c2481906a9c2f4ab4",
+      "bytes": 147,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-overwrite.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-overwrite.json",
+      "original_sha256": "2fea2cfb389338f62caa83981606dd165cc983967d4309ba7378f14502b594a1",
+      "sha256": "2fea2cfb389338f62caa83981606dd165cc983967d4309ba7378f14502b594a1",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-post_reset_refill.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-post_reset_refill.json",
+      "original_sha256": "e78323dd2fc157d17d76d9585173bf1368ceed54ee6fdeb19d770ea0ad7b457b",
+      "sha256": "e78323dd2fc157d17d76d9585173bf1368ceed54ee6fdeb19d770ea0ad7b457b",
+      "bytes": 158,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-repeated_reset.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-repeated_reset.json",
+      "original_sha256": "e17ed5fa72e2251d8792e6721cf170b8640228f8ba1dcf16818e5ac5904fc883",
+      "sha256": "e17ed5fa72e2251d8792e6721cf170b8640228f8ba1dcf16818e5ac5904fc883",
+      "bytes": 155,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-reset_coincident.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-reset_coincident.json",
+      "original_sha256": "82a4e740a2a41356ef22ff3bc07740fb7e73b1780fa64d8c767a5bddf11862fb",
+      "sha256": "82a4e740a2a41356ef22ff3bc07740fb7e73b1780fa64d8c767a5bddf11862fb",
+      "bytes": 150,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-reset_pending.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-reset_pending.json",
+      "original_sha256": "78acfaae522dbda887503a2cece7cbd11c5fe4dcbac46435a363046b1ae39003",
+      "sha256": "78acfaae522dbda887503a2cece7cbd11c5fe4dcbac46435a363046b1ae39003",
+      "bytes": 147,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_0_0.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_0_0.json",
+      "original_sha256": "165c64d3a616f7212e04079eb4aec266f1bc88b68b8a7811cd1a49c9fa765735",
+      "sha256": "165c64d3a616f7212e04079eb4aec266f1bc88b68b8a7811cd1a49c9fa765735",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_0_1.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_0_1.json",
+      "original_sha256": "d56d029be26e6f71c2ec20919c24302f31734b5fef936602bf9673fd8bd12390",
+      "sha256": "d56d029be26e6f71c2ec20919c24302f31734b5fef936602bf9673fd8bd12390",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_0_2.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_0_2.json",
+      "original_sha256": "090fb4c06021ad46d342ee5d9ea018d8fdcc580c8ed45c18c7cf507cbc59f664",
+      "sha256": "090fb4c06021ad46d342ee5d9ea018d8fdcc580c8ed45c18c7cf507cbc59f664",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_0_3.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_0_3.json",
+      "original_sha256": "a8033edee06686224aa6d38ff00639d5a2320b29ca51593bd6ce3be0d0cea411",
+      "sha256": "a8033edee06686224aa6d38ff00639d5a2320b29ca51593bd6ce3be0d0cea411",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_0_4.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_0_4.json",
+      "original_sha256": "b22da332562ddae7586c77c6692b6b0d05935a68dbccb3fa14a9b47d8ee40138",
+      "sha256": "b22da332562ddae7586c77c6692b6b0d05935a68dbccb3fa14a9b47d8ee40138",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_0_5.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_0_5.json",
+      "original_sha256": "0ecd832fa0fbbb1d8d1db986d5958b5c2fa09c6abb839aabe2bc9a022ba52073",
+      "sha256": "0ecd832fa0fbbb1d8d1db986d5958b5c2fa09c6abb839aabe2bc9a022ba52073",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_0_6.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_0_6.json",
+      "original_sha256": "579db728cd7ad1b4b932e6064110559e89817c8f49abe0c6b848d47dc6209ab6",
+      "sha256": "579db728cd7ad1b4b932e6064110559e89817c8f49abe0c6b848d47dc6209ab6",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_0_7.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_0_7.json",
+      "original_sha256": "e81a724aa13fe7303667b88af404e70dafdba045712db68e3fa865f28ae1cefb",
+      "sha256": "e81a724aa13fe7303667b88af404e70dafdba045712db68e3fa865f28ae1cefb",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_1_0.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_1_0.json",
+      "original_sha256": "60de6201076468195487cb46db717eeee7ef0570157fc637bb324c94642f4c6a",
+      "sha256": "60de6201076468195487cb46db717eeee7ef0570157fc637bb324c94642f4c6a",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_1_1.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_1_1.json",
+      "original_sha256": "a7abbd58e6e48f45dcdd89116e9ce0ba5084db290032d3f8080751083568f8fe",
+      "sha256": "a7abbd58e6e48f45dcdd89116e9ce0ba5084db290032d3f8080751083568f8fe",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_1_2.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_1_2.json",
+      "original_sha256": "225d36dd9df746be190c91b9b6268e7f13e2ba248142641a6212777139f78b69",
+      "sha256": "225d36dd9df746be190c91b9b6268e7f13e2ba248142641a6212777139f78b69",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_1_3.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_1_3.json",
+      "original_sha256": "1a1cdcc3cf9e13126a55094eff75589c0c524546a06e30746374747a156005d2",
+      "sha256": "1a1cdcc3cf9e13126a55094eff75589c0c524546a06e30746374747a156005d2",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_1_4.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_1_4.json",
+      "original_sha256": "ca718371330b374503709b429e93ae2b844008685ce9599cf8543ca77d1b8a75",
+      "sha256": "ca718371330b374503709b429e93ae2b844008685ce9599cf8543ca77d1b8a75",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_1_5.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_1_5.json",
+      "original_sha256": "2b68afff2cd9dee9addbd3c7b6fb0b99ed692e7f5a9a3ae840fdddcd36efe171",
+      "sha256": "2b68afff2cd9dee9addbd3c7b6fb0b99ed692e7f5a9a3ae840fdddcd36efe171",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_1_6.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_1_6.json",
+      "original_sha256": "83cb12962aed0b8d51f8148685a04748e480649b0d4df88cf01bc4e21c153277",
+      "sha256": "83cb12962aed0b8d51f8148685a04748e480649b0d4df88cf01bc4e21c153277",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_1_7.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_1_7.json",
+      "original_sha256": "44ff9e4abdfcfeb8894eff10790e5c602d80d1325ba59b45cbb313f6557eaa3d",
+      "sha256": "44ff9e4abdfcfeb8894eff10790e5c602d80d1325ba59b45cbb313f6557eaa3d",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_2_0.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_2_0.json",
+      "original_sha256": "23564bd332018c84692444d24e82a5b3595b269a2e1e730203697a9c44dae068",
+      "sha256": "23564bd332018c84692444d24e82a5b3595b269a2e1e730203697a9c44dae068",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_2_1.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_2_1.json",
+      "original_sha256": "a9a8ade217771e83f44899ced255d83e4103c73e139341886e3853090c843b4e",
+      "sha256": "a9a8ade217771e83f44899ced255d83e4103c73e139341886e3853090c843b4e",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_2_2.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_2_2.json",
+      "original_sha256": "1c0e518d4af837886c9727181c551fb2ed804972446d8e8e340a7d28632f4afe",
+      "sha256": "1c0e518d4af837886c9727181c551fb2ed804972446d8e8e340a7d28632f4afe",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_2_3.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_2_3.json",
+      "original_sha256": "62afb6452262b2b65c70579f46e21f4a9cbc6e8161497cad363edb05dcef0b3a",
+      "sha256": "62afb6452262b2b65c70579f46e21f4a9cbc6e8161497cad363edb05dcef0b3a",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_2_4.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_2_4.json",
+      "original_sha256": "9ffb77c5fa64de30b72e093e73574598de0fa650d569a18f558898bb42305d9e",
+      "sha256": "9ffb77c5fa64de30b72e093e73574598de0fa650d569a18f558898bb42305d9e",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_2_5.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_2_5.json",
+      "original_sha256": "af68a780df935b9207dd3af12697c1684ce89f3ac0d43ebea9a9e0d6469a633b",
+      "sha256": "af68a780df935b9207dd3af12697c1684ce89f3ac0d43ebea9a9e0d6469a633b",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_2_6.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_2_6.json",
+      "original_sha256": "b4b4f3423533c284078b83fc2ab2dc430580942af4b46186a079b7c03fbb476e",
+      "sha256": "b4b4f3423533c284078b83fc2ab2dc430580942af4b46186a079b7c03fbb476e",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_2_7.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_2_7.json",
+      "original_sha256": "8ea46d59836c2643924ee789de62d37ae4bf0f1de82ab5ec2d8c3ae4b1a95749",
+      "sha256": "8ea46d59836c2643924ee789de62d37ae4bf0f1de82ab5ec2d8c3ae4b1a95749",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_3_0.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_3_0.json",
+      "original_sha256": "888f99739fb9fad5730eb398d5250e1b359ff2f365908653954fd4ab3505a672",
+      "sha256": "888f99739fb9fad5730eb398d5250e1b359ff2f365908653954fd4ab3505a672",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_3_1.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_3_1.json",
+      "original_sha256": "82a1d46aa2dfcddded4cb8bbaf16be40dff6e9b88ba1ab655e2ac5e0b36dcfb1",
+      "sha256": "82a1d46aa2dfcddded4cb8bbaf16be40dff6e9b88ba1ab655e2ac5e0b36dcfb1",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_3_2.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_3_2.json",
+      "original_sha256": "9604fa543021e3123c2f0566df272d88ee54fede549927f0781f473d4704ccd6",
+      "sha256": "9604fa543021e3123c2f0566df272d88ee54fede549927f0781f473d4704ccd6",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_3_3.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_3_3.json",
+      "original_sha256": "1557daa87e3b10051e9913865e329ddf1b4e6284393e9a918fdcaba4f407429e",
+      "sha256": "1557daa87e3b10051e9913865e329ddf1b4e6284393e9a918fdcaba4f407429e",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_3_4.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_3_4.json",
+      "original_sha256": "a00b882996813139833cd4587d18c80b59b5da18fbc0cb15326b725fa9039fef",
+      "sha256": "a00b882996813139833cd4587d18c80b59b5da18fbc0cb15326b725fa9039fef",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_3_5.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_3_5.json",
+      "original_sha256": "83c3bc7e7d38b14e3bb53fabf964759c7708d8ebf7191f7cc26922e0ebf35992",
+      "sha256": "83c3bc7e7d38b14e3bb53fabf964759c7708d8ebf7191f7cc26922e0ebf35992",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_3_6.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_3_6.json",
+      "original_sha256": "23b5293d0f2ca564ee808943e0f8a5051a4d7e2ad4430b942029d9a3018724bf",
+      "sha256": "23b5293d0f2ca564ee808943e0f8a5051a4d7e2ad4430b942029d9a3018724bf",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_0_3_7.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_0_3_7.json",
+      "original_sha256": "868a8b9bd9ba7075c689863fed49c29ef4b4f8d1052fa71b8c4aa72b891b64b1",
+      "sha256": "868a8b9bd9ba7075c689863fed49c29ef4b4f8d1052fa71b8c4aa72b891b64b1",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_0_0.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_0_0.json",
+      "original_sha256": "dc3b4b1738316df20540302cb9d435ddaadcc4219bec02197f7c4799c267706b",
+      "sha256": "dc3b4b1738316df20540302cb9d435ddaadcc4219bec02197f7c4799c267706b",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_0_1.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_0_1.json",
+      "original_sha256": "95ff5f6e38cdc5188c696e426dad0d5ca06bfb69348d8c6d0becb60f38a04953",
+      "sha256": "95ff5f6e38cdc5188c696e426dad0d5ca06bfb69348d8c6d0becb60f38a04953",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_0_2.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_0_2.json",
+      "original_sha256": "f8d2e9ac83ed4866fb751e461d8ba8c078a609c066dd5597d88d31a4c8eecfad",
+      "sha256": "f8d2e9ac83ed4866fb751e461d8ba8c078a609c066dd5597d88d31a4c8eecfad",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_0_3.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_0_3.json",
+      "original_sha256": "cc39a502aab648bcfca7d7c0c2104b1ec092298c42e6b3f745500e21d81d93b9",
+      "sha256": "cc39a502aab648bcfca7d7c0c2104b1ec092298c42e6b3f745500e21d81d93b9",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_0_4.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_0_4.json",
+      "original_sha256": "e06b39c8227cd34b538dc195a5b7b75616bcf0ac6f9014c03e3fd093ef9e43fe",
+      "sha256": "e06b39c8227cd34b538dc195a5b7b75616bcf0ac6f9014c03e3fd093ef9e43fe",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_0_5.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_0_5.json",
+      "original_sha256": "e262eec9a31a87588967b7eb6a6f1fa1ec8a53251869e9810c476a6e7eb2147d",
+      "sha256": "e262eec9a31a87588967b7eb6a6f1fa1ec8a53251869e9810c476a6e7eb2147d",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_0_6.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_0_6.json",
+      "original_sha256": "3218c21b1f784feca19281c65f2ad3b0731715d9834379ea40cc40535485f505",
+      "sha256": "3218c21b1f784feca19281c65f2ad3b0731715d9834379ea40cc40535485f505",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_0_7.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_0_7.json",
+      "original_sha256": "80a8683d6666a948ef8c9c1e2d608fdd7768106c50b8b8808ec495ca51f5de38",
+      "sha256": "80a8683d6666a948ef8c9c1e2d608fdd7768106c50b8b8808ec495ca51f5de38",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_1_0.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_1_0.json",
+      "original_sha256": "afc802c2046903061aa33eb64c325698ec6e066a937554d16b90cef479b45cb3",
+      "sha256": "afc802c2046903061aa33eb64c325698ec6e066a937554d16b90cef479b45cb3",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_1_1.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_1_1.json",
+      "original_sha256": "e8ac68ab51b1b8983af0a1bd76c282579b6ee21eaebe0137b9d0ee633a437ec2",
+      "sha256": "e8ac68ab51b1b8983af0a1bd76c282579b6ee21eaebe0137b9d0ee633a437ec2",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_1_2.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_1_2.json",
+      "original_sha256": "40b3bfe3836343977215a9f4dd659eb101fd1b6296753d23d0317008fe283f45",
+      "sha256": "40b3bfe3836343977215a9f4dd659eb101fd1b6296753d23d0317008fe283f45",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_1_3.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_1_3.json",
+      "original_sha256": "0afe0799987b6cd490b2adc165e41b6feaac27c2bab6b4f50c3f03a93167a40b",
+      "sha256": "0afe0799987b6cd490b2adc165e41b6feaac27c2bab6b4f50c3f03a93167a40b",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_1_4.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_1_4.json",
+      "original_sha256": "af36a25fd97861b498328d68911991d551ae9657528111646ac20bcb7b391dd8",
+      "sha256": "af36a25fd97861b498328d68911991d551ae9657528111646ac20bcb7b391dd8",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_1_5.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_1_5.json",
+      "original_sha256": "d8fbec64ecf554c3c00ebca70bd84715b855fc5cd70c95d1115b166cf190207f",
+      "sha256": "d8fbec64ecf554c3c00ebca70bd84715b855fc5cd70c95d1115b166cf190207f",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_1_6.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_1_6.json",
+      "original_sha256": "fffd8264e867aeeb1bffeae12fa783509c36894e9ade3005f7f7effc41d17ebd",
+      "sha256": "fffd8264e867aeeb1bffeae12fa783509c36894e9ade3005f7f7effc41d17ebd",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_1_7.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_1_7.json",
+      "original_sha256": "418ab546c3b1f19184a6e4adcbe311120bdc90b12a0731cf06b81d0be3c62bc7",
+      "sha256": "418ab546c3b1f19184a6e4adcbe311120bdc90b12a0731cf06b81d0be3c62bc7",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_2_0.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_2_0.json",
+      "original_sha256": "d4fc1bf985db309774fd7e738a7114410d32534f5748a07dc47a80c0b8cf8642",
+      "sha256": "d4fc1bf985db309774fd7e738a7114410d32534f5748a07dc47a80c0b8cf8642",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_2_1.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_2_1.json",
+      "original_sha256": "8ee08d4bb79dbcf74956afb738416c137443fe1189359794b72019227898ae98",
+      "sha256": "8ee08d4bb79dbcf74956afb738416c137443fe1189359794b72019227898ae98",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_2_2.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_2_2.json",
+      "original_sha256": "c18317b1c5eb8bad270520558ad5fd1fefdf533acb449eb67e093dbf88a24291",
+      "sha256": "c18317b1c5eb8bad270520558ad5fd1fefdf533acb449eb67e093dbf88a24291",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_2_3.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_2_3.json",
+      "original_sha256": "03e3f04b0ced5fe00bfb0198cd12f18ceeee983185410531064de7b48ff963b6",
+      "sha256": "03e3f04b0ced5fe00bfb0198cd12f18ceeee983185410531064de7b48ff963b6",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_2_4.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_2_4.json",
+      "original_sha256": "68a1af87128889d667fa58fd2ed8374017d9cabdb878093094eecfcbf57d67e9",
+      "sha256": "68a1af87128889d667fa58fd2ed8374017d9cabdb878093094eecfcbf57d67e9",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_2_5.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_2_5.json",
+      "original_sha256": "af1dad4dbd0c2c98b87a5e8b82599b316fb4775f7cb5799776a3faffa966cf15",
+      "sha256": "af1dad4dbd0c2c98b87a5e8b82599b316fb4775f7cb5799776a3faffa966cf15",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_2_6.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_2_6.json",
+      "original_sha256": "52b7a1d58a5592005cc627467b45b93053cbf3f8d40f63f2cfc550ed541df692",
+      "sha256": "52b7a1d58a5592005cc627467b45b93053cbf3f8d40f63f2cfc550ed541df692",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_2_7.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_2_7.json",
+      "original_sha256": "e4d129b777752df3a12cf28e9e7a92f3b312e2c7d85e5d088202fda8d1cbf19a",
+      "sha256": "e4d129b777752df3a12cf28e9e7a92f3b312e2c7d85e5d088202fda8d1cbf19a",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_3_0.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_3_0.json",
+      "original_sha256": "c2ab0086aaf4447fd989a8400c4770b71dbe38670a6f0211239b00257ed3ac94",
+      "sha256": "c2ab0086aaf4447fd989a8400c4770b71dbe38670a6f0211239b00257ed3ac94",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_3_1.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_3_1.json",
+      "original_sha256": "10a10c8c79c9cea0c2650e3e8162807abcf9a3badfbe1ad50b110a55e2406282",
+      "sha256": "10a10c8c79c9cea0c2650e3e8162807abcf9a3badfbe1ad50b110a55e2406282",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_3_2.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_3_2.json",
+      "original_sha256": "20d426e1b61c6cad93fb01be77524d91b684b27d15780d97ffe9c81a3e1f67f4",
+      "sha256": "20d426e1b61c6cad93fb01be77524d91b684b27d15780d97ffe9c81a3e1f67f4",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_3_3.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_3_3.json",
+      "original_sha256": "175e5778a6ccec864b62540e546afce72c82c0804910ccf668245d764189fc9d",
+      "sha256": "175e5778a6ccec864b62540e546afce72c82c0804910ccf668245d764189fc9d",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_3_4.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_3_4.json",
+      "original_sha256": "32fb9e7c98ce2eea631cd9f9d3016121ac436563d00a8409f7378a62929e1f44",
+      "sha256": "32fb9e7c98ce2eea631cd9f9d3016121ac436563d00a8409f7378a62929e1f44",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_3_5.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_3_5.json",
+      "original_sha256": "e4036f03f701b93d532b0d36255b63855b1fd91de1fe2ea0eb8431207ec3d25d",
+      "sha256": "e4036f03f701b93d532b0d36255b63855b1fd91de1fe2ea0eb8431207ec3d25d",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_3_6.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_3_6.json",
+      "original_sha256": "5a1db12c648569def951291733f9287063516d270dedd39fe191e6b204c04d1e",
+      "sha256": "5a1db12c648569def951291733f9287063516d270dedd39fe191e6b204c04d1e",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/case-tuple_1_3_7.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\case-tuple_1_3_7.json",
+      "original_sha256": "e26050aa710d19044d9d0421089ac5e898b5190671926146e6285e46d8f4ef1f",
+      "sha256": "e26050aa710d19044d9d0421089ac5e898b5190671926146e6285e46d8f4ef1f",
+      "bytes": 145,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/program.txt",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\program.txt",
+      "original_sha256": "d2674f774dccd89fb6da6060e804169e28b009e4a3cd3e0679badb65d95ea177",
+      "sha256": "d2674f774dccd89fb6da6060e804169e28b009e4a3cd3e0679badb65d95ea177",
+      "bytes": 105514,
+      "crlf": 0,
+      "lf": 5317,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/functional/tr_db.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\functional\\tr_db.log",
+      "original_sha256": "83520c06effe6e69ea57fb5edb4e2e9ea699261679d1db190c66dbfb9eaf79ae",
+      "sha256": "83520c06effe6e69ea57fb5edb4e2e9ea699261679d1db190c66dbfb9eaf79ae",
+      "bytes": 100,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/portable/run/cache_2way_roohan.vcd",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\portable\\run\\cache_2way_roohan.vcd",
+      "original_sha256": "a7034c5fa5e4140d5930473c611ebfd7c6697cd47821fedf57aacce77dfc6443",
+      "sha256": "a7034c5fa5e4140d5930473c611ebfd7c6697cd47821fedf57aacce77dfc6443",
+      "bytes": 3833,
+      "crlf": 467,
+      "lf": 467,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/portable/run/cache_contract_test.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\portable\\run\\cache_contract_test.log",
+      "original_sha256": "aa0a66cc7e1213d4f55aa2a173b69e7ae18ee302a26d5b61e4e5577e8b52aa38",
+      "sha256": "aa0a66cc7e1213d4f55aa2a173b69e7ae18ee302a26d5b61e4e5577e8b52aa38",
+      "bytes": 565,
+      "crlf": 15,
+      "lf": 15,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/portable/run/compile.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\portable\\run\\compile.log",
+      "original_sha256": "726564c451dd453070f758f158fd2a80aab9e66af144a4a24f66b71ddc3cda69",
+      "sha256": "726564c451dd453070f758f158fd2a80aab9e66af144a4a24f66b71ddc3cda69",
+      "bytes": 566,
+      "crlf": 12,
+      "lf": 12,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/portable/run/library.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\portable\\run\\library.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/portable/run/results.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\portable\\run\\results.json",
+      "original_sha256": "48b754a028f4d73e9c4be819178fed6960976d8568d4ade8108ba027a96a6dcc",
+      "sha256": "48b754a028f4d73e9c4be819178fed6960976d8568d4ade8108ba027a96a6dcc",
+      "bytes": 1752,
+      "crlf": 58,
+      "lf": 58,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/portable/run/tb_cache_2way.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\portable\\run\\tb_cache_2way.log",
+      "original_sha256": "0482da40c97afb9e73e87e5288d6fffb599c15c7b7aed011bb63023d648eceb5",
+      "sha256": "0482da40c97afb9e73e87e5288d6fffb599c15c7b7aed011bb63023d648eceb5",
+      "bytes": 1031,
+      "crlf": 30,
+      "lf": 30,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/portable/run/version.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\portable\\run\\version.log",
+      "original_sha256": "4bff1859a2d3314df968dd16dfa3573085263d79574e9d1d777774136b6675d0",
+      "sha256": "4bff1859a2d3314df968dd16dfa3573085263d79574e9d1d777774136b6675d0",
+      "bytes": 100,
+      "crlf": 2,
+      "lf": 2,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/portable/wrapper.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\portable\\wrapper.log",
+      "original_sha256": "b9907686c62e2c9147667b41ba5442bf984eed85cee9b453069239fa614d9b82",
+      "sha256": "b9907686c62e2c9147667b41ba5442bf984eed85cee9b453069239fa614d9b82",
+      "bytes": 67,
+      "crlf": 2,
+      "lf": 2,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/results.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\results.json",
+      "original_sha256": "67d2ff7594325ced8c7a398eb7bc46bd89e62b7a0852474cecd6eceef709429c",
+      "sha256": "67d2ff7594325ced8c7a398eb7bc46bd89e62b7a0852474cecd6eceef709429c",
+      "bytes": 218688,
+      "crlf": 5783,
+      "lf": 5783,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/runner-qualification/qualification.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\runner-qualification\\qualification.log",
+      "original_sha256": "44e846a16ac24cd817cdd1381b4b610af71323a754f67dceb896a7c87eb61497",
+      "sha256": "44e846a16ac24cd817cdd1381b4b610af71323a754f67dceb896a7c87eb61497",
+      "bytes": 54,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/runner-qualification/run/results.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\runner-qualification\\run\\results.json",
+      "original_sha256": "cee08dfd427f21469244da469f6f1125b3ccaf6a8d6fd4d1d552d91c685b7a7d",
+      "sha256": "cee08dfd427f21469244da469f6f1125b3ccaf6a8d6fd4d1d552d91c685b7a7d",
+      "bytes": 3904,
+      "crlf": 173,
+      "lf": 173,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/smoke/0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\smoke\\0.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/smoke/1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\smoke\\1.log",
+      "original_sha256": "58fa63ccaf736a4ea0dd4f7cb834f881e7e0059c8a34822a92690004151df641",
+      "sha256": "58fa63ccaf736a4ea0dd4f7cb834f881e7e0059c8a34822a92690004151df641",
+      "bytes": 1133,
+      "crlf": 16,
+      "lf": 16,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/smoke/2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\smoke\\2.log",
+      "original_sha256": "f7ee5e1ca70937ae04bea5fb84892d38c5ae690f65652fd522043c1c198338c5",
+      "sha256": "f7ee5e1ca70937ae04bea5fb84892d38c5ae690f65652fd522043c1c198338c5",
+      "bytes": 4694,
+      "crlf": 90,
+      "lf": 90,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/smoke/capture.vcd",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\smoke\\capture.vcd",
+      "original_sha256": "06ec4680b5b4ff77b61e23a57b38353184b9f16d1e42e46c894d35ee9cb7eaec",
+      "sha256": "06ec4680b5b4ff77b61e23a57b38353184b9f16d1e42e46c894d35ee9cb7eaec",
+      "bytes": 2510,
+      "crlf": 252,
+      "lf": 252,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/smoke/case-smoke.json",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\smoke\\case-smoke.json",
+      "original_sha256": "3cbf564ab81393c903e9a093eec1f80d2f5f44afccd47155641679a03130c3ab",
+      "sha256": "3cbf564ab81393c903e9a093eec1f80d2f5f44afccd47155641679a03130c3ab",
+      "bytes": 139,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/smoke/program.txt",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\smoke\\program.txt",
+      "original_sha256": "9f80617245b5bd98d45477de740149d56990ae36f6d665617490773f1a9a4dfb",
+      "sha256": "9f80617245b5bd98d45477de740149d56990ae36f6d665617490773f1a9a4dfb",
+      "bytes": 608,
+      "crlf": 0,
+      "lf": 44,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/smoke/tr_db.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\smoke\\tr_db.log",
+      "original_sha256": "83520c06effe6e69ea57fb5edb4e2e9ea699261679d1db190c66dbfb9eaf79ae",
+      "sha256": "83520c06effe6e69ea57fb5edb4e2e9ea699261679d1db190c66dbfb9eaf79ae",
+      "bytes": 100,
+      "crlf": 1,
+      "lf": 1,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/source-0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\source-0.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/source-1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\source-1.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/source-2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\source-2.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/sva-duplicate/0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\sva-duplicate\\0.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/sva-duplicate/1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\sva-duplicate\\1.log",
+      "original_sha256": "e7f66f1fab4105829aa44ac9cad2dd87a3abbd92f7eeedb33271f81e913dc1f8",
+      "sha256": "e7f66f1fab4105829aa44ac9cad2dd87a3abbd92f7eeedb33271f81e913dc1f8",
+      "bytes": 712,
+      "crlf": 12,
+      "lf": 12,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/sva-duplicate/2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\sva-duplicate\\2.log",
+      "original_sha256": "ca439b2f81ea66d7dfb666fe334650117d3b4a5bae669a25a4c134c59599173f",
+      "sha256": "ca439b2f81ea66d7dfb666fe334650117d3b4a5bae669a25a4c134c59599173f",
+      "bytes": 2049,
+      "crlf": 38,
+      "lf": 38,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/sva-hit/0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\sva-hit\\0.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/sva-hit/1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\sva-hit\\1.log",
+      "original_sha256": "1e7b7953e7525e7c640505a877740ec2ff611774a4e8fdae383897dcfe5fa7e4",
+      "sha256": "1e7b7953e7525e7c640505a877740ec2ff611774a4e8fdae383897dcfe5fa7e4",
+      "bytes": 712,
+      "crlf": 12,
+      "lf": 12,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/sva-hit/2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\sva-hit\\2.log",
+      "original_sha256": "9738fe1df2231a28ddb89c5d2ba2aca60217eb1a2494ecbaaf283bc63c24cff7",
+      "sha256": "9738fe1df2231a28ddb89c5d2ba2aca60217eb1a2494ecbaaf283bc63c24cff7",
+      "bytes": 2021,
+      "crlf": 38,
+      "lf": 38,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/sva-legal/0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\sva-legal\\0.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/sva-legal/1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\sva-legal\\1.log",
+      "original_sha256": "77ab65a8f0b16c5178d64518b5642fbf18311d311d8c1b83406bb6e2d52cf14d",
+      "sha256": "77ab65a8f0b16c5178d64518b5642fbf18311d311d8c1b83406bb6e2d52cf14d",
+      "bytes": 712,
+      "crlf": 12,
+      "lf": 12,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/sva-legal/2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\sva-legal\\2.log",
+      "original_sha256": "14747873a5a8d67ec8a9e8b3ebb9708604df5f83869c6c81de55409bc79d6820",
+      "sha256": "14747873a5a8d67ec8a9e8b3ebb9708604df5f83869c6c81de55409bc79d6820",
+      "bytes": 1956,
+      "crlf": 37,
+      "lf": 37,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/sva-miss/0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\sva-miss\\0.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/sva-miss/1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\sva-miss\\1.log",
+      "original_sha256": "a22a3aa14f87ebe963c35940b61f237da79743a48a49e3dc77d62be061d95e7d",
+      "sha256": "a22a3aa14f87ebe963c35940b61f237da79743a48a49e3dc77d62be061d95e7d",
+      "bytes": 712,
+      "crlf": 12,
+      "lf": 12,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/sva-miss/2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\sva-miss\\2.log",
+      "original_sha256": "4a4f642c9d26c75aba15c03c2a9c25fd98e7991064cbad8d2930a2675efd695e",
+      "sha256": "4a4f642c9d26c75aba15c03c2a9c25fd98e7991064cbad8d2930a2675efd695e",
+      "bytes": 2021,
+      "crlf": 38,
+      "lf": 38,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/sva-reset/0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\sva-reset\\0.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/sva-reset/1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\sva-reset\\1.log",
+      "original_sha256": "afaf5d38c6c7c461e2af33bca234d2f4eed487f7b8158ad3a373a41cdc05d551",
+      "sha256": "afaf5d38c6c7c461e2af33bca234d2f4eed487f7b8158ad3a373a41cdc05d551",
+      "bytes": 712,
+      "crlf": 12,
+      "lf": 12,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/sva-reset/2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\sva-reset\\2.log",
+      "original_sha256": "771a9193fd134e2fa7cc182f06f034b6d5a44abb6eb4801b325a9e7c3b1a48cb",
+      "sha256": "771a9193fd134e2fa7cc182f06f034b6d5a44abb6eb4801b325a9e7c3b1a48cb",
+      "bytes": 2034,
+      "crlf": 38,
+      "lf": 38,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/sva-stored/0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\sva-stored\\0.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/sva-stored/1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\sva-stored\\1.log",
+      "original_sha256": "88ca49b88518e43262a53209d1a0858bb5d7cefac539d831ec23e880c7f8a43b",
+      "sha256": "88ca49b88518e43262a53209d1a0858bb5d7cefac539d831ec23e880c7f8a43b",
+      "bytes": 712,
+      "crlf": 12,
+      "lf": 12,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/sva-stored/2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\sva-stored\\2.log",
+      "original_sha256": "67113cf9e567acf91cedcac0a29d94de244347cf5da3e01afaaa93ffbc3ee144",
+      "sha256": "67113cf9e567acf91cedcac0a29d94de244347cf5da3e01afaaa93ffbc3ee144",
+      "bytes": 2031,
+      "crlf": 38,
+      "lf": 38,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/sva-write/0.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\sva-write\\0.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/sva-write/1.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\sva-write\\1.log",
+      "original_sha256": "49d0f48e2efb03e07cfe1344776a18b02f065b8e04e48f4215ccc0227dae6817",
+      "sha256": "49d0f48e2efb03e07cfe1344776a18b02f065b8e04e48f4215ccc0227dae6817",
+      "bytes": 712,
+      "crlf": 12,
+      "lf": 12,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/sva-write/2.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\sva-write\\2.log",
+      "original_sha256": "de8b2ce8623eb43967b657f6ecb45ca75cb389d17ffe2db4635e7c45a2fd3615",
+      "sha256": "de8b2ce8623eb43967b657f6ecb45ca75cb389d17ffe2db4635e7c45a2fd3615",
+      "bytes": 2033,
+      "crlf": 38,
+      "lf": 38,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/version.log",
+      "original_path": "C:\\short\\cache-merged-run-20261110\\version.log",
+      "original_sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f",
+      "bytes": 83,
+      "crlf": 2,
+      "lf": 2,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/wrapper.json",
+      "original_path": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\cache-merged-closeout-20261110\\merged-wrapper.json",
+      "original_sha256": "4ad030ac8fb5388b6029a2e9729e0678a50ef473ec905e228a7ed3c2edea244c",
+      "sha256": "4ad030ac8fb5388b6029a2e9729e0678a50ef473ec905e228a7ed3c2edea244c",
+      "bytes": 979,
+      "crlf": 26,
+      "lf": 26,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "run/wrapper.log",
+      "original_path": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\cache-merged-closeout-20261110\\merged-wrapper.log",
+      "original_sha256": "ff9dd15e67a8ef207df2ed92efbc5336076b1f8c13a5d94da928f094395cfd32",
+      "sha256": "ff9dd15e67a8ef207df2ed92efbc5336076b1f8c13a5d94da928f094395cfd32",
+      "bytes": 737,
+      "crlf": 20,
+      "lf": 20,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "source-receipts/initial-audit.json",
+      "original_path": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\cache-merged-closeout-20261110\\initial-audit.json",
+      "original_sha256": "1f6cb7a407773ba88233682048047ba3d10502f629e11cb55e44882456d30bc1",
+      "sha256": "1f6cb7a407773ba88233682048047ba3d10502f629e11cb55e44882456d30bc1",
+      "bytes": 114596,
+      "crlf": 3278,
+      "lf": 3278,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "source-receipts/source-review.json",
+      "original_path": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\cache-merged-closeout-20261110\\source-review.json",
+      "original_sha256": "4d0ab07b6469addf9a951a51c3375f627b721a5d69c8de76cb4e1fb14e3e382a",
+      "sha256": "4d0ab07b6469addf9a951a51c3375f627b721a5d69c8de76cb4e1fb14e3e382a",
+      "bytes": 2240,
+      "crlf": 43,
+      "lf": 43,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "source-receipts/fresh-clone.json",
+      "original_path": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\cache-merged-closeout-20261110\\fresh-clone.json",
+      "original_sha256": "dc8d704d397e84b5a2c1afd5aa0ecc47942d7045b6df990f16df062ac3a5dda4",
+      "sha256": "dc8d704d397e84b5a2c1afd5aa0ecc47942d7045b6df990f16df062ac3a5dda4",
+      "bytes": 3284,
+      "crlf": 86,
+      "lf": 86,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "source-receipts/merge-16.json",
+      "original_path": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\cache-merged-closeout-20261110\\merge-16.json",
+      "original_sha256": "fce4abe9220744876a90496c1ec75bd9e95c0ee509af1847b5c9328440ceb4c9",
+      "sha256": "fce4abe9220744876a90496c1ec75bd9e95c0ee509af1847b5c9328440ceb4c9",
+      "bytes": 107024,
+      "crlf": 3233,
+      "lf": 3233,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "source-receipts/merge-3.json",
+      "original_path": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\cache-merged-closeout-20261110\\merge-3.json",
+      "original_sha256": "e79d90f7a790166e0d4cbf37348b85a5c508b2c8bbf5bfb78a604d64f0ac1fe3",
+      "sha256": "e79d90f7a790166e0d4cbf37348b85a5c508b2c8bbf5bfb78a604d64f0ac1fe3",
+      "bytes": 1644,
+      "crlf": 59,
+      "lf": 59,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "source-receipts/fresh-clone-0.log",
+      "original_path": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\cache-merged-closeout-20261110\\fresh-clone-0.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "source-receipts/fresh-clone-1.log",
+      "original_path": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\cache-merged-closeout-20261110\\fresh-clone-1.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "source-receipts/fresh-clone-2.log",
+      "original_path": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\cache-merged-closeout-20261110\\fresh-clone-2.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    },
+    {
+      "path": "source-receipts/fresh-clone-3.log",
+      "original_path": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\cache-merged-closeout-20261110\\fresh-clone-3.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "crlf": 0,
+      "lf": 0,
+      "committed_representation": "exact original bytes; scoped -text"
+    }
+  ]
+}

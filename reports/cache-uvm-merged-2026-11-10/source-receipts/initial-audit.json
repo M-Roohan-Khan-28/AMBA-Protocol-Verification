@@ -1,0 +1,3278 @@
+{
+  "identity": {
+    "id": 270144410,
+    "login": "M-Roohan-Khan-28"
+  },
+  "pull_requests": [
+    {
+      "repository": "AMBA-Protocol-Verification",
+      "pr": 16,
+      "url": "https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/pull/16",
+      "head": "676a8b4ab0c128e1bfd6776198734b0810bc7adf",
+      "main": "b41b309ec887c58c7187c96de4452741c9bee115",
+      "state": "open",
+      "draft": false,
+      "mergeable": true,
+      "mergeable_state": "clean",
+      "permissions": {
+        "admin": true,
+        "maintain": true,
+        "push": true,
+        "triage": true,
+        "pull": true
+      },
+      "changed_file_count": 531,
+      "files": [
+        {
+          "filename": "README.md",
+          "status": "modified",
+          "additions": 11,
+          "deletions": 0
+        },
+        {
+          "filename": "docs/DETERMINISTIC_CACHE_UVM.md",
+          "status": "added",
+          "additions": 124,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/.gitattributes",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/BYTE_AUDIT.json",
+          "status": "added",
+          "additions": 3509,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/CAPTURE_MANIFEST.json",
+          "status": "added",
+          "additions": 5428,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/REPRODUCE.ps1",
+          "status": "added",
+          "additions": 5,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/SOURCE_LOCKS.json",
+          "status": "added",
+          "additions": 126,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/SUMMARY.md",
+          "status": "added",
+          "additions": 123,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/VALIDATION.json",
+          "status": "added",
+          "additions": 180,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/WAVEFORMS.json",
+          "status": "added",
+          "additions": 146,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/fresh-source.json",
+          "status": "added",
+          "additions": 24,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/fresh-wrapper.json",
+          "status": "added",
+          "additions": 19,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/fresh-wrapper.log",
+          "status": "added",
+          "additions": 20,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/preflight.json",
+          "status": "added",
+          "additions": 24,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/provenance.json",
+          "status": "added",
+          "additions": 99,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-corrupted_data/child-wrapper.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-corrupted_data/child/fault-corrupted_data/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-corrupted_data/child/fault-corrupted_data/1.log",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-corrupted_data/child/fault-corrupted_data/2.log",
+          "status": "added",
+          "additions": 88,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-corrupted_data/child/fault-corrupted_data/capture.vcd",
+          "status": "added",
+          "additions": 81,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-corrupted_data/child/fault-corrupted_data/disposable-rtl/design.sv",
+          "status": "added",
+          "additions": 78,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-corrupted_data/child/fault-corrupted_data/program.txt",
+          "status": "added",
+          "additions": 44,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-corrupted_data/child/fault-corrupted_data/tr_db.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-corrupted_data/child/results.json",
+          "status": "added",
+          "additions": 283,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-corrupted_data/child/source-0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-corrupted_data/child/source-1.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-corrupted_data/child/source-2.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-corrupted_data/child/version.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-false_hit/child-wrapper.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-false_hit/child/fault-false_hit/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-false_hit/child/fault-false_hit/1.log",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-false_hit/child/fault-false_hit/2.log",
+          "status": "added",
+          "additions": 88,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-false_hit/child/fault-false_hit/capture.vcd",
+          "status": "added",
+          "additions": 64,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-false_hit/child/fault-false_hit/disposable-rtl/design.sv",
+          "status": "added",
+          "additions": 78,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-false_hit/child/fault-false_hit/program.txt",
+          "status": "added",
+          "additions": 44,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-false_hit/child/fault-false_hit/tr_db.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-false_hit/child/results.json",
+          "status": "added",
+          "additions": 283,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-false_hit/child/source-0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-false_hit/child/source-1.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-false_hit/child/source-2.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-false_hit/child/version.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-forbidden_reset_write/child-wrapper.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-forbidden_reset_write/child/fault-forbidden_reset_write/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-forbidden_reset_write/child/fault-forbidden_reset_write/1.log",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-forbidden_reset_write/child/fault-forbidden_reset_write/2.log",
+          "status": "added",
+          "additions": 88,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-forbidden_reset_write/child/fault-forbidden_reset_write/capture.vcd",
+          "status": "added",
+          "additions": 108,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-forbidden_reset_write/child/fault-forbidden_reset_write/disposable-rtl/design.sv",
+          "status": "added",
+          "additions": 78,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-forbidden_reset_write/child/fault-forbidden_reset_write/program.txt",
+          "status": "added",
+          "additions": 46,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-forbidden_reset_write/child/fault-forbidden_reset_write/tr_db.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-forbidden_reset_write/child/results.json",
+          "status": "added",
+          "additions": 283,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-forbidden_reset_write/child/source-0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-forbidden_reset_write/child/source-1.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-forbidden_reset_write/child/source-2.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-forbidden_reset_write/child/version.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_marker/child-wrapper.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_marker/child/fault-missing_marker/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_marker/child/fault-missing_marker/1.log",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_marker/child/fault-missing_marker/2.log",
+          "status": "added",
+          "additions": 90,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_marker/child/fault-missing_marker/capture.vcd",
+          "status": "added",
+          "additions": 252,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_marker/child/fault-missing_marker/case-smoke.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_marker/child/fault-missing_marker/program.txt",
+          "status": "added",
+          "additions": 44,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_marker/child/fault-missing_marker/tr_db.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_marker/child/results.json",
+          "status": "added",
+          "additions": 276,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_marker/child/source-0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_marker/child/source-1.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_marker/child/source-2.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_marker/child/version.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_reset/child-wrapper.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_reset/child/fault-missing_reset/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_reset/child/fault-missing_reset/1.log",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_reset/child/fault-missing_reset/2.log",
+          "status": "added",
+          "additions": 88,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_reset/child/fault-missing_reset/capture.vcd",
+          "status": "added",
+          "additions": 407,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_reset/child/fault-missing_reset/disposable-rtl/design.sv",
+          "status": "added",
+          "additions": 78,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_reset/child/fault-missing_reset/program.txt",
+          "status": "added",
+          "additions": 272,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_reset/child/fault-missing_reset/tr_db.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_reset/child/results.json",
+          "status": "added",
+          "additions": 283,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_reset/child/source-0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_reset/child/source-1.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_reset/child/source-2.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-missing_reset/child/version.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_priority/child-wrapper.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_priority/child/fault-wrong_priority/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_priority/child/fault-wrong_priority/1.log",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_priority/child/fault-wrong_priority/2.log",
+          "status": "added",
+          "additions": 88,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_priority/child/fault-wrong_priority/capture.vcd",
+          "status": "added",
+          "additions": 101,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_priority/child/fault-wrong_priority/disposable-rtl/design.sv",
+          "status": "added",
+          "additions": 78,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_priority/child/fault-wrong_priority/program.txt",
+          "status": "added",
+          "additions": 18,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_priority/child/fault-wrong_priority/tr_db.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_priority/child/results.json",
+          "status": "added",
+          "additions": 283,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_priority/child/source-0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_priority/child/source-1.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_priority/child/source-2.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_priority/child/version.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_set/child-wrapper.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_set/child/fault-wrong_set/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_set/child/fault-wrong_set/1.log",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_set/child/fault-wrong_set/2.log",
+          "status": "added",
+          "additions": 88,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_set/child/fault-wrong_set/capture.vcd",
+          "status": "added",
+          "additions": 79,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_set/child/fault-wrong_set/disposable-rtl/design.sv",
+          "status": "added",
+          "additions": 78,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_set/child/fault-wrong_set/program.txt",
+          "status": "added",
+          "additions": 44,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_set/child/fault-wrong_set/tr_db.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_set/child/results.json",
+          "status": "added",
+          "additions": 283,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_set/child/source-0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_set/child/source-1.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_set/child/source-2.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_set/child/version.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_tag/child-wrapper.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_tag/child/fault-wrong_tag/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_tag/child/fault-wrong_tag/1.log",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_tag/child/fault-wrong_tag/2.log",
+          "status": "added",
+          "additions": 88,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_tag/child/fault-wrong_tag/capture.vcd",
+          "status": "added",
+          "additions": 79,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_tag/child/fault-wrong_tag/disposable-rtl/design.sv",
+          "status": "added",
+          "additions": 78,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_tag/child/fault-wrong_tag/program.txt",
+          "status": "added",
+          "additions": 44,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_tag/child/fault-wrong_tag/tr_db.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_tag/child/results.json",
+          "status": "added",
+          "additions": 283,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_tag/child/source-0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_tag/child/source-1.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_tag/child/source-2.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_tag/child/version.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_way/child-wrapper.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_way/child/fault-wrong_way/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_way/child/fault-wrong_way/1.log",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_way/child/fault-wrong_way/2.log",
+          "status": "added",
+          "additions": 88,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_way/child/fault-wrong_way/capture.vcd",
+          "status": "added",
+          "additions": 101,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_way/child/fault-wrong_way/disposable-rtl/design.sv",
+          "status": "added",
+          "additions": 78,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_way/child/fault-wrong_way/program.txt",
+          "status": "added",
+          "additions": 18,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_way/child/fault-wrong_way/tr_db.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_way/child/results.json",
+          "status": "added",
+          "additions": 283,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_way/child/source-0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_way/child/source-1.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_way/child/source-2.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/fault-wrong_way/child/version.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/1.log",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/2.log",
+          "status": "added",
+          "additions": 244,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/capture.vcd",
+          "status": "added",
+          "additions": 25924,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-async_lookup.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-data_256.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-duplicate_0.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-duplicate_1.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-duplicate_2.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-duplicate_3.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-entry_isolation.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-held_writes.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-no_write.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-overwrite.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-post_reset_refill.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-repeated_reset.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-reset_coincident.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-reset_pending.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_0_0.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_0_1.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_0_2.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_0_3.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_0_4.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_0_5.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_0_6.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_0_7.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_1_0.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_1_1.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_1_2.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_1_3.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_1_4.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_1_5.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_1_6.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_1_7.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_2_0.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_2_1.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_2_2.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_2_3.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_2_4.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_2_5.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_2_6.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_2_7.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_3_0.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_3_1.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_3_2.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_3_3.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_3_4.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_3_5.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_3_6.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_0_3_7.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_0_0.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_0_1.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_0_2.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_0_3.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_0_4.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_0_5.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_0_6.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_0_7.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_1_0.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_1_1.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_1_2.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_1_3.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_1_4.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_1_5.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_1_6.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_1_7.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_2_0.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_2_1.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_2_2.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_2_3.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_2_4.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_2_5.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_2_6.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_2_7.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_3_0.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_3_1.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_3_2.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_3_3.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_3_4.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_3_5.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_3_6.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/case-tuple_1_3_7.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/program.txt",
+          "status": "added",
+          "additions": 5317,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/functional/tr_db.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/portable/run/cache_2way_roohan.vcd",
+          "status": "added",
+          "additions": 467,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/portable/run/cache_contract_test.log",
+          "status": "added",
+          "additions": 15,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/portable/run/compile.log",
+          "status": "added",
+          "additions": 12,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/portable/run/library.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/portable/run/results.json",
+          "status": "added",
+          "additions": 58,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/portable/run/tb_cache_2way.log",
+          "status": "added",
+          "additions": 30,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/portable/run/version.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/portable/wrapper.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/results.json",
+          "status": "added",
+          "additions": 5783,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/runner-qualification/qualification.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/runner-qualification/run/results.json",
+          "status": "added",
+          "additions": 173,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/smoke/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/smoke/1.log",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/smoke/2.log",
+          "status": "added",
+          "additions": 90,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/smoke/capture.vcd",
+          "status": "added",
+          "additions": 252,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/smoke/case-smoke.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/smoke/program.txt",
+          "status": "added",
+          "additions": 44,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/smoke/tr_db.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/source-0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/source-1.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/source-2.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/sva-duplicate/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/sva-duplicate/1.log",
+          "status": "added",
+          "additions": 12,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/sva-duplicate/2.log",
+          "status": "added",
+          "additions": 38,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/sva-hit/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/sva-hit/1.log",
+          "status": "added",
+          "additions": 12,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/sva-hit/2.log",
+          "status": "added",
+          "additions": 38,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/sva-legal/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/sva-legal/1.log",
+          "status": "added",
+          "additions": 12,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/sva-legal/2.log",
+          "status": "added",
+          "additions": 37,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/sva-miss/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/sva-miss/1.log",
+          "status": "added",
+          "additions": 12,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/sva-miss/2.log",
+          "status": "added",
+          "additions": 38,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/sva-reset/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/sva-reset/1.log",
+          "status": "added",
+          "additions": 12,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/sva-reset/2.log",
+          "status": "added",
+          "additions": 38,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/sva-stored/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/sva-stored/1.log",
+          "status": "added",
+          "additions": 12,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/sva-stored/2.log",
+          "status": "added",
+          "additions": 38,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/sva-write/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/sva-write/1.log",
+          "status": "added",
+          "additions": 12,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/sva-write/2.log",
+          "status": "added",
+          "additions": 38,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/run/version.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/results.json",
+          "status": "added",
+          "additions": 711,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/smoke/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/smoke/1.log",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/smoke/2.log",
+          "status": "added",
+          "additions": 90,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/smoke/capture.vcd",
+          "status": "added",
+          "additions": 252,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/smoke/case-smoke.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/smoke/program.txt",
+          "status": "added",
+          "additions": 44,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/smoke/tr_db.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/source-0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/source-1.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/source-2.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/sva-duplicate/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/sva-duplicate/1.log",
+          "status": "added",
+          "additions": 12,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/sva-duplicate/2.log",
+          "status": "added",
+          "additions": 38,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/sva-hit/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/sva-hit/1.log",
+          "status": "added",
+          "additions": 12,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/sva-hit/2.log",
+          "status": "added",
+          "additions": 38,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/sva-legal/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/sva-legal/1.log",
+          "status": "added",
+          "additions": 12,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/sva-legal/2.log",
+          "status": "added",
+          "additions": 37,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/sva-miss/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/sva-miss/1.log",
+          "status": "added",
+          "additions": 12,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/sva-miss/2.log",
+          "status": "added",
+          "additions": 38,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/sva-reset/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/sva-reset/1.log",
+          "status": "added",
+          "additions": 12,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/sva-reset/2.log",
+          "status": "added",
+          "additions": 38,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/sva-stored/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/sva-stored/1.log",
+          "status": "added",
+          "additions": 12,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/sva-stored/2.log",
+          "status": "added",
+          "additions": 38,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/sva-write/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/sva-write/1.log",
+          "status": "added",
+          "additions": 12,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/sva-write/2.log",
+          "status": "added",
+          "additions": 38,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-controls/version.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-corrupted_data/child-wrapper.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-corrupted_data/child/fault-corrupted_data/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-corrupted_data/child/fault-corrupted_data/1.log",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-corrupted_data/child/fault-corrupted_data/2.log",
+          "status": "added",
+          "additions": 88,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-corrupted_data/child/fault-corrupted_data/capture.vcd",
+          "status": "added",
+          "additions": 81,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-corrupted_data/child/fault-corrupted_data/disposable-rtl/design.sv",
+          "status": "added",
+          "additions": 78,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-corrupted_data/child/fault-corrupted_data/program.txt",
+          "status": "added",
+          "additions": 44,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-corrupted_data/child/fault-corrupted_data/tr_db.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-corrupted_data/child/results.json",
+          "status": "added",
+          "additions": 283,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-corrupted_data/child/source-0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-corrupted_data/child/source-1.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-corrupted_data/child/source-2.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-corrupted_data/child/version.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-false_hit/child-wrapper.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-false_hit/child/fault-false_hit/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-false_hit/child/fault-false_hit/1.log",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-false_hit/child/fault-false_hit/2.log",
+          "status": "added",
+          "additions": 88,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-false_hit/child/fault-false_hit/capture.vcd",
+          "status": "added",
+          "additions": 64,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-false_hit/child/fault-false_hit/disposable-rtl/design.sv",
+          "status": "added",
+          "additions": 78,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-false_hit/child/fault-false_hit/program.txt",
+          "status": "added",
+          "additions": 44,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-false_hit/child/fault-false_hit/tr_db.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-false_hit/child/results.json",
+          "status": "added",
+          "additions": 283,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-false_hit/child/source-0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-false_hit/child/source-1.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-false_hit/child/source-2.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-false_hit/child/version.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-forbidden_reset_write/child-wrapper.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-forbidden_reset_write/child/fault-forbidden_reset_write/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-forbidden_reset_write/child/fault-forbidden_reset_write/1.log",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-forbidden_reset_write/child/fault-forbidden_reset_write/2.log",
+          "status": "added",
+          "additions": 88,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-forbidden_reset_write/child/fault-forbidden_reset_write/capture.vcd",
+          "status": "added",
+          "additions": 108,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-forbidden_reset_write/child/fault-forbidden_reset_write/disposable-rtl/design.sv",
+          "status": "added",
+          "additions": 78,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-forbidden_reset_write/child/fault-forbidden_reset_write/program.txt",
+          "status": "added",
+          "additions": 46,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-forbidden_reset_write/child/fault-forbidden_reset_write/tr_db.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-forbidden_reset_write/child/results.json",
+          "status": "added",
+          "additions": 283,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-forbidden_reset_write/child/source-0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-forbidden_reset_write/child/source-1.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-forbidden_reset_write/child/source-2.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-forbidden_reset_write/child/version.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_marker/child-wrapper.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_marker/child/fault-missing_marker/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_marker/child/fault-missing_marker/1.log",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_marker/child/fault-missing_marker/2.log",
+          "status": "added",
+          "additions": 90,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_marker/child/fault-missing_marker/capture.vcd",
+          "status": "added",
+          "additions": 252,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_marker/child/fault-missing_marker/case-smoke.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_marker/child/fault-missing_marker/program.txt",
+          "status": "added",
+          "additions": 44,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_marker/child/fault-missing_marker/tr_db.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_marker/child/results.json",
+          "status": "added",
+          "additions": 276,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_marker/child/source-0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_marker/child/source-1.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_marker/child/source-2.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_marker/child/version.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_reset/child-wrapper.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_reset/child/fault-missing_reset/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_reset/child/fault-missing_reset/1.log",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_reset/child/fault-missing_reset/2.log",
+          "status": "added",
+          "additions": 88,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_reset/child/fault-missing_reset/capture.vcd",
+          "status": "added",
+          "additions": 407,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_reset/child/fault-missing_reset/disposable-rtl/design.sv",
+          "status": "added",
+          "additions": 78,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_reset/child/fault-missing_reset/program.txt",
+          "status": "added",
+          "additions": 272,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_reset/child/fault-missing_reset/tr_db.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_reset/child/results.json",
+          "status": "added",
+          "additions": 283,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_reset/child/source-0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_reset/child/source-1.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_reset/child/source-2.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-missing_reset/child/version.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_priority/child-wrapper.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_priority/child/fault-wrong_priority/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_priority/child/fault-wrong_priority/1.log",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_priority/child/fault-wrong_priority/2.log",
+          "status": "added",
+          "additions": 88,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_priority/child/fault-wrong_priority/capture.vcd",
+          "status": "added",
+          "additions": 101,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_priority/child/fault-wrong_priority/disposable-rtl/design.sv",
+          "status": "added",
+          "additions": 78,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_priority/child/fault-wrong_priority/program.txt",
+          "status": "added",
+          "additions": 18,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_priority/child/fault-wrong_priority/tr_db.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_priority/child/results.json",
+          "status": "added",
+          "additions": 283,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_priority/child/source-0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_priority/child/source-1.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_priority/child/source-2.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_priority/child/version.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_set/child-wrapper.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_set/child/fault-wrong_set/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_set/child/fault-wrong_set/1.log",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_set/child/fault-wrong_set/2.log",
+          "status": "added",
+          "additions": 88,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_set/child/fault-wrong_set/capture.vcd",
+          "status": "added",
+          "additions": 79,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_set/child/fault-wrong_set/disposable-rtl/design.sv",
+          "status": "added",
+          "additions": 78,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_set/child/fault-wrong_set/program.txt",
+          "status": "added",
+          "additions": 44,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_set/child/fault-wrong_set/tr_db.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_set/child/results.json",
+          "status": "added",
+          "additions": 283,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_set/child/source-0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_set/child/source-1.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_set/child/source-2.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_set/child/version.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_tag/child-wrapper.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_tag/child/fault-wrong_tag/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_tag/child/fault-wrong_tag/1.log",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_tag/child/fault-wrong_tag/2.log",
+          "status": "added",
+          "additions": 88,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_tag/child/fault-wrong_tag/capture.vcd",
+          "status": "added",
+          "additions": 79,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_tag/child/fault-wrong_tag/disposable-rtl/design.sv",
+          "status": "added",
+          "additions": 78,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_tag/child/fault-wrong_tag/program.txt",
+          "status": "added",
+          "additions": 44,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_tag/child/fault-wrong_tag/tr_db.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_tag/child/results.json",
+          "status": "added",
+          "additions": 283,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_tag/child/source-0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_tag/child/source-1.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_tag/child/source-2.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_tag/child/version.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_way/child-wrapper.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_way/child/fault-wrong_way/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_way/child/fault-wrong_way/1.log",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_way/child/fault-wrong_way/2.log",
+          "status": "added",
+          "additions": 88,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_way/child/fault-wrong_way/capture.vcd",
+          "status": "added",
+          "additions": 101,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_way/child/fault-wrong_way/disposable-rtl/design.sv",
+          "status": "added",
+          "additions": 78,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_way/child/fault-wrong_way/program.txt",
+          "status": "added",
+          "additions": 18,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_way/child/fault-wrong_way/tr_db.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_way/child/results.json",
+          "status": "added",
+          "additions": 283,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_way/child/source-0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_way/child/source-1.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_way/child/source-2.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/fault-wrong_way/child/version.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/1.log",
+          "status": "added",
+          "additions": 16,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/2.log",
+          "status": "added",
+          "additions": 244,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/capture.vcd",
+          "status": "added",
+          "additions": 25924,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-async_lookup.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-data_256.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-duplicate_0.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-duplicate_1.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-duplicate_2.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-duplicate_3.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-entry_isolation.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-held_writes.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-no_write.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-overwrite.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-post_reset_refill.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-repeated_reset.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-reset_coincident.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-reset_pending.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_0_0.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_0_1.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_0_2.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_0_3.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_0_4.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_0_5.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_0_6.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_0_7.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_1_0.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_1_1.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_1_2.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_1_3.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_1_4.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_1_5.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_1_6.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_1_7.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_2_0.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_2_1.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_2_2.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_2_3.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_2_4.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_2_5.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_2_6.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_2_7.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_3_0.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_3_1.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_3_2.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_3_3.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_3_4.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_3_5.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_3_6.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_0_3_7.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_0_0.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_0_1.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_0_2.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_0_3.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_0_4.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_0_5.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_0_6.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_0_7.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_1_0.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_1_1.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_1_2.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_1_3.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_1_4.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_1_5.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_1_6.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_1_7.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_2_0.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_2_1.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_2_2.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_2_3.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_2_4.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_2_5.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_2_6.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_2_7.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_3_0.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_3_1.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_3_2.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_3_3.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_3_4.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_3_5.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_3_6.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/case-tuple_1_3_7.json",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/program.txt",
+          "status": "added",
+          "additions": 5317,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/functional/tr_db.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/portable/run/cache_2way_roohan.vcd",
+          "status": "added",
+          "additions": 467,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/portable/run/cache_contract_test.log",
+          "status": "added",
+          "additions": 15,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/portable/run/compile.log",
+          "status": "added",
+          "additions": 12,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/portable/run/library.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/portable/run/results.json",
+          "status": "added",
+          "additions": 58,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/portable/run/tb_cache_2way.log",
+          "status": "added",
+          "additions": 30,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/portable/run/version.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/portable/wrapper.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/results.json",
+          "status": "added",
+          "additions": 5293,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/runner-qualification/qualification.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/runner-qualification/run/results.json",
+          "status": "added",
+          "additions": 173,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/source-0.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/source-1.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/source-2.log",
+          "status": "added",
+          "additions": 0,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/targeted-functional-faults/version.log",
+          "status": "added",
+          "additions": 2,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/waves/async-reset.json",
+          "status": "added",
+          "additions": 147,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/waves/async-reset.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/waves/async-reset.svg",
+          "status": "added",
+          "additions": 316,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/waves/combinational-lookup.json",
+          "status": "added",
+          "additions": 147,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/waves/combinational-lookup.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/waves/combinational-lookup.svg",
+          "status": "added",
+          "additions": 233,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/waves/dual-way-writes.json",
+          "status": "added",
+          "additions": 147,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/waves/dual-way-writes.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/waves/dual-way-writes.svg",
+          "status": "added",
+          "additions": 218,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/waves/duplicate-priority.json",
+          "status": "added",
+          "additions": 147,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/waves/duplicate-priority.log",
+          "status": "added",
+          "additions": 1,
+          "deletions": 0
+        },
+        {
+          "filename": "reports/cache-uvm-2026-11-10/waves/duplicate-priority.svg",
+          "status": "added",
+          "additions": 223,
+          "deletions": 0
+        },
+        {
+          "filename": "scripts/cache_mutations.py",
+          "status": "added",
+          "additions": 21,
+          "deletions": 0
+        },
+        {
+          "filename": "scripts/cache_program.py",
+          "status": "added",
+          "additions": 80,
+          "deletions": 0
+        },
+        {
+          "filename": "scripts/qualify_cache_runner.py",
+          "status": "added",
+          "additions": 47,
+          "deletions": 0
+        },
+        {
+          "filename": "scripts/run_cache_uvm.py",
+          "status": "added",
+          "additions": 153,
+          "deletions": 0
+        },
+        {
+          "filename": "verification/cache_uvm/cache_assertions.sv",
+          "status": "added",
+          "additions": 34,
+          "deletions": 0
+        },
+        {
+          "filename": "verification/cache_uvm/cache_bus.sv",
+          "status": "added",
+          "additions": 12,
+          "deletions": 0
+        },
+        {
+          "filename": "verification/cache_uvm/cache_sva_control.sv",
+          "status": "added",
+          "additions": 31,
+          "deletions": 0
+        },
+        {
+          "filename": "verification/cache_uvm/cache_uvm_pkg.sv",
+          "status": "added",
+          "additions": 121,
+          "deletions": 0
+        },
+        {
+          "filename": "verification/cache_uvm/cache_uvm_top.sv",
+          "status": "added",
+          "additions": 9,
+          "deletions": 0
+        },
+        {
+          "filename": "verification/cache_uvm/inventory.json",
+          "status": "added",
+          "additions": 511,
+          "deletions": 0
+        },
+        {
+          "filename": "verification/cache_uvm/sources.json",
+          "status": "added",
+          "additions": 26,
+          "deletions": 0
+        }
+      ],
+      "reviews": [],
+      "review_comments_count": 0,
+      "issue_comments_count": 0,
+      "review_threads": 0,
+      "unresolved_review_threads": 0,
+      "check_runs": [],
+      "combined_status": "pending",
+      "statuses": [],
+      "required_status_contexts": [],
+      "required_checks": [],
+      "branch_protection_present": false,
+      "allow_merge_commit": true,
+      "active_branch_rules": [],
+      "review_comments": [],
+      "issue_comments": []
+    },
+    {
+      "repository": "Two-Way-Cache-RTL",
+      "pr": 3,
+      "url": "https://github.com/M-Roohan-Khan-28/Two-Way-Cache-RTL/pull/3",
+      "head": "529c4f7daf60d566f3f45631b5a6bf4d3bc006e6",
+      "main": "b6246eff1380aa0fb7812de9fccaf12b849fa1ca",
+      "state": "open",
+      "draft": false,
+      "mergeable": true,
+      "mergeable_state": "clean",
+      "permissions": {
+        "admin": true,
+        "maintain": true,
+        "push": true,
+        "triage": true,
+        "pull": true
+      },
+      "changed_file_count": 2,
+      "files": [
+        {
+          "filename": "README.md",
+          "status": "modified",
+          "additions": 10,
+          "deletions": 2
+        },
+        {
+          "filename": "docs/DETERMINISTIC_CACHE_UVM.md",
+          "status": "added",
+          "additions": 45,
+          "deletions": 0
+        }
+      ],
+      "reviews": [],
+      "review_comments_count": 0,
+      "issue_comments_count": 0,
+      "review_threads": 0,
+      "unresolved_review_threads": 0,
+      "check_runs": [],
+      "combined_status": "pending",
+      "statuses": [],
+      "required_status_contexts": [],
+      "required_checks": [],
+      "branch_protection_present": false,
+      "allow_merge_commit": true,
+      "active_branch_rules": [],
+      "review_comments": [],
+      "issue_comments": []
+    }
+  ]
+}

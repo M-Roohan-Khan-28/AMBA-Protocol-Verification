@@ -1,0 +1,15 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit cache_contract_test -do "run -all; quit -code 0" 
+# Start time: 21:40:42 on Nov 10,2026
+# Loading sv_std.std
+# Loading work.cache_contract_test
+# Loading work.cache_2way
+# run -all
+# CACHE_CONTRACT_PASS checks=1639 writes=324 resets=2 seed=0x28CACE17
+# ** Note: $finish    : C:/short/cache-merged-run-20261110/source/tb/cache_contract_test.sv(124)
+#    Time: 4259 ns  Iteration: 0  Instance: /cache_contract_test
+# End time: 21:40:44 on Nov 10,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

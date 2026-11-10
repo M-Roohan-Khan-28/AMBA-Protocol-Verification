@@ -1,0 +1,101 @@
+$date
+	Tue Nov 10 21:35:11 2026
+$end
+$version
+	Questa Altera Starter FPGA Edition Version 2025.2
+$end
+$timescale
+	1ps
+$end
+
+$scope module cache_uvm_top $end
+
+$scope module bus $end
+$var reg 17 ! pins [16:0] $end
+$var wire 1 " clk $end
+$var wire 1 # reset $end
+$var wire 1 $ write $end
+$var wire 1 % way_select $end
+$var wire 1 & index [1] $end
+$var wire 1 ' index [0] $end
+$var wire 1 ( tag [2] $end
+$var wire 1 ) tag [1] $end
+$var wire 1 * tag [0] $end
+$var wire 1 + data_in [7] $end
+$var wire 1 , data_in [6] $end
+$var wire 1 - data_in [5] $end
+$var wire 1 . data_in [4] $end
+$var wire 1 / data_in [3] $end
+$var wire 1 0 data_in [2] $end
+$var wire 1 1 data_in [1] $end
+$var wire 1 2 data_in [0] $end
+$var reg 1 3 hit $end
+$var reg 8 4 data_out [7:0] $end
+$var integer 32 5 sva_count $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+03
+b0 4
+b0 5
+0"
+0#
+0$
+0%
+0'
+0&
+0*
+0)
+0(
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+$end
+#15000
+b1000000000000000 !
+1#
+#25000
+b0 !
+0#
+#35000
+b100010110100101 !
+1$
+12
+10
+1-
+1+
+1*
+1(
+#45000
+b10100010110100101 !
+1"
+b10100101 4
+13
+#55000
+b10100000000 !
+0$
+02
+00
+0-
+0+
+0"
+#65000
+b110010100111100 !
+1%
+1$
+10
+1/
+1.
+1-
+#75000
+b10110010100111100 !
+1"
+b111100 4

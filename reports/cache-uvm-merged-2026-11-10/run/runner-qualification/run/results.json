@@ -1,0 +1,173 @@
+{
+  "kind": "SYNTHETIC_RECORD_FIXTURES_NOT_INDUCED_CRASHES",
+  "status": "PASS",
+  "exit_code": 0,
+  "checks": 27,
+  "cases": [
+    {
+      "name": "valid_expected_data_failure",
+      "expected_accept": true,
+      "accepted": true,
+      "pass_": true
+    },
+    {
+      "name": "tool_0_exit_211",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_0_exit_127",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_0_exit_-11",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_0_timeout",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_1_exit_211",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_1_exit_127",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_1_exit_-11",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_1_timeout",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_2_exit_211",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_2_exit_127",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_2_exit_-11",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "tool_2_timeout",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "outer_timeout",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "outer_success",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "changed_environment",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "changed_inputs",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "wrong_dut_lock",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "dirty_dut",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "missing_tool_command",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "wrong_diagnostic",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "extra_fatal",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "unrelated_crash",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "timeout_marker",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "missing_diagnostic",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    },
+    {
+      "name": "valid_missing_marker",
+      "expected_accept": true,
+      "accepted": true,
+      "pass_": true
+    },
+    {
+      "name": "missing_marker_without_completion",
+      "expected_accept": false,
+      "accepted": false,
+      "pass_": true
+    }
+  ],
+  "tested_environment": "b9c35a85113c99715ede572ab1f5dd94574b23e6",
+  "production_sha256": "29777d89c0b9c77622687364170914e987630f564d7696c751a6f0b9ffcd5f9a",
+  "qualification_sha256": "1eeefc85fcd2119d90d9719ef5ffda49d17fdb80a389ba79b1e5b2e4c1dbcc18"
+}

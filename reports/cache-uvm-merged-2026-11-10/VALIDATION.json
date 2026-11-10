@@ -1,0 +1,384 @@
+{
+  "status": "PASS",
+  "environment": "b9c35a85113c99715ede572ab1f5dd94574b23e6",
+  "qualified_implementation": "9c74c35e0c2616a09af8824d2d85754738b5303a",
+  "runner": "9c74c35e0c2616a09af8824d2d85754738b5303a",
+  "inventory": "9c74c35e0c2616a09af8824d2d85754738b5303a",
+  "dut": "b6246eff1380aa0fb7812de9fccaf12b849fa1ca",
+  "merges": [
+    {
+      "url": "https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/pull/16",
+      "reviewed_head": "676a8b4ab0c128e1bfd6776198734b0810bc7adf",
+      "merge_commit": "b9c35a85113c99715ede572ab1f5dd94574b23e6"
+    },
+    {
+      "url": "https://github.com/M-Roohan-Khan-28/Two-Way-Cache-RTL/pull/3",
+      "reviewed_head": "529c4f7daf60d566f3f45631b5a6bf4d3bc006e6",
+      "merge_commit": "b96e33907c8e33e37aa7ce17d912f67bec5e4b9a"
+    }
+  ],
+  "required": 20,
+  "required_names": [
+    "runner-qualification",
+    "sva-reset",
+    "sva-write",
+    "sva-hit",
+    "sva-miss",
+    "sva-stored",
+    "sva-duplicate",
+    "sva-legal",
+    "smoke",
+    "functional",
+    "fault-wrong_way",
+    "fault-wrong_set",
+    "fault-wrong_tag",
+    "fault-corrupted_data",
+    "fault-wrong_priority",
+    "fault-false_hit",
+    "fault-missing_reset",
+    "fault-forbidden_reset_write",
+    "fault-missing_marker",
+    "portable"
+  ],
+  "fixtures": 27,
+  "sva": [
+    {
+      "name": "sva-reset",
+      "status": "PASS",
+      "expected": "RESET_DOMINANCE",
+      "observed": [
+        "RESET_DOMINANCE"
+      ]
+    },
+    {
+      "name": "sva-write",
+      "status": "PASS",
+      "expected": "SELECTED_WRITE",
+      "observed": [
+        "SELECTED_WRITE"
+      ]
+    },
+    {
+      "name": "sva-hit",
+      "status": "PASS",
+      "expected": "LOOKUP_HIT",
+      "observed": [
+        "LOOKUP_HIT"
+      ]
+    },
+    {
+      "name": "sva-miss",
+      "status": "PASS",
+      "expected": "MISS_ZERO",
+      "observed": [
+        "MISS_ZERO"
+      ]
+    },
+    {
+      "name": "sva-stored",
+      "status": "PASS",
+      "expected": "STORED_ENTRY",
+      "observed": [
+        "STORED_ENTRY"
+      ]
+    },
+    {
+      "name": "sva-duplicate",
+      "status": "PASS",
+      "expected": "DUPLICATE_PRIORITY",
+      "observed": [
+        "DUPLICATE_PRIORITY"
+      ]
+    },
+    {
+      "name": "sva-legal",
+      "status": "PASS",
+      "expected": "",
+      "observed": []
+    }
+  ],
+  "scenarios": 79,
+  "totals": {
+    "observations": 5111,
+    "clocks": 420,
+    "writes": 402,
+    "blocked_writes": 2,
+    "resets": 87,
+    "lookups": 5111,
+    "hits": 1566,
+    "misses": 3545,
+    "comparisons": 10222
+  },
+  "all_per_case_counts_match_qualified_run": true,
+  "faults": [
+    {
+      "name": "fault-wrong_way",
+      "status": "PASS",
+      "diagnostic": "CACHE_DATA",
+      "child_wrapper_exit": 1,
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ],
+      "source_and_inputs_match": true,
+      "passing_control": {
+        "substep": "functional",
+        "case": "duplicate_0"
+      }
+    },
+    {
+      "name": "fault-wrong_set",
+      "status": "PASS",
+      "diagnostic": "CACHE_HIT",
+      "child_wrapper_exit": 1,
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ],
+      "source_and_inputs_match": true,
+      "passing_control": {
+        "substep": "smoke",
+        "case": "smoke"
+      }
+    },
+    {
+      "name": "fault-wrong_tag",
+      "status": "PASS",
+      "diagnostic": "CACHE_HIT",
+      "child_wrapper_exit": 1,
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ],
+      "source_and_inputs_match": true,
+      "passing_control": {
+        "substep": "smoke",
+        "case": "smoke"
+      }
+    },
+    {
+      "name": "fault-corrupted_data",
+      "status": "PASS",
+      "diagnostic": "CACHE_DATA",
+      "child_wrapper_exit": 1,
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ],
+      "source_and_inputs_match": true,
+      "passing_control": {
+        "substep": "smoke",
+        "case": "smoke"
+      }
+    },
+    {
+      "name": "fault-wrong_priority",
+      "status": "PASS",
+      "diagnostic": "CACHE_DATA",
+      "child_wrapper_exit": 1,
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ],
+      "source_and_inputs_match": true,
+      "passing_control": {
+        "substep": "functional",
+        "case": "duplicate_0"
+      }
+    },
+    {
+      "name": "fault-false_hit",
+      "status": "PASS",
+      "diagnostic": "CACHE_HIT",
+      "child_wrapper_exit": 1,
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ],
+      "source_and_inputs_match": true,
+      "passing_control": {
+        "substep": "smoke",
+        "case": "smoke"
+      }
+    },
+    {
+      "name": "fault-missing_reset",
+      "status": "PASS",
+      "diagnostic": "CACHE_HIT",
+      "child_wrapper_exit": 1,
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ],
+      "source_and_inputs_match": true,
+      "passing_control": {
+        "substep": "functional",
+        "case": "repeated_reset"
+      }
+    },
+    {
+      "name": "fault-forbidden_reset_write",
+      "status": "PASS",
+      "diagnostic": "CACHE_HIT",
+      "child_wrapper_exit": 1,
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ],
+      "source_and_inputs_match": true,
+      "passing_control": {
+        "substep": "functional",
+        "case": "reset_pending"
+      }
+    },
+    {
+      "name": "fault-missing_marker",
+      "status": "PASS",
+      "diagnostic": "MISSING_RESULT_MARKER",
+      "child_wrapper_exit": 1,
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ],
+      "source_and_inputs_match": true,
+      "passing_control": {
+        "substep": "smoke",
+        "case": "smoke"
+      }
+    }
+  ],
+  "wrapper_exit": 0,
+  "aggregate_exit": 0,
+  "simulator": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+  "uvm": "QUESTA_UVM-1.2.3",
+  "seed": "0x28A6BEEF",
+  "inputs": {
+    "verification/cache_uvm/cache_assertions.sv": "f61bf3afb0191981e68f7ed3677c231fe681911eb36ad10af9a4b36012ccb34e",
+    "verification/cache_uvm/cache_bus.sv": "27febc5ce213313bb183254303c83993ac9901d6db3a47aa5f676864abd51b6c",
+    "verification/cache_uvm/cache_sva_control.sv": "7b7794759aaaa09c8c93f08bfdc676597ad382eed6cd8ca2fdbc251bbd7624e4",
+    "verification/cache_uvm/cache_uvm_pkg.sv": "e177eed6617ebcb15a8984f21aff2c26edd9f7bae075a8ef20b42ebee4cbfd23",
+    "verification/cache_uvm/cache_uvm_top.sv": "ba737c864149d43566da565cc0955d7768b9b72f2a6953c229b5fba8903e8b72",
+    "verification/cache_uvm/inventory.json": "1d55dee65c806d0d24a981736e6d616442c0622697b8537494e8d927d13cf829",
+    "verification/cache_uvm/sources.json": "c7d95593e76dcb7d460638910ebaa1f8a800a17f40251c1ef3f17a4640c0421d",
+    "scripts/run_cache_uvm.py": "29777d89c0b9c77622687364170914e987630f564d7696c751a6f0b9ffcd5f9a",
+    "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+    "scripts/cache_program.py": "5b0871da9062fe99afcadb5a39959dee1751989e1bb21316047feb77fc832619",
+    "scripts/cache_mutations.py": "ce951f54964f9dc7c83a2e4385558f7dde2edef8643d43a2222c9f2343eb5cfc",
+    "scripts/qualify_cache_runner.py": "1eeefc85fcd2119d90d9719ef5ffda49d17fdb80a389ba79b1e5b2e4c1dbcc18"
+  },
+  "portable": {
+    "repository": "Two-Way-Cache-RTL",
+    "source_revision": "b6246eff1380aa0fb7812de9fccaf12b849fa1ca",
+    "source_dirty": false,
+    "sources": [
+      {
+        "path": "C:\\short\\cache-merged-run-20261110\\source\\rtl\\design.sv",
+        "sha256": "c307ebb06354fde65cf18a11e64281b0fc6e14f025770a87f3133571f2b1662e"
+      },
+      {
+        "path": "C:\\short\\cache-merged-run-20261110\\source\\tb\\tb_top.sv",
+        "sha256": "b8b7d800600e1615fffd9ba3d88eac55c73f1f05a4b2e80f3051a421593c5c7d"
+      },
+      {
+        "path": "C:\\short\\cache-merged-run-20261110\\source\\tb\\cache_contract_test.sv",
+        "sha256": "bc5c760ea76291b5a6d7db83f353327e1710d74799d6314fa7a29a2e4eb6151c"
+      }
+    ],
+    "seed": "0x28CACE17 (xorshift32 byte stimulus)",
+    "timeout_seconds_per_command": 120,
+    "simulations": [
+      {
+        "top": "tb_cache_2way",
+        "simulator_exit_code": 0,
+        "command": [
+          "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+          "-c",
+          "-onfinish",
+          "exit",
+          "tb_cache_2way",
+          "-do",
+          "run -all; quit -code 0"
+        ],
+        "status": "PASS",
+        "checks": 7
+      },
+      {
+        "top": "cache_contract_test",
+        "simulator_exit_code": 0,
+        "command": [
+          "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+          "-c",
+          "-onfinish",
+          "exit",
+          "cache_contract_test",
+          "-do",
+          "run -all; quit -code 0"
+        ],
+        "status": "PASS",
+        "checks": 1639,
+        "writes": 324,
+        "resets": 2
+      }
+    ],
+    "overall": "PASS",
+    "simulator_version": "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020",
+    "elapsed_seconds": 12.277
+  },
+  "clean": true,
+  "detached": true,
+  "serial": true
+}
