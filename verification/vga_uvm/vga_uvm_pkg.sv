@@ -152,7 +152,7 @@ package vga_uvm_pkg;
         else if(!ea && o.rgb!==12'h0)pending_id="VGA_BLANK";
         else if(o.rgb!==ergb)pending_id="VGA_RGB";
       end
-      pending_detail=$sformatf("case=%s h=%0d v=%0d div=%0d expected=%b%b%b/%h actual=%b%b%b/%h controls=%h intended=%h",current_case,raster.h,raster.v,raster.d,eh,ev,ea,ergb,o.hs,o.vs,o.av,o.rgb,o.controls,o.intended);
+      if(pending_id!="")pending_detail=$sformatf("case=%s h=%0d v=%0d div=%0d expected=%b%b%b/%h actual=%b%b%b/%h controls=%h intended=%h",current_case,raster.h,raster.v,raster.d,eh,ev,ea,ergb,o.hs,o.vs,o.av,o.rgb,o.controls,o.intended);
       if(ea)begin
         if(!address_seen[index])begin address_seen[index]=1;distinct_addresses++;end
         if(!color_seen[p])begin color_seen[p]=1;distinct_colors++;end
