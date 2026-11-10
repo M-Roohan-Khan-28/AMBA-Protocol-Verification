@@ -1,0 +1,62 @@
+[
+    {
+        "time_utc":  "2026-11-10T13:37:24.4566334Z",
+        "ProviderName":  "Microsoft-Windows-Power-Troubleshooter",
+        "Id":  1,
+        "Message":  "The system has returned from a low power state.\r\n\r\nSleep Time: ‎2026‎-‎11‎-‎10T01:49:36.203119500Z\r\nWake Time: ‎2026‎-‎11‎-‎10T13:37:23.174845600Z\r\n\r\nWake Source: Unknown"
+    },
+    {
+        "time_utc":  "2026-11-10T13:37:23.2097435Z",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  566,
+        "Message":  "The system session has transitioned from 373 to 375.\r\n\r\nReason PolicyChange \r\n\r\nBootId: 195"
+    },
+    {
+        "time_utc":  "2026-11-10T13:37:23.2093910Z",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  507,
+        "Message":  "The system is exiting Modern Standby \r\n\r\nReason: Lid."
+    },
+    {
+        "time_utc":  "2026-11-10T13:37:23.0884456Z",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  506,
+        "Message":  "The system is entering Modern Standby \r\n\r\nReason: Sleep, Hibernate, or Shutdown."
+    },
+    {
+        "time_utc":  "2026-11-10T13:37:23.0719258Z",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  566,
+        "Message":  "The system session has transitioned from 372 to 373.\r\n\r\nReason SxTransition \r\n\r\nBootId: 195"
+    },
+    {
+        "time_utc":  "2026-11-10T01:49:42.1859745Z",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  107,
+        "Message":  "The system has resumed from sleep."
+    },
+    {
+        "time_utc":  "2026-11-10T01:49:39.0768424Z",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  42,
+        "Message":  "The system is entering sleep.\r\n\r\nSleep Reason: Button or Lid"
+    },
+    {
+        "time_utc":  "2026-11-10T01:49:38.8495261Z",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  40,
+        "Message":  "The driver \\Driver\\ACPI for device  stopped the power transition."
+    },
+    {
+        "time_utc":  "2026-11-10T01:49:36.2037263Z",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  566,
+        "Message":  "The system session has transitioned from 371 to 372.\r\n\r\nReason InputPoUserPresent \r\n\r\nBootId: 195"
+    },
+    {
+        "time_utc":  "2026-11-10T01:48:14.8139236Z",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  105,
+        "Message":  "Power source change."
+    }
+]

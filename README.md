@@ -118,11 +118,19 @@ NOT RUN without their verification-feature licence.
 
 ## Separate deterministic AHB-Lite RAM UVM/SVA milestone
 
-The [bounded environment](docs/DETERMINISTIC_AHB_UVM.md) passed 44 required substeps
-from fresh detached clones: 48 runner-fixture checks, separately reported from
-45 HDL scenarios / 10,497 comparisons, 23 SVA controls, six scoreboard controls,
-11 qualified fault parents and the current portable gate.
-[Corrective evidence and reproduction](reports/ahb-runner-correction-2026-11-10/SUMMARY.md) records the common
-process-exit guard, old/new fixture proof, tool exits and exact source locks.
-Prior releases and measured figures remain intact. Coverage, randomization and
-original advanced ALU/APB remain NOT RUN.
+The [bounded AHB guide](docs/DETERMINISTIC_AHB_UVM.md) describes the independent
+public-pin oracle, pre-edge accounting, assertions and unchanged 16-word DUT.
+The [merged-source closeout](reports/ahb-uvm-merged-2026-11-10/SUMMARY.md) records
+**44/44 required PASS**, aggregate and outer wrapper exit 0, at AMBA merge
+`e58c30428d2a6348d3983c8ee3fbf9e1905629d2`. Both milestone PRs are merged.
+Results: 48 runner-fixture checks; 23 SVA and six scoreboard controls;
+45 HDL scenarios / 10,497 comparisons; 11 qualified fault parents; and the
+portable 924-comparison / three-negative / one-legal gate. Every fault child
+exits 1 while its three underlying tool commands exit 0 without timeout.
+The abnormal-process-exit qualifier defect is resolved. All 23 execution inputs
+match the reviewed implementation. [Reproduce](reports/ahb-uvm-merged-2026-11-10/REPRODUCE.md)
+with a normal clone and explicit detached merge SHA.
+Historical [old/new controls](reports/ahb-runner-correction-2026-11-10/SUMMARY.md)
+and [original measured figures](reports/ahb-uvm-2026-11-10/SUMMARY.md) are unchanged.
+Functional coverage, constrained randomization and original advanced ALU/APB
+remain **NOT RUN**. Full AHB and physical-implementation milestones remain separate.

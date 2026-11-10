@@ -1,0 +1,65 @@
+{
+  "identity": {
+    "id": 270144410,
+    "login": "M-Roohan-Khan-28"
+  },
+  "review": {
+    "repository": "AHB-Lite-RAM-Interface",
+    "pr": 3,
+    "url": "https://github.com/M-Roohan-Khan-28/AHB-Lite-RAM-Interface/pull/3",
+    "head": "c4d97499ed6b78b6859453b2d5b858b380f347c4",
+    "main": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+    "state": "open",
+    "draft": false,
+    "mergeable": true,
+    "mergeable_state": "clean",
+    "permissions": {
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "changed_file_count": 3,
+    "files": [
+      {
+        "filename": "README.md",
+        "status": "modified",
+        "additions": 10,
+        "deletions": 0
+      },
+      {
+        "filename": "docs/DETERMINISTIC_AHB_UVM.md",
+        "status": "added",
+        "additions": 47,
+        "deletions": 0
+      },
+      {
+        "filename": "docs/SPECIFICATION.md",
+        "status": "modified",
+        "additions": 3,
+        "deletions": 2
+      }
+    ],
+    "reviews": [],
+    "review_comments_count": 0,
+    "issue_comments_count": 0,
+    "review_threads": 0,
+    "unresolved_review_threads": 0,
+    "check_runs": [],
+    "combined_status": "pending",
+    "statuses": [],
+    "required_status_contexts": [],
+    "required_checks": [],
+    "branch_protection_present": false,
+    "allow_merge_commit": true,
+    "active_branch_rules": [],
+    "review_comments": [],
+    "issue_comments": []
+  },
+  "url": "https://github.com/M-Roohan-Khan-28/AHB-Lite-RAM-Interface/pull/3",
+  "reviewed_head": "c4d97499ed6b78b6859453b2d5b858b380f347c4",
+  "merge_commit": "66b37e1b21506c46ce7e1e68e582ffdc716a2c57",
+  "method": "merge",
+  "merged_at": "2026-11-10T01:45:03Z"
+}

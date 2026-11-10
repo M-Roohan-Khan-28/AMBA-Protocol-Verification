@@ -1,0 +1,1 @@
+{"name":"wait_busy_idle","offered":33,"accepted":33,"success":33,"errors":0,"writes":16,"reads":17,"withdrawn":0,"reset_accepted":0,"reset_offered":0,"wait_edges":2,"pipeline_edges":30,"resets":1,"comparisons":186,"cycles":42}
