@@ -2,6 +2,10 @@
   "seed": "0x28A6BEEF",
   "required_substeps": [
     {
+      "name": "runner-qualification",
+      "kind": "runner"
+    },
+    {
       "name": "sva-reset",
       "kind": "sva",
       "scenario": "reset",
@@ -139,13 +143,13 @@
       "kind": "fault",
       "fault": "wrong_way",
       "cases": [
-        "entry_isolation"
+        "duplicate_0"
       ],
       "expected_fatal": "CACHE_DATA",
       "mutation": "wrong_way",
       "passing_control": {
         "substep": "functional",
-        "case": "entry_isolation"
+        "case": "duplicate_0"
       }
     },
     {

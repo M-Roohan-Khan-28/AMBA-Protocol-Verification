@@ -48,7 +48,7 @@ def main():
  if a.raw_fault and steps[0]['kind']!='fault':ap.error('Raw mode requires fault')
  start=time.monotonic()
  report=dict(started_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),command=[sys.executable,*sys.argv],source_revision=git(repo,'rev-parse','HEAD'),source_dirty=bool(git(repo,'status','--porcelain')),expected_environment_revision=a.expected_env_sha,serial_execution=True,raw_fault=a.raw_fault,selection=a.select,seed=682016495,seed_hex='0x28A6BEEF',expected_inventory=names,required_selected=[s['name'] for s in steps],suites=[],aggregate_exit_code=1,milestone_pass=False,functional_coverage='NOT RUN',constrained_randomization='NOT RUN',original_advanced_alu_apb='NOT RUN')
- inputs=[*src.glob('*'),Path(__file__),repo/'scripts/advanced_sim.py',repo/'scripts/cache_program.py',repo/'scripts/cache_mutations.py']
+ inputs=[*src.glob('*'),Path(__file__),repo/'scripts/advanced_sim.py',repo/'scripts/cache_program.py',repo/'scripts/cache_mutations.py',repo/'scripts/qualify_cache_runner.py']
  report['input_sha256']={p.relative_to(repo).as_posix():digest(p) for p in inputs if p.is_file()}
  report['runner_revision']=git(repo,'log','-1','--format=%H','--','scripts/run_cache_uvm.py');report['inventory_revision']=git(repo,'log','-1','--format=%H','--','verification/cache_uvm/inventory.json')
  report['configuration']=dict(sim_bin=str(a.sim_bin),uvm_lib=str(a.uvm_lib),uvm_include=str(a.uvm_include),timeout_per_command=a.timeout,global_timeout=a.global_timeout,python_version=sys.version,vendor_input_sha256={str(p):digest(p) for p in [a.uvm_include/'uvm_pkg.sv',a.uvm_include/'uvm_macros.svh',tool(a.sim_bin,'vsim'),tool(a.sim_bin,'vlog')] if p.is_file()})
@@ -76,7 +76,16 @@ def main():
   wd=out/entry['name'];wd.mkdir();s=dict(name=entry['name'],kind=entry['kind'],status='NOT RUN',commands=[]);report['suites'].append(s)
   if prereq or time.monotonic()-start>=a.global_timeout:s['reason']=prereq or 'GLOBAL_TIMEOUT';save();continue
   try:
-   if entry['kind']=='portable':
+   if entry['kind']=='runner':
+    cmd=[sys.executable,str(repo/'scripts/qualify_cache_runner.py'),'--output',str(wd/'run')]
+    c,t=invoke(cmd,repo,wd/'qualification.log');s['commands'].append(c)
+    assert not failure(c,t,r'^CACHE_RUNNER_QUALIFICATION_PASS checks=\d+ failures=0\s*$')
+    r=json.loads((wd/'run/results.json').read_text())
+    assert r['status']=='PASS' and r['exit_code']==0 and r['checks']==len(r['cases']) and r['checks']>0 and all(x['pass_'] for x in r['cases'])
+    assert r['tested_environment']==report['source_revision'] and r['production_sha256']==digest(Path(__file__)) and r['qualification_sha256']==digest(repo/'scripts/qualify_cache_runner.py')
+    assert re.findall(r'^CACHE_RUNNER_QUALIFICATION_PASS checks=(\d+) failures=0\s*$',t,re.M)==[str(r['checks'])]
+    s.update(status='PASS',reason='SYNTHETIC_RECORD_FIXTURES',result=r)
+   elif entry['kind']=='portable':
     os.environ['MODELSIM_BIN']='C:/intelFPGA/20.1/modelsim_ase/win32aloem'
     cmd=[sys.executable,str(source/'scripts/run_contract.py'),'--output-dir',str(wd/'run')]
     c,t=invoke(cmd,source,wd/'wrapper.log',600);s['commands'].append(c)
