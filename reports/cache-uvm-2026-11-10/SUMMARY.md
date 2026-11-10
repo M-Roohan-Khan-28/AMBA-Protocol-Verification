@@ -29,7 +29,7 @@ These are procedural measurements, not a coverage percentage.
 ```text
 5111 lookups = 1566 hits + 3545 misses
 10222 comparisons = 2 × 5111 observations
-420 rising clocks; 402 allowed write commits; 2 reset-blocked write clocks; 87 asynchronous reset edges
+420 rising clocks; 402 allowed write commits; 2 reset-blocked write clocks; 87 reset assertions
 ```
 
 Every case's counts match a separate Python public-pin schedule ledger.
@@ -86,6 +86,13 @@ attribute preserves those bytes in Git and both newline-conversion checkout
 modes. The byte audit is recorded separately. No newline-only difference is
 claimed to change simulation behavior. Figures do not decide correctness;
 the independent scoreboards/assertions and strict runner do.
+
+The [completed byte audit](BYTE_AUDIT.json) matched **493 captured artifacts**
+against Git blobs and fresh detached checkouts with `core.autocrlf=false` and
+`true`. All **24 VCDs** also matched public raw-download bytes, and all four
+figure metadata hashes matched their exact source captures. The audited
+evidence-content revision is `cdb1ac89041449bb8038739726a49fcc07e9e146`;
+this subsequent receipt/documentation commit does not change captured inputs.
 
 ## Reproduce
 
