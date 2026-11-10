@@ -1,0 +1,81 @@
+{
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\ahb-closeout-evidence-20261110\\reports\\ahb-uvm-merged-2026-11-10\\audit_bytes.py",
+    "--repository",
+    "C:\\short\\ahb-closeout-evidence-20261110",
+    "--revision",
+    "108a4cd7c97dcb7b2b5bea4a379fafd74938e968",
+    "--checkout-false",
+    "C:\\short\\ahb-closeout-bytes-false-20261110",
+    "--checkout-true",
+    "C:\\short\\ahb-closeout-bytes-true-20261110",
+    "--output",
+    "C:\\short\\ahb-closeout-evidence-20261110\\reports\\ahb-uvm-merged-2026-11-10\\BYTE_AUDIT.json"
+  ],
+  "exit_code": 0,
+  "clones": [
+    {
+      "command": [
+        "git",
+        "clone",
+        "--quiet",
+        "--config",
+        "core.longpaths=true",
+        "--config",
+        "core.autocrlf=false",
+        "https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git",
+        "C:\\short\\ahb-closeout-bytes-false-20261110"
+      ],
+      "exit_code": 0,
+      "log": "byte-audit-logs/byte-clone-0.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "C:\\short\\ahb-closeout-bytes-false-20261110",
+        "checkout",
+        "--quiet",
+        "--detach",
+        "108a4cd7c97dcb7b2b5bea4a379fafd74938e968"
+      ],
+      "exit_code": 0,
+      "log": "byte-audit-logs/byte-clone-1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "clone",
+        "--quiet",
+        "--config",
+        "core.longpaths=true",
+        "--config",
+        "core.autocrlf=true",
+        "https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git",
+        "C:\\short\\ahb-closeout-bytes-true-20261110"
+      ],
+      "exit_code": 0,
+      "log": "byte-audit-logs/byte-clone-2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "C:\\short\\ahb-closeout-bytes-true-20261110",
+        "checkout",
+        "--quiet",
+        "--detach",
+        "108a4cd7c97dcb7b2b5bea4a379fafd74938e968"
+      ],
+      "exit_code": 0,
+      "log": "byte-audit-logs/byte-clone-3.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "console_log": "byte-audit-logs/audit.log",
+  "console_sha256": "351f8529366130070e7d971bf13f76dc2a792e46484186b2fa14e25ae43aafd3"
+}

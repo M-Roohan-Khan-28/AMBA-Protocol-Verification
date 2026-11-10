@@ -159,3 +159,13 @@ advanced ALU/APB environments: NOT RUN.** No required deterministic substep is
 blocked. Full AHB compliance, HBURST/interconnect expansion, additional transfer
 sizes, coverage closure, synthesis, timing, FPGA and hardware remain separate
 milestones. The time bounds are test-environment assumptions, not AHB latency rules.
+
+## Published-byte verification
+
+Evidence content commit `108a4cd7c97dcb7b2b5bea4a379fafd74938e968` was audited before this receipt was added.
+[BYTE_AUDIT.json](BYTE_AUDIT.json) verifies 615 original
+artifacts against Git blobs and fresh detached checkouts with `core.autocrlf=false`
+and `true`. All 17 included VCDs match public raw downloads exactly.
+[Audit commands and exits](BYTE_AUDIT_COMMAND.json) are preserved. Historical
+figures keep their original capture identity. This receipt changes no execution
+input, original captured artifact or historical report.
