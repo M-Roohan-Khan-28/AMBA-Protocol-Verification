@@ -1,0 +1,1 @@
+{"name":"all_words_overwrite","offered":64,"accepted":64,"success":64,"errors":0,"writes":32,"reads":32,"withdrawn":0,"reset_accepted":0,"reset_offered":0,"wait_edges":0,"pipeline_edges":61,"resets":1,"comparisons":357,"cycles":72}

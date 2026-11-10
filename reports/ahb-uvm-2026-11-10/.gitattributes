@@ -1,0 +1,2 @@
+# Preserve exact original logs and capture bytes; no newline conversion.
+** -text

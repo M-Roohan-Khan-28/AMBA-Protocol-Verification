@@ -1,0 +1,11 @@
+fault-live_address PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-address_phase_data PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-read_data PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-invalid_write PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-wait_advance PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-short_error PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-missing_error PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-address_alias PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-duplicate PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-omit_observation PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-missing_marker PASS EXPECTED_CHILD_FAILURE child exit 1

@@ -1,0 +1,1 @@
+{"name":"reset_write_wait","offered":51,"accepted":50,"success":49,"errors":0,"writes":17,"reads":32,"withdrawn":0,"reset_accepted":1,"reset_offered":1,"wait_edges":1,"pipeline_edges":45,"resets":2,"comparisons":274,"cycles":62}

@@ -1,0 +1,21 @@
+{
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+    "--output",
+    "C:\\short\\ahb-smoke-v1",
+    "--expected-env-sha",
+    "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+    "--select",
+    "sva-write_data",
+    "sva-legal_read_wdata",
+    "smoke"
+  ],
+  "cwd": "C:\\short\\ahb-uvm-20261110",
+  "started_utc": "2026-11-09T23:00:49.345581+00:00",
+  "finished_utc": "2026-11-09T23:02:00.398681+00:00",
+  "source_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+  "exit_code": 0,
+  "log": "smoke-v1-wrapper.log",
+  "sha256": "b68451a22c9c743d3bd83e3b128c1e54abcc8239e870bda5084ac873a27873aa"
+}

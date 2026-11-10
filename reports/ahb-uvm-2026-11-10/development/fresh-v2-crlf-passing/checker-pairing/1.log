@@ -1,0 +1,16 @@
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+Start time: 04:36:29 on Nov 10,2026
+vlog -sv -work work -L C:\MXR\Quartus\25.1\questa_fse\uvm-1.2 "+incdir+C:\MXR\Quartus\25.1\questa_fse\verilog_src\uvm-1.2\src" C:\short\ahb-uvm-fresh-v2-20261110\verification\ahb_uvm\ahb_bus.sv C:\short\ahb-uvm-fresh-v2-20261110\verification\ahb_uvm\ahb_uvm_pkg.sv C:\short\ahb-uvm-fresh-v2-20261110\verification\ahb_uvm\ahb_checker_control.sv 
+** Note: (vlog-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+-- Compiling interface ahb_bus
+-- Compiling package ahb_uvm_pkg
+-- Importing package C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.uvm_pkg (uvm-1.2 Built-in)
+-- Compiling package ahb_checker_pkg
+-- Importing package ahb_uvm_pkg
+-- Compiling module ahb_checker_control
+-- Importing package ahb_checker_pkg
+
+Top level modules:
+	ahb_checker_control
+End time: 04:36:30 on Nov 10,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

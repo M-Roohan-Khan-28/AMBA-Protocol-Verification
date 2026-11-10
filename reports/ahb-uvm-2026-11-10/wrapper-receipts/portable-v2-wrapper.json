@@ -1,0 +1,19 @@
+{
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+    "--output",
+    "C:\\short\\ahb-portable-v2",
+    "--expected-env-sha",
+    "d403d88a71e7c55a46641366007ebd0af9e444a4",
+    "--select",
+    "portable"
+  ],
+  "cwd": "C:\\short\\ahb-uvm-20261110",
+  "started_utc": "2026-11-09T23:32:47.014652+00:00",
+  "finished_utc": "2026-11-09T23:32:57.554062+00:00",
+  "source_revision": "d403d88a71e7c55a46641366007ebd0af9e444a4",
+  "exit_code": 0,
+  "log": "portable-v2-wrapper.log",
+  "sha256": "1d6f7bdb6717f7b25a808aaf5d5ad8bb1027805562043bbb81d68290c979cc71"
+}

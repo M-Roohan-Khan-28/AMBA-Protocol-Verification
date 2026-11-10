@@ -1,0 +1,130 @@
+Reading pref.tcl
+
+# 2025.2
+
+# ** Note: (vsim-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# vsim -c -onfinish exit -voptargs="+acc" -sv_seed 682016495 -L C:\MXR\Quartus\25.1\questa_fse\uvm-1.2 work.ahb_uvm_top "+PROGRAM=C:\short\ahb-uvm-fresh-run-v2-20261110\fault-short_error\child\fault-short_error\program.txt" -do "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /ahb_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0" 
+# Start time: 04:42:26 on Nov 10,2026
+# Loading C:/Users/CG/AppData/Local/Temp\CG@DESKTOP-9KOU2NO_dpi_13728\win64_gcc-7.4.0\export_tramp.dll
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vopt-143) Recognized 1 FSM in module "ahb_lite_slave_ram(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.ahb_bus(fast)
+# Loading C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.uvm_pkg(fast)
+# Loading work.ahb_uvm_pkg(fast)
+# Loading C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.questa_uvm_pkg(fast)
+# Loading work.ahb_uvm_top(fast)
+# Loading work.ahb_bus(fast__2)
+# Loading work.ahb_lite_slave_ram(fast)
+# Loading work.ahb_assertions(fast)
+# Compiling C:/Users/CG/AppData/Local/Temp\CG@DESKTOP-9KOU2NO_dpi_13728\win64_gcc-7.4.0\exportwrapper.c
+# Loading C:/Users/CG/AppData/Local/Temp\CG@DESKTOP-9KOU2NO_dpi_13728\win64_gcc-7.4.0\vsim_auto_compile.dll
+# Loading C:/MXR/Quartus/25.1/questa_fse/uvm-1.2\win64\uvm_dpi.dll
+# onerror {quit -force -code 1}
+#  Warning: onerror command for use within macro
+#  vcd file capture.vcd
+#  vcd add /ahb_uvm_top/bus/*
+#  run -all
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test ahb_test...
+# AHB_CASE_START name=bad_address_01 time=0
+# AHB_INTENT id=1 addr=00 write=1 size=2 data=f96f7931
+# AHB_ACCEPT id=1 addr=00 write=1
+# AHB_INTENT id=2 addr=04 write=1 size=2 data=a8633f28
+# AHB_RETIRE id=1 error=0
+# AHB_ACCEPT id=2 addr=04 write=1
+# AHB_INTENT id=3 addr=08 write=1 size=2 data=5b77f503
+# AHB_RETIRE id=2 error=0
+# AHB_ACCEPT id=3 addr=08 write=1
+# AHB_INTENT id=4 addr=0c write=1 size=2 data=0e0caadb
+# AHB_RETIRE id=3 error=0
+# AHB_ACCEPT id=4 addr=0c write=1
+# AHB_INTENT id=5 addr=10 write=1 size=2 data=bd4ee155
+# AHB_RETIRE id=4 error=0
+# AHB_ACCEPT id=5 addr=10 write=1
+# AHB_INTENT id=6 addr=14 write=1 size=2 data=22ba47ef
+# AHB_RETIRE id=5 error=0
+# AHB_ACCEPT id=6 addr=14 write=1
+# AHB_INTENT id=7 addr=18 write=1 size=2 data=17a8dec4
+# AHB_RETIRE id=6 error=0
+# AHB_ACCEPT id=7 addr=18 write=1
+# AHB_INTENT id=8 addr=1c write=1 size=2 data=00d1b01c
+# AHB_RETIRE id=7 error=0
+# AHB_ACCEPT id=8 addr=1c write=1
+# AHB_INTENT id=9 addr=20 write=1 size=2 data=713cc9d8
+# AHB_RETIRE id=8 error=0
+# AHB_ACCEPT id=9 addr=20 write=1
+# AHB_INTENT id=10 addr=24 write=1 size=2 data=fe0eed31
+# AHB_RETIRE id=9 error=0
+# AHB_ACCEPT id=10 addr=24 write=1
+# AHB_INTENT id=11 addr=28 write=1 size=2 data=4ed5848d
+# AHB_RETIRE id=10 error=0
+# AHB_ACCEPT id=11 addr=28 write=1
+# AHB_INTENT id=12 addr=2c write=1 size=2 data=15d08bfc
+# AHB_RETIRE id=11 error=0
+# AHB_ACCEPT id=12 addr=2c write=1
+# AHB_INTENT id=13 addr=30 write=1 size=2 data=24e036db
+# AHB_RETIRE id=12 error=0
+# AHB_ACCEPT id=13 addr=30 write=1
+# AHB_INTENT id=14 addr=34 write=1 size=2 data=77c1fcba
+# AHB_RETIRE id=13 error=0
+# AHB_ACCEPT id=14 addr=34 write=1
+# AHB_INTENT id=15 addr=38 write=1 size=2 data=0a026b4a
+# AHB_RETIRE id=14 error=0
+# AHB_ACCEPT id=15 addr=38 write=1
+# AHB_INTENT id=16 addr=3c write=1 size=2 data=9749b51b
+# AHB_RETIRE id=15 error=0
+# AHB_ACCEPT id=16 addr=3c write=1
+# AHB_RETIRE id=16 error=0
+# AHB_INTENT id=17 addr=01 write=1 size=2 data=deada55a
+# AHB_ACCEPT id=17 addr=01 write=1
+# AHB_INTENT id=18 addr=28 write=1 size=2 data=bad0babe
+# AHB_RETIRE id=17 error=1
+# AHB_ACCEPT id=18 addr=28 write=1
+# AHB_SVA_DETECTED ERROR_FIRST time=225000
+# ** Fatal: AHB_SVA_UNEXPECTED ERROR_FIRST
+#    Time: 225 ns Started: 225 ns  Scope: ahb_uvm_top.assertions_i.violation File: C:/short/ahb-uvm-fresh-v2-20261110/verification/ahb_uvm/ahb_assertions.sv Line: 10
+# ** Note: $finish    : C:/short/ahb-uvm-fresh-v2-20261110/verification/ahb_uvm/ahb_assertions.sv(10)
+#    Time: 225 ns  Iteration: 3  Instance: /ahb_uvm_top/assertions_i/a_error_first
+# End time: 04:42:51 on Nov 10,2026, Elapsed time: 0:00:25
+# Errors: 1, Warnings: 1

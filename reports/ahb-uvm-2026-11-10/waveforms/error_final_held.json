@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "origin": "simulator",
+  "source_filename": "capture.vcd",
+  "source_sha256": "f6b1165f5e9ab14657014ef5f0c05db27b3fc054af33e50fcde59b9d9df00492",
+  "timescale": "1ps",
+  "start_tick": 19610000,
+  "end_tick": 19720000,
+  "source_final_tick": 23135000,
+  "signals": [
+    {
+      "name": "ahb_uvm_top.bus.clk",
+      "code": "!",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "ahb_uvm_top.bus.reset_n",
+      "code": "\"",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "ahb_uvm_top.bus.sel",
+      "code": "#",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "ahb_uvm_top.bus.trans",
+      "code": "'",
+      "width": 2,
+      "kind": "reg",
+      "bit_range": "[1:0]"
+    },
+    {
+      "name": "ahb_uvm_top.bus.addr",
+      "code": "&",
+      "width": 8,
+      "kind": "reg",
+      "bit_range": "[7:0]"
+    },
+    {
+      "name": "ahb_uvm_top.bus.write",
+      "code": "$",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "ahb_uvm_top.bus.size",
+      "code": "(",
+      "width": 3,
+      "kind": "reg",
+      "bit_range": "[2:0]"
+    },
+    {
+      "name": "ahb_uvm_top.bus.wdata",
+      "code": ")",
+      "width": 32,
+      "kind": "reg",
+      "bit_range": "[31:0]"
+    },
+    {
+      "name": "ahb_uvm_top.bus.rdata",
+      "code": "*",
+      "width": 32,
+      "kind": "reg",
+      "bit_range": "[31:0]"
+    },
+    {
+      "name": "ahb_uvm_top.bus.ext_ready",
+      "code": "%",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "ahb_uvm_top.bus.readyout",
+      "code": ",",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "ahb_uvm_top.bus.ready",
+      "code": "+",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "ahb_uvm_top.bus.resp",
+      "code": "-",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    }
+  ],
+  "same_tick_collapses": 0,
+  "functional_result": "NOT_ASSESSED_BY_RENDERER",
+  "source_relative_path": "../run/functional/capture.vcd",
+  "source_revision": "d403d88a71e7c55a46641366007ebd0af9e444a4",
+  "source_representation": "original simulator capture; Git -text; no conversion",
+  "captured_sha256": "f6b1165f5e9ab14657014ef5f0c05db27b3fc054af33e50fcde59b9d9df00492",
+  "selected_public_pin_events": {
+    "first_error_edge": 19635000,
+    "held_final_error_edges": [
+      19645000,
+      19655000,
+      19665000,
+      19675000,
+      19685000
+    ],
+    "error_retirement": 19695000,
+    "speculative_address_canceled": true
+  }
+}

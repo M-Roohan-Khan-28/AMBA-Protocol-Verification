@@ -115,3 +115,12 @@ measured VCD figure, and the fresh 11/11 internal simulation result are in
 [response-order qualification](docs/RESPONSE_ORDER_QUALIFICATION.md). These
 are bounded monitor tests; the original advanced ALU/APB environments remain
 NOT RUN without their verification-feature licence.
+
+## Separate deterministic AHB-Lite RAM UVM/SVA milestone
+
+The [new bounded environment](docs/DETERMINISTIC_AHB_UVM.md) passed 43 required
+substeps from a fresh detached GitHub clone: 45 functional scenarios / 10,497
+comparisons, 23 SVA controls, six scoreboard controls, 11 qualified fault parents
+and the separate current portable gate. [Raw evidence and reproduction](reports/ahb-uvm-2026-11-10/SUMMARY.md)
+preserve exact source locks and original waveform bytes. Prior releases remain
+unchanged. Coverage, randomization and original advanced ALU/APB remain NOT RUN.

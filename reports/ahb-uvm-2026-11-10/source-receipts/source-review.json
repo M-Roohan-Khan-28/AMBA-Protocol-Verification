@@ -1,0 +1,41 @@
+{
+  "base": "5fa38d68d56426fdc01388a5bd885316e867a457",
+  "implementation": "d403d88a71e7c55a46641366007ebd0af9e444a4",
+  "change_kind": "only new AHB verification and runner files",
+  "changes": [
+    "A\tscripts/ahb_mutations.py",
+    "A\tscripts/ahb_program.py",
+    "A\tscripts/run_ahb_uvm.py",
+    "A\tverification/ahb_uvm/ahb_assertions.sv",
+    "A\tverification/ahb_uvm/ahb_bus.sv",
+    "A\tverification/ahb_uvm/ahb_checker_control.sv",
+    "A\tverification/ahb_uvm/ahb_sva_control.sv",
+    "A\tverification/ahb_uvm/ahb_uvm_pkg.sv",
+    "A\tverification/ahb_uvm/ahb_uvm_top.sv",
+    "A\tverification/ahb_uvm/inventory.json",
+    "A\tverification/ahb_uvm/sources.json"
+  ],
+  "checked_unchanged_shared_inputs": [
+    {
+      "path": "scripts/advanced_sim.py",
+      "sha256": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93"
+    },
+    {
+      "path": "scripts/run_portfolio_regression.ps1",
+      "sha256": "1deb3982f1afa83175e11e645d9fb313bdbc539a30cf1c9f772a21252c1c5656"
+    },
+    {
+      "path": "scripts/run_dma_uvm.py",
+      "sha256": "376fe9cfd721332a5d6c0ea43945345bbfb81a65b7b12272a6838f8f8244fda5"
+    }
+  ],
+  "notes": [
+    "DUT RTL unchanged at separate full-SHA lock",
+    "Independent request intentions and expected RAM; retire before same-edge acceptance",
+    "Read data checked at retirement; HWDATA may change during reads",
+    "All counters reconciled including both reset cancellation categories",
+    "Every fault requires exact diagnostic and nonzero child; missing marker is not PASS",
+    "No historical report, licence, attribution or prior source lock changed",
+    "Pre-publication stimulus correction: independent requests use NONSEQ; SEQ/BUSY follow the incrementing word convention; actual capture audit old=36 violations, corrected=0"
+  ]
+}

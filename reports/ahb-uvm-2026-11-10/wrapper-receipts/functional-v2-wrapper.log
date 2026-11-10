@@ -1,0 +1,6 @@
+sva-busy_control PASS EXECUTED
+sva-legal_busy_seq PASS EXECUTED
+sva-legal_busy_nonseq PASS EXECUTED
+sva-legal_busy_idle PASS EXECUTED
+smoke PASS EXECUTED
+functional PASS EXECUTED

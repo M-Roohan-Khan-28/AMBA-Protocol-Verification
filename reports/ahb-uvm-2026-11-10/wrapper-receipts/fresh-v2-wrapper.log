@@ -1,0 +1,43 @@
+sva-address_hold PASS EXECUTED
+sva-direction_hold PASS EXECUTED
+sva-size_hold PASS EXECUTED
+sva-selection_hold PASS EXECUTED
+sva-active_to_idle PASS EXECUTED
+sva-write_data PASS EXECUTED
+sva-idle_to_seq PASS EXECUTED
+sva-busy_control PASS EXECUTED
+sva-response_owner PASS EXECUTED
+sva-short_error PASS EXECUTED
+sva-long_error PASS EXECUTED
+sva-held_error_lost PASS EXECUTED
+sva-local_ok_wait PASS EXECUTED
+sva-global_through_error PASS EXECUTED
+sva-reset_output PASS EXECUTED
+sva-legal_read_wdata PASS EXECUTED
+sva-legal_idle_change PASS EXECUTED
+sva-legal_busy_seq PASS EXECUTED
+sva-legal_busy_nonseq PASS EXECUTED
+sva-legal_busy_idle PASS EXECUTED
+sva-legal_error_cancel PASS EXECUTED
+sva-legal_error_continue PASS EXECUTED
+sva-legal_reset_cancel PASS EXECUTED
+checker-legal PASS EXECUTED
+checker-reset PASS EXECUTED
+checker-pairing PASS EXPECTED_CHECKER_DETECTION
+checker-alias PASS EXPECTED_CHECKER_DETECTION
+checker-duplicate PASS EXPECTED_CHECKER_DETECTION
+checker-omitted PASS EXPECTED_CHECKER_DETECTION
+smoke PASS EXECUTED
+functional PASS EXECUTED
+fault-live_address PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-address_phase_data PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-read_data PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-invalid_write PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-wait_advance PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-short_error PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-missing_error PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-address_alias PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-duplicate PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-omit_observation PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-missing_marker PASS EXPECTED_CHILD_FAILURE child exit 1
+portable PASS EXECUTED

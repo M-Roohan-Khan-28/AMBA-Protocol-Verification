@@ -1,0 +1,20 @@
+--- locked/rtl/design.sv
++++ disposable/rtl/design.sv
+@@ -24,6 +24,8 @@
+ typedef enum logic [1:0] {RESP_OK, RESP_ERROR_WAIT, RESP_ERROR_FINISH} response_state_t;
+ response_state_t response_state;
+ integer      i;
++logic [31:0] bad_address_data;
++always @(posedge HCLK) if(HREADY) bad_address_data <= HWDATA;
+ 
+ // An invalid transfer has a two-cycle ERROR response. The first phase inserts
+ // a local wait; the second completes when global HREADY permits retirement.
+@@ -57,7 +59,7 @@
+     begin
+ 
+         if(transfer_q && write_q && !error_q)
+-            memory[index_q] <= HWDATA;
++            memory[index_q] <= bad_address_data;
+ 
+         transfer_q <= HSEL && HTRANS[1];
+         write_q <= HWRITE;

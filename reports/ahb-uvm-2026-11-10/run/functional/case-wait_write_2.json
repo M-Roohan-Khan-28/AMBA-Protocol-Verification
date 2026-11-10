@@ -1,0 +1,1 @@
+{"name":"wait_write_2","offered":34,"accepted":34,"success":34,"errors":0,"writes":18,"reads":16,"withdrawn":0,"reset_accepted":0,"reset_offered":0,"wait_edges":2,"pipeline_edges":31,"resets":1,"comparisons":195,"cycles":43}

@@ -1,0 +1,195 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="931" viewBox="0 0 1440 931">
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif} .signal{font-family:DejaVu Sans Mono,monospace;font-size:13px} .small{font-size:12px;fill:#475569}</style>
+<text x="26" y="31" font-size="21" fill="#0f172a">Measured reset cancellation: stalled write, speculative address, cleared readback (original bytes)</text>
+<text x="26" y="54" font-size="13" fill="#92400e">VCD TRACE — check the accompanying simulation result</text>
+<text x="26" y="76" class="small">Time in VCD ticks; 1 tick = 1ps. Same-timestamp changes display their final value.</text>
+<path d="M370.00,105 V864" stroke="#dbe3ed"/>
+<text x="370.00" y="99" text-anchor="middle" class="small">2.1465e+07</text>
+<path d="M496.25,105 V864" stroke="#dbe3ed"/>
+<text x="496.25" y="99" text-anchor="middle" class="small">2.148e+07</text>
+<path d="M622.50,105 V864" stroke="#dbe3ed"/>
+<text x="622.50" y="99" text-anchor="middle" class="small">2.1495e+07</text>
+<path d="M748.75,105 V864" stroke="#dbe3ed"/>
+<text x="748.75" y="99" text-anchor="middle" class="small">2.151e+07</text>
+<path d="M875.00,105 V864" stroke="#dbe3ed"/>
+<text x="875.00" y="99" text-anchor="middle" class="small">2.1525e+07</text>
+<path d="M1001.25,105 V864" stroke="#dbe3ed"/>
+<text x="1001.25" y="99" text-anchor="middle" class="small">2.154e+07</text>
+<path d="M1127.50,105 V864" stroke="#dbe3ed"/>
+<text x="1127.50" y="99" text-anchor="middle" class="small">2.1555e+07</text>
+<path d="M1253.75,105 V864" stroke="#dbe3ed"/>
+<text x="1253.75" y="99" text-anchor="middle" class="small">2.157e+07</text>
+<path d="M1380.00,105 V864" stroke="#dbe3ed"/>
+<text x="1380.00" y="99" text-anchor="middle" class="small">2.1585e+07</text>
+<text x="26" y="135" class="signal"><title>ahb_uvm_top.bus.clk</title>ahb_uvm_top.bus.clk</text>
+<text x="26" y="151" class="small">1 bit</text>
+<path d="M370.00,122 H412.08" stroke="#0369a1" stroke-width="2"/>
+<path d="M412.08,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M412.08,150 H454.17" stroke="#0369a1" stroke-width="2"/>
+<path d="M454.17,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M454.17,122 H496.25" stroke="#0369a1" stroke-width="2"/>
+<path d="M496.25,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M496.25,150 H538.33" stroke="#0369a1" stroke-width="2"/>
+<path d="M538.33,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M538.33,122 H580.42" stroke="#0369a1" stroke-width="2"/>
+<path d="M580.42,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M580.42,150 H622.50" stroke="#0369a1" stroke-width="2"/>
+<path d="M622.50,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M622.50,122 H664.58" stroke="#0369a1" stroke-width="2"/>
+<path d="M664.58,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M664.58,150 H706.67" stroke="#0369a1" stroke-width="2"/>
+<path d="M706.67,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M706.67,122 H748.75" stroke="#0369a1" stroke-width="2"/>
+<path d="M748.75,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M748.75,150 H790.83" stroke="#0369a1" stroke-width="2"/>
+<path d="M790.83,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M790.83,122 H832.92" stroke="#0369a1" stroke-width="2"/>
+<path d="M832.92,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M832.92,150 H875.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M875.00,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M875.00,122 H917.08" stroke="#0369a1" stroke-width="2"/>
+<path d="M917.08,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M917.08,150 H959.17" stroke="#0369a1" stroke-width="2"/>
+<path d="M959.17,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M959.17,122 H1001.25" stroke="#0369a1" stroke-width="2"/>
+<path d="M1001.25,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M1001.25,150 H1043.33" stroke="#0369a1" stroke-width="2"/>
+<path d="M1043.33,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M1043.33,122 H1085.42" stroke="#0369a1" stroke-width="2"/>
+<path d="M1085.42,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M1085.42,150 H1127.50" stroke="#0369a1" stroke-width="2"/>
+<path d="M1127.50,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M1127.50,122 H1169.58" stroke="#0369a1" stroke-width="2"/>
+<path d="M1169.58,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M1169.58,150 H1211.67" stroke="#0369a1" stroke-width="2"/>
+<path d="M1211.67,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M1211.67,122 H1253.75" stroke="#0369a1" stroke-width="2"/>
+<path d="M1253.75,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M1253.75,150 H1295.83" stroke="#0369a1" stroke-width="2"/>
+<path d="M1295.83,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M1295.83,122 H1337.92" stroke="#0369a1" stroke-width="2"/>
+<path d="M1337.92,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M1337.92,150 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,162 H1408" stroke="#e2e8f0"/>
+<text x="26" y="192" class="signal"><title>ahb_uvm_top.bus.reset_n</title>ahb_uvm_top.bus.reset_n</text>
+<text x="26" y="208" class="small">1 bit</text>
+<path d="M370.00,179 H664.58" stroke="#0369a1" stroke-width="2"/>
+<path d="M664.58,179 V207" stroke="#0369a1" stroke-width="2"/>
+<path d="M664.58,207 H832.92" stroke="#0369a1" stroke-width="2"/>
+<path d="M832.92,207 V179" stroke="#0369a1" stroke-width="2"/>
+<path d="M832.92,179 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,219 H1408" stroke="#e2e8f0"/>
+<text x="26" y="249" class="signal"><title>ahb_uvm_top.bus.sel</title>ahb_uvm_top.bus.sel</text>
+<text x="26" y="265" class="small">1 bit</text>
+<path d="M370.00,236 H412.08" stroke="#0369a1" stroke-width="2"/>
+<path d="M412.08,236 V264" stroke="#0369a1" stroke-width="2"/>
+<path d="M412.08,264 H496.25" stroke="#0369a1" stroke-width="2"/>
+<path d="M496.25,264 V236" stroke="#0369a1" stroke-width="2"/>
+<path d="M496.25,236 H664.58" stroke="#0369a1" stroke-width="2"/>
+<path d="M664.58,236 V264" stroke="#0369a1" stroke-width="2"/>
+<path d="M664.58,264 H917.08" stroke="#0369a1" stroke-width="2"/>
+<path d="M917.08,264 V236" stroke="#0369a1" stroke-width="2"/>
+<path d="M917.08,236 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,276 H1408" stroke="#e2e8f0"/>
+<text x="26" y="306" class="signal"><title>ahb_uvm_top.bus.trans</title>ahb_uvm_top.bus.trans</text>
+<text x="26" y="322" class="small">2 bit [1:0]</text>
+<polygon points="370.00,307 374.00,293 408.08,293 412.08,307 408.08,321 374.00,321" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>11</title></polygon>
+<text x="391.04" y="312" text-anchor="middle" class="signal" fill="#0369a1">0x3</text>
+<polygon points="412.08,307 416.08,293 492.25,293 496.25,307 492.25,321 416.08,321" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00</title></polygon>
+<text x="454.17" y="312" text-anchor="middle" class="signal" fill="#0369a1">0x0</text>
+<polygon points="496.25,307 500.25,293 660.58,293 664.58,307 660.58,321 500.25,321" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>10</title></polygon>
+<text x="580.42" y="312" text-anchor="middle" class="signal" fill="#0369a1">0x2</text>
+<polygon points="664.58,307 668.58,293 913.08,293 917.08,307 913.08,321 668.58,321" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00</title></polygon>
+<text x="790.83" y="312" text-anchor="middle" class="signal" fill="#0369a1">0x0</text>
+<polygon points="917.08,307 921.08,293 997.25,293 1001.25,307 997.25,321 921.08,321" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>10</title></polygon>
+<text x="959.17" y="312" text-anchor="middle" class="signal" fill="#0369a1">0x2</text>
+<polygon points="1001.25,307 1005.25,293 1376.00,293 1380.00,307 1376.00,321 1005.25,321" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>11</title></polygon>
+<text x="1190.62" y="312" text-anchor="middle" class="signal" fill="#0369a1">0x3</text>
+<path d="M26,333 H1408" stroke="#e2e8f0"/>
+<text x="26" y="363" class="signal"><title>ahb_uvm_top.bus.addr</title>ahb_uvm_top.bus.addr</text>
+<text x="26" y="379" class="small">8 bit [7:0]</text>
+<polygon points="370.00,364 374.00,350 408.08,350 412.08,364 408.08,378 374.00,378" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00111100</title></polygon>
+<text x="391.04" y="369" text-anchor="middle" class="signal" fill="#0369a1">0x3C</text>
+<polygon points="412.08,364 416.08,350 492.25,350 496.25,364 492.25,378 416.08,378" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00000000</title></polygon>
+<text x="454.17" y="369" text-anchor="middle" class="signal" fill="#0369a1">0x00</text>
+<polygon points="496.25,364 500.25,350 576.42,350 580.42,364 576.42,378 500.25,378" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00000100</title></polygon>
+<text x="538.33" y="369" text-anchor="middle" class="signal" fill="#0369a1">0x04</text>
+<polygon points="580.42,364 584.42,350 660.58,350 664.58,364 660.58,378 584.42,378" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00110000</title></polygon>
+<text x="622.50" y="369" text-anchor="middle" class="signal" fill="#0369a1">0x30</text>
+<polygon points="664.58,364 668.58,350 997.25,350 1001.25,364 997.25,378 668.58,378" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00000000</title></polygon>
+<text x="832.92" y="369" text-anchor="middle" class="signal" fill="#0369a1">0x00</text>
+<polygon points="1001.25,364 1005.25,350 1081.42,350 1085.42,364 1081.42,378 1005.25,378" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00000100</title></polygon>
+<text x="1043.33" y="369" text-anchor="middle" class="signal" fill="#0369a1">0x04</text>
+<polygon points="1085.42,364 1089.42,350 1165.58,350 1169.58,364 1165.58,378 1089.42,378" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00001000</title></polygon>
+<text x="1127.50" y="369" text-anchor="middle" class="signal" fill="#0369a1">0x08</text>
+<polygon points="1169.58,364 1173.58,350 1249.75,350 1253.75,364 1249.75,378 1173.58,378" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00001100</title></polygon>
+<text x="1211.67" y="369" text-anchor="middle" class="signal" fill="#0369a1">0x0C</text>
+<polygon points="1253.75,364 1257.75,350 1333.92,350 1337.92,364 1333.92,378 1257.75,378" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00010000</title></polygon>
+<text x="1295.83" y="369" text-anchor="middle" class="signal" fill="#0369a1">0x10</text>
+<polygon points="1337.92,364 1341.92,350 1376.00,350 1380.00,364 1376.00,378 1341.92,378" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00010100</title></polygon>
+<text x="1358.96" y="369" text-anchor="middle" class="signal" fill="#0369a1">0x14</text>
+<path d="M26,390 H1408" stroke="#e2e8f0"/>
+<text x="26" y="420" class="signal"><title>ahb_uvm_top.bus.write</title>ahb_uvm_top.bus.write</text>
+<text x="26" y="436" class="small">1 bit</text>
+<path d="M370.00,407 H412.08" stroke="#0369a1" stroke-width="2"/>
+<path d="M412.08,407 V435" stroke="#0369a1" stroke-width="2"/>
+<path d="M412.08,435 H496.25" stroke="#0369a1" stroke-width="2"/>
+<path d="M496.25,435 V407" stroke="#0369a1" stroke-width="2"/>
+<path d="M496.25,407 H664.58" stroke="#0369a1" stroke-width="2"/>
+<path d="M664.58,407 V435" stroke="#0369a1" stroke-width="2"/>
+<path d="M664.58,435 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,447 H1408" stroke="#e2e8f0"/>
+<text x="26" y="477" class="signal"><title>ahb_uvm_top.bus.size</title>ahb_uvm_top.bus.size</text>
+<text x="26" y="493" class="small">3 bit [2:0]</text>
+<polygon points="370.00,478 374.00,464 1376.00,464 1380.00,478 1376.00,492 374.00,492" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>010</title></polygon>
+<text x="875.00" y="483" text-anchor="middle" class="signal" fill="#0369a1">0x2</text>
+<path d="M26,504 H1408" stroke="#e2e8f0"/>
+<text x="26" y="534" class="signal"><title>ahb_uvm_top.bus.wdata</title>ahb_uvm_top.bus.wdata</text>
+<text x="26" y="550" class="small">32 bit [31:0]</text>
+<polygon points="370.00,535 374.00,521 408.08,521 412.08,535 408.08,549 374.00,549" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00001010000000100110101101001010</title></polygon>
+<polygon points="412.08,535 416.08,521 492.25,521 496.25,535 492.25,549 416.08,549" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>10010111010010011011010100011011</title></polygon>
+<polygon points="496.25,535 500.25,521 576.42,521 580.42,535 576.42,549 500.25,549" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>01110111010001100110111111010010</title></polygon>
+<polygon points="580.42,535 584.42,521 744.75,521 748.75,535 744.75,549 584.42,549" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>11111010110111101011101011010000</title></polygon>
+<text x="664.58" y="540" text-anchor="middle" class="signal" fill="#0369a1">0xFADEBAD0</text>
+<polygon points="748.75,535 752.75,521 828.92,521 832.92,535 828.92,549 752.75,549" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00110010001111101111110111110000</title></polygon>
+<polygon points="832.92,535 836.92,521 913.08,521 917.08,535 913.08,549 836.92,549" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>10100011001011010000101101011111</title></polygon>
+<polygon points="917.08,535 921.08,521 997.25,521 1001.25,535 997.25,549 921.08,549" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>11010110001000011101001010111110</title></polygon>
+<polygon points="1001.25,535 1005.25,521 1081.42,521 1085.42,535 1081.42,549 1005.25,549" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00000101011011101001111110111100</title></polygon>
+<polygon points="1085.42,535 1089.42,521 1165.58,521 1169.58,535 1165.58,549 1089.42,549" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00101100000001011110100001101100</title></polygon>
+<polygon points="1169.58,535 1173.58,521 1249.75,521 1253.75,535 1249.75,549 1173.58,549" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>11111110111110010011000001011100</title></polygon>
+<polygon points="1253.75,535 1257.75,521 1333.92,521 1337.92,535 1333.92,549 1257.75,549" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>01000011100001111110111000000101</title></polygon>
+<polygon points="1337.92,535 1341.92,521 1376.00,521 1380.00,535 1376.00,549 1341.92,549" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>11000100011111100000110011011111</title></polygon>
+<path d="M26,561 H1408" stroke="#e2e8f0"/>
+<text x="26" y="591" class="signal"><title>ahb_uvm_top.bus.rdata</title>ahb_uvm_top.bus.rdata</text>
+<text x="26" y="607" class="small">32 bit [31:0]</text>
+<polygon points="370.00,592 374.00,578 1376.00,578 1380.00,592 1376.00,606 374.00,606" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00000000000000000000000000000000</title></polygon>
+<text x="875.00" y="597" text-anchor="middle" class="signal" fill="#0369a1">0x00000000</text>
+<path d="M26,618 H1408" stroke="#e2e8f0"/>
+<text x="26" y="648" class="signal"><title>ahb_uvm_top.bus.ext_ready</title>ahb_uvm_top.bus.ext_ready</text>
+<text x="26" y="664" class="small">1 bit</text>
+<path d="M370.00,635 H580.42" stroke="#0369a1" stroke-width="2"/>
+<path d="M580.42,635 V663" stroke="#0369a1" stroke-width="2"/>
+<path d="M580.42,663 H664.58" stroke="#0369a1" stroke-width="2"/>
+<path d="M664.58,663 V635" stroke="#0369a1" stroke-width="2"/>
+<path d="M664.58,635 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,675 H1408" stroke="#e2e8f0"/>
+<text x="26" y="705" class="signal"><title>ahb_uvm_top.bus.readyout</title>ahb_uvm_top.bus.readyout</text>
+<text x="26" y="721" class="small">1 bit</text>
+<path d="M370.00,692 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,732 H1408" stroke="#e2e8f0"/>
+<text x="26" y="762" class="signal"><title>ahb_uvm_top.bus.ready</title>ahb_uvm_top.bus.ready</text>
+<text x="26" y="778" class="small">1 bit</text>
+<path d="M370.00,749 H580.42" stroke="#0369a1" stroke-width="2"/>
+<path d="M580.42,749 V777" stroke="#0369a1" stroke-width="2"/>
+<path d="M580.42,777 H664.58" stroke="#0369a1" stroke-width="2"/>
+<path d="M664.58,777 V749" stroke="#0369a1" stroke-width="2"/>
+<path d="M664.58,749 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,789 H1408" stroke="#e2e8f0"/>
+<text x="26" y="819" class="signal"><title>ahb_uvm_top.bus.resp</title>ahb_uvm_top.bus.resp</text>
+<text x="26" y="835" class="small">1 bit</text>
+<path d="M370.00,834 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,846 H1408" stroke="#e2e8f0"/>
+<text x="26" y="893" class="small">Source: capture.vcd | SHA-256: f6b1165f5e9ab14657014ef5f0c05db27b3fc054af33e50fcde59b9d9df00492</text>
+<text x="26" y="914" class="small">A waveform is evidence of recorded signal values; it does not establish functional, protocol, or timing closure.</text>
+</svg>

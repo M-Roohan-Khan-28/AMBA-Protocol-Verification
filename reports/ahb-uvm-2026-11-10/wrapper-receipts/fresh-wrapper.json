@@ -1,0 +1,17 @@
+{
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\ahb-uvm-fresh-20261110\\scripts\\run_ahb_uvm.py",
+    "--output",
+    "C:\\short\\ahb-uvm-fresh-run-20261110",
+    "--expected-env-sha",
+    "48437f440cbd1b10b4abc73c254363ad9c6a06fa"
+  ],
+  "cwd": "C:\\short\\ahb-uvm-fresh-20261110",
+  "source_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+  "started_utc": "2026-11-09T23:13:05.944694+00:00",
+  "finished_utc": "2026-11-09T23:21:28.855943+00:00",
+  "exit_code": 1,
+  "log": "fresh-wrapper.log",
+  "sha256": "487b904e906b148d60fd2fa0b27423c07c45c32189ea01419d0cd0cca9a8d5ee"
+}

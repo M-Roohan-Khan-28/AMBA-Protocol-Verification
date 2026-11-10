@@ -1,0 +1,1 @@
+{"name":"smoke","offered":2,"accepted":2,"success":2,"errors":0,"writes":1,"reads":1,"withdrawn":0,"reset_accepted":0,"reset_offered":0,"wait_edges":0,"pipeline_edges":1,"resets":1,"comparisons":14,"cycles":8}

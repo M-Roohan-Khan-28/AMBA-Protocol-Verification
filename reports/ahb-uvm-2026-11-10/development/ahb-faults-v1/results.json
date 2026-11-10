@@ -1,0 +1,4192 @@
+{
+  "started_utc": "2026-11-09T23:03:45.987058+00:00",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+    "--output",
+    "C:\\short\\ahb-faults-v1",
+    "--expected-env-sha",
+    "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+    "--select",
+    "fault-live_address",
+    "fault-address_phase_data",
+    "fault-read_data",
+    "fault-invalid_write",
+    "fault-wait_advance",
+    "fault-short_error",
+    "fault-missing_error",
+    "fault-address_alias",
+    "fault-duplicate",
+    "fault-omit_observation",
+    "fault-missing_marker"
+  ],
+  "source_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+  "source_dirty": false,
+  "serial_execution": true,
+  "selection": [
+    "fault-live_address",
+    "fault-address_phase_data",
+    "fault-read_data",
+    "fault-invalid_write",
+    "fault-wait_advance",
+    "fault-short_error",
+    "fault-missing_error",
+    "fault-address_alias",
+    "fault-duplicate",
+    "fault-omit_observation",
+    "fault-missing_marker"
+  ],
+  "raw_fault": false,
+  "seed": 682016495,
+  "seed_hex": "0x28A6BEEF",
+  "functional_coverage": "NOT RUN",
+  "constrained_randomization": "NOT RUN",
+  "original_advanced_alu_apb": "NOT RUN",
+  "suites": [
+    {
+      "name": "fault-live_address",
+      "kind": "fault",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+            "--select",
+            "fault-live_address",
+            "--raw-fault",
+            "--output",
+            "C:\\short\\ahb-faults-v1\\fault-live_address\\child",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90",
+            "--source-cache",
+            "C:\\short\\ahb-faults-v1\\source",
+            "--expected-env-sha",
+            "48437f440cbd1b10b4abc73c254363ad9c6a06fa"
+          ],
+          "cwd": "C:\\short\\ahb-uvm-20261110",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "child-wrapper.log",
+          "sha256": "07e9ad8ab650fdb0189430cd021e57250e97fc83c6ace57e3d0a0e40d0c808ec"
+        }
+      ],
+      "reason": "EXPECTED_CHILD_FAILURE",
+      "child_wrapper_exit": 1,
+      "passing_control": {
+        "substep": "functional",
+        "case": "pipeline_WW_different"
+      },
+      "expected_fatal": "READ_DATA",
+      "observed_fatals": [
+        "READ_DATA"
+      ],
+      "observed_sva": [],
+      "child_result": {
+        "started_utc": "2026-11-09T23:03:51.836600+00:00",
+        "command": [
+          "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+          "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+          "--select",
+          "fault-live_address",
+          "--raw-fault",
+          "--output",
+          "C:\\short\\ahb-faults-v1\\fault-live_address\\child",
+          "--sim-bin",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "--uvm-lib",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "--uvm-include",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "--timeout",
+          "90",
+          "--source-cache",
+          "C:\\short\\ahb-faults-v1\\source",
+          "--expected-env-sha",
+          "48437f440cbd1b10b4abc73c254363ad9c6a06fa"
+        ],
+        "source_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "source_dirty": false,
+        "serial_execution": true,
+        "selection": [
+          "fault-live_address"
+        ],
+        "raw_fault": true,
+        "seed": 682016495,
+        "seed_hex": "0x28A6BEEF",
+        "functional_coverage": "NOT RUN",
+        "constrained_randomization": "NOT RUN",
+        "original_advanced_alu_apb": "NOT RUN",
+        "suites": [
+          {
+            "name": "fault-live_address",
+            "kind": "fault",
+            "status": "FAIL",
+            "commands": [
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+                  "work"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-live_address\\child\\fault-live_address",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "0.log",
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+                  "-sv",
+                  "-work",
+                  "work",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_bus.sv",
+                  "C:\\short\\ahb-faults-v1\\fault-live_address\\child\\fault-live_address\\disposable-rtl\\design.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_assertions.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_uvm_pkg.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_uvm_top.sv"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-live_address\\child\\fault-live_address",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "1.log",
+                "sha256": "2d8b9a2426b1abd6bac373e9c9d739cc662e455c20ec65731f2070bd4b2e9678"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+                  "-c",
+                  "-onfinish",
+                  "exit",
+                  "-voptargs=+acc",
+                  "-sv_seed",
+                  "682016495",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "work.ahb_uvm_top",
+                  "+PROGRAM=C:\\short\\ahb-faults-v1\\fault-live_address\\child\\fault-live_address\\program.txt",
+                  "-do",
+                  "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /ahb_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-live_address\\child\\fault-live_address",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "2.log",
+                "sha256": "9fe0cc3ebb3c691c4ae0bedd121b61bdf977d8319275d13407276b5c229b6646"
+              }
+            ],
+            "program_sha256": "a1a44e75505de780fea111e8aa041c940d99db410954eeb9305eefba2a7fbcc0",
+            "original_program_sha256": "a1a44e75505de780fea111e8aa041c940d99db410954eeb9305eefba2a7fbcc0",
+            "planned_counts": {
+              "pipeline_WW_different": {
+                "offered": 34,
+                "accepted": 34,
+                "success": 34,
+                "errors": 0,
+                "writes": 18,
+                "reads": 16,
+                "withdrawn": 0,
+                "reset_accepted": 0,
+                "reset_offered": 0,
+                "wait_edges": 0,
+                "pipeline_edges": 31,
+                "resets": 1
+              }
+            },
+            "mutation": {
+              "kind": "live_address",
+              "source_revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+              "locked_sha256": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca",
+              "compiled_sha256": "8de509e58c1b069f5b438994f82083c657a666d62163808f5245ea2ccfc18ab4",
+              "patch_sha256": "b0d26c2397c5657ad5855480c893d512411075be95341e7fa220a50e19e9edc5",
+              "checkout_modified": false
+            },
+            "uvm_runtime_versions": [
+              "QUESTA_UVM-1.2.3"
+            ],
+            "reason": "PROCESS_OR_SIMULATOR_ERROR"
+          }
+        ],
+        "expected_inventory": [
+          "sva-address_hold",
+          "sva-direction_hold",
+          "sva-size_hold",
+          "sva-selection_hold",
+          "sva-active_to_idle",
+          "sva-write_data",
+          "sva-idle_to_seq",
+          "sva-busy_control",
+          "sva-response_owner",
+          "sva-short_error",
+          "sva-long_error",
+          "sva-held_error_lost",
+          "sva-local_ok_wait",
+          "sva-global_through_error",
+          "sva-reset_output",
+          "sva-legal_read_wdata",
+          "sva-legal_idle_change",
+          "sva-legal_busy_seq",
+          "sva-legal_busy_nonseq",
+          "sva-legal_busy_idle",
+          "sva-legal_error_cancel",
+          "sva-legal_error_continue",
+          "sva-legal_reset_cancel",
+          "checker-legal",
+          "checker-reset",
+          "checker-pairing",
+          "checker-alias",
+          "checker-duplicate",
+          "checker-omitted",
+          "smoke",
+          "functional",
+          "fault-live_address",
+          "fault-address_phase_data",
+          "fault-read_data",
+          "fault-invalid_write",
+          "fault-wait_advance",
+          "fault-short_error",
+          "fault-missing_error",
+          "fault-address_alias",
+          "fault-duplicate",
+          "fault-omit_observation",
+          "fault-missing_marker",
+          "portable"
+        ],
+        "required_selected": [
+          "fault-live_address"
+        ],
+        "aggregate_exit_code": 1,
+        "milestone_pass": false,
+        "input_sha256": {
+          "verification/ahb_uvm/ahb_assertions.sv": "0a8392029ad5b2de09aacc02934120295eb451d1022e34570ce9bccbfa59ab49",
+          "verification/ahb_uvm/ahb_bus.sv": "25a9c2097a945277a03c1d9c326865b3dc480747d8d35639b877293db4a9d8f9",
+          "verification/ahb_uvm/ahb_checker_control.sv": "bef3d12f7bb26d1165bbb18b4196a6c39b61e25af012b6310729188b752851ed",
+          "verification/ahb_uvm/ahb_sva_control.sv": "89181600aa5a7a2dac14fbe83d49b576182eef76dc33e289cee6e7b79af0cbc1",
+          "verification/ahb_uvm/ahb_uvm_pkg.sv": "1babb26b0f51ecc0806c0589189e944ef1fd9177ad66a6250b1da427591e2697",
+          "verification/ahb_uvm/ahb_uvm_top.sv": "c67aabebcf3af3034a526a9ab9a2ae74f599649a3bc667c8515f75523366989d",
+          "verification/ahb_uvm/inventory.json": "99ba31c7eb0790e8cac3e1dc56d7e180e1f840def2c2bde741d0b5fbc632d6b0",
+          "verification/ahb_uvm/sources.json": "0d9cea95213cfd687aea3f14c17e6beef280caad25528abb97f995398f995e2b",
+          "scripts/run_ahb_uvm.py": "c593143229b734b10a9215aaafbe5dad8522fca2e632e6355b6acd775455bd0e",
+          "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+          "scripts/ahb_program.py": "ff9a3630a2f6f60e74faa79b28cfbf0c2c8806fa7e5e6adbb54a59bb55ab4753",
+          "scripts/ahb_mutations.py": "23b5b113e15ba73f83d0515c477b0e26ae9fdd564c6faa00bd85890831ef3faf"
+        },
+        "expected_environment_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "runner_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "inventory_revision": "f49314d214da41400b9155dd86207da6764ddeec",
+        "configuration": {
+          "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "timeout_per_command": 90,
+          "global_timeout": 3600,
+          "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+          "vendor_input_sha256": {
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5"
+          }
+        },
+        "version_command": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-version"
+          ],
+          "cwd": "C:\\short\\ahb-faults-v1\\fault-live_address\\child",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "version.log",
+          "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+        },
+        "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+        "source_lock": {
+          "owner": "M-Roohan-Khan-28",
+          "account_id": 270144410,
+          "repository": "AHB-Lite-RAM-Interface",
+          "revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+          "files": [
+            "rtl/design.sv"
+          ],
+          "sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+          },
+          "execution_files": [
+            "rtl/design.sv",
+            "scripts/run_regression.ps1",
+            "scripts/run_contract.py",
+            "tb/ahb16_contract_test.sv",
+            "verification/assertions/ahb16_master_monitor.sv",
+            "verification/negative/ahb16_master_negative.sv"
+          ],
+          "commands": [
+            {
+              "command": [
+                "git",
+                "clone",
+                "--quiet",
+                "--no-hardlinks",
+                "--config",
+                "core.autocrlf=false",
+                "--config",
+                "core.longpaths=true",
+                "C:\\short\\ahb-faults-v1\\source",
+                "C:\\short\\ahb-faults-v1\\fault-live_address\\child\\source"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-live_address\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-0.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\ahb-faults-v1\\fault-live_address\\child\\source",
+                "checkout",
+                "--quiet",
+                "--detach",
+                "659fba67ce85a01643cceca2c8d1e67ea3903995"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-live_address\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-1.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\ahb-faults-v1\\fault-live_address\\child\\source",
+                "remote",
+                "set-url",
+                "origin",
+                "https://github.com/M-Roohan-Khan-28/AHB-Lite-RAM-Interface.git"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-live_address\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-2.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            }
+          ],
+          "supplier": "C:\\short\\ahb-faults-v1\\source",
+          "transport": "verified_local_mirror",
+          "observed_revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+          "clean": true,
+          "rtl_sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+          },
+          "execution_files_sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca",
+            "scripts/run_regression.ps1": "cb71a7fcc93173763cbea5c14f617406dc42e3fee0cd997605e5d89cac2374de",
+            "scripts/run_contract.py": "60bf7a664879e4734de6a67480b753fbdb4f690e59521e0731b1dca4ac30b177",
+            "tb/ahb16_contract_test.sv": "f6ff5b4c2e61470235547f1ef99fcac7c08744718af22f2c1484cdf2272265b4",
+            "verification/assertions/ahb16_master_monitor.sv": "ff4359c55d2938917435f040819f6934901013728989ba543de567bf36675dbc",
+            "verification/negative/ahb16_master_negative.sv": "33ded800ec0b9b96e25b87ddc26e5c1fb5d64f953eff82b36cd9139a098587c6"
+          },
+          "clean_after_execution": true
+        },
+        "environment_clean_after_execution": true,
+        "uvm_runtime_versions": [
+          "QUESTA_UVM-1.2.3"
+        ],
+        "finished_utc": "2026-11-09T23:04:31.280022+00:00"
+      }
+    },
+    {
+      "name": "fault-address_phase_data",
+      "kind": "fault",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+            "--select",
+            "fault-address_phase_data",
+            "--raw-fault",
+            "--output",
+            "C:\\short\\ahb-faults-v1\\fault-address_phase_data\\child",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90",
+            "--source-cache",
+            "C:\\short\\ahb-faults-v1\\source",
+            "--expected-env-sha",
+            "48437f440cbd1b10b4abc73c254363ad9c6a06fa"
+          ],
+          "cwd": "C:\\short\\ahb-uvm-20261110",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "child-wrapper.log",
+          "sha256": "698d919e4b466055230544a84d77b67f6945bf0f167e473e84af4760af5d758e"
+        }
+      ],
+      "reason": "EXPECTED_CHILD_FAILURE",
+      "child_wrapper_exit": 1,
+      "passing_control": {
+        "substep": "functional",
+        "case": "pipeline_WR_same"
+      },
+      "expected_fatal": "READ_DATA",
+      "observed_fatals": [
+        "READ_DATA"
+      ],
+      "observed_sva": [],
+      "child_result": {
+        "started_utc": "2026-11-09T23:04:31.873978+00:00",
+        "command": [
+          "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+          "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+          "--select",
+          "fault-address_phase_data",
+          "--raw-fault",
+          "--output",
+          "C:\\short\\ahb-faults-v1\\fault-address_phase_data\\child",
+          "--sim-bin",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "--uvm-lib",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "--uvm-include",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "--timeout",
+          "90",
+          "--source-cache",
+          "C:\\short\\ahb-faults-v1\\source",
+          "--expected-env-sha",
+          "48437f440cbd1b10b4abc73c254363ad9c6a06fa"
+        ],
+        "source_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "source_dirty": false,
+        "serial_execution": true,
+        "selection": [
+          "fault-address_phase_data"
+        ],
+        "raw_fault": true,
+        "seed": 682016495,
+        "seed_hex": "0x28A6BEEF",
+        "functional_coverage": "NOT RUN",
+        "constrained_randomization": "NOT RUN",
+        "original_advanced_alu_apb": "NOT RUN",
+        "suites": [
+          {
+            "name": "fault-address_phase_data",
+            "kind": "fault",
+            "status": "FAIL",
+            "commands": [
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+                  "work"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-address_phase_data\\child\\fault-address_phase_data",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "0.log",
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+                  "-sv",
+                  "-work",
+                  "work",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_bus.sv",
+                  "C:\\short\\ahb-faults-v1\\fault-address_phase_data\\child\\fault-address_phase_data\\disposable-rtl\\design.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_assertions.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_uvm_pkg.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_uvm_top.sv"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-address_phase_data\\child\\fault-address_phase_data",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "1.log",
+                "sha256": "5d4df4911e0a928fb6c0f41c1c3b99d3007688926ebdb93e73d7b86faaadfb1f"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+                  "-c",
+                  "-onfinish",
+                  "exit",
+                  "-voptargs=+acc",
+                  "-sv_seed",
+                  "682016495",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "work.ahb_uvm_top",
+                  "+PROGRAM=C:\\short\\ahb-faults-v1\\fault-address_phase_data\\child\\fault-address_phase_data\\program.txt",
+                  "-do",
+                  "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /ahb_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-address_phase_data\\child\\fault-address_phase_data",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "2.log",
+                "sha256": "61a60b42c0d8a0fcadc07f3a4c5a91de927496b9766896e7b0280292a133ce80"
+              }
+            ],
+            "program_sha256": "1178df362fc60129b91208d671138003186031d409a419a10cd049d790acc301",
+            "original_program_sha256": "1178df362fc60129b91208d671138003186031d409a419a10cd049d790acc301",
+            "planned_counts": {
+              "pipeline_WR_same": {
+                "offered": 34,
+                "accepted": 34,
+                "success": 34,
+                "errors": 0,
+                "writes": 17,
+                "reads": 17,
+                "withdrawn": 0,
+                "reset_accepted": 0,
+                "reset_offered": 0,
+                "wait_edges": 0,
+                "pipeline_edges": 31,
+                "resets": 1
+              }
+            },
+            "mutation": {
+              "kind": "address_phase_data",
+              "source_revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+              "locked_sha256": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca",
+              "compiled_sha256": "5891d0ed6f6a9294425b73048dab7b1a97fe0591598d76d94f2b9d7021a9b386",
+              "patch_sha256": "9e53ce78a8b152e4e9ac034c11ce8ba82d0e56f6552eb34341c5365bc7882de0",
+              "checkout_modified": false
+            },
+            "uvm_runtime_versions": [
+              "QUESTA_UVM-1.2.3"
+            ],
+            "reason": "PROCESS_OR_SIMULATOR_ERROR"
+          }
+        ],
+        "expected_inventory": [
+          "sva-address_hold",
+          "sva-direction_hold",
+          "sva-size_hold",
+          "sva-selection_hold",
+          "sva-active_to_idle",
+          "sva-write_data",
+          "sva-idle_to_seq",
+          "sva-busy_control",
+          "sva-response_owner",
+          "sva-short_error",
+          "sva-long_error",
+          "sva-held_error_lost",
+          "sva-local_ok_wait",
+          "sva-global_through_error",
+          "sva-reset_output",
+          "sva-legal_read_wdata",
+          "sva-legal_idle_change",
+          "sva-legal_busy_seq",
+          "sva-legal_busy_nonseq",
+          "sva-legal_busy_idle",
+          "sva-legal_error_cancel",
+          "sva-legal_error_continue",
+          "sva-legal_reset_cancel",
+          "checker-legal",
+          "checker-reset",
+          "checker-pairing",
+          "checker-alias",
+          "checker-duplicate",
+          "checker-omitted",
+          "smoke",
+          "functional",
+          "fault-live_address",
+          "fault-address_phase_data",
+          "fault-read_data",
+          "fault-invalid_write",
+          "fault-wait_advance",
+          "fault-short_error",
+          "fault-missing_error",
+          "fault-address_alias",
+          "fault-duplicate",
+          "fault-omit_observation",
+          "fault-missing_marker",
+          "portable"
+        ],
+        "required_selected": [
+          "fault-address_phase_data"
+        ],
+        "aggregate_exit_code": 1,
+        "milestone_pass": false,
+        "input_sha256": {
+          "verification/ahb_uvm/ahb_assertions.sv": "0a8392029ad5b2de09aacc02934120295eb451d1022e34570ce9bccbfa59ab49",
+          "verification/ahb_uvm/ahb_bus.sv": "25a9c2097a945277a03c1d9c326865b3dc480747d8d35639b877293db4a9d8f9",
+          "verification/ahb_uvm/ahb_checker_control.sv": "bef3d12f7bb26d1165bbb18b4196a6c39b61e25af012b6310729188b752851ed",
+          "verification/ahb_uvm/ahb_sva_control.sv": "89181600aa5a7a2dac14fbe83d49b576182eef76dc33e289cee6e7b79af0cbc1",
+          "verification/ahb_uvm/ahb_uvm_pkg.sv": "1babb26b0f51ecc0806c0589189e944ef1fd9177ad66a6250b1da427591e2697",
+          "verification/ahb_uvm/ahb_uvm_top.sv": "c67aabebcf3af3034a526a9ab9a2ae74f599649a3bc667c8515f75523366989d",
+          "verification/ahb_uvm/inventory.json": "99ba31c7eb0790e8cac3e1dc56d7e180e1f840def2c2bde741d0b5fbc632d6b0",
+          "verification/ahb_uvm/sources.json": "0d9cea95213cfd687aea3f14c17e6beef280caad25528abb97f995398f995e2b",
+          "scripts/run_ahb_uvm.py": "c593143229b734b10a9215aaafbe5dad8522fca2e632e6355b6acd775455bd0e",
+          "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+          "scripts/ahb_program.py": "ff9a3630a2f6f60e74faa79b28cfbf0c2c8806fa7e5e6adbb54a59bb55ab4753",
+          "scripts/ahb_mutations.py": "23b5b113e15ba73f83d0515c477b0e26ae9fdd564c6faa00bd85890831ef3faf"
+        },
+        "expected_environment_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "runner_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "inventory_revision": "f49314d214da41400b9155dd86207da6764ddeec",
+        "configuration": {
+          "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "timeout_per_command": 90,
+          "global_timeout": 3600,
+          "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+          "vendor_input_sha256": {
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5"
+          }
+        },
+        "version_command": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-version"
+          ],
+          "cwd": "C:\\short\\ahb-faults-v1\\fault-address_phase_data\\child",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "version.log",
+          "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+        },
+        "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+        "source_lock": {
+          "owner": "M-Roohan-Khan-28",
+          "account_id": 270144410,
+          "repository": "AHB-Lite-RAM-Interface",
+          "revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+          "files": [
+            "rtl/design.sv"
+          ],
+          "sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+          },
+          "execution_files": [
+            "rtl/design.sv",
+            "scripts/run_regression.ps1",
+            "scripts/run_contract.py",
+            "tb/ahb16_contract_test.sv",
+            "verification/assertions/ahb16_master_monitor.sv",
+            "verification/negative/ahb16_master_negative.sv"
+          ],
+          "commands": [
+            {
+              "command": [
+                "git",
+                "clone",
+                "--quiet",
+                "--no-hardlinks",
+                "--config",
+                "core.autocrlf=false",
+                "--config",
+                "core.longpaths=true",
+                "C:\\short\\ahb-faults-v1\\source",
+                "C:\\short\\ahb-faults-v1\\fault-address_phase_data\\child\\source"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-address_phase_data\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-0.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\ahb-faults-v1\\fault-address_phase_data\\child\\source",
+                "checkout",
+                "--quiet",
+                "--detach",
+                "659fba67ce85a01643cceca2c8d1e67ea3903995"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-address_phase_data\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-1.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\ahb-faults-v1\\fault-address_phase_data\\child\\source",
+                "remote",
+                "set-url",
+                "origin",
+                "https://github.com/M-Roohan-Khan-28/AHB-Lite-RAM-Interface.git"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-address_phase_data\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-2.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            }
+          ],
+          "supplier": "C:\\short\\ahb-faults-v1\\source",
+          "transport": "verified_local_mirror",
+          "observed_revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+          "clean": true,
+          "rtl_sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+          },
+          "execution_files_sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca",
+            "scripts/run_regression.ps1": "cb71a7fcc93173763cbea5c14f617406dc42e3fee0cd997605e5d89cac2374de",
+            "scripts/run_contract.py": "60bf7a664879e4734de6a67480b753fbdb4f690e59521e0731b1dca4ac30b177",
+            "tb/ahb16_contract_test.sv": "f6ff5b4c2e61470235547f1ef99fcac7c08744718af22f2c1484cdf2272265b4",
+            "verification/assertions/ahb16_master_monitor.sv": "ff4359c55d2938917435f040819f6934901013728989ba543de567bf36675dbc",
+            "verification/negative/ahb16_master_negative.sv": "33ded800ec0b9b96e25b87ddc26e5c1fb5d64f953eff82b36cd9139a098587c6"
+          },
+          "clean_after_execution": true
+        },
+        "environment_clean_after_execution": true,
+        "uvm_runtime_versions": [
+          "QUESTA_UVM-1.2.3"
+        ],
+        "finished_utc": "2026-11-09T23:05:09.764084+00:00"
+      }
+    },
+    {
+      "name": "fault-read_data",
+      "kind": "fault",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+            "--select",
+            "fault-read_data",
+            "--raw-fault",
+            "--output",
+            "C:\\short\\ahb-faults-v1\\fault-read_data\\child",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90",
+            "--source-cache",
+            "C:\\short\\ahb-faults-v1\\source",
+            "--expected-env-sha",
+            "48437f440cbd1b10b4abc73c254363ad9c6a06fa"
+          ],
+          "cwd": "C:\\short\\ahb-uvm-20261110",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "child-wrapper.log",
+          "sha256": "508299ecf6364f719a3b9f87b352e2541f7e124d1e1cfdace0a2f5c0f55f8966"
+        }
+      ],
+      "reason": "EXPECTED_CHILD_FAILURE",
+      "child_wrapper_exit": 1,
+      "passing_control": {
+        "substep": "functional",
+        "case": "all_words_overwrite"
+      },
+      "expected_fatal": "READ_DATA",
+      "observed_fatals": [
+        "READ_DATA"
+      ],
+      "observed_sva": [],
+      "child_result": {
+        "started_utc": "2026-11-09T23:05:10.363295+00:00",
+        "command": [
+          "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+          "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+          "--select",
+          "fault-read_data",
+          "--raw-fault",
+          "--output",
+          "C:\\short\\ahb-faults-v1\\fault-read_data\\child",
+          "--sim-bin",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "--uvm-lib",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "--uvm-include",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "--timeout",
+          "90",
+          "--source-cache",
+          "C:\\short\\ahb-faults-v1\\source",
+          "--expected-env-sha",
+          "48437f440cbd1b10b4abc73c254363ad9c6a06fa"
+        ],
+        "source_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "source_dirty": false,
+        "serial_execution": true,
+        "selection": [
+          "fault-read_data"
+        ],
+        "raw_fault": true,
+        "seed": 682016495,
+        "seed_hex": "0x28A6BEEF",
+        "functional_coverage": "NOT RUN",
+        "constrained_randomization": "NOT RUN",
+        "original_advanced_alu_apb": "NOT RUN",
+        "suites": [
+          {
+            "name": "fault-read_data",
+            "kind": "fault",
+            "status": "FAIL",
+            "commands": [
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+                  "work"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-read_data\\child\\fault-read_data",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "0.log",
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+                  "-sv",
+                  "-work",
+                  "work",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_bus.sv",
+                  "C:\\short\\ahb-faults-v1\\fault-read_data\\child\\fault-read_data\\disposable-rtl\\design.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_assertions.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_uvm_pkg.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_uvm_top.sv"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-read_data\\child\\fault-read_data",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "1.log",
+                "sha256": "69bf6d03de25ef6569d99d1298edff29d237b758e919042a752ffb613d341c20"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+                  "-c",
+                  "-onfinish",
+                  "exit",
+                  "-voptargs=+acc",
+                  "-sv_seed",
+                  "682016495",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "work.ahb_uvm_top",
+                  "+PROGRAM=C:\\short\\ahb-faults-v1\\fault-read_data\\child\\fault-read_data\\program.txt",
+                  "-do",
+                  "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /ahb_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-read_data\\child\\fault-read_data",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "2.log",
+                "sha256": "b936a0f5b182b100713c3ae7a2cc5720bd658692fda260f237a2dac917444ea2"
+              }
+            ],
+            "program_sha256": "9c5d67a11bc5a526ad038fbda05e0b206714b011a70eabd1c7d2e58c8f93e637",
+            "original_program_sha256": "9c5d67a11bc5a526ad038fbda05e0b206714b011a70eabd1c7d2e58c8f93e637",
+            "planned_counts": {
+              "all_words_overwrite": {
+                "offered": 64,
+                "accepted": 64,
+                "success": 64,
+                "errors": 0,
+                "writes": 32,
+                "reads": 32,
+                "withdrawn": 0,
+                "reset_accepted": 0,
+                "reset_offered": 0,
+                "wait_edges": 0,
+                "pipeline_edges": 61,
+                "resets": 1
+              }
+            },
+            "mutation": {
+              "kind": "read_data",
+              "source_revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+              "locked_sha256": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca",
+              "compiled_sha256": "6b74b31bc98178a19cc2cc2a59217a8e26b4d2c9ce8fb7586d46f7388d00b1c8",
+              "patch_sha256": "bf7ecda9d4bd9e3fc665f41cde917eeb5748f8c3b4b568d79a3e132d90fe7a6c",
+              "checkout_modified": false
+            },
+            "uvm_runtime_versions": [
+              "QUESTA_UVM-1.2.3"
+            ],
+            "reason": "PROCESS_OR_SIMULATOR_ERROR"
+          }
+        ],
+        "expected_inventory": [
+          "sva-address_hold",
+          "sva-direction_hold",
+          "sva-size_hold",
+          "sva-selection_hold",
+          "sva-active_to_idle",
+          "sva-write_data",
+          "sva-idle_to_seq",
+          "sva-busy_control",
+          "sva-response_owner",
+          "sva-short_error",
+          "sva-long_error",
+          "sva-held_error_lost",
+          "sva-local_ok_wait",
+          "sva-global_through_error",
+          "sva-reset_output",
+          "sva-legal_read_wdata",
+          "sva-legal_idle_change",
+          "sva-legal_busy_seq",
+          "sva-legal_busy_nonseq",
+          "sva-legal_busy_idle",
+          "sva-legal_error_cancel",
+          "sva-legal_error_continue",
+          "sva-legal_reset_cancel",
+          "checker-legal",
+          "checker-reset",
+          "checker-pairing",
+          "checker-alias",
+          "checker-duplicate",
+          "checker-omitted",
+          "smoke",
+          "functional",
+          "fault-live_address",
+          "fault-address_phase_data",
+          "fault-read_data",
+          "fault-invalid_write",
+          "fault-wait_advance",
+          "fault-short_error",
+          "fault-missing_error",
+          "fault-address_alias",
+          "fault-duplicate",
+          "fault-omit_observation",
+          "fault-missing_marker",
+          "portable"
+        ],
+        "required_selected": [
+          "fault-read_data"
+        ],
+        "aggregate_exit_code": 1,
+        "milestone_pass": false,
+        "input_sha256": {
+          "verification/ahb_uvm/ahb_assertions.sv": "0a8392029ad5b2de09aacc02934120295eb451d1022e34570ce9bccbfa59ab49",
+          "verification/ahb_uvm/ahb_bus.sv": "25a9c2097a945277a03c1d9c326865b3dc480747d8d35639b877293db4a9d8f9",
+          "verification/ahb_uvm/ahb_checker_control.sv": "bef3d12f7bb26d1165bbb18b4196a6c39b61e25af012b6310729188b752851ed",
+          "verification/ahb_uvm/ahb_sva_control.sv": "89181600aa5a7a2dac14fbe83d49b576182eef76dc33e289cee6e7b79af0cbc1",
+          "verification/ahb_uvm/ahb_uvm_pkg.sv": "1babb26b0f51ecc0806c0589189e944ef1fd9177ad66a6250b1da427591e2697",
+          "verification/ahb_uvm/ahb_uvm_top.sv": "c67aabebcf3af3034a526a9ab9a2ae74f599649a3bc667c8515f75523366989d",
+          "verification/ahb_uvm/inventory.json": "99ba31c7eb0790e8cac3e1dc56d7e180e1f840def2c2bde741d0b5fbc632d6b0",
+          "verification/ahb_uvm/sources.json": "0d9cea95213cfd687aea3f14c17e6beef280caad25528abb97f995398f995e2b",
+          "scripts/run_ahb_uvm.py": "c593143229b734b10a9215aaafbe5dad8522fca2e632e6355b6acd775455bd0e",
+          "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+          "scripts/ahb_program.py": "ff9a3630a2f6f60e74faa79b28cfbf0c2c8806fa7e5e6adbb54a59bb55ab4753",
+          "scripts/ahb_mutations.py": "23b5b113e15ba73f83d0515c477b0e26ae9fdd564c6faa00bd85890831ef3faf"
+        },
+        "expected_environment_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "runner_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "inventory_revision": "f49314d214da41400b9155dd86207da6764ddeec",
+        "configuration": {
+          "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "timeout_per_command": 90,
+          "global_timeout": 3600,
+          "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+          "vendor_input_sha256": {
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5"
+          }
+        },
+        "version_command": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-version"
+          ],
+          "cwd": "C:\\short\\ahb-faults-v1\\fault-read_data\\child",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "version.log",
+          "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+        },
+        "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+        "source_lock": {
+          "owner": "M-Roohan-Khan-28",
+          "account_id": 270144410,
+          "repository": "AHB-Lite-RAM-Interface",
+          "revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+          "files": [
+            "rtl/design.sv"
+          ],
+          "sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+          },
+          "execution_files": [
+            "rtl/design.sv",
+            "scripts/run_regression.ps1",
+            "scripts/run_contract.py",
+            "tb/ahb16_contract_test.sv",
+            "verification/assertions/ahb16_master_monitor.sv",
+            "verification/negative/ahb16_master_negative.sv"
+          ],
+          "commands": [
+            {
+              "command": [
+                "git",
+                "clone",
+                "--quiet",
+                "--no-hardlinks",
+                "--config",
+                "core.autocrlf=false",
+                "--config",
+                "core.longpaths=true",
+                "C:\\short\\ahb-faults-v1\\source",
+                "C:\\short\\ahb-faults-v1\\fault-read_data\\child\\source"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-read_data\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-0.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\ahb-faults-v1\\fault-read_data\\child\\source",
+                "checkout",
+                "--quiet",
+                "--detach",
+                "659fba67ce85a01643cceca2c8d1e67ea3903995"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-read_data\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-1.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\ahb-faults-v1\\fault-read_data\\child\\source",
+                "remote",
+                "set-url",
+                "origin",
+                "https://github.com/M-Roohan-Khan-28/AHB-Lite-RAM-Interface.git"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-read_data\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-2.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            }
+          ],
+          "supplier": "C:\\short\\ahb-faults-v1\\source",
+          "transport": "verified_local_mirror",
+          "observed_revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+          "clean": true,
+          "rtl_sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+          },
+          "execution_files_sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca",
+            "scripts/run_regression.ps1": "cb71a7fcc93173763cbea5c14f617406dc42e3fee0cd997605e5d89cac2374de",
+            "scripts/run_contract.py": "60bf7a664879e4734de6a67480b753fbdb4f690e59521e0731b1dca4ac30b177",
+            "tb/ahb16_contract_test.sv": "f6ff5b4c2e61470235547f1ef99fcac7c08744718af22f2c1484cdf2272265b4",
+            "verification/assertions/ahb16_master_monitor.sv": "ff4359c55d2938917435f040819f6934901013728989ba543de567bf36675dbc",
+            "verification/negative/ahb16_master_negative.sv": "33ded800ec0b9b96e25b87ddc26e5c1fb5d64f953eff82b36cd9139a098587c6"
+          },
+          "clean_after_execution": true
+        },
+        "environment_clean_after_execution": true,
+        "uvm_runtime_versions": [
+          "QUESTA_UVM-1.2.3"
+        ],
+        "finished_utc": "2026-11-09T23:05:48.721436+00:00"
+      }
+    },
+    {
+      "name": "fault-invalid_write",
+      "kind": "fault",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+            "--select",
+            "fault-invalid_write",
+            "--raw-fault",
+            "--output",
+            "C:\\short\\ahb-faults-v1\\fault-invalid_write\\child",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90",
+            "--source-cache",
+            "C:\\short\\ahb-faults-v1\\source",
+            "--expected-env-sha",
+            "48437f440cbd1b10b4abc73c254363ad9c6a06fa"
+          ],
+          "cwd": "C:\\short\\ahb-uvm-20261110",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "child-wrapper.log",
+          "sha256": "7286abc25404abbda75ead79e4bfd5be3807e90bdc0f6c27121135d88fb90b77"
+        }
+      ],
+      "reason": "EXPECTED_CHILD_FAILURE",
+      "child_wrapper_exit": 1,
+      "passing_control": {
+        "substep": "functional",
+        "case": "bad_address_01"
+      },
+      "expected_fatal": "READ_DATA",
+      "observed_fatals": [
+        "READ_DATA"
+      ],
+      "observed_sva": [],
+      "child_result": {
+        "started_utc": "2026-11-09T23:05:49.390265+00:00",
+        "command": [
+          "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+          "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+          "--select",
+          "fault-invalid_write",
+          "--raw-fault",
+          "--output",
+          "C:\\short\\ahb-faults-v1\\fault-invalid_write\\child",
+          "--sim-bin",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "--uvm-lib",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "--uvm-include",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "--timeout",
+          "90",
+          "--source-cache",
+          "C:\\short\\ahb-faults-v1\\source",
+          "--expected-env-sha",
+          "48437f440cbd1b10b4abc73c254363ad9c6a06fa"
+        ],
+        "source_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "source_dirty": false,
+        "serial_execution": true,
+        "selection": [
+          "fault-invalid_write"
+        ],
+        "raw_fault": true,
+        "seed": 682016495,
+        "seed_hex": "0x28A6BEEF",
+        "functional_coverage": "NOT RUN",
+        "constrained_randomization": "NOT RUN",
+        "original_advanced_alu_apb": "NOT RUN",
+        "suites": [
+          {
+            "name": "fault-invalid_write",
+            "kind": "fault",
+            "status": "FAIL",
+            "commands": [
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+                  "work"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-invalid_write\\child\\fault-invalid_write",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "0.log",
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+                  "-sv",
+                  "-work",
+                  "work",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_bus.sv",
+                  "C:\\short\\ahb-faults-v1\\fault-invalid_write\\child\\fault-invalid_write\\disposable-rtl\\design.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_assertions.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_uvm_pkg.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_uvm_top.sv"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-invalid_write\\child\\fault-invalid_write",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "1.log",
+                "sha256": "b92cb323c8568a72cd6c8d06cf2d44c7848035e25ab7c0128542711279169dd4"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+                  "-c",
+                  "-onfinish",
+                  "exit",
+                  "-voptargs=+acc",
+                  "-sv_seed",
+                  "682016495",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "work.ahb_uvm_top",
+                  "+PROGRAM=C:\\short\\ahb-faults-v1\\fault-invalid_write\\child\\fault-invalid_write\\program.txt",
+                  "-do",
+                  "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /ahb_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-invalid_write\\child\\fault-invalid_write",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "2.log",
+                "sha256": "45e24bb635b6442da4ebe927ba55cfdbe0ca23a99df000c8c79807b0fe1869de"
+              }
+            ],
+            "program_sha256": "e900c993a58eb725fec209c1eeecd0752ba01bd99e282a6e4a436573b2136ad0",
+            "original_program_sha256": "e900c993a58eb725fec209c1eeecd0752ba01bd99e282a6e4a436573b2136ad0",
+            "planned_counts": {
+              "bad_address_01": {
+                "offered": 51,
+                "accepted": 50,
+                "success": 49,
+                "errors": 1,
+                "writes": 17,
+                "reads": 32,
+                "withdrawn": 1,
+                "reset_accepted": 0,
+                "reset_offered": 0,
+                "wait_edges": 2,
+                "pipeline_edges": 45,
+                "resets": 1
+              }
+            },
+            "mutation": {
+              "kind": "invalid_write",
+              "source_revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+              "locked_sha256": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca",
+              "compiled_sha256": "ac2f6b6bd275253d2da8e539b7e55c69c3ead42468a68db38cc809447400f793",
+              "patch_sha256": "e2e83c78b3ccf8d1260105123366fd413e0216b94b87698ea05beb62cf1f3392",
+              "checkout_modified": false
+            },
+            "uvm_runtime_versions": [
+              "QUESTA_UVM-1.2.3"
+            ],
+            "reason": "PROCESS_OR_SIMULATOR_ERROR"
+          }
+        ],
+        "expected_inventory": [
+          "sva-address_hold",
+          "sva-direction_hold",
+          "sva-size_hold",
+          "sva-selection_hold",
+          "sva-active_to_idle",
+          "sva-write_data",
+          "sva-idle_to_seq",
+          "sva-busy_control",
+          "sva-response_owner",
+          "sva-short_error",
+          "sva-long_error",
+          "sva-held_error_lost",
+          "sva-local_ok_wait",
+          "sva-global_through_error",
+          "sva-reset_output",
+          "sva-legal_read_wdata",
+          "sva-legal_idle_change",
+          "sva-legal_busy_seq",
+          "sva-legal_busy_nonseq",
+          "sva-legal_busy_idle",
+          "sva-legal_error_cancel",
+          "sva-legal_error_continue",
+          "sva-legal_reset_cancel",
+          "checker-legal",
+          "checker-reset",
+          "checker-pairing",
+          "checker-alias",
+          "checker-duplicate",
+          "checker-omitted",
+          "smoke",
+          "functional",
+          "fault-live_address",
+          "fault-address_phase_data",
+          "fault-read_data",
+          "fault-invalid_write",
+          "fault-wait_advance",
+          "fault-short_error",
+          "fault-missing_error",
+          "fault-address_alias",
+          "fault-duplicate",
+          "fault-omit_observation",
+          "fault-missing_marker",
+          "portable"
+        ],
+        "required_selected": [
+          "fault-invalid_write"
+        ],
+        "aggregate_exit_code": 1,
+        "milestone_pass": false,
+        "input_sha256": {
+          "verification/ahb_uvm/ahb_assertions.sv": "0a8392029ad5b2de09aacc02934120295eb451d1022e34570ce9bccbfa59ab49",
+          "verification/ahb_uvm/ahb_bus.sv": "25a9c2097a945277a03c1d9c326865b3dc480747d8d35639b877293db4a9d8f9",
+          "verification/ahb_uvm/ahb_checker_control.sv": "bef3d12f7bb26d1165bbb18b4196a6c39b61e25af012b6310729188b752851ed",
+          "verification/ahb_uvm/ahb_sva_control.sv": "89181600aa5a7a2dac14fbe83d49b576182eef76dc33e289cee6e7b79af0cbc1",
+          "verification/ahb_uvm/ahb_uvm_pkg.sv": "1babb26b0f51ecc0806c0589189e944ef1fd9177ad66a6250b1da427591e2697",
+          "verification/ahb_uvm/ahb_uvm_top.sv": "c67aabebcf3af3034a526a9ab9a2ae74f599649a3bc667c8515f75523366989d",
+          "verification/ahb_uvm/inventory.json": "99ba31c7eb0790e8cac3e1dc56d7e180e1f840def2c2bde741d0b5fbc632d6b0",
+          "verification/ahb_uvm/sources.json": "0d9cea95213cfd687aea3f14c17e6beef280caad25528abb97f995398f995e2b",
+          "scripts/run_ahb_uvm.py": "c593143229b734b10a9215aaafbe5dad8522fca2e632e6355b6acd775455bd0e",
+          "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+          "scripts/ahb_program.py": "ff9a3630a2f6f60e74faa79b28cfbf0c2c8806fa7e5e6adbb54a59bb55ab4753",
+          "scripts/ahb_mutations.py": "23b5b113e15ba73f83d0515c477b0e26ae9fdd564c6faa00bd85890831ef3faf"
+        },
+        "expected_environment_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "runner_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "inventory_revision": "f49314d214da41400b9155dd86207da6764ddeec",
+        "configuration": {
+          "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "timeout_per_command": 90,
+          "global_timeout": 3600,
+          "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+          "vendor_input_sha256": {
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5"
+          }
+        },
+        "version_command": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-version"
+          ],
+          "cwd": "C:\\short\\ahb-faults-v1\\fault-invalid_write\\child",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "version.log",
+          "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+        },
+        "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+        "source_lock": {
+          "owner": "M-Roohan-Khan-28",
+          "account_id": 270144410,
+          "repository": "AHB-Lite-RAM-Interface",
+          "revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+          "files": [
+            "rtl/design.sv"
+          ],
+          "sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+          },
+          "execution_files": [
+            "rtl/design.sv",
+            "scripts/run_regression.ps1",
+            "scripts/run_contract.py",
+            "tb/ahb16_contract_test.sv",
+            "verification/assertions/ahb16_master_monitor.sv",
+            "verification/negative/ahb16_master_negative.sv"
+          ],
+          "commands": [
+            {
+              "command": [
+                "git",
+                "clone",
+                "--quiet",
+                "--no-hardlinks",
+                "--config",
+                "core.autocrlf=false",
+                "--config",
+                "core.longpaths=true",
+                "C:\\short\\ahb-faults-v1\\source",
+                "C:\\short\\ahb-faults-v1\\fault-invalid_write\\child\\source"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-invalid_write\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-0.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\ahb-faults-v1\\fault-invalid_write\\child\\source",
+                "checkout",
+                "--quiet",
+                "--detach",
+                "659fba67ce85a01643cceca2c8d1e67ea3903995"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-invalid_write\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-1.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\ahb-faults-v1\\fault-invalid_write\\child\\source",
+                "remote",
+                "set-url",
+                "origin",
+                "https://github.com/M-Roohan-Khan-28/AHB-Lite-RAM-Interface.git"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-invalid_write\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-2.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            }
+          ],
+          "supplier": "C:\\short\\ahb-faults-v1\\source",
+          "transport": "verified_local_mirror",
+          "observed_revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+          "clean": true,
+          "rtl_sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+          },
+          "execution_files_sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca",
+            "scripts/run_regression.ps1": "cb71a7fcc93173763cbea5c14f617406dc42e3fee0cd997605e5d89cac2374de",
+            "scripts/run_contract.py": "60bf7a664879e4734de6a67480b753fbdb4f690e59521e0731b1dca4ac30b177",
+            "tb/ahb16_contract_test.sv": "f6ff5b4c2e61470235547f1ef99fcac7c08744718af22f2c1484cdf2272265b4",
+            "verification/assertions/ahb16_master_monitor.sv": "ff4359c55d2938917435f040819f6934901013728989ba543de567bf36675dbc",
+            "verification/negative/ahb16_master_negative.sv": "33ded800ec0b9b96e25b87ddc26e5c1fb5d64f953eff82b36cd9139a098587c6"
+          },
+          "clean_after_execution": true
+        },
+        "environment_clean_after_execution": true,
+        "uvm_runtime_versions": [
+          "QUESTA_UVM-1.2.3"
+        ],
+        "finished_utc": "2026-11-09T23:06:28.041226+00:00"
+      }
+    },
+    {
+      "name": "fault-wait_advance",
+      "kind": "fault",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+            "--select",
+            "fault-wait_advance",
+            "--raw-fault",
+            "--output",
+            "C:\\short\\ahb-faults-v1\\fault-wait_advance\\child",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90",
+            "--source-cache",
+            "C:\\short\\ahb-faults-v1\\source",
+            "--expected-env-sha",
+            "48437f440cbd1b10b4abc73c254363ad9c6a06fa"
+          ],
+          "cwd": "C:\\short\\ahb-uvm-20261110",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "child-wrapper.log",
+          "sha256": "4015f0db604ebabc222896a1459f613096179ec4439d4f18ed51fb90395452a8"
+        }
+      ],
+      "reason": "EXPECTED_CHILD_FAILURE",
+      "child_wrapper_exit": 1,
+      "passing_control": {
+        "substep": "functional",
+        "case": "wait_read_5"
+      },
+      "expected_fatal": "READ_DATA",
+      "observed_fatals": [
+        "READ_DATA"
+      ],
+      "observed_sva": [],
+      "child_result": {
+        "started_utc": "2026-11-09T23:06:28.641994+00:00",
+        "command": [
+          "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+          "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+          "--select",
+          "fault-wait_advance",
+          "--raw-fault",
+          "--output",
+          "C:\\short\\ahb-faults-v1\\fault-wait_advance\\child",
+          "--sim-bin",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "--uvm-lib",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "--uvm-include",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "--timeout",
+          "90",
+          "--source-cache",
+          "C:\\short\\ahb-faults-v1\\source",
+          "--expected-env-sha",
+          "48437f440cbd1b10b4abc73c254363ad9c6a06fa"
+        ],
+        "source_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "source_dirty": false,
+        "serial_execution": true,
+        "selection": [
+          "fault-wait_advance"
+        ],
+        "raw_fault": true,
+        "seed": 682016495,
+        "seed_hex": "0x28A6BEEF",
+        "functional_coverage": "NOT RUN",
+        "constrained_randomization": "NOT RUN",
+        "original_advanced_alu_apb": "NOT RUN",
+        "suites": [
+          {
+            "name": "fault-wait_advance",
+            "kind": "fault",
+            "status": "FAIL",
+            "commands": [
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+                  "work"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-wait_advance\\child\\fault-wait_advance",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "0.log",
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+                  "-sv",
+                  "-work",
+                  "work",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_bus.sv",
+                  "C:\\short\\ahb-faults-v1\\fault-wait_advance\\child\\fault-wait_advance\\disposable-rtl\\design.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_assertions.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_uvm_pkg.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_uvm_top.sv"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-wait_advance\\child\\fault-wait_advance",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "1.log",
+                "sha256": "968fd2b1e43634f66ecc0d8cd05864471240275f681f1957a412825eda3225da"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+                  "-c",
+                  "-onfinish",
+                  "exit",
+                  "-voptargs=+acc",
+                  "-sv_seed",
+                  "682016495",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "work.ahb_uvm_top",
+                  "+PROGRAM=C:\\short\\ahb-faults-v1\\fault-wait_advance\\child\\fault-wait_advance\\program.txt",
+                  "-do",
+                  "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /ahb_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-wait_advance\\child\\fault-wait_advance",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "2.log",
+                "sha256": "36a7fb3cbc9022a8be8e3080486b05bf5f9a79d4622cf3f9b2617b503654e0f6"
+              }
+            ],
+            "program_sha256": "fea6db02154806df74f0fb0a876a1320c6ea012eedcbac5e09efb140e7e591ba",
+            "original_program_sha256": "fea6db02154806df74f0fb0a876a1320c6ea012eedcbac5e09efb140e7e591ba",
+            "planned_counts": {
+              "wait_read_5": {
+                "offered": 34,
+                "accepted": 34,
+                "success": 34,
+                "errors": 0,
+                "writes": 17,
+                "reads": 17,
+                "withdrawn": 0,
+                "reset_accepted": 0,
+                "reset_offered": 0,
+                "wait_edges": 5,
+                "pipeline_edges": 31,
+                "resets": 1
+              }
+            },
+            "mutation": {
+              "kind": "wait_advance",
+              "source_revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+              "locked_sha256": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca",
+              "compiled_sha256": "0030fe80bde2341e174bfaee19c387dd9211cba0c5324c6d3d7f0be63a01a8d7",
+              "patch_sha256": "b0e4ac00bd3b4fa0863c8b9ca4eb308e150fd13808f8338a640671d8eb19667c",
+              "checkout_modified": false
+            },
+            "uvm_runtime_versions": [
+              "QUESTA_UVM-1.2.3"
+            ],
+            "reason": "PROCESS_OR_SIMULATOR_ERROR"
+          }
+        ],
+        "expected_inventory": [
+          "sva-address_hold",
+          "sva-direction_hold",
+          "sva-size_hold",
+          "sva-selection_hold",
+          "sva-active_to_idle",
+          "sva-write_data",
+          "sva-idle_to_seq",
+          "sva-busy_control",
+          "sva-response_owner",
+          "sva-short_error",
+          "sva-long_error",
+          "sva-held_error_lost",
+          "sva-local_ok_wait",
+          "sva-global_through_error",
+          "sva-reset_output",
+          "sva-legal_read_wdata",
+          "sva-legal_idle_change",
+          "sva-legal_busy_seq",
+          "sva-legal_busy_nonseq",
+          "sva-legal_busy_idle",
+          "sva-legal_error_cancel",
+          "sva-legal_error_continue",
+          "sva-legal_reset_cancel",
+          "checker-legal",
+          "checker-reset",
+          "checker-pairing",
+          "checker-alias",
+          "checker-duplicate",
+          "checker-omitted",
+          "smoke",
+          "functional",
+          "fault-live_address",
+          "fault-address_phase_data",
+          "fault-read_data",
+          "fault-invalid_write",
+          "fault-wait_advance",
+          "fault-short_error",
+          "fault-missing_error",
+          "fault-address_alias",
+          "fault-duplicate",
+          "fault-omit_observation",
+          "fault-missing_marker",
+          "portable"
+        ],
+        "required_selected": [
+          "fault-wait_advance"
+        ],
+        "aggregate_exit_code": 1,
+        "milestone_pass": false,
+        "input_sha256": {
+          "verification/ahb_uvm/ahb_assertions.sv": "0a8392029ad5b2de09aacc02934120295eb451d1022e34570ce9bccbfa59ab49",
+          "verification/ahb_uvm/ahb_bus.sv": "25a9c2097a945277a03c1d9c326865b3dc480747d8d35639b877293db4a9d8f9",
+          "verification/ahb_uvm/ahb_checker_control.sv": "bef3d12f7bb26d1165bbb18b4196a6c39b61e25af012b6310729188b752851ed",
+          "verification/ahb_uvm/ahb_sva_control.sv": "89181600aa5a7a2dac14fbe83d49b576182eef76dc33e289cee6e7b79af0cbc1",
+          "verification/ahb_uvm/ahb_uvm_pkg.sv": "1babb26b0f51ecc0806c0589189e944ef1fd9177ad66a6250b1da427591e2697",
+          "verification/ahb_uvm/ahb_uvm_top.sv": "c67aabebcf3af3034a526a9ab9a2ae74f599649a3bc667c8515f75523366989d",
+          "verification/ahb_uvm/inventory.json": "99ba31c7eb0790e8cac3e1dc56d7e180e1f840def2c2bde741d0b5fbc632d6b0",
+          "verification/ahb_uvm/sources.json": "0d9cea95213cfd687aea3f14c17e6beef280caad25528abb97f995398f995e2b",
+          "scripts/run_ahb_uvm.py": "c593143229b734b10a9215aaafbe5dad8522fca2e632e6355b6acd775455bd0e",
+          "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+          "scripts/ahb_program.py": "ff9a3630a2f6f60e74faa79b28cfbf0c2c8806fa7e5e6adbb54a59bb55ab4753",
+          "scripts/ahb_mutations.py": "23b5b113e15ba73f83d0515c477b0e26ae9fdd564c6faa00bd85890831ef3faf"
+        },
+        "expected_environment_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "runner_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "inventory_revision": "f49314d214da41400b9155dd86207da6764ddeec",
+        "configuration": {
+          "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "timeout_per_command": 90,
+          "global_timeout": 3600,
+          "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+          "vendor_input_sha256": {
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5"
+          }
+        },
+        "version_command": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-version"
+          ],
+          "cwd": "C:\\short\\ahb-faults-v1\\fault-wait_advance\\child",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "version.log",
+          "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+        },
+        "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+        "source_lock": {
+          "owner": "M-Roohan-Khan-28",
+          "account_id": 270144410,
+          "repository": "AHB-Lite-RAM-Interface",
+          "revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+          "files": [
+            "rtl/design.sv"
+          ],
+          "sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+          },
+          "execution_files": [
+            "rtl/design.sv",
+            "scripts/run_regression.ps1",
+            "scripts/run_contract.py",
+            "tb/ahb16_contract_test.sv",
+            "verification/assertions/ahb16_master_monitor.sv",
+            "verification/negative/ahb16_master_negative.sv"
+          ],
+          "commands": [
+            {
+              "command": [
+                "git",
+                "clone",
+                "--quiet",
+                "--no-hardlinks",
+                "--config",
+                "core.autocrlf=false",
+                "--config",
+                "core.longpaths=true",
+                "C:\\short\\ahb-faults-v1\\source",
+                "C:\\short\\ahb-faults-v1\\fault-wait_advance\\child\\source"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-wait_advance\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-0.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\ahb-faults-v1\\fault-wait_advance\\child\\source",
+                "checkout",
+                "--quiet",
+                "--detach",
+                "659fba67ce85a01643cceca2c8d1e67ea3903995"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-wait_advance\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-1.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\ahb-faults-v1\\fault-wait_advance\\child\\source",
+                "remote",
+                "set-url",
+                "origin",
+                "https://github.com/M-Roohan-Khan-28/AHB-Lite-RAM-Interface.git"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-wait_advance\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-2.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            }
+          ],
+          "supplier": "C:\\short\\ahb-faults-v1\\source",
+          "transport": "verified_local_mirror",
+          "observed_revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+          "clean": true,
+          "rtl_sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+          },
+          "execution_files_sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca",
+            "scripts/run_regression.ps1": "cb71a7fcc93173763cbea5c14f617406dc42e3fee0cd997605e5d89cac2374de",
+            "scripts/run_contract.py": "60bf7a664879e4734de6a67480b753fbdb4f690e59521e0731b1dca4ac30b177",
+            "tb/ahb16_contract_test.sv": "f6ff5b4c2e61470235547f1ef99fcac7c08744718af22f2c1484cdf2272265b4",
+            "verification/assertions/ahb16_master_monitor.sv": "ff4359c55d2938917435f040819f6934901013728989ba543de567bf36675dbc",
+            "verification/negative/ahb16_master_negative.sv": "33ded800ec0b9b96e25b87ddc26e5c1fb5d64f953eff82b36cd9139a098587c6"
+          },
+          "clean_after_execution": true
+        },
+        "environment_clean_after_execution": true,
+        "uvm_runtime_versions": [
+          "QUESTA_UVM-1.2.3"
+        ],
+        "finished_utc": "2026-11-09T23:07:07.437881+00:00"
+      }
+    },
+    {
+      "name": "fault-short_error",
+      "kind": "fault",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+            "--select",
+            "fault-short_error",
+            "--raw-fault",
+            "--output",
+            "C:\\short\\ahb-faults-v1\\fault-short_error\\child",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90",
+            "--source-cache",
+            "C:\\short\\ahb-faults-v1\\source",
+            "--expected-env-sha",
+            "48437f440cbd1b10b4abc73c254363ad9c6a06fa"
+          ],
+          "cwd": "C:\\short\\ahb-uvm-20261110",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "child-wrapper.log",
+          "sha256": "a9b1a388868b0ba4b25d1b5866765c7b56f85d6eeca4fc6c1a5cfcc5c1e960b2"
+        }
+      ],
+      "reason": "EXPECTED_CHILD_FAILURE",
+      "child_wrapper_exit": 1,
+      "passing_control": {
+        "substep": "functional",
+        "case": "bad_address_01"
+      },
+      "expected_fatal": "SVA:ERROR_FIRST",
+      "observed_fatals": [],
+      "observed_sva": [
+        "ERROR_FIRST"
+      ],
+      "child_result": {
+        "started_utc": "2026-11-09T23:07:08.056817+00:00",
+        "command": [
+          "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+          "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+          "--select",
+          "fault-short_error",
+          "--raw-fault",
+          "--output",
+          "C:\\short\\ahb-faults-v1\\fault-short_error\\child",
+          "--sim-bin",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "--uvm-lib",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "--uvm-include",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "--timeout",
+          "90",
+          "--source-cache",
+          "C:\\short\\ahb-faults-v1\\source",
+          "--expected-env-sha",
+          "48437f440cbd1b10b4abc73c254363ad9c6a06fa"
+        ],
+        "source_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "source_dirty": false,
+        "serial_execution": true,
+        "selection": [
+          "fault-short_error"
+        ],
+        "raw_fault": true,
+        "seed": 682016495,
+        "seed_hex": "0x28A6BEEF",
+        "functional_coverage": "NOT RUN",
+        "constrained_randomization": "NOT RUN",
+        "original_advanced_alu_apb": "NOT RUN",
+        "suites": [
+          {
+            "name": "fault-short_error",
+            "kind": "fault",
+            "status": "FAIL",
+            "commands": [
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+                  "work"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-short_error\\child\\fault-short_error",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "0.log",
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+                  "-sv",
+                  "-work",
+                  "work",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_bus.sv",
+                  "C:\\short\\ahb-faults-v1\\fault-short_error\\child\\fault-short_error\\disposable-rtl\\design.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_assertions.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_uvm_pkg.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_uvm_top.sv"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-short_error\\child\\fault-short_error",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "1.log",
+                "sha256": "670eedf99353a17752a64c851cc78c99bd3901fdd9001d97a717248a65c2aa77"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+                  "-c",
+                  "-onfinish",
+                  "exit",
+                  "-voptargs=+acc",
+                  "-sv_seed",
+                  "682016495",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "work.ahb_uvm_top",
+                  "+PROGRAM=C:\\short\\ahb-faults-v1\\fault-short_error\\child\\fault-short_error\\program.txt",
+                  "-do",
+                  "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /ahb_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-short_error\\child\\fault-short_error",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "2.log",
+                "sha256": "d657d494680a0a651568a7000915b5ba691d65ccda5fccf63463545640147f26"
+              }
+            ],
+            "program_sha256": "e900c993a58eb725fec209c1eeecd0752ba01bd99e282a6e4a436573b2136ad0",
+            "original_program_sha256": "e900c993a58eb725fec209c1eeecd0752ba01bd99e282a6e4a436573b2136ad0",
+            "planned_counts": {
+              "bad_address_01": {
+                "offered": 51,
+                "accepted": 50,
+                "success": 49,
+                "errors": 1,
+                "writes": 17,
+                "reads": 32,
+                "withdrawn": 1,
+                "reset_accepted": 0,
+                "reset_offered": 0,
+                "wait_edges": 2,
+                "pipeline_edges": 45,
+                "resets": 1
+              }
+            },
+            "mutation": {
+              "kind": "short_error",
+              "source_revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+              "locked_sha256": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca",
+              "compiled_sha256": "2f0442e638366d6938495cb63f78e5e6e84df0c81975aed2ab06dfe3c266b8f6",
+              "patch_sha256": "307c02d165a59b8b38023aa84f05c045b21c802603502469bac827912e361df6",
+              "checkout_modified": false
+            },
+            "uvm_runtime_versions": [
+              "QUESTA_UVM-1.2.3"
+            ],
+            "reason": "PROCESS_OR_SIMULATOR_ERROR"
+          }
+        ],
+        "expected_inventory": [
+          "sva-address_hold",
+          "sva-direction_hold",
+          "sva-size_hold",
+          "sva-selection_hold",
+          "sva-active_to_idle",
+          "sva-write_data",
+          "sva-idle_to_seq",
+          "sva-busy_control",
+          "sva-response_owner",
+          "sva-short_error",
+          "sva-long_error",
+          "sva-held_error_lost",
+          "sva-local_ok_wait",
+          "sva-global_through_error",
+          "sva-reset_output",
+          "sva-legal_read_wdata",
+          "sva-legal_idle_change",
+          "sva-legal_busy_seq",
+          "sva-legal_busy_nonseq",
+          "sva-legal_busy_idle",
+          "sva-legal_error_cancel",
+          "sva-legal_error_continue",
+          "sva-legal_reset_cancel",
+          "checker-legal",
+          "checker-reset",
+          "checker-pairing",
+          "checker-alias",
+          "checker-duplicate",
+          "checker-omitted",
+          "smoke",
+          "functional",
+          "fault-live_address",
+          "fault-address_phase_data",
+          "fault-read_data",
+          "fault-invalid_write",
+          "fault-wait_advance",
+          "fault-short_error",
+          "fault-missing_error",
+          "fault-address_alias",
+          "fault-duplicate",
+          "fault-omit_observation",
+          "fault-missing_marker",
+          "portable"
+        ],
+        "required_selected": [
+          "fault-short_error"
+        ],
+        "aggregate_exit_code": 1,
+        "milestone_pass": false,
+        "input_sha256": {
+          "verification/ahb_uvm/ahb_assertions.sv": "0a8392029ad5b2de09aacc02934120295eb451d1022e34570ce9bccbfa59ab49",
+          "verification/ahb_uvm/ahb_bus.sv": "25a9c2097a945277a03c1d9c326865b3dc480747d8d35639b877293db4a9d8f9",
+          "verification/ahb_uvm/ahb_checker_control.sv": "bef3d12f7bb26d1165bbb18b4196a6c39b61e25af012b6310729188b752851ed",
+          "verification/ahb_uvm/ahb_sva_control.sv": "89181600aa5a7a2dac14fbe83d49b576182eef76dc33e289cee6e7b79af0cbc1",
+          "verification/ahb_uvm/ahb_uvm_pkg.sv": "1babb26b0f51ecc0806c0589189e944ef1fd9177ad66a6250b1da427591e2697",
+          "verification/ahb_uvm/ahb_uvm_top.sv": "c67aabebcf3af3034a526a9ab9a2ae74f599649a3bc667c8515f75523366989d",
+          "verification/ahb_uvm/inventory.json": "99ba31c7eb0790e8cac3e1dc56d7e180e1f840def2c2bde741d0b5fbc632d6b0",
+          "verification/ahb_uvm/sources.json": "0d9cea95213cfd687aea3f14c17e6beef280caad25528abb97f995398f995e2b",
+          "scripts/run_ahb_uvm.py": "c593143229b734b10a9215aaafbe5dad8522fca2e632e6355b6acd775455bd0e",
+          "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+          "scripts/ahb_program.py": "ff9a3630a2f6f60e74faa79b28cfbf0c2c8806fa7e5e6adbb54a59bb55ab4753",
+          "scripts/ahb_mutations.py": "23b5b113e15ba73f83d0515c477b0e26ae9fdd564c6faa00bd85890831ef3faf"
+        },
+        "expected_environment_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "runner_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "inventory_revision": "f49314d214da41400b9155dd86207da6764ddeec",
+        "configuration": {
+          "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "timeout_per_command": 90,
+          "global_timeout": 3600,
+          "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+          "vendor_input_sha256": {
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5"
+          }
+        },
+        "version_command": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-version"
+          ],
+          "cwd": "C:\\short\\ahb-faults-v1\\fault-short_error\\child",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "version.log",
+          "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+        },
+        "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+        "source_lock": {
+          "owner": "M-Roohan-Khan-28",
+          "account_id": 270144410,
+          "repository": "AHB-Lite-RAM-Interface",
+          "revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+          "files": [
+            "rtl/design.sv"
+          ],
+          "sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+          },
+          "execution_files": [
+            "rtl/design.sv",
+            "scripts/run_regression.ps1",
+            "scripts/run_contract.py",
+            "tb/ahb16_contract_test.sv",
+            "verification/assertions/ahb16_master_monitor.sv",
+            "verification/negative/ahb16_master_negative.sv"
+          ],
+          "commands": [
+            {
+              "command": [
+                "git",
+                "clone",
+                "--quiet",
+                "--no-hardlinks",
+                "--config",
+                "core.autocrlf=false",
+                "--config",
+                "core.longpaths=true",
+                "C:\\short\\ahb-faults-v1\\source",
+                "C:\\short\\ahb-faults-v1\\fault-short_error\\child\\source"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-short_error\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-0.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\ahb-faults-v1\\fault-short_error\\child\\source",
+                "checkout",
+                "--quiet",
+                "--detach",
+                "659fba67ce85a01643cceca2c8d1e67ea3903995"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-short_error\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-1.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\ahb-faults-v1\\fault-short_error\\child\\source",
+                "remote",
+                "set-url",
+                "origin",
+                "https://github.com/M-Roohan-Khan-28/AHB-Lite-RAM-Interface.git"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-short_error\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-2.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            }
+          ],
+          "supplier": "C:\\short\\ahb-faults-v1\\source",
+          "transport": "verified_local_mirror",
+          "observed_revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+          "clean": true,
+          "rtl_sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+          },
+          "execution_files_sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca",
+            "scripts/run_regression.ps1": "cb71a7fcc93173763cbea5c14f617406dc42e3fee0cd997605e5d89cac2374de",
+            "scripts/run_contract.py": "60bf7a664879e4734de6a67480b753fbdb4f690e59521e0731b1dca4ac30b177",
+            "tb/ahb16_contract_test.sv": "f6ff5b4c2e61470235547f1ef99fcac7c08744718af22f2c1484cdf2272265b4",
+            "verification/assertions/ahb16_master_monitor.sv": "ff4359c55d2938917435f040819f6934901013728989ba543de567bf36675dbc",
+            "verification/negative/ahb16_master_negative.sv": "33ded800ec0b9b96e25b87ddc26e5c1fb5d64f953eff82b36cd9139a098587c6"
+          },
+          "clean_after_execution": true
+        },
+        "environment_clean_after_execution": true,
+        "uvm_runtime_versions": [
+          "QUESTA_UVM-1.2.3"
+        ],
+        "finished_utc": "2026-11-09T23:07:45.884163+00:00"
+      }
+    },
+    {
+      "name": "fault-missing_error",
+      "kind": "fault",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+            "--select",
+            "fault-missing_error",
+            "--raw-fault",
+            "--output",
+            "C:\\short\\ahb-faults-v1\\fault-missing_error\\child",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90",
+            "--source-cache",
+            "C:\\short\\ahb-faults-v1\\source",
+            "--expected-env-sha",
+            "48437f440cbd1b10b4abc73c254363ad9c6a06fa"
+          ],
+          "cwd": "C:\\short\\ahb-uvm-20261110",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "child-wrapper.log",
+          "sha256": "ca1b207cd95c97797207f2f568e22368fbbee6633bb7a6be2b1cb6d86d7dea68"
+        }
+      ],
+      "reason": "EXPECTED_CHILD_FAILURE",
+      "child_wrapper_exit": 1,
+      "passing_control": {
+        "substep": "functional",
+        "case": "bad_address_01"
+      },
+      "expected_fatal": "SVA:EP_ZERO_WAIT",
+      "observed_fatals": [],
+      "observed_sva": [
+        "EP_ZERO_WAIT"
+      ],
+      "child_result": {
+        "started_utc": "2026-11-09T23:07:46.471861+00:00",
+        "command": [
+          "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+          "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+          "--select",
+          "fault-missing_error",
+          "--raw-fault",
+          "--output",
+          "C:\\short\\ahb-faults-v1\\fault-missing_error\\child",
+          "--sim-bin",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "--uvm-lib",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "--uvm-include",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "--timeout",
+          "90",
+          "--source-cache",
+          "C:\\short\\ahb-faults-v1\\source",
+          "--expected-env-sha",
+          "48437f440cbd1b10b4abc73c254363ad9c6a06fa"
+        ],
+        "source_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "source_dirty": false,
+        "serial_execution": true,
+        "selection": [
+          "fault-missing_error"
+        ],
+        "raw_fault": true,
+        "seed": 682016495,
+        "seed_hex": "0x28A6BEEF",
+        "functional_coverage": "NOT RUN",
+        "constrained_randomization": "NOT RUN",
+        "original_advanced_alu_apb": "NOT RUN",
+        "suites": [
+          {
+            "name": "fault-missing_error",
+            "kind": "fault",
+            "status": "FAIL",
+            "commands": [
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+                  "work"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-missing_error\\child\\fault-missing_error",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "0.log",
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+                  "-sv",
+                  "-work",
+                  "work",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_bus.sv",
+                  "C:\\short\\ahb-faults-v1\\fault-missing_error\\child\\fault-missing_error\\disposable-rtl\\design.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_assertions.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_uvm_pkg.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_uvm_top.sv"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-missing_error\\child\\fault-missing_error",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "1.log",
+                "sha256": "8ac235a229ccc63bc4e0dd349b8ddfabfd38b8cd2cf9795908df72149d223dd5"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+                  "-c",
+                  "-onfinish",
+                  "exit",
+                  "-voptargs=+acc",
+                  "-sv_seed",
+                  "682016495",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "work.ahb_uvm_top",
+                  "+PROGRAM=C:\\short\\ahb-faults-v1\\fault-missing_error\\child\\fault-missing_error\\program.txt",
+                  "-do",
+                  "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /ahb_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-missing_error\\child\\fault-missing_error",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "2.log",
+                "sha256": "72cb2e1fb12c1f0f1ab6826a37b73cfd03853c71625bdb4102ba9677796ee72f"
+              }
+            ],
+            "program_sha256": "e900c993a58eb725fec209c1eeecd0752ba01bd99e282a6e4a436573b2136ad0",
+            "original_program_sha256": "e900c993a58eb725fec209c1eeecd0752ba01bd99e282a6e4a436573b2136ad0",
+            "planned_counts": {
+              "bad_address_01": {
+                "offered": 51,
+                "accepted": 50,
+                "success": 49,
+                "errors": 1,
+                "writes": 17,
+                "reads": 32,
+                "withdrawn": 1,
+                "reset_accepted": 0,
+                "reset_offered": 0,
+                "wait_edges": 2,
+                "pipeline_edges": 45,
+                "resets": 1
+              }
+            },
+            "mutation": {
+              "kind": "missing_error",
+              "source_revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+              "locked_sha256": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca",
+              "compiled_sha256": "62d1adf2d6121910409b9b6f8c57cfa52de404316cbe49f9e65461afa04a55ea",
+              "patch_sha256": "01ea93d0bd856685c6e0294018c5cfaf952addbfe5a29c468b01653a0f100c2a",
+              "checkout_modified": false
+            },
+            "uvm_runtime_versions": [
+              "QUESTA_UVM-1.2.3"
+            ],
+            "reason": "PROCESS_OR_SIMULATOR_ERROR"
+          }
+        ],
+        "expected_inventory": [
+          "sva-address_hold",
+          "sva-direction_hold",
+          "sva-size_hold",
+          "sva-selection_hold",
+          "sva-active_to_idle",
+          "sva-write_data",
+          "sva-idle_to_seq",
+          "sva-busy_control",
+          "sva-response_owner",
+          "sva-short_error",
+          "sva-long_error",
+          "sva-held_error_lost",
+          "sva-local_ok_wait",
+          "sva-global_through_error",
+          "sva-reset_output",
+          "sva-legal_read_wdata",
+          "sva-legal_idle_change",
+          "sva-legal_busy_seq",
+          "sva-legal_busy_nonseq",
+          "sva-legal_busy_idle",
+          "sva-legal_error_cancel",
+          "sva-legal_error_continue",
+          "sva-legal_reset_cancel",
+          "checker-legal",
+          "checker-reset",
+          "checker-pairing",
+          "checker-alias",
+          "checker-duplicate",
+          "checker-omitted",
+          "smoke",
+          "functional",
+          "fault-live_address",
+          "fault-address_phase_data",
+          "fault-read_data",
+          "fault-invalid_write",
+          "fault-wait_advance",
+          "fault-short_error",
+          "fault-missing_error",
+          "fault-address_alias",
+          "fault-duplicate",
+          "fault-omit_observation",
+          "fault-missing_marker",
+          "portable"
+        ],
+        "required_selected": [
+          "fault-missing_error"
+        ],
+        "aggregate_exit_code": 1,
+        "milestone_pass": false,
+        "input_sha256": {
+          "verification/ahb_uvm/ahb_assertions.sv": "0a8392029ad5b2de09aacc02934120295eb451d1022e34570ce9bccbfa59ab49",
+          "verification/ahb_uvm/ahb_bus.sv": "25a9c2097a945277a03c1d9c326865b3dc480747d8d35639b877293db4a9d8f9",
+          "verification/ahb_uvm/ahb_checker_control.sv": "bef3d12f7bb26d1165bbb18b4196a6c39b61e25af012b6310729188b752851ed",
+          "verification/ahb_uvm/ahb_sva_control.sv": "89181600aa5a7a2dac14fbe83d49b576182eef76dc33e289cee6e7b79af0cbc1",
+          "verification/ahb_uvm/ahb_uvm_pkg.sv": "1babb26b0f51ecc0806c0589189e944ef1fd9177ad66a6250b1da427591e2697",
+          "verification/ahb_uvm/ahb_uvm_top.sv": "c67aabebcf3af3034a526a9ab9a2ae74f599649a3bc667c8515f75523366989d",
+          "verification/ahb_uvm/inventory.json": "99ba31c7eb0790e8cac3e1dc56d7e180e1f840def2c2bde741d0b5fbc632d6b0",
+          "verification/ahb_uvm/sources.json": "0d9cea95213cfd687aea3f14c17e6beef280caad25528abb97f995398f995e2b",
+          "scripts/run_ahb_uvm.py": "c593143229b734b10a9215aaafbe5dad8522fca2e632e6355b6acd775455bd0e",
+          "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+          "scripts/ahb_program.py": "ff9a3630a2f6f60e74faa79b28cfbf0c2c8806fa7e5e6adbb54a59bb55ab4753",
+          "scripts/ahb_mutations.py": "23b5b113e15ba73f83d0515c477b0e26ae9fdd564c6faa00bd85890831ef3faf"
+        },
+        "expected_environment_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "runner_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "inventory_revision": "f49314d214da41400b9155dd86207da6764ddeec",
+        "configuration": {
+          "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "timeout_per_command": 90,
+          "global_timeout": 3600,
+          "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+          "vendor_input_sha256": {
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5"
+          }
+        },
+        "version_command": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-version"
+          ],
+          "cwd": "C:\\short\\ahb-faults-v1\\fault-missing_error\\child",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "version.log",
+          "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+        },
+        "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+        "source_lock": {
+          "owner": "M-Roohan-Khan-28",
+          "account_id": 270144410,
+          "repository": "AHB-Lite-RAM-Interface",
+          "revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+          "files": [
+            "rtl/design.sv"
+          ],
+          "sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+          },
+          "execution_files": [
+            "rtl/design.sv",
+            "scripts/run_regression.ps1",
+            "scripts/run_contract.py",
+            "tb/ahb16_contract_test.sv",
+            "verification/assertions/ahb16_master_monitor.sv",
+            "verification/negative/ahb16_master_negative.sv"
+          ],
+          "commands": [
+            {
+              "command": [
+                "git",
+                "clone",
+                "--quiet",
+                "--no-hardlinks",
+                "--config",
+                "core.autocrlf=false",
+                "--config",
+                "core.longpaths=true",
+                "C:\\short\\ahb-faults-v1\\source",
+                "C:\\short\\ahb-faults-v1\\fault-missing_error\\child\\source"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-missing_error\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-0.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\ahb-faults-v1\\fault-missing_error\\child\\source",
+                "checkout",
+                "--quiet",
+                "--detach",
+                "659fba67ce85a01643cceca2c8d1e67ea3903995"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-missing_error\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-1.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\ahb-faults-v1\\fault-missing_error\\child\\source",
+                "remote",
+                "set-url",
+                "origin",
+                "https://github.com/M-Roohan-Khan-28/AHB-Lite-RAM-Interface.git"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-missing_error\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-2.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            }
+          ],
+          "supplier": "C:\\short\\ahb-faults-v1\\source",
+          "transport": "verified_local_mirror",
+          "observed_revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+          "clean": true,
+          "rtl_sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+          },
+          "execution_files_sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca",
+            "scripts/run_regression.ps1": "cb71a7fcc93173763cbea5c14f617406dc42e3fee0cd997605e5d89cac2374de",
+            "scripts/run_contract.py": "60bf7a664879e4734de6a67480b753fbdb4f690e59521e0731b1dca4ac30b177",
+            "tb/ahb16_contract_test.sv": "f6ff5b4c2e61470235547f1ef99fcac7c08744718af22f2c1484cdf2272265b4",
+            "verification/assertions/ahb16_master_monitor.sv": "ff4359c55d2938917435f040819f6934901013728989ba543de567bf36675dbc",
+            "verification/negative/ahb16_master_negative.sv": "33ded800ec0b9b96e25b87ddc26e5c1fb5d64f953eff82b36cd9139a098587c6"
+          },
+          "clean_after_execution": true
+        },
+        "environment_clean_after_execution": true,
+        "uvm_runtime_versions": [
+          "QUESTA_UVM-1.2.3"
+        ],
+        "finished_utc": "2026-11-09T23:08:25.306736+00:00"
+      }
+    },
+    {
+      "name": "fault-address_alias",
+      "kind": "fault",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+            "--select",
+            "fault-address_alias",
+            "--raw-fault",
+            "--output",
+            "C:\\short\\ahb-faults-v1\\fault-address_alias\\child",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90",
+            "--source-cache",
+            "C:\\short\\ahb-faults-v1\\source",
+            "--expected-env-sha",
+            "48437f440cbd1b10b4abc73c254363ad9c6a06fa"
+          ],
+          "cwd": "C:\\short\\ahb-uvm-20261110",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "child-wrapper.log",
+          "sha256": "03137f709c9f0d962ba73a76c7470f57a3aee322f9288bd883e28f89380856f6"
+        }
+      ],
+      "reason": "EXPECTED_CHILD_FAILURE",
+      "child_wrapper_exit": 1,
+      "passing_control": {
+        "substep": "functional",
+        "case": "all_words_overwrite"
+      },
+      "expected_fatal": "ADDRESS_INTENT",
+      "observed_fatals": [
+        "ADDRESS_INTENT"
+      ],
+      "observed_sva": [],
+      "child_result": {
+        "started_utc": "2026-11-09T23:08:25.911670+00:00",
+        "command": [
+          "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+          "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+          "--select",
+          "fault-address_alias",
+          "--raw-fault",
+          "--output",
+          "C:\\short\\ahb-faults-v1\\fault-address_alias\\child",
+          "--sim-bin",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "--uvm-lib",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "--uvm-include",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "--timeout",
+          "90",
+          "--source-cache",
+          "C:\\short\\ahb-faults-v1\\source",
+          "--expected-env-sha",
+          "48437f440cbd1b10b4abc73c254363ad9c6a06fa"
+        ],
+        "source_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "source_dirty": false,
+        "serial_execution": true,
+        "selection": [
+          "fault-address_alias"
+        ],
+        "raw_fault": true,
+        "seed": 682016495,
+        "seed_hex": "0x28A6BEEF",
+        "functional_coverage": "NOT RUN",
+        "constrained_randomization": "NOT RUN",
+        "original_advanced_alu_apb": "NOT RUN",
+        "suites": [
+          {
+            "name": "fault-address_alias",
+            "kind": "fault",
+            "status": "FAIL",
+            "commands": [
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+                  "work"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-address_alias\\child\\fault-address_alias",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "0.log",
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+                  "-sv",
+                  "-work",
+                  "work",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_bus.sv",
+                  "C:\\short\\ahb-faults-v1\\fault-address_alias\\child\\source\\rtl\\design.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_assertions.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_uvm_pkg.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_uvm_top.sv"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-address_alias\\child\\fault-address_alias",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "1.log",
+                "sha256": "1e17564d7e6956e14c827a491f832d52c1b47782b614e1cd6b6f6c400a0b622c"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+                  "-c",
+                  "-onfinish",
+                  "exit",
+                  "-voptargs=+acc",
+                  "-sv_seed",
+                  "682016495",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "work.ahb_uvm_top",
+                  "+PROGRAM=C:\\short\\ahb-faults-v1\\fault-address_alias\\child\\fault-address_alias\\program.txt",
+                  "+FAULT=address_alias",
+                  "-do",
+                  "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /ahb_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-address_alias\\child\\fault-address_alias",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "2.log",
+                "sha256": "b5f74a1107ee1f2c7d50bbb1d1db9ff97ab63b9a3e1f8e36bd1834a0655f0907"
+              }
+            ],
+            "program_sha256": "9c5d67a11bc5a526ad038fbda05e0b206714b011a70eabd1c7d2e58c8f93e637",
+            "original_program_sha256": "9c5d67a11bc5a526ad038fbda05e0b206714b011a70eabd1c7d2e58c8f93e637",
+            "planned_counts": {
+              "all_words_overwrite": {
+                "offered": 64,
+                "accepted": 64,
+                "success": 64,
+                "errors": 0,
+                "writes": 32,
+                "reads": 32,
+                "withdrawn": 0,
+                "reset_accepted": 0,
+                "reset_offered": 0,
+                "wait_edges": 0,
+                "pipeline_edges": 61,
+                "resets": 1
+              }
+            },
+            "uvm_runtime_versions": [
+              "QUESTA_UVM-1.2.3"
+            ],
+            "reason": "PROCESS_OR_SIMULATOR_ERROR"
+          }
+        ],
+        "expected_inventory": [
+          "sva-address_hold",
+          "sva-direction_hold",
+          "sva-size_hold",
+          "sva-selection_hold",
+          "sva-active_to_idle",
+          "sva-write_data",
+          "sva-idle_to_seq",
+          "sva-busy_control",
+          "sva-response_owner",
+          "sva-short_error",
+          "sva-long_error",
+          "sva-held_error_lost",
+          "sva-local_ok_wait",
+          "sva-global_through_error",
+          "sva-reset_output",
+          "sva-legal_read_wdata",
+          "sva-legal_idle_change",
+          "sva-legal_busy_seq",
+          "sva-legal_busy_nonseq",
+          "sva-legal_busy_idle",
+          "sva-legal_error_cancel",
+          "sva-legal_error_continue",
+          "sva-legal_reset_cancel",
+          "checker-legal",
+          "checker-reset",
+          "checker-pairing",
+          "checker-alias",
+          "checker-duplicate",
+          "checker-omitted",
+          "smoke",
+          "functional",
+          "fault-live_address",
+          "fault-address_phase_data",
+          "fault-read_data",
+          "fault-invalid_write",
+          "fault-wait_advance",
+          "fault-short_error",
+          "fault-missing_error",
+          "fault-address_alias",
+          "fault-duplicate",
+          "fault-omit_observation",
+          "fault-missing_marker",
+          "portable"
+        ],
+        "required_selected": [
+          "fault-address_alias"
+        ],
+        "aggregate_exit_code": 1,
+        "milestone_pass": false,
+        "input_sha256": {
+          "verification/ahb_uvm/ahb_assertions.sv": "0a8392029ad5b2de09aacc02934120295eb451d1022e34570ce9bccbfa59ab49",
+          "verification/ahb_uvm/ahb_bus.sv": "25a9c2097a945277a03c1d9c326865b3dc480747d8d35639b877293db4a9d8f9",
+          "verification/ahb_uvm/ahb_checker_control.sv": "bef3d12f7bb26d1165bbb18b4196a6c39b61e25af012b6310729188b752851ed",
+          "verification/ahb_uvm/ahb_sva_control.sv": "89181600aa5a7a2dac14fbe83d49b576182eef76dc33e289cee6e7b79af0cbc1",
+          "verification/ahb_uvm/ahb_uvm_pkg.sv": "1babb26b0f51ecc0806c0589189e944ef1fd9177ad66a6250b1da427591e2697",
+          "verification/ahb_uvm/ahb_uvm_top.sv": "c67aabebcf3af3034a526a9ab9a2ae74f599649a3bc667c8515f75523366989d",
+          "verification/ahb_uvm/inventory.json": "99ba31c7eb0790e8cac3e1dc56d7e180e1f840def2c2bde741d0b5fbc632d6b0",
+          "verification/ahb_uvm/sources.json": "0d9cea95213cfd687aea3f14c17e6beef280caad25528abb97f995398f995e2b",
+          "scripts/run_ahb_uvm.py": "c593143229b734b10a9215aaafbe5dad8522fca2e632e6355b6acd775455bd0e",
+          "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+          "scripts/ahb_program.py": "ff9a3630a2f6f60e74faa79b28cfbf0c2c8806fa7e5e6adbb54a59bb55ab4753",
+          "scripts/ahb_mutations.py": "23b5b113e15ba73f83d0515c477b0e26ae9fdd564c6faa00bd85890831ef3faf"
+        },
+        "expected_environment_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "runner_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "inventory_revision": "f49314d214da41400b9155dd86207da6764ddeec",
+        "configuration": {
+          "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "timeout_per_command": 90,
+          "global_timeout": 3600,
+          "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+          "vendor_input_sha256": {
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5"
+          }
+        },
+        "version_command": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-version"
+          ],
+          "cwd": "C:\\short\\ahb-faults-v1\\fault-address_alias\\child",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "version.log",
+          "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+        },
+        "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+        "source_lock": {
+          "owner": "M-Roohan-Khan-28",
+          "account_id": 270144410,
+          "repository": "AHB-Lite-RAM-Interface",
+          "revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+          "files": [
+            "rtl/design.sv"
+          ],
+          "sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+          },
+          "execution_files": [
+            "rtl/design.sv",
+            "scripts/run_regression.ps1",
+            "scripts/run_contract.py",
+            "tb/ahb16_contract_test.sv",
+            "verification/assertions/ahb16_master_monitor.sv",
+            "verification/negative/ahb16_master_negative.sv"
+          ],
+          "commands": [
+            {
+              "command": [
+                "git",
+                "clone",
+                "--quiet",
+                "--no-hardlinks",
+                "--config",
+                "core.autocrlf=false",
+                "--config",
+                "core.longpaths=true",
+                "C:\\short\\ahb-faults-v1\\source",
+                "C:\\short\\ahb-faults-v1\\fault-address_alias\\child\\source"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-address_alias\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-0.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\ahb-faults-v1\\fault-address_alias\\child\\source",
+                "checkout",
+                "--quiet",
+                "--detach",
+                "659fba67ce85a01643cceca2c8d1e67ea3903995"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-address_alias\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-1.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\ahb-faults-v1\\fault-address_alias\\child\\source",
+                "remote",
+                "set-url",
+                "origin",
+                "https://github.com/M-Roohan-Khan-28/AHB-Lite-RAM-Interface.git"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-address_alias\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-2.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            }
+          ],
+          "supplier": "C:\\short\\ahb-faults-v1\\source",
+          "transport": "verified_local_mirror",
+          "observed_revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+          "clean": true,
+          "rtl_sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+          },
+          "execution_files_sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca",
+            "scripts/run_regression.ps1": "cb71a7fcc93173763cbea5c14f617406dc42e3fee0cd997605e5d89cac2374de",
+            "scripts/run_contract.py": "60bf7a664879e4734de6a67480b753fbdb4f690e59521e0731b1dca4ac30b177",
+            "tb/ahb16_contract_test.sv": "f6ff5b4c2e61470235547f1ef99fcac7c08744718af22f2c1484cdf2272265b4",
+            "verification/assertions/ahb16_master_monitor.sv": "ff4359c55d2938917435f040819f6934901013728989ba543de567bf36675dbc",
+            "verification/negative/ahb16_master_negative.sv": "33ded800ec0b9b96e25b87ddc26e5c1fb5d64f953eff82b36cd9139a098587c6"
+          },
+          "clean_after_execution": true
+        },
+        "environment_clean_after_execution": true,
+        "uvm_runtime_versions": [
+          "QUESTA_UVM-1.2.3"
+        ],
+        "finished_utc": "2026-11-09T23:09:06.260248+00:00"
+      }
+    },
+    {
+      "name": "fault-duplicate",
+      "kind": "fault",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+            "--select",
+            "fault-duplicate",
+            "--raw-fault",
+            "--output",
+            "C:\\short\\ahb-faults-v1\\fault-duplicate\\child",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90",
+            "--source-cache",
+            "C:\\short\\ahb-faults-v1\\source",
+            "--expected-env-sha",
+            "48437f440cbd1b10b4abc73c254363ad9c6a06fa"
+          ],
+          "cwd": "C:\\short\\ahb-uvm-20261110",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "child-wrapper.log",
+          "sha256": "0704cf117b578a29af6243c3453e634ba83adec29abdf4b3c26bfa8ebe088a8b"
+        }
+      ],
+      "reason": "EXPECTED_CHILD_FAILURE",
+      "child_wrapper_exit": 1,
+      "passing_control": {
+        "substep": "smoke",
+        "case": "smoke"
+      },
+      "expected_fatal": "UNSOLICITED_ADDRESS",
+      "observed_fatals": [
+        "UNSOLICITED_ADDRESS"
+      ],
+      "observed_sva": [],
+      "child_result": {
+        "started_utc": "2026-11-09T23:09:06.989787+00:00",
+        "command": [
+          "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+          "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+          "--select",
+          "fault-duplicate",
+          "--raw-fault",
+          "--output",
+          "C:\\short\\ahb-faults-v1\\fault-duplicate\\child",
+          "--sim-bin",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "--uvm-lib",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "--uvm-include",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "--timeout",
+          "90",
+          "--source-cache",
+          "C:\\short\\ahb-faults-v1\\source",
+          "--expected-env-sha",
+          "48437f440cbd1b10b4abc73c254363ad9c6a06fa"
+        ],
+        "source_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "source_dirty": false,
+        "serial_execution": true,
+        "selection": [
+          "fault-duplicate"
+        ],
+        "raw_fault": true,
+        "seed": 682016495,
+        "seed_hex": "0x28A6BEEF",
+        "functional_coverage": "NOT RUN",
+        "constrained_randomization": "NOT RUN",
+        "original_advanced_alu_apb": "NOT RUN",
+        "suites": [
+          {
+            "name": "fault-duplicate",
+            "kind": "fault",
+            "status": "FAIL",
+            "commands": [
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+                  "work"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-duplicate\\child\\fault-duplicate",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "0.log",
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+                  "-sv",
+                  "-work",
+                  "work",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_bus.sv",
+                  "C:\\short\\ahb-faults-v1\\fault-duplicate\\child\\source\\rtl\\design.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_assertions.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_uvm_pkg.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_uvm_top.sv"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-duplicate\\child\\fault-duplicate",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "1.log",
+                "sha256": "6f761998682e74ab7d33d978f7020a0bb1622e150172856c5568e62a6d9746f3"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+                  "-c",
+                  "-onfinish",
+                  "exit",
+                  "-voptargs=+acc",
+                  "-sv_seed",
+                  "682016495",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "work.ahb_uvm_top",
+                  "+PROGRAM=C:\\short\\ahb-faults-v1\\fault-duplicate\\child\\fault-duplicate\\program.txt",
+                  "-do",
+                  "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /ahb_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-duplicate\\child\\fault-duplicate",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "2.log",
+                "sha256": "be563233d97a71b5d64f8451ac8401b7e8ac75ad776a4cb3be77a5ca3a623e4d"
+              }
+            ],
+            "program_sha256": "7517e91470fb79917e0c9ab05d509abd7f395e32ad86b456dab4601a3b41bcb9",
+            "original_program_sha256": "c910f7b142d23ebdd8cc2bffbd5cc7085df3e69d23368e8c6276acb560ab0af1",
+            "planned_counts": {
+              "smoke": {
+                "offered": 2,
+                "accepted": 2,
+                "success": 2,
+                "errors": 0,
+                "writes": 1,
+                "reads": 1,
+                "withdrawn": 0,
+                "reset_accepted": 0,
+                "reset_offered": 0,
+                "wait_edges": 0,
+                "pipeline_edges": 1,
+                "resets": 1
+              }
+            },
+            "uvm_runtime_versions": [
+              "QUESTA_UVM-1.2.3"
+            ],
+            "reason": "PROCESS_OR_SIMULATOR_ERROR"
+          }
+        ],
+        "expected_inventory": [
+          "sva-address_hold",
+          "sva-direction_hold",
+          "sva-size_hold",
+          "sva-selection_hold",
+          "sva-active_to_idle",
+          "sva-write_data",
+          "sva-idle_to_seq",
+          "sva-busy_control",
+          "sva-response_owner",
+          "sva-short_error",
+          "sva-long_error",
+          "sva-held_error_lost",
+          "sva-local_ok_wait",
+          "sva-global_through_error",
+          "sva-reset_output",
+          "sva-legal_read_wdata",
+          "sva-legal_idle_change",
+          "sva-legal_busy_seq",
+          "sva-legal_busy_nonseq",
+          "sva-legal_busy_idle",
+          "sva-legal_error_cancel",
+          "sva-legal_error_continue",
+          "sva-legal_reset_cancel",
+          "checker-legal",
+          "checker-reset",
+          "checker-pairing",
+          "checker-alias",
+          "checker-duplicate",
+          "checker-omitted",
+          "smoke",
+          "functional",
+          "fault-live_address",
+          "fault-address_phase_data",
+          "fault-read_data",
+          "fault-invalid_write",
+          "fault-wait_advance",
+          "fault-short_error",
+          "fault-missing_error",
+          "fault-address_alias",
+          "fault-duplicate",
+          "fault-omit_observation",
+          "fault-missing_marker",
+          "portable"
+        ],
+        "required_selected": [
+          "fault-duplicate"
+        ],
+        "aggregate_exit_code": 1,
+        "milestone_pass": false,
+        "input_sha256": {
+          "verification/ahb_uvm/ahb_assertions.sv": "0a8392029ad5b2de09aacc02934120295eb451d1022e34570ce9bccbfa59ab49",
+          "verification/ahb_uvm/ahb_bus.sv": "25a9c2097a945277a03c1d9c326865b3dc480747d8d35639b877293db4a9d8f9",
+          "verification/ahb_uvm/ahb_checker_control.sv": "bef3d12f7bb26d1165bbb18b4196a6c39b61e25af012b6310729188b752851ed",
+          "verification/ahb_uvm/ahb_sva_control.sv": "89181600aa5a7a2dac14fbe83d49b576182eef76dc33e289cee6e7b79af0cbc1",
+          "verification/ahb_uvm/ahb_uvm_pkg.sv": "1babb26b0f51ecc0806c0589189e944ef1fd9177ad66a6250b1da427591e2697",
+          "verification/ahb_uvm/ahb_uvm_top.sv": "c67aabebcf3af3034a526a9ab9a2ae74f599649a3bc667c8515f75523366989d",
+          "verification/ahb_uvm/inventory.json": "99ba31c7eb0790e8cac3e1dc56d7e180e1f840def2c2bde741d0b5fbc632d6b0",
+          "verification/ahb_uvm/sources.json": "0d9cea95213cfd687aea3f14c17e6beef280caad25528abb97f995398f995e2b",
+          "scripts/run_ahb_uvm.py": "c593143229b734b10a9215aaafbe5dad8522fca2e632e6355b6acd775455bd0e",
+          "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+          "scripts/ahb_program.py": "ff9a3630a2f6f60e74faa79b28cfbf0c2c8806fa7e5e6adbb54a59bb55ab4753",
+          "scripts/ahb_mutations.py": "23b5b113e15ba73f83d0515c477b0e26ae9fdd564c6faa00bd85890831ef3faf"
+        },
+        "expected_environment_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "runner_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "inventory_revision": "f49314d214da41400b9155dd86207da6764ddeec",
+        "configuration": {
+          "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "timeout_per_command": 90,
+          "global_timeout": 3600,
+          "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+          "vendor_input_sha256": {
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5"
+          }
+        },
+        "version_command": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-version"
+          ],
+          "cwd": "C:\\short\\ahb-faults-v1\\fault-duplicate\\child",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "version.log",
+          "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+        },
+        "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+        "source_lock": {
+          "owner": "M-Roohan-Khan-28",
+          "account_id": 270144410,
+          "repository": "AHB-Lite-RAM-Interface",
+          "revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+          "files": [
+            "rtl/design.sv"
+          ],
+          "sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+          },
+          "execution_files": [
+            "rtl/design.sv",
+            "scripts/run_regression.ps1",
+            "scripts/run_contract.py",
+            "tb/ahb16_contract_test.sv",
+            "verification/assertions/ahb16_master_monitor.sv",
+            "verification/negative/ahb16_master_negative.sv"
+          ],
+          "commands": [
+            {
+              "command": [
+                "git",
+                "clone",
+                "--quiet",
+                "--no-hardlinks",
+                "--config",
+                "core.autocrlf=false",
+                "--config",
+                "core.longpaths=true",
+                "C:\\short\\ahb-faults-v1\\source",
+                "C:\\short\\ahb-faults-v1\\fault-duplicate\\child\\source"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-duplicate\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-0.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\ahb-faults-v1\\fault-duplicate\\child\\source",
+                "checkout",
+                "--quiet",
+                "--detach",
+                "659fba67ce85a01643cceca2c8d1e67ea3903995"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-duplicate\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-1.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\ahb-faults-v1\\fault-duplicate\\child\\source",
+                "remote",
+                "set-url",
+                "origin",
+                "https://github.com/M-Roohan-Khan-28/AHB-Lite-RAM-Interface.git"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-duplicate\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-2.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            }
+          ],
+          "supplier": "C:\\short\\ahb-faults-v1\\source",
+          "transport": "verified_local_mirror",
+          "observed_revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+          "clean": true,
+          "rtl_sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+          },
+          "execution_files_sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca",
+            "scripts/run_regression.ps1": "cb71a7fcc93173763cbea5c14f617406dc42e3fee0cd997605e5d89cac2374de",
+            "scripts/run_contract.py": "60bf7a664879e4734de6a67480b753fbdb4f690e59521e0731b1dca4ac30b177",
+            "tb/ahb16_contract_test.sv": "f6ff5b4c2e61470235547f1ef99fcac7c08744718af22f2c1484cdf2272265b4",
+            "verification/assertions/ahb16_master_monitor.sv": "ff4359c55d2938917435f040819f6934901013728989ba543de567bf36675dbc",
+            "verification/negative/ahb16_master_negative.sv": "33ded800ec0b9b96e25b87ddc26e5c1fb5d64f953eff82b36cd9139a098587c6"
+          },
+          "clean_after_execution": true
+        },
+        "environment_clean_after_execution": true,
+        "uvm_runtime_versions": [
+          "QUESTA_UVM-1.2.3"
+        ],
+        "finished_utc": "2026-11-09T23:09:45.679890+00:00"
+      }
+    },
+    {
+      "name": "fault-omit_observation",
+      "kind": "fault",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+            "--select",
+            "fault-omit_observation",
+            "--raw-fault",
+            "--output",
+            "C:\\short\\ahb-faults-v1\\fault-omit_observation\\child",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90",
+            "--source-cache",
+            "C:\\short\\ahb-faults-v1\\source",
+            "--expected-env-sha",
+            "48437f440cbd1b10b4abc73c254363ad9c6a06fa"
+          ],
+          "cwd": "C:\\short\\ahb-uvm-20261110",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "child-wrapper.log",
+          "sha256": "de45942812b9440da9be29b139f4ffc244b221b398d7444bac21cb8a35fcf3cf"
+        }
+      ],
+      "reason": "EXPECTED_CHILD_FAILURE",
+      "child_wrapper_exit": 1,
+      "passing_control": {
+        "substep": "smoke",
+        "case": "smoke"
+      },
+      "expected_fatal": "ADDRESS_INTENT",
+      "observed_fatals": [
+        "ADDRESS_INTENT"
+      ],
+      "observed_sva": [],
+      "child_result": {
+        "started_utc": "2026-11-09T23:09:46.345893+00:00",
+        "command": [
+          "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+          "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+          "--select",
+          "fault-omit_observation",
+          "--raw-fault",
+          "--output",
+          "C:\\short\\ahb-faults-v1\\fault-omit_observation\\child",
+          "--sim-bin",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "--uvm-lib",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "--uvm-include",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "--timeout",
+          "90",
+          "--source-cache",
+          "C:\\short\\ahb-faults-v1\\source",
+          "--expected-env-sha",
+          "48437f440cbd1b10b4abc73c254363ad9c6a06fa"
+        ],
+        "source_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "source_dirty": false,
+        "serial_execution": true,
+        "selection": [
+          "fault-omit_observation"
+        ],
+        "raw_fault": true,
+        "seed": 682016495,
+        "seed_hex": "0x28A6BEEF",
+        "functional_coverage": "NOT RUN",
+        "constrained_randomization": "NOT RUN",
+        "original_advanced_alu_apb": "NOT RUN",
+        "suites": [
+          {
+            "name": "fault-omit_observation",
+            "kind": "fault",
+            "status": "FAIL",
+            "commands": [
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+                  "work"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-omit_observation\\child\\fault-omit_observation",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "0.log",
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+                  "-sv",
+                  "-work",
+                  "work",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_bus.sv",
+                  "C:\\short\\ahb-faults-v1\\fault-omit_observation\\child\\source\\rtl\\design.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_assertions.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_uvm_pkg.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_uvm_top.sv"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-omit_observation\\child\\fault-omit_observation",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "1.log",
+                "sha256": "b9d9b1f5392453218c1aa1bd5a3ac663da02d250b722f53693b7a1168e6540a0"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+                  "-c",
+                  "-onfinish",
+                  "exit",
+                  "-voptargs=+acc",
+                  "-sv_seed",
+                  "682016495",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "work.ahb_uvm_top",
+                  "+PROGRAM=C:\\short\\ahb-faults-v1\\fault-omit_observation\\child\\fault-omit_observation\\program.txt",
+                  "+FAULT=omit_observation",
+                  "-do",
+                  "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /ahb_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-omit_observation\\child\\fault-omit_observation",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "2.log",
+                "sha256": "95c25523ad284ad38e7afe57cc315233d73896252dcc83b1964e5b2edad29280"
+              }
+            ],
+            "program_sha256": "c910f7b142d23ebdd8cc2bffbd5cc7085df3e69d23368e8c6276acb560ab0af1",
+            "original_program_sha256": "c910f7b142d23ebdd8cc2bffbd5cc7085df3e69d23368e8c6276acb560ab0af1",
+            "planned_counts": {
+              "smoke": {
+                "offered": 2,
+                "accepted": 2,
+                "success": 2,
+                "errors": 0,
+                "writes": 1,
+                "reads": 1,
+                "withdrawn": 0,
+                "reset_accepted": 0,
+                "reset_offered": 0,
+                "wait_edges": 0,
+                "pipeline_edges": 1,
+                "resets": 1
+              }
+            },
+            "uvm_runtime_versions": [
+              "QUESTA_UVM-1.2.3"
+            ],
+            "reason": "PROCESS_OR_SIMULATOR_ERROR"
+          }
+        ],
+        "expected_inventory": [
+          "sva-address_hold",
+          "sva-direction_hold",
+          "sva-size_hold",
+          "sva-selection_hold",
+          "sva-active_to_idle",
+          "sva-write_data",
+          "sva-idle_to_seq",
+          "sva-busy_control",
+          "sva-response_owner",
+          "sva-short_error",
+          "sva-long_error",
+          "sva-held_error_lost",
+          "sva-local_ok_wait",
+          "sva-global_through_error",
+          "sva-reset_output",
+          "sva-legal_read_wdata",
+          "sva-legal_idle_change",
+          "sva-legal_busy_seq",
+          "sva-legal_busy_nonseq",
+          "sva-legal_busy_idle",
+          "sva-legal_error_cancel",
+          "sva-legal_error_continue",
+          "sva-legal_reset_cancel",
+          "checker-legal",
+          "checker-reset",
+          "checker-pairing",
+          "checker-alias",
+          "checker-duplicate",
+          "checker-omitted",
+          "smoke",
+          "functional",
+          "fault-live_address",
+          "fault-address_phase_data",
+          "fault-read_data",
+          "fault-invalid_write",
+          "fault-wait_advance",
+          "fault-short_error",
+          "fault-missing_error",
+          "fault-address_alias",
+          "fault-duplicate",
+          "fault-omit_observation",
+          "fault-missing_marker",
+          "portable"
+        ],
+        "required_selected": [
+          "fault-omit_observation"
+        ],
+        "aggregate_exit_code": 1,
+        "milestone_pass": false,
+        "input_sha256": {
+          "verification/ahb_uvm/ahb_assertions.sv": "0a8392029ad5b2de09aacc02934120295eb451d1022e34570ce9bccbfa59ab49",
+          "verification/ahb_uvm/ahb_bus.sv": "25a9c2097a945277a03c1d9c326865b3dc480747d8d35639b877293db4a9d8f9",
+          "verification/ahb_uvm/ahb_checker_control.sv": "bef3d12f7bb26d1165bbb18b4196a6c39b61e25af012b6310729188b752851ed",
+          "verification/ahb_uvm/ahb_sva_control.sv": "89181600aa5a7a2dac14fbe83d49b576182eef76dc33e289cee6e7b79af0cbc1",
+          "verification/ahb_uvm/ahb_uvm_pkg.sv": "1babb26b0f51ecc0806c0589189e944ef1fd9177ad66a6250b1da427591e2697",
+          "verification/ahb_uvm/ahb_uvm_top.sv": "c67aabebcf3af3034a526a9ab9a2ae74f599649a3bc667c8515f75523366989d",
+          "verification/ahb_uvm/inventory.json": "99ba31c7eb0790e8cac3e1dc56d7e180e1f840def2c2bde741d0b5fbc632d6b0",
+          "verification/ahb_uvm/sources.json": "0d9cea95213cfd687aea3f14c17e6beef280caad25528abb97f995398f995e2b",
+          "scripts/run_ahb_uvm.py": "c593143229b734b10a9215aaafbe5dad8522fca2e632e6355b6acd775455bd0e",
+          "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+          "scripts/ahb_program.py": "ff9a3630a2f6f60e74faa79b28cfbf0c2c8806fa7e5e6adbb54a59bb55ab4753",
+          "scripts/ahb_mutations.py": "23b5b113e15ba73f83d0515c477b0e26ae9fdd564c6faa00bd85890831ef3faf"
+        },
+        "expected_environment_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "runner_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "inventory_revision": "f49314d214da41400b9155dd86207da6764ddeec",
+        "configuration": {
+          "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "timeout_per_command": 90,
+          "global_timeout": 3600,
+          "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+          "vendor_input_sha256": {
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5"
+          }
+        },
+        "version_command": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-version"
+          ],
+          "cwd": "C:\\short\\ahb-faults-v1\\fault-omit_observation\\child",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "version.log",
+          "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+        },
+        "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+        "source_lock": {
+          "owner": "M-Roohan-Khan-28",
+          "account_id": 270144410,
+          "repository": "AHB-Lite-RAM-Interface",
+          "revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+          "files": [
+            "rtl/design.sv"
+          ],
+          "sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+          },
+          "execution_files": [
+            "rtl/design.sv",
+            "scripts/run_regression.ps1",
+            "scripts/run_contract.py",
+            "tb/ahb16_contract_test.sv",
+            "verification/assertions/ahb16_master_monitor.sv",
+            "verification/negative/ahb16_master_negative.sv"
+          ],
+          "commands": [
+            {
+              "command": [
+                "git",
+                "clone",
+                "--quiet",
+                "--no-hardlinks",
+                "--config",
+                "core.autocrlf=false",
+                "--config",
+                "core.longpaths=true",
+                "C:\\short\\ahb-faults-v1\\source",
+                "C:\\short\\ahb-faults-v1\\fault-omit_observation\\child\\source"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-omit_observation\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-0.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\ahb-faults-v1\\fault-omit_observation\\child\\source",
+                "checkout",
+                "--quiet",
+                "--detach",
+                "659fba67ce85a01643cceca2c8d1e67ea3903995"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-omit_observation\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-1.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\ahb-faults-v1\\fault-omit_observation\\child\\source",
+                "remote",
+                "set-url",
+                "origin",
+                "https://github.com/M-Roohan-Khan-28/AHB-Lite-RAM-Interface.git"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-omit_observation\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-2.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            }
+          ],
+          "supplier": "C:\\short\\ahb-faults-v1\\source",
+          "transport": "verified_local_mirror",
+          "observed_revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+          "clean": true,
+          "rtl_sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+          },
+          "execution_files_sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca",
+            "scripts/run_regression.ps1": "cb71a7fcc93173763cbea5c14f617406dc42e3fee0cd997605e5d89cac2374de",
+            "scripts/run_contract.py": "60bf7a664879e4734de6a67480b753fbdb4f690e59521e0731b1dca4ac30b177",
+            "tb/ahb16_contract_test.sv": "f6ff5b4c2e61470235547f1ef99fcac7c08744718af22f2c1484cdf2272265b4",
+            "verification/assertions/ahb16_master_monitor.sv": "ff4359c55d2938917435f040819f6934901013728989ba543de567bf36675dbc",
+            "verification/negative/ahb16_master_negative.sv": "33ded800ec0b9b96e25b87ddc26e5c1fb5d64f953eff82b36cd9139a098587c6"
+          },
+          "clean_after_execution": true
+        },
+        "environment_clean_after_execution": true,
+        "uvm_runtime_versions": [
+          "QUESTA_UVM-1.2.3"
+        ],
+        "finished_utc": "2026-11-09T23:10:24.593583+00:00"
+      }
+    },
+    {
+      "name": "fault-missing_marker",
+      "kind": "fault",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+            "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+            "--select",
+            "fault-missing_marker",
+            "--raw-fault",
+            "--output",
+            "C:\\short\\ahb-faults-v1\\fault-missing_marker\\child",
+            "--sim-bin",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+            "--uvm-lib",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "--uvm-include",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "--timeout",
+            "90",
+            "--source-cache",
+            "C:\\short\\ahb-faults-v1\\source",
+            "--expected-env-sha",
+            "48437f440cbd1b10b4abc73c254363ad9c6a06fa"
+          ],
+          "cwd": "C:\\short\\ahb-uvm-20261110",
+          "exit_code": 1,
+          "timed_out": false,
+          "log": "child-wrapper.log",
+          "sha256": "cdc9a9ca56e402d64da9a050675fb426602c39b238c1f2f65321591749e1e1c9"
+        }
+      ],
+      "reason": "EXPECTED_CHILD_FAILURE",
+      "child_wrapper_exit": 1,
+      "passing_control": {
+        "substep": "smoke",
+        "case": "smoke"
+      },
+      "expected_fatal": "",
+      "observed_fatals": [],
+      "observed_sva": [],
+      "child_result": {
+        "started_utc": "2026-11-09T23:10:25.188519+00:00",
+        "command": [
+          "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+          "C:\\short\\ahb-uvm-20261110\\scripts\\run_ahb_uvm.py",
+          "--select",
+          "fault-missing_marker",
+          "--raw-fault",
+          "--output",
+          "C:\\short\\ahb-faults-v1\\fault-missing_marker\\child",
+          "--sim-bin",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "--uvm-lib",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "--uvm-include",
+          "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "--timeout",
+          "90",
+          "--source-cache",
+          "C:\\short\\ahb-faults-v1\\source",
+          "--expected-env-sha",
+          "48437f440cbd1b10b4abc73c254363ad9c6a06fa"
+        ],
+        "source_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "source_dirty": false,
+        "serial_execution": true,
+        "selection": [
+          "fault-missing_marker"
+        ],
+        "raw_fault": true,
+        "seed": 682016495,
+        "seed_hex": "0x28A6BEEF",
+        "functional_coverage": "NOT RUN",
+        "constrained_randomization": "NOT RUN",
+        "original_advanced_alu_apb": "NOT RUN",
+        "suites": [
+          {
+            "name": "fault-missing_marker",
+            "kind": "fault",
+            "status": "FAIL",
+            "commands": [
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+                  "work"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-missing_marker\\child\\fault-missing_marker",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "0.log",
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+                  "-sv",
+                  "-work",
+                  "work",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_bus.sv",
+                  "C:\\short\\ahb-faults-v1\\fault-missing_marker\\child\\source\\rtl\\design.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_assertions.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_uvm_pkg.sv",
+                  "C:\\short\\ahb-uvm-20261110\\verification\\ahb_uvm\\ahb_uvm_top.sv"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-missing_marker\\child\\fault-missing_marker",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "1.log",
+                "sha256": "4ef2653961ac2b8dba96b2e09cd6ee803db4d25de199cfcf4f9a0b20a330a84d"
+              },
+              {
+                "command": [
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+                  "-c",
+                  "-onfinish",
+                  "exit",
+                  "-voptargs=+acc",
+                  "-sv_seed",
+                  "682016495",
+                  "-L",
+                  "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+                  "work.ahb_uvm_top",
+                  "+PROGRAM=C:\\short\\ahb-faults-v1\\fault-missing_marker\\child\\fault-missing_marker\\program.txt",
+                  "-do",
+                  "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /ahb_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+                ],
+                "cwd": "C:\\short\\ahb-faults-v1\\fault-missing_marker\\child\\fault-missing_marker",
+                "exit_code": 0,
+                "timed_out": false,
+                "log": "2.log",
+                "sha256": "3d49d1f93173640811c40bef6fdb64d19ea208951e7804fb192b22695ef0ba53"
+              }
+            ],
+            "program_sha256": "c910f7b142d23ebdd8cc2bffbd5cc7085df3e69d23368e8c6276acb560ab0af1",
+            "original_program_sha256": "c910f7b142d23ebdd8cc2bffbd5cc7085df3e69d23368e8c6276acb560ab0af1",
+            "planned_counts": {
+              "smoke": {
+                "offered": 2,
+                "accepted": 2,
+                "success": 2,
+                "errors": 0,
+                "writes": 1,
+                "reads": 1,
+                "withdrawn": 0,
+                "reset_accepted": 0,
+                "reset_offered": 0,
+                "wait_edges": 0,
+                "pipeline_edges": 1,
+                "resets": 1
+              }
+            },
+            "uvm_runtime_versions": [
+              "QUESTA_UVM-1.2.3"
+            ],
+            "reason": "MISSING_RESULT_MARKER"
+          }
+        ],
+        "expected_inventory": [
+          "sva-address_hold",
+          "sva-direction_hold",
+          "sva-size_hold",
+          "sva-selection_hold",
+          "sva-active_to_idle",
+          "sva-write_data",
+          "sva-idle_to_seq",
+          "sva-busy_control",
+          "sva-response_owner",
+          "sva-short_error",
+          "sva-long_error",
+          "sva-held_error_lost",
+          "sva-local_ok_wait",
+          "sva-global_through_error",
+          "sva-reset_output",
+          "sva-legal_read_wdata",
+          "sva-legal_idle_change",
+          "sva-legal_busy_seq",
+          "sva-legal_busy_nonseq",
+          "sva-legal_busy_idle",
+          "sva-legal_error_cancel",
+          "sva-legal_error_continue",
+          "sva-legal_reset_cancel",
+          "checker-legal",
+          "checker-reset",
+          "checker-pairing",
+          "checker-alias",
+          "checker-duplicate",
+          "checker-omitted",
+          "smoke",
+          "functional",
+          "fault-live_address",
+          "fault-address_phase_data",
+          "fault-read_data",
+          "fault-invalid_write",
+          "fault-wait_advance",
+          "fault-short_error",
+          "fault-missing_error",
+          "fault-address_alias",
+          "fault-duplicate",
+          "fault-omit_observation",
+          "fault-missing_marker",
+          "portable"
+        ],
+        "required_selected": [
+          "fault-missing_marker"
+        ],
+        "aggregate_exit_code": 1,
+        "milestone_pass": false,
+        "input_sha256": {
+          "verification/ahb_uvm/ahb_assertions.sv": "0a8392029ad5b2de09aacc02934120295eb451d1022e34570ce9bccbfa59ab49",
+          "verification/ahb_uvm/ahb_bus.sv": "25a9c2097a945277a03c1d9c326865b3dc480747d8d35639b877293db4a9d8f9",
+          "verification/ahb_uvm/ahb_checker_control.sv": "bef3d12f7bb26d1165bbb18b4196a6c39b61e25af012b6310729188b752851ed",
+          "verification/ahb_uvm/ahb_sva_control.sv": "89181600aa5a7a2dac14fbe83d49b576182eef76dc33e289cee6e7b79af0cbc1",
+          "verification/ahb_uvm/ahb_uvm_pkg.sv": "1babb26b0f51ecc0806c0589189e944ef1fd9177ad66a6250b1da427591e2697",
+          "verification/ahb_uvm/ahb_uvm_top.sv": "c67aabebcf3af3034a526a9ab9a2ae74f599649a3bc667c8515f75523366989d",
+          "verification/ahb_uvm/inventory.json": "99ba31c7eb0790e8cac3e1dc56d7e180e1f840def2c2bde741d0b5fbc632d6b0",
+          "verification/ahb_uvm/sources.json": "0d9cea95213cfd687aea3f14c17e6beef280caad25528abb97f995398f995e2b",
+          "scripts/run_ahb_uvm.py": "c593143229b734b10a9215aaafbe5dad8522fca2e632e6355b6acd775455bd0e",
+          "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+          "scripts/ahb_program.py": "ff9a3630a2f6f60e74faa79b28cfbf0c2c8806fa7e5e6adbb54a59bb55ab4753",
+          "scripts/ahb_mutations.py": "23b5b113e15ba73f83d0515c477b0e26ae9fdd564c6faa00bd85890831ef3faf"
+        },
+        "expected_environment_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "runner_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+        "inventory_revision": "f49314d214da41400b9155dd86207da6764ddeec",
+        "configuration": {
+          "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+          "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+          "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+          "timeout_per_command": 90,
+          "global_timeout": 3600,
+          "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+          "vendor_input_sha256": {
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5"
+          }
+        },
+        "version_command": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-version"
+          ],
+          "cwd": "C:\\short\\ahb-faults-v1\\fault-missing_marker\\child",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "version.log",
+          "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+        },
+        "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+        "source_lock": {
+          "owner": "M-Roohan-Khan-28",
+          "account_id": 270144410,
+          "repository": "AHB-Lite-RAM-Interface",
+          "revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+          "files": [
+            "rtl/design.sv"
+          ],
+          "sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+          },
+          "execution_files": [
+            "rtl/design.sv",
+            "scripts/run_regression.ps1",
+            "scripts/run_contract.py",
+            "tb/ahb16_contract_test.sv",
+            "verification/assertions/ahb16_master_monitor.sv",
+            "verification/negative/ahb16_master_negative.sv"
+          ],
+          "commands": [
+            {
+              "command": [
+                "git",
+                "clone",
+                "--quiet",
+                "--no-hardlinks",
+                "--config",
+                "core.autocrlf=false",
+                "--config",
+                "core.longpaths=true",
+                "C:\\short\\ahb-faults-v1\\source",
+                "C:\\short\\ahb-faults-v1\\fault-missing_marker\\child\\source"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-missing_marker\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-0.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\ahb-faults-v1\\fault-missing_marker\\child\\source",
+                "checkout",
+                "--quiet",
+                "--detach",
+                "659fba67ce85a01643cceca2c8d1e67ea3903995"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-missing_marker\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-1.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            },
+            {
+              "command": [
+                "git",
+                "-C",
+                "C:\\short\\ahb-faults-v1\\fault-missing_marker\\child\\source",
+                "remote",
+                "set-url",
+                "origin",
+                "https://github.com/M-Roohan-Khan-28/AHB-Lite-RAM-Interface.git"
+              ],
+              "cwd": "C:\\short\\ahb-faults-v1\\fault-missing_marker\\child",
+              "exit_code": 0,
+              "timed_out": false,
+              "log": "source-2.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            }
+          ],
+          "supplier": "C:\\short\\ahb-faults-v1\\source",
+          "transport": "verified_local_mirror",
+          "observed_revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+          "clean": true,
+          "rtl_sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+          },
+          "execution_files_sha256": {
+            "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca",
+            "scripts/run_regression.ps1": "cb71a7fcc93173763cbea5c14f617406dc42e3fee0cd997605e5d89cac2374de",
+            "scripts/run_contract.py": "60bf7a664879e4734de6a67480b753fbdb4f690e59521e0731b1dca4ac30b177",
+            "tb/ahb16_contract_test.sv": "f6ff5b4c2e61470235547f1ef99fcac7c08744718af22f2c1484cdf2272265b4",
+            "verification/assertions/ahb16_master_monitor.sv": "ff4359c55d2938917435f040819f6934901013728989ba543de567bf36675dbc",
+            "verification/negative/ahb16_master_negative.sv": "33ded800ec0b9b96e25b87ddc26e5c1fb5d64f953eff82b36cd9139a098587c6"
+          },
+          "clean_after_execution": true
+        },
+        "environment_clean_after_execution": true,
+        "uvm_runtime_versions": [
+          "QUESTA_UVM-1.2.3"
+        ],
+        "finished_utc": "2026-11-09T23:11:02.754717+00:00"
+      }
+    }
+  ],
+  "expected_inventory": [
+    "sva-address_hold",
+    "sva-direction_hold",
+    "sva-size_hold",
+    "sva-selection_hold",
+    "sva-active_to_idle",
+    "sva-write_data",
+    "sva-idle_to_seq",
+    "sva-busy_control",
+    "sva-response_owner",
+    "sva-short_error",
+    "sva-long_error",
+    "sva-held_error_lost",
+    "sva-local_ok_wait",
+    "sva-global_through_error",
+    "sva-reset_output",
+    "sva-legal_read_wdata",
+    "sva-legal_idle_change",
+    "sva-legal_busy_seq",
+    "sva-legal_busy_nonseq",
+    "sva-legal_busy_idle",
+    "sva-legal_error_cancel",
+    "sva-legal_error_continue",
+    "sva-legal_reset_cancel",
+    "checker-legal",
+    "checker-reset",
+    "checker-pairing",
+    "checker-alias",
+    "checker-duplicate",
+    "checker-omitted",
+    "smoke",
+    "functional",
+    "fault-live_address",
+    "fault-address_phase_data",
+    "fault-read_data",
+    "fault-invalid_write",
+    "fault-wait_advance",
+    "fault-short_error",
+    "fault-missing_error",
+    "fault-address_alias",
+    "fault-duplicate",
+    "fault-omit_observation",
+    "fault-missing_marker",
+    "portable"
+  ],
+  "required_selected": [
+    "fault-live_address",
+    "fault-address_phase_data",
+    "fault-read_data",
+    "fault-invalid_write",
+    "fault-wait_advance",
+    "fault-short_error",
+    "fault-missing_error",
+    "fault-address_alias",
+    "fault-duplicate",
+    "fault-omit_observation",
+    "fault-missing_marker"
+  ],
+  "aggregate_exit_code": 0,
+  "milestone_pass": false,
+  "input_sha256": {
+    "verification/ahb_uvm/ahb_assertions.sv": "0a8392029ad5b2de09aacc02934120295eb451d1022e34570ce9bccbfa59ab49",
+    "verification/ahb_uvm/ahb_bus.sv": "25a9c2097a945277a03c1d9c326865b3dc480747d8d35639b877293db4a9d8f9",
+    "verification/ahb_uvm/ahb_checker_control.sv": "bef3d12f7bb26d1165bbb18b4196a6c39b61e25af012b6310729188b752851ed",
+    "verification/ahb_uvm/ahb_sva_control.sv": "89181600aa5a7a2dac14fbe83d49b576182eef76dc33e289cee6e7b79af0cbc1",
+    "verification/ahb_uvm/ahb_uvm_pkg.sv": "1babb26b0f51ecc0806c0589189e944ef1fd9177ad66a6250b1da427591e2697",
+    "verification/ahb_uvm/ahb_uvm_top.sv": "c67aabebcf3af3034a526a9ab9a2ae74f599649a3bc667c8515f75523366989d",
+    "verification/ahb_uvm/inventory.json": "99ba31c7eb0790e8cac3e1dc56d7e180e1f840def2c2bde741d0b5fbc632d6b0",
+    "verification/ahb_uvm/sources.json": "0d9cea95213cfd687aea3f14c17e6beef280caad25528abb97f995398f995e2b",
+    "scripts/run_ahb_uvm.py": "c593143229b734b10a9215aaafbe5dad8522fca2e632e6355b6acd775455bd0e",
+    "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+    "scripts/ahb_program.py": "ff9a3630a2f6f60e74faa79b28cfbf0c2c8806fa7e5e6adbb54a59bb55ab4753",
+    "scripts/ahb_mutations.py": "23b5b113e15ba73f83d0515c477b0e26ae9fdd564c6faa00bd85890831ef3faf"
+  },
+  "expected_environment_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+  "runner_revision": "48437f440cbd1b10b4abc73c254363ad9c6a06fa",
+  "inventory_revision": "f49314d214da41400b9155dd86207da6764ddeec",
+  "configuration": {
+    "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+    "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+    "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+    "timeout_per_command": 90,
+    "global_timeout": 3600,
+    "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "vendor_input_sha256": {
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5"
+    }
+  },
+  "version_command": {
+    "command": [
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+      "-version"
+    ],
+    "cwd": "C:\\short\\ahb-faults-v1",
+    "exit_code": 0,
+    "timed_out": false,
+    "log": "version.log",
+    "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+  },
+  "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+  "source_lock": {
+    "owner": "M-Roohan-Khan-28",
+    "account_id": 270144410,
+    "repository": "AHB-Lite-RAM-Interface",
+    "revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+    "files": [
+      "rtl/design.sv"
+    ],
+    "sha256": {
+      "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+    },
+    "execution_files": [
+      "rtl/design.sv",
+      "scripts/run_regression.ps1",
+      "scripts/run_contract.py",
+      "tb/ahb16_contract_test.sv",
+      "verification/assertions/ahb16_master_monitor.sv",
+      "verification/negative/ahb16_master_negative.sv"
+    ],
+    "commands": [
+      {
+        "command": [
+          "git",
+          "clone",
+          "--quiet",
+          "--no-hardlinks",
+          "--config",
+          "core.autocrlf=false",
+          "--config",
+          "core.longpaths=true",
+          "https://github.com/M-Roohan-Khan-28/AHB-Lite-RAM-Interface.git",
+          "C:\\short\\ahb-faults-v1\\source"
+        ],
+        "cwd": "C:\\short\\ahb-faults-v1",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-0.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "command": [
+          "git",
+          "-C",
+          "C:\\short\\ahb-faults-v1\\source",
+          "checkout",
+          "--quiet",
+          "--detach",
+          "659fba67ce85a01643cceca2c8d1e67ea3903995"
+        ],
+        "cwd": "C:\\short\\ahb-faults-v1",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-1.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "command": [
+          "git",
+          "-C",
+          "C:\\short\\ahb-faults-v1\\source",
+          "remote",
+          "set-url",
+          "origin",
+          "https://github.com/M-Roohan-Khan-28/AHB-Lite-RAM-Interface.git"
+        ],
+        "cwd": "C:\\short\\ahb-faults-v1",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-2.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "supplier": "https://github.com/M-Roohan-Khan-28/AHB-Lite-RAM-Interface.git",
+    "transport": "GitHub_HTTPS",
+    "observed_revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+    "clean": true,
+    "rtl_sha256": {
+      "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca"
+    },
+    "execution_files_sha256": {
+      "rtl/design.sv": "6c8fd269463ef5786558c721e8920d723a4d723a7ac0108a7711b936954b1bca",
+      "scripts/run_regression.ps1": "cb71a7fcc93173763cbea5c14f617406dc42e3fee0cd997605e5d89cac2374de",
+      "scripts/run_contract.py": "60bf7a664879e4734de6a67480b753fbdb4f690e59521e0731b1dca4ac30b177",
+      "tb/ahb16_contract_test.sv": "f6ff5b4c2e61470235547f1ef99fcac7c08744718af22f2c1484cdf2272265b4",
+      "verification/assertions/ahb16_master_monitor.sv": "ff4359c55d2938917435f040819f6934901013728989ba543de567bf36675dbc",
+      "verification/negative/ahb16_master_negative.sv": "33ded800ec0b9b96e25b87ddc26e5c1fb5d64f953eff82b36cd9139a098587c6"
+    },
+    "clean_after_execution": true
+  },
+  "environment_clean_after_execution": true,
+  "uvm_runtime_versions": [],
+  "finished_utc": "2026-11-09T23:11:03.334604+00:00"
+}
