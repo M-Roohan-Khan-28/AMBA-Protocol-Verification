@@ -118,9 +118,11 @@ NOT RUN without their verification-feature licence.
 
 ## Separate deterministic AHB-Lite RAM UVM/SVA milestone
 
-The [new bounded environment](docs/DETERMINISTIC_AHB_UVM.md) passed 43 required
-substeps from a fresh detached GitHub clone: 45 functional scenarios / 10,497
-comparisons, 23 SVA controls, six scoreboard controls, 11 qualified fault parents
-and the separate current portable gate. [Raw evidence and reproduction](reports/ahb-uvm-2026-11-10/SUMMARY.md)
-preserve exact source locks and original waveform bytes. Prior releases remain
-unchanged. Coverage, randomization and original advanced ALU/APB remain NOT RUN.
+The [bounded environment](docs/DETERMINISTIC_AHB_UVM.md) passed 44 required substeps
+from fresh detached clones: 48 runner-fixture checks, separately reported from
+45 HDL scenarios / 10,497 comparisons, 23 SVA controls, six scoreboard controls,
+11 qualified fault parents and the current portable gate.
+[Corrective evidence and reproduction](reports/ahb-runner-correction-2026-11-10/SUMMARY.md) records the common
+process-exit guard, old/new fixture proof, tool exits and exact source locks.
+Prior releases and measured figures remain intact. Coverage, randomization and
+original advanced ALU/APB remain NOT RUN.

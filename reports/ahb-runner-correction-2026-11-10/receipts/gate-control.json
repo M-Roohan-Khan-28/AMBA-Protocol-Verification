@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\ahb-fix-gate-control-20261110\\scripts\\run_ahb_uvm.py",
+    "--select",
+    "runner-qualification",
+    "--expected-env-sha",
+    "d3d6f6c261ad7d3a760fbcd4a53738cd2d54b8f1",
+    "--output",
+    "C:/short/ahb-fix-gate-control-run-20261110"
+  ],
+  "cwd": "C:/short/ahb-fix-gate-control-20261110",
+  "started_utc": "2026-11-10T00:24:56.746099+00:00",
+  "finished_utc": "2026-11-10T00:24:58.845240+00:00",
+  "exit_code": 1,
+  "log": "gate-control.log",
+  "sha256": "706234c71e2acbd98c35e57a6a57ac5c25bbe513d14172a071f80320ae080a34"
+}

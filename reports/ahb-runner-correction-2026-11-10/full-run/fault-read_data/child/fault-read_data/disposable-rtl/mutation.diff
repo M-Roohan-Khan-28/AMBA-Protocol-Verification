@@ -1,0 +1,11 @@
+--- locked/rtl/design.sv
++++ disposable/rtl/design.sv
+@@ -30,7 +30,7 @@
+ assign HREADYOUT = response_state != RESP_ERROR_WAIT;
+ assign HRESP = response_state != RESP_OK;
+ assign HRDATA = (transfer_q && !write_q && !error_q) ?
+-                memory[index_q] : 32'h0000_0000;
++                (memory[index_q] ^ 32'h00000001) : 32'h0000_0000;
+ 
+ always_ff @(posedge HCLK or negedge HRESETn)
+ begin

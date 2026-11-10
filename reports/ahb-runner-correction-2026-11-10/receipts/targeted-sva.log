@@ -1,0 +1,2 @@
+fault-short_error PASS EXPECTED_CHILD_FAILURE child exit 1
+fault-missing_error PASS EXPECTED_CHILD_FAILURE child exit 1

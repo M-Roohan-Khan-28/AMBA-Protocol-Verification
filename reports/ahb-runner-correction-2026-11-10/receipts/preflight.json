@@ -1,0 +1,24 @@
+{
+  "owner": {
+    "id": 270144410,
+    "login": "M-Roohan-Khan-28"
+  },
+  "repositories": [
+    {
+      "repository": "AMBA-Protocol-Verification",
+      "number": 14,
+      "head": "faf8291b5d7b40362f30c79f12ed49453158dfc4",
+      "base": "5fa38d68d56426fdc01388a5bd885316e867a457",
+      "branch": "advanced/ahb-deterministic-uvm",
+      "url": "https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/pull/14"
+    },
+    {
+      "repository": "AHB-Lite-RAM-Interface",
+      "number": 3,
+      "head": "6d5ff17e1c2f758c4d46884f1cdf586c86048782",
+      "base": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+      "branch": "advanced/ahb-deterministic-uvm",
+      "url": "https://github.com/M-Roohan-Khan-28/AHB-Lite-RAM-Interface/pull/3"
+    }
+  ]
+}

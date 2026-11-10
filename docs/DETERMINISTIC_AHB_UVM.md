@@ -140,20 +140,26 @@ protocol latency limits. The recorded Questa counted warning is `vopt-10908`
 from `+acc`; the separate `onerror` macro warning is also preserved in raw logs.
 Neither warning is an assertion result.
 
-## Qualified execution
+## Qualified execution after runner correction
 
-Environment `d403d88a71e7c55a46641366007ebd0af9e444a4`; DUT `659fba67ce85a01643cceca2c8d1e67ea3903995`.
-The [separate report](../reports/ahb-uvm-2026-11-10/SUMMARY.md) records 43/43 required PASS,
-45 functional scenarios / 10,497 independent comparisons,
-11 qualified fault parents, and the separate existing portable gate.
-These are different measures, not coverage. Choose fresh paths and use the installed
-qualified Questa/UVM defaults documented by `--help`; the portable gate uses the
-installed ModelSim 2020.1 path. Exact executed commands are retained in the report.
+Environment `3eb0e520a880b2cfb13d304bbeea119dbe917fb3`; unchanged DUT `659fba67ce85a01643cceca2c8d1e67ea3903995`.
+The [separate corrective report](../reports/ahb-runner-correction-2026-11-10/SUMMARY.md) records 44/44 required PASS,
+actual wrapper exit 0. The added required runner qualification has 48 record-fixture
+checks; it is separate from 45 HDL functional scenarios / 10,497 comparisons,
+23 SVA controls, six scoreboard controls, 11 fault parents and the portable gate.
+All fault kinds require tool exits 0, expected child-wrapper exit 1 and their exact
+diagnostic. An abnormal simulator exit cannot qualify based on assertion text.
+The original [43-substep report and measured figures](https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/blob/faf8291b5d7b40362f30c79f12ed49453158dfc4/reports/ahb-uvm-2026-11-10/SUMMARY.md) remain historical evidence.
+The qualification imports the production predicate and executes old guard AST from
+the locked original runner; modified records are not actual simulator crashes.
+
+Choose unused paths with the qualified Questa/UVM installation and separate ModelSim
+2020.1 portable gate. Coverage/randomization/original advanced ALU/APB remain NOT RUN.
 
 ```powershell
 $python = 'C:\Users\CG\AppData\Local\Python\pythoncore-3.14-64\python.exe'
-git clone --config core.longpaths=true --config core.autocrlf=false https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git C:\short\ahb-uvm-reproduce-new
-git -C C:\short\ahb-uvm-reproduce-new checkout --detach d403d88a71e7c55a46641366007ebd0af9e444a4
-& $python C:\short\ahb-uvm-reproduce-new\scripts\run_ahb_uvm.py --expected-env-sha d403d88a71e7c55a46641366007ebd0af9e444a4 --output C:\short\ahb-uvm-run-new
+git clone --config core.longpaths=true --config core.autocrlf=false https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git C:\short\ahb-corrected-source-new
+git -C C:\short\ahb-corrected-source-new checkout --detach 3eb0e520a880b2cfb13d304bbeea119dbe917fb3
+& $python C:\short\ahb-corrected-source-new\scripts\run_ahb_uvm.py --expected-env-sha 3eb0e520a880b2cfb13d304bbeea119dbe917fb3 --output C:\short\ahb-corrected-output-new
 if ($LASTEXITCODE -ne 0) { throw 'Required AHB milestone failed or was blocked' }
 ```

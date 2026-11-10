@@ -1,0 +1,8 @@
+﻿{
+    "source":  "33f33d6034165085833d5f16390f6a625d15a2bc",
+    "stopped_process_tree":  true,
+    "wrapper_exit":  1,
+    "runner_pid":  23848,
+    "reason":  "Stopped after required qualification marker rejected trailing Windows CR despite 48 passing fixture checks; fixed by allowing trailing whitespace and cross-checking marker count against JSON",
+    "result":  "Failed partial run, not full PASS"
+}

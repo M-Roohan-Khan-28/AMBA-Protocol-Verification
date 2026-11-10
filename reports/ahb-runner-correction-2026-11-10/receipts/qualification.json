@@ -1,0 +1,14 @@
+{
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\ahb-runner-fix-20261110\\scripts\\qualify_ahb_runner.py",
+    "--output",
+    "C:/short/ahb-fix-qualification-20261110"
+  ],
+  "cwd": "C:\\short\\ahb-runner-fix-20261110",
+  "started_utc": "2026-11-10T00:24:40.125571+00:00",
+  "finished_utc": "2026-11-10T00:24:40.654691+00:00",
+  "exit_code": 0,
+  "log": "qualification.log",
+  "sha256": "3ab6d70a90c1c7c9559bdae1aefb3a71d6c853a20b893d63d30071cec43bbe84"
+}
