@@ -155,3 +155,7 @@ randomization and original licence-blocked advanced ALU/APB remain **NOT RUN**.
 Full AHB compliance, burst/interconnect expansion, new sizes, coverage closure,
 synthesis, timing, FPGA and hardware remain separate milestones. Existing licences,
 attribution, source history and all completed release evidence are preserved.
+
+## Published byte audit
+
+Evidence commit `422e783be244605278ed7e54e5580775dac20019` passed the [byte audit](BYTE_AUDIT.json): 736 original artifacts matched Git blobs and both clean newline checkout modes; all 17 new VCDs matched public raw downloads. [Commands and exits](BYTE_AUDIT_COMMAND.json) are retained. No simulation-behavior change is attributed to newline conversion.

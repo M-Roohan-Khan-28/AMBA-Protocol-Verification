@@ -1,0 +1,80 @@
+{
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\ahb-runner-fix-20261110\\reports\\ahb-runner-correction-2026-11-10\\audit_bytes.py",
+    "--repository",
+    "C:\\short\\ahb-runner-fix-20261110",
+    "--revision",
+    "422e783be244605278ed7e54e5580775dac20019",
+    "--checkout-false",
+    "C:\\short\\ahb-fix-bytes-false-20261110",
+    "--checkout-true",
+    "C:\\short\\ahb-fix-bytes-true-20261110",
+    "--output",
+    "C:\\short\\ahb-runner-fix-20261110\\reports\\ahb-runner-correction-2026-11-10\\BYTE_AUDIT.json"
+  ],
+  "exit_code": 0,
+  "clones": [
+    {
+      "command": [
+        "git",
+        "clone",
+        "--quiet",
+        "--config",
+        "core.longpaths=true",
+        "--config",
+        "core.autocrlf=false",
+        "https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git",
+        "C:\\short\\ahb-fix-bytes-false-20261110"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "C:\\short\\ahb-fix-bytes-false-20261110",
+        "checkout",
+        "--quiet",
+        "--detach",
+        "422e783be244605278ed7e54e5580775dac20019"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "clone",
+        "--quiet",
+        "--config",
+        "core.longpaths=true",
+        "--config",
+        "core.autocrlf=true",
+        "https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git",
+        "C:\\short\\ahb-fix-bytes-true-20261110"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "C:\\short\\ahb-fix-bytes-true-20261110",
+        "checkout",
+        "--quiet",
+        "--detach",
+        "422e783be244605278ed7e54e5580775dac20019"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "log_sha256": "e6479e1e4a99e0db18960fc160a41add4902dc1ef54cca97edab27bfcc00ba3e"
+}
