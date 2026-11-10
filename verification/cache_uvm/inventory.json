@@ -1,0 +1,507 @@
+{
+  "seed": "0x28A6BEEF",
+  "required_substeps": [
+    {
+      "name": "sva-reset",
+      "kind": "sva",
+      "scenario": "reset",
+      "expected": "RESET_DOMINANCE"
+    },
+    {
+      "name": "sva-write",
+      "kind": "sva",
+      "scenario": "write",
+      "expected": "SELECTED_WRITE"
+    },
+    {
+      "name": "sva-hit",
+      "kind": "sva",
+      "scenario": "hit",
+      "expected": "LOOKUP_HIT"
+    },
+    {
+      "name": "sva-miss",
+      "kind": "sva",
+      "scenario": "miss",
+      "expected": "MISS_ZERO"
+    },
+    {
+      "name": "sva-stored",
+      "kind": "sva",
+      "scenario": "stored",
+      "expected": "STORED_ENTRY"
+    },
+    {
+      "name": "sva-duplicate",
+      "kind": "sva",
+      "scenario": "duplicate",
+      "expected": "DUPLICATE_PRIORITY"
+    },
+    {
+      "name": "sva-legal",
+      "kind": "sva",
+      "scenario": "legal",
+      "expected": ""
+    },
+    {
+      "name": "smoke",
+      "kind": "functional",
+      "cases": [
+        "smoke"
+      ]
+    },
+    {
+      "name": "functional",
+      "kind": "functional",
+      "cases": [
+        "tuple_0_0_0",
+        "tuple_0_0_1",
+        "tuple_0_0_2",
+        "tuple_0_0_3",
+        "tuple_0_0_4",
+        "tuple_0_0_5",
+        "tuple_0_0_6",
+        "tuple_0_0_7",
+        "tuple_0_1_0",
+        "tuple_0_1_1",
+        "tuple_0_1_2",
+        "tuple_0_1_3",
+        "tuple_0_1_4",
+        "tuple_0_1_5",
+        "tuple_0_1_6",
+        "tuple_0_1_7",
+        "tuple_0_2_0",
+        "tuple_0_2_1",
+        "tuple_0_2_2",
+        "tuple_0_2_3",
+        "tuple_0_2_4",
+        "tuple_0_2_5",
+        "tuple_0_2_6",
+        "tuple_0_2_7",
+        "tuple_0_3_0",
+        "tuple_0_3_1",
+        "tuple_0_3_2",
+        "tuple_0_3_3",
+        "tuple_0_3_4",
+        "tuple_0_3_5",
+        "tuple_0_3_6",
+        "tuple_0_3_7",
+        "tuple_1_0_0",
+        "tuple_1_0_1",
+        "tuple_1_0_2",
+        "tuple_1_0_3",
+        "tuple_1_0_4",
+        "tuple_1_0_5",
+        "tuple_1_0_6",
+        "tuple_1_0_7",
+        "tuple_1_1_0",
+        "tuple_1_1_1",
+        "tuple_1_1_2",
+        "tuple_1_1_3",
+        "tuple_1_1_4",
+        "tuple_1_1_5",
+        "tuple_1_1_6",
+        "tuple_1_1_7",
+        "tuple_1_2_0",
+        "tuple_1_2_1",
+        "tuple_1_2_2",
+        "tuple_1_2_3",
+        "tuple_1_2_4",
+        "tuple_1_2_5",
+        "tuple_1_2_6",
+        "tuple_1_2_7",
+        "tuple_1_3_0",
+        "tuple_1_3_1",
+        "tuple_1_3_2",
+        "tuple_1_3_3",
+        "tuple_1_3_4",
+        "tuple_1_3_5",
+        "tuple_1_3_6",
+        "tuple_1_3_7",
+        "data_256",
+        "overwrite",
+        "duplicate_0",
+        "duplicate_1",
+        "duplicate_2",
+        "duplicate_3",
+        "entry_isolation",
+        "async_lookup",
+        "no_write",
+        "reset_pending",
+        "reset_coincident",
+        "held_writes",
+        "repeated_reset",
+        "post_reset_refill"
+      ]
+    },
+    {
+      "name": "fault-wrong_way",
+      "kind": "fault",
+      "fault": "wrong_way",
+      "cases": [
+        "entry_isolation"
+      ],
+      "expected_fatal": "CACHE_DATA",
+      "mutation": "wrong_way",
+      "passing_control": {
+        "substep": "functional",
+        "case": "entry_isolation"
+      }
+    },
+    {
+      "name": "fault-wrong_set",
+      "kind": "fault",
+      "fault": "wrong_set",
+      "cases": [
+        "smoke"
+      ],
+      "expected_fatal": "CACHE_HIT",
+      "mutation": "wrong_set",
+      "passing_control": {
+        "substep": "smoke",
+        "case": "smoke"
+      }
+    },
+    {
+      "name": "fault-wrong_tag",
+      "kind": "fault",
+      "fault": "wrong_tag",
+      "cases": [
+        "smoke"
+      ],
+      "expected_fatal": "CACHE_HIT",
+      "mutation": "wrong_tag",
+      "passing_control": {
+        "substep": "smoke",
+        "case": "smoke"
+      }
+    },
+    {
+      "name": "fault-corrupted_data",
+      "kind": "fault",
+      "fault": "corrupted_data",
+      "cases": [
+        "smoke"
+      ],
+      "expected_fatal": "CACHE_DATA",
+      "mutation": "corrupted_data",
+      "passing_control": {
+        "substep": "smoke",
+        "case": "smoke"
+      }
+    },
+    {
+      "name": "fault-wrong_priority",
+      "kind": "fault",
+      "fault": "wrong_priority",
+      "cases": [
+        "duplicate_0"
+      ],
+      "expected_fatal": "CACHE_DATA",
+      "mutation": "wrong_priority",
+      "passing_control": {
+        "substep": "functional",
+        "case": "duplicate_0"
+      }
+    },
+    {
+      "name": "fault-false_hit",
+      "kind": "fault",
+      "fault": "false_hit",
+      "cases": [
+        "smoke"
+      ],
+      "expected_fatal": "CACHE_HIT",
+      "mutation": "false_hit",
+      "passing_control": {
+        "substep": "smoke",
+        "case": "smoke"
+      }
+    },
+    {
+      "name": "fault-missing_reset",
+      "kind": "fault",
+      "fault": "missing_reset",
+      "cases": [
+        "repeated_reset"
+      ],
+      "expected_fatal": "CACHE_HIT",
+      "mutation": "missing_reset",
+      "passing_control": {
+        "substep": "functional",
+        "case": "repeated_reset"
+      }
+    },
+    {
+      "name": "fault-forbidden_reset_write",
+      "kind": "fault",
+      "fault": "forbidden_reset_write",
+      "cases": [
+        "reset_pending"
+      ],
+      "expected_fatal": "CACHE_HIT",
+      "mutation": "forbidden_reset_write",
+      "passing_control": {
+        "substep": "functional",
+        "case": "reset_pending"
+      }
+    },
+    {
+      "name": "fault-missing_marker",
+      "kind": "fault",
+      "fault": "missing_marker",
+      "cases": [
+        "smoke"
+      ],
+      "expected_fatal": "",
+      "mutation": null,
+      "passing_control": {
+        "substep": "smoke",
+        "case": "smoke"
+      }
+    },
+    {
+      "name": "portable",
+      "kind": "portable"
+    }
+  ],
+  "functional_cases": [
+    {
+      "name": "smoke"
+    },
+    {
+      "name": "tuple_0_0_0"
+    },
+    {
+      "name": "tuple_0_0_1"
+    },
+    {
+      "name": "tuple_0_0_2"
+    },
+    {
+      "name": "tuple_0_0_3"
+    },
+    {
+      "name": "tuple_0_0_4"
+    },
+    {
+      "name": "tuple_0_0_5"
+    },
+    {
+      "name": "tuple_0_0_6"
+    },
+    {
+      "name": "tuple_0_0_7"
+    },
+    {
+      "name": "tuple_0_1_0"
+    },
+    {
+      "name": "tuple_0_1_1"
+    },
+    {
+      "name": "tuple_0_1_2"
+    },
+    {
+      "name": "tuple_0_1_3"
+    },
+    {
+      "name": "tuple_0_1_4"
+    },
+    {
+      "name": "tuple_0_1_5"
+    },
+    {
+      "name": "tuple_0_1_6"
+    },
+    {
+      "name": "tuple_0_1_7"
+    },
+    {
+      "name": "tuple_0_2_0"
+    },
+    {
+      "name": "tuple_0_2_1"
+    },
+    {
+      "name": "tuple_0_2_2"
+    },
+    {
+      "name": "tuple_0_2_3"
+    },
+    {
+      "name": "tuple_0_2_4"
+    },
+    {
+      "name": "tuple_0_2_5"
+    },
+    {
+      "name": "tuple_0_2_6"
+    },
+    {
+      "name": "tuple_0_2_7"
+    },
+    {
+      "name": "tuple_0_3_0"
+    },
+    {
+      "name": "tuple_0_3_1"
+    },
+    {
+      "name": "tuple_0_3_2"
+    },
+    {
+      "name": "tuple_0_3_3"
+    },
+    {
+      "name": "tuple_0_3_4"
+    },
+    {
+      "name": "tuple_0_3_5"
+    },
+    {
+      "name": "tuple_0_3_6"
+    },
+    {
+      "name": "tuple_0_3_7"
+    },
+    {
+      "name": "tuple_1_0_0"
+    },
+    {
+      "name": "tuple_1_0_1"
+    },
+    {
+      "name": "tuple_1_0_2"
+    },
+    {
+      "name": "tuple_1_0_3"
+    },
+    {
+      "name": "tuple_1_0_4"
+    },
+    {
+      "name": "tuple_1_0_5"
+    },
+    {
+      "name": "tuple_1_0_6"
+    },
+    {
+      "name": "tuple_1_0_7"
+    },
+    {
+      "name": "tuple_1_1_0"
+    },
+    {
+      "name": "tuple_1_1_1"
+    },
+    {
+      "name": "tuple_1_1_2"
+    },
+    {
+      "name": "tuple_1_1_3"
+    },
+    {
+      "name": "tuple_1_1_4"
+    },
+    {
+      "name": "tuple_1_1_5"
+    },
+    {
+      "name": "tuple_1_1_6"
+    },
+    {
+      "name": "tuple_1_1_7"
+    },
+    {
+      "name": "tuple_1_2_0"
+    },
+    {
+      "name": "tuple_1_2_1"
+    },
+    {
+      "name": "tuple_1_2_2"
+    },
+    {
+      "name": "tuple_1_2_3"
+    },
+    {
+      "name": "tuple_1_2_4"
+    },
+    {
+      "name": "tuple_1_2_5"
+    },
+    {
+      "name": "tuple_1_2_6"
+    },
+    {
+      "name": "tuple_1_2_7"
+    },
+    {
+      "name": "tuple_1_3_0"
+    },
+    {
+      "name": "tuple_1_3_1"
+    },
+    {
+      "name": "tuple_1_3_2"
+    },
+    {
+      "name": "tuple_1_3_3"
+    },
+    {
+      "name": "tuple_1_3_4"
+    },
+    {
+      "name": "tuple_1_3_5"
+    },
+    {
+      "name": "tuple_1_3_6"
+    },
+    {
+      "name": "tuple_1_3_7"
+    },
+    {
+      "name": "data_256"
+    },
+    {
+      "name": "overwrite"
+    },
+    {
+      "name": "duplicate_0"
+    },
+    {
+      "name": "duplicate_1"
+    },
+    {
+      "name": "duplicate_2"
+    },
+    {
+      "name": "duplicate_3"
+    },
+    {
+      "name": "entry_isolation"
+    },
+    {
+      "name": "async_lookup"
+    },
+    {
+      "name": "no_write"
+    },
+    {
+      "name": "reset_pending"
+    },
+    {
+      "name": "reset_coincident"
+    },
+    {
+      "name": "held_writes"
+    },
+    {
+      "name": "repeated_reset"
+    },
+    {
+      "name": "post_reset_refill"
+    }
+  ]
+}
