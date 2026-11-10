@@ -2,7 +2,7 @@
 """Render only recorded actual VGA pin bytes and bounded public VCD windows."""
 import argparse,hashlib,json,re,struct,subprocess,sys,zlib
 from pathlib import Path
-from vcd_to_svg import parse_vcd,Signal,render_svg
+from vcd_to_svg import parse_vcd,Signal,Trace,render_svg
 def sha(b):return hashlib.sha256(b).hexdigest()
 def save(p,v):p.write_text(json.dumps(v,indent=2)+'\n',encoding='utf-8')
 def chunk(kind,data):return struct.pack('>I',len(data))+kind+data+struct.pack('>I',zlib.crc32(kind+data)&0xffffffff)
@@ -71,8 +71,13 @@ def main():
   begin=int(re.search(r'^# VGA_WAVE_START name='+name+r' time=(\d+)',log,re.M)[1]);finish=int(re.search(r'^# VGA_WAVE_END name='+name+r' time=(\d+)',log,re.M)[1]);assert finish>begin
   figure=a.output/(name+'.svg')
   pins=[trace.signals['vga_uvm_top.bus.'+p] for p in selected[name]];source_hash=sha(vcd.read_bytes())
-  figure.write_text(render_svg(trace,pins,begin,finish,'Measured VGA '+name,'simulator',source_hash,vcd.name),encoding='utf-8')
-  meta=dict(origin='simulator',source_sha256=source_hash,source_filename=vcd.name,timescale=trace.timescale,start_tick=begin,end_tick=finish,source_final_tick=trace.last_tick,signals=[vars(s) for s in pins],public_bit_grouping=grouping,same_tick_collapses=trace.same_tick_collapses,functional_result='NOT_ASSESSED_BY_RENDERER',source_revision=result['source_revision'],command=[sys.executable,*sys.argv])
+  # Shift display timestamps only; retain raw capture bytes and absolute windows.
+  # The preceding recorded value remains available at relative tick zero.
+  shifted=Trace(trace.timescale,trace.signals,{s.code:[(t-begin,b) for t,b in trace.events[s.code]] for s in pins},trace.last_tick-begin,trace.same_tick_collapses)
+  svg=render_svg(shifted,pins,0,finish-begin,'Measured VGA '+name,'simulator',source_hash,vcd.name)
+  svg=svg.replace('Time in VCD ticks;',f'Time relative to source tick {begin};')
+  figure.write_text(svg,encoding='utf-8')
+  meta=dict(origin='simulator',source_sha256=source_hash,source_filename=vcd.name,timescale=trace.timescale,start_tick=begin,end_tick=finish,source_final_tick=trace.last_tick,display_axis_offset_tick=begin,display_start_tick=0,display_end_tick=finish-begin,display_time_transformation='relative display tick = absolute captured tick - display_axis_offset_tick; no capture bytes changed',signals=[vars(s) for s in pins],public_bit_grouping=grouping,same_tick_collapses=trace.same_tick_collapses,functional_result='NOT_ASSESSED_BY_RENDERER',source_revision=result['source_revision'],command=[sys.executable,*sys.argv])
   save(figure.with_suffix('.json'),meta)
   waves.append(dict(name=name,test='functional',source_revision=result['source_revision'],capture=str(vcd),source_sha256=source_hash,start_tick=begin,end_tick=finish,figure=figure.name,command=[sys.executable,*sys.argv],renderer_sha256=sha(Path(__file__).read_bytes()),exit_code=0))
  save(a.output/'WAVEFORMS.json',waves)

@@ -115,3 +115,12 @@ Functional coverage, constrained randomization and original licence-blocked
 advanced ALU/APB environments remain **NOT RUN**. External SRAM, board/display
 compatibility, physical pixel/refresh frequency, new resolutions, double
 buffering, coverage closure, synthesis, timing, FPGA and hardware are separate.
+
+Waveform display axes use ticks relative to the recorded absolute source offset.
+Metadata retains both absolute capture windows and the display translation;
+no captured sample values or raw bytes are altered.
+
+Original reference projects were jointly developed by M. Roohan Khan and Talib,
+per owner confirmation. Existing licences, notices, source history and attribution
+are retained; no new licence is assigned to inherited material. The VGA source
+repository SOURCE_PROVENANCE.json and SOURCE_README.md retain extraction history.
