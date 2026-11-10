@@ -39,6 +39,14 @@ retained RGB and writes during reset; it is never disabled with disable-iff.
 No unconditional four-clock RGB stability rule exists. Current-entry writes
 may change RGB on any rising clock even without a raster advance.
 
+The concurrent assertions have no history operators. Their complete expected /
+observed signature is evaluated initially, whenever that signature changes,
+on every control/reset observation and on every enabled write clock. Omitting
+duplicate constant signatures preserves the truth of these pure predicates;
+the scoreboard still checks every rising edge and input-control observation.
+Assertion samples and functional observations are recorded separately. No
+actual mismatch or changed expectation can be skipped by this predicate.
+
 The between-clock pending-write reset is asserted 3.5 ns after a falling edge,
 after the pending-control observation has completed. The coincident-reset test
 uses a nonblocking reset update at the write edge; write inputs were established

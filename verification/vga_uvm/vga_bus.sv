@@ -11,6 +11,6 @@ interface vga_bus;
   bit sample_tick=0,capture=0;
   bit check_reset=0,expected_h=1,expected_v=1,expected_active=1;
   logic [11:0] expected_rgb=12'he00;
-  int assertion_detections=0;
+  int assertion_detections=0,assertion_samples=0;
   always #5 clk=~clk; // 10 ns testbench input period, not a board clock claim.
 endinterface

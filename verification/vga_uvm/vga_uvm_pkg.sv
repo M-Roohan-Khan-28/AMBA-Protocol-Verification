@@ -68,7 +68,7 @@ package vga_uvm_pkg;
     bit record_frame=0,frame_started=0;
     bit address_seen[4800],color_seen[256];
     int distinct_addresses=0,distinct_colors=0;
-    int phase_writes[4];
+    int phase_writes[4],start_phase_writes[4];
     bit line_complete=0,frame_complete=0;
     function new(string name,uvm_component parent);
       super.new(name,parent);observed=new("observed",this);verdict=new("verdict",this);
@@ -86,6 +86,7 @@ package vga_uvm_pkg;
       current_case=name;start_counts=total;distinct_addresses=0;distinct_colors=0;
       foreach(address_seen[i])address_seen[i]=0;
       foreach(color_seen[i])color_seen[i]=0;
+      foreach(phase_writes[i])start_phase_writes[i]=phase_writes[i];
       $display("VGA_CASE_START name=%s time=%0t",name,$time);
     endfunction
     function void finish_case();
@@ -107,8 +108,9 @@ package vga_uvm_pkg;
       if(c.observations!=c.clocks+c.control_only+c.initial_samples || c.comparisons!=6*c.observations ||
         c.enabled_writes!=c.valid_writes+c.ignored_writes)`uvm_fatal("VGA_ACCOUNTING",current_case)
       fd=$fopen({"case-",current_case,".json"},"w");
-      $fwrite(fd,"{\"name\":\"%s\",\"observations\":%0d,\"clocks\":%0d,\"control_only\":%0d,\"initial_samples\":%0d,\"comparisons\":%0d,\"enabled_writes\":%0d,\"valid_writes\":%0d,\"ignored_writes\":%0d,\"reset_writes\":%0d,\"pixel_advances\":%0d,\"pixel_samples\":%0d,\"active_samples\":%0d,\"hs_low\":%0d,\"vs_low\":%0d,\"complete_lines\":%0d,\"complete_frames\":%0d,\"reset_edges\":%0d,\"distinct_addresses\":%0d,\"distinct_colors\":%0d}\n",
-        current_case,c.observations,c.clocks,c.control_only,c.initial_samples,c.comparisons,c.enabled_writes,c.valid_writes,c.ignored_writes,c.reset_writes,c.pixel_advances,c.pixel_samples,c.active_samples,c.hs_low,c.vs_low,c.complete_lines,c.complete_frames,c.reset_edges,distinct_addresses,distinct_colors);
+      $fwrite(fd,"{\"name\":\"%s\",\"observations\":%0d,\"clocks\":%0d,\"control_only\":%0d,\"initial_samples\":%0d,\"comparisons\":%0d,\"enabled_writes\":%0d,\"valid_writes\":%0d,\"ignored_writes\":%0d,\"reset_writes\":%0d,\"pixel_advances\":%0d,\"pixel_samples\":%0d,\"active_samples\":%0d,\"hs_low\":%0d,\"vs_low\":%0d,\"complete_lines\":%0d,\"complete_frames\":%0d,\"reset_edges\":%0d,\"distinct_addresses\":%0d,\"distinct_colors\":%0d,\"phase_writes\":[%0d,%0d,%0d,%0d]}\n",
+        current_case,c.observations,c.clocks,c.control_only,c.initial_samples,c.comparisons,c.enabled_writes,c.valid_writes,c.ignored_writes,c.reset_writes,c.pixel_advances,c.pixel_samples,c.active_samples,c.hs_low,c.vs_low,c.complete_lines,c.complete_frames,c.reset_edges,distinct_addresses,distinct_colors,
+        phase_writes[0]-start_phase_writes[0],phase_writes[1]-start_phase_writes[1],phase_writes[2]-start_phase_writes[2],phase_writes[3]-start_phase_writes[3]);
       $fclose(fd);case_count++;
       $display("VGA_CASE_PASS name=%s observations=%0d comparisons=%0d clocks=%0d writes=%0d ignored=%0d frames=%0d time=%0t",current_case,c.observations,c.comparisons,c.clocks,c.valid_writes,c.ignored_writes,c.complete_frames,$time);
     endfunction
@@ -182,7 +184,7 @@ package vga_uvm_pkg;
       finish_case();
       if(vif.assertion_detections!=0)`uvm_fatal("VGA_ASSERTION_COUNT","Unexpected assertion detection")
       fd=$fopen("totals.json","w");
-      $fwrite(fd,"{\"cases\":%0d,\"observations\":%0d,\"comparisons\":%0d,\"clocks\":%0d,\"writes\":%0d,\"ignored\":%0d,\"frames\":%0d,\"frame_pixels\":%0d,\"phase_writes\":[%0d,%0d,%0d,%0d]}\n",case_count,total.observations,total.comparisons,total.clocks,total.valid_writes,total.ignored_writes,total.complete_frames,recorded_pixels,phase_writes[0],phase_writes[1],phase_writes[2],phase_writes[3]);$fclose(fd);
+      $fwrite(fd,"{\"cases\":%0d,\"observations\":%0d,\"comparisons\":%0d,\"clocks\":%0d,\"writes\":%0d,\"ignored\":%0d,\"frames\":%0d,\"frame_pixels\":%0d,\"assertion_samples\":%0d,\"phase_writes\":[%0d,%0d,%0d,%0d]}\n",case_count,total.observations,total.comparisons,total.clocks,total.valid_writes,total.ignored_writes,total.complete_frames,recorded_pixels,vif.assertion_samples,phase_writes[0],phase_writes[1],phase_writes[2],phase_writes[3]);$fclose(fd);
       $display("VGA_UVM_PASS cases=%0d observations=%0d comparisons=%0d assertions=0 seed=0x28A6BEEF",case_count,total.observations,total.comparisons);
     endfunction
   endclass
@@ -223,7 +225,7 @@ package vga_uvm_pkg;
             while(!(sb.raster.h==req.a && sb.raster.v==req.b && sb.raster.d==req.c))clock_edges(1);
           end
           FRAMES:begin int target;target=sb.total.complete_frames+req.a;while(sb.total.complete_frames<target)clock_edges(1);end
-          ALIGN:while(sb.raster.d!=req.a)clock_edges(1);
+          ALIGN:begin clock_edges(1);while(sb.raster.d!=req.a)clock_edges(1);end
           ASYNC_PENDING:begin
             @(negedge vif.clk);#2;drive(0,1,0,8'h5a);#1.5;drive(1,1,0,8'h5a);#1.2;
           end
@@ -231,7 +233,11 @@ package vga_uvm_pkg;
             @(negedge vif.clk);#2;drive(0,1,0,8'ha6);
             @(posedge vif.clk);vif.intended={2'b11,13'd0,8'ha6};vif.controls<={2'b11,13'd0,8'ha6};#2;
           end
-          WAVE:begin vif.capture=req.a;$display("VGA_WAVE_%s name=%s time=%0t",req.a?"START":"END",req.label,$time);end
+          WAVE:begin
+            vif.capture=req.a;
+            if(req.a)$display("VGA_WAVE_START name=%s time=%0t",req.label,$time);
+            else $display("VGA_WAVE_END name=%s time=%0t",req.label,$time);
+          end
           RECORD:sb.record_frame=req.a;
         endcase
         seq_item_port.item_done();
@@ -241,6 +247,7 @@ package vga_uvm_pkg;
   class vga_monitor extends uvm_component;
     `uvm_component_utils(vga_monitor)
     virtual vga_bus vif;
+    logic [30:0] previous_signature='x;
     uvm_analysis_port#(vga_observation)ap,checked;
     function new(string name,uvm_component parent);super.new(name,parent);ap=new("ap",this);checked=new("checked",this);endfunction
     function void build_phase(uvm_phase phase);
@@ -248,15 +255,24 @@ package vga_uvm_pkg;
     endfunction
     task publish(input bit rising,input bit rr,input bit initial_sample);
       vga_observation o;
+      logic [30:0] signature;bit evaluate;
       o.rising=rising;o.reset_rise=rr;o.initial_sample=initial_sample;o.control_only=!rising&&!initial_sample;
       o.controls=vif.controls;o.intended=vif.intended;
       #0.999;
       o.hs=vif.hsync;o.vs=vif.vsync;o.av=vif.active_video;o.rgb={vif.red,vif.green,vif.blue};
       ap.write(o);
-      // Concurrent assertions sample in Preponed. Publish expectations in
-      // the preceding time slot, without changing the +1 ns pin observation.
-      #0.001;vif.sample_tick=~vif.sample_tick;
-      #0.01;checked.write(o);
+      signature={vif.check_reset,vif.expected_h,vif.expected_v,vif.expected_active,vif.expected_rgb,o.hs,o.vs,o.av,o.rgb};
+      // All assertions are history-free output predicates. A constant
+      // signature has the same truth value as its preceding checked sample.
+      // Every input-clock observation still receives the full scoreboard check.
+      evaluate=(signature!==previous_signature)||o.control_only||o.initial_sample||(o.rising&&o.controls[21]);
+      previous_signature=signature;
+      if(evaluate)begin
+        // Expectations precede Preponed sampling in a distinct time slot.
+        #0.001;vif.sample_tick=~vif.sample_tick;vif.assertion_samples++;
+        #0.01;
+      end
+      checked.write(o);
     endtask
     task run_phase(uvm_phase phase);
       bit previous_clk,previous_reset,changed,rising,rr;logic[22:0] previous_controls;
@@ -299,6 +315,7 @@ package vga_uvm_pkg;
       if(group=="vertical")begin mark("vertical");set(0,0);pos(0,489);clocks(4000);return;end
       if(group=="framewrap")begin mark("framewrap");set(0,0);send(FRAMES,"",1);clocks(8);return;end
       if(group=="scale")begin mark("scale");set(1,1,0,8'ha5);set(1,1,1,8'h3c);clocks(1);set(0,0);clocks(100);return;end
+      if(group=="row")begin mark("row");set(0,0);pos(4,8);return;end
       if(group=="invalid")begin mark("invalid");clocks(1);set(1,1,4800,8'h5a);clocks(1);set(1,0);clocks(4);return;end
       if(group=="phase")begin mark("phase");set(0,0);send(ALIGN,"",1);set(0,1,0,8'ha5);clocks(1);set(0,0);clocks(4);return;end
       if(group=="intent")begin mark("intent");set(1,1,256,8'h5a);clocks(1);return;end

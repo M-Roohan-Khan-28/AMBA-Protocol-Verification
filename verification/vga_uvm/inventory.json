@@ -179,6 +179,14 @@
       ]
     },
     {
+      "name": "control-row",
+      "kind": "functional",
+      "group": "row",
+      "cases": [
+        "row"
+      ]
+    },
+    {
       "name": "fault-hsync",
       "kind": "fault",
       "fault": "hsync",
@@ -248,6 +256,20 @@
         "RGB"
       ],
       "passing_control": "control-scale"
+    },
+    {
+      "name": "fault-row_stride",
+      "kind": "fault",
+      "fault": "row_stride",
+      "group": "row",
+      "cases": [
+        "row"
+      ],
+      "expected_fatal": "VGA_RGB",
+      "expected_sva": [
+        "RGB"
+      ],
+      "passing_control": "control-row"
     },
     {
       "name": "fault-rgb",
@@ -400,6 +422,7 @@
     "intent",
     "invalid",
     "phase",
+    "row",
     "scale",
     "smoke",
     "vertical"

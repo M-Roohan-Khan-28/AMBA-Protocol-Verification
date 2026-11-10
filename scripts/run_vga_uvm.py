@@ -60,6 +60,7 @@ def validate_functional(result,entry,wd,log):
   assert byname['all_rgb332']['distinct_colors']==256
   assert sum(r['complete_frames'] for r in rows[:7])==2
   assert all(n>0 for n in totals['phase_writes'])
+  assert all(n>0 for n in byname['divider_phase_writes']['phase_writes'])
   assert totals['frame_pixels']==420000 and (wd/'actual-frame.rgb444').stat().st_size==420000*4
   assert len(re.findall(r'^# VGA_FRAME_CAPTURE_PASS pixels=420000 time=',log,re.M))==1
  return dict(cases=rows,totals=totals)
