@@ -113,11 +113,12 @@ def main():
         if entry['kind']=='runner':
             cmd=[sys.executable,str(repo/'scripts/qualify_ahb_runner.py'),'--output',str(wd/'run')]
             c,text=invoke(cmd,repo,wd/'qualification.log');s['commands'].append(c)
-            s.update(status='FAIL',reason=failure(c,text,r'^AHB_RUNNER_QUALIFICATION_PASS checks=\d+ failures=0$') or 'RUNNER_QUALIFICATION_ACCOUNTING')
+            s.update(status='FAIL',reason=failure(c,text,r'^AHB_RUNNER_QUALIFICATION_PASS checks=\d+ failures=0\s*$') or 'RUNNER_QUALIFICATION_ACCOUNTING')
             try:
                 result=json.loads((wd/'run/results.json').read_text())
-                assert not failure(c,text,r'^AHB_RUNNER_QUALIFICATION_PASS checks=\d+ failures=0$')
+                assert not failure(c,text,r'^AHB_RUNNER_QUALIFICATION_PASS checks=\d+ failures=0\s*$')
                 assert result['status']=='PASS' and result['exit_code']==0 and result['checks']>0
+                assert re.findall(r'^AHB_RUNNER_QUALIFICATION_PASS checks=(\d+) failures=0\s*$',text,re.M)==[str(result['checks'])]
                 assert result['checks']==len(result['cases']) and all(x['pass'] for x in result['cases'])
                 assert result['tested_environment']==report['source_revision']
                 assert result['production_qualifier_sha256']==digest(Path(__file__))
