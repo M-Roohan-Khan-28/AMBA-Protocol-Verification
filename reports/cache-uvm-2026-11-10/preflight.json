@@ -1,0 +1,24 @@
+{
+  "identity": {
+    "id": 270144410,
+    "login": "M-Roohan-Khan-28"
+  },
+  "repositories": [
+    {
+      "repository": "AMBA-Protocol-Verification",
+      "head": "b41b309ec887c58c7187c96de4452741c9bee115",
+      "path": "C:/short/cache-uvm-20261110",
+      "branch": "advanced/deterministic-cache-uvm",
+      "clean": true,
+      "instructions": []
+    },
+    {
+      "repository": "Two-Way-Cache-RTL",
+      "head": "b6246eff1380aa0fb7812de9fccaf12b849fa1ca",
+      "path": "C:/short/cache-docs-20261110",
+      "branch": "docs/deterministic-cache-uvm",
+      "clean": true,
+      "instructions": []
+    }
+  ]
+}

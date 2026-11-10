@@ -1,0 +1,1 @@
+{"name":"repeated_reset","observations":265,"clocks":11,"writes":11,"blocked_writes":0,"resets":4,"lookups":265,"hits":33,"misses":232,"comparisons":530}

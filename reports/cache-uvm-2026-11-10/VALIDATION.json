@@ -1,0 +1,180 @@
+{
+  "status": "PASS",
+  "required": 20,
+  "scenarios": 79,
+  "totals": {
+    "observations": 5111,
+    "clocks": 420,
+    "writes": 402,
+    "blocked_writes": 2,
+    "resets": 87,
+    "lookups": 5111,
+    "hits": 1566,
+    "misses": 3545,
+    "comparisons": 10222
+  },
+  "faults": [
+    {
+      "name": "fault-wrong_way",
+      "status": "PASS",
+      "child_wrapper_exit": 1,
+      "diagnostic": [
+        "CACHE_DATA"
+      ],
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "name": "fault-wrong_set",
+      "status": "PASS",
+      "child_wrapper_exit": 1,
+      "diagnostic": [
+        "CACHE_HIT"
+      ],
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "name": "fault-wrong_tag",
+      "status": "PASS",
+      "child_wrapper_exit": 1,
+      "diagnostic": [
+        "CACHE_HIT"
+      ],
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "name": "fault-corrupted_data",
+      "status": "PASS",
+      "child_wrapper_exit": 1,
+      "diagnostic": [
+        "CACHE_DATA"
+      ],
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "name": "fault-wrong_priority",
+      "status": "PASS",
+      "child_wrapper_exit": 1,
+      "diagnostic": [
+        "CACHE_DATA"
+      ],
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "name": "fault-false_hit",
+      "status": "PASS",
+      "child_wrapper_exit": 1,
+      "diagnostic": [
+        "CACHE_HIT"
+      ],
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "name": "fault-missing_reset",
+      "status": "PASS",
+      "child_wrapper_exit": 1,
+      "diagnostic": [
+        "CACHE_HIT"
+      ],
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "name": "fault-forbidden_reset_write",
+      "status": "PASS",
+      "child_wrapper_exit": 1,
+      "diagnostic": [
+        "CACHE_HIT"
+      ],
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "name": "fault-missing_marker",
+      "status": "PASS",
+      "child_wrapper_exit": 1,
+      "diagnostic": [],
+      "tool_exits": [
+        0,
+        0,
+        0
+      ],
+      "timeouts": [
+        false,
+        false,
+        false
+      ]
+    }
+  ],
+  "wrapper_exit": 0,
+  "runner_fixture_checks": 27
+}

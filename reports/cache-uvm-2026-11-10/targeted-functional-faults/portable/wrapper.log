@@ -1,0 +1,2 @@
+PASS tb_cache_2way checks=7
+PASS cache_contract_test checks=1639

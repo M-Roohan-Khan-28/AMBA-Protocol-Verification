@@ -1,0 +1,276 @@
+{
+  "started_utc": "2026-11-10T15:11:35.781864+00:00",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\cache-uvm-20261110\\scripts\\run_cache_uvm.py",
+    "--output",
+    "C:\\short\\cache-functional-v1-20261110\\fault-missing_marker\\child",
+    "--select",
+    "fault-missing_marker",
+    "--raw-fault",
+    "--source-cache",
+    "C:\\short\\cache-functional-v1-20261110\\source",
+    "--sim-bin",
+    "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+    "--uvm-lib",
+    "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+    "--uvm-include",
+    "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+    "--timeout",
+    "90",
+    "--expected-env-sha",
+    "9c74c35e0c2616a09af8824d2d85754738b5303a"
+  ],
+  "source_revision": "9c74c35e0c2616a09af8824d2d85754738b5303a",
+  "source_dirty": false,
+  "expected_environment_revision": "9c74c35e0c2616a09af8824d2d85754738b5303a",
+  "serial_execution": true,
+  "raw_fault": true,
+  "selection": [
+    "fault-missing_marker"
+  ],
+  "seed": 682016495,
+  "seed_hex": "0x28A6BEEF",
+  "expected_inventory": [
+    "runner-qualification",
+    "sva-reset",
+    "sva-write",
+    "sva-hit",
+    "sva-miss",
+    "sva-stored",
+    "sva-duplicate",
+    "sva-legal",
+    "smoke",
+    "functional",
+    "fault-wrong_way",
+    "fault-wrong_set",
+    "fault-wrong_tag",
+    "fault-corrupted_data",
+    "fault-wrong_priority",
+    "fault-false_hit",
+    "fault-missing_reset",
+    "fault-forbidden_reset_write",
+    "fault-missing_marker",
+    "portable"
+  ],
+  "required_selected": [
+    "fault-missing_marker"
+  ],
+  "suites": [
+    {
+      "name": "fault-missing_marker",
+      "kind": "fault",
+      "status": "FAIL",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\cache-functional-v1-20261110\\fault-missing_marker\\child\\fault-missing_marker",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_bus.sv",
+            "C:\\short\\cache-functional-v1-20261110\\fault-missing_marker\\child\\source\\rtl\\design.sv",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_assertions.sv",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_uvm_pkg.sv",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\cache-functional-v1-20261110\\fault-missing_marker\\child\\fault-missing_marker",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "3374717281eaa1fe5ddf3ef5d5c10abf6953049cfc596873d1739616107a4de3"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.cache_uvm_top",
+            "+PROGRAM=C:\\short\\cache-functional-v1-20261110\\fault-missing_marker\\child\\fault-missing_marker\\program.txt",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /cache_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\cache-functional-v1-20261110\\fault-missing_marker\\child\\fault-missing_marker",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "e23ed959f314ceebcb1b502b2b954ff5ca9710213c3dd79e1b2c6dd8f917aa1a"
+        }
+      ],
+      "program_sha256": "9f80617245b5bd98d45477de740149d56990ae36f6d665617490773f1a9a4dfb",
+      "planned_counts": {
+        "smoke": {
+          "observations": 41,
+          "clocks": 2,
+          "writes": 2,
+          "blocked_writes": 0,
+          "resets": 1,
+          "lookups": 41,
+          "hits": 6,
+          "misses": 35,
+          "comparisons": 82
+        }
+      },
+      "reason": "MISSING_RESULT_MARKER"
+    }
+  ],
+  "aggregate_exit_code": 1,
+  "milestone_pass": false,
+  "functional_coverage": "NOT RUN",
+  "constrained_randomization": "NOT RUN",
+  "original_advanced_alu_apb": "NOT RUN",
+  "input_sha256": {
+    "verification/cache_uvm/cache_assertions.sv": "f61bf3afb0191981e68f7ed3677c231fe681911eb36ad10af9a4b36012ccb34e",
+    "verification/cache_uvm/cache_bus.sv": "27febc5ce213313bb183254303c83993ac9901d6db3a47aa5f676864abd51b6c",
+    "verification/cache_uvm/cache_sva_control.sv": "7b7794759aaaa09c8c93f08bfdc676597ad382eed6cd8ca2fdbc251bbd7624e4",
+    "verification/cache_uvm/cache_uvm_pkg.sv": "e177eed6617ebcb15a8984f21aff2c26edd9f7bae075a8ef20b42ebee4cbfd23",
+    "verification/cache_uvm/cache_uvm_top.sv": "ba737c864149d43566da565cc0955d7768b9b72f2a6953c229b5fba8903e8b72",
+    "verification/cache_uvm/inventory.json": "1d55dee65c806d0d24a981736e6d616442c0622697b8537494e8d927d13cf829",
+    "verification/cache_uvm/sources.json": "c7d95593e76dcb7d460638910ebaa1f8a800a17f40251c1ef3f17a4640c0421d",
+    "scripts/run_cache_uvm.py": "29777d89c0b9c77622687364170914e987630f564d7696c751a6f0b9ffcd5f9a",
+    "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+    "scripts/cache_program.py": "5b0871da9062fe99afcadb5a39959dee1751989e1bb21316047feb77fc832619",
+    "scripts/cache_mutations.py": "ce951f54964f9dc7c83a2e4385558f7dde2edef8643d43a2222c9f2343eb5cfc",
+    "scripts/qualify_cache_runner.py": "1eeefc85fcd2119d90d9719ef5ffda49d17fdb80a389ba79b1e5b2e4c1dbcc18"
+  },
+  "runner_revision": "9c74c35e0c2616a09af8824d2d85754738b5303a",
+  "inventory_revision": "9c74c35e0c2616a09af8824d2d85754738b5303a",
+  "configuration": {
+    "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+    "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+    "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+    "timeout_per_command": 90,
+    "global_timeout": 3600,
+    "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "vendor_input_sha256": {
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5"
+    }
+  },
+  "version_command": {
+    "command": [
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+      "-version"
+    ],
+    "cwd": "C:\\short\\cache-functional-v1-20261110\\fault-missing_marker\\child",
+    "exit_code": 0,
+    "timed_out": false,
+    "log": "version.log",
+    "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+  },
+  "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+  "source_lock": {
+    "owner": "M-Roohan-Khan-28",
+    "account_id": 270144410,
+    "repository": "Two-Way-Cache-RTL",
+    "revision": "b6246eff1380aa0fb7812de9fccaf12b849fa1ca",
+    "files": [
+      "rtl/design.sv"
+    ],
+    "sha256": {
+      "rtl/design.sv": "c307ebb06354fde65cf18a11e64281b0fc6e14f025770a87f3133571f2b1662e"
+    },
+    "execution_files": [
+      "rtl/design.sv",
+      "scripts/run_contract.py",
+      "scripts/run_sim.ps1",
+      "tb/tb_top.sv",
+      "tb/cache_contract_test.sv"
+    ],
+    "execution_sha256": {
+      "rtl/design.sv": "c307ebb06354fde65cf18a11e64281b0fc6e14f025770a87f3133571f2b1662e",
+      "scripts/run_contract.py": "407ecae042993eadad2e0f1eee228a71c463dfe67b7a5c3a05cb41abd574a08b",
+      "scripts/run_sim.ps1": "3d26dbbb93577501e14559fdb70bd03c32e51839f56589b01d70e5c33d659aab",
+      "tb/tb_top.sv": "b8b7d800600e1615fffd9ba3d88eac55c73f1f05a4b2e80f3051a421593c5c7d",
+      "tb/cache_contract_test.sv": "bc5c760ea76291b5a6d7db83f353327e1710d74799d6314fa7a29a2e4eb6151c"
+    },
+    "supplier": "C:\\short\\cache-functional-v1-20261110\\source",
+    "commands": [
+      {
+        "command": [
+          "git",
+          "clone",
+          "--quiet",
+          "--no-hardlinks",
+          "--config",
+          "core.autocrlf=false",
+          "--config",
+          "core.longpaths=true",
+          "C:\\short\\cache-functional-v1-20261110\\source",
+          "C:\\short\\cache-functional-v1-20261110\\fault-missing_marker\\child\\source"
+        ],
+        "cwd": "C:\\short\\cache-functional-v1-20261110\\fault-missing_marker\\child",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-0.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "command": [
+          "git",
+          "-C",
+          "C:\\short\\cache-functional-v1-20261110\\fault-missing_marker\\child\\source",
+          "checkout",
+          "--quiet",
+          "--detach",
+          "b6246eff1380aa0fb7812de9fccaf12b849fa1ca"
+        ],
+        "cwd": "C:\\short\\cache-functional-v1-20261110\\fault-missing_marker\\child",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-1.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "command": [
+          "git",
+          "-C",
+          "C:\\short\\cache-functional-v1-20261110\\fault-missing_marker\\child\\source",
+          "remote",
+          "set-url",
+          "origin",
+          "https://github.com/M-Roohan-Khan-28/Two-Way-Cache-RTL.git"
+        ],
+        "cwd": "C:\\short\\cache-functional-v1-20261110\\fault-missing_marker\\child",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-2.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "observed_revision": "b6246eff1380aa0fb7812de9fccaf12b849fa1ca",
+    "clean": true,
+    "execution_files_sha256": {
+      "rtl/design.sv": "c307ebb06354fde65cf18a11e64281b0fc6e14f025770a87f3133571f2b1662e",
+      "scripts/run_contract.py": "407ecae042993eadad2e0f1eee228a71c463dfe67b7a5c3a05cb41abd574a08b",
+      "scripts/run_sim.ps1": "3d26dbbb93577501e14559fdb70bd03c32e51839f56589b01d70e5c33d659aab",
+      "tb/tb_top.sv": "b8b7d800600e1615fffd9ba3d88eac55c73f1f05a4b2e80f3051a421593c5c7d",
+      "tb/cache_contract_test.sv": "bc5c760ea76291b5a6d7db83f353327e1710d74799d6314fa7a29a2e4eb6151c"
+    },
+    "clean_after_execution": true
+  },
+  "environment_clean_after_execution": true,
+  "finished_utc": "2026-11-10T15:12:14.057844+00:00"
+}

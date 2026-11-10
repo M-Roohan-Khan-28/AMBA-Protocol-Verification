@@ -1,0 +1,99 @@
+[
+  {
+    "path": "docs/verification_plan.md",
+    "historical": "2796f468477789fdf840a5514842b43f423305ac3bece63be8e5aa5c4a3861ec",
+    "git_sha256": "568b1fbb22201b874cf4b85ae854728b0f1f7459640815808b84ab25aaa43385",
+    "matches_raw": false,
+    "matches_crlf": false,
+    "historical_preserved_in_commit": "562d0071b9b656c9f6ec2cafda6dec107f7273a1",
+    "baseline_evolution": [
+      "0711abb34f1d659c27856b1b589123e7b18e46e6 Document cache contract results and publish raw waveform evidence",
+      "562d0071b9b656c9f6ec2cafda6dec107f7273a1 Extract existing HDL lab with source provenance and retained evidence"
+    ]
+  },
+  {
+    "path": "SOURCE_README.md",
+    "historical": "eae1bb4f13fd966cc49f4ed28c6514be10f0f72a06a8e61381752406c24f4319",
+    "git_sha256": "5512d75019f6ac884fa5920c5657c9078ad60f4933c3b822607222bc3aa86d29",
+    "matches_raw": false,
+    "matches_crlf": true
+  },
+  {
+    "path": "reports/compile.log",
+    "historical": "c106c1976caf503baeb9898764f666be6f7955a830b18d460cfd3a465df99697",
+    "git_sha256": "c106c1976caf503baeb9898764f666be6f7955a830b18d460cfd3a465df99697",
+    "matches_raw": true,
+    "matches_crlf": false
+  },
+  {
+    "path": "reports/README.md",
+    "historical": "ccdaf75f775804c6ccfcc50403e848888714b37d8f3641542c80387479dd366f",
+    "git_sha256": "15815b148b2af2b81115b1e7c9ea9ad1c86465911381b428dad3802af021d4b8",
+    "matches_raw": false,
+    "matches_crlf": true
+  },
+  {
+    "path": "reports/simulation.log",
+    "historical": "d6afe2d417a1bbed6fb18d86745b430e34e55135edfb79763d5424cf2151812a",
+    "git_sha256": "d6afe2d417a1bbed6fb18d86745b430e34e55135edfb79763d5424cf2151812a",
+    "matches_raw": true,
+    "matches_crlf": false
+  },
+  {
+    "path": "rtl/design.sv",
+    "historical": "33215b4142925ab204a15174a7dbd10360dee3411b0f0eb7df1de04d7e102951",
+    "git_sha256": "c307ebb06354fde65cf18a11e64281b0fc6e14f025770a87f3133571f2b1662e",
+    "matches_raw": false,
+    "matches_crlf": true
+  },
+  {
+    "path": "scripts/run_sim.ps1",
+    "historical": "ab795b6645b6cd2af365a02c31b40a853355dbee23b80a30752a5ab9600e233a",
+    "git_sha256": "3d26dbbb93577501e14559fdb70bd03c32e51839f56589b01d70e5c33d659aab",
+    "matches_raw": false,
+    "matches_crlf": false,
+    "historical_preserved_in_commit": "562d0071b9b656c9f6ec2cafda6dec107f7273a1",
+    "baseline_evolution": [
+      "73805b661e131c4f61b6258dc1abe99d0a12c3af Add independent cache contract regression and measured waveform runner",
+      "562d0071b9b656c9f6ec2cafda6dec107f7273a1 Extract existing HDL lab with source provenance and retained evidence"
+    ]
+  },
+  {
+    "path": "sim/filelist.f",
+    "historical": "5a9b0b8af8b3475ca84741fd64d0c78c990ba521d0323b7760a2284dfb048b8e",
+    "git_sha256": "a4b54b7b603df1a11a9fc1732c361e9d9d8351b261f72cbf51c611190c8ce052",
+    "matches_raw": false,
+    "matches_crlf": false,
+    "historical_preserved_in_commit": "562d0071b9b656c9f6ec2cafda6dec107f7273a1",
+    "baseline_evolution": [
+      "73805b661e131c4f61b6258dc1abe99d0a12c3af Add independent cache contract regression and measured waveform runner",
+      "562d0071b9b656c9f6ec2cafda6dec107f7273a1 Extract existing HDL lab with source provenance and retained evidence"
+    ]
+  },
+  {
+    "path": "sim/run.sh",
+    "historical": "2ed323d3679dcd097d450a82e12b642d932584ebc45506651ef3db68bed7d545",
+    "git_sha256": "c694eed55a50b064b581d39b03450560cd540796fb54eac012c334dfda91a134",
+    "matches_raw": false,
+    "matches_crlf": false,
+    "historical_preserved_in_commit": "562d0071b9b656c9f6ec2cafda6dec107f7273a1",
+    "baseline_evolution": [
+      "73805b661e131c4f61b6258dc1abe99d0a12c3af Add independent cache contract regression and measured waveform runner",
+      "562d0071b9b656c9f6ec2cafda6dec107f7273a1 Extract existing HDL lab with source provenance and retained evidence"
+    ]
+  },
+  {
+    "path": "tb/tb_top.sv",
+    "historical": "bfd99e4110ff960416e9926074869aace580a93cd5e176445f073c4b7320b93c",
+    "git_sha256": "b8b7d800600e1615fffd9ba3d88eac55c73f1f05a4b2e80f3051a421593c5c7d",
+    "matches_raw": false,
+    "matches_crlf": true
+  },
+  {
+    "path": "waves/README.md",
+    "historical": "6d08b508a8afadffbd00b6cc401f977b87432d22ecda2064d6a2d3288999b944",
+    "git_sha256": "acb38c75318b4c8286d93513db89e7fc2405dfc47febfb2185c976594a3deb7f",
+    "matches_raw": false,
+    "matches_crlf": true
+  }
+]

@@ -1,0 +1,38 @@
+Reading pref.tcl
+
+# 2025.2
+
+# ** Note: (vsim-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# vsim -c -onfinish exit -voptargs="+acc" -sv_seed 682016495 work.cache_sva_control "+SCENARIO=hit" "+EXPECT_SVA=LOOKUP_HIT" -do "onerror {quit -force -code 1}; run -all; quit -force -code 0" 
+# Start time: 20:02:49 on Nov 10,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.cache_sva_control(fast)
+# Loading work.cache_bus(fast__1)
+# Loading work.cache_assertions(fast)
+# onerror {quit -force -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# CACHE_SVA_DETECTED LOOKUP_HIT time=32000
+# CACHE_SVA_CONTROL_PASS name=hit detections=1
+# ** Note: $finish    : C:/short/cache-uvm-20261110/verification/cache_uvm/cache_sva_control.sv(28)
+#    Time: 75 ns  Iteration: 0  Instance: /cache_sva_control
+# End time: 20:02:56 on Nov 10,2026, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 1

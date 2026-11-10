@@ -48,7 +48,7 @@ record three UVM adapter passes, five expected assertion detections and one
 legal assertion control from a clean detached clone. Covergroups and the two
 original advanced ALU/APB environments remain **NOT RUN** for the licence blocker.
 
-## Latest merged-main technical release — 8 November 2026
+## Latest merged-main technical release â€” 8 November 2026
 
 The [locked merged-main technical release](reports/technical-release-2026-11-08/RELEASE_SUMMARY.md) records eleven required project suites PASS from fresh detached GitHub source clones at runner `9820035daf9a63f5bbf4fa14c2621a65a746cd85`, aggregate exit 0. AXI4-Lite and RV32I SoC each require a separate checker qualification with one legal case and eight expected-negative detections. The preserved original advanced ALU/APB environments remain **NOT RUN** for the unavailable `svverification` licence.
 
@@ -134,3 +134,14 @@ Historical [old/new controls](reports/ahb-runner-correction-2026-11-10/SUMMARY.m
 and [original measured figures](reports/ahb-uvm-2026-11-10/SUMMARY.md) are unchanged.
 Functional coverage, constrained randomization and original advanced ALU/APB
 remain **NOT RUN**. Full AHB and physical-implementation milestones remain separate.
+
+## Deterministic Two-Way Cache UVM/SVA milestone (review branch)
+
+Separate [public-pin environment and bounded contract](docs/DETERMINISTIC_CACHE_UVM.md)
+for the unchanged cache lock `b6246eff1380aa0fb7812de9fccaf12b849fa1ca`. A fresh detached
+GitHub run passed **20/20 required substeps**, **79 named scenarios** and
+**10,222 independent comparisons**, six expected-negative assertion
+controls plus a legal compound control, all nine fault parents, and the preserved
+7/1,639 portable gate. [Raw evidence and measured waveforms](reports/cache-uvm-2026-11-10/SUMMARY.md).
+Functional coverage/randomization and the original advanced ALU/APB remain NOT RUN.
+These review-branch results do not alter previous release claims or locks.

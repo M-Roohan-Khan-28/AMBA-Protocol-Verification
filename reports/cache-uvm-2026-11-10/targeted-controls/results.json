@@ -1,0 +1,711 @@
+{
+  "started_utc": "2026-11-10T15:01:58.536496+00:00",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "scripts/run_cache_uvm.py",
+    "--output",
+    "C:\\short\\cache-controls-v1-20261110",
+    "--select",
+    "sva-reset",
+    "sva-write",
+    "sva-hit",
+    "sva-miss",
+    "sva-stored",
+    "sva-duplicate",
+    "sva-legal",
+    "smoke"
+  ],
+  "source_revision": "24b01055a7225924ba129c611fc98c7399ac10dc",
+  "source_dirty": false,
+  "expected_environment_revision": null,
+  "serial_execution": true,
+  "raw_fault": false,
+  "selection": [
+    "sva-reset",
+    "sva-write",
+    "sva-hit",
+    "sva-miss",
+    "sva-stored",
+    "sva-duplicate",
+    "sva-legal",
+    "smoke"
+  ],
+  "seed": 682016495,
+  "seed_hex": "0x28A6BEEF",
+  "expected_inventory": [
+    "sva-reset",
+    "sva-write",
+    "sva-hit",
+    "sva-miss",
+    "sva-stored",
+    "sva-duplicate",
+    "sva-legal",
+    "smoke",
+    "functional",
+    "fault-wrong_way",
+    "fault-wrong_set",
+    "fault-wrong_tag",
+    "fault-corrupted_data",
+    "fault-wrong_priority",
+    "fault-false_hit",
+    "fault-missing_reset",
+    "fault-forbidden_reset_write",
+    "fault-missing_marker",
+    "portable"
+  ],
+  "required_selected": [
+    "sva-reset",
+    "sva-write",
+    "sva-hit",
+    "sva-miss",
+    "sva-stored",
+    "sva-duplicate",
+    "sva-legal",
+    "smoke"
+  ],
+  "suites": [
+    {
+      "name": "sva-reset",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\cache-controls-v1-20261110\\sva-reset",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_bus.sv",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_assertions.sv",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\cache-controls-v1-20261110\\sva-reset",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "c4d2d0e1b05dd6f95ac99eac11841d6deefe357ad2c33d4ea06d1bd98c31d99b"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.cache_sva_control",
+            "+SCENARIO=reset",
+            "+EXPECT_SVA=RESET_DOMINANCE",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\cache-controls-v1-20261110\\sva-reset",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "079b404f64443ecc509699a0d3e0fd986d76483a32fc5a2d71ffa42c47b996c7"
+        }
+      ],
+      "reason": "EXECUTED",
+      "observed_sva": [
+        "RESET_DOMINANCE"
+      ]
+    },
+    {
+      "name": "sva-write",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\cache-controls-v1-20261110\\sva-write",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_bus.sv",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_assertions.sv",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\cache-controls-v1-20261110\\sva-write",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "c0b929d6e54d27007ea880983c78334986de738e15a05057f789d9412645960f"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.cache_sva_control",
+            "+SCENARIO=write",
+            "+EXPECT_SVA=SELECTED_WRITE",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\cache-controls-v1-20261110\\sva-write",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "cc0e5062484edda38f31b67d44cf1a18232cf15168ff264f54a6ef3ae4533479"
+        }
+      ],
+      "reason": "EXECUTED",
+      "observed_sva": [
+        "SELECTED_WRITE"
+      ]
+    },
+    {
+      "name": "sva-hit",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\cache-controls-v1-20261110\\sva-hit",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_bus.sv",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_assertions.sv",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\cache-controls-v1-20261110\\sva-hit",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "43d18293a85c41c5820cf23a7c4dd3efb54050a40b0a9cdc22c0aa3b9c3df51e"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.cache_sva_control",
+            "+SCENARIO=hit",
+            "+EXPECT_SVA=LOOKUP_HIT",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\cache-controls-v1-20261110\\sva-hit",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "1645df027cd336ae3891113087af0ae516e3c309d075025d6fbadec999215944"
+        }
+      ],
+      "reason": "EXECUTED",
+      "observed_sva": [
+        "LOOKUP_HIT"
+      ]
+    },
+    {
+      "name": "sva-miss",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\cache-controls-v1-20261110\\sva-miss",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_bus.sv",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_assertions.sv",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\cache-controls-v1-20261110\\sva-miss",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "3189788ea3382961ee2b5b7e7e0d4fa3e64afd1940a47cc495a641bdc80c3a75"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.cache_sva_control",
+            "+SCENARIO=miss",
+            "+EXPECT_SVA=MISS_ZERO",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\cache-controls-v1-20261110\\sva-miss",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "5d055342a20250caef077fee2e968442735243cb31e9ad3dbf3e0c2cb6ac5f98"
+        }
+      ],
+      "reason": "EXECUTED",
+      "observed_sva": [
+        "MISS_ZERO"
+      ]
+    },
+    {
+      "name": "sva-stored",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\cache-controls-v1-20261110\\sva-stored",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_bus.sv",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_assertions.sv",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\cache-controls-v1-20261110\\sva-stored",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "0cf9826d86141a7a66ea80caef234e0d152075496357a857f4ae70f14dabaf44"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.cache_sva_control",
+            "+SCENARIO=stored",
+            "+EXPECT_SVA=STORED_ENTRY",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\cache-controls-v1-20261110\\sva-stored",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "712a1bcd0d0752da3e297c20868b9a7fd717a5c90c5e0b59d1be69de065e8643"
+        }
+      ],
+      "reason": "EXECUTED",
+      "observed_sva": [
+        "STORED_ENTRY"
+      ]
+    },
+    {
+      "name": "sva-duplicate",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\cache-controls-v1-20261110\\sva-duplicate",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_bus.sv",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_assertions.sv",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\cache-controls-v1-20261110\\sva-duplicate",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "5109941d2752a9632ec66de14bb8bad566a879dd01299f42e79df0d90616546d"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.cache_sva_control",
+            "+SCENARIO=duplicate",
+            "+EXPECT_SVA=DUPLICATE_PRIORITY",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\cache-controls-v1-20261110\\sva-duplicate",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "a9694672f66daa913f5901831949ac9b1c2965916ef5685d7db7f22358eeb2cf"
+        }
+      ],
+      "reason": "EXECUTED",
+      "observed_sva": [
+        "DUPLICATE_PRIORITY"
+      ]
+    },
+    {
+      "name": "sva-legal",
+      "kind": "sva",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\cache-controls-v1-20261110\\sva-legal",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_bus.sv",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_assertions.sv",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_sva_control.sv"
+          ],
+          "cwd": "C:\\short\\cache-controls-v1-20261110\\sva-legal",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "010b3bc4ec2cc6a5328b4eb90a9d62397e452912cb94eb9c1cb84511ac560f10"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "work.cache_sva_control",
+            "+SCENARIO=legal",
+            "-do",
+            "onerror {quit -force -code 1}; run -all; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\cache-controls-v1-20261110\\sva-legal",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "307d2baf98c6ec10a985fb3a317e82045b827e383ec7a18722df2b83ea37f07d"
+        }
+      ],
+      "reason": "EXECUTED",
+      "observed_sva": []
+    },
+    {
+      "name": "smoke",
+      "kind": "functional",
+      "status": "PASS",
+      "commands": [
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlib.exe",
+            "work"
+          ],
+          "cwd": "C:\\short\\cache-controls-v1-20261110\\smoke",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "0.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe",
+            "-sv",
+            "-work",
+            "work",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "+incdir+C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_bus.sv",
+            "C:\\short\\cache-controls-v1-20261110\\source\\rtl\\design.sv",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_assertions.sv",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_uvm_pkg.sv",
+            "C:\\short\\cache-uvm-20261110\\verification\\cache_uvm\\cache_uvm_top.sv"
+          ],
+          "cwd": "C:\\short\\cache-controls-v1-20261110\\smoke",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "1.log",
+          "sha256": "516a02d4d3c30ad48f87727cca3fc43478ec67be526d9ce220d4d129fd737f9d"
+        },
+        {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.cache_uvm_top",
+            "+PROGRAM=C:\\short\\cache-controls-v1-20261110\\smoke\\program.txt",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /cache_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\cache-controls-v1-20261110\\smoke",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "4ffef07257d810a80db584859488274c8dc20a6e25ef288e7ffcca600c1f1c70"
+        }
+      ],
+      "program_sha256": "9f80617245b5bd98d45477de740149d56990ae36f6d665617490773f1a9a4dfb",
+      "planned_counts": {
+        "smoke": {
+          "observations": 41,
+          "clocks": 2,
+          "writes": 2,
+          "blocked_writes": 0,
+          "resets": 1,
+          "lookups": 41,
+          "hits": 6,
+          "misses": 35,
+          "comparisons": 82
+        }
+      },
+      "reason": "EXECUTED",
+      "observed_sva": [],
+      "uvm_runtime_versions": [
+        "QUESTA_UVM-1.2.3"
+      ],
+      "cases": [
+        {
+          "name": "smoke",
+          "observations": 41,
+          "clocks": 2,
+          "writes": 2,
+          "blocked_writes": 0,
+          "resets": 1,
+          "lookups": 41,
+          "hits": 6,
+          "misses": 35,
+          "comparisons": 82
+        }
+      ],
+      "capture_sha256": "da370ed45c887a0d8b2c649f49df1f950c0348efb566669f6d38a8d0a22fd076"
+    }
+  ],
+  "aggregate_exit_code": 0,
+  "milestone_pass": false,
+  "functional_coverage": "NOT RUN",
+  "constrained_randomization": "NOT RUN",
+  "original_advanced_alu_apb": "NOT RUN",
+  "input_sha256": {
+    "verification/cache_uvm/cache_assertions.sv": "f61bf3afb0191981e68f7ed3677c231fe681911eb36ad10af9a4b36012ccb34e",
+    "verification/cache_uvm/cache_bus.sv": "27febc5ce213313bb183254303c83993ac9901d6db3a47aa5f676864abd51b6c",
+    "verification/cache_uvm/cache_sva_control.sv": "7b7794759aaaa09c8c93f08bfdc676597ad382eed6cd8ca2fdbc251bbd7624e4",
+    "verification/cache_uvm/cache_uvm_pkg.sv": "e177eed6617ebcb15a8984f21aff2c26edd9f7bae075a8ef20b42ebee4cbfd23",
+    "verification/cache_uvm/cache_uvm_top.sv": "ba737c864149d43566da565cc0955d7768b9b72f2a6953c229b5fba8903e8b72",
+    "verification/cache_uvm/inventory.json": "e21b84e668d7aebb23a4446af30bb213b18a0ec6b15156145ef19b75bb9c96a9",
+    "verification/cache_uvm/sources.json": "c7d95593e76dcb7d460638910ebaa1f8a800a17f40251c1ef3f17a4640c0421d",
+    "scripts/run_cache_uvm.py": "13acdbf264fc43ac92741dcb0dfeec93bae5a585f404d16973c09627be88e40b",
+    "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+    "scripts/cache_program.py": "5b0871da9062fe99afcadb5a39959dee1751989e1bb21316047feb77fc832619",
+    "scripts/cache_mutations.py": "ce951f54964f9dc7c83a2e4385558f7dde2edef8643d43a2222c9f2343eb5cfc"
+  },
+  "runner_revision": "24b01055a7225924ba129c611fc98c7399ac10dc",
+  "inventory_revision": "24b01055a7225924ba129c611fc98c7399ac10dc",
+  "configuration": {
+    "sim_bin": "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64",
+    "uvm_lib": "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+    "uvm_include": "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src",
+    "timeout_per_command": 90,
+    "global_timeout": 3600,
+    "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "vendor_input_sha256": {
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_pkg.sv": "53db9b260a652c160e5733c2e9d53f9e5ef5fe60080d8d7115efc929775a1aa2",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\verilog_src\\uvm-1.2\\src\\uvm_macros.svh": "0fb102cbeaf168bc659c659a4442a722f0e137496f3dad3c837ee6794476cd51",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe": "f32b69f6a944f605ddba774c496a92ca13a3b1c86d7f984f9b6a0167a14e2bc8",
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vlog.exe": "f3419a63d42323f11a61627a690dfc4f4877f7fa892a13cedffb4ddff83bc5d5"
+    }
+  },
+  "version_command": {
+    "command": [
+      "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+      "-version"
+    ],
+    "cwd": "C:\\short\\cache-controls-v1-20261110",
+    "exit_code": 0,
+    "timed_out": false,
+    "log": "version.log",
+    "sha256": "a71963f93ee03a54d74604e817138348f3e2b38e53b985413fe97aa62e2e077f"
+  },
+  "simulator_version": "Questa Altera Starter FPGA Edition-64 vsim 2025.2 Simulator 2025.05 May 31 2025",
+  "source_lock": {
+    "owner": "M-Roohan-Khan-28",
+    "account_id": 270144410,
+    "repository": "Two-Way-Cache-RTL",
+    "revision": "b6246eff1380aa0fb7812de9fccaf12b849fa1ca",
+    "files": [
+      "rtl/design.sv"
+    ],
+    "sha256": {
+      "rtl/design.sv": "c307ebb06354fde65cf18a11e64281b0fc6e14f025770a87f3133571f2b1662e"
+    },
+    "execution_files": [
+      "rtl/design.sv",
+      "scripts/run_contract.py",
+      "scripts/run_sim.ps1",
+      "tb/tb_top.sv",
+      "tb/cache_contract_test.sv"
+    ],
+    "execution_sha256": {
+      "rtl/design.sv": "c307ebb06354fde65cf18a11e64281b0fc6e14f025770a87f3133571f2b1662e",
+      "scripts/run_contract.py": "407ecae042993eadad2e0f1eee228a71c463dfe67b7a5c3a05cb41abd574a08b",
+      "scripts/run_sim.ps1": "3d26dbbb93577501e14559fdb70bd03c32e51839f56589b01d70e5c33d659aab",
+      "tb/tb_top.sv": "b8b7d800600e1615fffd9ba3d88eac55c73f1f05a4b2e80f3051a421593c5c7d",
+      "tb/cache_contract_test.sv": "bc5c760ea76291b5a6d7db83f353327e1710d74799d6314fa7a29a2e4eb6151c"
+    },
+    "supplier": "https://github.com/M-Roohan-Khan-28/Two-Way-Cache-RTL.git",
+    "commands": [
+      {
+        "command": [
+          "git",
+          "clone",
+          "--quiet",
+          "--no-hardlinks",
+          "--config",
+          "core.autocrlf=false",
+          "--config",
+          "core.longpaths=true",
+          "https://github.com/M-Roohan-Khan-28/Two-Way-Cache-RTL.git",
+          "C:\\short\\cache-controls-v1-20261110\\source"
+        ],
+        "cwd": "C:\\short\\cache-controls-v1-20261110",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-0.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "command": [
+          "git",
+          "-C",
+          "C:\\short\\cache-controls-v1-20261110\\source",
+          "checkout",
+          "--quiet",
+          "--detach",
+          "b6246eff1380aa0fb7812de9fccaf12b849fa1ca"
+        ],
+        "cwd": "C:\\short\\cache-controls-v1-20261110",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-1.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "command": [
+          "git",
+          "-C",
+          "C:\\short\\cache-controls-v1-20261110\\source",
+          "remote",
+          "set-url",
+          "origin",
+          "https://github.com/M-Roohan-Khan-28/Two-Way-Cache-RTL.git"
+        ],
+        "cwd": "C:\\short\\cache-controls-v1-20261110",
+        "exit_code": 0,
+        "timed_out": false,
+        "log": "source-2.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "observed_revision": "b6246eff1380aa0fb7812de9fccaf12b849fa1ca",
+    "clean": true,
+    "execution_files_sha256": {
+      "rtl/design.sv": "c307ebb06354fde65cf18a11e64281b0fc6e14f025770a87f3133571f2b1662e",
+      "scripts/run_contract.py": "407ecae042993eadad2e0f1eee228a71c463dfe67b7a5c3a05cb41abd574a08b",
+      "scripts/run_sim.ps1": "3d26dbbb93577501e14559fdb70bd03c32e51839f56589b01d70e5c33d659aab",
+      "tb/tb_top.sv": "b8b7d800600e1615fffd9ba3d88eac55c73f1f05a4b2e80f3051a421593c5c7d",
+      "tb/cache_contract_test.sv": "bc5c760ea76291b5a6d7db83f353327e1710d74799d6314fa7a29a2e4eb6151c"
+    },
+    "clean_after_execution": true
+  },
+  "environment_clean_after_execution": true,
+  "finished_utc": "2026-11-10T15:04:41.142734+00:00"
+}
