@@ -1,0 +1,101 @@
+$date
+	Tue Nov 10 18:50:46 2026
+$end
+$version
+	Questa Altera Starter FPGA Edition Version 2025.2
+$end
+$timescale
+	1ps
+$end
+
+$scope module ahb_uvm_top $end
+
+$scope module bus $end
+$var wire 1 ! clk $end
+$var reg 1 " reset_n $end
+$var reg 1 # sel $end
+$var reg 1 $ write $end
+$var reg 1 % ext_ready $end
+$var reg 8 & addr [7:0] $end
+$var reg 2 ' trans [1:0] $end
+$var reg 3 ( size [2:0] $end
+$var reg 32 ) wdata [31:0] $end
+$var reg 32 * rdata [31:0] $end
+$var reg 1 + ready $end
+$var reg 1 , readyout $end
+$var reg 1 - resp $end
+$var integer 32 . sva_count $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0"
+0#
+0$
+1%
+b0 &
+b0 '
+b10 (
+b0 )
+b0 *
+1+
+1,
+0-
+b0 .
+0!
+$end
+#5000
+1!
+#10000
+0!
+b11000001100111001010010001011 )
+#15000
+1!
+#20000
+0!
+b1001001001111111101001010010010 )
+#25000
+1!
+#30000
+0!
+1"
+b10111010001010110001100010111001 )
+#35000
+1!
+#40000
+0!
+1#
+b10 '
+1$
+b11101111010100000100011101100001 )
+#45000
+1!
+#50000
+0!
+0$
+b10010011001011010101111001101 )
+#55000
+1!
+b10010011001011010101111001101 *
+#60000
+0!
+0#
+b0 '
+b11000011111001101010101001010101 )
+#65000
+1!
+b0 *
+#70000
+0!
+b11110110111101000011001101111110 )
+#75000
+1!
+#80000
+0!
+1#
+b10 '
+1$
+b0 )
+#85000
+1!

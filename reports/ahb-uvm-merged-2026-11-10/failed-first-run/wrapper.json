@@ -1,0 +1,16 @@
+{
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\ahb-merged-source-20261110\\scripts\\run_ahb_uvm.py",
+    "--expected-env-sha",
+    "e58c30428d2a6348d3983c8ee3fbf9e1905629d2",
+    "--output",
+    "C:\\short\\ahb-merged-run-20261110"
+  ],
+  "exit_code": 1,
+  "elapsed_seconds": 42745.69690560014,
+  "log": "merged-wrapper.log",
+  "sha256": "1669acbe5b449ea68f5ccc569ab4a747b7ea89f31121d5bc31ddeea6e3ef5045",
+  "output": "C:\\short\\ahb-merged-run-20261110",
+  "source_revision": "e58c30428d2a6348d3983c8ee3fbf9e1905629d2"
+}

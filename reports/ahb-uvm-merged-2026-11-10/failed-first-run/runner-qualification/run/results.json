@@ -1,0 +1,1019 @@
+{
+  "description": "Qualify the production AHB fault decision using immutable published fixtures.\n\nNo simulator is launched. Modified process records are synthetic fixtures, not\nevidence of actual simulator crashes. The legacy comparison executes the exact\nguard AST from the locked historical runner, without copying its decision rules.\n",
+  "tested_environment": "e58c30428d2a6348d3983c8ee3fbf9e1905629d2",
+  "production_qualifier_sha256": "8d47f20dcd0101dff5b5519e5bc7d03077c4ad10ec0aaa44736597e3fd744af3",
+  "qualification_script_sha256": "1571a7ee221c689d53ed67a9832b35711dee5de31b0137d0ba55e24cefbce011",
+  "fixture_manifest_sha256": "79aa4d621f78f36dac29a8ae2a8b8b668855bad83296fbe74124c059bfbe0ac3",
+  "historical_runner": {
+    "revision": "faf8291b5d7b40362f30c79f12ed49453158dfc4",
+    "path": "scripts/run_ahb_uvm.py",
+    "sha256": "c593143229b734b10a9215aaafbe5dad8522fca2e632e6355b6acd775455bd0e"
+  },
+  "historical_executed_guard_lines": [
+    93,
+    120
+  ],
+  "fixture_input_sha256": {
+    "reports/ahb-uvm-2026-11-10/run/results.json": "5241987073cc792b5e3e804f785901208748683bdfc68c5d0f3bf26a09d00874",
+    "reports/ahb-uvm-2026-11-10/run/fault-short_error/child/results.json": "99faae35662a3a6178d3ed2d9799b6bc104b31cfa634ae02a1dfb9b277483b58",
+    "reports/ahb-uvm-2026-11-10/run/fault-short_error/child/fault-short_error/2.log": "ae38f4c0191863c20cbc448a0b45668dc0951bdddeb886575f6f4137b69b1e6c",
+    "reports/ahb-uvm-2026-11-10/run/fault-missing_error/child/results.json": "e7def524e7c7f4c2170a2790b1f88472921dd12e91d4f369de2eaa7ef7cf6ff4",
+    "reports/ahb-uvm-2026-11-10/run/fault-missing_error/child/fault-missing_error/2.log": "0badb14be0d885ee3dbc92474d46c5c71e7461b4d9a941fb29a83b71fe0fc073",
+    "reports/ahb-uvm-2026-11-10/run/fault-read_data/child/results.json": "ba8ec66970e082ee8ad59a758a822d0bbeaa67e494f6245ed90dfefb4d6a12b4",
+    "reports/ahb-uvm-2026-11-10/run/fault-read_data/child/fault-read_data/2.log": "6e4596a73c5b9152b500502dce7441e911eedaac144f48ec6676851a9b43bbf5",
+    "reports/ahb-uvm-2026-11-10/run/fault-missing_marker/child/results.json": "307842d4eea7b0ae292d15408c088587505c848163818ce4a418ecc67e7dc7fe",
+    "reports/ahb-uvm-2026-11-10/run/fault-missing_marker/child/fault-missing_marker/2.log": "9f01386199e482204f16a71d1f02ef02e7e1925ca3f566b0fde690747bf499bb"
+  },
+  "fixture_source_revision": "d403d88a71e7c55a46641366007ebd0af9e444a4",
+  "fixture_dut_revision": "659fba67ce85a01643cceca2c8d1e67ea3903995",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\ahb-merged-source-20261110\\scripts\\qualify_ahb_runner.py",
+    "--output",
+    "C:\\short\\ahb-merged-run-20261110\\runner-qualification\\run"
+  ],
+  "python_version": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+  "simulation_execution": "NOT RUN - record fixtures only",
+  "cases": [
+    {
+      "fixture": "fault-short_error",
+      "variant": "original",
+      "mutation": null,
+      "old_accept": true,
+      "corrected_accept": true,
+      "expected_old_accept": true,
+      "expected_corrected_accept": true,
+      "old_reason": "qualified",
+      "corrected_reason": "qualified",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "6e4f780c76e202e4b4e47ddb0624dee2cc1886adf3db3b1ca8fde50a9628a00f",
+      "original_log_sha256": "ae38f4c0191863c20cbc448a0b45668dc0951bdddeb886575f6f4137b69b1e6c",
+      "pass": true
+    },
+    {
+      "fixture": "fault-short_error",
+      "variant": "sim_exit_211",
+      "mutation": {
+        "path": "/suites/0/commands/2/exit_code",
+        "before": 0,
+        "after": 211
+      },
+      "old_accept": true,
+      "corrected_accept": false,
+      "expected_old_accept": true,
+      "expected_corrected_accept": false,
+      "old_reason": "qualified",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "e67ecfbd561d1377bc19843b5c3129b1c128f40f9b384d3cce1f35132ff81e58",
+      "original_log_sha256": "ae38f4c0191863c20cbc448a0b45668dc0951bdddeb886575f6f4137b69b1e6c",
+      "pass": true
+    },
+    {
+      "fixture": "fault-short_error",
+      "variant": "sim_exit_127",
+      "mutation": {
+        "path": "/suites/0/commands/2/exit_code",
+        "before": 0,
+        "after": 127
+      },
+      "old_accept": true,
+      "corrected_accept": false,
+      "expected_old_accept": true,
+      "expected_corrected_accept": false,
+      "old_reason": "qualified",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "68d166ddad7fbed9a18e0b0dd2c309d6647a220da0371e0b961c6b65d9742992",
+      "original_log_sha256": "ae38f4c0191863c20cbc448a0b45668dc0951bdddeb886575f6f4137b69b1e6c",
+      "pass": true
+    },
+    {
+      "fixture": "fault-short_error",
+      "variant": "sim_exit_-11",
+      "mutation": {
+        "path": "/suites/0/commands/2/exit_code",
+        "before": 0,
+        "after": -11
+      },
+      "old_accept": true,
+      "corrected_accept": false,
+      "expected_old_accept": true,
+      "expected_corrected_accept": false,
+      "old_reason": "qualified",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "a3599eb40b4c10e9e552b145eada4c38a0d9467b2c61778cf8876655e7805375",
+      "original_log_sha256": "ae38f4c0191863c20cbc448a0b45668dc0951bdddeb886575f6f4137b69b1e6c",
+      "pass": true
+    },
+    {
+      "fixture": "fault-short_error",
+      "variant": "sim_timeout",
+      "mutation": {
+        "path": "/suites/0/commands/2/timed_out",
+        "before": false,
+        "after": true
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "03c8e5b4ba7b425b9c9c036a034d054fe1ff68bedd8b423a2d2f5d3b46014136",
+      "original_log_sha256": "ae38f4c0191863c20cbc448a0b45668dc0951bdddeb886575f6f4137b69b1e6c",
+      "pass": true
+    },
+    {
+      "fixture": "fault-short_error",
+      "variant": "incomplete_tools",
+      "mutation": {
+        "path": "/suites/0/commands/2",
+        "before": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.ahb_uvm_top",
+            "+PROGRAM=C:\\short\\ahb-uvm-fresh-run-v3-20261110\\fault-short_error\\child\\fault-short_error\\program.txt",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /ahb_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\ahb-uvm-fresh-run-v3-20261110\\fault-short_error\\child\\fault-short_error",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "ae38f4c0191863c20cbc448a0b45668dc0951bdddeb886575f6f4137b69b1e6c"
+        },
+        "after": "REMOVED"
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "57121489dfeb5184bec8a9565426c44bae9b38ebab5e939cb9b9c32b897bf06b",
+      "original_log_sha256": "ae38f4c0191863c20cbc448a0b45668dc0951bdddeb886575f6f4137b69b1e6c",
+      "pass": true
+    },
+    {
+      "fixture": "fault-short_error",
+      "variant": "compile_exit_127",
+      "mutation": {
+        "path": "/suites/0/commands/1/exit_code",
+        "before": 0,
+        "after": 127
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "a0f9449a506886f7d6ad8fac355fa5d4bb0db81ad024797423f098d43b352702",
+      "original_log_sha256": "ae38f4c0191863c20cbc448a0b45668dc0951bdddeb886575f6f4137b69b1e6c",
+      "pass": true
+    },
+    {
+      "fixture": "fault-short_error",
+      "variant": "library_exit_127",
+      "mutation": {
+        "path": "/suites/0/commands/0/exit_code",
+        "before": 0,
+        "after": 127
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "88937e67640e85471dbf4541e8a5ee1c13d98fec758c9e1ed842e82e58548ee6",
+      "original_log_sha256": "ae38f4c0191863c20cbc448a0b45668dc0951bdddeb886575f6f4137b69b1e6c",
+      "pass": true
+    },
+    {
+      "fixture": "fault-short_error",
+      "variant": "compile_timeout",
+      "mutation": {
+        "path": "/suites/0/commands/1/timed_out",
+        "before": false,
+        "after": true
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "b6e459acb64eb96b358cb36ca106dc03695501f8c6a986daac570e12be8d8264",
+      "original_log_sha256": "ae38f4c0191863c20cbc448a0b45668dc0951bdddeb886575f6f4137b69b1e6c",
+      "pass": true
+    },
+    {
+      "fixture": "fault-short_error",
+      "variant": "missing_sim_exit",
+      "mutation": {
+        "path": "/suites/0/commands/2/exit_code",
+        "before": 0,
+        "after": "REMOVED"
+      },
+      "old_accept": true,
+      "corrected_accept": false,
+      "expected_old_accept": true,
+      "expected_corrected_accept": false,
+      "old_reason": "qualified",
+      "corrected_reason": "KeyError: 'exit_code'",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "21c69746015a5fb79afab3b43eb8edb76cbd4df0e496d59cbab681d6118c3709",
+      "original_log_sha256": "ae38f4c0191863c20cbc448a0b45668dc0951bdddeb886575f6f4137b69b1e6c",
+      "pass": true
+    },
+    {
+      "fixture": "fault-short_error",
+      "variant": "wrong_source_revision",
+      "mutation": {
+        "path": "/source_revision",
+        "before": "d403d88a71e7c55a46641366007ebd0af9e444a4",
+        "after": "0000000000000000000000000000000000000000"
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "2ff997b6f3c252b345d16881eb6aa56ce84e562a485d21ea89f83eb9433d6f3f",
+      "original_log_sha256": "ae38f4c0191863c20cbc448a0b45668dc0951bdddeb886575f6f4137b69b1e6c",
+      "pass": true
+    },
+    {
+      "fixture": "fault-short_error",
+      "variant": "unexpected_diagnostic",
+      "mutation": {
+        "path": "log_append",
+        "after": "** Error: injected unrelated fixture diagnostic"
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "6e4f780c76e202e4b4e47ddb0624dee2cc1886adf3db3b1ca8fde50a9628a00f",
+      "original_log_sha256": "ae38f4c0191863c20cbc448a0b45668dc0951bdddeb886575f6f4137b69b1e6c",
+      "pass": true
+    },
+    {
+      "fixture": "fault-missing_error",
+      "variant": "original",
+      "mutation": null,
+      "old_accept": true,
+      "corrected_accept": true,
+      "expected_old_accept": true,
+      "expected_corrected_accept": true,
+      "old_reason": "qualified",
+      "corrected_reason": "qualified",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "99ee07071aee8807592ecb77740de29591bea9193cb7cd8fc9e8e8d9fe278331",
+      "original_log_sha256": "0badb14be0d885ee3dbc92474d46c5c71e7461b4d9a941fb29a83b71fe0fc073",
+      "pass": true
+    },
+    {
+      "fixture": "fault-missing_error",
+      "variant": "sim_exit_211",
+      "mutation": {
+        "path": "/suites/0/commands/2/exit_code",
+        "before": 0,
+        "after": 211
+      },
+      "old_accept": true,
+      "corrected_accept": false,
+      "expected_old_accept": true,
+      "expected_corrected_accept": false,
+      "old_reason": "qualified",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "f84cf5d605a2ef16889ae573b7a167fc2d97d26e9886c50aa0fcadf43f8d40e8",
+      "original_log_sha256": "0badb14be0d885ee3dbc92474d46c5c71e7461b4d9a941fb29a83b71fe0fc073",
+      "pass": true
+    },
+    {
+      "fixture": "fault-missing_error",
+      "variant": "sim_exit_127",
+      "mutation": {
+        "path": "/suites/0/commands/2/exit_code",
+        "before": 0,
+        "after": 127
+      },
+      "old_accept": true,
+      "corrected_accept": false,
+      "expected_old_accept": true,
+      "expected_corrected_accept": false,
+      "old_reason": "qualified",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "59f91c6999c3150be131c36b5f9cbc069aebc6b4e1560adc4baee473942b756b",
+      "original_log_sha256": "0badb14be0d885ee3dbc92474d46c5c71e7461b4d9a941fb29a83b71fe0fc073",
+      "pass": true
+    },
+    {
+      "fixture": "fault-missing_error",
+      "variant": "sim_exit_-11",
+      "mutation": {
+        "path": "/suites/0/commands/2/exit_code",
+        "before": 0,
+        "after": -11
+      },
+      "old_accept": true,
+      "corrected_accept": false,
+      "expected_old_accept": true,
+      "expected_corrected_accept": false,
+      "old_reason": "qualified",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "e05c3687ed254c12a19b3cf2a91331e5d2571ebdf0a4dcca2a0dbc26f7c505b0",
+      "original_log_sha256": "0badb14be0d885ee3dbc92474d46c5c71e7461b4d9a941fb29a83b71fe0fc073",
+      "pass": true
+    },
+    {
+      "fixture": "fault-missing_error",
+      "variant": "sim_timeout",
+      "mutation": {
+        "path": "/suites/0/commands/2/timed_out",
+        "before": false,
+        "after": true
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "078eb00bd8a746b7354e02430996fd2d300f5f80d245edf65e77135b6977cc6b",
+      "original_log_sha256": "0badb14be0d885ee3dbc92474d46c5c71e7461b4d9a941fb29a83b71fe0fc073",
+      "pass": true
+    },
+    {
+      "fixture": "fault-missing_error",
+      "variant": "incomplete_tools",
+      "mutation": {
+        "path": "/suites/0/commands/2",
+        "before": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.ahb_uvm_top",
+            "+PROGRAM=C:\\short\\ahb-uvm-fresh-run-v3-20261110\\fault-missing_error\\child\\fault-missing_error\\program.txt",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /ahb_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\ahb-uvm-fresh-run-v3-20261110\\fault-missing_error\\child\\fault-missing_error",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "0badb14be0d885ee3dbc92474d46c5c71e7461b4d9a941fb29a83b71fe0fc073"
+        },
+        "after": "REMOVED"
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "2a99edd3cd9a068b791c8f3eb224b22854a4f0c98241f7c6dcfa7b4e278c67dc",
+      "original_log_sha256": "0badb14be0d885ee3dbc92474d46c5c71e7461b4d9a941fb29a83b71fe0fc073",
+      "pass": true
+    },
+    {
+      "fixture": "fault-missing_error",
+      "variant": "compile_exit_127",
+      "mutation": {
+        "path": "/suites/0/commands/1/exit_code",
+        "before": 0,
+        "after": 127
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "b3f7d7690a42d80f194fd4cb6f7e04a987d3e4638c04f776b58d4556a34a503b",
+      "original_log_sha256": "0badb14be0d885ee3dbc92474d46c5c71e7461b4d9a941fb29a83b71fe0fc073",
+      "pass": true
+    },
+    {
+      "fixture": "fault-missing_error",
+      "variant": "library_exit_127",
+      "mutation": {
+        "path": "/suites/0/commands/0/exit_code",
+        "before": 0,
+        "after": 127
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "dfe9efd634dfb9fddda3f637363ed799b2af87359635d5e90e32a9564e56e244",
+      "original_log_sha256": "0badb14be0d885ee3dbc92474d46c5c71e7461b4d9a941fb29a83b71fe0fc073",
+      "pass": true
+    },
+    {
+      "fixture": "fault-missing_error",
+      "variant": "compile_timeout",
+      "mutation": {
+        "path": "/suites/0/commands/1/timed_out",
+        "before": false,
+        "after": true
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "4f9d6a5de6a717838b693a9da586c145527abf8f706a956bba584bec079bd648",
+      "original_log_sha256": "0badb14be0d885ee3dbc92474d46c5c71e7461b4d9a941fb29a83b71fe0fc073",
+      "pass": true
+    },
+    {
+      "fixture": "fault-missing_error",
+      "variant": "missing_sim_exit",
+      "mutation": {
+        "path": "/suites/0/commands/2/exit_code",
+        "before": 0,
+        "after": "REMOVED"
+      },
+      "old_accept": true,
+      "corrected_accept": false,
+      "expected_old_accept": true,
+      "expected_corrected_accept": false,
+      "old_reason": "qualified",
+      "corrected_reason": "KeyError: 'exit_code'",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "d2d1b43b2f9e697775333ea2ce13efb6c3f4fc1c6150a31599f4d5bf7842e248",
+      "original_log_sha256": "0badb14be0d885ee3dbc92474d46c5c71e7461b4d9a941fb29a83b71fe0fc073",
+      "pass": true
+    },
+    {
+      "fixture": "fault-missing_error",
+      "variant": "wrong_source_revision",
+      "mutation": {
+        "path": "/source_revision",
+        "before": "d403d88a71e7c55a46641366007ebd0af9e444a4",
+        "after": "0000000000000000000000000000000000000000"
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "1c9bd0878bbf28e23dcfbf19d88b6eb0c3c08b519003fe0ab4cac78113eed161",
+      "original_log_sha256": "0badb14be0d885ee3dbc92474d46c5c71e7461b4d9a941fb29a83b71fe0fc073",
+      "pass": true
+    },
+    {
+      "fixture": "fault-missing_error",
+      "variant": "unexpected_diagnostic",
+      "mutation": {
+        "path": "log_append",
+        "after": "** Error: injected unrelated fixture diagnostic"
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "99ee07071aee8807592ecb77740de29591bea9193cb7cd8fc9e8e8d9fe278331",
+      "original_log_sha256": "0badb14be0d885ee3dbc92474d46c5c71e7461b4d9a941fb29a83b71fe0fc073",
+      "pass": true
+    },
+    {
+      "fixture": "fault-read_data",
+      "variant": "original",
+      "mutation": null,
+      "old_accept": true,
+      "corrected_accept": true,
+      "expected_old_accept": true,
+      "expected_corrected_accept": true,
+      "old_reason": "qualified",
+      "corrected_reason": "qualified",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "9ff368b1e0ac76e1db8a1c8fd6c6a88af7079c5cdfbff8c6d957d8da4e4e2ab6",
+      "original_log_sha256": "6e4596a73c5b9152b500502dce7441e911eedaac144f48ec6676851a9b43bbf5",
+      "pass": true
+    },
+    {
+      "fixture": "fault-read_data",
+      "variant": "sim_exit_211",
+      "mutation": {
+        "path": "/suites/0/commands/2/exit_code",
+        "before": 0,
+        "after": 211
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "8ee07d26f76089ae0503c02645cf2aedc88ae9974fdddd301e7d402251d0d517",
+      "original_log_sha256": "6e4596a73c5b9152b500502dce7441e911eedaac144f48ec6676851a9b43bbf5",
+      "pass": true
+    },
+    {
+      "fixture": "fault-read_data",
+      "variant": "sim_exit_127",
+      "mutation": {
+        "path": "/suites/0/commands/2/exit_code",
+        "before": 0,
+        "after": 127
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "c31ec7c1ee3933d93ed7c3d8b6b55679813a6fb8b85eafaffe3c4bce55171344",
+      "original_log_sha256": "6e4596a73c5b9152b500502dce7441e911eedaac144f48ec6676851a9b43bbf5",
+      "pass": true
+    },
+    {
+      "fixture": "fault-read_data",
+      "variant": "sim_exit_-11",
+      "mutation": {
+        "path": "/suites/0/commands/2/exit_code",
+        "before": 0,
+        "after": -11
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "e93223dfc5addcf607644c89c074d0bab0c43aebb8968b44bc52e11804edc598",
+      "original_log_sha256": "6e4596a73c5b9152b500502dce7441e911eedaac144f48ec6676851a9b43bbf5",
+      "pass": true
+    },
+    {
+      "fixture": "fault-read_data",
+      "variant": "sim_timeout",
+      "mutation": {
+        "path": "/suites/0/commands/2/timed_out",
+        "before": false,
+        "after": true
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "aa746894f0ec0c16e4b9520219f508df05a5528c6b18105f30ccb47d746627ed",
+      "original_log_sha256": "6e4596a73c5b9152b500502dce7441e911eedaac144f48ec6676851a9b43bbf5",
+      "pass": true
+    },
+    {
+      "fixture": "fault-read_data",
+      "variant": "incomplete_tools",
+      "mutation": {
+        "path": "/suites/0/commands/2",
+        "before": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.ahb_uvm_top",
+            "+PROGRAM=C:\\short\\ahb-uvm-fresh-run-v3-20261110\\fault-read_data\\child\\fault-read_data\\program.txt",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /ahb_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\ahb-uvm-fresh-run-v3-20261110\\fault-read_data\\child\\fault-read_data",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "6e4596a73c5b9152b500502dce7441e911eedaac144f48ec6676851a9b43bbf5"
+        },
+        "after": "REMOVED"
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "0dec6458b575a7cc1535c2ef4d7c3065f73db900ccb18e49ce8de0094a055d5d",
+      "original_log_sha256": "6e4596a73c5b9152b500502dce7441e911eedaac144f48ec6676851a9b43bbf5",
+      "pass": true
+    },
+    {
+      "fixture": "fault-read_data",
+      "variant": "compile_exit_127",
+      "mutation": {
+        "path": "/suites/0/commands/1/exit_code",
+        "before": 0,
+        "after": 127
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "5bae12c7d79b972331739cf7b3b323dcf6f7b934be8b8082ed1fa65d9f2f6d44",
+      "original_log_sha256": "6e4596a73c5b9152b500502dce7441e911eedaac144f48ec6676851a9b43bbf5",
+      "pass": true
+    },
+    {
+      "fixture": "fault-read_data",
+      "variant": "library_exit_127",
+      "mutation": {
+        "path": "/suites/0/commands/0/exit_code",
+        "before": 0,
+        "after": 127
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "e4d282dcf58378bed598f99c86a006783d7dbef6c9e282b62967b0848f2bc10d",
+      "original_log_sha256": "6e4596a73c5b9152b500502dce7441e911eedaac144f48ec6676851a9b43bbf5",
+      "pass": true
+    },
+    {
+      "fixture": "fault-read_data",
+      "variant": "compile_timeout",
+      "mutation": {
+        "path": "/suites/0/commands/1/timed_out",
+        "before": false,
+        "after": true
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "1ea1b84968b1692379f553bb16d78b188d144c716e4c456ec87c3f4a04e12b7d",
+      "original_log_sha256": "6e4596a73c5b9152b500502dce7441e911eedaac144f48ec6676851a9b43bbf5",
+      "pass": true
+    },
+    {
+      "fixture": "fault-read_data",
+      "variant": "missing_sim_exit",
+      "mutation": {
+        "path": "/suites/0/commands/2/exit_code",
+        "before": 0,
+        "after": "REMOVED"
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "KeyError: 'exit_code'",
+      "corrected_reason": "KeyError: 'exit_code'",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "a2b2ffffb43eda34fc7047a01bb55b44addf37232231d73d64f824c5ce958397",
+      "original_log_sha256": "6e4596a73c5b9152b500502dce7441e911eedaac144f48ec6676851a9b43bbf5",
+      "pass": true
+    },
+    {
+      "fixture": "fault-read_data",
+      "variant": "wrong_source_revision",
+      "mutation": {
+        "path": "/source_revision",
+        "before": "d403d88a71e7c55a46641366007ebd0af9e444a4",
+        "after": "0000000000000000000000000000000000000000"
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "f2b7eb7e172191768342684b39792a9c5ebcd3023149775b4d124fd1f85a6063",
+      "original_log_sha256": "6e4596a73c5b9152b500502dce7441e911eedaac144f48ec6676851a9b43bbf5",
+      "pass": true
+    },
+    {
+      "fixture": "fault-read_data",
+      "variant": "unexpected_diagnostic",
+      "mutation": {
+        "path": "log_append",
+        "after": "** Error: injected unrelated fixture diagnostic"
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "9ff368b1e0ac76e1db8a1c8fd6c6a88af7079c5cdfbff8c6d957d8da4e4e2ab6",
+      "original_log_sha256": "6e4596a73c5b9152b500502dce7441e911eedaac144f48ec6676851a9b43bbf5",
+      "pass": true
+    },
+    {
+      "fixture": "fault-missing_marker",
+      "variant": "original",
+      "mutation": null,
+      "old_accept": true,
+      "corrected_accept": true,
+      "expected_old_accept": true,
+      "expected_corrected_accept": true,
+      "old_reason": "qualified",
+      "corrected_reason": "qualified",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "8b98e5e13825c6b9e0cc4e7ac8f529f263bc08c90034c24a5222ef95068536d9",
+      "original_log_sha256": "9f01386199e482204f16a71d1f02ef02e7e1925ca3f566b0fde690747bf499bb",
+      "pass": true
+    },
+    {
+      "fixture": "fault-missing_marker",
+      "variant": "sim_exit_211",
+      "mutation": {
+        "path": "/suites/0/commands/2/exit_code",
+        "before": 0,
+        "after": 211
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "ece1c286f22e7ad898bd96400def0e1c8884f887aae05a61529a62c21cc65ffe",
+      "original_log_sha256": "9f01386199e482204f16a71d1f02ef02e7e1925ca3f566b0fde690747bf499bb",
+      "pass": true
+    },
+    {
+      "fixture": "fault-missing_marker",
+      "variant": "sim_exit_127",
+      "mutation": {
+        "path": "/suites/0/commands/2/exit_code",
+        "before": 0,
+        "after": 127
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "6d2b3ceb20138237fd85b92dca560d16607e80f7a6b899e3edde79dbb8daf408",
+      "original_log_sha256": "9f01386199e482204f16a71d1f02ef02e7e1925ca3f566b0fde690747bf499bb",
+      "pass": true
+    },
+    {
+      "fixture": "fault-missing_marker",
+      "variant": "sim_exit_-11",
+      "mutation": {
+        "path": "/suites/0/commands/2/exit_code",
+        "before": 0,
+        "after": -11
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "66b4aed9c2fedf216fd1aae84cf84c5edf9f2aa2e47a2f945138d9fe5f1b3b35",
+      "original_log_sha256": "9f01386199e482204f16a71d1f02ef02e7e1925ca3f566b0fde690747bf499bb",
+      "pass": true
+    },
+    {
+      "fixture": "fault-missing_marker",
+      "variant": "sim_timeout",
+      "mutation": {
+        "path": "/suites/0/commands/2/timed_out",
+        "before": false,
+        "after": true
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "558f5cc8ad3956db272daf9f44f243baf9252620966d802440d6b6d0fbb6417a",
+      "original_log_sha256": "9f01386199e482204f16a71d1f02ef02e7e1925ca3f566b0fde690747bf499bb",
+      "pass": true
+    },
+    {
+      "fixture": "fault-missing_marker",
+      "variant": "incomplete_tools",
+      "mutation": {
+        "path": "/suites/0/commands/2",
+        "before": {
+          "command": [
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\win64\\vsim.exe",
+            "-c",
+            "-onfinish",
+            "exit",
+            "-voptargs=+acc",
+            "-sv_seed",
+            "682016495",
+            "-L",
+            "C:\\MXR\\Quartus\\25.1\\questa_fse\\uvm-1.2",
+            "work.ahb_uvm_top",
+            "+PROGRAM=C:\\short\\ahb-uvm-fresh-run-v3-20261110\\fault-missing_marker\\child\\fault-missing_marker\\program.txt",
+            "-do",
+            "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /ahb_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0"
+          ],
+          "cwd": "C:\\short\\ahb-uvm-fresh-run-v3-20261110\\fault-missing_marker\\child\\fault-missing_marker",
+          "exit_code": 0,
+          "timed_out": false,
+          "log": "2.log",
+          "sha256": "9f01386199e482204f16a71d1f02ef02e7e1925ca3f566b0fde690747bf499bb"
+        },
+        "after": "REMOVED"
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "eac7a45d9aa2308e11468f818ed9589c729f7cd2b476a1e704ead204cd510f98",
+      "original_log_sha256": "9f01386199e482204f16a71d1f02ef02e7e1925ca3f566b0fde690747bf499bb",
+      "pass": true
+    },
+    {
+      "fixture": "fault-missing_marker",
+      "variant": "compile_exit_127",
+      "mutation": {
+        "path": "/suites/0/commands/1/exit_code",
+        "before": 0,
+        "after": 127
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "8d20528b9a67a95e93f3c3151ff474368453f4fa3e59e8cc0b2c57eba55f5c49",
+      "original_log_sha256": "9f01386199e482204f16a71d1f02ef02e7e1925ca3f566b0fde690747bf499bb",
+      "pass": true
+    },
+    {
+      "fixture": "fault-missing_marker",
+      "variant": "library_exit_127",
+      "mutation": {
+        "path": "/suites/0/commands/0/exit_code",
+        "before": 0,
+        "after": 127
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "67b4a4c4462f7490968af7d6acce1f81d9ad9490b3c48a3756f160444568eed5",
+      "original_log_sha256": "9f01386199e482204f16a71d1f02ef02e7e1925ca3f566b0fde690747bf499bb",
+      "pass": true
+    },
+    {
+      "fixture": "fault-missing_marker",
+      "variant": "compile_timeout",
+      "mutation": {
+        "path": "/suites/0/commands/1/timed_out",
+        "before": false,
+        "after": true
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "f3929bc4a0c41032a70c5bb2a77b0851a0b89774d34e39b488d722b854a0d081",
+      "original_log_sha256": "9f01386199e482204f16a71d1f02ef02e7e1925ca3f566b0fde690747bf499bb",
+      "pass": true
+    },
+    {
+      "fixture": "fault-missing_marker",
+      "variant": "missing_sim_exit",
+      "mutation": {
+        "path": "/suites/0/commands/2/exit_code",
+        "before": 0,
+        "after": "REMOVED"
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "KeyError: 'exit_code'",
+      "corrected_reason": "KeyError: 'exit_code'",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "331c46a9d4ce0343a22149fb0e6c80d105fd561d21e04f3a34bb38591439db95",
+      "original_log_sha256": "9f01386199e482204f16a71d1f02ef02e7e1925ca3f566b0fde690747bf499bb",
+      "pass": true
+    },
+    {
+      "fixture": "fault-missing_marker",
+      "variant": "wrong_source_revision",
+      "mutation": {
+        "path": "/source_revision",
+        "before": "d403d88a71e7c55a46641366007ebd0af9e444a4",
+        "after": "0000000000000000000000000000000000000000"
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "225219faed0d011b9a1b32217f4b8f9fbd14d0e77cddd69cc1a55bb4239de214",
+      "original_log_sha256": "9f01386199e482204f16a71d1f02ef02e7e1925ca3f566b0fde690747bf499bb",
+      "pass": true
+    },
+    {
+      "fixture": "fault-missing_marker",
+      "variant": "unexpected_diagnostic",
+      "mutation": {
+        "path": "log_append",
+        "after": "** Error: injected unrelated fixture diagnostic"
+      },
+      "old_accept": false,
+      "corrected_accept": false,
+      "expected_old_accept": false,
+      "expected_corrected_accept": false,
+      "old_reason": "AssertionError: ",
+      "corrected_reason": "AssertionError: ",
+      "child_wrapper_exit": 1,
+      "fixture_child_sha256": "8b98e5e13825c6b9e0cc4e7ac8f529f263bc08c90034c24a5222ef95068536d9",
+      "original_log_sha256": "9f01386199e482204f16a71d1f02ef02e7e1925ca3f566b0fde690747bf499bb",
+      "pass": true
+    }
+  ],
+  "checks": 48,
+  "failures": 0,
+  "exit_code": 0,
+  "status": "PASS"
+}

@@ -1,0 +1,11 @@
+--- locked/rtl/design.sv
++++ disposable/rtl/design.sv
+@@ -56,7 +56,7 @@
+     else if(HREADY)
+     begin
+ 
+-        if(transfer_q && write_q && !error_q)
++        if(transfer_q && write_q)
+             memory[index_q] <= HWDATA;
+ 
+         transfer_q <= HSEL && HTRANS[1];

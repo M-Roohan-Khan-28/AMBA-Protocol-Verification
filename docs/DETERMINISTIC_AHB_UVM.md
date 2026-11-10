@@ -163,3 +163,20 @@ git -C C:\short\ahb-corrected-source-new checkout --detach 3eb0e520a880b2cfb13d3
 & $python C:\short\ahb-corrected-source-new\scripts\run_ahb_uvm.py --expected-env-sha 3eb0e520a880b2cfb13d304bbeea119dbe917fb3 --output C:\short\ahb-corrected-output-new
 if ($LASTEXITCODE -ne 0) { throw 'Required AHB milestone failed or was blocked' }
 ```
+
+## Merged-source closeout - 10 November 2026
+
+[AMBA #14](https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/pull/14) merged at `e58c30428d2a6348d3983c8ee3fbf9e1905629d2`;
+[AHB documentation #3](https://github.com/M-Roohan-Khan-28/AHB-Lite-RAM-Interface/pull/3) merged at `66b37e1b21506c46ce7e1e68e582ffdc716a2c57`.
+The [new merged-source report](../reports/ahb-uvm-merged-2026-11-10/SUMMARY.md)
+records **44/44 named required PASS**, aggregate/outer wrapper exit 0, from a fresh
+clean detached GitHub clone. All 23 execution hashes match qualified `3eb0e520a880b2cfb13d304bbeea119dbe917fb3`.
+Runner `3eb0e520a880b2cfb13d304bbeea119dbe917fb3` and inventory `33f33d6034165085833d5f16390f6a625d15a2bc` remain distinct;
+DUT `659fba67ce85a01643cceca2c8d1e67ea3903995` is unchanged. The abnormal-process-exit runner defect is resolved.
+The new 48 fixture checks, 45 HDL scenarios / 10,497 comparisons, 23 SVA,
+six scoreboard controls, 11 strict fault parents and portable 924-comparison gate
+all passed. Every fault child exits 1 with three tool exits 0 and no timeout.
+All request/retirement/reset accounting matches the qualified corrective run.
+[Reproduce this actual merge](../reports/ahb-uvm-merged-2026-11-10/REPRODUCE.md).
+Earlier commands above reproduce their separately labelled historical evidence.
+All historical reports, prior releases, NOT RUN statuses and scope limits remain.
