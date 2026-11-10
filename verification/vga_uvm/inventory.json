@@ -1,0 +1,408 @@
+{
+  "seed": "0x28A6BEEF",
+  "input_period_ns": 10,
+  "required_substeps": [
+    {
+      "name": "runner-qualification",
+      "kind": "runner"
+    },
+    {
+      "name": "sva-hsync",
+      "kind": "sva",
+      "scenario": "hsync",
+      "expected_sva": [
+        "HSYNC"
+      ]
+    },
+    {
+      "name": "sva-vsync",
+      "kind": "sva",
+      "scenario": "vsync",
+      "expected_sva": [
+        "VSYNC"
+      ]
+    },
+    {
+      "name": "sva-active",
+      "kind": "sva",
+      "scenario": "active",
+      "expected_sva": [
+        "ACTIVE"
+      ]
+    },
+    {
+      "name": "sva-blank",
+      "kind": "sva",
+      "scenario": "blank",
+      "expected_sva": [
+        "BLANK"
+      ]
+    },
+    {
+      "name": "sva-rgb",
+      "kind": "sva",
+      "scenario": "rgb",
+      "expected_sva": [
+        "RGB"
+      ]
+    },
+    {
+      "name": "sva-reset",
+      "kind": "sva",
+      "scenario": "reset",
+      "expected_sva": [
+        "RESET"
+      ]
+    },
+    {
+      "name": "sva-legal_reset_write",
+      "kind": "sva",
+      "scenario": "legal_reset_write",
+      "expected_sva": []
+    },
+    {
+      "name": "sva-legal_reset_nonblack",
+      "kind": "sva",
+      "scenario": "legal_reset_nonblack",
+      "expected_sva": []
+    },
+    {
+      "name": "sva-legal_current_write",
+      "kind": "sva",
+      "scenario": "legal_current_write",
+      "expected_sva": []
+    },
+    {
+      "name": "sva-legal_inactive_inputs",
+      "kind": "sva",
+      "scenario": "legal_inactive_inputs",
+      "expected_sva": []
+    },
+    {
+      "name": "smoke",
+      "kind": "functional",
+      "group": "smoke",
+      "cases": [
+        "smoke"
+      ]
+    },
+    {
+      "name": "functional",
+      "kind": "functional",
+      "group": "functional",
+      "cases": [
+        "initial_image",
+        "horizontal_boundaries",
+        "line_wrap",
+        "vertical_active_boundary",
+        "vertical_sync_boundaries",
+        "frame_wrap",
+        "consecutive_second_frame",
+        "pattern_low_load",
+        "invalid_low_sideeffects",
+        "pattern_low_scan",
+        "pattern_high_load",
+        "invalid_high_sideeffects",
+        "pattern_high_scan",
+        "all_rgb332",
+        "back_to_back_edges",
+        "held_enable",
+        "inactive_input_changes",
+        "divider_phase_writes",
+        "current_previous_future",
+        "horizontal_blanking_write",
+        "active_reset",
+        "hsync_reset",
+        "vertical_blanking_write_and_sync_reset",
+        "asynchronous_pending_write",
+        "held_reset_writes",
+        "coincident_reset_write",
+        "release_first_four_clocks",
+        "repeated_reset_retention",
+        "post_reset_operation"
+      ]
+    },
+    {
+      "name": "control-framewrap",
+      "kind": "functional",
+      "group": "framewrap",
+      "cases": [
+        "framewrap"
+      ]
+    },
+    {
+      "name": "control-horizontal",
+      "kind": "functional",
+      "group": "horizontal",
+      "cases": [
+        "horizontal"
+      ]
+    },
+    {
+      "name": "control-intent",
+      "kind": "functional",
+      "group": "intent",
+      "cases": [
+        "intent"
+      ]
+    },
+    {
+      "name": "control-invalid",
+      "kind": "functional",
+      "group": "invalid",
+      "cases": [
+        "invalid"
+      ]
+    },
+    {
+      "name": "control-phase",
+      "kind": "functional",
+      "group": "phase",
+      "cases": [
+        "phase"
+      ]
+    },
+    {
+      "name": "control-scale",
+      "kind": "functional",
+      "group": "scale",
+      "cases": [
+        "scale"
+      ]
+    },
+    {
+      "name": "control-vertical",
+      "kind": "functional",
+      "group": "vertical",
+      "cases": [
+        "vertical"
+      ]
+    },
+    {
+      "name": "fault-hsync",
+      "kind": "fault",
+      "fault": "hsync",
+      "group": "horizontal",
+      "cases": [
+        "horizontal"
+      ],
+      "expected_fatal": "VGA_HSYNC",
+      "expected_sva": [
+        "HSYNC"
+      ],
+      "passing_control": "control-horizontal"
+    },
+    {
+      "name": "fault-vsync",
+      "kind": "fault",
+      "fault": "vsync",
+      "group": "vertical",
+      "cases": [
+        "vertical"
+      ],
+      "expected_fatal": "VGA_VSYNC",
+      "expected_sva": [
+        "VSYNC"
+      ],
+      "passing_control": "control-vertical"
+    },
+    {
+      "name": "fault-frame_wrap",
+      "kind": "fault",
+      "fault": "frame_wrap",
+      "group": "framewrap",
+      "cases": [
+        "framewrap"
+      ],
+      "expected_fatal": "VGA_ACTIVE",
+      "expected_sva": [
+        "ACTIVE",
+        "BLANK"
+      ],
+      "passing_control": "control-framewrap"
+    },
+    {
+      "name": "fault-divider",
+      "kind": "fault",
+      "fault": "divider",
+      "group": "scale",
+      "cases": [
+        "scale"
+      ],
+      "expected_fatal": "VGA_RGB",
+      "expected_sva": [
+        "RGB"
+      ],
+      "passing_control": "control-scale"
+    },
+    {
+      "name": "fault-scale",
+      "kind": "fault",
+      "fault": "scale",
+      "group": "scale",
+      "cases": [
+        "scale"
+      ],
+      "expected_fatal": "VGA_RGB",
+      "expected_sva": [
+        "RGB"
+      ],
+      "passing_control": "control-scale"
+    },
+    {
+      "name": "fault-rgb",
+      "kind": "fault",
+      "fault": "rgb",
+      "group": "smoke",
+      "cases": [
+        "smoke"
+      ],
+      "expected_fatal": "VGA_RESET",
+      "expected_sva": [
+        "RESET"
+      ],
+      "passing_control": "smoke"
+    },
+    {
+      "name": "fault-blank",
+      "kind": "fault",
+      "fault": "blank",
+      "group": "horizontal",
+      "cases": [
+        "horizontal"
+      ],
+      "expected_fatal": "VGA_BLANK",
+      "expected_sva": [
+        "BLANK"
+      ],
+      "passing_control": "control-horizontal"
+    },
+    {
+      "name": "fault-invalid_alias",
+      "kind": "fault",
+      "fault": "invalid_alias",
+      "group": "invalid",
+      "cases": [
+        "invalid"
+      ],
+      "expected_fatal": "VGA_RESET",
+      "expected_sva": [
+        "RESET"
+      ],
+      "passing_control": "control-invalid"
+    },
+    {
+      "name": "fault-clear_reset",
+      "kind": "fault",
+      "fault": "clear_reset",
+      "group": "smoke",
+      "cases": [
+        "smoke"
+      ],
+      "expected_fatal": "VGA_RESET",
+      "expected_sva": [
+        "RESET"
+      ],
+      "passing_control": "smoke"
+    },
+    {
+      "name": "fault-disabled_reset_write",
+      "kind": "fault",
+      "fault": "disabled_reset_write",
+      "group": "smoke",
+      "cases": [
+        "smoke"
+      ],
+      "expected_fatal": "VGA_RESET",
+      "expected_sva": [
+        "RESET"
+      ],
+      "passing_control": "smoke"
+    },
+    {
+      "name": "fault-gated_write",
+      "kind": "fault",
+      "fault": "gated_write",
+      "group": "phase",
+      "cases": [
+        "phase"
+      ],
+      "expected_fatal": "VGA_RGB",
+      "expected_sva": [
+        "RGB"
+      ],
+      "passing_control": "control-phase"
+    },
+    {
+      "name": "fault-driver_alias",
+      "kind": "fault",
+      "fault": "driver_alias",
+      "group": "intent",
+      "cases": [
+        "intent"
+      ],
+      "expected_fatal": "VGA_INTENT",
+      "expected_sva": [],
+      "passing_control": "control-intent"
+    },
+    {
+      "name": "fault-missing_marker",
+      "kind": "fault",
+      "fault": "missing_marker",
+      "group": "smoke",
+      "cases": [
+        "smoke"
+      ],
+      "expected_fatal": "",
+      "expected_sva": [],
+      "passing_control": "smoke"
+    },
+    {
+      "name": "portable",
+      "kind": "portable"
+    }
+  ],
+  "functional_cases": [
+    "smoke",
+    "initial_image",
+    "horizontal_boundaries",
+    "line_wrap",
+    "vertical_active_boundary",
+    "vertical_sync_boundaries",
+    "frame_wrap",
+    "consecutive_second_frame",
+    "pattern_low_load",
+    "invalid_low_sideeffects",
+    "pattern_low_scan",
+    "pattern_high_load",
+    "invalid_high_sideeffects",
+    "pattern_high_scan",
+    "all_rgb332",
+    "back_to_back_edges",
+    "held_enable",
+    "inactive_input_changes",
+    "divider_phase_writes",
+    "current_previous_future",
+    "horizontal_blanking_write",
+    "active_reset",
+    "hsync_reset",
+    "vertical_blanking_write_and_sync_reset",
+    "asynchronous_pending_write",
+    "held_reset_writes",
+    "coincident_reset_write",
+    "release_first_four_clocks",
+    "repeated_reset_retention",
+    "post_reset_operation"
+  ],
+  "fault_control_groups": [
+    "framewrap",
+    "horizontal",
+    "intent",
+    "invalid",
+    "phase",
+    "scale",
+    "smoke",
+    "vertical"
+  ],
+  "scope": "Bounded internal framebuffer/raster simulation contract"
+}
