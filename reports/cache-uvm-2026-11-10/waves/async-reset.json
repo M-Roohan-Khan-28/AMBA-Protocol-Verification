@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "origin": "simulator",
+  "source_filename": "capture.vcd",
+  "source_sha256": "68ee9b7342449be21d5ead15318e58f3a9ef8714ab789ff5dce81e2e5db22696",
+  "timescale": "1ps",
+  "start_tick": 44860000,
+  "end_tick": 45300000,
+  "source_final_tick": 51605000,
+  "signals": [
+    {
+      "name": "cache_uvm_top.bus.clk",
+      "code": "\"",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_uvm_top.bus.reset",
+      "code": "#",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_uvm_top.bus.write",
+      "code": "$",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_uvm_top.bus.way_select",
+      "code": "%",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_uvm_top.bus.index[1]",
+      "code": "&",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_uvm_top.bus.index[0]",
+      "code": "'",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_uvm_top.bus.tag[2]",
+      "code": "(",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_uvm_top.bus.tag[1]",
+      "code": ")",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_uvm_top.bus.tag[0]",
+      "code": "*",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_uvm_top.bus.data_in[7]",
+      "code": "+",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_uvm_top.bus.data_in[6]",
+      "code": ",",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_uvm_top.bus.data_in[5]",
+      "code": "-",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_uvm_top.bus.data_in[4]",
+      "code": ".",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_uvm_top.bus.data_in[3]",
+      "code": "/",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_uvm_top.bus.data_in[2]",
+      "code": "0",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_uvm_top.bus.data_in[1]",
+      "code": "1",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_uvm_top.bus.data_in[0]",
+      "code": "2",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_uvm_top.bus.hit",
+      "code": "3",
+      "width": 1,
+      "kind": "reg",
+      "bit_range": ""
+    },
+    {
+      "name": "cache_uvm_top.bus.data_out",
+      "code": "4",
+      "width": 8,
+      "kind": "reg",
+      "bit_range": "[7:0]"
+    }
+  ],
+  "same_tick_collapses": 0,
+  "functional_result": "NOT_ASSESSED_BY_RENDERER"
+}

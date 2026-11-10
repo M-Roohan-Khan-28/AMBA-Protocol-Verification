@@ -1,0 +1,19 @@
+{
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\cache-uvm-fresh-20261110\\scripts\\run_cache_uvm.py",
+    "--expected-env-sha",
+    "9c74c35e0c2616a09af8824d2d85754738b5303a",
+    "--output",
+    "C:\\short\\cache-uvm-fresh-run-20261110"
+  ],
+  "cwd": "C:\\short\\cache-uvm-fresh-20261110",
+  "exit_code": 0,
+  "timed_out": false,
+  "log": "fresh-wrapper.log",
+  "sha256": "ff9dd15e67a8ef207df2ed92efbc5336076b1f8c13a5d94da928f094395cfd32",
+  "started_utc": "2026-11-10T15:14:23.068066+00:00",
+  "finished_utc": "2026-11-10T15:22:58.258931+00:00",
+  "source_revision": "9c74c35e0c2616a09af8824d2d85754738b5303a",
+  "source_clean": true
+}

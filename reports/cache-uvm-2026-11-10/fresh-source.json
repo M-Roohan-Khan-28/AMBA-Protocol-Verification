@@ -1,0 +1,24 @@
+{
+  "source": "C:\\short\\cache-uvm-fresh-20261110",
+  "revision": "9c74c35e0c2616a09af8824d2d85754738b5303a",
+  "clone": {
+    "command": [
+      "git",
+      "clone",
+      "--quiet",
+      "--config",
+      "core.longpaths=true",
+      "--config",
+      "core.autocrlf=false",
+      "https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git",
+      "C:\\short\\cache-uvm-fresh-20261110"
+    ],
+    "cwd": "C:\\R_MIGRATION_BACKUP\\Roohan_GitHub_Launch_Kit\\Roohan_GitHub_Launch_Kit\\build\\cache-uvm-20261110",
+    "exit_code": 0,
+    "timed_out": false,
+    "log": "fresh-clone.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "detached": true,
+  "clean": true
+}

@@ -1,0 +1,1 @@
+{"name":"async_lookup","observations":87,"clocks":8,"writes":8,"blocked_writes":0,"resets":1,"lookups":87,"hits":38,"misses":49,"comparisons":174}

@@ -1,0 +1,244 @@
+Reading pref.tcl
+
+# 2025.2
+
+# ** Note: (vsim-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# vsim -c -onfinish exit -voptargs="+acc" -sv_seed 682016495 -L C:\MXR\Quartus\25.1\questa_fse\uvm-1.2 work.cache_uvm_top "+PROGRAM=C:\short\cache-uvm-fresh-run-20261110\functional\program.txt" -do "onerror {quit -force -code 1}; vcd file capture.vcd; vcd add /cache_uvm_top/bus/*; run -all; vcd flush; quit -force -code 0" 
+# Start time: 20:16:58 on Nov 10,2026
+# Loading C:/Users/CG/AppData/Local/Temp\CG@DESKTOP-9KOU2NO_dpi_34824\win64_gcc-7.4.0\export_tramp.dll
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.cache_bus(fast)
+# Loading C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.uvm_pkg(fast)
+# Loading work.cache_uvm_pkg(fast)
+# Loading C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.questa_uvm_pkg(fast)
+# Loading work.cache_uvm_top(fast)
+# Loading work.cache_bus(fast__2)
+# Loading work.cache_2way(fast)
+# Loading work.cache_assertions(fast)
+# Compiling C:/Users/CG/AppData/Local/Temp\CG@DESKTOP-9KOU2NO_dpi_34824\win64_gcc-7.4.0\exportwrapper.c
+# Loading C:/Users/CG/AppData/Local/Temp\CG@DESKTOP-9KOU2NO_dpi_34824\win64_gcc-7.4.0\vsim_auto_compile.dll
+# Loading C:/MXR/Quartus/25.1/questa_fse/uvm-1.2\win64\uvm_dpi.dll
+# onerror {quit -force -code 1}
+#  Warning: onerror command for use within macro
+#  vcd file capture.vcd
+#  vcd add /cache_uvm_top/bus/*
+#  run -all
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test cache_test...
+# CACHE_CASE_START name=tuple_0_0_0 time=0
+# CACHE_CASE_PASS name=tuple_0_0_0 observations=37 writes=1 resets=1 comparisons=74 time=390000
+# CACHE_CASE_START name=tuple_0_0_1 time=390000
+# CACHE_CASE_PASS name=tuple_0_0_1 observations=38 writes=1 resets=1 comparisons=76 time=780000
+# CACHE_CASE_START name=tuple_0_0_2 time=780000
+# CACHE_CASE_PASS name=tuple_0_0_2 observations=38 writes=1 resets=1 comparisons=76 time=1170000
+# CACHE_CASE_START name=tuple_0_0_3 time=1170000
+# CACHE_CASE_PASS name=tuple_0_0_3 observations=38 writes=1 resets=1 comparisons=76 time=1560000
+# CACHE_CASE_START name=tuple_0_0_4 time=1560000
+# CACHE_CASE_PASS name=tuple_0_0_4 observations=38 writes=1 resets=1 comparisons=76 time=1950000
+# CACHE_CASE_START name=tuple_0_0_5 time=1950000
+# CACHE_CASE_PASS name=tuple_0_0_5 observations=38 writes=1 resets=1 comparisons=76 time=2340000
+# CACHE_CASE_START name=tuple_0_0_6 time=2340000
+# CACHE_CASE_PASS name=tuple_0_0_6 observations=38 writes=1 resets=1 comparisons=76 time=2730000
+# CACHE_CASE_START name=tuple_0_0_7 time=2730000
+# CACHE_CASE_PASS name=tuple_0_0_7 observations=38 writes=1 resets=1 comparisons=76 time=3120000
+# CACHE_CASE_START name=tuple_0_1_0 time=3120000
+# CACHE_CASE_PASS name=tuple_0_1_0 observations=38 writes=1 resets=1 comparisons=76 time=3510000
+# CACHE_CASE_START name=tuple_0_1_1 time=3510000
+# CACHE_CASE_PASS name=tuple_0_1_1 observations=38 writes=1 resets=1 comparisons=76 time=3900000
+# CACHE_CASE_START name=tuple_0_1_2 time=3900000
+# CACHE_CASE_PASS name=tuple_0_1_2 observations=38 writes=1 resets=1 comparisons=76 time=4290000
+# CACHE_CASE_START name=tuple_0_1_3 time=4290000
+# CACHE_CASE_PASS name=tuple_0_1_3 observations=38 writes=1 resets=1 comparisons=76 time=4680000
+# CACHE_CASE_START name=tuple_0_1_4 time=4680000
+# CACHE_CASE_PASS name=tuple_0_1_4 observations=38 writes=1 resets=1 comparisons=76 time=5070000
+# CACHE_CASE_START name=tuple_0_1_5 time=5070000
+# CACHE_CASE_PASS name=tuple_0_1_5 observations=38 writes=1 resets=1 comparisons=76 time=5460000
+# CACHE_CASE_START name=tuple_0_1_6 time=5460000
+# CACHE_CASE_PASS name=tuple_0_1_6 observations=38 writes=1 resets=1 comparisons=76 time=5850000
+# CACHE_CASE_START name=tuple_0_1_7 time=5850000
+# CACHE_CASE_PASS name=tuple_0_1_7 observations=38 writes=1 resets=1 comparisons=76 time=6240000
+# CACHE_CASE_START name=tuple_0_2_0 time=6240000
+# CACHE_CASE_PASS name=tuple_0_2_0 observations=38 writes=1 resets=1 comparisons=76 time=6630000
+# CACHE_CASE_START name=tuple_0_2_1 time=6630000
+# CACHE_CASE_PASS name=tuple_0_2_1 observations=38 writes=1 resets=1 comparisons=76 time=7020000
+# CACHE_CASE_START name=tuple_0_2_2 time=7020000
+# CACHE_CASE_PASS name=tuple_0_2_2 observations=38 writes=1 resets=1 comparisons=76 time=7410000
+# CACHE_CASE_START name=tuple_0_2_3 time=7410000
+# CACHE_CASE_PASS name=tuple_0_2_3 observations=38 writes=1 resets=1 comparisons=76 time=7800000
+# CACHE_CASE_START name=tuple_0_2_4 time=7800000
+# CACHE_CASE_PASS name=tuple_0_2_4 observations=38 writes=1 resets=1 comparisons=76 time=8190000
+# CACHE_CASE_START name=tuple_0_2_5 time=8190000
+# CACHE_CASE_PASS name=tuple_0_2_5 observations=38 writes=1 resets=1 comparisons=76 time=8580000
+# CACHE_CASE_START name=tuple_0_2_6 time=8580000
+# CACHE_CASE_PASS name=tuple_0_2_6 observations=38 writes=1 resets=1 comparisons=76 time=8970000
+# CACHE_CASE_START name=tuple_0_2_7 time=8970000
+# CACHE_CASE_PASS name=tuple_0_2_7 observations=38 writes=1 resets=1 comparisons=76 time=9360000
+# CACHE_CASE_START name=tuple_0_3_0 time=9360000
+# CACHE_CASE_PASS name=tuple_0_3_0 observations=38 writes=1 resets=1 comparisons=76 time=9750000
+# CACHE_CASE_START name=tuple_0_3_1 time=9750000
+# CACHE_CASE_PASS name=tuple_0_3_1 observations=38 writes=1 resets=1 comparisons=76 time=10140000
+# CACHE_CASE_START name=tuple_0_3_2 time=10140000
+# CACHE_CASE_PASS name=tuple_0_3_2 observations=38 writes=1 resets=1 comparisons=76 time=10530000
+# CACHE_CASE_START name=tuple_0_3_3 time=10530000
+# CACHE_CASE_PASS name=tuple_0_3_3 observations=38 writes=1 resets=1 comparisons=76 time=10920000
+# CACHE_CASE_START name=tuple_0_3_4 time=10920000
+# CACHE_CASE_PASS name=tuple_0_3_4 observations=38 writes=1 resets=1 comparisons=76 time=11310000
+# CACHE_CASE_START name=tuple_0_3_5 time=11310000
+# CACHE_CASE_PASS name=tuple_0_3_5 observations=38 writes=1 resets=1 comparisons=76 time=11700000
+# CACHE_CASE_START name=tuple_0_3_6 time=11700000
+# CACHE_CASE_PASS name=tuple_0_3_6 observations=38 writes=1 resets=1 comparisons=76 time=12090000
+# CACHE_CASE_START name=tuple_0_3_7 time=12090000
+# CACHE_CASE_PASS name=tuple_0_3_7 observations=38 writes=1 resets=1 comparisons=76 time=12480000
+# CACHE_CASE_START name=tuple_1_0_0 time=12480000
+# CACHE_CASE_PASS name=tuple_1_0_0 observations=37 writes=1 resets=1 comparisons=74 time=12870000
+# CACHE_CASE_START name=tuple_1_0_1 time=12870000
+# CACHE_CASE_PASS name=tuple_1_0_1 observations=38 writes=1 resets=1 comparisons=76 time=13260000
+# CACHE_CASE_START name=tuple_1_0_2 time=13260000
+# CACHE_CASE_PASS name=tuple_1_0_2 observations=38 writes=1 resets=1 comparisons=76 time=13650000
+# CACHE_CASE_START name=tuple_1_0_3 time=13650000
+# CACHE_CASE_PASS name=tuple_1_0_3 observations=38 writes=1 resets=1 comparisons=76 time=14040000
+# CACHE_CASE_START name=tuple_1_0_4 time=14040000
+# CACHE_CASE_PASS name=tuple_1_0_4 observations=38 writes=1 resets=1 comparisons=76 time=14430000
+# CACHE_CASE_START name=tuple_1_0_5 time=14430000
+# CACHE_CASE_PASS name=tuple_1_0_5 observations=38 writes=1 resets=1 comparisons=76 time=14820000
+# CACHE_CASE_START name=tuple_1_0_6 time=14820000
+# CACHE_CASE_PASS name=tuple_1_0_6 observations=38 writes=1 resets=1 comparisons=76 time=15210000
+# CACHE_CASE_START name=tuple_1_0_7 time=15210000
+# CACHE_CASE_PASS name=tuple_1_0_7 observations=38 writes=1 resets=1 comparisons=76 time=15600000
+# CACHE_CASE_START name=tuple_1_1_0 time=15600000
+# CACHE_CASE_PASS name=tuple_1_1_0 observations=38 writes=1 resets=1 comparisons=76 time=15990000
+# CACHE_CASE_START name=tuple_1_1_1 time=15990000
+# CACHE_CASE_PASS name=tuple_1_1_1 observations=38 writes=1 resets=1 comparisons=76 time=16380000
+# CACHE_CASE_START name=tuple_1_1_2 time=16380000
+# CACHE_CASE_PASS name=tuple_1_1_2 observations=38 writes=1 resets=1 comparisons=76 time=16770000
+# CACHE_CASE_START name=tuple_1_1_3 time=16770000
+# CACHE_CASE_PASS name=tuple_1_1_3 observations=38 writes=1 resets=1 comparisons=76 time=17160000
+# CACHE_CASE_START name=tuple_1_1_4 time=17160000
+# CACHE_CASE_PASS name=tuple_1_1_4 observations=38 writes=1 resets=1 comparisons=76 time=17550000
+# CACHE_CASE_START name=tuple_1_1_5 time=17550000
+# CACHE_CASE_PASS name=tuple_1_1_5 observations=38 writes=1 resets=1 comparisons=76 time=17940000
+# CACHE_CASE_START name=tuple_1_1_6 time=17940000
+# CACHE_CASE_PASS name=tuple_1_1_6 observations=38 writes=1 resets=1 comparisons=76 time=18330000
+# CACHE_CASE_START name=tuple_1_1_7 time=18330000
+# CACHE_CASE_PASS name=tuple_1_1_7 observations=38 writes=1 resets=1 comparisons=76 time=18720000
+# CACHE_CASE_START name=tuple_1_2_0 time=18720000
+# CACHE_CASE_PASS name=tuple_1_2_0 observations=38 writes=1 resets=1 comparisons=76 time=19110000
+# CACHE_CASE_START name=tuple_1_2_1 time=19110000
+# CACHE_CASE_PASS name=tuple_1_2_1 observations=38 writes=1 resets=1 comparisons=76 time=19500000
+# CACHE_CASE_START name=tuple_1_2_2 time=19500000
+# CACHE_CASE_PASS name=tuple_1_2_2 observations=38 writes=1 resets=1 comparisons=76 time=19890000
+# CACHE_CASE_START name=tuple_1_2_3 time=19890000
+# CACHE_CASE_PASS name=tuple_1_2_3 observations=38 writes=1 resets=1 comparisons=76 time=20280000
+# CACHE_CASE_START name=tuple_1_2_4 time=20280000
+# CACHE_CASE_PASS name=tuple_1_2_4 observations=38 writes=1 resets=1 comparisons=76 time=20670000
+# CACHE_CASE_START name=tuple_1_2_5 time=20670000
+# CACHE_CASE_PASS name=tuple_1_2_5 observations=38 writes=1 resets=1 comparisons=76 time=21060000
+# CACHE_CASE_START name=tuple_1_2_6 time=21060000
+# CACHE_CASE_PASS name=tuple_1_2_6 observations=38 writes=1 resets=1 comparisons=76 time=21450000
+# CACHE_CASE_START name=tuple_1_2_7 time=21450000
+# CACHE_CASE_PASS name=tuple_1_2_7 observations=38 writes=1 resets=1 comparisons=76 time=21840000
+# CACHE_CASE_START name=tuple_1_3_0 time=21840000
+# CACHE_CASE_PASS name=tuple_1_3_0 observations=38 writes=1 resets=1 comparisons=76 time=22230000
+# CACHE_CASE_START name=tuple_1_3_1 time=22230000
+# CACHE_CASE_PASS name=tuple_1_3_1 observations=38 writes=1 resets=1 comparisons=76 time=22620000
+# CACHE_CASE_START name=tuple_1_3_2 time=22620000
+# CACHE_CASE_PASS name=tuple_1_3_2 observations=38 writes=1 resets=1 comparisons=76 time=23010000
+# CACHE_CASE_START name=tuple_1_3_3 time=23010000
+# CACHE_CASE_PASS name=tuple_1_3_3 observations=38 writes=1 resets=1 comparisons=76 time=23400000
+# CACHE_CASE_START name=tuple_1_3_4 time=23400000
+# CACHE_CASE_PASS name=tuple_1_3_4 observations=38 writes=1 resets=1 comparisons=76 time=23790000
+# CACHE_CASE_START name=tuple_1_3_5 time=23790000
+# CACHE_CASE_PASS name=tuple_1_3_5 observations=38 writes=1 resets=1 comparisons=76 time=24180000
+# CACHE_CASE_START name=tuple_1_3_6 time=24180000
+# CACHE_CASE_PASS name=tuple_1_3_6 observations=38 writes=1 resets=1 comparisons=76 time=24570000
+# CACHE_CASE_START name=tuple_1_3_7 time=24570000
+# CACHE_CASE_PASS name=tuple_1_3_7 observations=38 writes=1 resets=1 comparisons=76 time=24960000
+# CACHE_CASE_START name=data_256 time=24960000
+# CACHE_CASE_PASS name=data_256 observations=1283 writes=256 resets=1 comparisons=2566 time=37800000
+# CACHE_CASE_START name=overwrite time=37800000
+# CACHE_CASE_PASS name=overwrite observations=89 writes=6 resets=1 comparisons=178 time=38700000
+# CACHE_CASE_START name=duplicate_0 time=38700000
+# CACHE_CASE_PASS name=duplicate_0 observations=15 writes=3 resets=1 comparisons=30 time=38860000
+# CACHE_CASE_START name=duplicate_1 time=38860000
+# CACHE_CASE_PASS name=duplicate_1 observations=15 writes=3 resets=1 comparisons=30 time=39020000
+# CACHE_CASE_START name=duplicate_2 time=39020000
+# CACHE_CASE_PASS name=duplicate_2 observations=15 writes=3 resets=1 comparisons=30 time=39180000
+# CACHE_CASE_START name=duplicate_3 time=39180000
+# CACHE_CASE_PASS name=duplicate_3 observations=15 writes=3 resets=1 comparisons=30 time=39340000
+# CACHE_CASE_START name=entry_isolation time=39340000
+# CACHE_CASE_PASS name=entry_isolation observations=339 writes=16 resets=1 comparisons=678 time=42740000
+# CACHE_CASE_START name=async_lookup time=42740000
+# CACHE_CASE_PASS name=async_lookup observations=87 writes=8 resets=1 comparisons=174 time=43620000
+# CACHE_CASE_START name=no_write time=43620000
+# CACHE_CASE_PASS name=no_write observations=123 writes=8 resets=1 comparisons=246 time=44860000
+# CACHE_CASE_START name=reset_pending time=44860000
+# CACHE_CASE_PASS name=reset_pending observations=42 writes=1 resets=2 comparisons=84 time=45300000
+# CACHE_CASE_START name=reset_coincident time=45300000
+# CACHE_CASE_PASS name=reset_coincident observations=40 writes=1 resets=2 comparisons=80 time=45720000
+# CACHE_CASE_START name=held_writes time=45720000
+# CACHE_CASE_PASS name=held_writes observations=47 writes=6 resets=1 comparisons=94 time=46210000
+# CACHE_CASE_START name=repeated_reset time=46210000
+# CACHE_CASE_PASS name=repeated_reset observations=265 writes=11 resets=4 comparisons=530 time=48910000
+# CACHE_CASE_START name=post_reset_refill time=48910000
+# CACHE_CASE_PASS name=post_reset_refill observations=265 writes=11 resets=4 comparisons=530 time=51610000
+# CACHE_UVM_PASS cases=78 assertions=0 seed=0x28A6BEEF
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_objection.svh(1270) @ 51615000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_report_server.svh(847) @ 51615000: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    5
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# 
+# ** Note: $finish    : C:/MXR/Quartus/25.1/questa_fse/win64/../verilog_src/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 51615 ns  Iteration: 68  Instance: /cache_uvm_top
+# End time: 20:17:33 on Nov 10,2026, Elapsed time: 0:00:35
+# Errors: 0, Warnings: 1
