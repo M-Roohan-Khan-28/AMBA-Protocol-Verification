@@ -48,7 +48,7 @@ record three UVM adapter passes, five expected assertion detections and one
 legal assertion control from a clean detached clone. Covergroups and the two
 original advanced ALU/APB environments remain **NOT RUN** for the licence blocker.
 
-## Latest merged-main technical release â€” 8 November 2026
+## Latest merged-main technical release — 8 November 2026
 
 The [locked merged-main technical release](reports/technical-release-2026-11-08/RELEASE_SUMMARY.md) records eleven required project suites PASS from fresh detached GitHub source clones at runner `9820035daf9a63f5bbf4fa14c2621a65a746cd85`, aggregate exit 0. AXI4-Lite and RV32I SoC each require a separate checker qualification with one legal case and eight expected-negative detections. The preserved original advanced ALU/APB environments remain **NOT RUN** for the unavailable `svverification` licence.
 
