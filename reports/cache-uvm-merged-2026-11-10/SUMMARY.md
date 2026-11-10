@@ -187,3 +187,13 @@ entries, explicit selected-way synchronous writes, asynchronous active-high
 reset and combinational lookup with way-0 duplicate priority. Automatic
 replacement, refill, writeback, coherence, broader compliance, coverage
 closure, synthesis, timing, FPGA and hardware remain separate milestones.
+
+## Published-byte audit result
+
+Evidence content `7741ea840d50a5901b39704ecebf68cc2e40654a` passed exact-byte verification for **275 report
+files**, including **255 captured artifacts**, against Git
+blobs and fresh detached checkouts with `core.autocrlf=false` and `true`.
+All **12 VCD raw downloads** matched; all four figure
+metadata source hashes and tick windows matched the new merged captures.
+The later audit receipt/addendum is separate from its audited content revision.
+No execution input or original captured artifact changed.
