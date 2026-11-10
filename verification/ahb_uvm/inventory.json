@@ -2,6 +2,10 @@
   "seed": "0x28A6BEEF",
   "required_substeps": [
     {
+      "name": "runner-qualification",
+      "kind": "runner"
+    },
+    {
       "name": "sva-address_hold",
       "kind": "sva",
       "scenario": "address_hold",

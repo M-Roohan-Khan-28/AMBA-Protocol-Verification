@@ -6,6 +6,44 @@ from advanced_sim import digest,failure,git,run,tool
 from ahb_program import build,serialize
 from ahb_mutations import prepare as prepare_mutation
 
+def qualify_fault(entry,c,result,log,report,lock):
+    """Production fault-parent decision; also exercised by immutable-record fixtures.
+
+    Raises on any invalid execution, identity, or diagnostic. A qualified child
+    wrapper exits 1; vlib, vlog and the qualified vsim invocation each exit 0.
+    """
+    s={}
+    cs=result['suites'][0]
+    assert c['exit_code']==result['aggregate_exit_code']==1 and not c['timed_out']
+    assert result['source_revision']==report['source_revision'] and result['input_sha256']==report['input_sha256']
+    assert result['source_lock']['observed_revision']==lock['revision'] and result['source_lock']['clean_after_execution']
+    assert len(result['suites'])==1 and len(cs['commands'])==3 and cs['status']=='FAIL'
+    # All fault kinds require three completed tool commands. The expected failure
+    # belongs to the child wrapper/diagnostic, not the simulator process.
+    assert all(x['exit_code']==0 and not x['timed_out'] for x in cs['commands'])
+    fatals=re.findall(r'^# UVM_FATAL .*?\[(\w+)\]',log,re.M)
+    sva=re.findall(r'^# AHB_SVA_DETECTED (\w+) time=',log,re.M)
+    assert not re.search(r'\*\* Error|^# UVM_ERROR .*?@|AHB_PROGRESS_TIMEOUT',log,re.M)
+    expected=entry['expected_fatal']
+    if entry['fault']=='missing_marker':
+        assert not fatals and not sva and cs['reason']=='MISSING_RESULT_MARKER'
+        assert re.search(r'^# AHB_UVM_PASS cases=1 assertions=0 seed=0x28A6BEEF\s*$',log,re.M)
+        assert cs['commands'][2]['exit_code']==0 and not re.search(r'\*\* Fatal',log)
+    elif expected.startswith('SVA:'):
+        ident=expected.split(':')[1]
+        assert sva==[ident] and not fatals
+        assert re.findall(r'\*\* Fatal: AHB_SVA_UNEXPECTED (\w+)',log)==[ident]
+        assert len(re.findall(r'\*\* Fatal:',log))==1 and cs['reason']=='PROCESS_OR_SIMULATOR_ERROR'
+    else:
+        assert fatals==[expected] and not sva and not re.search(r'\*\* Fatal',log)
+        assert cs['commands'][2]['exit_code']==0 and cs['reason']=='PROCESS_OR_SIMULATOR_ERROR'
+        assert 'AHB_UVM_PASS' not in log
+    if entry.get('mutation'):
+        m=cs['mutation'];assert m['kind']==entry['mutation'] and m['source_revision']==lock['revision']
+        assert m['locked_sha256']==lock['sha256']['rtl/design.sv'] and m['compiled_sha256']!=m['locked_sha256'] and not m['checkout_modified']
+    s.update(status='PASS',reason='EXPECTED_CHILD_FAILURE',expected_fatal=expected,observed_fatals=fatals,observed_sva=sva,child_result=result)
+    return s
+
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--output',type=Path,required=True)
@@ -31,7 +69,9 @@ def main():
       source_revision=git(repo,'rev-parse','HEAD'),source_dirty=bool(git(repo,'status','--porcelain')),serial_execution=True,
       selection=a.select,raw_fault=a.raw_fault,seed=682016495,seed_hex='0x28A6BEEF',functional_coverage='NOT RUN',constrained_randomization='NOT RUN',original_advanced_alu_apb='NOT RUN',suites=[],
       expected_inventory=names,required_selected=[s['name'] for s in steps],aggregate_exit_code=1,milestone_pass=False)
-    report['input_sha256']={p.relative_to(repo).as_posix():digest(p) for p in [*src.glob('*'),Path(__file__),repo/'scripts/advanced_sim.py',repo/'scripts/ahb_program.py',repo/'scripts/ahb_mutations.py'] if p.is_file()}
+    fixtures=json.loads((src/'runner_fixtures.json').read_text())
+    report['input_sha256']={p.relative_to(repo).as_posix():digest(p) for p in [*src.glob('*'),Path(__file__),repo/'scripts/advanced_sim.py',repo/'scripts/ahb_program.py',repo/'scripts/ahb_mutations.py',repo/'scripts/qualify_ahb_runner.py',*[repo/p for p in fixtures['files']]] if p.is_file()}
+    report['qualification_reference']=fixtures['old_runner']
     report['expected_environment_revision']=a.expected_env_sha
     report['runner_revision']=git(repo,'log','-1','--format=%H','--','scripts/run_ahb_uvm.py')
     report['inventory_revision']=git(repo,'log','-1','--format=%H','--','verification/ahb_uvm/inventory.json')
@@ -70,6 +110,22 @@ def main():
     for entry in steps:
         wd=out/entry['name'];wd.mkdir();s=dict(name=entry['name'],kind=entry['kind'],status='NOT RUN',commands=[]);report['suites'].append(s)
         if prereq or time.monotonic()-start>=a.global_timeout:s['reason']=prereq or 'GLOBAL_TIMEOUT';save();continue
+        if entry['kind']=='runner':
+            cmd=[sys.executable,str(repo/'scripts/qualify_ahb_runner.py'),'--output',str(wd/'run')]
+            c,text=invoke(cmd,repo,wd/'qualification.log');s['commands'].append(c)
+            s.update(status='FAIL',reason=failure(c,text,r'^AHB_RUNNER_QUALIFICATION_PASS checks=\d+ failures=0$') or 'RUNNER_QUALIFICATION_ACCOUNTING')
+            try:
+                result=json.loads((wd/'run/results.json').read_text())
+                assert not failure(c,text,r'^AHB_RUNNER_QUALIFICATION_PASS checks=\d+ failures=0$')
+                assert result['status']=='PASS' and result['exit_code']==0 and result['checks']>0
+                assert result['checks']==len(result['cases']) and all(x['pass'] for x in result['cases'])
+                assert result['tested_environment']==report['source_revision']
+                assert result['production_qualifier_sha256']==digest(Path(__file__))
+                assert result['qualification_script_sha256']==digest(repo/'scripts/qualify_ahb_runner.py')
+                assert result['fixture_manifest_sha256']==digest(src/'runner_fixtures.json')
+                s.update(status='PASS',reason='RUNNER_FIXTURES_QUALIFIED',result=result)
+            except (OSError,ValueError,KeyError,IndexError,TypeError,AssertionError) as error:s['detail']=str(error)
+            save();print(s['name'],s['status'],s['reason'],flush=True);continue
         if entry['kind']=='portable':
             os.environ['MODELSIM_BIN']='C:/intelFPGA/20.1/modelsim_ase/win32aloem'
             cmd=['powershell.exe','-NoProfile','-ExecutionPolicy','Bypass','-File',str(source/'scripts/run_regression.ps1'),'-OutputDir',str(wd/'run')]
@@ -81,7 +137,7 @@ def main():
                 assert result['overall']=='PASS' and result['source_revision']==lock['revision'] and not result['source_dirty']
                 assert len(result['simulations'])==2 and all(x['status']=='PASS' and x['simulator_exit_code']==0 for x in result['simulations'])
                 s.update(status='PASS',reason='EXECUTED',result=result)
-            except (OSError,ValueError,KeyError,AssertionError) as error:s['detail']=str(error)
+            except (OSError,ValueError,KeyError,IndexError,TypeError,AssertionError) as error:s['detail']=str(error)
             save();print(s['name'],s['status'],s['reason'],flush=True);continue
         if entry['kind']=='fault' and not a.raw_fault:
             child=wd/'child'
@@ -90,35 +146,9 @@ def main():
             c,text=run(cmd,repo,max(1,min(6*a.timeout,int(a.global_timeout-(time.monotonic()-start)))),wd/'child-wrapper.log');s['commands'].append(c)
             s.update(status='FAIL',reason='FAULT_NOT_QUALIFIED',child_wrapper_exit=c['exit_code'],passing_control=entry['passing_control'])
             try:
-                result=json.loads((child/'results.json').read_text());log=(child/entry['name']/'2.log').read_text();cs=result['suites'][0]
-                assert c['exit_code']==result['aggregate_exit_code']==1 and not c['timed_out']
-                assert result['source_revision']==report['source_revision'] and result['input_sha256']==report['input_sha256']
-                assert result['source_lock']['observed_revision']==lock['revision'] and result['source_lock']['clean_after_execution']
-                assert len(result['suites'])==1 and len(cs['commands'])==3 and cs['status']=='FAIL'
-                assert all(x['exit_code']==0 and not x['timed_out'] for x in cs['commands'][:2])
-                assert not cs['commands'][2]['timed_out']
-                fatals=re.findall(r'^# UVM_FATAL .*?\[(\w+)\]',log,re.M)
-                sva=re.findall(r'^# AHB_SVA_DETECTED (\w+) time=',log,re.M)
-                assert not re.search(r'\*\* Error|^# UVM_ERROR .*?@|AHB_PROGRESS_TIMEOUT',log,re.M)
-                expected=entry['expected_fatal']
-                if entry['fault']=='missing_marker':
-                    assert not fatals and not sva and cs['reason']=='MISSING_RESULT_MARKER'
-                    assert re.search(r'^# AHB_UVM_PASS cases=1 assertions=0 seed=0x28A6BEEF\s*$',log,re.M)
-                    assert cs['commands'][2]['exit_code']==0 and not re.search(r'\*\* Fatal',log)
-                elif expected.startswith('SVA:'):
-                    ident=expected.split(':')[1]
-                    assert sva==[ident] and not fatals
-                    assert re.findall(r'\*\* Fatal: AHB_SVA_UNEXPECTED (\w+)',log)==[ident]
-                    assert len(re.findall(r'\*\* Fatal:',log))==1 and cs['reason']=='PROCESS_OR_SIMULATOR_ERROR'
-                else:
-                    assert fatals==[expected] and not sva and not re.search(r'\*\* Fatal',log)
-                    assert cs['commands'][2]['exit_code']==0 and cs['reason']=='PROCESS_OR_SIMULATOR_ERROR'
-                    assert 'AHB_UVM_PASS' not in log
-                if entry.get('mutation'):
-                    m=cs['mutation'];assert m['kind']==entry['mutation'] and m['source_revision']==lock['revision']
-                    assert m['locked_sha256']==lock['sha256']['rtl/design.sv'] and m['compiled_sha256']!=m['locked_sha256'] and not m['checkout_modified']
-                s.update(status='PASS',reason='EXPECTED_CHILD_FAILURE',expected_fatal=expected,observed_fatals=fatals,observed_sva=sva,child_result=result)
-            except (OSError,ValueError,KeyError,AssertionError) as error:s['detail']=str(error)
+                result=json.loads((child/'results.json').read_text());log=(child/entry['name']/'2.log').read_text()
+                s.update(qualify_fault(entry,c,result,log,report,lock))
+            except (OSError,ValueError,KeyError,IndexError,TypeError,AssertionError) as error:s['detail']=str(error)
             save();print(s['name'],s['status'],s['reason'],'child exit',c['exit_code'],flush=True);continue
         compile_extra=[];sim_extra=[];do='run -all; '
         if entry['kind']=='sva':
