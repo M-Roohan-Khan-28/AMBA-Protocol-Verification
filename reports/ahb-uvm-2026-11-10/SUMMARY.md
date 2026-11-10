@@ -153,3 +153,13 @@ expansion, new transfer sizes, coverage closure, synthesis, timing, FPGA and
 hardware remain separate milestones. Bounds are test assumptions, not AHB latency
 requirements. Existing licences, notices, attribution and `LICENSE_STATUS.md`
 remain in force; no new licence is assigned to the inherited AHB source.
+
+## Published-byte audit completed
+
+Evidence commit `71f2505d9dcc29d990859a4dad6825e9d3267906` was audited before adding this receipt.
+[BYTE_AUDIT.json](BYTE_AUDIT.json) verifies 1375 original artifacts
+against Git blobs and fresh detached checkouts with `core.autocrlf=false` and `true`.
+All 52 captured VCDs match public raw downloads; four figure
+metadata files and captions identify those exact original bytes.
+[Commands and exits](BYTE_AUDIT_COMMAND.json) are retained. This receipt changes
+no execution input, original capture or historical evidence.
