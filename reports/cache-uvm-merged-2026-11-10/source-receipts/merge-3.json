@@ -1,0 +1,59 @@
+{
+  "identity": {
+    "id": 270144410,
+    "login": "M-Roohan-Khan-28"
+  },
+  "review": {
+    "repository": "Two-Way-Cache-RTL",
+    "pr": 3,
+    "url": "https://github.com/M-Roohan-Khan-28/Two-Way-Cache-RTL/pull/3",
+    "head": "529c4f7daf60d566f3f45631b5a6bf4d3bc006e6",
+    "main": "b6246eff1380aa0fb7812de9fccaf12b849fa1ca",
+    "state": "open",
+    "draft": false,
+    "mergeable": true,
+    "mergeable_state": "clean",
+    "permissions": {
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "changed_file_count": 2,
+    "files": [
+      {
+        "filename": "README.md",
+        "status": "modified",
+        "additions": 10,
+        "deletions": 2
+      },
+      {
+        "filename": "docs/DETERMINISTIC_CACHE_UVM.md",
+        "status": "added",
+        "additions": 45,
+        "deletions": 0
+      }
+    ],
+    "reviews": [],
+    "review_comments_count": 0,
+    "issue_comments_count": 0,
+    "review_threads": 0,
+    "unresolved_review_threads": 0,
+    "check_runs": [],
+    "combined_status": "pending",
+    "statuses": [],
+    "required_status_contexts": [],
+    "required_checks": [],
+    "branch_protection_present": false,
+    "allow_merge_commit": true,
+    "active_branch_rules": [],
+    "review_comments": [],
+    "issue_comments": []
+  },
+  "url": "https://github.com/M-Roohan-Khan-28/Two-Way-Cache-RTL/pull/3",
+  "reviewed_head": "529c4f7daf60d566f3f45631b5a6bf4d3bc006e6",
+  "merge_commit": "b96e33907c8e33e37aa7ce17d912f67bec5e4b9a",
+  "method": "merge",
+  "merged_at": "2026-11-10T16:30:43Z"
+}

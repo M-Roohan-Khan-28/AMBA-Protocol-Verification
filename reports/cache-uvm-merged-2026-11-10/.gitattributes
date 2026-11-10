@@ -1,0 +1,2 @@
+# Preserve exact captured bytes, including CRLF; no newline transformation.
+** -text

@@ -1,0 +1,43 @@
+[
+  {
+    "repository": "AMBA-Protocol-Verification",
+    "path": "C:\\short\\cache-closeout-review-16-20261110",
+    "head": "676a8b4ab0c128e1bfd6776198734b0810bc7adf",
+    "base": "b41b309ec887c58c7187c96de4452741c9bee115",
+    "clean": true,
+    "detached": true,
+    "execution_input_sha256": {
+      "verification/cache_uvm/cache_assertions.sv": "f61bf3afb0191981e68f7ed3677c231fe681911eb36ad10af9a4b36012ccb34e",
+      "verification/cache_uvm/cache_bus.sv": "27febc5ce213313bb183254303c83993ac9901d6db3a47aa5f676864abd51b6c",
+      "verification/cache_uvm/cache_sva_control.sv": "7b7794759aaaa09c8c93f08bfdc676597ad382eed6cd8ca2fdbc251bbd7624e4",
+      "verification/cache_uvm/cache_uvm_pkg.sv": "e177eed6617ebcb15a8984f21aff2c26edd9f7bae075a8ef20b42ebee4cbfd23",
+      "verification/cache_uvm/cache_uvm_top.sv": "ba737c864149d43566da565cc0955d7768b9b72f2a6953c229b5fba8903e8b72",
+      "verification/cache_uvm/inventory.json": "1d55dee65c806d0d24a981736e6d616442c0622697b8537494e8d927d13cf829",
+      "verification/cache_uvm/sources.json": "c7d95593e76dcb7d460638910ebaa1f8a800a17f40251c1ef3f17a4640c0421d",
+      "scripts/run_cache_uvm.py": "29777d89c0b9c77622687364170914e987630f564d7696c751a6f0b9ffcd5f9a",
+      "scripts/advanced_sim.py": "94170c9d30d48fb96ab698832062d078a7659f66b6b23c82c711d50b7d163d93",
+      "scripts/cache_program.py": "5b0871da9062fe99afcadb5a39959dee1751989e1bb21316047feb77fc832619",
+      "scripts/cache_mutations.py": "ce951f54964f9dc7c83a2e4385558f7dde2edef8643d43a2222c9f2343eb5cfc",
+      "scripts/qualify_cache_runner.py": "1eeefc85fcd2119d90d9719ef5ffda49d17fdb80a389ba79b1e5b2e4c1dbcc18"
+    },
+    "modified_existing_paths": [
+      "README.md"
+    ],
+    "all_other_existing_blobs_preserved": true,
+    "instructions": []
+  },
+  {
+    "repository": "Two-Way-Cache-RTL",
+    "path": "C:\\short\\cache-closeout-review-3-20261110",
+    "head": "529c4f7daf60d566f3f45631b5a6bf4d3bc006e6",
+    "base": "b6246eff1380aa0fb7812de9fccaf12b849fa1ca",
+    "clean": true,
+    "detached": true,
+    "execution_input_sha256": {},
+    "modified_existing_paths": [
+      "README.md"
+    ],
+    "all_other_existing_blobs_preserved": true,
+    "instructions": []
+  }
+]

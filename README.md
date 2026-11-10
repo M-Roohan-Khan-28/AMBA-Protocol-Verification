@@ -135,13 +135,17 @@ and [original measured figures](reports/ahb-uvm-2026-11-10/SUMMARY.md) are uncha
 Functional coverage, constrained randomization and original advanced ALU/APB
 remain **NOT RUN**. Full AHB and physical-implementation milestones remain separate.
 
-## Deterministic Two-Way Cache UVM/SVA milestone (review branch)
+## Deterministic Two-Way Cache UVM/SVA milestone
 
-Separate [public-pin environment and bounded contract](docs/DETERMINISTIC_CACHE_UVM.md)
-for the unchanged cache lock `b6246eff1380aa0fb7812de9fccaf12b849fa1ca`. A fresh detached
-GitHub run passed **20/20 required substeps**, **79 named scenarios** and
-**10,222 independent comparisons**, six expected-negative assertion
-controls plus a legal compound control, all nine fault parents, and the preserved
-7/1,639 portable gate. [Raw evidence and measured waveforms](reports/cache-uvm-2026-11-10/SUMMARY.md).
-Functional coverage/randomization and the original advanced ALU/APB remain NOT RUN.
-These review-branch results do not alter previous release claims or locks.
+The [bounded public-pin environment](docs/DETERMINISTIC_CACHE_UVM.md) retains
+the unchanged DUT lock `b6246eff1380aa0fb7812de9fccaf12b849fa1ca`. Both reviewed milestone PRs merged normally.
+The [merged-source closeout](reports/cache-uvm-merged-2026-11-10/SUMMARY.md) at AMBA merge
+`b9c35a85113c99715ede572ab1f5dd94574b23e6` passed **20/20 required**, aggregate and outer wrapper exit 0:
+27 runner fixtures; six negative and one legal SVA control; 79 scenarios,
+5,111 observations / 10,222 comparisons; 402 writes and two reset-blocked clocks;
+all nine fault parents; and the separate **7 legacy / 1,639 portable** gate.
+[Reproduce](reports/cache-uvm-merged-2026-11-10/REPRODUCE.md) with a normal clone and explicit detached SHA.
+New measured VCD figures and exact-byte receipts accompany the merged run.
+The [original review evidence](reports/cache-uvm-2026-11-10/SUMMARY.md) remains unchanged.
+Functional coverage, randomization and original advanced ALU/APB remain **NOT RUN**.
+No replacement, refill, writeback, coherence or physical implementation is claimed.

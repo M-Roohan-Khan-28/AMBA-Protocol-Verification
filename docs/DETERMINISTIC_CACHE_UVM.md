@@ -106,8 +106,8 @@ From unused short paths:
 ```powershell
 $python = 'C:\Users\CG\AppData\Local\Python\pythoncore-3.14-64\python.exe'
 git clone --config core.longpaths=true --config core.autocrlf=false https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification.git C:\short\cache-uvm-source-new
-git -C C:\short\cache-uvm-source-new checkout --detach 9c74c35e0c2616a09af8824d2d85754738b5303a
-& $python C:\short\cache-uvm-source-new\scripts\run_cache_uvm.py --expected-env-sha 9c74c35e0c2616a09af8824d2d85754738b5303a --output C:\short\cache-uvm-results-new
+git -C C:\short\cache-uvm-source-new checkout --detach b9c35a85113c99715ede572ab1f5dd94574b23e6
+& $python C:\short\cache-uvm-source-new\scripts\run_cache_uvm.py --expected-env-sha b9c35a85113c99715ede572ab1f5dd94574b23e6 --output C:\short\cache-uvm-results-new
 if ($LASTEXITCODE -ne 0) { throw 'Required cache milestone failed or was blocked' }
 ```
 
@@ -120,5 +120,18 @@ Missing tools, licence failures, timeouts, wrong/missing markers, unexpected
 fatals or failed required suites yield a nonzero result. `--select` is for
 diagnostics and can never set `milestone_pass=true`.
 
-See the [fresh detached-clone report](../reports/cache-uvm-2026-11-10/SUMMARY.md)
-for measured counts, raw evidence, versions, source/input hashes and waveforms.
+## Merged-source closeout
+
+AMBA [PR #16](https://github.com/M-Roohan-Khan-28/AMBA-Protocol-Verification/pull/16) merged normally at `b9c35a85113c99715ede572ab1f5dd94574b23e6`;
+cache [documentation PR #3](https://github.com/M-Roohan-Khan-28/Two-Way-Cache-RTL/pull/3) at `b96e33907c8e33e37aa7ce17d912f67bec5e4b9a`.
+The [new merged-source report](../reports/cache-uvm-merged-2026-11-10/SUMMARY.md) records 20/20 required PASS,
+aggregate and actual outer wrapper exits 0, 27 runner fixtures, six negative
+and one legal SVA control, 79 scenarios, 5,111 observations / 10,222 comparisons,
+402 allowed writes / two reset-blocked clocks, nine fault parents and the
+separate 7/1,639 portable gate. All 12 execution inputs match qualified source
+`9c74c35e0c2616a09af8824d2d85754738b5303a`; runner and inventory last-change are that same revision.
+New captures are explicitly from the merged run. [Reproduction](../reports/cache-uvm-merged-2026-11-10/REPRODUCE.md)
+uses an ordinary clone followed by the actual merged source SHA above.
+The [original review report](../reports/cache-uvm-2026-11-10/SUMMARY.md) and its
+captures remain historical and unchanged. No HDL rerun is needed solely for
+subsequent evidence/docs commits while all execution-input blobs match.

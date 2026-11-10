@@ -1,0 +1,1 @@
+{"name":"reset_coincident","observations":40,"clocks":2,"writes":1,"blocked_writes":1,"resets":2,"lookups":40,"hits":2,"misses":38,"comparisons":80}

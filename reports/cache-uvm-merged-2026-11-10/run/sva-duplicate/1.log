@@ -1,0 +1,12 @@
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+Start time: 21:32:45 on Nov 10,2026
+vlog -sv -work work C:\short\cache-merged-source-20261110\verification\cache_uvm\cache_bus.sv C:\short\cache-merged-source-20261110\verification\cache_uvm\cache_assertions.sv C:\short\cache-merged-source-20261110\verification\cache_uvm\cache_sva_control.sv 
+** Note: (vlog-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+-- Compiling interface cache_bus
+-- Compiling module cache_assertions
+-- Compiling module cache_sva_control
+
+Top level modules:
+	cache_sva_control
+End time: 21:32:46 on Nov 10,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

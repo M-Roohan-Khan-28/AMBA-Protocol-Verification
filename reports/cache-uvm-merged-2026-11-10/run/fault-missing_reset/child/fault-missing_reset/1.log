@@ -1,0 +1,16 @@
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+Start time: 21:38:36 on Nov 10,2026
+vlog -sv -work work -L C:\MXR\Quartus\25.1\questa_fse\uvm-1.2 "+incdir+C:\MXR\Quartus\25.1\questa_fse\verilog_src\uvm-1.2\src" C:\short\cache-merged-source-20261110\verification\cache_uvm\cache_bus.sv C:\short\cache-merged-run-20261110\fault-missing_reset\child\fault-missing_reset\disposable-rtl\design.sv C:\short\cache-merged-source-20261110\verification\cache_uvm\cache_assertions.sv C:\short\cache-merged-source-20261110\verification\cache_uvm\cache_uvm_pkg.sv C:\short\cache-merged-source-20261110\verification\cache_uvm\cache_uvm_top.sv 
+** Note: (vlog-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+-- Compiling interface cache_bus
+-- Compiling module cache_2way
+-- Compiling module cache_assertions
+-- Compiling package cache_uvm_pkg
+-- Importing package C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.uvm_pkg (uvm-1.2 Built-in)
+-- Compiling module cache_uvm_top
+-- Importing package cache_uvm_pkg
+
+Top level modules:
+	cache_uvm_top
+End time: 21:38:38 on Nov 10,2026, Elapsed time: 0:00:02
+Errors: 0, Warnings: 0
