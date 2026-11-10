@@ -292,3 +292,20 @@ bounded tests, not coverage closure. External SRAM, physical display compatibili
 board clocks/pixel frequency/refresh guarantees, new resolutions, double
 buffering, synthesis, timing, FPGA and hardware remain separate milestones.
 No mandatory deterministic execution blocker remains. PRs remain open for review.
+
+## Published exact-byte audit
+
+Content revision `7390295cdd680794c3628d543c4d32026e937a47` matched **1035 report files**, including
+**1027 captured artifacts**, against Git blobs and fresh
+detached checkouts with core.autocrlf=false and true. **203 public
+raw downloads** matched, including **60 VCDs**, pixel streams,
+write CSVs, measured figures and frame PNGs. Five current waveform metadata
+records and the frame/artwork hashes matched their source captures. The audit
+receipt is appended separately from the content revision it verifies.
+
+The first byte-audit attempt verified the autocrlf=false checkout but then
+stopped with a local disk-full error while recording the second clone command.
+It is not a passing audit or an HDL failure. Only this task's generated simulator
+work libraries were removed; raw logs, captures and source checkouts were kept.
+The clean first checkout was reverified, and a new autocrlf=true clone was used
+for this completed audit. See byte-audit-logs/byte-audit-disk-full.json.
