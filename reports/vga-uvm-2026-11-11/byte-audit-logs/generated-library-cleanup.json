@@ -1,0 +1,416 @@
+﻿[
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\control-horizontal\\work",
+        "bytes":  79094546,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\control-intent\\work",
+        "bytes":  79094089,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\control-invalid\\work",
+        "bytes":  79094166,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\control-phase\\work",
+        "bytes":  79094068,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\control-row\\work",
+        "bytes":  79093906,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\control-scale\\work",
+        "bytes":  79094034,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\control-vertical\\work",
+        "bytes":  79094292,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\fault-blank\\child\\fault-blank\\work",
+        "bytes":  79095981,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\fault-clear_reset\\child\\fault-clear_reset\\work",
+        "bytes":  79100671,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\fault-disabled_reset_write\\child\\fault-disabled_reset_write\\work",
+        "bytes":  79099489,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\fault-divider\\child\\fault-divider\\work",
+        "bytes":  79096328,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\fault-driver_alias\\child\\fault-driver_alias\\work",
+        "bytes":  79097063,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\fault-frame_wrap\\child\\fault-frame_wrap\\work",
+        "bytes":  79096953,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\fault-gated_write\\child\\fault-gated_write\\work",
+        "bytes":  79097940,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\fault-hsync\\child\\fault-hsync\\work",
+        "bytes":  79095962,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\fault-invalid_alias\\child\\fault-invalid_alias\\work",
+        "bytes":  79097116,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\fault-missing_marker\\child\\fault-missing_marker\\work",
+        "bytes":  79097356,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\fault-rgb\\child\\fault-rgb\\work",
+        "bytes":  79095572,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\fault-row_stride\\child\\fault-row_stride\\work",
+        "bytes":  79096953,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\fault-scale\\child\\fault-scale\\work",
+        "bytes":  79095961,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\fault-vsync\\child\\fault-vsync\\work",
+        "bytes":  79095958,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\functional\\work",
+        "bytes":  79093820,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\portable\\run\\work",
+        "bytes":  273720,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\smoke\\work",
+        "bytes":  79093390,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\sva-active\\work",
+        "bytes":  1006784,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\sva-blank\\work",
+        "bytes":  1006680,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\sva-hsync\\work",
+        "bytes":  1006667,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\sva-legal_current_write\\work",
+        "bytes":  1007449,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\sva-legal_inactive_inputs\\work",
+        "bytes":  1007544,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\sva-legal_reset_nonblack\\work",
+        "bytes":  1007508,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\sva-legal_reset_write\\work",
+        "bytes":  1007358,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\sva-reset\\work",
+        "bytes":  1006681,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\sva-rgb\\work",
+        "bytes":  1006574,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-complete-target-v1-20261111\\sva-vsync\\work",
+        "bytes":  1006669,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\control-framewrap\\work",
+        "bytes":  79094150,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\control-horizontal\\work",
+        "bytes":  79094276,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\control-intent\\work",
+        "bytes":  79093824,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\control-invalid\\work",
+        "bytes":  79094008,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\control-phase\\work",
+        "bytes":  79093757,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\control-row\\work",
+        "bytes":  79093626,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\control-scale\\work",
+        "bytes":  79093750,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\control-vertical\\work",
+        "bytes":  79094066,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\fault-blank\\child\\fault-blank\\work",
+        "bytes":  79095728,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\fault-clear_reset\\child\\fault-clear_reset\\work",
+        "bytes":  79100471,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\fault-disabled_reset_write\\child\\fault-disabled_reset_write\\work",
+        "bytes":  79099221,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\fault-divider\\child\\fault-divider\\work",
+        "bytes":  79096066,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\fault-driver_alias\\child\\fault-driver_alias\\work",
+        "bytes":  79096785,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\fault-frame_wrap\\child\\fault-frame_wrap\\work",
+        "bytes":  79096719,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\fault-gated_write\\child\\fault-gated_write\\work",
+        "bytes":  79097781,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\fault-hsync\\child\\fault-hsync\\work",
+        "bytes":  79095634,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\fault-invalid_alias\\child\\fault-invalid_alias\\work",
+        "bytes":  79096827,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\fault-missing_marker\\child\\fault-missing_marker\\work",
+        "bytes":  79097167,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\fault-rgb\\child\\fault-rgb\\work",
+        "bytes":  79095377,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\fault-row_stride\\child\\fault-row_stride\\work",
+        "bytes":  79096723,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\fault-scale\\child\\fault-scale\\work",
+        "bytes":  79095680,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\fault-vsync\\child\\fault-vsync\\work",
+        "bytes":  79095625,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\functional\\work",
+        "bytes":  79093579,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\portable\\run\\work",
+        "bytes":  273532,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\smoke\\work",
+        "bytes":  79093073,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\sva-active\\work",
+        "bytes":  1006606,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\sva-blank\\work",
+        "bytes":  1006565,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\sva-hsync\\work",
+        "bytes":  1006545,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\sva-legal_current_write\\work",
+        "bytes":  1007371,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\sva-legal_inactive_inputs\\work",
+        "bytes":  1007425,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\sva-legal_reset_nonblack\\work",
+        "bytes":  1007421,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\sva-legal_reset_write\\work",
+        "bytes":  1007206,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\sva-reset\\work",
+        "bytes":  1006559,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\sva-rgb\\work",
+        "bytes":  1006499,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    },
+    {
+        "path":  "C:\\short\\vga-uvm-fresh-run-20261111\\sva-vsync\\work",
+        "bytes":  1006554,
+        "kind":  "generated simulator work library",
+        "raw_logs_and_captures_preserved":  true
+    }
+]

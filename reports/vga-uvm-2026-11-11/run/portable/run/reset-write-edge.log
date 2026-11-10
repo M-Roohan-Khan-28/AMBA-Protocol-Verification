@@ -1,0 +1,15 @@
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -onfinish exit vga_raster_test "+RESET_WRITE_EDGE" -do "run -all; quit -code 0" 
+# Start time: 02:13:20 on Nov 11,2026
+# Loading sv_std.std
+# Loading work.vga_raster_test
+# Loading work.vga_controller_sram
+# run -all
+# VGA_RESET_WRITE_EDGE_PASS checks=8 reset_held=1
+# ** Note: $finish    : C:/short/vga-uvm-fresh-run-20261111/source/tb/vga_raster_test.sv(134)
+#    Time: 50 ns  Iteration: 1  Instance: /vga_raster_test
+# End time: 02:13:20 on Nov 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

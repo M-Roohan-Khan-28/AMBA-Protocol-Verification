@@ -1,0 +1,11 @@
+--- locked/design.sv
++++ disposable/design.sv
+@@ -90,7 +90,7 @@
+ 
+         clock_divider <= clock_divider + 1'b1;
+ 
+-        if(clock_divider == 2'd3)
++        if(clock_divider == 2'd2)
+         begin
+ 
+             if(h_count == 10'd799)

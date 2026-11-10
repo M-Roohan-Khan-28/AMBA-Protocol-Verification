@@ -1,0 +1,1 @@
+{"name":"smoke","observations":89,"clocks":85,"control_only":3,"initial_samples":1,"comparisons":534,"enabled_writes":2,"valid_writes":2,"ignored_writes":0,"reset_writes":2,"pixel_advances":20,"pixel_samples":20,"active_samples":20,"hs_low":0,"vs_low":0,"complete_lines":0,"complete_frames":0,"reset_edges":1,"distinct_addresses":3,"distinct_colors":2}

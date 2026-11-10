@@ -1,0 +1,25 @@
+{
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\vga-uvm-20261111\\scripts\\run_vga_uvm.py",
+    "--expected-env-sha",
+    "a935e3381f5cae2faa4503e7b8c38a2e1833e28b",
+    "--output",
+    "C:\\short\\vga-functional-v1-20261111",
+    "--select",
+    "smoke",
+    "functional"
+  ],
+  "source": "a935e3381f5cae2faa4503e7b8c38a2e1833e28b",
+  "started_utc": "2026-11-10T19:52:40.424183+00:00",
+  "exit_code": 1,
+  "timed_out": false,
+  "log": "vga-functional-v1-20261111.log",
+  "output": "C:\\short\\vga-functional-v1-20261111",
+  "keep_awake_return": 2147483648,
+  "persistent_power_settings_changed": false,
+  "elapsed_seconds": 669.1071798999328,
+  "keep_awake_restore": 2147483649,
+  "log_sha256": "2df359aeab1137dc903280085d2219640dd29fb4bab689aa267c99a235cfea4d",
+  "finished_utc": "2026-11-10T20:03:49.539523+00:00"
+}

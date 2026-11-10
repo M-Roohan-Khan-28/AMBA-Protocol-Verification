@@ -1,0 +1,28 @@
+{
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\vga-uvm-20261111\\scripts\\run_vga_uvm.py",
+    "--expected-env-sha",
+    "de3cc53c5d921e6511bb9da76ee6736824a79939",
+    "--output",
+    "C:\\short\\vga-receipts-controls-v1-20261111",
+    "--select",
+    "runner-qualification",
+    "smoke",
+    "control-intent",
+    "control-phase",
+    "control-row"
+  ],
+  "source": "de3cc53c5d921e6511bb9da76ee6736824a79939",
+  "started_utc": "2026-11-10T20:21:34.807558+00:00",
+  "exit_code": 0,
+  "timed_out": false,
+  "log": "vga-receipts-controls-v1-20261111.log",
+  "output": "C:\\short\\vga-receipts-controls-v1-20261111",
+  "keep_awake_return": 2147483648,
+  "persistent_power_settings_changed": false,
+  "elapsed_seconds": 80.7605232000351,
+  "keep_awake_restore": 2147483649,
+  "log_sha256": "a20e12cc523e14d08d9a9c08185e5d1f9c5545ee8b74af73eeb15ce617e24b99",
+  "finished_utc": "2026-11-10T20:22:55.587604+00:00"
+}

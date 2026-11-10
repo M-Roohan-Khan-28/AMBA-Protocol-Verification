@@ -1,0 +1,119 @@
+{
+  "origin": "simulator",
+  "source_sha256": "d74eedb8b010d5be0564e5d5e3408c74e40dba23aec33a476816a01a3224d694",
+  "source_filename": "pins.vcd",
+  "timescale": "1ps",
+  "start_tick": 15679857000,
+  "end_tick": 15744177000,
+  "source_final_tick": 86124213200,
+  "display_axis_offset_tick": 15679857000,
+  "display_start_tick": 0,
+  "display_end_tick": 64320000,
+  "display_time_transformation": "relative display tick = absolute captured tick - display_axis_offset_tick; no capture bytes changed",
+  "signals": [
+    {
+      "name": "vga_uvm_top.bus.hsync",
+      "code": "9",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "vga_uvm_top.bus.vsync",
+      "code": ":",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "vga_uvm_top.bus.active_video",
+      "code": ";",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    },
+    {
+      "name": "vga_uvm_top.bus.reset",
+      "code": "\"",
+      "width": 1,
+      "kind": "wire",
+      "bit_range": ""
+    }
+  ],
+  "public_bit_grouping": [
+    {
+      "name": "vga_uvm_top.bus.sram_addr",
+      "source_bits": [
+        "vga_uvm_top.bus.sram_addr[12]",
+        "vga_uvm_top.bus.sram_addr[11]",
+        "vga_uvm_top.bus.sram_addr[10]",
+        "vga_uvm_top.bus.sram_addr[9]",
+        "vga_uvm_top.bus.sram_addr[8]",
+        "vga_uvm_top.bus.sram_addr[7]",
+        "vga_uvm_top.bus.sram_addr[6]",
+        "vga_uvm_top.bus.sram_addr[5]",
+        "vga_uvm_top.bus.sram_addr[4]",
+        "vga_uvm_top.bus.sram_addr[3]",
+        "vga_uvm_top.bus.sram_addr[2]",
+        "vga_uvm_top.bus.sram_addr[1]",
+        "vga_uvm_top.bus.sram_addr[0]"
+      ],
+      "transformation": "MSB-to-LSB vector display assembled from recorded public scalar-bit values at each timestamp; original VCD unchanged"
+    },
+    {
+      "name": "vga_uvm_top.bus.sram_data_in",
+      "source_bits": [
+        "vga_uvm_top.bus.sram_data_in[7]",
+        "vga_uvm_top.bus.sram_data_in[6]",
+        "vga_uvm_top.bus.sram_data_in[5]",
+        "vga_uvm_top.bus.sram_data_in[4]",
+        "vga_uvm_top.bus.sram_data_in[3]",
+        "vga_uvm_top.bus.sram_data_in[2]",
+        "vga_uvm_top.bus.sram_data_in[1]",
+        "vga_uvm_top.bus.sram_data_in[0]"
+      ],
+      "transformation": "MSB-to-LSB vector display assembled from recorded public scalar-bit values at each timestamp; original VCD unchanged"
+    },
+    {
+      "name": "vga_uvm_top.bus.red",
+      "source_bits": [
+        "vga_uvm_top.bus.red[3]",
+        "vga_uvm_top.bus.red[2]",
+        "vga_uvm_top.bus.red[1]",
+        "vga_uvm_top.bus.red[0]"
+      ],
+      "transformation": "MSB-to-LSB vector display assembled from recorded public scalar-bit values at each timestamp; original VCD unchanged"
+    },
+    {
+      "name": "vga_uvm_top.bus.green",
+      "source_bits": [
+        "vga_uvm_top.bus.green[3]",
+        "vga_uvm_top.bus.green[2]",
+        "vga_uvm_top.bus.green[1]",
+        "vga_uvm_top.bus.green[0]"
+      ],
+      "transformation": "MSB-to-LSB vector display assembled from recorded public scalar-bit values at each timestamp; original VCD unchanged"
+    },
+    {
+      "name": "vga_uvm_top.bus.blue",
+      "source_bits": [
+        "vga_uvm_top.bus.blue[3]",
+        "vga_uvm_top.bus.blue[2]",
+        "vga_uvm_top.bus.blue[1]",
+        "vga_uvm_top.bus.blue[0]"
+      ],
+      "transformation": "MSB-to-LSB vector display assembled from recorded public scalar-bit values at each timestamp; original VCD unchanged"
+    }
+  ],
+  "same_tick_collapses": 1,
+  "functional_result": "NOT_ASSESSED_BY_RENDERER",
+  "source_revision": "3afa2912076b6e7dadf6c958d444e2dc9a2a87f4",
+  "command": [
+    "C:\\Users\\CG\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "C:\\short\\vga-uvm-fresh-20261111\\tools\\render_vga_evidence.py",
+    "--run",
+    "C:\\short\\vga-uvm-fresh-run-20261111",
+    "--output",
+    "C:\\short\\vga-uvm-fresh-run-20261111\\measured-evidence\\figures"
+  ]
+}

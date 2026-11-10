@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="646" viewBox="0 0 1440 646">
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif} .signal{font-family:DejaVu Sans Mono,monospace;font-size:13px} .small{font-size:12px;fill:#475569}</style>
+<text x="26" y="31" font-size="21" fill="#0f172a">Measured VGA current_pixel</text>
+<text x="26" y="54" font-size="13" fill="#92400e">VCD TRACE — check the accompanying simulation result</text>
+<text x="26" y="76" class="small">Time relative to source tick 67815117000; 1 tick = 1ps. Same-timestamp changes display their final value.</text>
+<path d="M370.00,105 V579" stroke="#dbe3ed"/>
+<text x="370.00" y="99" text-anchor="middle" class="small">0</text>
+<path d="M496.25,105 V579" stroke="#dbe3ed"/>
+<text x="496.25" y="99" text-anchor="middle" class="small">2000</text>
+<path d="M622.50,105 V579" stroke="#dbe3ed"/>
+<text x="622.50" y="99" text-anchor="middle" class="small">4000</text>
+<path d="M748.75,105 V579" stroke="#dbe3ed"/>
+<text x="748.75" y="99" text-anchor="middle" class="small">6000</text>
+<path d="M875.00,105 V579" stroke="#dbe3ed"/>
+<text x="875.00" y="99" text-anchor="middle" class="small">8000</text>
+<path d="M1001.25,105 V579" stroke="#dbe3ed"/>
+<text x="1001.25" y="99" text-anchor="middle" class="small">10000</text>
+<path d="M1127.50,105 V579" stroke="#dbe3ed"/>
+<text x="1127.50" y="99" text-anchor="middle" class="small">12000</text>
+<path d="M1253.75,105 V579" stroke="#dbe3ed"/>
+<text x="1253.75" y="99" text-anchor="middle" class="small">14000</text>
+<path d="M1380.00,105 V579" stroke="#dbe3ed"/>
+<text x="1380.00" y="99" text-anchor="middle" class="small">16000</text>
+<text x="26" y="135" class="signal"><title>vga_uvm_top.bus.clk</title>vga_uvm_top.bus.clk</text>
+<text x="26" y="151" class="small">1 bit</text>
+<path d="M370.00,122 H559.38" stroke="#0369a1" stroke-width="2"/>
+<path d="M559.38,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M559.38,150 H875.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M875.00,150 V122" stroke="#0369a1" stroke-width="2"/>
+<path d="M875.00,122 H1190.62" stroke="#0369a1" stroke-width="2"/>
+<path d="M1190.62,122 V150" stroke="#0369a1" stroke-width="2"/>
+<path d="M1190.62,150 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,162 H1408" stroke="#e2e8f0"/>
+<text x="26" y="192" class="signal"><title>vga_uvm_top.bus.sram_we</title>vga_uvm_top.bus.sram_we</text>
+<text x="26" y="208" class="small">1 bit</text>
+<path d="M370.00,207 H685.62" stroke="#0369a1" stroke-width="2"/>
+<path d="M685.62,207 V179" stroke="#0369a1" stroke-width="2"/>
+<path d="M685.62,179 H1316.88" stroke="#0369a1" stroke-width="2"/>
+<path d="M1316.88,179 V207" stroke="#0369a1" stroke-width="2"/>
+<path d="M1316.88,207 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,219 H1408" stroke="#e2e8f0"/>
+<text x="26" y="249" class="signal"><title>vga_uvm_top.bus.sram_addr</title>vga_uvm_top.bus.sram_addr</text>
+<text x="26" y="265" class="small">13 bit [12:0]</text>
+<polygon points="370.00,250 374.00,236 681.62,236 685.62,250 681.62,264 374.00,264" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>0000000000000</title></polygon>
+<text x="527.81" y="255" text-anchor="middle" class="signal" fill="#0369a1">0x0000</text>
+<polygon points="685.62,250 689.62,236 1312.88,236 1316.88,250 1312.88,264 689.62,264" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>0000010101100</title></polygon>
+<text x="1001.25" y="255" text-anchor="middle" class="signal" fill="#0369a1">0x00AC</text>
+<polygon points="1316.88,250 1320.88,236 1376.00,236 1380.00,250 1376.00,264 1320.88,264" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>0000000000000</title></polygon>
+<text x="1348.44" y="255" text-anchor="middle" class="signal" fill="#0369a1">0x0000</text>
+<path d="M26,276 H1408" stroke="#e2e8f0"/>
+<text x="26" y="306" class="signal"><title>vga_uvm_top.bus.sram_data_in</title>vga_uvm_top.bus.sram_data_in</text>
+<text x="26" y="322" class="small">8 bit [7:0]</text>
+<polygon points="370.00,307 374.00,293 681.62,293 685.62,307 681.62,321 374.00,321" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00000000</title></polygon>
+<text x="527.81" y="312" text-anchor="middle" class="signal" fill="#0369a1">0x00</text>
+<polygon points="685.62,307 689.62,293 1312.88,293 1316.88,307 1312.88,321 689.62,321" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>10011011</title></polygon>
+<text x="1001.25" y="312" text-anchor="middle" class="signal" fill="#0369a1">0x9B</text>
+<polygon points="1316.88,307 1320.88,293 1376.00,293 1380.00,307 1376.00,321 1320.88,321" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>00000000</title></polygon>
+<text x="1348.44" y="312" text-anchor="middle" class="signal" fill="#0369a1">0x00</text>
+<path d="M26,333 H1408" stroke="#e2e8f0"/>
+<text x="26" y="363" class="signal"><title>vga_uvm_top.bus.active_video</title>vga_uvm_top.bus.active_video</text>
+<text x="26" y="379" class="small">1 bit</text>
+<path d="M370.00,350 H1380.00" stroke="#0369a1" stroke-width="2"/>
+<path d="M26,390 H1408" stroke="#e2e8f0"/>
+<text x="26" y="420" class="signal"><title>vga_uvm_top.bus.red</title>vga_uvm_top.bus.red</text>
+<text x="26" y="436" class="small">4 bit [3:0]</text>
+<polygon points="370.00,421 374.00,407 871.00,407 875.00,421 871.00,435 374.00,435" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>0000</title></polygon>
+<text x="622.50" y="426" text-anchor="middle" class="signal" fill="#0369a1">0x0</text>
+<polygon points="875.00,421 879.00,407 1376.00,407 1380.00,421 1376.00,435 879.00,435" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>1001</title></polygon>
+<text x="1127.50" y="426" text-anchor="middle" class="signal" fill="#0369a1">0x9</text>
+<path d="M26,447 H1408" stroke="#e2e8f0"/>
+<text x="26" y="477" class="signal"><title>vga_uvm_top.bus.green</title>vga_uvm_top.bus.green</text>
+<text x="26" y="493" class="small">4 bit [3:0]</text>
+<polygon points="370.00,478 374.00,464 871.00,464 875.00,478 871.00,492 374.00,492" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>0000</title></polygon>
+<text x="622.50" y="483" text-anchor="middle" class="signal" fill="#0369a1">0x0</text>
+<polygon points="875.00,478 879.00,464 1376.00,464 1380.00,478 1376.00,492 879.00,492" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>1101</title></polygon>
+<text x="1127.50" y="483" text-anchor="middle" class="signal" fill="#0369a1">0xD</text>
+<path d="M26,504 H1408" stroke="#e2e8f0"/>
+<text x="26" y="534" class="signal"><title>vga_uvm_top.bus.blue</title>vga_uvm_top.bus.blue</text>
+<text x="26" y="550" class="small">4 bit [3:0]</text>
+<polygon points="370.00,535 374.00,521 1376.00,521 1380.00,535 1376.00,549 374.00,549" fill="#fff" stroke="#0369a1" stroke-width="1.5"><title>1111</title></polygon>
+<text x="875.00" y="540" text-anchor="middle" class="signal" fill="#0369a1">0xF</text>
+<path d="M26,561 H1408" stroke="#e2e8f0"/>
+<text x="26" y="608" class="small">Source: pins.vcd | SHA-256: d74eedb8b010d5be0564e5d5e3408c74e40dba23aec33a476816a01a3224d694</text>
+<text x="26" y="629" class="small">A waveform is evidence of recorded signal values; it does not establish functional, protocol, or timing closure.</text>
+</svg>

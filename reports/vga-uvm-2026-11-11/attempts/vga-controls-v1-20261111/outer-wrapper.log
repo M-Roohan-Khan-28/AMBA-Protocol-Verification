@@ -1,0 +1,11 @@
+runner-qualification PASS SYNTHETIC_RECORD_FIXTURES
+sva-hsync PASS EXECUTED
+sva-vsync PASS EXECUTED
+sva-active PASS EXECUTED
+sva-blank PASS EXECUTED
+sva-rgb PASS EXECUTED
+sva-reset PASS EXECUTED
+sva-legal_reset_write PASS EXECUTED
+sva-legal_reset_nonblack PASS EXECUTED
+sva-legal_current_write PASS EXECUTED
+sva-legal_inactive_inputs PASS EXECUTED

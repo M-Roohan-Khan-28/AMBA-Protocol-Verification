@@ -149,3 +149,17 @@ New measured VCD figures and exact-byte receipts accompany the merged run.
 The [original review evidence](reports/cache-uvm-2026-11-10/SUMMARY.md) remains unchanged.
 Functional coverage, randomization and original advanced ALU/APB remain **NOT RUN**.
 No replacement, refill, writeback, coherence or physical implementation is claimed.
+
+## Deterministic VGA timing/framebuffer UVM/SVA — review milestone
+
+The [separate bounded environment](docs/DETERMINISTIC_VGA_UVM.md) tests unchanged
+VGA source `8e257d11b1964fe82d4d4f3c3192b6a315d3b93d` with public-pin raster/memory oracles and independent write
+intent accounting. A fresh detached GitHub run at `3afa2912076b6e7dadf6c958d444e2dc9a2a87f4` passed
+**37/37 required**, aggregate and actual wrapper exit 0:
+30 principal scenarios, 8,622,612 observations /
+51,735,672 comparisons, 14 strict fault parents, 49 runner
+fixtures, ten SVA controls, and the preserved **7 / 8 / 29,588,940** portable gate.
+[Raw evidence, measured waveforms and simulation-reconstructed frame](reports/vga-uvm-2026-11-11/SUMMARY.md)
+and [one-command reproduction](reports/vga-uvm-2026-11-11/REPRODUCE.md) accompany the open review package.
+Earlier releases/locks remain unchanged. Coverage, randomization and original
+advanced ALU/APB remain **NOT RUN**; physical display/FPGA/hardware remain separate.

@@ -1,0 +1,89 @@
+Reading pref.tcl
+
+# 2025.2
+
+# ** Note: (vsim-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# vsim -c -onfinish exit -voptargs="+acc" -sv_seed 682016495 -L C:\MXR\Quartus\25.1\questa_fse\uvm-1.2 work.vga_uvm_top "+RUN_ID=87c1bdff43cb437f83460a59958f2e75" "+GROUP=vertical" -do "onerror {quit -force -code 1}; run -all; quit -force -code 0" 
+# Start time: 01:38:59 on Nov 11,2026
+# Loading C:/Users/CG/AppData/Local/Temp\CG@DESKTOP-9KOU2NO_dpi_39932\win64_gcc-7.4.0\export_tramp.dll
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vopt-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.vga_bus(fast)
+# Loading C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.uvm_pkg(fast)
+# Loading work.vga_uvm_pkg(fast)
+# Loading C:\MXR\Quartus\25.1\questa_fse\uvm-1.2.questa_uvm_pkg(fast)
+# Loading work.vga_uvm_top(fast)
+# Loading work.vga_bus(fast__2)
+# Loading work.vga_controller_sram(fast)
+# Loading work.vga_assertions(fast)
+# Compiling C:/Users/CG/AppData/Local/Temp\CG@DESKTOP-9KOU2NO_dpi_39932\win64_gcc-7.4.0\exportwrapper.c
+# Loading C:/Users/CG/AppData/Local/Temp\CG@DESKTOP-9KOU2NO_dpi_39932\win64_gcc-7.4.0\vsim_auto_compile.dll
+# Loading C:/MXR/Quartus/25.1/questa_fse/uvm-1.2\win64\uvm_dpi.dll
+# onerror {quit -force -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# VGA_RUN_ID 87c1bdff43cb437f83460a59958f2e75
+# UVM_INFO @ 0: reporter [RNTST] Running test vga_test...
+# VGA_CASE_START name=vertical time=0
+# VGA_CASE_PASS name=vertical observations=1568803 comparisons=9412818 clocks=1568801 writes=0 ignored=0 frames=0 time=15688007000
+# VGA_UVM_PASS cases=1 observations=1568803 comparisons=9412818 assertions=0 seed=0x28A6BEEF
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_objection.svh(1270) @ 15688007000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_report_server.svh(847) @ 15688007000: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    5
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# 
+# ** Note: $finish    : C:/MXR/Quartus/25.1/questa_fse/win64/../verilog_src/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 15688007 ns  Iteration: 74  Instance: /vga_uvm_top
+# End time: 01:40:33 on Nov 11,2026, Elapsed time: 0:01:34
+# Errors: 0, Warnings: 1

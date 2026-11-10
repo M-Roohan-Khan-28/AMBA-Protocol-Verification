@@ -1,0 +1,22 @@
+{
+  "status": "INCOMPLETE_NOT_PASS",
+  "stage": "byte-provenance audit after successful 37-substep regression and evidence-content push",
+  "error": "OSError: [Errno 28] No space left on device while writing byte-clone-true-0.log",
+  "first_checkout_verified": {
+    "path": "C:/short/vga-uvm-bytes-false-20261111",
+    "revision": "7390295cdd680794c3628d543c4d32026e937a47",
+    "autocrlf": "false",
+    "files": 1035
+  },
+  "second_incomplete_clone_preserved": "C:/short/vga-uvm-bytes-true-20261111",
+  "second_clone_exit": "NOT RECORDED; audit exception occurred before receipt assertion",
+  "cleanup": "Removed only generated work libraries from current task outputs; logs/captures/source unchanged",
+  "first_explicit_library_removed": {
+    "path": "C:/short/vga-complete-target-v1-20261111/control-framewrap/work",
+    "bytes": 79094370
+  },
+  "bulk_cleanup_receipt": "generated-library-cleanup.json",
+  "regression_wrapper_exit": 0,
+  "regression_result": "37/37 PASS; unaffected",
+  "execution_inputs_changed": false
+}

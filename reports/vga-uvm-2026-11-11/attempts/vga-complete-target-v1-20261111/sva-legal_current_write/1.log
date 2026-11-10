@@ -1,0 +1,12 @@
+Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+Start time: 01:27:40 on Nov 11,2026
+vlog -sv -work work C:\short\vga-uvm-20261111\verification\vga_uvm\vga_bus.sv C:\short\vga-uvm-20261111\verification\vga_uvm\vga_assertions.sv C:\short\vga-uvm-20261111\verification\vga_uvm\vga_sva_control.sv 
+** Note: (vlog-220) 'C:/MXR/Quartus/25.1/questa_fse/win64/../modelsim.ini' is used as the ini file.
+-- Compiling interface vga_bus
+-- Compiling module vga_assertions
+-- Compiling module vga_sva_control
+
+Top level modules:
+	vga_sva_control
+End time: 01:27:40 on Nov 11,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

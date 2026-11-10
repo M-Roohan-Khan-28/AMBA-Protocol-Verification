@@ -1,0 +1,11 @@
+--- locked/design.sv
++++ disposable/design.sv
+@@ -138,7 +138,7 @@
+     begin
+         red   = 4'h0;
+         green = 4'h0;
+-        blue  = 4'h0;
++        blue  = 4'h1;
+     end
+ 
+ end

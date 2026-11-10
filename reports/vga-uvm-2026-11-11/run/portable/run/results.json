@@ -1,0 +1,72 @@
+{
+  "repository": "VGA-SRAM-Framebuffer",
+  "source_revision": "8e257d11b1964fe82d4d4f3c3192b6a315d3b93d",
+  "source_dirty": false,
+  "sources": [
+    {
+      "path": "C:\\short\\vga-uvm-fresh-run-20261111\\source\\rtl\\design.sv",
+      "sha256": "746939f9c0cb902c36d633b68a7aee709a0c4c053feb26f845d29f2c7d009ec3"
+    },
+    {
+      "path": "C:\\short\\vga-uvm-fresh-run-20261111\\source\\tb\\tb_top.sv",
+      "sha256": "65e1221ef62db28c23e3e43e7339b8c6e6d9966e1d25ce55e72da667bf83e49b"
+    },
+    {
+      "path": "C:\\short\\vga-uvm-fresh-run-20261111\\source\\tb\\vga_raster_test.sv",
+      "sha256": "02e67eb396eb9f05d588c1c7a130cecda029148353d1c09ecf52e58108ef4a58"
+    }
+  ],
+  "seed": "exhaustive RGB332 0..255",
+  "timeout_seconds_per_command": 180,
+  "simulations": [
+    {
+      "top": "tb_vga_controller_sram",
+      "command": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "tb_vga_controller_sram",
+        "-do",
+        "run -all; quit -code 0"
+      ],
+      "simulator_exit_code": 0,
+      "status": "PASS",
+      "marker": "# ALL VGA TESTS PASSED"
+    },
+    {
+      "top": "vga_raster_test",
+      "command": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "vga_raster_test",
+        "+RESET_WRITE_EDGE",
+        "-do",
+        "run -all; quit -code 0"
+      ],
+      "simulator_exit_code": 0,
+      "status": "PASS",
+      "marker": "# VGA_RESET_WRITE_EDGE_PASS checks=8 reset_held=1"
+    },
+    {
+      "top": "vga_raster_test",
+      "command": [
+        "C:\\intelFPGA\\20.1\\modelsim_ase\\win32aloem\\vsim.exe",
+        "-c",
+        "-onfinish",
+        "exit",
+        "vga_raster_test",
+        "-do",
+        "run -all; quit -code 0"
+      ],
+      "simulator_exit_code": 0,
+      "status": "PASS",
+      "marker": "# VGA_RASTER_PASS checks=29588940 pixels=1232740 active=922318 hsync_low=147845 vsync_low=3201 frames=2 writes=258 invalid=2 resets=4 seed=all256"
+    }
+  ],
+  "overall": "PASS",
+  "simulator_version": "Model Technology ModelSim - INTEL FPGA STARTER EDITION vsim 2020.1 Simulator 2020.02 Feb 28 2020",
+  "elapsed_seconds": 32.66
+}

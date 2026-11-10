@@ -1,0 +1,1 @@
+{"name":"scale","observations":107,"clocks":103,"control_only":3,"initial_samples":1,"comparisons":642,"enabled_writes":2,"valid_writes":2,"ignored_writes":0,"reset_writes":2,"pixel_advances":25,"pixel_samples":25,"active_samples":25,"hs_low":0,"vs_low":0,"complete_lines":0,"complete_frames":0,"reset_edges":1,"distinct_addresses":4,"distinct_colors":3,"phase_writes":[0,0,0,0]}

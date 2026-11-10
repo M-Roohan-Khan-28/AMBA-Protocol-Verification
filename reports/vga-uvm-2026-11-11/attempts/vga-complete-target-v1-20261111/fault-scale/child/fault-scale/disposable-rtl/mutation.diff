@@ -1,0 +1,11 @@
+--- locked/design.sv
++++ disposable/design.sv
+@@ -119,7 +119,7 @@
+ 
+     active_video = (h_count < 10'd640) && (v_count < 10'd480);
+ 
+-    frame_x = h_count[9:3];
++    frame_x = h_count[9:4];
+     frame_y = v_count[8:3];
+     read_address = frame_y * 13'd80 + frame_x;
+ 
